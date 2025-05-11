@@ -18,4 +18,3 @@ variables:
   - margin=0.5in
 filters:
 - myfilter.lua
-- pagebreak.lua
