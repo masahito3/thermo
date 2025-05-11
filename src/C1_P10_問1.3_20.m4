@@ -4,7 +4,7 @@ header-includes: |
 include([[preamble.tex]])
 ---
 
-\newpage
+NEWPAGE
 
 ## P.10 問1.3 $f_x は連続$
 $$

@@ -6,7 +6,7 @@ include([[preamble.tex]])
   \renewcommand{\D}{\Delta}
 ---
 
-\newpage
+NEWPAGE
 
 ## P.12 問題1.4
 $$\begin{flalign*}

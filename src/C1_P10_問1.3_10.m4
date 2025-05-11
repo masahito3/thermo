@@ -5,7 +5,7 @@ include(`preamble.tex')
   \renewcommand{\fa}{\frac{x^2-y^2}{x^2+y^2}}
 ---
 
-\newpage
+NEWPAGE
 
 ## P.10 問1.3 $(0,0)でfは連続$
 $$

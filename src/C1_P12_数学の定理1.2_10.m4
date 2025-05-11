@@ -4,7 +4,7 @@ header-includes: |
 include([[preamble.tex]])
 ---
 
-\newpage
+NEWPAGE
 
 ## P.12 数学の定理1.2
 

@@ -6,7 +6,7 @@ include([[preamble.tex]])
   \renewcommand{\fx}{\frac{1}{x^2}}
 ---
 
-\newpage
+NEWPAGE
 
 ## P.12 補足
 $$\begin{flalign*}

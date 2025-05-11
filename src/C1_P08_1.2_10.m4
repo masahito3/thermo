@@ -6,7 +6,7 @@ include([[preamble.tex]])
   \newcommand{\limxa}{\lim_{x\to a}}
 ...
 
-\newpage
+NEWPAGE
 
 ## P.8 (1.2)
 
