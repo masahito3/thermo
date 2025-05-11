@@ -1,0 +1,7 @@
+changequote([[, ]])dnl
+ifelse(FORMAT,[[latex]],[[define([[SMALL]],[[\footnotesize]])]],
+       FORMAT,[[html]],[[define([[SMALL]],[[<div style="font-size: 0.8em;">]])]])dnl
+ifelse(FORMAT,[[latex]],[[define([[END_SMALL]],[[\normalsize]])]],
+       FORMAT,[[html]],[[define([[END_SMALL]],[[</div>]])]])dnl
+ifelse(FORMAT,[[latex]],[[define([[VSPACE2EM]],[[\vspace{2em}]])]],
+       FORMAT,[[html]],[[define([[VSPACE2EM]],[[<div style="margin-bottom:2em;"></div>]])]])dnl

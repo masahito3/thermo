@@ -1,0 +1,21 @@
+---
+language:
+  name: Japanese
+  tag: ja
+  direction: ltr
+
+strings:
+  abstract: "概要"
+  appendix: "付録"
+  bibliography: "参考文献"
+  chapter: "章"
+  contents: "目次"
+  figure: "図"
+  list-figures: "図一覧"
+  list-tables: "表一覧"
+  table: "表"
+  listings: "リスト"
+  glossary: "用語集"
+  index: "索引"
+  references: "参照"
+  acknowledgements: "謝辞"

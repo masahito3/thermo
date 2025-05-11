@@ -1,0 +1,21 @@
+from: markdown-smart-implicit_figures
+to: latex
+standalone: true
+toc: true
+toc-depth: 2
+#top-level-division: chapter
+#pdf-engine:  xelatex
+#variables:
+#  documentclass: bxjsarticle
+#  classoption: pandoc
+pdf-engine: lualatex
+variables:
+  documentclass: ltjsarticle
+  luatexjapresetoptions: ipaex
+  linestretch: 1.5
+  geometry:
+  - a4paper
+  - margin=0.5in
+filters:
+- myfilter.lua
+- pagebreak.lua

@@ -1,0 +1,14 @@
+from: markdown-smart+latex_macros
+to: html
+standalone: true
+split-level: 2
+top-level-division: chapter
+toc: true
+toc-depth: 2
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+filters:
+- myfilter.lua
+metadata:
+  title: test
