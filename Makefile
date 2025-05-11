@@ -10,6 +10,10 @@ pdf: SCRIPT:=latex.sed
 pdf: $(MARKDOWNS)
 	pandoc $(MARKDOWNS) -d pdf.yml -o thermo.pdf
 
+latex: SCRIPT:=latex.sed
+latex: $(MARKDOWNS)
+	pandoc $(MARKDOWNS) -d latex.yml -o thermo.tex
+
 html: SCRIPT:=html.sed
 html: $(MARKDOWNS)
 	rm -rf ./html
