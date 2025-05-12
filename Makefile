@@ -16,11 +16,10 @@ latex: $(MARKDOWNS)
 
 html: SCRIPT:=html.sed
 html: $(MARKDOWNS)
-	rm -rf ./html
-	pandoc $(MARKDOWNS) -d chunkedhtml.yml -o html
-	cp bulma.css html/.
-	sed -i -E '/<nav.*TOC/,/<\/nav/s/(<ul)/\1 class="menu-list" /g' html/*.html
-	cp src/*.svg html/.
+	rm -rf ./html_temp
+	pandoc $(MARKDOWNS) -d chunkedhtml.yml -o html_temp
+	sed -i -E '/<nav.*TOC/,/<\/nav/s/(<ul)/\1 class="menu-list" /g' html_temp/*.html
+	mv -f html_temp/* html/.
 
 %.pdf: SCRIPT:=latex.sed
 %.pdf: md/%.md
@@ -41,3 +40,5 @@ md/%.md: src/%.m4
 clean:
 	rm -f md/*.md
 	rm -f src/*~
+	rm -f temp
+	rm -rf html_temp

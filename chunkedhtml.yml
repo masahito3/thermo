@@ -15,3 +15,5 @@ metadata:
   lang: ja
 template:
   chunkedhtml.template
+resource-path:
+- ${.}/src
