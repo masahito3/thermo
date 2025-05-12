@@ -6,7 +6,7 @@ SVGS := $(wildcard images/*.svg)
 PDFS := $(patsubst %.svg,%.pdf,$(SVGS))
 
 pdf: SCRIPT:=latex.sed
-pdf: $(MARKDOWNS)
+pdf: $(MARKDOWNS) images
 	pandoc $(MARKDOWNS) -d pdf.yml -o thermo.pdf
 
 latex: SCRIPT:=latex.sed
@@ -22,7 +22,7 @@ html: $(MARKDOWNS)
 	rm -rf ./html_temp
 
 %.pdf: SCRIPT:=latex.sed
-%.pdf: md/%.md
+%.pdf: md/%.md images
 	pandoc $< -d pdf.yml -o $@
 
 %.html: SCRIPT:=html.sed
