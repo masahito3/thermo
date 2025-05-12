@@ -20,6 +20,7 @@ html: $(MARKDOWNS)
 	pandoc $(MARKDOWNS) -d chunkedhtml.yml -o html_temp
 	sed -i -E '/<nav.*TOC/,/<\/nav/s/(<ul)/\1 class="menu-list" /g' html_temp/*.html
 	mv -f html_temp/* html/.
+	rm -rf ./html_temp
 
 %.pdf: SCRIPT:=latex.sed
 %.pdf: md/%.md
@@ -41,4 +42,3 @@ clean:
 	rm -f md/*.md
 	rm -f src/*~
 	rm -f temp
-	rm -rf html_temp
