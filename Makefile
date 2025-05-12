@@ -19,7 +19,7 @@ html: $(MARKDOWNS)
 	rm -rf ./html_temp
 	pandoc $(MARKDOWNS) -d chunkedhtml.yml -o html_temp
 	sed -i -E '/<nav.*TOC/,/<\/nav/s/(<ul)/\1 class="menu-list" /g' html_temp/*.html
-	mv -f html_temp/* html/.
+	rsync -a html_temp/ html/
 	rm -rf ./html_temp
 
 %.pdf: SCRIPT:=latex.sed
