@@ -1,10 +1,9 @@
-.PHONY: html
+.PHONY: html images
 #.PRECIOUS: md/%.md
 SOURCES := $(wildcard src/*.m4)
 MARKDOWNS := $(patsubst src/%.m4,md/%.md,$(SOURCES))
-SVGS := $(wildcard src/images/*.svg)
-
-#inkscape test.svg --export-type=pdf --export-filename=test.pdf
+SVGS := $(wildcard images/*.svg)
+PDFS := $(patsubst %.svg,%.pdf,$(SVGS))
 
 pdf: SCRIPT:=latex.sed
 pdf: $(MARKDOWNS)
@@ -37,8 +36,13 @@ html: $(MARKDOWNS)
 md/%.md: src/%.m4
 	sed -f ${SCRIPT} $< > temp
 	cd src && m4 ../temp > ../$@
+	rm temp
+
+images: $(PDFS)
+
+images/%.pdf: images/%.svg
+	inkscape $< --export-type=pdf --export-filename=$@
 
 clean:
 	rm -f md/*.md
 	rm -f src/*~
-	rm -f temp
