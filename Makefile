@@ -34,9 +34,11 @@ html: $(MARKDOWNS)
 	pandoc $< -d latex.yml -o $@
 
 md/%.md: src/%.m4
-	sed -f ${SCRIPT} $< > temp
-	cd src && m4 ../temp > ../$@
-	rm temp
+	cd src && m4 $(notdir $<) > ../$@
+	sed -i -f ${SCRIPT} $@
+#	sed -f ${SCRIPT} $< > temp
+#	cd src && m4 ../temp > ../$@
+#	rm temp
 
 images: $(PDFS)
 
