@@ -1,9 +1,11 @@
-.PHONY: html images
-#.PRECIOUS: md/%.md
 SOURCES := $(wildcard src/*.m4)
 MARKDOWNS := $(patsubst src/%.m4,md/%.md,$(SOURCES))
 SVGS := $(wildcard images/*.svg)
 PDFS := $(patsubst %.svg,%.pdf,$(SVGS))
+
+.PHONY: html images
+#.PRECIOUS: md/%.md
+.INTERMEDIATE: $(MARKDOWNS)
 
 pdf: SCRIPT:=latex.sed
 pdf: $(MARKDOWNS) images
