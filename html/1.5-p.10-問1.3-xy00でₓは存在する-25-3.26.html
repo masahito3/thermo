@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>P.7 D_x^+f(a)=f'(a+0) '25 3.22</title>
+  <title>P.10 問1.3 (x,y)≠(0,0)でₓは存在する '25 3.26</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -35,9 +35,9 @@ id="toc-p.10-問1.3-xy00でfは連続-25-5.13">P.10 問1.3
 <li><a href="1.4-p.10-問1.3-00でfは連続-25-3.26.html"
 id="toc-p.10-問1.3-00でfは連続-25-3.26">P.10 問1.3 (0,0)でfは連続 '25
 3.26</a></li>
-<li><a href="1.5-p.10-問1.3-xy00でfxは存在する-25-5.13.html"
-id="toc-p.10-問1.3-xy00でfxは存在する-25-5.13">P.10 問1.3
-(x,y)≠(0,0)でfxは存在する '25 5.13</a></li>
+<li><a href="1.5-p.10-問1.3-xy00でₓは存在する-25-3.26.html"
+id="toc-p.10-問1.3-xy00でₓは存在する-25-3.26">P.10 問1.3
+(x,y)≠(0,0)でₓは存在する '25 3.26</a></li>
 <li><a href="1.6-p.10-問1.3-f_x-は連続.html"
 id="toc-p.10-問1.3-f_x-は連続">P.10 問1.3 <span
 class="math inline">\(f_x は連続\)</span></a></li>
@@ -72,59 +72,44 @@ id="toc-p.12-数学の定理1.2-1">P.12 数学の定理1.2</a></li>
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="1-第1章.html" accesskey="p" rel="previous">Previous</a>
+<a href="1.4-p.10-問1.3-00でfは連続-25-3.26.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="1.2-p.8-1.2-fxfafax-aox-a-25-3.21.html" accesskey="n" rel="next">Next</a>
+<a href="1.6-p.10-問1.3-f_x-は連続.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.1" id="p.7-d_xfafa0-25-3.22">P.7 <span
-class="math inline">\(D_x^+f(a)=f&#39;(a+0)\)</span> <span
-style="margin-left:2em;"></span> '25 3.22</h2>
-<p><span
-class="math inline">\(f(x)が[a,a,\epsilon&#39;]で連続,(a+a+\epsilon&#39;)で微分可能とする\)</span></p>
-<p><span class="math inline">\(f&#39;(a+0)=\lim_{\epsilon\to
-+0}f&#39;(a+\epsilon)が存在するならば\)</span></p>
-<p><span class="math inline">\(D_x^+f(a)が存在し D_x^+f(a)=f&#39;(a+0)
-である\)</span></p>
+<h2 data-number="1.5" id="p.10-問1.3-xy00でₓは存在する-25-3.26">P.10
+問1.3 (x,y)≠(0,0)でₓは存在する '25 3.26</h2>
+<p><span class="math display">\[
+\begin{flalign*}
+f(x,y)=
+\begin{cases}
+xy\displaystyle\frac{x^2-y^2}{x^2+y^2} &amp; (x,y)\ne(0,0) \\
+0 &amp; (x,y)=(0,0)
+\end{cases} &amp;&amp;
+\end{flalign*}\]</span> <span
+class="math inline">\((x,y)\ne(0,0)でfはxで偏微分可能\)</span></p>
 <hr />
 <p>(証明)</p>
+<p><span class="math inline">\((x,y)\ne(0,0)とする\)</span></p>
+<p><span class="math inline">\(\displaystyle
+g(x,y)=xy\frac{x^2-y^2}{x^2+y^2}とする\)</span></p>
 <p><span
-class="math inline">\([a,a+\epsilon&#39;]で連続,(a,a+\epsilon&#39;)で微分可能なので\)</span></p>
-<p><span
-class="math inline">\(\displaystyle\frac{f(a+\epsilon&#39;)-f(a)}{\epsilon&#39;}=f&#39;(a+\epsilon),\
-0&lt;\epsilon&lt;\epsilon&#39;\ なる\epsilon
-が存在する\quad({\large{\because\ }}\ 平均値の定理)\)</span></p>
-<p><span class="math inline">\(\epsilon&#39; に対する\epsilon
-を1つ選んで\epsilon(\epsilon&#39;)とする\)</span></p>
-<p><span
-class="math inline">\(f&#39;(a+0)=\displaystyle\lim_{\epsilon\to
-+0}f&#39;(a+\epsilon)が存在するので\)</span></p>
-<p><span
-class="math inline">\(任意の\delta&gt;0に対してある\epsilon_1が存在して\)</span></p>
-<p><span
-class="math inline">\(0&lt;\epsilon&lt;\epsilon_1ならば|f&#39;(a+\epsilon)-f&#39;(a+0)|&lt;\delta
-である\)</span></p>
-<p><span
-class="math inline">\(0&lt;\epsilon&#39;&lt;\epsilon_1ならば0&lt;\epsilon(\epsilon&#39;)&lt;\epsilon&#39;なので0&lt;\epsilon(\epsilon&#39;)&lt;\epsilon_1\)</span></p>
-<p><span
-class="math inline">\(よって|f&#39;(a+\epsilon(\epsilon&#39;))-f&#39;(a+0)|&lt;\delta
-である\)</span></p>
-<p><span
-class="math inline">\(\displaystyle\frac{f(a+\epsilon&#39;)-f(a)}{\epsilon&#39;}=f&#39;(a+\epsilon(eps&#39;))なので\)</span></p>
-<p><span
-class="math inline">\(0&lt;\epsilon&#39;&lt;\epsilon_1ならば\left|\displaystyle\frac{f(a+\epsilon&#39;)-f(a)}{\epsilon&#39;}-f&#39;(a+0)\right|&lt;\delta
-である\)</span></p>
-<p><span class="math inline">\({\large{\therefore\ }}\
-\displaystyle\lim_{\epsilon&#39;\to
-+0}\frac{f(a+\epsilon&#39;)-f(a)}{\epsilon&#39;}=f&#39;(a+0)である\quad({\large{\because\
-}}\ 極限の定義)\)</span></p>
-<p><span class="math inline">\(\displaystyle\lim_{\epsilon&#39;\to
-+0}\frac{f(a+\epsilon&#39;)-f(a)}{\epsilon&#39;}=D_x^+(a)なので\)</span></p>
-<p><span class="math inline">\(D_x^+(a)=f&#39;(a+0)である\)</span></p>
+class="math inline">\(x,yは独立なのでg(x,y)はxで微分できて\)</span>
+<span
+class="math inline">\(g_x=\underset{xで微分}{g&#39;}である\quad\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math display">\[\begin{flalign*}
+(xy)&#39;&amp;=(x)&#39;y+x(y)&#39;\quad({\large{\because\
+}}積の微分)&amp;\\
+&amp;=1\cdot y+x\cdot 0&amp;\\
+&amp;=y&amp;
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\((x^2+y^2)&#39;=2x\quad({\large{\because\
+}}和の微分)\)</span></p>
+<p><span class="math inline">\((x^2-y^2)&#39;=2x\)</span></p>
    </main>
   </div>
 </body>

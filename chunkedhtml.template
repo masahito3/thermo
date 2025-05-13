@@ -32,7 +32,7 @@ $for(include-before)$
 $include-before$
 $endfor$
 <div class="columns">
-  <div class="column is-3 is-clipped">
+  <div id="SIDEBAR" class="column is-3 is-clipped">
      <nav id="$idprefix$TOC" role="doc-toc" class="menu">
 $if(toc-title)$
      <h2 id="$idprefix$toc-title">$toc-title$</h2>
@@ -55,21 +55,20 @@ $if(top)$
 $endif$
 </span>
 </div>
-<div class="sitenav">
 
-<span class="navlink">
+<div class="sitenav columns">
+
+<span class="navlink column">
 $if(previous.url)$
 <a href="$previous.url$" accesskey="p" rel="previous">Previous</a>
 $endif$
 </span>
 
-<span class="navlink">
+<span class="navlink column has-text-right">
 $if(next.url)$
 <a href="$next.url$" accesskey="n" rel="next">Next</a>
 $endif$
 </span>
-
-
 
 </div>
 </nav>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>P.12 補足</title>
+  <style>
+  </style>
+  <link rel="stylesheet" href="bulma.css" />
+  
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body class="is-size-6">
+<div class="columns">
+  <div id="SIDEBAR" class="column is-3 is-clipped">
+     <nav id="TOC" role="doc-toc" class="menu">
+<ul class="menu-list" >
+<li><a href="1-第1章.html" id="toc-第1章">第1章</a>
+<ul class="menu-list" >
+<li><a href="1.1-p.7-d_xfafa0-25-3.22.html"
+id="toc-p.7-d_xfafa0-25-3.22">P.7 <span
+class="math inline">\(D_x^+f(a)=f&#39;(a+0)\)</span> <span
+style="margin-left:2em;"></span> '25 3.22</a></li>
+<li><a href="1.2-p.8-1.2-fxfafax-aox-a-25-3.21.html"
+id="toc-p.8-1.2-fxfafax-aox-a-25-3.21">P.8 (1.2) <span
+style="margin-left:2em;"></span> <span
+class="math inline">\(f(x)=f(a)+f&#39;(a)(x-a)+o(x-a)\)</span> <span
+style="margin-left:2em;"></span> '25 3.21</a></li>
+<li><a href="1.3-p.10-問1.3-xy00でfは連続-25-5.13.html"
+id="toc-p.10-問1.3-xy00でfは連続-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfは連続 '25 5.13</a></li>
+<li><a href="1.4-p.10-問1.3-00でfは連続-25-3.26.html"
+id="toc-p.10-問1.3-00でfは連続-25-3.26">P.10 問1.3 (0,0)でfは連続 '25
+3.26</a></li>
+<li><a href="1.5-p.10-問1.3-xy00でfxは存在する-25-5.13.html"
+id="toc-p.10-問1.3-xy00でfxは存在する-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfxは存在する '25 5.13</a></li>
+<li><a href="1.6-p.10-問1.3-f_x-は連続.html"
+id="toc-p.10-問1.3-f_x-は連続">P.10 問1.3 <span
+class="math inline">\(f_x は連続\)</span></a></li>
+<li><a href="1.7-p.12-数学の定理1.2.html"
+id="toc-p.12-数学の定理1.2">P.12 数学の定理1.2</a></li>
+<li><a href="1.8-p.12-数学の定理1.2-1.html"
+id="toc-p.12-数学の定理1.2-1">P.12 数学の定理1.2</a></li>
+<li><a href="1.9-p.12-補足.html" id="toc-p.12-補足">P.12 補足</a></li>
+<li><a href="1.10-p.12-補足-1.html" id="toc-p.12-補足-1">P.12
+補足</a></li>
+<li><a href="1.11-p.12-補足-2.html" id="toc-p.12-補足-2">P.12
+補足</a></li>
+<li><a href="1.12-p.12-問題1.4.html" id="toc-p.12-問題1.4">P.12
+問題1.4</a></li>
+</ul></li>
+<li><a href="2-第2章.html" id="toc-第2章">第2章</a></li>
+</ul>
+     </nav>
+  </div>
+ 
+   <main class="column is-9">
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="1-第1章.html" accesskey="u" rel="up">第1章</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">test</a>
+</span>
+</div>
+
+<div class="sitenav columns">
+
+<span class="navlink column">
+<a href="1.10-p.12-補足-1.html" accesskey="p" rel="previous">Previous</a>
+</span>
+
+<span class="navlink column has-text-right">
+<a href="1.12-p.12-問題1.4.html" accesskey="n" rel="next">Next</a>
+</span>
+
+</div>
+</nav>
+<h2 data-number="1.11" id="p.12-補足-2">P.12 補足</h2>
+<p><span class="math display">\[\begin{flalign*}
+f(x)=
+\begin{cases}
+e^{-\frac{1}{x^2}} &amp; x\ne 0 \\
+0        &amp; x=0
+\end{cases} &amp;&amp;
+\end{flalign*}\]</span> <span class="math inline">\(x\ne 0 で C^\infty
+級\)</span></p>
+<hr />
+<p>(証明)</p>
+<p><span class="math inline">\(x\ne 0とする\)</span> <span
+class="math display">\[\begin{flalign*}
+f^{(1)}&amp;=\left(e^{-\frac{1}{x^2}}\right)&#39; &amp;\\
+   &amp;= \left(-\frac{1}{x^2}\right)&#39;e^{-\frac{1}{x^2}} \quad
+\textcolor{red}{(*1),(*2)}&amp; \\
+   &amp;= -\left(\frac{1}{x^2}\right)&#39;e^{-\frac{1}{x^2}} \quad
+({\large{\because\ }}積の微分)&amp; \\
+   &amp;= -(-2)x^{-3}e^{-\frac{1}{x^2}} \quad \textcolor{red}{(*3)}&amp;
+\\
+   &amp;= 2x^{-3}e^{-\frac{1}{x^2}} \quad\cdots(1)&amp;
+\end{flalign*}\]</span> である。</p>
+<p><span class="math inline">\(n&gt;0 で\)</span> <span
+class="math display">\[\begin{flalign*}
+f^{(n)}&amp;=\left(\sum_{\nu=1}^{m}k_\nu
+x^{-\nu}\right)e^{-\frac{1}{x^2}}&amp;
+\end{flalign*}\]</span>と仮定する</p>
+<p><span class="math display">\[\begin{flalign*}
+\left(\sum_{\nu=1}^{m}k_\nu
+x^{-\nu}\right)&#39;&amp;=\sum_{\nu=1}^{m}k_\nu(x^{-\nu})&#39;\quad({\large{\because\
+}}和,積の微分)&amp;\\
+  &amp;=\sum_{\nu=1}^{m}(-\nu
+k_\nu)x^{-\nu-1}\quad\textcolor{red}{(*3)}\cdots(2)&amp;
+\end{flalign*}\]</span>なので</p>
+<p><span class="math display">\[\begin{flalign*}
+f^{(n+1)}&amp;=\left(\sum_{\nu=1}^{m}k_\nu
+x^{-\nu}\right)&#39;e^{-\frac{1}{x^2}}+\left(\sum_{\nu=1}^{m}k_\nu
+x^{-\nu}\right)\left(e^{-\frac{1}{x^2}}\right)&#39;\quad({\large{\because\
+}}積の微分)&amp;\\
+  &amp;=\sum_{\nu=1}^{m}(-\nu
+k_{\nu})x^{-\nu-1}e^{-\frac{1}{x^2}}+\sum_{\nu=1}^{m}k_\nu
+x^{-\nu}2x^{-3}e^{-\frac{1}{x^2}}\quad({\large{\because\
+}}(1),(2))&amp;\\
+  &amp;=\left(\sum_{\nu=1}^{m}-\nu k_\nu
+x^{-\nu-1}+\sum_{\nu=1}^{m}2k_{\nu}x^{-\nu-3}\right)e^{-\frac{1}{x^2}}&amp;\\
+  &amp;=\sum_{\mu=1}^{m+4}(p_\mu+q_\mu)x^{-\mu}e^{-\frac{1}{x^2}}&amp;
+\end{flalign*}\]</span></p>
+<p>ただし <span class="math display">\[\begin{flalign*}
+p_\mu&amp;=
+\begin{cases}
+-(\mu-1)k_{\mu-1} &amp; \mu=2,\cdots,m+1 \\
+0        &amp; other
+\end{cases}&amp;\\
+q_\mu&amp;=
+\begin{cases}
+2k_{\mu-3} &amp; \mu=4,\cdots,m+3 \\
+0        &amp; other
+\end{cases}&amp;
+\end{flalign*}\]</span></p>
+<p>よって、<span class="math inline">\(n&gt;0\)</span>において <span
+class="math display">\[\begin{flalign*}
+f^{(n)}&amp;=\left(\sum_{\nu=1}^{m}k_\nu
+x^{-\nu}\right)e^{-\frac{1}{x^2}}&amp;
+\end{flalign*}\]</span>である。 <span class="math inline">\(x\ne
+0\)</span>で<span class="math inline">\(f^{(n)},n\in
+\mathbb{N}\)</span>は存在するので<span
+class="math inline">\(f\)</span>は<span
+class="math inline">\(C^\infty\)</span>級である</p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*1)}&amp; 合成関数の微分 \\
+&amp;&amp;&amp;g&#39;(x),f&#39;(g(x)) が存在するなら \\
+&amp;&amp;&amp;f(g(x))&#39;=g&#39;(x)f&#39;(g(x))\\
+&amp;&amp;\textcolor{red}{(*2)}&amp; (e^x)&#39;=e^x \\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}\ ({\large{\because\
+}}e^x の定義)\\
+&amp;&amp;&amp;右辺の項別微分を考える\\
+&amp;&amp;&amp;\sum_{n=0}^{\infty}\left(\frac{x^n}{n!}\right)&#39;=(1)&#39;+\sum_{n=1}^{\infty}\left(\frac{x^n}{n!}\right)&#39;\\
+&amp;&amp;&amp;\quad=\sum_{n=1}^{\infty}n\frac{x^{n-1}}{n!}\
+\textcolor{red}{(*2.1)}\\
+&amp;&amp;&amp;\quad=\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}\\
+&amp;&amp;&amp;\quad=\sum_{n=0}^{\infty}\frac{x^n}{n!}\
+\textcolor{red}{(*2.2)}\\
+&amp;&amp;&amp;\quad=e^x\ ({\large{\because\ }}e^x の定義)\\
+&amp;&amp;&amp;ここで任意のxに対して\\
+&amp;&amp;&amp;-A\le x\le A,A&gt;0 なる区間を考える\\
+&amp;&amp;&amp;\left|\frac{x^\nu}{\nu!}\right|\le\frac{A^\nu}{\nu!},\nu=0,1,2,\ldots
+である\\
+&amp;&amp;&amp;また \sum_{\nu=0}^{\infty}\frac{A^\nu}{\nu!}=e^a\
+({\large{\because\ }}e^a の定義)\\
+&amp;&amp;&amp;なので \sum_{\nu=0}^{\infty}\frac{x^\nu}{\nu!}
+は区間[-A,A] で一様収束する\\
+&amp;&amp;&amp;({\large{\because\ }}定理:ある区間で |a_n(x)|\le C_n
+なる定数 C_n があって\\
+&amp;&amp;&amp;\quad \sum_{}^{\infty}C_n が収束するならば
+\sum_{}^{\infty}a_n は一様収束する)\\
+&amp;&amp;&amp;よって\left(e^x\right)&#39;=e^x\\
+&amp;&amp;&amp;({\large{\because\
+}}定理:無限級数が収束し各項の導関数が連続で項別微分が\\
+&amp;&amp;&amp;\quad
+一様収束するならば無限級数の導関数は項別微分に等しい)\\
+&amp;&amp;\textcolor{red}{(*2.1)}&amp; (1)&#39;=0\\
+&amp;&amp;&amp;n&gt;0 ならば x^n=nx^{n-1}\ \textcolor{red}{(*3)}\\
+&amp;&amp;&amp;(kf(x))&#39;=kf&#39;(x)\ ({\large{\because\ }}積の微分)\\
+&amp;&amp;\textcolor{red}{(*2.2)}&amp;\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}=1+x+\frac{x^2}{2!}+\cdots\\
+&amp;&amp;&amp;\sum_{n=0}^{\infty}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\cdots\\
+&amp;&amp;&amp;{\large{\therefore\
+}}\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}=\sum_{n=0}^{\infty}\frac{x^n}{n!}\\
+&amp;&amp;\textcolor{red}{(*3)}&amp; x\ne 0,n&gt;0 ならば \\
+&amp;&amp;&amp;(x^{-n})&#39;=-nx^{-n-1}\\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;(x^n)&#39;=-n x^{-n-1} と仮定する\\
+&amp;&amp;&amp;(x^{n+1})&#39;=(xx^n)&#39;=(x)&#39;x^n+x(x^n)&#39;\
+({\large{\because\ }}積の微分)\\
+&amp;&amp;&amp;\quad=x^n+xnx^{n-1}=(n+1)x^n\\
+&amp;&amp;&amp;(x)&#39;=1=1\cdot x^{1-1}\\
+&amp;&amp;&amp;よって(x^n)&#39;=nx^{n-1},n=1,2,\ldots\\
+&amp;&amp;&amp;よって x\ne 0, n=1,2,\ldots ならば\\
+&amp;&amp;&amp;
+(x^{-n})&#39;=\left(\frac{1}{x^n}\right)&#39;=\frac{1&#39;x^n-1(x^n)&#39;}{x^{2n}}\
+({\large{\because\ }}商の微分)\\
+&amp;&amp;&amp; \quad=\frac{-nx^{n-1}}{x^{2n}}=-nx^{-n-1}
+\end{flalign*}\]</span></p>
+   </main>
+  </div>
+</body>
+</html>

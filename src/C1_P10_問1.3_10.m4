@@ -1,65 +1,85 @@
 ---
 header-includes: |
 include(`preamble.tex')
-  \providecommand{\fa}{}
-  \renewcommand{\fa}{\frac{x^2-y^2}{x^2+y^2}}
+  \providecommand{\fx}{}
+  \renewcommand{\fx}{\frac{x^2-y^2}{x^2+y^2}}
 ---
 
 NEWPAGE
 
-## P.10 問1.3 $(0,0)でfは連続$
+## P.10 問1.3 (x,y)≠(0,0)でfは連続 '25 5.13
 $$
 \begin{flalign*}
 f(x,y)=
 \begin{cases}
-xy\disp\fa & (x,y)\ne(0,0) \\
+xy\frac{x^2-y^2}{x^2+y^2} & (x,y)\ne(0,0) \\
 0 & (x,y)=(0,0)
 \end{cases} &&
 \end{flalign*}$$
-$(x,y)=(0,0)でfは連続$
+$(x,y)\ne(0,0)でfは連続$
 
 ---
 
 (証明)
 
+$任意の\eps に対して$
+
+$|(x,y)-(a,b)|<\eps ならば$
 $$\begin{flalign*}
-\lim_{(x,y)\to(0,0)}f(x,y)&=\lim_{(x,y)\to(0,0)}xy\fa &
-\end{flalign*}$$である
-
-$また\quad (x,y)\ne(0,0) で \disp\fa は有界 \quad\red{(*1)}$
-
-$よって\quad \disp\fa < m なる m が存在する$
-
-$また\quad \disp\limto{(x,y)}{(0,0)}xy=0\quad(\cuz \lim f=F,\lim g=G ならば lim fg = FG)$
-
-$よって\quad \disp\lim_{(x,y)\to(0,0)}xy\fa=0=f(0,0)\quad\red{(*2)}$
-
-$よって f(x,y) は (0,0) で連続$
-
-SMALL
-
-$$\begin{flalign*}
-&&\red{(*1)}&\fa が有界でないと仮定する \\
-&&&任意のm>0 に対して\l|\fa\r|>m なる(x,y) が存在する\\
-&&&\so \fa < -m\ or\ \fa > m \\
-&&&\fa > m とすると 0>(m-1)x^2+(m+1)y^2\\
-&&&m=1 とすると 0>2y^2 となり矛盾\\
-&&&\fa < m とすると x^2(1-m)-y^2(1-m)<0\\
-&&&m=1 とすると 0<0 となり矛盾\\
-&&&よって\fa は有界\\
-%
-&&\red{(*2)}&f(x,y) が有界,\lim g=0 ならば \lim fg = 0\\
-&&&(証明)\\
-&&&|f|<m なる m が存在する\\
-&&&任意の\epsilon>0 に対して、ある\delta>0 があって\\
-&&&|(x,y)|<\delta ならば |g|<\epsilon\\
-&&&\so |f||g|<|f|\epsilon\\
-&&&\epsilon|f|<\epsilon m なので\\
-&&&|f||g|<\epsilon m\\
-&&&\so|fg|<\epsilon m\\
-&&&任意の\epsilon'>0 に対して\epsilon'=\epsilon m とすると\\
-&&&|(x,y)|<\delta ならば |fg|<\epsilon'\\
-&&&\so lim fg = 0
+|x-a|&<|(x,y)-(a,b)|\quad(\cuz 三角不等式)&\\
+     &=\eps&
 \end{flalign*}$$
 
-END_SMALL
+$よって\limto{(x,y)}{(a,b)}x=a$
+
+$よってxは連続$
+
+$同様にyは連続$
+
+$よって$
+
+$xyは連続\quad\red{(*1)}$
+
+$x^2は連続\quad\red{(*1)}$
+
+$y^2は連続\quad\red{(*1)}$
+
+$x^2-y^2は連続\quad\red{(*1)(*2)}$
+
+$x^2+y^2は連続\quad\red{(*2)}$
+
+$(x,y)\ne(0,0)ならばx^2+y^2\ne0$
+
+$よって(x,y)\ne(0,0)ならば$
+
+$\disp\frac{1}{x^2+y^2} は連続\quad\red{(*3)}$
+
+$よって(x,y)\ne(0,0)ならば$
+$\disp xy\frac{x^2-y^2}{x^2+y^2} は連続\quad\red{(*2)}$
+
+$また(x,y)\ne(0,0)ならば$
+$\disp f(x,y)=xy\frac{x^2-y^2}{x^2+y^2}$
+
+$よって(x,y)\ne(0,0)ならばf(x,y)は連続$
+
+$$\begin{flalign*}
+&&\red{(*1)}&fが連続, gが連続ならばfg は連続\\
+&&&(証明)\\
+&&&(a,b)でf,gが連続ならば\\
+&&&\limto{(x,y)}{(a,b)}f(x,y)=f(a,b),\limto{(x,y)}{(a,b)}g(x,y)=g(a,b)\\
+&&&\so \lim fg=f(a,b)g(a,b)\ (\cuz 積の極限)\\
+&&&よってfgは連続\\
+%
+&&\red{(*2)}&fが連続, gが連続ならばf+g は連続\\
+&&&(証明)\\
+&&&(a,b)でf,gが連続ならば\\
+&&&\limto{(x,y)}{(a,b)}f(x,y)=f(a,b),\limto{(x,y)}{(a,b)}g(x,y)=g(a,b)\\
+&&&\so \lim f+g=f(a,b)+g(a,b)\ (\cuz 和の極限)\\
+&&&よってf+gは連続\\
+%
+&&\red{(*3)}&fが連続かつf\ne 0ならば\frac{1}{f}は連続\\
+&&&(証明)\\
+&&&\limto{(x,y)}{(a,b)}f(x,y)=f(a,b),\ f(a,b)\ne0\\
+&&&\so \lim \frac{1}{f}=\frac{1}{f(a,b)}\ (\cuz 商の極限)\\
+&&&よって\frac{1}{f}は連続
+\end{flalign*}$$
