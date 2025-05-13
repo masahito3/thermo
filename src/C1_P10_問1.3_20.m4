@@ -47,8 +47,8 @@ $$\begin{flalign*}
 \end{flalign*}$$
 よって$(x,y)\ne(0,0)$で$\frac{\partial f}{\partial x}$は連続
 
-VSPACE2EM
-VSPACE2EM
+VSPACE
+VSPACE
 
 $(x,y)\ne(0,0)$において
 $$
@@ -67,11 +67,11 @@ $$
 \frac{x^4-4x^2y^2-y^4}{x^4+2x^2y^2+y^4} >  mである \\
 & & &\frac{x^4-4x^2y^2-y^4}{x^4+2x^2y^2+y^4} < -m とすると \\
 & & &x^4-4x^2y^2-y^4 < -m(x^4+2x^2y^2+y^4) \\
-& & &\therefore (1+m)x^4+(4+2m)x^2y^2+(m-1)y^4 < 0 \\
+& & &\so (1+m)x^4+(4+2m)x^2y^2+(m-1)y^4 < 0 \\
 & & &m=1とすると 2x^4+6x^2y^2< 0 となり矛盾する\\
 & & &\frac{x^4-4x^2y^2-y^4}{x^4+2x^2y^2+y^4} > m とすると \\
 & & &x^4-4x^2y^2-y^4 > m(x^4+2x^2y^2+y^4) \\
-& & &\therefore 0>(m-1)x^4+(2m-4)x^2y^2+(m-1)y^4 \\
+& & &\so 0>(m-1)x^4+(2m-4)x^2y^2+(m-1)y^4 \\
 & & &m=2とすると 0>x^4+y^4 となり矛盾する \\
 & & &よって \frac{x^4-4x^2y^2-y^4}{x^4+2x^2y^2+y^4}は有界\\
 \end{flalign*}$$
@@ -85,11 +85,11 @@ $$
 & & &あるm>0が存在して|f(x,y)|<m\\
 & & &任意の\epsilon>0に対して\delta>0が存在して\\
 & & &|(x,y)|<\delta ならば |g(x,y)|<\epsilon\\
-& & &\therefore |f||g|<|f|\epsilon, |f|\epsilon<m\epsilon\\
-& & &\therefore |fg|=|f||g|<m\epsilon\\
+& & &\so |f||g|<|f|\epsilon, |f|\epsilon<m\epsilon\\
+& & &\so |fg|=|f||g|<m\epsilon\\
 & & &任意の\epsilon'>0に対して\epsilon'=m\epsilon とすると\\
 & & &|(x,y)|<\delta ならば |fg|<\epsilon'\\
-& & &\therefore \lim fg=0\\
+& & &\so \lim fg=0\\
 \end{flalign*}$$
 また $f(x,y)は(0,0)で連続 \textcolor{red}{(別紙)}$
 よって$\textcolor{red}{本文(1.5)(1.6)}$より $(0,0)で\frac{\partial f}{\partial x}$は存在して

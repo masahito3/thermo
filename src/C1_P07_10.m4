@@ -8,7 +8,7 @@ include([[preamble.tex]])
 
 NEWPAGE
 
-## P.7 $D_x^+f(a)=f'(a+0)$ HSPACE2EM '25 3.22
+## P.7 $D_x^+f(a)=f'(a+0)$ HSPACE '25 3.22
 
 $f(x)が[a,a,\eps']で連続,(a+a+\eps')で微分可能とする$
 

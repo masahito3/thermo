@@ -2909,7 +2909,8 @@ th:not([align]) {
   --bulma-body-color: var(--bulma-text);
   --bulma-body-font-size: 1em;
   --bulma-body-weight: var(--bulma-weight-normal);
-  --bulma-body-line-height: 1.5;
+  /* --bulma-body-line-height: 1.5; */
+  --bulma-body-line-height: 1.8;
   --bulma-code-family: var(--bulma-family-code);
   --bulma-code-padding: 0.25em 0.5em 0.25em;
   --bulma-code-weight: normal;

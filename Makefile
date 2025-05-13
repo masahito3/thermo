@@ -36,9 +36,6 @@ html: $(MARKDOWNS)
 md/%.md: src/%.m4
 	cd src && m4 $(notdir $<) > ../$@
 	sed -i -f ${SCRIPT} $@
-#	sed -f ${SCRIPT} $< > temp
-#	cd src && m4 ../temp > ../$@
-#	rm temp
 
 images: $(PDFS)
 

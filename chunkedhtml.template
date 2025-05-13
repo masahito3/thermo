@@ -32,7 +32,7 @@ $for(include-before)$
 $include-before$
 $endfor$
 <div class="columns">
-  <div class="column is-3">
+  <div class="column is-3 is-clipped">
      <nav id="$idprefix$TOC" role="doc-toc" class="menu">
 $if(toc-title)$
      <h2 id="$idprefix$toc-title">$toc-title$</h2>

@@ -8,15 +8,14 @@
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
-  }
-  }
+  
   <script
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
   type="text/javascript"></script>
 </head>
 <body class="is-size-6">
 <div class="columns">
-  <div class="column is-3">
+  <div class="column is-3 is-clipped">
      <nav id="TOC" role="doc-toc" class="menu">
 <ul class="menu-list" >
 <li><a href="1-第1章.html" id="toc-第1章">第1章</a>
@@ -139,12 +138,14 @@ class="math inline">\(\displaystyle\lim_{(x,y)\to(0,0)}y=0\)</span>
 &amp; &amp; &amp;\frac{x^4-4x^2y^2-y^4}{x^4+2x^2y^2+y^4} &lt; -m
 とすると \\
 &amp; &amp; &amp;x^4-4x^2y^2-y^4 &lt; -m(x^4+2x^2y^2+y^4) \\
-&amp; &amp; &amp;\therefore (1+m)x^4+(4+2m)x^2y^2+(m-1)y^4 &lt; 0 \\
+&amp; &amp; &amp;{\large{\therefore\ }}(1+m)x^4+(4+2m)x^2y^2+(m-1)y^4
+&lt; 0 \\
 &amp; &amp; &amp;m=1とすると 2x^4+6x^2y^2&lt; 0 となり矛盾する\\
 &amp; &amp; &amp;\frac{x^4-4x^2y^2-y^4}{x^4+2x^2y^2+y^4} &gt; m とすると
 \\
 &amp; &amp; &amp;x^4-4x^2y^2-y^4 &gt; m(x^4+2x^2y^2+y^4) \\
-&amp; &amp; &amp;\therefore 0&gt;(m-1)x^4+(2m-4)x^2y^2+(m-1)y^4 \\
+&amp; &amp; &amp;{\large{\therefore\
+}}0&gt;(m-1)x^4+(2m-4)x^2y^2+(m-1)y^4 \\
 &amp; &amp; &amp;m=2とすると 0&gt;x^4+y^4 となり矛盾する \\
 &amp; &amp; &amp;よって \frac{x^4-4x^2y^2-y^4}{x^4+2x^2y^2+y^4}は有界\\
 \end{flalign*}\]</span> よって <span
@@ -159,13 +160,13 @@ g(x,y)=0ならば\\
 &amp; &amp; &amp;あるm&gt;0が存在して|f(x,y)|&lt;m\\
 &amp; &amp; &amp;任意の\epsilon&gt;0に対して\delta&gt;0が存在して\\
 &amp; &amp; &amp;|(x,y)|&lt;\delta ならば |g(x,y)|&lt;\epsilon\\
-&amp; &amp; &amp;\therefore |f||g|&lt;|f|\epsilon,
+&amp; &amp; &amp;{\large{\therefore\ }}|f||g|&lt;|f|\epsilon,
 |f|\epsilon&lt;m\epsilon\\
-&amp; &amp; &amp;\therefore |fg|=|f||g|&lt;m\epsilon\\
+&amp; &amp; &amp;{\large{\therefore\ }}|fg|=|f||g|&lt;m\epsilon\\
 &amp; &amp; &amp;任意の\epsilon&#39;&gt;0に対して\epsilon&#39;=m\epsilon
 とすると\\
 &amp; &amp; &amp;|(x,y)|&lt;\delta ならば |fg|&lt;\epsilon&#39;\\
-&amp; &amp; &amp;\therefore \lim fg=0\\
+&amp; &amp; &amp;{\large{\therefore\ }}\lim fg=0\\
 \end{flalign*}\]</span> また <span
 class="math inline">\(f(x,y)は(0,0)で連続
 \textcolor{red}{(別紙)}\)</span> よって<span
