@@ -56,16 +56,21 @@ $endif$
 </span>
 </div>
 <div class="sitenav">
-<span class="navlink">
-$if(next.url)$
-<span class="navlink-label">Next:</span> <a href="$next.url$" accesskey="n" rel="next">$next.title$</a>
-$endif$
-</span>
+
 <span class="navlink">
 $if(previous.url)$
-<span class="navlink-label">Previous:</span> <a href="$previous.url$" accesskey="p" rel="previous">$previous.title$</a>
+<a href="$previous.url$" accesskey="p" rel="previous">Previous</a>
 $endif$
 </span>
+
+<span class="navlink">
+$if(next.url)$
+<a href="$next.url$" accesskey="n" rel="next">Next</a>
+$endif$
+</span>
+
+
+
 </div>
 </nav>
 $if(top)$
