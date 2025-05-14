@@ -17,3 +17,4 @@ template:
   chunkedhtml.template
 resource-path:
 - ${.}/src
+chunk-template: "%h.html"
