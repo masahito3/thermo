@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>P.10 問1.3 (x,y)≠(0,0)でfxは存在する '25 5.13</title>
+  <title>P.10 問1.3 (x,y)≠(0,0)でfxは連続 ’25 4.13</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -35,12 +35,9 @@ id="toc-p.10-問1.3-00でfは連続-25-3.26">P.10 問1.3 (0,0)でfは連続 '25
 <li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは存在する &#39;25 5.13.html"
 id="toc-p.10-問1.3-xy00でfxは存在する-25-5.13">P.10 問1.3
 (x,y)≠(0,0)でfxは存在する '25 5.13</a></li>
-<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは連続 &#39;25 5.13.html"
-id="toc-p.10-問1.3-xy00でfxは連続-25-5.13">P.10 問1.3
-(x,y)≠(0,0)でfxは連続 '25 5.13</a></li>
-<li><a href="P.10 問1.3 (0,0)でfxは連続 &#39;25 3.26.html"
-id="toc-p.10-問1.3-00でfxは連続-25-3.26">P.10 問1.3 (0,0)でfxは連続 '25
-3.26</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは連続 ’25 4.13.html"
+id="toc-p.10-問1.3-xy00でfxは連続-25-4.13">P.10 問1.3
+(x,y)≠(0,0)でfxは連続 ’25 4.13</a></li>
 <li><a href="P.12 数学の定理1.2.html" id="toc-p.12-数学の定理1.2">P.12
 数学の定理1.2</a></li>
 <li><a href="P.12 数学の定理1.2.html" id="toc-p.12-数学の定理1.2-1">P.12
@@ -70,50 +67,56 @@ id="toc-p.10-問1.3-00でfxは連続-25-3.26">P.10 問1.3 (0,0)でfxは連続 '2
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.10 問1.3 (0,0)でfは連続 '25 3.26.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.10 問1.3 (x,y)≠(0,0)でfxは存在する '25 5.13.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.10 問1.3 (x,y)≠(0,0)でfxは連続 '25 5.13.html" accesskey="n" rel="next">Next</a>
+<a href="P.12 数学の定理1.2.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.5" id="p.10-問1.3-xy00でfxは存在する-25-5.13">P.10
-問1.3 (x,y)≠(0,0)でfxは存在する '25 5.13</h2>
+<h2 data-number="1.6" id="p.10-問1.3-xy00でfxは連続-25-4.13">P.10 問1.3
+(x,y)≠(0,0)でfxは連続 ’25 4.13</h2>
 <p><span class="math display">\[
 \begin{flalign*}
 f(x,y)=
 \begin{cases}
 \displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
-0 &amp; (x,y)=(0,0)
+            0 &amp; (x,y)=(0,0)
 \end{cases} &amp;&amp;
 \end{flalign*}\]</span> <span
-class="math inline">\((x,y)\ne(0,0)でfはxで偏微分可能\)</span></p>
+class="math inline">\((x,y)\ne(0,0)でf_xは連続\)</span></p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\((x,y)\ne(0,0)とする\)</span></p>
-<p><span class="math inline">\(このとき \displaystyle
-f(x,y)=xy\frac{x^2-y^2}{x^2+y^2}\)</span></p>
-<p><span class="math inline">\(x,yは独立とする\)</span> <span
-class="math display">\[\begin{flalign*}
-f_x&amp;=\underset{xで微分}{f&#39;}\quad\textcolor{red}{(*1)}&amp;\\
-&amp;=(xy)&#39;\frac{x^2-y^2}{x^2+y^2}+xy\left(\frac{x^2-y^2}{x^2+y^2}\right)&#39;\quad({\large{\because\
-}}積の微分)&amp;\\
-&amp;=y\frac{x^2-y^2}{x^2+y^2}+xy\frac{(x^2-y^2)&#39;(x^2+y^2)-(x^2-y^2)(x^2+y^2)&#39;}{(x^2+y^2)^2}\quad({\large{\because\
-}}x^2+y^2\ne0なので商の微分より)&amp;\\
-&amp;=y\frac{x^2-y^2}{x^2+y^2}+xy\frac{4xy^2}{(x^2+y^2)^2}&amp;\\
-&amp;=\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}&amp;
-\end{flalign*}\]</span></p>
+<p><span class="math inline">\((x,y)\ne(0,0)\)</span>とする</p>
+<p><span class="math inline">\(\displaystyle
+f_x(x,y)=\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\quad({\large{\because\
+}}別紙)\)</span></p>
+<p><span class="math inline">\((a,b)\ne(0,0)\)</span>とする</p>
+<p><span class="math inline">\(\displaystyle\lim_{(x,y)\to
+(a,b)}\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}=\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}\quad\)</span>
+<span class="math inline">\(({\large{\because\
+}}(a^2+b^2)^2\ne0なので和、積、商の極限、また\displaystyle\lim_{(x,y)\to
+(a,b)}x=a\ \textcolor{red}{(*1)})\)</span></p>
+<p><span class="math inline">\(よって任意の\epsilon
+に対して|(x,y)-(a,b)|&lt;\delta ならば\)</span></p>
 <p><span
-class="math inline">\(よって(x,y)\ne(0,0)でf_xは存在する\quad({\large{\because\
-}}公理:f_xは存在\rightleftarrows f_x\in R)\)</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;f&#39;,f_xの定義より\\
-&amp;&amp;&amp;\underset{xで微分}{f&#39;(x,y)}=\lim_{\Delta x\to
-0}\frac{f(x+\Delta x)-f(x)}{\Delta x}=f_x(x,y)\\
-&amp;&amp;&amp;よってf&#39;が存在するならばf&#39;=f_x
-\end{flalign*}\]</span></p>
+class="math inline">\(\displaystyle\left|\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}-\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}\right|&lt;\epsilon\)</span></p>
+<p><span
+class="math inline">\(また0&lt;\delta&#39;&lt;|(a,b)|とすると\)</span></p>
+<p><span
+class="math inline">\(|(x,y)-(a,b)|&lt;\delta&#39;ならば(x,y)\ne(0,0)である\)</span></p>
+<p><span class="math inline">\({\large{\therefore\
+}}f_x(x,y)=\displaystyle\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\)</span></p>
+<p><span
+class="math inline">\(よって|(x,y)-(a,b)|&lt;min(\delta,\delta&#39;)ならば\)</span></p>
+<p><span
+class="math inline">\(\displaystyle\left|f_x(x,y)-\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}\right|&lt;\epsilon\)</span></p>
+<p><span class="math inline">\(よって\displaystyle\lim_{(x,y)\to
+(a,b)}f_x(x,y)=\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}=f_x(a,b)\)</span></p>
+<p><span
+class="math inline">\(よってf_x(x,y)は(a,b)\ne(0,0)で連続である\)</span></p>
    </main>
   </div>
 </body>

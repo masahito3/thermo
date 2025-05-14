@@ -39,6 +39,6 @@ $よって(x,y)\ne(0,0)でf_xは存在する\quad(\cuz 公理:f_xは存在\iif f
 
 $$\begin{flalign*}
 &&\red{(*1)}&f',f_xの定義より\\
-&&&\underset{xで微分}{f'(x,y)}=\limto{\D x}{0}\frac{f(x+\D x,y)-f(x,y)}{\D x}=f_x(x,y)\\
+&&&\underset{xで微分}{f'(x,y)}=\limto{\D x}{0}\frac{f(x+\D x)-f(x)}{\D x}=f_x(x,y)\\
 &&&よってf'が存在するならばf'=f_x
 \end{flalign*}$$

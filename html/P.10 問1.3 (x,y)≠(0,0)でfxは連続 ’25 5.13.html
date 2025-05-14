@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>P.10 問1.3 (0,0)でfは連続 '25 3.26</title>
+  <title>P.10 問1.3 (x,y)≠(0,0)でfxは連続 ’25 5.13</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -35,12 +35,12 @@ id="toc-p.10-問1.3-00でfは連続-25-3.26">P.10 問1.3 (0,0)でfは連続 '25
 <li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは存在する &#39;25 5.13.html"
 id="toc-p.10-問1.3-xy00でfxは存在する-25-5.13">P.10 問1.3
 (x,y)≠(0,0)でfxは存在する '25 5.13</a></li>
-<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは連続 &#39;25 5.13.html"
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは連続 ’25 5.13.html"
 id="toc-p.10-問1.3-xy00でfxは連続-25-5.13">P.10 問1.3
-(x,y)≠(0,0)でfxは連続 '25 5.13</a></li>
-<li><a href="P.10 問1.3 (0,0)でfxは連続 &#39;25 3.26.html"
-id="toc-p.10-問1.3-00でfxは連続-25-3.26">P.10 問1.3 (0,0)でfxは連続 '25
-3.26</a></li>
+(x,y)≠(0,0)でfxは連続 ’25 5.13</a></li>
+<li><a href="P.10 問1.3 (x,y)=(0,0)でfxは連続 ’25 3.26.html"
+id="toc-p.10-問1.3-xy00でfxは連続-25-3.26">P.10 問1.3
+(x,y)=(0,0)でfxは連続 ’25 3.26</a></li>
 <li><a href="P.12 数学の定理1.2.html" id="toc-p.12-数学の定理1.2">P.12
 数学の定理1.2</a></li>
 <li><a href="P.12 数学の定理1.2.html" id="toc-p.12-数学の定理1.2-1">P.12
@@ -70,70 +70,66 @@ id="toc-p.10-問1.3-00でfxは連続-25-3.26">P.10 問1.3 (0,0)でfxは連続 '2
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.10 問1.3 (x,y)≠(0,0)でfは連続 '25 5.13.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.10 問1.3 (x,y)≠(0,0)でfxは存在する '25 5.13.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.10 問1.3 (x,y)≠(0,0)でfxは存在する '25 5.13.html" accesskey="n" rel="next">Next</a>
+<a href="P.10 問1.3 (x,y)=(0,0)でfxは連続 ’25 3.26.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.4" id="p.10-問1.3-00でfは連続-25-3.26">P.10 問1.3
-(0,0)でfは連続 '25 3.26</h2>
+<h2 data-number="1.6" id="p.10-問1.3-xy00でfxは連続-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfxは連続 ’25 5.13</h2>
 <p><span class="math display">\[
 \begin{flalign*}
 f(x,y)=
 \begin{cases}
-xy\displaystyle\frac{x^2-y^2}{x^2+y^2} &amp; (x,y)\ne(0,0) \\
-0 &amp; (x,y)=(0,0)
+\displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
+            0 &amp; (x,y)=(0,0)
 \end{cases} &amp;&amp;
 \end{flalign*}\]</span> <span
-class="math inline">\((x,y)=(0,0)でfは連続\)</span></p>
+class="math inline">\((x,y)\ne(0,0)でf_xは連続\)</span></p>
 <hr />
 <p>(証明)</p>
+<p><span class="math inline">\((x,y)\ne(0,0)\)</span>とする</p>
+<p><span class="math inline">\(\displaystyle
+f_x(x,y)=\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\quad({\large{\because\
+}}別紙)\)</span></p>
+<p><span class="math inline">\((a,b)\ne(0,0)\)</span>とする</p>
 <p><span class="math inline">\(\displaystyle\lim_{(x,y)\to
-(0,0)}f(x,y)=\lim_{(x,y)\to (0,0)}xy\frac{x^2-y^2}{x^2+y^2}\)</span></p>
-<p><span class="math inline">\(また\quad(x,y)\ne(0,0) で
-\displaystyle\frac{x^2-y^2}{x^2+y^2}
-は有界\quad\textcolor{red}{(*1)}\)</span></p>
+(a,b)}\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}=\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}\quad\)</span>
+<span class="math inline">\(({\large{\because\
+}}(a^2+b^2)^2\ne0なので和、積、商の極限、また\displaystyle\lim_{(x,y)\to
+(a,b)}x=a\ \textcolor{red}{(*1)})\)</span></p>
+<p><span class="math inline">\(よって任意の\epsilon
+に対して|(x,y)-(a,b)|&lt;\delta ならば\)</span></p>
 <p><span
-class="math inline">\(よって\displaystyle\left|\frac{x^2-y^2}{x^2+y^2}\right|
-&lt; m なる m が存在する\)</span></p>
-<p><span class="math inline">\(また\displaystyle\lim_{(x,y)\to
-(0,0)}xy=0\quad({\large{\because\ }}積の極限)\)</span></p>
+class="math inline">\(\displaystyle\left|\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}-\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}\right|&lt;\epsilon\)</span></p>
+<p><span
+class="math inline">\(また0&lt;\delta&#39;&lt;|(a,b)|とすると\)</span></p>
+<p><span
+class="math inline">\(|(x,y)-(a,b)|&lt;\delta&#39;ならば(x,y)\ne(0,0)である\)</span></p>
+<p><span class="math inline">\({\large{\therefore\
+}}f_x(x,y)=\displaystyle\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\)</span></p>
+<p><span
+class="math inline">\(よって|(x,y)-(a,b)|&lt;min(\delta,\delta&#39;)ならば\)</span></p>
+<p><span
+class="math inline">\(\displaystyle\left|f_x(x,y)-\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}\right|&lt;\epsilon\)</span></p>
 <p><span class="math inline">\(よって\displaystyle\lim_{(x,y)\to
-(0,0)}xy\frac{x^2-y^2}{x^2+y^2}=0=f(0,0)\quad\textcolor{red}{(*2)}\)</span></p>
-<p><span class="math inline">\(よって f(x,y) は (0,0)
-で連続\)</span></p>
+(a,b)}f_x(x,y)=\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}=f_x(a,b)\)</span></p>
+<p><span
+class="math inline">\(よってf_x(x,y)は(a,b)\ne(0,0)で連続である\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;\frac{x^2-y^2}{x^2+y^2}
-が有界でないと仮定する \\
-&amp;&amp;&amp;任意のm&gt;0
-に対して\left|\frac{x^2-y^2}{x^2+y^2}\right|&gt;m なる(x,y) が存在する\\
-&amp;&amp;&amp;{\large{\therefore\ }}\frac{x^2-y^2}{x^2+y^2} &lt; -m\
-or\ \frac{x^2-y^2}{x^2+y^2} &gt; m \\
-&amp;&amp;&amp;\frac{x^2-y^2}{x^2+y^2} &gt; m とすると
-0&gt;(m-1)x^2+(m+1)y^2\\
-&amp;&amp;&amp;m=1 とすると 0&gt;2y^2 となり矛盾\\
-&amp;&amp;&amp;\frac{x^2-y^2}{x^2+y^2} &lt; m とすると
-x^2(1-m)-y^2(1-m)&lt;0\\
-&amp;&amp;&amp;m=1 とすると 0&lt;0 となり矛盾\\
-&amp;&amp;&amp;よって\frac{x^2-y^2}{x^2+y^2} は有界\\
-&amp;&amp;\textcolor{red}{(*2)}&amp;f(x,y) が有界,\lim g=0 ならば \lim
-fg = 0\\
+&amp;&amp;\textcolor{red}{(*1)}&amp;\displaystyle\lim_{(x,y)\to
+(a,b)}x=a\\
 &amp;&amp;&amp;(証明)\\
-&amp;&amp;&amp;|f|&lt;m なる m が存在する\\
-&amp;&amp;&amp;任意の\epsilon&gt;0 に対して、ある\delta&gt;0 があって\\
-&amp;&amp;&amp;|(x,y)|&lt;\delta ならば |g|&lt;\epsilon\\
-&amp;&amp;&amp;{\large{\therefore\ }}|f||g|&lt;|f|\epsilon\\
-&amp;&amp;&amp;\epsilon|f|&lt;\epsilon m なので\\
-&amp;&amp;&amp;|f||g|&lt;\epsilon m\\
-&amp;&amp;&amp;{\large{\therefore\ }}|fg|&lt;\epsilon m\\
-&amp;&amp;&amp;任意の\epsilon&#39;&gt;0 に対して\epsilon&#39;=\epsilon m
-とすると\\
-&amp;&amp;&amp;|(x,y)|&lt;\delta ならば |fg|&lt;\epsilon&#39;\\
-&amp;&amp;&amp;{\large{\therefore\ }}lim fg = 0
+&amp;&amp;&amp;任意の\epsilon に対して\\
+&amp;&amp;&amp;|(x,y)-(a,b)|&lt;\epsilon ならば\\
+&amp;&amp;&amp;|x-a|&lt;|(x,y)-(a,b)|&lt;\epsilon\ ({\large{\because\
+}}三角不等式)\\
+&amp;&amp;&amp;{\large{\therefore\ }}\displaystyle\lim_{(x,y)\to
+(a,b)}x=a
 \end{flalign*}\]</span></p>
    </main>
   </div>

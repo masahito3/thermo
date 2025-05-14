@@ -1,0 +1,78 @@
+---
+header-includes: |
+include(`preamble.tex')
+  \providecommand{\FRAC}{}
+  \renewcommand{\FRAC}{\frac{x^2-y^2}{x^2+y^2}}
+  \providecommand{\FX}{}
+  \renewcommand{\FX}{\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}}
+  \providecommand{\FA}{}
+  \renewcommand{\FA}{\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}}
+  \providecommand{\FXA}{}
+  \renewcommand{\FXA}{\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}}
+---
+
+NEWPAGE
+
+## P.10 問1.3 (0,0)でfxは連続 '25 3.26
+$$
+\begin{flalign*}
+f(x,y)=
+\begin{cases}
+\disp xy\FRAC & (x,y)\ne(0,0) \\
+            0 & (x,y)=(0,0)
+\end{cases} &&
+\end{flalign*}$$
+$(x,y)=(0,0)でf_xは連続$
+
+---
+
+(証明)
+
+$(x,y)\ne(0,0)$で
+$$\begin{flalign*}
+f_x(x,y)&=\FX\quad(\cuz 別紙) &\\
+        &=y\FXA &
+\end{flalign*}$$
+
+$\disp\FXA$は有界$\ \red{(*1)}$
+かつ$\disp\limto{(x,y)}{(0,0)}y=0$
+
+よって$\disp\limto{(x,y)}{(0,0)}y\FXA=0\ \red{(*2)}$
+
+また$fは(0,0)$で連続$(\ \cuz 別紙)$
+
+よって$(0,0)でf_x$は存在して
+
+$\disp f_x(0,0)=\limto{(x,y)}{(0,0)}f_x(x,y)=0\ (\cuz 本文(1.5),(1.6)より)$
+
+よって$(0,0)でf_x は連続$
+
+$$\begin{flalign*}
+&&\red{(*1)}&\FXA は有界&\\
+&&&(証明)\\
+&&&\FXA は有界でないと仮定する\\
+&&&任意のm>0に対して\l|\FXA\r|>m\\
+&&&\so \FXA<-m または m<\FXA である\\
+&&&\FXA<-m とすると\\
+&&&x^4+4x^2y^2-y^4<-m(x^4+2x^2y^2+y^4)\\
+&&&\so (1+m)x^4+(4+2m)x^2y^2+(m-1)y^4<0\\
+&&&m=1 とすると 2x^4+6x^2y^2<0\\
+&&&これは矛盾\\
+&&&\FXA>m とすると\\
+&&&x^4+4x^2y^2-y^4>m(x^4+2x-2y^2+y^4)\\
+&&&0>(m-1)x^4+(2m-4)x^2y^2+(m-1)y^4\\
+&&&m=2とすると0>x^4+y^4\\
+&&&これは矛盾\\
+&&&よって\FXA は有界\\
+%
+&&\red{(*2)}&f(x,y)は有界,\disp\limto{(x,y)}{(0,0)}g=0ならば\lim fg=0&\\
+&&&(証明)\\
+&&&|f(x,y)|<mである\\
+&&&また任意の\eps に対して|(x,y)|<\delta ならば|g(x,y)|<\eps\\
+&&&\so |f||g|<|f|\eps,|f|\eps<m\eps\\
+&&&\so |f||g|<m\eps\\
+&&&\so |fg|<m\eps\\
+&&&任意の\eps'に対して\eps'=m\eps とすると\\
+&&&|(x,y)|<\delta ならば |fg|<\eps'\\
+&&&\so \lim fg=0
+\end{flalign*}$$
