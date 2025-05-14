@@ -7,7 +7,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.8 (1.2) HSPACE $f(x)=f(a)+f'(a)(x-a)+o(x-a)$ HSPACE '25 3.21
+## P.8 (1.2) f(x)=f(a)+f'(a)(x-a)+o(x-a) '25 3.21
 
 $f(x)がx=aで微分可能\iif$
 $x\to aでf(x)=f(a)+f'(a)(x-a)+o(x-a)なるf'(a)が存在する$
