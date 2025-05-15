@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$ style="overflow:auto;">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -27,21 +27,21 @@ $if(math)$
   $math$
 $endif$
 </head>
-<body class="is-size-6">
+<body style="height:100vh;">
 $for(include-before)$
 $include-before$
 $endfor$
-<div class="columns">
-  <div id="SIDEBAR" class="column is-3 is-clipped">
+<div class="fixed-grid has-4-cols">
+<div class="grid">
+     <div id="SIDEBAR" class="cell" style="height:100vh;overflow:auto;">
      <nav id="$idprefix$TOC" role="doc-toc" class="menu">
 $if(toc-title)$
      <h2 id="$idprefix$toc-title">$toc-title$</h2>
 $endif$
 $table-of-contents$
      </nav>
-  </div>
- 
-   <main class="column is-9">
+     </div>
+     <main class="cell is-col-span-3" style="height:100vh;overflow:auto;">
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
@@ -98,6 +98,7 @@ $endif$
 $endif$
 $body$
    </main>
+   </div>
   </div>
 $for(include-after)$
 $include-after$
