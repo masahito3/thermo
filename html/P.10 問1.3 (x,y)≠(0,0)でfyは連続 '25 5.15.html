@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>P.8 (1.2) f(x)=f(a)+f'(a)(x-a)+o(x-a) '25 3.21</title>
+  <title>P.10 問1.3 (x,y)≠(0,0)でfyは連続 '25 5.15</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -82,75 +82,56 @@ id="toc-p.10-問1.3-00でfxyは不連続-25-4.1">P.10 問1.3 (0,0)でfxyは不�
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.7 Dx+f(a)=f'(a+0) '25 3.22.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.10 問1.3 (x,y)≠(0,0)でfyは存在する '25 5.13.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.10 問1.3 (x,y)≠(0,0)でfは連続 '25 5.13.html" accesskey="n" rel="next">Next</a>
+<a href="P.10 問1.3 (0,0)でfyは連続 '25 3.26.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.2" id="p.8-1.2-fxfafax-aox-a-25-3.21">P.8 (1.2)
-f(x)=f(a)+f'(a)(x-a)+o(x-a) '25 3.21</h2>
-<p><span
-class="math inline">\(f(x)がx=aで微分可能\rightleftarrows\)</span> <span
-class="math inline">\(x\to
-aでf(x)=f(a)+f&#39;(a)(x-a)+o(x-a)なるf&#39;(a)が存在する\)</span></p>
+<h2 data-number="1.9" id="p.10-問1.3-xy00でfyは連続-25-5.15">P.10 問1.3
+(x,y)≠(0,0)でfyは連続 '25 5.15</h2>
+<p><span class="math display">\[
+\begin{flalign*}
+f(x,y)=
+\begin{cases}
+\displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
+            0 &amp; (x,y)=(0,0)
+\end{cases} &amp;&amp;
+\end{flalign*}\]</span> <span
+class="math inline">\((x,y)\ne(0,0)でf_yは連続\)</span></p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\((\leftarrow)\)</span></p>
-<p><span class="math inline">\(o(x-a)=f(x)-f(a)-f&#39;(a)(x-a)\)</span>
-<span class="math inline">\(({\large{\because\ }}\
-f=g+o(\ldots)\rightleftarrows o(\ldots)=f-gと定義する)\)</span></p>
-<p><span class="math inline">\({\large{\therefore\
-}}\displaystyle\lim_{x\to a}
-\frac{f(x)-f(a)-f&#39;(a)(x-a)}{x-a}=0\quad({\large{\because\ }}付録A\
-o(\ldots)の定義)\)</span></p>
-<p><span class="math inline">\({\large{\therefore\
-}}\displaystyle\lim_{x\to a}
-\left(\frac{f(x)-f(a)}{x-a}-f&#39;(a)\right)=0\)</span></p>
+<p><span class="math inline">\((x,y)\ne(0,0)\)</span>とする</p>
+<p><span class="math inline">\(\displaystyle
+f_y(x,y)=\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}\quad({\large{\because\
+}}別紙)\)</span></p>
+<p><span class="math inline">\((a,b)\ne(0,0)\)</span>とする</p>
+<p><span class="math inline">\(\displaystyle\lim_{(x,y)\to
+(a,b)}\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}=\frac{a^5-4b^2a^3-4ab^4}{(a^2+b^2)^2}\quad\)</span>
+<span class="math inline">\(({\large{\because\
+}}(a^2+b^2)^2\ne0なので和、積、商の極限、また\displaystyle\lim_{(x,y)\to
+(a,b)}y=b)\)</span></p>
+<p><span class="math inline">\(よって任意の\epsilon
+に対して|(x,y)-(a,b)|&lt;\delta ならば\)</span></p>
 <p><span
-class="math inline">\(よって任意の\epsilon&gt;0に対して0&lt;|x-a|&lt;\delta
-ならば\)</span></p>
-<p><span class="math inline">\(\left|
-\displaystyle\frac{f(x)-f(a)}{x-a}- f&#39;(a) \right| &lt;
-\epsilon\)</span></p>
-<p><span class="math inline">\(よって\displaystyle\lim_{x\to a}
-\frac{f(x)-f(a)}{x-a}=f&#39;(a)\quad({\large{\because\
-}}極限の定義)\)</span></p>
+class="math inline">\(\displaystyle\left|\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}-\frac{a^5-4b^2a^3-4ab^4}{(a^2+b^2)^2}\right|&lt;\epsilon\)</span></p>
 <p><span
-class="math inline">\(よってf(x)はx=aで微分可能\quad({\large{\because\
-}}微分の定義)\)</span></p>
-<p><span class="math inline">\((\rightarrow)\)</span></p>
-<p><span class="math inline">\(x=aで微分可能なので\)</span></p>
-<p><span class="math inline">\(\displaystyle\lim_{x\to
-a}\frac{f(x)-f(a)}{x-a}=f&#39;(a)が存在する\quad({\large{\because\
-}}微分の定義)\)</span></p>
-<p><span class="math inline">\({\large{\therefore\
-}}\displaystyle\lim_{x\to
-a}\frac{f(x)-f(a)}{x-a}=f&#39;(a)=\displaystyle\lim_{x\to a}
-f&#39;(a)\quad({\large{\because\ }}定数の極限)\)</span></p>
-<p><span class="math inline">\({\large{\therefore\
-}}\displaystyle\lim_{x\to a}\frac{f(x)-f(a)}{x-a}-
-\displaystyle\lim_{x\to a} f&#39;(a)=0\quad({\large{\because\
-}}実数の四則の公理)\)</span></p>
-<p><span class="math inline">\({\large{\therefore\ }}\
-\displaystyle\lim_{x\to a}\left(\frac{f(x)-f(a)}{x-a}-
-f&#39;(a)\right)=0\quad({\large{\because\ }}差の極限)\)</span></p>
-<p><span class="math inline">\({\large{\therefore\
-}}\displaystyle\lim_{x\to
-a}\left(\frac{f(x)-f(a)-f&#39;(a)(x-a)}{x-a}\right)=0\quad({\large{\because\
-}}実数の四則の公理)\)</span></p>
-<p><span class="math inline">\({\large{\therefore\
-}}o(x-a)=f(x)-f(a)-f&#39;(a)(x-a)\quad({\large{\because\ }}付録A\
-o(\ldots)の定義)\)</span></p>
-<p><span class="math inline">\({\large{\therefore\
-}}f(x)=f(a)+f&#39;(a)(x-a)+o(x-a)\)</span> <span
-class="math inline">\(({\large{\because\ }}f-g=o(\ldots)\rightleftarrows
-f=g+o(\ldots)と定義する)\)</span></p>
+class="math inline">\(また0&lt;\delta&#39;&lt;|(a,b)|とすると\)</span></p>
 <p><span
-class="math inline">\(よってf(x)=f(a)+f&#39;(a)(x-a)+o(x-a)なるf&#39;(a)が存在する\)</span></p>
+class="math inline">\(|(x,y)-(a,b)|&lt;\delta&#39;ならば(x,y)\ne(0,0)である\)</span></p>
+<p><span class="math inline">\({\large{\therefore\
+}}f_y(x,y)=\displaystyle\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}\)</span></p>
+<p><span
+class="math inline">\(よって|(x,y)-(a,b)|&lt;min(\delta,\delta&#39;)ならば\)</span></p>
+<p><span
+class="math inline">\(\displaystyle\left|f_y(x,y)-\frac{a^5-4b^2a^3-4ab^4}{(a^2+b^2)^2}\right|&lt;\epsilon\)</span></p>
+<p><span class="math inline">\(よって\displaystyle\lim_{(x,y)\to
+(a,b)}f_y(x,y)=\frac{a^5-4b^2a^3-4ab^4}{(a^2+b^2)^2}=f_y(a,b)\)</span></p>
+<p><span
+class="math inline">\(よってf_y(x,y)は(a,b)\ne(0,0)で連続である\)</span></p>
    </main>
    </div>
   </div>
