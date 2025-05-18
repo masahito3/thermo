@@ -4,11 +4,15 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>第2章</title>
+  <title>P.11 数学の定理1.1
+f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25 5.17</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
   
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
 </head>
 <body style="height:100vh;">
 <div class="fixed-grid has-4-cols">
@@ -83,7 +87,7 @@ f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6</a></li>
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="index.html" accesskey="u" rel="up">test</a>
+<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">test</a>
@@ -93,15 +97,82 @@ f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6</a></li>
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.12 問題1.4.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) '25 4.6.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
+<a href="P.11 数学の定理1.1 f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h1 data-number="2" id="第2章">第2章</h1>
+<h2 data-number="1.13"
+id="p.11-数学の定理1.1-fa1x2..xm-fa1a2..xm-x2-a2fx2aox-a-25-5.17">P.11
+数学の定理1.1 f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25
+5.17</h2>
+<p><span
+class="math inline">\(fは\vec{a}\)</span>の近傍で連続的微分可能ならば</p>
+<p><span class="math inline">\(\vec{x}\to\vec{a}\)</span> で <span
+class="math inline">\(f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})=o(|\vec{x}-\vec{a}|)\)</span>である</p>
+<hr />
+<p>(証明)</p>
+<p><span class="math inline">\(x_1\)</span>の場合と同様に <span
+class="math display">\[\begin{flalign*}
+\lim_{\vec{x}\to \vec{a}}
+\left|\frac{f(\vec{x})-f(x_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}\right|
+&amp;=0&amp;
+\end{flalign*}\]</span> である</p>
+<p><span class="math display">\[\begin{flalign*}
+g(x_1,\dots,x_m)&amp;=
+\frac{f(\vec{x})-f(x_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}&amp;
+\end{flalign*}\]</span> とする</p>
+<p><span class="math display">\[\begin{flalign*}
+\lim_{\vec{x}\to \vec{a}}|g(x_1,\dots,x_m)|&amp;=0&amp;
+\end{flalign*}\]</span> なので</p>
+<p>任意の<span class="math inline">\(\epsilon&gt;0\)</span>に対して<span
+class="math inline">\(|\vec{x}-\vec{a}|&lt;\delta\)</span>ならば <span
+class="math inline">\(|g(x_1,\dots,x_m)|&lt;\epsilon\)</span>である</p>
+<p>ここで <span class="math display">\[\begin{flalign*}
+|(a_1,x_2,\dots,x_m)-\vec{a}|&amp;\le|\vec{x}-\vec{a}|\quad({\because\
+}三角不等式)&amp;\\
+                         &amp;&lt;\delta&amp;
+\end{flalign*}\]</span> なので <span
+class="math inline">\(|g(a_1,x_2,\dots,x_m)|&lt;\epsilon\)</span>である</p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;{\therefore\ }\lim_{\vec{x}\to
+\vec{a}}|g(a_1,x_2,\dots,x_m)|=0&amp;
+\end{flalign*}\]</span></p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;{\therefore\ }\lim_{\vec{x}\to \vec{a}}
+\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
+{|(a_1,x_2,\dots,x_m)-\vec{a}|}\right|=0&amp;
+\end{flalign*}\]</span></p>
+<div style="margin-bottom:2em;">
+
+</div>
+<p>ここで <span
+class="math inline">\(|(a_1,x_2,\dots,x_m)-\vec{a}|\le|\vec{x}-\vec{a}|\quad({\because\
+}三角不等式)\)</span> なので</p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
+{|\vec{x}-\vec{a}|}\right| &amp; \\
+&amp;\quad\le
+\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
+{|(a_1,x_2,\dots,x_m)-\vec{a}|}\right| &amp;
+\end{flalign*}\]</span></p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;{\therefore\ }\lim_{\vec{x}\to \vec{a}}
+\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}\right|
+=0\quad\textcolor{red}{(*1)}&amp;
+\end{flalign*}\]</span></p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*1)}&amp;|f|\le|g|,\lim g=0 ならば \lim f=0)
+\end{flalign*}\]</span></p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;{\therefore\
+}f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})
+=o(|\vec{x}-\vec{a}|)&amp;
+\end{flalign*}\]</span></p>
    </main>
    </div>
   </div>

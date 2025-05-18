@@ -25,44 +25,69 @@ $x_1$の場合と同様に
 $$\begin{flalign*}
 \limto{\vx}{\va}
 \l|\frac{f(\vx)-f(x_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}{|\vx-\va|}\r|
-&=0\quad(1)&
-\end{flalign*}$$
-
-経路 \
-$g(x_1,\dots,x_m)=\left\{\Large
-\begin{smallmatrix}
-x_1=a_1 \\ x_2=x_2 \\ \vdots \\ x_m=x_m
-\end{smallmatrix} \right.$ \
-を考える
-
-$\disp\limto{\vx}{\va}g=\va$である
-
-$\va$に収束する経路ならば極限は経路によらないので$(1)$より
-$$\begin{flalign*}
-\limto{(x_2,\dots,x_m)}{(a_2,\dots,a_m)}
-\l|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}
-{|(a_1,x_2,\dots,x_m)-\va|}\r|
 &=0&
 \end{flalign*}$$
+である
+
+$$\begin{flalign*}
+g(x_1,\dots,x_m)&=
+\frac{f(\vx)-f(x_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}{|\vx-\va|}&
+\end{flalign*}$$
+とする
+
+
+$$\begin{flalign*}
+\limto{\vx}{\va}|g(x_1,\dots,x_m)|&=0&
+\end{flalign*}$$
+なので
+
+任意の$\eps>0$に対して$|\vx-\va|<\delta$ならば
+$|g(x_1,\dots,x_m)|<\eps$である
 
 ここで
-$|\vx-\va|\ge|(a_1,x_1,\dots,x_m)-\va|\quad(\cuz 三角不等式)$なので
+$$\begin{flalign*}
+|(a_1,x_2,\dots,x_m)-\va|&\le|\vx-\va|\quad(\cuz 三角不等式)&\\
+                         &<\delta&
+\end{flalign*}$$
+なので
+$|g(a_1,x_2,\dots,x_m)|<\eps$である
+
+$$\begin{flalign*}
+&\so \limto{\vx}{\va}|g(a_1,x_2,\dots,x_m)|=0&
+\end{flalign*}$$
+
+$$\begin{flalign*}
+&\so \limto{\vx}{\va}
+\l|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}
+{|(a_1,x_2,\dots,x_m)-\va|}\r|=0&
+\end{flalign*}$$
+
+VSPACE
+
+ここで
+$|(a_1,x_2,\dots,x_m)-\va|\le|\vx-\va|\quad(\cuz 三角不等式)$
+なので
+
 $$\begin{flalign*}
 &\l|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}
-{|\vx-\va|}\r|& \\
-&\le
-\l|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}
-{|(a_1,x_2,\dots,x_m)-\va|}\r|&
-\end{flalign*}$$
-
-よって
-$$\begin{flalign*}
-&\limto{\vx}{\va}\l|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}{|\vx-\va|}\r|=0&\\
-&\quad(\cuz |f|\le|g|,\lim g=0ならば\lim f=0)&
+{|\vx-\va|}\r| & \\
+&\quad\le
+ \l|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}
+ {|(a_1,x_2,\dots,x_m)-\va|}\r| &
 \end{flalign*}$$
 
 
-よって
 $$\begin{flalign*}
-f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)&=o(|\vx-\va|)&
+&\so \limto{\vx}{\va}
+\l|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}{|\vx-\va|}\r|
+=0\quad\red{(*1)}&
+\end{flalign*}$$
+
+$$\begin{flalign*}
+&&\red{(*1)}&|f|\le|g|,\lim g=0 ならば \lim f=0)
+\end{flalign*}$$
+
+$$\begin{flalign*}
+&\so f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)
+=o(|\vx-\va|)&
 \end{flalign*}$$
