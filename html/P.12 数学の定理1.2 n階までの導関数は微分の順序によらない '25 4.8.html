@@ -8,11 +8,15 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>ゆっくり熱力学の基礎していってね</title>
+  <title>P.12 数学の定理1.2 n階までの導関数は微分の順序によらない '25
+4.8</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
   
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
 </head>
 <body style="height:100vh;">
 <div class="fixed-grid has-4-cols">
@@ -95,27 +99,72 @@ id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
+<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
 </span>
 <span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
 </span>
 </div>
 
 <div class="sitenav columns">
 
 <span class="navlink column">
+<a href="P.11 数学の定理1.1 f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="第1章.html" accesskey="n" rel="next">Next</a>
+<a href="P.12 数学の定理1.2 fxy=fyx '25 4,8.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<header id="title-block-header">
-<h1 class="title">ゆっくり熱力学の基礎していってね</h1>
-<p class="author">仲山昌人</p>
-</header>
-
+<h2 data-number="1.15"
+id="p.12-数学の定理1.2-n階までの導関数は微分の順序によらない-25-4.8">P.12
+数学の定理1.2 n階までの導関数は微分の順序によらない '25 4.8</h2>
+<p>ある開領域で <span class="math inline">\(f(x_1,\cdots,x_m)\)</span>
+が <span class="math inline">\(C^\infty\)</span> 級ならば</p>
+<p>その領域でn階までの偏導関数は微分の順序によらない</p>
+<hr />
+<p>(証明)</p>
+<p><span class="math inline">\(f\)</span> の 2階以上 n
+階以下の偏導関数を考える</p>
+<p><span class="math inline">\(f_{x_{p_1}\dots x_{p_i}x_{p_j}\dots
+x_{p_k}}\)</span></p>
+<p><span class="math inline">\(f\)</span> は <span
+class="math inline">\(C^\infty\)</span> 級なので</p>
+<p><span class="math inline">\(f_{x_{p_1}\dots x_{p_i}x_{p_j}}\)</span>
+は存在し連続である</p>
+<p>また<span class="math inline">\(\ f_{x_{p_1}\dots
+x_{p_j}x_{p_i}}\)</span> も存在し連続である</p>
+<p>よって <span class="math inline">\(\ f_{x_{p_1}\dots
+x_{p_i}x_{p_j}}=f_{x_{p_1}\dots x_{p_j}x_{p_i}}\)</span> <span
+class="math inline">\(\quad({\because\ }f_{xy}=f_{yx}\
+別紙)\)</span></p>
+<p>よって<span class="math inline">\(\ f_{x_{p_1}\dots
+x_{p_i}x_{p_j}\dots x_{p_k}}=f_{x_{p_1}\dots x_{p_j}x_{p_i}\dots
+x_{p_k}}\quad(1)\)</span></p>
+<p><span class="math inline">\(p_1,\dots, p_k\)</span>
+を昇順に並べたリストを <span class="math inline">\(q_1,\dots,
+q_k\)</span> とする</p>
+<p>(1)より <span class="math inline">\(x_{q_1}\)</span>
+による偏微分を左隣りの変数の偏微分との入れ換えをくりかえして</p>
+<p><span class="math inline">\(f_{x_{p_1}\dots x_{p_k}}=f_{x_{q_1}\dots
+x_{p_k}}\)</span> とする</p>
+<p><span class="math inline">\(x_{q_1}\)</span> と同様に <span
+class="math inline">\(x_{q_2}\)</span> について</p>
+<p><span class="math inline">\(f_{x_{p_1}\dots
+x_{p_k}}=f_{x_{q_1}x_{q_2}\dots x_{p_k}}\)</span> とする</p>
+<p>これを繰り返して</p>
+<p><span class="math inline">\(f_{x_{p_1}\dots x_{p_k}}=f_{x_{q_1}\dots
+x_{q_k}}\)</span> となる</p>
+<p><span class="math inline">\(r_1,\dots, r_2\)</span> は <span
+class="math inline">\(p_1,\dots,p_2\)</span>
+を任意に並べ替えたリストとする。上と同様に</p>
+<p><span class="math inline">\(f_{x_{r_1}\dots x_{r_k}}=f_{x_{q_1}\dots
+x_{q_k}}\)</span> となる</p>
+<p>よって<span class="math inline">\(\ f_{x_{r_1}\dots
+x_{r_k}}=f_{x_{p_1}\dots x_{p_k}}\)</span> となる</p>
+<p>よって n 階までの偏導関数は微分の順序によらない</p>
    </main>
    </div>
   </div>

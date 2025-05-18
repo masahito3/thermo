@@ -1,7 +1,6 @@
-include(`header.m4i')
 ---
 header-includes: |
-include([[preamble.tex]])
+include(`preamble.tex')
   \providecommand{\vx}{}
   \renewcommand{\vx}{\V{x}}
   \providecommand{\va}{}
@@ -83,6 +82,7 @@ $|\vx-\va|<\eps$ならば
 $\disp\l|\frac{f(\vx)-f(a_1,\dots,x_m)-(x_1-a_1)\fxo(\va)}{x_1-a_1}\r|<\delta$
 
 また$|\vx-\va|\ge|x_1-a_1|\ (\cuz 三角不等式)$なので
+
 $\disp\l|\frac{f(\vx)-f(a_1,\dots,x_m)-(x_1-a_1)\fxo(\va)}{|\vx-\va|}\r|
 \le \l|\frac{f(\vx)-f(a_1,\dots,x_m)-(x_1-a_1)\fxo(\va)}{x_1-a_1}\r|
 <\delta$

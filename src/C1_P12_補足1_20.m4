@@ -1,14 +1,14 @@
-include(`header.m4i')
 ---
 header-includes: |
-include([[preamble.tex]])
+include(`preamble.tex')
   \providecommand{\fx}{}
   \renewcommand{\fx}{\frac{1}{x^2}}
 ---
 
 NEWPAGE
 
-## P.12 補足
+## P.12 補足 x=0でf(x)は連続 '25 4.23
+
 $$\begin{flalign*}
 f(x)=
 \begin{cases}
@@ -21,8 +21,8 @@ $x=0でf(x)は連続$
 ---
 
 (証明)
-$$
-\begin{flalign*}
+
+$$\begin{flalign*}
 \limto{x}{0}e^\fx&=\infty \quad \red{(*1)}& \\
 \so \limto{x}{0}e^{-\fx}&=0 \quad \red{(*4)}& \\
 \so \limto{x}{0}f(x)&=\limto{x}{0}e^{-\fx} \quad (\cuz x\ne 0)& \\
@@ -30,7 +30,7 @@ $$
                      &=f(0)&
 \end{flalign*}$$
 $よって x=0 で f(x) は連続$
-SMALL
+
 $$\begin{flalign*}
 &&\red{(*1)}&
 e^\fx=1+\l(\fx\r)+\frac{\l(\fx\r)^2}{2}+\cdots\quad(\cuz e^x の定義)\\
@@ -57,4 +57,3 @@ e^\fx=1+\l(\fx\r)+\frac{\l(\fx\r)^2}{2}+\cdots\quad(\cuz e^x の定義)\\
 &&&\so \frac{1}{f(x)}<\frac{1}{\epsilon}\ (\cuz 0<a<b ならば \frac{1}{a}>\frac{1}{b})\\
 &&& 任意の \epsilon' に対して \epsilon=\frac{1}{\epsilon'} とする \\
 \end{flalign*}$$
-END_SMALL

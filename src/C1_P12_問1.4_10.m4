@@ -1,14 +1,11 @@
-include(`header.m4i')
 ---
 header-includes: |
-include([[preamble.tex]])
-  \providecommand{\D}{}
-  \renewcommand{\D}{\Delta}
+include(`preamble.tex')
 ---
 
 NEWPAGE
 
-## P.12 問題1.4
+## P.12 問題1.4 '25 4.16
 $$\begin{flalign*}
 f(x,y)&=x^2e^y,\quad (x,y)\in \mathbb{R}^2&\\
 \end{flalign*}$$

@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.10 問1.3 (x,y)≠(0,0)でfyは存在する '25 5.13</title>
+  <title>P.12 補足 x≠0でf(x)は連続 '25 4.23</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -108,48 +108,118 @@ id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.10 問1.3 (0,0)でfxは連続 '25 3.26.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.12 数学の定理1.2 fxy=fyx '25 4,8.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.10 問1.3 (x,y)≠(0,0)でfyは連続 '25 5.15.html" accesskey="n" rel="next">Next</a>
+<a href="P.12 補足 x=0でf(x)は連続 '25 4.23.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.8" id="p.10-問1.3-xy00でfyは存在する-25-5.13">P.10
-問1.3 (x,y)≠(0,0)でfyは存在する '25 5.13</h2>
-<p><span class="math display">\[
-\begin{flalign*}
-f(x,y)=
+<h2 data-number="1.17" id="p.12-補足-x0でfxは連続-25-4.23">P.12 補足
+x≠0でf(x)は連続 '25 4.23</h2>
+<p><span class="math display">\[\begin{flalign*}
+f(x)=
 \begin{cases}
-\displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
-0 &amp; (x,y)=(0,0)
+e^{-\frac{1}{x^2}} &amp; x\ne 0 \\
+0        &amp; x=0
 \end{cases} &amp;&amp;
-\end{flalign*}\]</span> <span
-class="math inline">\((x,y)\ne(0,0)でf_y\)</span>は存在する</p>
+\end{flalign*}\]</span> <span class="math inline">\(x\ne 0 で f(x)
+は連続\)</span></p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\((x,y)\ne(0,0)とする\)</span></p>
-<p><span class="math inline">\(このとき \displaystyle
-f(x,y)=xy\frac{x^2-y^2}{x^2+y^2}\)</span></p>
-<p><span class="math inline">\(x,yは独立とする\)</span> <span
-class="math display">\[\begin{flalign*}
-f_y&amp;=\underset{yで微分}{f&#39;}\quad\textcolor{red}{(*1)}&amp;\\
-&amp;=(xy)&#39;\frac{x^2-y^2}{x^2+y^2}+xy\left(\frac{x^2-y^2}{x^2+y^2}\right)&#39;\quad({\because\
-}積の微分)&amp;\\
-&amp;=y\frac{x^2-y^2}{x^2+y^2}+xy\frac{(x^2-y^2)&#39;(x^2+y^2)-(x^2-y^2)(x^2+y^2)&#39;}{(x^2+y^2)^2}\quad({\because\
-}x^2+y^2\ne0なので商の微分より)&amp;\\
-&amp;=\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}&amp;
-\end{flalign*}\]</span></p>
-<p><span
-class="math inline">\(よって(x,y)\ne(0,0)でf_yは存在する\quad({\because\
-}公理:f_yは存在\rightleftarrows f_y\in R)\)</span></p>
+<p><span class="math inline">\(x
+は連続\quad\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math inline">\(よって\ x\ne0\ ならば\ \frac{1}{x}
+は連続\quad\textcolor{red}{(*2)}\)</span></p>
+<p><span class="math inline">\(よって\ x\ne0\ ならば\
+\frac{1}{x^2}は連続\quad\textcolor{red}{(*3)}\)</span></p>
+<p><span class="math inline">\(よって\ x\ne0\ ならば\
+-\frac{1}{x^2}は連続\quad\textcolor{red}{(*3)}\)</span></p>
+<p><span class="math inline">\(よって\ x\ne0\ ならば\ e^{-\frac{1}{x^2}}
+は連続\quad\textcolor{red}{(*4)}\)</span></p>
+<p><span class="math inline">\(0&lt;|x-a|&lt;|a|\ ならば\
+x\ne0\)</span></p>
+<p><span class="math inline">\(({\because\ }\ x=0\ とすると\ |a|&lt;|a|\
+となり矛盾)\)</span></p>
+<p><span class="math inline">\(e^{-\frac{1}{x^2}}\ は\ x\ne0\
+で連続なので\)</span></p>
+<p><span class="math inline">\(任意の\ \epsilon\ に対して\)</span></p>
+<p><span class="math inline">\(0&lt;|x-a|&lt;\delta\ ならば\
+\left|e^{-\frac{1}{x^2}}-e^{-\frac{1}{a^2}}\right|&lt;\epsilon\)</span></p>
+<p><span class="math inline">\(よって\ 0&lt;|x-a|&lt;min(|a|,\delta)\
+ならば\)</span></p>
+<p><span class="math inline">\(x\ne0\ なので\
+f(x)=e^{-\frac{1}{x^2}}\)</span></p>
+<p><span class="math inline">\(また\
+\left|e^{-\frac{1}{x^2}}-e^{-\frac{1}{a^2}}\right|&lt;\epsilon\)</span></p>
+<p><span class="math inline">\({\therefore\ }\
+|f(x)-f(a)|&lt;\epsilon\)</span></p>
+<p><span class="math inline">\(よって\ \lim_{x\to
+a}f(x)=f(a)\)</span></p>
+<p><span class="math inline">\(よって\ x\ne0\ ならば\ f(x)\
+は連続\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;f&#39;,f_yの定義より\\
-&amp;&amp;&amp;\underset{yで微分}{f&#39;(x,y)}=\lim_{\Delta y\to
-0}\frac{f(x,y+\Delta y)-f(x,y)}{\Delta y}=f_y(x,y)\\
-&amp;&amp;&amp;よってf&#39;が存在するならばf&#39;=f_y
+&amp;&amp;\textcolor{red}{(*1)}&amp;0&lt;|x-a|&lt;\epsilon\ ならば\\
+&amp;&amp;&amp;|x-a|&lt;\epsilon\\
+&amp;&amp;&amp;{\therefore\ }\ \lim_{x\to a}x=a\\
+&amp;&amp;\textcolor{red}{(*2)}&amp;\lim_{x\to a}f(x)=F,F\ne0\ ならば\
+\lim_{x\to a}\frac{1}{f}=\frac{1}{F}\\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;任意の\ \epsilon\ に対し\ 0&lt;|x-a|&lt;\delta\ ならば\
+|f(x)-F|&lt;\epsilon\cdots(1)\\
+&amp;&amp;&amp;\epsilon=\frac{|F|}{2}\ とすると\\
+&amp;&amp;&amp;0&lt;|x-a|&lt;\delta&#39;\ ならば\
+|f(x)-F|&lt;\frac{|F|}{2}\\
+&amp;&amp;&amp;{\therefore\ }\ |F|-|f(x)|&lt;\frac{|F|}{2}\ ({\because\
+}\ 三角不等式\ |F|-|f(x)|\le|F-f(x)|)\\
+&amp;&amp;&amp;{\therefore\ }\ |f(x)|&gt;\frac{|F|}{2}\\
+&amp;&amp;&amp;{\therefore\ }\
+\frac{1}{|f(x)|}&lt;\frac{2}{|F|}\cdots(2)\\
+&amp;&amp;&amp;({\because\ }F\ne0\ なので|F|&gt;0, 0&lt;a&lt;b\ ならば\
+\frac{1}{a}&gt;\frac{1}{b})\\
+&amp;&amp;&amp;任意の\ \epsilon&#39;\ に対して\
+\epsilon=\frac{1}{2}\epsilon&#39;F^2\ とする\\
+&amp;&amp;&amp;0&lt;|x-a|&lt;min(\delta,\delta&#39;)\ ならば\\
+&amp;&amp;&amp;\left|\frac{1}{f(x)}-\frac{1}{F}\right|=\frac{|f(x)-F|}{|f(x)||F|}&lt;\frac{2\epsilon}{F^2}=\epsilon&#39;\
+({\because\ }\ (1),(2))\\
+&amp;&amp;&amp;よって\ \lim_{x\to a}\frac{1}{f(x)}=\frac{1}{F}\\
+&amp;&amp;\textcolor{red}{(*3)}&amp;\lim_{x\to a}f(x)=F,\lim_{x\to
+a}g(x)=G\ ならば\ \lim_{x\to a}fg=FG\\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;任意の\ \epsilon\ に対して\ 0&lt;|x-a|&lt;\delta\ ならば\
+|f-F|&lt;\epsilon,|g-G|&lt;\epsilon\cdots(1)\\
+&amp;&amp;&amp;\epsilon=|F|\ とすると\\
+&amp;&amp;&amp;0&lt;|x-a|&lt;\delta&#39;\ ならば\ |f-F|&lt;|F|\\
+&amp;&amp;&amp;{\therefore\ }\ |f|-|F|&lt;|F|\ ({\because\ }\
+三角不等式\ |a|-|b|\le|a-b|)\\
+&amp;&amp;&amp;{\therefore\ }\ |f|&lt;2|F|\cdots(2)\\
+&amp;&amp;&amp;任意の\ \epsilon&#39;\ に対して\
+\epsilon=\frac{\epsilon&#39;}{|G|+2|F|}\ とする\\
+&amp;&amp;&amp;0&lt;|x-a|&lt;min(\delta,\delta&#39;)\ ならば\\
+&amp;&amp;&amp;|fg-FG|=|fg-fG+fG-FG|\\
+&amp;&amp;&amp;\quad\quad=|f(g-G)+G(f-F)|\\
+&amp;&amp;&amp;\quad\quad\le|f(g-G)|+|G(f-F)|\ ({\because\ }\
+三角不等式\ |a+b|&lt;|a|+|b|)\\
+&amp;&amp;&amp;\quad\quad=|f||g-G|+|G||f-F|\\
+&amp;&amp;&amp;\quad\quad&lt;2|F|\epsilon+\epsilon|G|\ ({\because\ }\
+(1)(2))\\
+&amp;&amp;&amp;\quad\quad=\epsilon(2|F|+|G|)=\epsilon&#39;\\
+&amp;&amp;&amp;よって\ \lim_{x\to a}fg=FG\\
+&amp;&amp;\textcolor{red}{(*4)}&amp;a\ で\ f(x)\ は連続,f(a)\ で\ g(x)\
+は連続ならば\ a\ で\ g(f(x))\ は連続\\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;\lim_{x\to f(a)}g(x)=g(f(a))\ なので\\
+&amp;&amp;&amp;任意の\ \epsilon\ に対して\ 0&lt;|x-f(x)|&lt;\delta\
+ならば\ |g(x)-g(f(a))|&lt;\epsilon\\
+&amp;&amp;&amp;\lim_{x\to a}f(x)=f(a)\ なので\\
+&amp;&amp;&amp;0&lt;|x-a|&lt;\delta&#39;\ ならば\
+|f(x)-f(a)|&lt;\delta\\
+&amp;&amp;&amp;よって\ 0&lt;|x-a|&lt;\delta&#39;\ ならば\
+|g(f(x))-g(f(a))|&lt;\epsilon\\
+&amp;&amp;&amp;よって\ \lim_{x\to a}g(f(x))=g(f(a))\\
+&amp;&amp;&amp;よって\ a\ で\ g(f(x))\ は連続
 \end{flalign*}\]</span></p>
    </main>
    </div>

@@ -1,14 +1,13 @@
-include(`header.m4i')
 ---
 header-includes: |
-include([[preamble.tex]])
+include(`preamble.tex')
   \providecommand{\fx}{}
   \renewcommand{\fx}{\frac{1}{x^2}}
 ---
 
 NEWPAGE
 
-## P.12 補足
+## P.12 補足 x≠0でf(x)は連続 '25 4.23
 $$\begin{flalign*}
 f(x)=
 \begin{cases}
@@ -54,7 +53,6 @@ $よって\ \limto{x}{a}f(x)=f(a)$
 
 $よって\ x\ne0\ ならば\ f(x)\ は連続$
 
-SMALL
 $$\begin{flalign*}
 &&\red{(*1)}&0<|x-a|<\epsilon\ ならば\\
 &&&|x-a|<\epsilon\\
@@ -101,4 +99,3 @@ $$\begin{flalign*}
 &&&よって\ \limto{x}{a}g(f(x))=g(f(a))\\
 &&&よって\ a\ で\ g(f(x))\ は連続
 \end{flalign*}$$
-END_SMALL

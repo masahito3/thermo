@@ -1,14 +1,14 @@
-include(`header.m4i')
 ---
 header-includes: |
-include([[preamble.tex]])
+include(`preamble.tex')
   \providecommand{\fx}{}
   \renewcommand{\fx}{\frac{1}{x^2}}
 ---
 
 NEWPAGE
 
-## P.12 補足
+## P.12 補足 x≠0でC∞級 '25 4.25
+
 $$\begin{flalign*}
 f(x)=
 \begin{cases}
