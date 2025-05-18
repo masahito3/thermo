@@ -9,16 +9,16 @@ PDFS := $(patsubst %.svg,%.pdf,$(SVGS))
 
 pdf: SCRIPT:=latex.sed
 pdf: $(MARKDOWNS) images
-	pandoc $(MARKDOWNS) -d pdf.yml -o thermo.pdf
+	pandoc $(MARKDOWNS) -d defaults.yml -d pdf.yml -o thermo.pdf
 
 latex: SCRIPT:=latex.sed
 latex: $(MARKDOWNS)
-	pandoc $(MARKDOWNS) -d latex.yml -o thermo.tex
+	pandoc $(MARKDOWNS) -d defaults.yml -d latex.yml -o thermo.tex
 
 html: SCRIPT:=html.sed
 html: $(MARKDOWNS)
 	rm -rf ./html_temp
-	pandoc $(MARKDOWNS) -d chunkedhtml.yml -o html_temp
+	pandoc $(MARKDOWNS) -d defaults.yml -d chunkedhtml.yml -o html_temp
 	sed -i -E '/<div.*SIDEBAR/,/<\/div/s/(<ul)/\1 class="menu-list" /g' html_temp/*.html
 	rsync -a html_temp/ html/
 	rm -rf ./html_temp
