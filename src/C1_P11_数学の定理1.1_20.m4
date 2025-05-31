@@ -22,6 +22,7 @@ $\vx\to\va$ で $f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)=o(
 (証明)
 
 $x_1$の場合と同様に
+
 $$\begin{flalign*}
 \limto{\vx}{\va}
 \l|\frac{f(\vx)-f(x_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)}{|\vx-\va|}\r|
@@ -45,6 +46,7 @@ $$\begin{flalign*}
 $|g(x_1,\dots,x_m)|<\eps$である
 
 ここで
+
 $$\begin{flalign*}
 |(a_1,x_2,\dots,x_m)-\va|&\le|\vx-\va|\quad(\cuz 三角不等式)&\\
                          &<\delta&

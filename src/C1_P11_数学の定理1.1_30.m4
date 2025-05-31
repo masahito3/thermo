@@ -39,6 +39,7 @@ $$\begin{flalign*}
 \end{flalign*}$$
 
 足し合わせて
+
 $$\begin{flalign*}
 \limto{\vx}{\va}
 &\l|\frac{f(\vx)-f(\va)-\fxo(\va)(x_1-a_1)-\fxt(\va)(x_2-a_2)
@@ -53,6 +54,7 @@ $$\begin{flalign*}
 \end{flalign*}$$
 
 ここで
+
 $$\begin{flalign*}
 &\V{\nabla}f(\va)=(\fxo(\va),\dots,\fxm(\va))&\\
 &(\vx-\va)=(x_1-a_1,\dots,x_m-a_m)&\\
@@ -60,6 +62,7 @@ $$\begin{flalign*}
 \end{flalign*}$$
 
 なので
+
 $$\begin{flalign*}
 \limto{\vx}{\va}
 &\l|\frac{f(\vx)-f(\va)-\V{\nabla}f(\va)\cdot(\vx-\va)}

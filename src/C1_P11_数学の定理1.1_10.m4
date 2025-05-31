@@ -88,6 +88,7 @@ $\disp\l|\frac{f(\vx)-f(a_1,\dots,x_m)-(x_1-a_1)\fxo(\va)}{|\vx-\va|}\r|
 <\delta$
 
 よって
+
 $$\begin{flalign*}
 \limto{\vx}{\va}
 \l|\frac{f(\vx)-f(a_1,\dots,x_m)-(x_1-a_1)\fxo(\va)}{|\vx-\va|}\r|
@@ -95,6 +96,7 @@ $$\begin{flalign*}
 \end{flalign*}$$
 
 よって$\vx\to\va$で
+
 $$\begin{flalign*}
 f(\vx)-f(a_1,\dots,x_m)-(x_1-a_1)\fxo(\va)&=o(|\vx-\va|)&
 \end{flalign*}$$

@@ -34,12 +34,13 @@ $\D(x,y)=F(x)-F(a)$
 よって$F(x)$は $x の区間 (a,x)$ で$x$ で微分可能$\quad\red{(*2)}$
 
 よって平均値の定理より
+
 $$\begin{flalign*}
 \D (x,y)&=F(x)-F(a)&\\
         &=F'(a+(x-a)\theta_1)(x-a),\ 0<\theta_1<1 &\\
         &=(f_x(a+(x-a)\theta_1,y)-f_x(a+(x-a)\theta_1,b))(x-a)\quad\red{(*3)}
 \end{flalign*}$$
-%
+
 $$\begin{flalign*}
 &&\red{(*1)}&f,g が連続ならば f+g も連続\\
 %
@@ -54,32 +55,37 @@ $$\begin{flalign*}
 よって
 $f_x(a+(x-a)\theta_1,y)$は $yの区間[b,y]$で連続かつ$区間(b,y)$で$y$で微分可能
 
-$よって平均値の定理より$
+よって平均値の定理より
+
 $$\begin{flalign*}
 &f_x(a+(x-a)\theta_1,y)-f_x(a+(x-a)\theta_1,b) &\\
 &\quad\quad=f_{xy}(a+(x-a)\theta_1,b+(y-b)\theta_2)(x-b),\ 0<\theta_2<1\quad\red{(*4)}&
 \end{flalign*}$$
-%
+
 $$\begin{flalign*}
 &&\red{(*4)}&x,yは独立なので\\
 &&&f_{xy}=\underset{yで微分}{f'_x}
 \end{flalign*}$$
 
 よって
+
 $$\begin{flalign*}
 \D(x,y)&=f_{xy}(a+(x-a)\theta_1,b+(y-b)\theta_2)(x-a)(x-b)&
 \end{flalign*}$$
-%
+
 $$\begin{flalign*}
 x'&=a+(x-a)\theta_1&\\
 y'&=b+(y-b)\theta_2&
 \end{flalign*}$$
+
 とすると
+
 $$\begin{flalign*}
 \frac{\D(x,y)}{(x-a)(x-b)}&=f_{xy}(x',y')&
 \end{flalign*}$$
 
-$f_{xy} は連続なので$
+$f_{xy}$ は連続なので
+
 $$\begin{flalign*}
 \limto{(x,y)}{(a,b)}f_{xy}(x,y)&=f_{xy}(a,b)&
 \end{flalign*}$$
@@ -89,6 +95,7 @@ $$\begin{flalign*}
 $|(x,y)-(a,b)|<\delta$ ならば $|f_{xy}(x,y)-f_{xy}(a,b)|<\eps$
 
 また
+
 $$\begin{flalign*}
 |(x',y')-(a,b)|&=\sqrt{(a+(x-a)\theta_1-a)^2+(b+(y-b)\theta_2-b)^2}&\\
 &=\sqrt{(x-a)^2\theta_1^2+(y-b)^2\theta_2^2}&\\
@@ -128,6 +135,7 @@ $(\cuz x,yが独立なのでf_y=\underset{yで微分}{f'})$
 よって$G(y)$ は$区間(b,y)$で$y$で微分可能 $(\cuz (f+g)'=f'+g')$
 
 よって平均値の定理より
+
 $$\begin{flalign*}
 \D(x,y)&=G'(b+(y-b)\theta_3)(y-b),\ 0<\theta_3<1&\\
        &=(f_y(x,b+(y-b)\theta_3)-f_y(a,b+(y-b)\theta_3))(y-b)\quad(\cuz f_y=\underset{yで微分}{f'})&
@@ -141,6 +149,7 @@ $(\cuz x,yが独立ならばf_{yx}=\underset{xで微分}{f_y'})$
 よって平均値の定理より
 
 $\D(x,y)=f_{yx}(a+(x-a)\theta_4,b+(y-b)\theta_3)(y-b)(x-a),\ 0<\theta_4<1$
+
 $$\begin{flalign*}
 x'&=a+(x-a)\theta_4&\\
 y'&=b+(y-b)\theta_3&
@@ -160,6 +169,7 @@ $\disp\limto{(x,y)}{(a,b)}f_{yx}(x,y)=f_{yx}(a,b)$
 $|(x,y)-(a,b)|<\delta$ ならば $|f_{yx}(x,y)-f_{yx}(a,b)|<\eps$
 
 また
+
 $$\begin{flalign*}
 |(x',y')-(a,b)|&=\sqrt{(a+(x-a)\theta_4-a)^2+(b+(y-b)\theta_3-b)^2}&\\
                &=\sqrt{(x-a)^2\theta_4^2+(y-b)^2\theta_3^2}&\\

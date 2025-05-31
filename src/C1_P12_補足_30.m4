@@ -22,7 +22,8 @@ $x\ne 0 で C^\infty 級$
 
 (証明)
 
-$x\ne 0とする$
+$x\ne 0$とする
+
 $$\begin{flalign*}
 f^{(1)}&=\l(e^{-\fx}\r)' &\\
    &= \l(-\fx\r)'e^{-\fx} \quad \red{(*1),(*2)}& \\
@@ -32,7 +33,8 @@ f^{(1)}&=\l(e^{-\fx}\r)' &\\
 \end{flalign*}$$
 である。
 
-$n>0 で$
+$n>0$ で
+
 $$\begin{flalign*}
 f^{(n)}&=\l(\sumto{\nu=1}{m}k_\nu x^{-\nu}\r)e^{-\fx}&
 \end{flalign*}$$と仮定する
@@ -46,28 +48,41 @@ $$\begin{flalign*}
 f^{(n+1)}&=\l(\sumto{\nu=1}{m}k_\nu x^{-\nu}\r)'e^{-\fx}+\l(\sumto{\nu=1}{m}k_\nu x^{-\nu}\r)\l(e^{-\fx}\r)'\quad(\cuz 積の微分)&\\
   &=\sumto{\nu=1}{m}(-\nu k_{\nu})x^{-\nu-1}e^{-\fx}+\sumto{\nu=1}{m}k_\nu x^{-\nu}2x^{-3}e^{-\fx}\quad(\cuz(1),(2))&\\
   &=\l(\sumto{\nu=1}{m}-\nu k_\nu x^{-\nu-1}+\sumto{\nu=1}{m}2k_{\nu}x^{-\nu-3}\r)e^{-\fx}&\\
-  &=\sumto{\mu=1}{m+4}(p_\mu+q_\mu)x^{-\mu}e^{-\fx}&
+  &=\l(\sumto{i=2}{m+1}-(i-1)k_{i-1}x^{-i}+\sumto{i=4}{m+3}2k_{i-3}x^{-i}\r)e^{-\fx}&\\
+  &=\l((-1)k_1x^{-2}+(-2)k_2x^{-3}
+       +\sumto{i=4}{m+1}-(i-1)k_{i-1}x^{-i}\r.&\\
+  &\qquad\l.+\sumto{i=4}{m+1}2k_{i-3}x^{-i}
+       +2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\r)e^{-\fx}&\\
+  &=\l((-1)k_1x^{-2}+(-2)k_2x^{-3}
+      +\sumto{i=4}{m+1}(-(i-1)k_{i-1}+2k_{i-3})x^{-i}\r.&\\
+      &\qquad\l.+2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\r)e^{-\fx}&
 \end{flalign*}$$
 
-ただし
+ここで
+
 $$\begin{flalign*}
-p_\mu&=
+p_i&=
 \begin{cases}
--(\mu-1)k_{\mu-1} & \mu=2,\cdots,m+1 \\
-0        & other
+0             &(i=1)\\
+-(i-1)k_{i-1} &(i=2,3) \\
+-(i-1)k_{i-1}+2k_{i-3} &(i=4,\dots,m+1)\\
+2k_{i-3}      &(i=m+2,m+3)
 \end{cases}&\\
-q_\mu&=
-\begin{cases}
-2k_{\mu-3} & \mu=4,\cdots,m+3 \\
-0        & other
-\end{cases}&
+s&=m+3&
+\end{flalign*}$$
+とする
+
+$$\begin{flalign*}
+f^{(n+1)}&=\l(\sumto{i=1}{s}p_ix^{-i}\r)e^{-1/x^2}&
 \end{flalign*}$$
 
-よって、$n>0$において
+よって、$x\ne0,n>0$において
+
 $$\begin{flalign*}
 f^{(n)}&=\l(\sumto{\nu=1}{m}k_\nu x^{-\nu}\r)e^{-\fx}&
 \end{flalign*}$$である。
-$x\ne 0$で$f^{(n)},n\in \mathbb{N}$は存在するので$f$は$C^\infty$級である
+
+すべての$n$で$f^{(n)}$は存在するので$f$は$C^\infty$級である
 
 $$\begin{flalign*}
 &&\red{(*1)}& 合成関数の微分 \\
