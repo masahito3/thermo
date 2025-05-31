@@ -12,6 +12,7 @@ include(`preamble.tex')
 NEWPAGE
 
 ## P.10 問1.3 (0,0)でfxyは不連続 '25 4.1
+
 $$
 \begin{flalign*}
 f(x,y)=
@@ -20,6 +21,7 @@ f(x,y)=
             0 & (x,y)=(0,0)
 \end{cases} &&
 \end{flalign*}$$
+
 $(x,y)=(0,0)でf_{xy}は不連続$
 
 ---
@@ -33,6 +35,7 @@ f_x&=\frac{\NUME}{(\DENO)^2}\quad(\cuz 別紙) &
 \end{flalign*}$$
 
 よって
+
 $$\begin{flalign*}
 f_{xy}&=\frac{(\NUME)'(\DENO)^2-(\NUME)((\DENO)^2)'}{(\DENO)^4}\ \red{(*1)} &\\
       &=\frac{x^8+10x^6y^2-10x^2y^6-y^8}{(\DENO)^4}&
