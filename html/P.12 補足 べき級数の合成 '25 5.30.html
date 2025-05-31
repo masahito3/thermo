@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.10 問1.3 (0,0)でfxyは不連続 '25 4.1</title>
+  <title>P.12 補足 べき級数の合成 '25 5.30</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -119,57 +119,71 @@ id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.10 問1.3 (0,0)でfyは連続 '25 3.26.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.12 補足 べき級数のべき '25 5.28.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) '25 4.6.html" accesskey="n" rel="next">Next</a>
+<a href="P.12 問題1.4 '25 4.16.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.11" id="p.10-問1.3-00でfxyは不連続-25-4.1">P.10 問1.3
-(0,0)でfxyは不連続 '25 4.1</h2>
-<p><span class="math display">\[
-\begin{flalign*}
-f(x,y)=
-\begin{cases}
-\displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
-            0 &amp; (x,y)=(0,0)
-\end{cases} &amp;&amp;
-\end{flalign*}\]</span> <span
-class="math inline">\((x,y)=(0,0)でf_{xy}は不連続\)</span></p>
+<h2 data-number="1.23" id="p.12-補足-べき級数の合成-25-5.30">P.12 補足
+べき級数の合成 '25 5.30</h2>
+<p><span class="math inline">\(|x-b|&lt;R_f\)</span> ならば <span
+class="math inline">\(f(x)=\displaystyle\sum_{m=0}^{\infty}b_m(x-b)^m\)</span>
+, <span class="math inline">\(|x-a|&lt;R_g\)</span> ならば <span
+class="math inline">\(g(x)=\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\)</span>
+とする。 <span class="math inline">\(R_f, R_g\)</span> は収束半径
+とする</p>
+<p><span class="math inline">\(|x-a|&lt;R_g\)</span>, <span
+class="math inline">\(\displaystyle\sum_{n=0}^{\infty}|c_n(x-a)^n|&lt;R_f\)</span>,
+<span class="math inline">\(c_n=\Big\{ \begin{array}{ll} a_0-b &amp;
+(n=0) \\[-1em] a_n &amp; (n&gt;0) \\[0.5em] \end{array}\)</span>
+ならば</p>
+<p><span class="math inline">\(f(g(x))\)</span> は <span
+class="math inline">\(a\)</span> を中心としたべき級数であらわされる</p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\((x,y)\ne(0,0)\)</span>とする</p>
+<p><span class="math inline">\(|x-a|&lt;R_g\)</span> とする <span
+class="math inline">\(\displaystyle
+g(x)=\sum_{n=0}^{\infty}a_n(x-a)^n\)</span> である</p>
+<p><span class="math inline">\(b_n=\Big\{ \begin{array}{ll} b &amp;
+(n=0) \\[-1em] 0 &amp; (n&gt;0) \\[0.5em] \end{array}\)</span> とする
+<span class="math inline">\(\displaystyle
+b=\sum_{n=0}^{\infty}b_n(x-a)^n\)</span> である</p>
+<p>任意の<span class="math inline">\(x\)</span>について<span
+class="math inline">\(\sum_{n=0}^{\infty}b_n(x-a)^n=b &lt;
+\infty\)</span> なので</p>
+<p>この級数の収束半径は<span class="math inline">\(\infty\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
-f_x&amp;=\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\quad({\because\ }別紙)
+g(x)-b&amp;=\sum_{n=0}^{\infty}a_n(x-a)^n-\sum_{n=0}^{\infty}b_n(x-a)^n\quad(1)&amp;\\
+&amp;=\sum_{n=0}^{\infty}(a_n-b_n)(x-a)^n\quad({\because\
+}級数の差)&amp;\\
+&amp;=\sum_{n=0}^{\infty}c_n(x-a)^n &amp;
+\end{flalign*}\]</span></p>
+<p>ただし <span class="math inline">\(c_n=a_n-b_n\)</span> とする</p>
+<p><span class="math inline">\(|x-a|&lt;R_g\)</span> ならば <span
+class="math inline">\((1)\)</span> は収束する</p>
+<p><span class="math inline">\(|x-a|&gt;R_g\)</span> ならば <span
+class="math inline">\((1)\)</span> は収束しない</p>
+<p>よってこの級数の収束半径は <span
+class="math inline">\(R_g\)</span></p>
+<p><span
+class="math inline">\(\displaystyle\sum_{n=0}^{\infty}|c_n(x-a)^n|&lt;R_f\)</span>
+とする</p>
+<p><span
+class="math inline">\(\displaystyle\left|\sum_{n=0}^{\infty}c_n(x-a)^n
+\right|&lt;R_f\)</span> <span class="math inline">\(({\because\
+}|a|+|b|\ge|a+b|)\)</span></p>
+<p><span class="math inline">\({\therefore\
+}|g(x)-b|&lt;R_f\)</span></p>
+<p>よって <span class="math display">\[\begin{flalign*}
+f(g(x))&amp;=\sum_{m=0}^{\infty}b_m(g(x)-b)^m\quad({\because\ }g(x) は f
+の収束半径内にあるので)&amp;\\
+&amp;=\sum_{m=0}^{\infty}b_m\left(\sum_{n=0}^{\infty}c_n(x-a)^n\right)^m
 &amp;
 \end{flalign*}\]</span></p>
-<p>よって <span class="math display">\[\begin{flalign*}
-f_{xy}&amp;=\frac{(yx^4+4x^2y^3-y^5)&#39;(x^2+y^2)^2-(yx^4+4x^2y^3-y^5)((x^2+y^2)^2)&#39;}{(x^2+y^2)^4}\
-\textcolor{red}{(*1)} &amp;\\
-      &amp;=\frac{x^8+10x^6y^2-10x^2y^6-y^8}{(x^2+y^2)^4}&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp; x,yは独立なので
-f_{xy}=\underset{yで微分}{f_x&#39;}\\
-&amp;&amp;&amp;また(x^2+y^2)^2\ne0なので和、積、商の微分公式より
-\end{flalign*}\]</span></p>
-<p>経路<span class="math inline">\(\
-\Big\{\begin{matrix}x=0\\[-1em]y=y\end{matrix}\ \)</span> に沿った<span
-class="math inline">\((x,y)\to(0,0)\)</span>の極限は <span
-class="math inline">\(\displaystyle\lim_{y\to 0}f_{xy}(0,y)=\lim_{y\to
-0}-1=-1\)</span></p>
-<p>経路<span class="math inline">\(\
-\Big\{\begin{matrix}x=x\\[-1em]y=0\end{matrix}\ \)</span> に沿った<span
-class="math inline">\((x,y)\to(0,0)\)</span>の極限は <span
-class="math inline">\(\displaystyle\lim_{x\to 0}f_{xy}(x,0)=\lim_{x\to
-0}1=1\)</span></p>
-<p>経路によって極限が異なるので<span
-class="math inline">\(f_{xy}の(x,y)\to(0,0)\)</span>の極限は存在しない</p>
-<p>よって<span class="math inline">\((0,0)\)</span>で<span
-class="math inline">\(f_{xy}\)</span>は連続ではない</p>
    </main>
    </div>
   </div>

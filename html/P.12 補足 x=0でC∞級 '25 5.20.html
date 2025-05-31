@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.10 問1.3 (0,0)でfxyは不連続 '25 4.1</title>
+  <title>P.12 補足 x=0でC∞級 '25 5.20</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -119,57 +119,89 @@ id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.10 問1.3 (0,0)でfyは連続 '25 3.26.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.12 補足 x≠0でC∞級 '25 4.25.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) '25 4.6.html" accesskey="n" rel="next">Next</a>
+<a href="P.12 補足 x=0でC∞級であるが解析的でない '25 5.21.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.11" id="p.10-問1.3-00でfxyは不連続-25-4.1">P.10 問1.3
-(0,0)でfxyは不連続 '25 4.1</h2>
-<p><span class="math display">\[
-\begin{flalign*}
-f(x,y)=
+<h2 data-number="1.20" id="p.12-補足-x0でc級-25-5.20">P.12 補足
+x=0でC∞級 '25 5.20</h2>
+<p><span class="math display">\[\begin{flalign*}
+f(x)=
 \begin{cases}
-\displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
-            0 &amp; (x,y)=(0,0)
+e^{-\frac{1}{x^2}} &amp; x\ne 0 \\
+0        &amp; x=0
 \end{cases} &amp;&amp;
-\end{flalign*}\]</span> <span
-class="math inline">\((x,y)=(0,0)でf_{xy}は不連続\)</span></p>
+\end{flalign*}\]</span> <span class="math inline">\(x=0\)</span> で
+<span class="math inline">\(C^\infty\)</span> 級</p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\((x,y)\ne(0,0)\)</span>とする</p>
+<p><span class="math inline">\(x\ne 0\)</span>で <span
+class="math display">\[\begin{flalign*}
+f^{(n)} &amp;= \left( \sum_{\nu=1}^{m}k_\nu x^{-\nu} \right)
+e^{-\frac{1}{x^2}}\quad({\because\ }別紙) &amp;\\
+        &amp;= \sum_{\nu=1}^{m}k_\nu x^{-\nu} e^{-\frac{1}{x^2}}&amp;
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\(\displaystyle\lim_{x\to 0}
+x^{-\nu}e^{-\frac{1}{x^2}}=0\quad\textcolor{red}{(*1)}\)</span>
+なので</p>
+<p><span class="math inline">\(\displaystyle\lim_{x\to 0}
+f^{(n)}(x)=0\quad({\because\ }和、積の極限)\)</span></p>
+<span class="math inline">\(x=0\)</span>で<span
+class="math inline">\(f\)</span>は連続 <span
+class="math inline">\(({\because\ }別紙)\)</span> かつ<span
+class="math inline">\(\displaystyle\lim_{x\to 0}f^{(1)}(x)=0\)</span>
+なので <span class="math inline">\(f^{(1)}(0)=0\)</span> <span
+class="math inline">\(({\because\ }p.7,(1.5),(1.6)\ aで連続,\lim_{x\to
+a}f&#39;(x)が存在するなら\lim_{x\to a}f&#39;(x)=f&#39;(a))\)</span>
+<div style="margin-bottom:1em;">
+
+</div>
+<p><span class="math inline">\(f^{(n)}(0)=0\)</span> と仮定する</p>
+<p><span class="math inline">\(\displaystyle\lim_{x\to
+0}f^{(n)}(x)=0=f^{(n)}(0)\)</span></p>
+<p>よって<span class="math inline">\(0\)</span>で<span
+class="math inline">\(f^{(n)}(x)\)</span>は連続</p>
+<p>かつ<span class="math inline">\(\displaystyle\lim_{x\to
+0}f^{(n+1)}(x)=0\)</span>なので</p>
+<p><span class="math inline">\(f^{(n+1)}(0)=0\quad({\because\
+}p.7,(1,5),(1.6))\)</span></p>
+<p>よって任意の<span class="math inline">\(n\)</span>で<span
+class="math inline">\(f^{(n)}(0)=0\)</span></p>
+<p>よって <span class="math inline">\(x=0\)</span>で<span
+class="math inline">\(f\)</span>は<span
+class="math inline">\(C^\infty\)</span>級</p>
 <p><span class="math display">\[\begin{flalign*}
-f_x&amp;=\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\quad({\because\ }別紙)
-&amp;
+&amp;&amp;\textcolor{red}{(*1)}&amp; e^y=
+\sum_{n=0}^{\infty}\frac{y^n}{n!}
+    =1+y+\frac{1}{2}y^2+\dots\\
+&amp;&amp;&amp;なので\\
+&amp;&amp;&amp;e^{\frac{1}{x^2}}=1+x^{-2}+\frac{1}{2}x^{-4}+\dots\\
+&amp;&amp;&amp;2n\gt\nu\ge2(n-1)とする\\
+&amp;&amp;&amp;|x^{\nu}e^{\frac{1}{x^2}}|\gt
+    |x^\nu|(1+x^{-2}+\dots+\frac{1}{n!}x^{-2n})\\
+&amp;&amp;&amp;\quad\quad
+=|x^\nu|+|x^{\nu-2}|+\dots+\frac{1}{n!}|v^{\nu-2n}|\\
+&amp;&amp;&amp;\nu,\nu-2,\dots,\nu-2(n-1)\ge0 なので\\
+&amp;&amp;&amp;\lim|x^\nu|=0,\dots,\lim|x^{\nu-2(n-1)}|=0\ or\ 1\\
+&amp;&amp;&amp;\nu-2n&lt;0なので\\
+&amp;&amp;&amp;\lim_{x\to 0}|x^{\nu-2n}|=\infty\\
+&amp;&amp;&amp;{\therefore\ }\displaystyle\lim_{x\to
+0}|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|=\infty\ ({\because\
+}和の極限)\\
+&amp;&amp;&amp;{\therefore\ }\displaystyle\lim_{x\to
+0}\frac{1}{|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|}=0\\
+&amp;&amp;&amp;\displaystyle\frac{1}{|x^\nu
+e^{\frac{1}{x^2}}|}&lt;\frac{1}{|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|}なので\\
+&amp;&amp;&amp;\displaystyle\lim_{x\to 0}\frac{1}{|x^\nu
+e^{\frac{1}{x^2}}|}=0\\
+&amp;&amp;&amp;{\therefore\ }\displaystyle\lim_{x\to 0}\frac{1}{x^\nu
+e^{\frac{1}{x^2}}}=0
 \end{flalign*}\]</span></p>
-<p>よって <span class="math display">\[\begin{flalign*}
-f_{xy}&amp;=\frac{(yx^4+4x^2y^3-y^5)&#39;(x^2+y^2)^2-(yx^4+4x^2y^3-y^5)((x^2+y^2)^2)&#39;}{(x^2+y^2)^4}\
-\textcolor{red}{(*1)} &amp;\\
-      &amp;=\frac{x^8+10x^6y^2-10x^2y^6-y^8}{(x^2+y^2)^4}&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp; x,yは独立なので
-f_{xy}=\underset{yで微分}{f_x&#39;}\\
-&amp;&amp;&amp;また(x^2+y^2)^2\ne0なので和、積、商の微分公式より
-\end{flalign*}\]</span></p>
-<p>経路<span class="math inline">\(\
-\Big\{\begin{matrix}x=0\\[-1em]y=y\end{matrix}\ \)</span> に沿った<span
-class="math inline">\((x,y)\to(0,0)\)</span>の極限は <span
-class="math inline">\(\displaystyle\lim_{y\to 0}f_{xy}(0,y)=\lim_{y\to
-0}-1=-1\)</span></p>
-<p>経路<span class="math inline">\(\
-\Big\{\begin{matrix}x=x\\[-1em]y=0\end{matrix}\ \)</span> に沿った<span
-class="math inline">\((x,y)\to(0,0)\)</span>の極限は <span
-class="math inline">\(\displaystyle\lim_{x\to 0}f_{xy}(x,0)=\lim_{x\to
-0}1=1\)</span></p>
-<p>経路によって極限が異なるので<span
-class="math inline">\(f_{xy}の(x,y)\to(0,0)\)</span>の極限は存在しない</p>
-<p>よって<span class="math inline">\((0,0)\)</span>で<span
-class="math inline">\(f_{xy}\)</span>は連続ではない</p>
    </main>
    </div>
   </div>

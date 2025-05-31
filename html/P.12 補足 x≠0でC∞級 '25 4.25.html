@@ -87,6 +87,17 @@ id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 
 4.23</a></li>
 <li><a href="P.12 補足 x≠0でC∞級 &#39;25 4.25.html"
 id="toc-p.12-補足-x0でc級-25-4.25">P.12 補足 x≠0でC∞級 '25 4.25</a></li>
+<li><a href="P.12 補足 x=0でC∞級 &#39;25 5.20.html"
+id="toc-p.12-補足-x0でc級-25-5.20">P.12 補足 x=0でC∞級 '25 5.20</a></li>
+<li><a href="P.12 補足 x=0でC∞級であるが解析的でない &#39;25 5.21.html"
+id="toc-p.12-補足-x0でc級であるが解析的でない-25-5.21">P.12 補足
+x=0でC∞級であるが解析的でない '25 5.21</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
+id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
+5.28</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
+id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
+5.30</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -112,7 +123,7 @@ id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.12 問題1.4 '25 4.16.html" accesskey="n" rel="next">Next</a>
+<a href="P.12 補足 x=0でC∞級 '25 5.20.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
@@ -162,27 +173,35 @@ k_{\nu})x^{-\nu-1}e^{-\frac{1}{x^2}}+\sum_{\nu=1}^{m}k_\nu
 x^{-\nu}2x^{-3}e^{-\frac{1}{x^2}}\quad({\because\ }(1),(2))&amp;\\
   &amp;=\left(\sum_{\nu=1}^{m}-\nu k_\nu
 x^{-\nu-1}+\sum_{\nu=1}^{m}2k_{\nu}x^{-\nu-3}\right)e^{-\frac{1}{x^2}}&amp;\\
-  &amp;=\sum_{\mu=1}^{m+4}(p_\mu+q_\mu)x^{-\mu}e^{-\frac{1}{x^2}}&amp;
+  &amp;=\left(\sum_{i=2}^{m+1}-(i-1)k_{i-1}x^{-i}+\sum_{i=4}^{m+3}2k_{i-3}x^{-i}\right)e^{-\frac{1}{x^2}}&amp;\\
+  &amp;=\left((-1)k_1x^{-2}+(-2)k_2x^{-3}
+       +\sum_{i=4}^{m+1}-(i-1)k_{i-1}x^{-i}\right.&amp;\\
+  &amp;\qquad\left.+\sum_{i=4}^{m+1}2k_{i-3}x^{-i}
+       +2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\right)e^{-\frac{1}{x^2}}&amp;\\
+  &amp;=\left((-1)k_1x^{-2}+(-2)k_2x^{-3}
+      +\sum_{i=4}^{m+1}(-(i-1)k_{i-1}+2k_{i-3})x^{-i}\right.&amp;\\
+      &amp;\qquad\left.+2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\right)e^{-\frac{1}{x^2}}&amp;
 \end{flalign*}\]</span></p>
-<p>ただし <span class="math display">\[\begin{flalign*}
-p_\mu&amp;=
+<p>ここで <span class="math display">\[\begin{flalign*}
+p_i&amp;=
 \begin{cases}
--(\mu-1)k_{\mu-1} &amp; \mu=2,\cdots,m+1 \\
-0        &amp; other
+0             &amp;(i=1)\\
+-(i-1)k_{i-1} &amp;(i=2,3) \\
+-(i-1)k_{i-1}+2k_{i-3} &amp;(i=4,\dots,m+1)\\
+2k_{i-3}      &amp;(i=m+2,m+3)
 \end{cases}&amp;\\
-q_\mu&amp;=
-\begin{cases}
-2k_{\mu-3} &amp; \mu=4,\cdots,m+3 \\
-0        &amp; other
-\end{cases}&amp;
+s&amp;=m+3&amp;
+\end{flalign*}\]</span> とする</p>
+<p><span class="math display">\[\begin{flalign*}
+f^{(n+1)}&amp;=\left(\sum_{i=1}^{s}p_ix^{-i}\right)e^{-1/x^2}&amp;
 \end{flalign*}\]</span></p>
-<p>よって、<span class="math inline">\(n&gt;0\)</span>において <span
-class="math display">\[\begin{flalign*}
+<p>よって、<span class="math inline">\(x\ne0,n&gt;0\)</span>において
+<span class="math display">\[\begin{flalign*}
 f^{(n)}&amp;=\left(\sum_{\nu=1}^{m}k_\nu
 x^{-\nu}\right)e^{-\frac{1}{x^2}}&amp;
-\end{flalign*}\]</span>である。 <span class="math inline">\(x\ne
-0\)</span>で<span class="math inline">\(f^{(n)},n\in
-\mathbb{N}\)</span>は存在するので<span
+\end{flalign*}\]</span>である。</p>
+<p>すべての<span class="math inline">\(n\)</span>で<span
+class="math inline">\(f^{(n)}\)</span>は存在するので<span
 class="math inline">\(f\)</span>は<span
 class="math inline">\(C^\infty\)</span>級である</p>
 <p><span class="math display">\[\begin{flalign*}
