@@ -14,6 +14,7 @@ include(`preamble.tex')
 NEWPAGE
 
 ## P.10 問1.3 (0,0)でfxは連続 '25 3.26
+
 $$
 \begin{flalign*}
 f(x,y)=
@@ -22,6 +23,7 @@ f(x,y)=
             0 & (x,y)=(0,0)
 \end{cases} &&
 \end{flalign*}$$
+
 $(x,y)=(0,0)でf_xは連続$
 
 ---
@@ -29,23 +31,24 @@ $(x,y)=(0,0)でf_xは連続$
 (証明)
 
 $(x,y)\ne(0,0)$で
+
 $$\begin{flalign*}
 f_x(x,y)&=\FX\quad(\cuz 別紙) &\\
         &=y\FXP &
 \end{flalign*}$$
 
-$\disp\FXP$は有界$\ \red{(*1)}$
+$\disp\FXP$は有界$\kome{1}$
 かつ$\disp\limto{(x,y)}{(0,0)}y=0$
 
-よって$\disp\limto{(x,y)}{(0,0)}y\FXP=0\ \red{(*2)}$
+よって$\disp\limto{(x,y)}{(0,0)}y\FXP=0\ \kome{2}$
 
-また$fは(0,0)$で連続$(\ \cuz 別紙)$
+また $f$ は $(0,0)$ で連続 $(\ \cuz 別紙)$
 
-よって$(0,0)でf_x$は存在して
+よって$(0,0)$ で $f_x$ は存在して
 
 $\disp f_x(0,0)=\limto{(x,y)}{(0,0)}f_x(x,y)=0\ (\cuz 本文(1.5),(1.6)より)$
 
-よって$(0,0)でf_x は連続$
+よって $(0,0)$ で $f_x$ は連続
 
 $$\begin{flalign*}
 &&\red{(*1)}&\FXP は有界\\
