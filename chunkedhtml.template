@@ -103,5 +103,23 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
+
+<script>
+  const sidebar = document.getElementById("SIDEBAR");
+
+  // 復元：ページ読み込み時
+  window.addEventListener("load", () => {
+    const savedScrollTop = localStorage.getItem("sidebarScroll");
+    if (savedScrollTop !== null) {
+      sidebar.scrollTop = parseInt(savedScrollTop, 10);
+    }
+  });
+
+  // 保存：ページ離脱時
+  window.addEventListener("beforeunload", () => {
+    localStorage.setItem("sidebarScroll", sidebar.scrollTop);
+  });
+</script>
+
 </body>
 </html>
