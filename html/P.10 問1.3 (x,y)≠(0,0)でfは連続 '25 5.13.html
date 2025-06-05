@@ -82,6 +82,12 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
+id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
+5.28</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
+id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
+5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -92,12 +98,9 @@ id="toc-p.12-補足-x0でc級-25-5.20">P.12 補足 x=0でC∞級 '25 5.20</a></l
 <li><a href="P.12 補足 x=0でC∞級であるが解析的でない &#39;25 5.21.html"
 id="toc-p.12-補足-x0でc級であるが解析的でない-25-5.21">P.12 補足
 x=0でC∞級であるが解析的でない '25 5.21</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
+<li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
+id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
+6.4</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -134,47 +137,50 @@ id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 \begin{flalign*}
 f(x,y)=
 \begin{cases}
-xy\frac{x^2-y^2}{x^2+y^2} &amp; (x,y)\ne(0,0) \\
+\displaystyle xy\frac{x^2-y^2}{x^2+y^2} &amp; (x,y)\ne(0,0) \\
 0 &amp; (x,y)=(0,0)
 \end{cases} &amp;&amp;
 \end{flalign*}\]</span> <span
 class="math inline">\((x,y)\ne(0,0)でfは連続\)</span></p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\(任意の\epsilon に対して\)</span></p>
-<p><span class="math inline">\(|(x,y)-(a,b)|&lt;\epsilon ならば\)</span>
-<span class="math display">\[\begin{flalign*}
+<p>任意の<span class="math inline">\(\epsilon\)</span> に対して</p>
+<p><span class="math inline">\(|(x,y)-(a,b)|&lt;\epsilon\)</span>
+ならば</p>
+<p><span class="math display">\[\begin{flalign*}
 |x-a|&amp;&lt;|(x,y)-(a,b)|\quad({\because\ }三角不等式)&amp;\\
      &amp;=\epsilon&amp;
 \end{flalign*}\]</span></p>
-<p><span class="math inline">\(よって\lim_{(x,y)\to
+<p>よって<span class="math inline">\(\displaystyle\lim_{(x,y)\to
 (a,b)}x=a\)</span></p>
-<p><span class="math inline">\(よってxは連続\)</span></p>
-<p><span class="math inline">\(同様にyは連続\)</span></p>
-<p><span class="math inline">\(よって\)</span></p>
-<p><span
-class="math inline">\(xyは連続\quad\textcolor{red}{(*1)}\)</span></p>
-<p><span
-class="math inline">\(x^2は連続\quad\textcolor{red}{(*1)}\)</span></p>
-<p><span
-class="math inline">\(y^2は連続\quad\textcolor{red}{(*1)}\)</span></p>
-<p><span
-class="math inline">\(x^2-y^2は連続\quad\textcolor{red}{(*1)(*2)}\)</span></p>
-<p><span
-class="math inline">\(x^2+y^2は連続\quad\textcolor{red}{(*2)}\)</span></p>
-<p><span
-class="math inline">\((x,y)\ne(0,0)ならばx^2+y^2\ne0\)</span></p>
-<p><span class="math inline">\(よって(x,y)\ne(0,0)ならば\)</span></p>
-<p><span class="math inline">\(\displaystyle\frac{1}{x^2+y^2}
-は連続\quad\textcolor{red}{(*3)}\)</span></p>
-<p><span class="math inline">\(よって(x,y)\ne(0,0)ならば\)</span> <span
-class="math inline">\(\displaystyle xy\frac{x^2-y^2}{x^2+y^2}
-は連続\quad\textcolor{red}{(*2)}\)</span></p>
-<p><span class="math inline">\(また(x,y)\ne(0,0)ならば\)</span> <span
+<p>よって<span class="math inline">\(x\)</span>は連続</p>
+<p>同様に<span class="math inline">\(y\)</span>は連続</p>
+<p>よって</p>
+<p><span class="math inline">\(xy\)</span>は連続 <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math inline">\(x^2\)</span>は連続 <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math inline">\(y^2\)</span>は連続 <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math inline">\(x^2-y^2\)</span>は連続 <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span>,<span
+class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
+<p><span class="math inline">\(x^2+y^2\)</span>は連続 <span
+class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
+<p><span class="math inline">\((x,y)\ne(0,0)\)</span>ならば<span
+class="math inline">\(x^2+y^2\ne0\)</span></p>
+<p>よって<span class="math inline">\((x,y)\ne(0,0)\)</span> ならば</p>
+<p><span class="math inline">\(\displaystyle\frac{1}{x^2+y^2}\)</span>
+は連続 <span class="math inline">\(\textcolor{red}{(*3)}\)</span></p>
+<p>よって <span class="math inline">\((x,y)\ne(0,0)\)</span> ならば
+<span class="math inline">\(\displaystyle
+xy\frac{x^2-y^2}{x^2+y^2}\)</span> は連続 <span
+class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
+<p>また <span class="math inline">\((x,y)\ne(0,0)\)</span>ならば <span
 class="math inline">\(\displaystyle
 f(x,y)=xy\frac{x^2-y^2}{x^2+y^2}\)</span></p>
-<p><span
-class="math inline">\(よって(x,y)\ne(0,0)ならばf(x,y)は連続\)</span></p>
+<p>よって <span class="math inline">\((x,y)\ne(0,0)\)</span> ならば
+<span class="math inline">\(f(x,y)\)</span> は連続</p>
 <p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*1)}&amp;fが連続, gが連続ならばfg は連続\\
 &amp;&amp;&amp;(証明)\\
@@ -203,5 +209,23 @@ class="math inline">\(よって(x,y)\ne(0,0)ならばf(x,y)は連続\)</span></p
    </main>
    </div>
   </div>
+
+<script>
+  const sidebar = document.getElementById("SIDEBAR");
+
+  // 復元：ページ読み込み時
+  window.addEventListener("load", () => {
+    const savedScrollTop = localStorage.getItem("sidebarScroll");
+    if (savedScrollTop !== null) {
+      sidebar.scrollTop = parseInt(savedScrollTop, 10);
+    }
+  });
+
+  // 保存：ページ離脱時
+  window.addEventListener("beforeunload", () => {
+    localStorage.setItem("sidebarScroll", sidebar.scrollTop);
+  });
+</script>
+
 </body>
 </html>

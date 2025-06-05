@@ -82,6 +82,12 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
+id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
+5.28</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
+id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
+5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -92,12 +98,9 @@ id="toc-p.12-補足-x0でc級-25-5.20">P.12 補足 x=0でC∞級 '25 5.20</a></l
 <li><a href="P.12 補足 x=0でC∞級であるが解析的でない &#39;25 5.21.html"
 id="toc-p.12-補足-x0でc級であるが解析的でない-25-5.21">P.12 補足
 x=0でC∞級であるが解析的でない '25 5.21</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
+<li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
+id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
+6.4</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -157,11 +160,13 @@ class="math inline">\(x\)</span> で微分可能</p>
 class="math inline">\(x の区間 (a,x)\)</span> で<span
 class="math inline">\(x\)</span> で微分可能<span
 class="math inline">\(\quad\textcolor{red}{(*2)}\)</span></p>
-<p>よって平均値の定理より <span class="math display">\[\begin{flalign*}
+<p>よって平均値の定理より</p>
+<p><span class="math display">\[\begin{flalign*}
 \Delta(x,y)&amp;=F(x)-F(a)&amp;\\
         &amp;=F&#39;(a+(x-a)\theta_1)(x-a),\ 0&lt;\theta_1&lt;1 &amp;\\
         &amp;=(f_x(a+(x-a)\theta_1,y)-f_x(a+(x-a)\theta_1,b))(x-a)\quad\textcolor{red}{(*3)}
-\end{flalign*}\]</span> <span class="math display">\[\begin{flalign*}
+\end{flalign*}\]</span></p>
+<p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*1)}&amp;f,g が連続ならば f+g も連続\\
 &amp;&amp;\textcolor{red}{(*2)}&amp;f,g が微分可能ならば f+g
 も微分可能\\
@@ -175,26 +180,30 @@ class="math inline">\(({\because\ }f_{xy}が存在するので)\)</span></p>
 <span class="math inline">\(yの区間[b,y]\)</span>で連続かつ<span
 class="math inline">\(区間(b,y)\)</span>で<span
 class="math inline">\(y\)</span>で微分可能</p>
-<p><span class="math inline">\(よって平均値の定理より\)</span> <span
-class="math display">\[\begin{flalign*}
+<p>よって平均値の定理より</p>
+<p><span class="math display">\[\begin{flalign*}
 &amp;f_x(a+(x-a)\theta_1,y)-f_x(a+(x-a)\theta_1,b) &amp;\\
 &amp;\quad\quad=f_{xy}(a+(x-a)\theta_1,b+(y-b)\theta_2)(x-b),\
 0&lt;\theta_2&lt;1\quad\textcolor{red}{(*4)}&amp;
-\end{flalign*}\]</span> <span class="math display">\[\begin{flalign*}
+\end{flalign*}\]</span></p>
+<p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*4)}&amp;x,yは独立なので\\
 &amp;&amp;&amp;f_{xy}=\underset{yで微分}{f&#39;_x}
 \end{flalign*}\]</span></p>
-<p>よって <span class="math display">\[\begin{flalign*}
+<p>よって</p>
+<p><span class="math display">\[\begin{flalign*}
 \Delta(x,y)&amp;=f_{xy}(a+(x-a)\theta_1,b+(y-b)\theta_2)(x-a)(x-b)&amp;
-\end{flalign*}\]</span> <span class="math display">\[\begin{flalign*}
+\end{flalign*}\]</span></p>
+<p><span class="math display">\[\begin{flalign*}
 x&#39;&amp;=a+(x-a)\theta_1&amp;\\
 y&#39;&amp;=b+(y-b)\theta_2&amp;
-\end{flalign*}\]</span> とすると <span
-class="math display">\[\begin{flalign*}
+\end{flalign*}\]</span></p>
+<p>とすると</p>
+<p><span class="math display">\[\begin{flalign*}
 \frac{\Delta(x,y)}{(x-a)(x-b)}&amp;=f_{xy}(x&#39;,y&#39;)&amp;
 \end{flalign*}\]</span></p>
-<p><span class="math inline">\(f_{xy} は連続なので\)</span> <span
-class="math display">\[\begin{flalign*}
+<p><span class="math inline">\(f_{xy}\)</span> は連続なので</p>
+<p><span class="math display">\[\begin{flalign*}
 \lim_{(x,y)\to (a,b)}f_{xy}(x,y)&amp;=f_{xy}(a,b)&amp;
 \end{flalign*}\]</span></p>
 <p>よって任意の <span class="math inline">\(\epsilon\)</span>
@@ -202,7 +211,8 @@ class="math display">\[\begin{flalign*}
 <p><span class="math inline">\(|(x,y)-(a,b)|&lt;\delta\)</span> ならば
 <span
 class="math inline">\(|f_{xy}(x,y)-f_{xy}(a,b)|&lt;\epsilon\)</span></p>
-<p>また <span class="math display">\[\begin{flalign*}
+<p>また</p>
+<p><span class="math display">\[\begin{flalign*}
 |(x&#39;,y&#39;)-(a,b)|&amp;=\sqrt{(a+(x-a)\theta_1-a)^2+(b+(y-b)\theta_2-b)^2}&amp;\\
 &amp;=\sqrt{(x-a)^2\theta_1^2+(y-b)^2\theta_2^2}&amp;\\
 &amp;&lt;|(x,y)-(a,b)|\quad({\because\ }\ 0&lt;\theta_1&lt;1,\
@@ -247,7 +257,8 @@ class="math inline">\(区間(b,y)\)</span>で<span
 class="math inline">\(y\)</span>で微分可能 <span
 class="math inline">\(({\because\
 }(f+g)&#39;=f&#39;+g&#39;)\)</span></p>
-<p>よって平均値の定理より <span class="math display">\[\begin{flalign*}
+<p>よって平均値の定理より</p>
+<p><span class="math display">\[\begin{flalign*}
 \Delta(x,y)&amp;=G&#39;(b+(y-b)\theta_3)(y-b),\
 0&lt;\theta_3&lt;1&amp;\\
        &amp;=(f_y(x,b+(y-b)\theta_3)-f_y(a,b+(y-b)\theta_3))(y-b)\quad({\because\
@@ -264,8 +275,8 @@ class="math inline">\(({\because\
 <p>よって平均値の定理より</p>
 <p><span
 class="math inline">\(\Delta(x,y)=f_{yx}(a+(x-a)\theta_4,b+(y-b)\theta_3)(y-b)(x-a),\
-0&lt;\theta_4&lt;1\)</span> <span
-class="math display">\[\begin{flalign*}
+0&lt;\theta_4&lt;1\)</span></p>
+<p><span class="math display">\[\begin{flalign*}
 x&#39;&amp;=a+(x-a)\theta_4&amp;\\
 y&#39;&amp;=b+(y-b)\theta_3&amp;
 \end{flalign*}\]</span> とすると</p>
@@ -281,7 +292,8 @@ class="math inline">\(\displaystyle\frac{\Delta(x,y)}{(y-b)(x-a)}=f_{yx}(x&#39;,
 <p><span class="math inline">\(|(x,y)-(a,b)|&lt;\delta\)</span> ならば
 <span
 class="math inline">\(|f_{yx}(x,y)-f_{yx}(a,b)|&lt;\epsilon\)</span></p>
-<p>また <span class="math display">\[\begin{flalign*}
+<p>また</p>
+<p><span class="math display">\[\begin{flalign*}
 |(x&#39;,y&#39;)-(a,b)|&amp;=\sqrt{(a+(x-a)\theta_4-a)^2+(b+(y-b)\theta_3-b)^2}&amp;\\
                &amp;=\sqrt{(x-a)^2\theta_4^2+(y-b)^2\theta_3^2}&amp;\\
            &amp;&lt;|(x,y)-(a,b)|\quad({\because\ }\
@@ -303,5 +315,23 @@ class="math inline">\(|f_{yx}(x&#39;,y&#39;)-f_{yx}(a,b)|&lt;\epsilon\)</span></
    </main>
    </div>
   </div>
+
+<script>
+  const sidebar = document.getElementById("SIDEBAR");
+
+  // 復元：ページ読み込み時
+  window.addEventListener("load", () => {
+    const savedScrollTop = localStorage.getItem("sidebarScroll");
+    if (savedScrollTop !== null) {
+      sidebar.scrollTop = parseInt(savedScrollTop, 10);
+    }
+  });
+
+  // 保存：ページ離脱時
+  window.addEventListener("beforeunload", () => {
+    localStorage.setItem("sidebarScroll", sidebar.scrollTop);
+  });
+</script>
+
 </body>
 </html>

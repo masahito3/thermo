@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" style="overflow:auto;">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="仲山昌人" />
+  <meta name="description" content="熱力学の基礎を読んだときのメモです
+
+" />
+  <title>P.12 補足 x≠0でf(x)は解析的 '25 6.4</title>
+  <style>
+  </style>
+  <link rel="stylesheet" href="bulma.css" />
+  
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body style="height:100vh;">
+<div class="fixed-grid has-4-cols">
+<div class="grid">
+     <div id="SIDEBAR" class="cell" style="height:100vh;overflow:auto;">
+     <nav id="TOC" role="doc-toc" class="menu">
+<ul class="menu-list" >
+<li><a href="第1章.html" id="toc-第1章">第1章</a>
+<ul class="menu-list" >
+<li><a href="P.7 Dx+f(a)=f&#39;(a+0) &#39;25 3.22.html"
+id="toc-p.7-dxfafa0-25-3.22">P.7 Dx+f(a)=f'(a+0) '25 3.22</a></li>
+<li><a
+href="P.8 (1.2) f(x)=f(a)+f&#39;(a)(x-a)+o(x-a) &#39;25 3.21.html"
+id="toc-p.8-1.2-fxfafax-aox-a-25-3.21">P.8 (1.2)
+f(x)=f(a)+f'(a)(x-a)+o(x-a) '25 3.21</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfは連続 &#39;25 5.13.html"
+id="toc-p.10-問1.3-xy00でfは連続-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfは連続 '25 5.13</a></li>
+<li><a href="P.10 問1.3 (0,0)でfは連続 &#39;25 3.26.html"
+id="toc-p.10-問1.3-00でfは連続-25-3.26">P.10 問1.3 (0,0)でfは連続 '25
+3.26</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは存在する &#39;25 5.13.html"
+id="toc-p.10-問1.3-xy00でfxは存在する-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfxは存在する '25 5.13</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは連続 &#39;25 5.13.html"
+id="toc-p.10-問1.3-xy00でfxは連続-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfxは連続 '25 5.13</a></li>
+<li><a href="P.10 問1.3 (0,0)でfxは連続 &#39;25 3.26.html"
+id="toc-p.10-問1.3-00でfxは連続-25-3.26">P.10 問1.3 (0,0)でfxは連続 '25
+3.26</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfyは存在する &#39;25 5.13.html"
+id="toc-p.10-問1.3-xy00でfyは存在する-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfyは存在する '25 5.13</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfyは連続 &#39;25 5.15.html"
+id="toc-p.10-問1.3-xy00でfyは連続-25-5.15">P.10 問1.3
+(x,y)≠(0,0)でfyは連続 '25 5.15</a></li>
+<li><a href="P.10 問1.3 (0,0)でfyは連続 &#39;25 3.26.html"
+id="toc-p.10-問1.3-00でfyは連続-25-3.26">P.10 問1.3 (0,0)でfyは連続 '25
+3.26</a></li>
+<li><a href="P.10 問1.3 (0,0)でfxyは不連続 &#39;25 4.1.html"
+id="toc-p.10-問1.3-00でfxyは不連続-25-4.1">P.10 問1.3 (0,0)でfxyは不連続
+'25 4.1</a></li>
+<li><a
+href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) &#39;25 4.6.html"
+id="toc-p.11-数学の定理1.1-fx1..xm-fa1..xm-x1-a1fx1aox-a-25-4.6">P.11
+数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) '25
+4.6</a></li>
+<li><a
+href="P.11 数学の定理1.1 f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) &#39;25 5.17.html"
+id="toc-p.11-数学の定理1.1-fa1x2..xm-fa1a2..xm-x2-a2fx2aox-a-25-5.17">P.11
+数学の定理1.1 f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25
+5.17</a></li>
+<li><a
+href="P.11 数学の定理1.1 f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) &#39;25 4.6.html"
+id="toc-p.11-数学の定理1.1-fxfafax-aox-a-25-4.6">P.11 数学の定理1.1
+f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6</a></li>
+<li><a
+href="P.12 数学の定理1.2 n階までの導関数は微分の順序によらない &#39;25 4.8.html"
+id="toc-p.12-数学の定理1.2-n階までの導関数は微分の順序によらない-25-4.8">P.12
+数学の定理1.2 n階までの導関数は微分の順序によらない '25 4.8</a></li>
+<li><a href="P.12 数学の定理1.2 fxy=fyx &#39;25 4,8.html"
+id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '25
+4,8</a></li>
+<li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
+id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
+4.23</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
+id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
+5.28</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
+id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
+5.30</a></li>
+<li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
+id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
+4.23</a></li>
+<li><a href="P.12 補足 x≠0でC∞級 &#39;25 4.25.html"
+id="toc-p.12-補足-x0でc級-25-4.25">P.12 補足 x≠0でC∞級 '25 4.25</a></li>
+<li><a href="P.12 補足 x=0でC∞級 &#39;25 5.20.html"
+id="toc-p.12-補足-x0でc級-25-5.20">P.12 補足 x=0でC∞級 '25 5.20</a></li>
+<li><a href="P.12 補足 x=0でC∞級であるが解析的でない &#39;25 5.21.html"
+id="toc-p.12-補足-x0でc級であるが解析的でない-25-5.21">P.12 補足
+x=0でC∞級であるが解析的でない '25 5.21</a></li>
+<li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
+id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
+6.4</a></li>
+<li><a href="P.12 問題1.4 &#39;25 4.16.html"
+id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
+</ul></li>
+<li><a href="第2章.html" id="toc-第2章">第2章</a></li>
+</ul>
+     </nav>
+     </div>
+     <main class="cell is-col-span-3" style="height:100vh;overflow:auto;">
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
+</span>
+</div>
+
+<div class="sitenav columns">
+
+<span class="navlink column">
+<a href="P.12 補足 x=0でC∞級であるが解析的でない '25 5.21.html" accesskey="p" rel="previous">Previous</a>
+</span>
+
+<span class="navlink column has-text-right">
+<a href="P.12 問題1.4 '25 4.16.html" accesskey="n" rel="next">Next</a>
+</span>
+
+</div>
+</nav>
+<h2 data-number="1.24" id="p.12-補足-x0でfxは解析的-25-6.4">P.12 補足
+x≠0でf(x)は解析的 '25 6.4</h2>
+<p><span class="math display">\[\begin{flalign*}
+f(x)=
+\begin{cases}
+e^{-\frac{1}{x^2}} &amp; x\ne 0 \\
+0        &amp; x=0
+\end{cases} &amp;&amp;
+\end{flalign*}\]</span> <span class="math inline">\(x\ne0\)</span> で
+<span class="math inline">\(f(x)\)</span> は解析的</p>
+<hr />
+<p>(証明)</p>
+<p><span class="math inline">\(x\)</span> は <span
+class="math inline">\(a\)</span> を中心とするべき級数で表される <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;x=\sum_{n=0}^{\infty}a_n(x-a)^n, \quad
+a_n=\begin{cases}
+a &amp; (n=0) \\
+1 &amp; (n=1) \\
+0 &amp; (n&gt;1)
+\end{cases} &amp;
+\end{flalign*}\]</span></p>
+<p>収束半径は <span class="math inline">\(\infty\)</span></p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*1)}&amp;F(x)=\sum_{n=0}^{\infty}a_n(x-a)^n,
+a_n=\bigg\{\begin{matrix}a\ (n=0)\\[-1em]1\ (n=1)\\[-1em]0\
+(n&gt;1)\end{matrix} とする\\
+&amp;&amp;&amp; F(x)=a_0(x-a)^0+a_1(x-a)^1+a_2(x-a)^2+\dots\\
+&amp;&amp;&amp; \qquad=a+(x-a)+0\\
+&amp;&amp;&amp; \qquad=x\\
+&amp;&amp;&amp; 任意のxで成立するので、収束半径は \infty
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\(\displaystyle\frac{1}{x}\)</span> は
+<span class="math inline">\(a\ne0\)</span>
+を中心とするべき級数で表される <span
+class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;\frac{1}{x}=\sum_{n=0}^{\infty}b_n(x-a)^n, \quad
+b_n=(-1)^n \frac{1}{a^{n+1}}&amp;
+\end{flalign*}\]</span></p>
+<p>収束半径は <span class="math inline">\(|a|\)</span></p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*2)}&amp;a\ne0 とする \\
+&amp;&amp;&amp; G(x)=\sum_{n=0}^{\infty}b_n(x-a)^n
+とする。収束すると仮定する\\
+&amp;&amp;&amp; x = \sum_{n=0}^{\infty}a_n(x-a)^n,
+a_n=\bigg\{\begin{matrix}a\ (n=0)\\[-1em]1\ (n=1)\\[-1em]0\
+(n&gt;1)\end{matrix} とする\\
+&amp;&amp;&amp; 1 = x G(x) とする\\
+&amp;&amp;&amp; 1 =
+\sum_{n=0}^{\infty}a_n(x-a)^n\sum_{n=0}^{\infty}b_n(x-a)^n \\
+&amp;&amp;&amp; \quad=\sum_{n=0}^{\infty}\big(\sum_{k=0}^{n}a_k
+b_{n-k}\big)(x-a)^n
+({\because\ }コーシー積より)\\
+&amp;&amp;&amp; \quad= \sum_{k=0}^{0}a_k b_{0-k}(x-a)^0
+      +\sum_{k=0}^{1}a_k b_{1-k}(x-a)^1
+      +\sum_{k=0}^{2}a_k b_{2-k}(x-a)^2 +\dots\\
+&amp;&amp;&amp; 1=\sum_{k=0}^{0}a_k b_{0-k} と仮定する\
+    1=a_0 b_0\ {\therefore\ }b_0=\frac{1}{a_0}=\frac{1}{a} \\
+&amp;&amp;&amp; 0=\sum_{k=0}^{n}a_k b_{n-k}\ (n&gt;0)と仮定する\\
+&amp;&amp;&amp; 0=a_0 b_0+a_1 b_{n-1}+\sum_{k=2}^{n}a_k b_{n-k}\\
+&amp;&amp;&amp; {\therefore\ }0=a b_n + b_{n-1} + 0\ ({\because\
+}a_0=a,a_1=1,a_k=0(k&gt;1))\\
+&amp;&amp;&amp; {\therefore\ }b_n=-\frac{1}{a}b_{n-1}\\
+&amp;&amp;&amp; {\therefore\
+}b_n=\frac{1}{a}\Big(-\frac{1}{a}\Big)^n=(-1)^n\frac{1}{a^{n+1}}\\
+&amp;&amp;&amp; これを踏まえて \\
+&amp;&amp;&amp; a\ne0 とする \\
+&amp;&amp;&amp; G(x)=\sum_{n=0}^{\infty}b_n(x-a)^n,
+b_n=(-1)^n\frac{1}{a^{n+1}}とする\\
+&amp;&amp;&amp; G(x) は初項 \frac{1}{a}、 公比
+\frac{-1}{a}(x-a)の等比級数\\
+&amp;&amp;&amp; よって\Big| \frac{-1}{a}(x-a) \Big|&lt;1 即ち
+|x-a|&lt;|a| ならば収束する\\
+&amp;&amp;&amp; よって |x-a|&lt;|a| ならば\\
+&amp;&amp;&amp;
+G(x)=\frac{1}{a}\frac{1}{1-\frac{-1}{a}(x-a)}=\frac{1}{a+(x-a)}=\frac{1}{x}\
+({\because\ }等比級数の公式)\\
+&amp;&amp;&amp; また 等比級数なので \Big| \frac{-1}{a}(x-a)
+\Big|&gt;1  即ち |x-a|&gt;|a| ならば収束しない\\
+&amp;&amp;&amp; よって 収束半径は |a|
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\(\displaystyle\frac{1}{x^2}\)</span> は
+<span class="math inline">\(a\ne0\)</span>
+を中心とするべき級数で表される <span
+class="math inline">\(\textcolor{red}{(*3)}\)</span></p>
+<p><span class="math inline">\(|x-a|&lt;|a|\)</span> ならば</p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;\frac{1}{x^2}=\sum_{n=0}^{\infty}c_n(x-a)^n, \quad
+c_n=(-1)^n \frac{n+1}{a^{n+2}}&amp;
+\end{flalign*}\]</span></p>
+<p>級数は絶対収束する。</p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*3)}&amp;|x-a|&lt;|a| とする \\
+&amp;&amp;&amp;
+\frac{1}{x}=\sum_{n=0}^{\infty}b_n(x-a)^n,b_n=(-1)^n\frac{1}{a^{n+1}}
+とする\\
+&amp;&amp;&amp; 級数は絶対収束する。よって\\
+&amp;&amp;&amp; \frac{1}{x^2}=\frac{1}{x}\frac{1}{x}
+    =\sum_{n=0}^{\infty}b_n(x-a)^n \sum_{n=0}^{\infty}b_n(x-a)^n \\
+&amp;&amp;&amp; \quad=\sum_{n=0}^{\infty}\sum_{k=0}^{n}b_k(x-a)^k
+b_{n-k}(x-a)^{n-k}\dots(1)
+     \bigg(\begin{array}{l}{\because\ }絶対収束する級数の積は \\[-1em]
+                          \quad コーシー積に等しい \\[-1em]
+              \quad またコーシー積は絶対収束する \end{array} \bigg)\\
+&amp;&amp;&amp; \quad=\sum_{n=0}^{\infty}\Big(\sum_{k=0}^{n}b_k b_{n-k}
+\Big)(x-a)^n \ ({\because\ }有限級数の線型性)\\
+&amp;&amp;&amp;
+\quad=\sum_{n=0}^{\infty}\Big(\sum_{k=0}^{n}(-1)^k\frac{1}{a^{k+1}}(-1)^{n-k}\frac{1}{a^{n-k+1}}\Big)(x-a)^n\\
+&amp;&amp;&amp;
+\quad=\sum_{n=0}^{\infty}\Big(\sum_{k=0}^{n}(-1)^n\frac{1}{a^{n+1}}\Big)(x-a)^n\\
+&amp;&amp;&amp;
+\quad=\sum_{n=0}^{\infty}\Big((-1)^n\frac{1}{a^{n+1}}\sum_{k=0}^{n}1\Big)(x-a)^n\\
+&amp;&amp;&amp;
+\quad=\sum_{n=0}^{\infty}(-1)^n\frac{1}{a^{n+2}}(n+1)(x-a)^n\\
+&amp;&amp;&amp; 絶対収束する級数の積をあらわすコーシー積は絶対収束する\\
+&amp;&amp;&amp; よって(1)よりこの級数は絶対収束する\\
+&amp;&amp;&amp; (もしくは、収束するべき級数は絶対収束するので
+     この級数は絶対収束する)
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\(\displaystyle-\frac{1}{x^2}\)</span> は
+<span class="math inline">\(a\ne0\)</span>
+を中心とするべき級数で表される <span
+class="math inline">\(\textcolor{red}{(*4)}\)</span></p>
+<p><span class="math inline">\(|x-a|&lt;|a|\)</span> ならば</p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;-\frac{1}{x^2}=\sum_{n=0}^{\infty}s_n(x-a)^n, \quad
+s_n=(-1)^{n+1}\frac{n+1}{a^{n+2}}&amp;
+\end{flalign*}\]</span></p>
+<p>級数は絶対収束する。</p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*4)}&amp;|x-a|&lt;|a| とする \\
+&amp;&amp;&amp; \frac{1}{x^2}=\sum_{n=0}^{\infty}(-1)^n
+\frac{n+1}{a^{n+2}}(x-a)^n\\
+&amp;&amp;&amp; よって\\
+&amp;&amp;&amp; -\frac{1}{x^2}=(-1)\sum_{n=0}^{\infty}(-1)^n
+\frac{n+1}{a^{n+2}}(x-a)^n\\
+&amp;&amp;&amp; \quad=\sum_{n=0}^{\infty}(-1)^{n+1}
+\frac{n+1}{a^{n+2}}(x-a)^n
+    \ ({\because\ }絶対収束する級数は線型性をもつ)\\
+&amp;&amp;&amp;
+また\sum_{n=0}^{\infty}\Big|(-1)^{n+1}\frac{n+1}{a^{n+2}}(x-a)^n\Big|
+    =\sum_{n=0}^{\infty}\Big|(-1)^{n}\frac{n+1}{a^{n+2}}(x-a)^n\Big|\\
+&amp;&amp;&amp; \frac{1}{x^2}の級数が絶対収束するので右辺は収束する\\
+&amp;&amp;&amp; よって-\frac{1}{x^2}の級数は絶対収束する
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\(e^x\)</span> は <span
+class="math inline">\(0\)</span> を中心とするべき級数で表される</p>
+<p><span class="math display">\[\begin{flalign*}
+&amp;e^x = \sum_{n=0}^{\infty}\frac{x^n}{n!}\quad({\because\ }e^x
+の定義)&amp;
+\end{flalign*}\]</span></p>
+<p>すべての <span class="math inline">\(x\)</span>
+について成立するので収束半径は <span
+class="math inline">\(\infty\)</span></p>
+<p><br />
+<br />
+最後に <span class="math inline">\(\displaystyle
+e^{-\frac{1}{x^2}}\)</span> のべき級数を求める。<br />
+<br />
+<span class="math inline">\(\displaystyle e^x = \sum_{n=0}^{\infty}a_n
+x^n,\ a_n=\frac{1}{n!}\)</span>とする</p>
+<p><span class="math inline">\(a\ne0,\ |x-a|&lt;|a|\)</span> とする</p>
+<p><span
+class="math inline">\(\displaystyle-\frac{1}{x^2}=\sum_{m=0}^{\infty}
+s_m(x-a)^n, \ s_m=(-1)^{m+1}\frac{m+1}{a^{m+2}}\)</span> とする</p>
+<p>べき級数の合成(別紙) より</p>
+<p><span
+class="math inline">\(\displaystyle\sum_{m=0}^{\infty}|s_m(x-a)^m|&lt;\infty\)</span>
+ならば</p>
+<p><span class="math display">\[\begin{flalign*}
+e^{-\frac{1}{x^2}} &amp;= \sum_{p=0}^{\infty}d_p(x-p)^p &amp;\\
+d_p &amp;= \sum_{n=0}^{\infty}\sum_{k_1+\dots+k_n=p}^{}s_{k_1}\dots
+s_{k_n} &amp;
+\end{flalign*}\]</span></p>
+<p><span class="math display">\[\begin{flalign*}
+d_p &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \sum_{k_1+\dots+k_n=p}^{}
+       (-1)^{k_1+1}\frac{k_1+1}{a^{k_1+2}}
+       \dots
+       (-1)^{k_n+1}\frac{k_n+1}{a^{k_n+2}} &amp;\\
+    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \sum_{k_1+\dots+k_n=p}^{}
+       (-1)^{p+n}\frac{(k_1+1)\dots(k_n+1)}{a^{p+2n}} &amp;\\
+    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)^p
+       \Big(\frac{-1}{a^2}\Big)^n
+       \sum_{k_1+\dots+k_n=p}^{}(k_1+1)\dots(k_n+1)
+       \ ({\because\ }有限級数の線型性) &amp;
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\(a\ne0,\ |x-a|&lt;|a|\)</span> ならば
+<span
+class="math inline">\(\displaystyle-\frac{1}{x^2}=\sum_{m=0}^{\infty}
+s_m(x-a)^n\)</span> は絶対収束する</p>
+<p>よって <span class="math inline">\(\displaystyle\sum_{m=0}^{\infty}
+|s_m(x-a)^n|\)</span> は収束する</p>
+<p>よって <span class="math inline">\(\displaystyle\sum_{m=0}^{\infty}
+|s_m(x-a)^n| &lt; \infty\)</span></p>
+<p>よって <span class="math inline">\(a\ne0,\ |x-a|&lt;|a|\)</span>
+ならば</p>
+<p><span class="math display">\[\begin{flalign*}
+e^{-\frac{1}{x^2}} &amp;= \sum_{p=0}^{\infty}d_p(x-a)^p &amp;\\
+d_p &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)^p
+       \Big(\frac{-1}{a^2}\Big)^n
+       \sum_{k_1+\dots+k_n=p}^{}(k_1+1)\dots(k_n+1) &amp;
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\(\displaystyle e^{-\frac{1}{x^2}}\)</span>
+は <span class="math inline">\(a\ne0\)</span>
+を中心とするべき級数であらわされる。よって解析的である。<br />
+<span class="math inline">\(a\ne0,\ |x-a|&lt;|a|\)</span> において <span
+class="math inline">\(-\frac{1}{x^2}\)</span> と <span
+class="math inline">\(e^x\)</span>
+の級数は絶対収束するので、その２つの級数のコーシー積である <span
+class="math inline">\(e^{-\frac{1}{x^2}}\)</span>
+の級数も絶対収束する<br />
+(注)「収束半径＝一番近い特異点までの距離」は実関数では成立しないので簡単に収束半径
+<span class="math inline">\(|a|\)</span> とは言えない<br />
+<span class="math inline">\(x\ne0\)</span> で <span
+class="math inline">\(f(x)=\displaystyle e^{-\frac{1}{x^2}}\)</span>
+なので <span class="math inline">\(x\ne0\)</span> で <span
+class="math inline">\(f(x)\)</span> は解析的である。<br />
+<br />
+最初の3項を求めてみる</p>
+<p><span class="math display">\[\begin{flalign*}
+d_0 &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)^0
+       \Big(\frac{-1}{a^2}\Big)^n
+       \sum_{k_1+\dots+k_n=0}^{}(k_1+1)\dots(k_n+1) &amp;\\
+    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a^2}\Big)^n
+       \cdot 1 &amp;\\
+    &amp;= e^{-\frac{1}{a^2}} &amp;\\
+d_1 &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)^1
+       \Big(\frac{-1}{a^2}\Big)^n
+       \sum_{k_1+\dots+k_n=0}^{}(k_1+1)\dots(k_n+1) &amp;\\
+    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)
+       \Big(\frac{-1}{a^2}\Big)^n
+       {}_n C_1 &amp;\\
+    &amp;= \sum_{n=0}^{\infty}\frac{1}{(n-1)!}
+       \Big(\frac{-1}{a}\Big)
+       \Big(\frac{-1}{a^2}\Big)
+       \Big(\frac{-1}{a^2}\Big)^{n-1} &amp;\\
+    &amp;= \frac{1}{a^3}
+       \sum_{n=0}^{\infty}\frac{1}{(n-1)!}
+       \Big(\frac{-1}{a^2}\Big)^{n-1}
+       \ \Big(\begin{array}{l}
+               {\because\ }別紙:べき級数の合成より dp は絶対収束する
+\\[-1em]
+               \quad なので線型性をもつ \\[-1em]
+           \end{array} \Big) &amp;\\
+    &amp;= \frac{1}{a^3}e^{-\frac{1}{a^2}} &amp;\\
+d_2 &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)^2
+       \Big(\frac{-1}{a^2}\Big)^n
+       \sum_{k_1+\dots+k_n=2}^{}(k_1+1)\dots(k_n+1) &amp;\\
+    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)^2
+       \Big(\frac{-1}{a^2}\Big)^n
+       (4{}_n C_2+3{}_n C_1) &amp;\\
+    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)^2
+       \Big(\frac{-1}{a^2}\Big)^n
+       (2n(n-1)+3n) &amp;\\
+    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)^2
+       \Big(\frac{-1}{a^2}\Big)^n
+       2n(n-1)
+      +\sum_{n=0}^{\infty}\frac{1}{n!}
+       \Big(\frac{-1}{a}\Big)^2
+       \Big(\frac{-1}{a^2}\Big)^n
+       3n\ ({\because\ }dp の線型性) &amp;\\
+    &amp;= \frac{2}{a^6}
+       \sum_{n=0}^{\infty}\frac{1}{(n-2)!}
+       \Big(\frac{-1}{a^2}\Big)^{n-2}
+      +\frac{-3}{a^4}
+       \sum_{n=0}^{\infty}\frac{1}{(n-1)!}
+       \Big(\frac{-1}{a^2}\Big)^{n-1}\ ({\because\ }dp の線型性) &amp;\\
+    &amp;= \frac{2}{a^6}e^{-\frac{1}{a^2}}
+      +\frac{-3}{a^4}e^{-\frac{1}{a^2}}\ ({\because\ }e^x の定義)
+&amp;\\
+    &amp;= \Big(\frac{2}{a^6}
+            -\frac{3}{a^4}\Big)e^{-\frac{1}{a^2}} &amp;
+\end{flalign*}\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[\begin{flalign*}
+e^{-\frac{1}{x^2}} &amp;\approx
+  e^{-\frac{1}{a^2}}
+  +\frac{1}{a^2}e^{-\frac{1}{a^2}}
+  +\frac{1}{a^3}e^{-\frac{1}{a^2}}
+  +\Big(\frac{2}{a^6}
+        -\frac{3}{a^4}\Big)e^{-\frac{1}{a^2}} &amp;
+\end{flalign*}\]</span></p>
+   </main>
+   </div>
+  </div>
+
+<script>
+  const sidebar = document.getElementById("SIDEBAR");
+
+  // 復元：ページ読み込み時
+  window.addEventListener("load", () => {
+    const savedScrollTop = localStorage.getItem("sidebarScroll");
+    if (savedScrollTop !== null) {
+      sidebar.scrollTop = parseInt(savedScrollTop, 10);
+    }
+  });
+
+  // 保存：ページ離脱時
+  window.addEventListener("beforeunload", () => {
+    localStorage.setItem("sidebarScroll", sidebar.scrollTop);
+  });
+</script>
+
+</body>
+</html>

@@ -82,6 +82,12 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
+id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
+5.28</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
+id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
+5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -92,12 +98,9 @@ id="toc-p.12-補足-x0でc級-25-5.20">P.12 補足 x=0でC∞級 '25 5.20</a></l
 <li><a href="P.12 補足 x=0でC∞級であるが解析的でない &#39;25 5.21.html"
 id="toc-p.12-補足-x0でc級であるが解析的でない-25-5.21">P.12 補足
 x=0でC∞級であるが解析的でない '25 5.21</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
+<li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
+id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
+6.4</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -183,5 +186,23 @@ class="math inline">\(\left|\displaystyle\frac{f(a+\epsilon&#39;)-f(a)}{\epsilon
    </main>
    </div>
   </div>
+
+<script>
+  const sidebar = document.getElementById("SIDEBAR");
+
+  // 復元：ページ読み込み時
+  window.addEventListener("load", () => {
+    const savedScrollTop = localStorage.getItem("sidebarScroll");
+    if (savedScrollTop !== null) {
+      sidebar.scrollTop = parseInt(savedScrollTop, 10);
+    }
+  });
+
+  // 保存：ページ離脱時
+  window.addEventListener("beforeunload", () => {
+    localStorage.setItem("sidebarScroll", sidebar.scrollTop);
+  });
+</script>
+
 </body>
 </html>
