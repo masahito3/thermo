@@ -1,0 +1,144 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{ltjsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \ifLuaTeX
+    \usepackage[ipaex]{luatexja-preset}
+  \fi
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[a4paper,margin=0.5in]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{etoolbox}
+\providecommand{\l}{}
+\renewcommand{\l}{\left}
+\providecommand{\r}{}
+\renewcommand{\r}{\right}
+\newcommand{\so}{\text{{\large\therefore\ }}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\kome}[1]{\red{(*#1)}}
+\newcommand{\disp}{\displaystyle}
+\newcommand{\iif}{\rightleftarrows}
+\newcommand{\cuz}{\text{{\large\because\ }}}
+\newcommand{\eps}{\epsilon}
+\newcommand{\D}{\Delta}
+\newcommand{\limto}[2]{\lim_{#1\to #2}}
+\newcommand{\sumto}[2]{\sum_{#1}^{#2}}
+\newcommand{\V}[1]{\vec{#1}}
+\allowdisplaybreaks
+\AddToHook{env/flalign*/begin}{
+  \setlength{\abovedisplayskip}{0pt}
+  \setlength{\belowdisplayskip}{0pt}
+  \ifhmode
+  \else
+  \vspace{-1.5em}
+  \fi}
+
+\providecommand{\series}{}
+\renewcommand{\series}[1]{\sumto{#1=0}{\infty}}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1}
+\newpage
+
+\hypertarget{p.12-ux88dcux8db3-ux3079ux304dux7d1aux6570ux306eux5408ux6210-25-6.1}{%
+\subsection{P.12 補足 べき級数の合成 \textquotesingle25
+6.1}\label{p.12-ux88dcux8db3-ux3079ux304dux7d1aux6570ux306eux5408ux6210-25-6.1}}
+
+\(|x-a|<R_f\) ならば
+\(f(x)=\displaystyle\sum_{n=0}^{\infty} a_n(x-a)^n\) とする
+
+\(|x-b|<R_g\) ならば
+\(g(x)=\displaystyle\sum_{m=0}^{\infty} b_m(x-a)^m\) とする
+
+\(R_f\), \(R_g\) は収束半径とする。このとき
+
+\(|x-b|<R_g\) かつ \(\displaystyle\sum_{m=0}^{\infty}|c_m(x-b)^m|<R_f\),
+\(c_m=\displaystyle\renewcommand{\arraystretch}{0.8}\begin{cases}b_0-a & (m=0) \\ b_m & (m>0) \end{cases}\)
+ならば
+
+\(c_m=\Bigg\{\begin{array}{ll}b_0-a & (m=0) \rule[-8pt]{0pt}{20pt} \\ b_m & (m>0) \end{array}\)
+\(c_m=\bigg\{\renewcommand{\arraystretch}{0.6}\begin{array}{ll}b_0-a & (m=0) \rule[-4pt]{0pt}{10pt} \\ b_m & (m>0) \end{array}\)
+\(c_m=\Bigg\{\begin{array}{ll}b_0-a & (m=0) \rule[-4pt]{0pt}{10pt} \\ b_m & (m>0) \end{array}\)
+
+\(f(g(x))\) は \(b\) を中心としてべき級数であらわされる
+
+\noindent\rule{\linewidth}{0.4pt}
+
+(証明)
+
+\(|x-b|<R_g\) とする
+
+AAA
+
+\begin{flalign*}
+&\begin{array}{ll}AAA & BBB \\ CCC & ddd \\ \end{array} &\\
+&AAABBBCCC&
+\end{flalign*}
+
+上
+
+上 \begin{flalign*}
+&AAA = BBB &\\
+&CCC CCC &
+\end{flalign*} 中 \begin{flalign*}
+AAA &= BBB &\\
+    &= CCC &
+\end{flalign*} 下
+
+\end{document}

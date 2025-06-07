@@ -1,0 +1,123 @@
+% (description) '25 6.6
+% Depite setting \abovedisplayskip,\belowdisplayskip,
+% \abovedisplayshortskip,\belowdisplayshortskip,\parskip to 0,
+% vertical spacing remains between \par and \begin{flalign*}.
+% I examined amslatex.sty near the definition of flalign*,
+% but couldn't identify the part that introduces the vertical spacing.
+% I believe the spacing is caused by the $$ TeX primitive command.
+% A workaround involves inserting a negative \vspace at the start of flalign*
+% to compensate for the horizontal mode set at the end of \par.
+
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{ltjsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \ifLuaTeX
+    \usepackage[ipaex]{luatexja-preset}
+  \fi
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[a4paper,margin=0.5in]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{etoolbox}
+\providecommand{\l}{}
+\renewcommand{\l}{\left}
+\providecommand{\r}{}
+\renewcommand{\r}{\right}
+\newcommand{\so}{\text{{\large\therefore\ }}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\kome}[1]{\red{(*#1)}}
+\newcommand{\disp}{\displaystyle}
+\newcommand{\iif}{\rightleftarrows}
+\newcommand{\cuz}{\text{{\large\because\ }}}
+\newcommand{\eps}{\epsilon}
+\newcommand{\D}{\Delta}
+\newcommand{\limto}[2]{\lim_{#1\to #2}}
+\newcommand{\sumto}[2]{\sum_{#1}^{#2}}
+\newcommand{\V}[1]{\vec{#1}}
+\allowdisplaybreaks
+\providecommand{\series}{}
+\renewcommand{\series}[1]{\sumto{#1=0}{\infty}}
+\renewcommand{\linespread}{2.0}
+
+
+\AddToHook{env/flalign*/begin}{
+  \setlength{\abovedisplayskip}{0pt}
+  \setlength{\belowdisplayskip}{0pt}
+  \ifhmode
+  \else
+  \vspace{-1.5em}
+  \fi
+}
+
+
+
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+
+\begin{document}
+
+\setstretch{1.5}
+\setstretch{1.0}
+\newpage
+
+111\\
+222
+\par
+333
+AAA
+\par
+\begin{flalign*}
+&AAAAAA&
+\end{flalign*}
+\par
+BBB
+\begin{flalign*}
+&BBBBBB&
+\end{flalign*}
+BBB
+
+
+\end{document}

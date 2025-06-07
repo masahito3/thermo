@@ -1,0 +1,216 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{ltjsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \ifLuaTeX
+    \usepackage[ipaex]{luatexja-preset}
+  \fi
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+    \setlength{\parskip}{-10pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[a4paper,margin=0.5in]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{etoolbox}
+%\gappto{\normalsize}{%
+%\abovedisplayskip=0pt%
+%\belowdisplayskip=0pt%
+%\abovedisplayshortskip=0pt%
+%\belowdisplayshortskip=0pt}
+%\gappto{\footnotesize}{%
+%\abovedisplayskip=0pt%
+%\belowdisplayskip=0pt%
+%\abovedisplayshortskip=0pt%
+%\belowdisplayshortskip=0pt}
+%\setlength{\parskip}{0pt}
+%\setlength{\parindent}{0pt}
+\providecommand{\l}{}
+\renewcommand{\l}{\left}
+\providecommand{\r}{}
+\renewcommand{\r}{\right}
+\newcommand{\so}{\text{{\large\therefore\ }}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\kome}[1]{\red{(*#1)}}
+\newcommand{\disp}{\displaystyle}
+\newcommand{\iif}{\rightleftarrows}
+\newcommand{\cuz}{\text{{\large\because\ }}}
+\newcommand{\eps}{\epsilon}
+\newcommand{\D}{\Delta}
+\newcommand{\limto}[2]{\lim_{#1\to #2}}
+\newcommand{\sumto}[2]{\sum_{#1}^{#2}}
+\newcommand{\V}[1]{\vec{#1}}
+\allowdisplaybreaks
+\providecommand{\series}{}
+\renewcommand{\series}[1]{\sumto{#1=0}{\infty}}
+
+%\let\oldnormalsize\normalsize
+%\renewcommand{\normalsize}{%
+%  \typeout{*** \string\normalsize CALLED ***}%
+%  \oldnormalsize
+%}
+
+\makeatletter
+\def\mynormalsize{\@setfontsize\mynormalsize{10pt}{10pt}}
+\makeatother
+
+\renewcommand{\normalsize}{%
+\typeout{*** \string\normalsize CALLED ***}%
+\mynormalsize%
+\abovedisplayskip=0pt  %
+\abovedisplayshortskip=0pt  %
+\belowdisplayskip=0pt  %
+\belowdisplayshortskip=0pt}
+
+
+\AddToHook{env/flalign*/begin}{
+  \typeout{--- flalign starts here ---}
+  \ifhmode
+  {\typeout{現在は水平モードです}}
+  \else
+  \vspace{-1.5em}
+  {\typeout{現在は水平モードではありません}}
+  \fi
+}
+
+
+
+%\ltj@@ifnarrowbaselines {\jsc@setfontsize \normalsize \@xpt \@xiipt }{\jsc@se
+%tfontsize \normalsize \@xpt {\n@baseline }}\abovedisplayskip 11\jsc@mpt \@plus
+%3\jsc@mpt \@minus 4\jsc@mpt \abovedisplayshortskip \z@ \@plus 3\jsc@mpt \belowd
+%isplayskip 9\jsc@mpt \@plus 3\jsc@mpt \@minus 4\jsc@mpt \belowdisplayshortskip
+%\belowdisplayskip \let \@listi \@listI \abovedisplayskip =0pt\belowdisplayskip
+%=0pt\abovedisplayshortskip =0pt\belowdisplayshortskip =0pt.
+
+
+
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+%\makeatletter
+%\g@addto@macro\flalign{\abovedisplayskip=0pt \belowdisplayskip=0pt}
+%\makeatother
+%\setlength{\abovedisplayskip}{0pt}
+%\setlength{\belowdisplayskip}{0pt}
+%\setlength{\abovedisplayshortskip}{0pt}
+%\setlength{\belowdisplayshortskip}{0pt}
+%\AtBeginEnvironment{flalign}{%
+%\setlength{\abovedisplayskip}{0pt}%
+%  \setlength{\belowdisplayskip}{0pt}%
+%  \setlength{\abovedisplayshortskip}{0pt}%
+%  \setlength{\belowdisplayshortskip}{0pt}%
+%}
+
+%\everydisplay=\expandafter{\the\everydisplay \narrowbaselines}
+%\tracingmacros=1
+
+\setlength{\parskip}{0pt}
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+
+%\setlength{\parskip}{0pt}
+%\everypar{\ifhmode\unskip]\fi}
+
+\typeout{*** 1111 ***}%
+\begin{document}
+\typeout{*** 222 ***}%
+
+
+
+\setstretch{1.5}
+%\setstretch{1.0}%効く
+%\setlength{\parskip}{0pt}%効かない
+
+(証明)
+
+\(|x-b|<R_g\) とする
+
+\(AAA\)
+\par
+\(BBB\)
+\par
+\par
+\(AAA\)
+\par
+\(BBB\)
+%\nointerlineskip %効く
+\typeout{*** AAA ***}
+%\typeout{prevdepth = \the\prevdepth}
+\typeout{baselineskip = \the\baselineskip}
+\typeout{*** BBB ***}
+\ExplSyntaxOn
+%\tex_par:D
+\ExplSyntaxOff
+\ExplSyntaxOn
+\mode_if_horizontal:TF
+  {\typeout{現在は水平モードです}}
+  {\typeout{現在は水平モードではありません}}
+\ExplSyntaxOff
+%\show\par
+%> \par=\protected\long macro:
+%->\scan_stop: \mode_if_horizontal:TF {\mode_if_inner:F {\tex_unskip:D \hook_use
+%:n {para/end}\@kernel@after@para@end \mode_if_horizontal:TF {\if_int_compare:w
+%11=\tex_lastnodetype:D \tex_hskip:D \c_zero_dim \fi: \tex_par:D \hook_use:n {pa
+%ra/after}\@kernel@after@para@after }{\msg_error:nnnn {hooks}{para-mode}{end}{ho
+%5rizontal}}}}\tex_par:D .
+%l.151 \show\par
+%\show\normalsize
+%flalign の ソース : kpsewhich amsmath.sty
+%/media/win/Users/hit/.local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+\par
+\begin{flalign*}
+AAA BBB CCC DDD 
+AAABBBCCC
+\end{flalign*}
+
+上 \(ABC\)
+
+上
+
+%\nointerlineskip %効く
+
+\end{document}
