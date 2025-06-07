@@ -1,18 +1,6 @@
   \usepackage{graphicx}
   \graphicspath{{images/}}
   \usepackage{etoolbox}
-  \gappto{\normalsize}{%
-  \abovedisplayskip=-1em%
-  \belowdisplayskip=0.8em%
-  \abovedisplayshortskip=0pt%
-  \belowdisplayshortskip=0pt}
-  \gappto{\footnotesize}{%
-  \abovedisplayskip=-1em%
-  \belowdisplayskip=0.8em%
-  \abovedisplayshortskip=0pt%
-  \belowdisplayshortskip=0pt}
-  \setlength{\parskip}{0pt}
-  \setlength{\parindent}{0pt}
   \providecommand{\l}{}
   \renewcommand{\l}{\left}
   \providecommand{\r}{}
@@ -29,3 +17,12 @@
   \newcommand{\sumto}[2]{\sum_{#1}^{#2}}
   \newcommand{\V}[1]{\vec{#1}}
   \allowdisplaybreaks
+  \AddToHook{env/flalign*/begin}{
+    \setlength{\abovedisplayskip}{0pt}
+    \setlength{\belowdisplayskip}{0pt}
+    \ifhmode
+    \else
+      \vspace{-1.5em}
+    \fi
+  }
+
