@@ -5,5 +5,5 @@ s/VSPACE1/<div style="margin-bottom:1em;"><\/div>/g
 s/VSPACE/<div style="margin-bottom:2em;"><\/div>/g
 s/NEWPAGE//g
 s/HSPACE/<span style="margin-left:2em;"><\/span>/g
-s/NEWCOMMAND_CUZ/{\\because\\ }/g
-s/NEWCOMMAND_SO/{\\therefore\\ }/g
+s/NEWCOMMAND_CUZ/{\\because}/g
+s/NEWCOMMAND_SO/{\\therefore}/g
