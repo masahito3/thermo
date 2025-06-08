@@ -1,4 +1,12 @@
 % (memo) '25 6.8
+% math mode と display math mode で \array の行間が異なる
+% math mode のほうが大きい
+% math mode と display math mode で \structbox の高さが異なる
+% 対処は、math mode の \arrayの前に\renewcommand{\arraystretch}{0.8}で間を詰める
+% ただし\cases は内部で\arraystretchを設定しているので効かない
+% ただし \pretocmd{\array}{\ifinner \renewcommand{\arraystretch}{0.8} \fi}{}{}
+% とすると \cases で呼ばれる \arrayの直前で\arraystretchを設定できるので効く
+% (memo) '25 6.8
 % flalign など display math 環境 の最終行でarray を使うと、
 % 次のパラグラフ間との垂直スペースが短くなる。
 % flalign などをフックしたりでの回避は難しそう
@@ -91,6 +99,7 @@
 \graphicspath{{images/}}
 \usepackage{etoolbox}
 \usepackage{expl3}
+\usepackage{mathtools}
 \RequirePackage{expl3}
 \providecommand{\l}{}
 \renewcommand{\l}{\left}
@@ -145,39 +154,60 @@
 %\setlength{\abovedisplayshortskip}{0pt}
 %\setlength{\belowdisplayshortskip}{0pt}
 
-\begin{flalign*}
-&A=\mathstrut\left\{\mathstrut\begin{aligned}{l}AAAAA\\BBBB\\CCCC\\DDDDD \end{aligned}\right.\mathstrut&
-\end{flalign*}
 
-\begin{flalign*}
-&A=\left\{\begin{aligned}{l}AAAAA\\BBBB\\CCCC\\DDDDD \end{aligned}\right.&
-\end{flalign*}
-\par
-\begin{flalign*}
-&\mathstrut PAR\ A=\left\{\begin{array}{l}AAAAA\\BBBB\\CCCCC\\DDDDD\end{array}\right.&
-\end{flalign*}
-\par
-\begin{flalign*}
-&PAR\ FLALIGN &
-\end{flalign*}
-\par
-\begin{flalign*}
-&PAR\ FLALIGN &
-\end{flalign*}
+$A=\left\{\begin{array}{l}aaaaa\\BBBB\\CCCCC\\ddddd\end{array}\right.$
 
-AAAAAAAAAA
-\par
-PAR BBBBBBBBBBB
+%\renewcommand{\arraystretch}{0.5} 
 
-%\typeout{\the\predisplaygapfactor}
+\setlength{\jot}{0pt}
+\setstretch{1}
+\lineskip=0pt
+\lineskiplimit=0pt
+\renewcommand{\arraystretch}{1}
 
-\begin{flalign*}
-&\vcenter{\hbox{$PAR\ A=\left\{\begin{gathered}AAAAA\\BBBB\\CCCCCC\\DDDDDD\\EEEEE \end{gathered}\right.$}}&
-\end{flalign*}
-\par
-\begin{flalign*}
-&\vcenter{\hbox{$PAR\ A=\left\{\begin{gathered}AAAAA\\BBBB\\CCCCCC\\DDDDDD\\EEEEE \end{gathered}\right.$}}&
-\end{flalign*}
-PAR AAA
+\abovedisplayskip=0pt
+
+
+
+\makeatletter
+$\baselinestretch \the\abovedisplayskip \the\baselineskip A=\begin{array}{l}AAA\\ \the\baselineskip \\ \the\lineskip \\ \arraystretch \\
+                   \the\jot \\ \baselinestretch \\
+                   \f@size \\
+                   \the\ht\strutbox \\ \the\dp\strutbox \end{array}$
+
+$$\baselinestretch \the\abovedisplayskip \the\baselineskip A=\begin{array}{l}AAA\\ \the\baselineskip \\ \the\lineskip \\ \arraystretch \\
+                   \the\jot \\ \baselinestretch \\
+                   \f@size \\
+                   \the\ht\strutbox \\ \the\dp\strutbox \end{array}$$
+
+\makeatother
+
+ABC
+
+\baselineskip=12.0pt
+$\the\baselineskip \the\ht\strutbox$
+
+$$\the\baselineskip \the\ht\strutbox$$
+
+\the\baselineskip
+
+
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+
+
+$$A=\begin{array}{l}\the\baselineskip aaaaa\\BBBB\\CCCCC\\ddddd\end{array}$$
+
+$\the\baselineskip \the\ht\strutbox A=\begin{array}{l}aaaa\\BBBB\\CCCCC\\ddddd\end{array}$
+
+$ \renewcommand{\arraystretch}{0.8} A=\begin{array}{l}aaaa\\BBBB\\CCCCC\\ddddd\end{array}$
+
+$$\the\baselineskip \the\ht\strutbox A=\begin{array}{l}aaaa\\BBBB\\CCCCC\\ddddd\end{array}$$
+
+$$A=\begin{dcases}aaaaa\\BBBB\\CCCCC\\ddddd\end{dcases}$$
+
+$\baselineskip=12pt \renewcommand{\arraystretch}{0.8} A=\begin{dcases}aaaaa\\BBBB\\CCCCC\\ddddd\end{dcases}$
 
 \end{document}
