@@ -26,7 +26,7 @@ $|x-a|<R_g$ とする
 $$\begin{flalign*}
 (g(x))^2&=\series  a_n(x-a)^n\series a_n(x-a)^n\quad(1)&\\
 &=\series\sumto{k=0}{n}a_k(x-a)^k a_{n-k}(x-a)^{n-k}
-  \quad\l(\begin{array}{l} \cuz\sum a_n(x-a)^n は絶対収束するので \\
+  \quad\l(\begin{array}{@{}l@{}} \cuz\sum a_n(x-a)^n は絶対収束するので \\
                            \quad この級数の積はコーシー積に等しい \end{array}\r) &\\
 &=\series\lb\sumto{k=0}{n}a_k a_{n-k}\rb(x-a)^n &\\
 &=\series\lb\sumto{k_1+k_2=n}{} a_{k_1}a_{k_2}\rb(x-a)^n\quad\kome{1} &

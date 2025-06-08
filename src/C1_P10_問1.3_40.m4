@@ -12,6 +12,7 @@ include(`preamble.tex')
 NEWPAGE
 
 ## P.10 問1.3 (x,y)≠(0,0)でfxは連続 '25 5.13
+
 $$
 \begin{flalign*}
 f(x,y)=
@@ -20,7 +21,8 @@ f(x,y)=
             0 & (x,y)=(0,0)
 \end{cases} &&
 \end{flalign*}$$
-$(x,y)\ne(0,0)でf_xは連続$
+
+$(x,y)\ne(0,0)$で$f_x$は連続
 
 ---
 
@@ -33,28 +35,28 @@ $\disp f_x(x,y)=\FX\quad(\cuz 別紙)$
 $(a,b)\ne(0,0)$とする
 
 $\disp\limto{(x,y)}{(a,b)}\FX=\FA\quad$
-$(\cuz (a^2+b^2)^2\ne0なので和、積、商の極限、また\disp\limto{(x,y)}{(a,b)}x=a\ \red{(*1)})$
+($\cuz (a^2+b^2)^2\ne0$なので和、積、商の極限、また$\disp\limto{(x,y)}{(a,b)}x=a\ \kome{1}$)
 
-$よって任意の\eps に対して|(x,y)-(a,b)|<\delta ならば$
+よって任意の$\eps$ に対して$|(x,y)-(a,b)|<\delta$ ならば
 
 $\disp\l|\FX-\FA\r|<\eps$
 
-$また0<\delta'<|(a,b)|とすると$
+また$0<\delta'<|(a,b)|$とすると
 
-$|(x,y)-(a,b)|<\delta'ならば(x,y)\ne(0,0)である$
+$|(x,y)-(a,b)|<\delta'$ならば$(x,y)\ne(0,0)$である
 
 $\so f_x(x,y)=\disp\FX$
 
-$よって|(x,y)-(a,b)|<min(\delta,\delta')ならば$
+よって$|(x,y)-(a,b)|<min(\delta,\delta')$ならば
 
 $\disp\l|f_x(x,y)-\FA\r|<\eps$
 
-$よって\disp\limto{(x,y)}{(a,b)}f_x(x,y)=\FA=f_x(a,b)$
+よって$\disp\limto{(x,y)}{(a,b)}f_x(x,y)=\FA=f_x(a,b)$
 
-$よってf_x(x,y)は(a,b)\ne(0,0)で連続である$
+よって$f_x(x,y)は(a,b)\ne(0,0)$で連続である
 
 $$\begin{flalign*}
-&&\red{(*1)}&\disp\limto{(x,y)}{(a,b)}x=a\\
+&&\kome{1}&\disp\limto{(x,y)}{(a,b)}x=a\\
 &&&(証明)\\
 &&&任意の\eps に対して\\
 &&&|(x,y)-(a,b)|<\eps ならば\\

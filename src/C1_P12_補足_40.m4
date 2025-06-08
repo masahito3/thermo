@@ -16,6 +16,7 @@ e^{-\fx} & x\ne 0 \\
 0        & x=0
 \end{cases} &&
 \end{flalign*}$$
+
 $x=0$ で $C^\infty$ 級
 
 ---

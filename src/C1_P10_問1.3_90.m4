@@ -22,7 +22,7 @@ f(x,y)=
 \end{cases} &&
 \end{flalign*}$$
 
-$(x,y)=(0,0)でf_{xy}は不連続$
+$(x,y)=(0,0)$で$f_{xy}$は不連続
 
 ---
 
@@ -46,11 +46,11 @@ $$\begin{flalign*}
 &&&また(\DENO)^2\ne0なので和、積、商の微分公式より
 \end{flalign*}$$
 
-経路$\ \Big\{\begin{matrix}x=0\\[-1em]y=y\end{matrix}\ $
+経路$\ \l\{\begin{matrix}x=0 \\ y=y\end{matrix}\r.$
 に沿った$(x,y)\to(0,0)$の極限は
 $\disp\limto{y}{0}f_{xy}(0,y)=\limto{y}{0}-1=-1$
 
-経路$\ \Big\{\begin{matrix}x=x\\[-1em]y=0\end{matrix}\ $
+経路$\ \l\{\begin{matrix}x=x \\ y=0\end{matrix}\r.$
 に沿った$(x,y)\to(0,0)$の極限は
 $\disp\limto{x}{0}f_{xy}(x,0)=\limto{x}{0}1=1$
 

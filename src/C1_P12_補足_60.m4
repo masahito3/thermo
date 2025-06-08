@@ -3,8 +3,6 @@ header-includes: |
 include(`preamble.tex')
   \providecommand{\series}{}
   \renewcommand{\series}{\sumto{n=0}{\infty}}
-  \providecommand{\fx}{}
-  \renewcommand{\fx}{\frac{1}{x^2}}
 ---
 
 NEWPAGE
@@ -14,10 +12,11 @@ NEWPAGE
 $$\begin{flalign*}
 f(x)=
 \begin{cases}
-e^{-\fx} & x\ne 0 \\
+e^{-\frac{1}{x^2}} & x\ne 0 \\
 0        & x=0
 \end{cases} &&
 \end{flalign*}$$
+
 $x\ne0$ で $f(x)$ は解析的
 
 ---
@@ -39,7 +38,7 @@ a & (n=0) \\
 
 $$\begin{flalign*}
 &&\kome{1}&F(x)=\series a_n(x-a)^n,
-a_n=\bigg\{\begin{matrix}a\ (n=0)\\[-1em]1\ (n=1)\\[-1em]0\ (n>1)\end{matrix} とする\\
+a_n=\begin{cases}a & (n=0)\\ 1 & (n=1)\\ 0 & (n>1)\end{cases} とする\\
 &&& F(x)=a_0(x-a)^0+a_1(x-a)^1+a_2(x-a)^2+\dots\\
 &&& \qquad=a+(x-a)+0\\
 &&& \qquad=x\\
@@ -59,7 +58,7 @@ $$\begin{flalign*}
 &&\kome{2}&a\ne0 とする \\
 &&& G(x)=\series b_n(x-a)^n とする。収束すると仮定する\\
 &&& x = \series a_n(x-a)^n,
-a_n=\bigg\{\begin{matrix}a\ (n=0)\\[-1em]1\ (n=1)\\[-1em]0\ (n>1)\end{matrix} とする\\
+a_n=\begin{cases}a & (n=0)\\ 1 & (n=1)\\ 0 & (n>1)\end{cases} とする\\
 &&& 1 = x G(x) とする\\
 &&& 1 = \series a_n(x-a)^n\series b_n(x-a)^n \\
 &&& \quad=\series \big(\sumto{k=0}{n}a_k b_{n-k}\big)(x-a)^n
@@ -103,9 +102,9 @@ $$\begin{flalign*}
 &&& \frac{1}{x^2}=\frac{1}{x}\frac{1}{x}
     =\series b_n(x-a)^n \series b_n(x-a)^n \\
 &&& \quad=\series \sumto{k=0}{n}b_k(x-a)^k b_{n-k}(x-a)^{n-k}\dots(1)
-     \bigg(\begin{array}{l}\cuz 絶対収束する級数の積は \\[-1em]
-                          \quad コーシー積に等しい \\[-1em]
-			  \quad またコーシー積は絶対収束する \end{array} \bigg)\\
+     \l(\begin{array}{@{}l@{}}\cuz 絶対収束する級数の積は \\
+                          \quad コーシー積に等しい \\
+			  \quad またコーシー積は絶対収束する \end{array} \r)\\
 &&& \quad=\series \Big(\sumto{k=0}{n}b_k b_{n-k} \Big)(x-a)^n \ (\cuz 有限級数の線型性)\\
 &&& \quad=\series \Big(\sumto{k=0}{n}(-1)^k\frac{1}{a^{k+1}}(-1)^{n-k}\frac{1}{a^{n-k+1}}\Big)(x-a)^n\\
 &&& \quad=\series \Big(\sumto{k=0}{n}(-1)^n\frac{1}{a^{n+1}}\Big)(x-a)^n\\
@@ -244,10 +243,10 @@ d_1 &= \series \frac{1}{n!}
     &= \frac{1}{a^3}
        \series \frac{1}{(n-1)!}
        \Big(\frac{-1}{a^2}\Big)^{n-1}
-       \ \Big(\begin{array}{l}
-               \cuz 別紙:べき級数の合成より dp は絶対収束する \\[-1em]
-               \quad なので線型性をもつ \\[-1em]
-	       \end{array} \Big) &\\
+       \ \l(\begin{array}{@{}l@{}}
+               \cuz 別紙:べき級数の合成より dp は絶対収束する \\
+               \quad なので線型性をもつ \\
+	       \end{array} \r) &\\
     &= \frac{1}{a^3}e^{-\frac{1}{a^2}} &\\
 %
 d_2 &= \series \frac{1}{n!}

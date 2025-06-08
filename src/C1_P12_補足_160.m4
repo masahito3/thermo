@@ -21,11 +21,11 @@ $R_f, R_g$ は収束半径 とする
 
 $|x-a|<R_g$,
 $\disp\seriesn|c_n(x-a)^n|<R_f$,
-$c_n=\Big\{
-\begin{array}{ll}
-a_0-b & (n=0) \\[-1em]
-a_n   & (n>0) \\[0.5em]
-\end{array}$
+$c_n=
+\begin{cases}
+a_0-b & (n=0) \\
+a_n   & (n>0) \\
+\end{cases}$
 ならば
 
 $f(g(x))$ は $a$ を中心としたべき級数であらわされる
@@ -37,14 +37,14 @@ $f(g(x))$ は $a$ を中心としたべき級数であらわされる
 $|x-a|<R_g$ とする
 $\disp g(x)=\seriesn a_n(x-a)^n$ である
 
-$b_n=\Big\{
-\begin{array}{ll}
-b & (n=0) \\[-1em]
-0   & (n>0) \\[0.5em]
-\end{array}$ とする
+$b_n=
+\begin{cases}
+b & (n=0) \\
+0 & (n>0) \\
+\end{cases}$ とする
 $\disp b=\seriesn b_n(x-a)^n$ である
 
-任意の$x$について$\seriesn b_n(x-a)^n=b < \infty$ なので
+任意の$x$について$\disp\seriesn b_n(x-a)^n=b < \infty$ なので
 
 この級数の収束半径は$\infty$
 

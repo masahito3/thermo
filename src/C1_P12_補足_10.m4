@@ -8,13 +8,17 @@ include(`preamble.tex')
 NEWPAGE
 
 ## P.12 補足 x≠0でf(x)は連続 '25 4.23
-$$\begin{flalign*}
+
+$$
+\begin{flalign*}
 f(x)=
 \begin{cases}
 e^{-\fx} & x\ne 0 \\
 0        & x=0
 \end{cases} &&
-\end{flalign*}$$
+\end{flalign*}
+$$
+
 $x\ne 0 で f(x) は連続$
 
 ---

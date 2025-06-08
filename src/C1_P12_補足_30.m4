@@ -16,6 +16,7 @@ e^{-\fx} & x\ne 0 \\
 0        & x=0
 \end{cases} &&
 \end{flalign*}$$
+
 $x\ne 0 で C^\infty 級$
 
 ---
@@ -53,9 +54,9 @@ f^{(n+1)}&=\l(\sumto{\nu=1}{m}k_\nu x^{-\nu}\r)'e^{-\fx}+\l(\sumto{\nu=1}{m}k_\n
        +\sumto{i=4}{m+1}-(i-1)k_{i-1}x^{-i}\r.&\\
   &\qquad\l.+\sumto{i=4}{m+1}2k_{i-3}x^{-i}
        +2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\r)e^{-\fx}&\\
-  &=\l((-1)k_1x^{-2}+(-2)k_2x^{-3}
+  &=\bigg((-1)k_1x^{-2}+(-2)k_2x^{-3}
       +\sumto{i=4}{m+1}(-(i-1)k_{i-1}+2k_{i-3})x^{-i}\r.&\\
-      &\qquad\l.+2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\r)e^{-\fx}&
+  &\qquad+2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\bigg)e^{-\fx}&
 \end{flalign*}$$
 
 ここで
