@@ -22,7 +22,8 @@
     \setlength{\belowdisplayskip}{0pt}
     \ifhmode
     \else
-      \vspace{-1.5em}
+      \vspace{-0.8\baselineskip}
     \fi
   }
-
+  \pretocmd{\array}{%
+    \ifnum\mathstyle=0\else\renewcommand{\arraystretch}{0.8}\fi}{}{}
