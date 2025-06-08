@@ -4,8 +4,10 @@
 % math mode と display math mode で \structbox の高さが異なる
 % 対処は、math mode の \arrayの前に\renewcommand{\arraystretch}{0.8}で間を詰める
 % ただし\cases は内部で\arraystretchを設定しているので効かない
-% ただし \pretocmd{\array}{\ifinner \renewcommand{\arraystretch}{0.8} \fi}{}{}
+% ただし \pretocmd{\array}{\ifnum\mathstyle=0\else\renewcommand{\arraystretch}{0.8} \fi}{}{}
 % とすると \cases で呼ばれる \arrayの直前で\arraystretchを設定できるので効く
+% \ifinner, \ifmmode と \mathstyle は似ているが同じタイミングで値が変化するわけでない
+% ここでつかえるのは\mathstyle のほうである
 % (memo) '25 6.8
 % flalign など display math 環境 の最終行でarray を使うと、
 % 次のパラグラフ間との垂直スペースが短くなる。
