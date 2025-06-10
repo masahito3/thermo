@@ -164,10 +164,10 @@ $\disp -\frac{1}{x^2}=\sumto{m=0}{\infty} s_m(x-a)^n,
 
 $\disp\sumto{m=0}{\infty}|s_m(x-a)^m|<\infty$ ならば
 
-$$\begin{flalign*}
-e^{-\frac{1}{x^2}} &= \sumto{p=0}{\infty}d_p(x-p)^p &\\
-d_p &= \series \sumto{k_1+\dots+k_n=p}{}s_{k_1}\dots s_{k_n} &
-\end{flalign*}$$
+$\disp e^{-\frac{1}{x^2}} = \sumto{p=0}{\infty}d_p(x-p)^p$
+$,\quad d_p = \disp\series \frac{1}{n!} \sumto{k_1+\dots+k_n=p}{}s_{k_1}\dots s_{k_n}$
+
+である
 
 $$\begin{flalign*}
 d_p &= \series \frac{1}{n!}
@@ -208,7 +208,7 @@ d_p &= \series \frac{1}{n!}
 
 $\disp e^{-\frac{1}{x^2}}$ は $a\ne0$ を中心とするべき級数であらわされる。よって解析的である。
 \
-$a\ne0,\ |x-a|<|a|$ において $-\frac{1}{x^2}$ と $e^x$ の級数は絶対収束するので、その２つの級数のコーシー積である $e^{-\frac{1}{x^2}}$ の級数も絶対収束する
+$a\ne0,\ |x-a|<|a|$ において $-\frac{1}{x^2}$ と $e^x$ の級数は絶対収束するので、コーシー積の $e^{-\frac{1}{x^2}}$ の級数も絶対収束する
 \
 (注)「収束半径＝一番近い特異点までの距離」は実関数では成立しないので簡単に収束半径 $|a|$ とは言えない
 \

@@ -50,13 +50,13 @@ f^{(n+1)}&=\l(\sumto{\nu=1}{m}k_\nu x^{-\nu}\r)'e^{-\fx}+\l(\sumto{\nu=1}{m}k_\n
   &=\sumto{\nu=1}{m}(-\nu k_{\nu})x^{-\nu-1}e^{-\fx}+\sumto{\nu=1}{m}k_\nu x^{-\nu}2x^{-3}e^{-\fx}\quad(\cuz(1),(2))&\\
   &=\l(\sumto{\nu=1}{m}-\nu k_\nu x^{-\nu-1}+\sumto{\nu=1}{m}2k_{\nu}x^{-\nu-3}\r)e^{-\fx}&\\
   &=\l(\sumto{i=2}{m+1}-(i-1)k_{i-1}x^{-i}+\sumto{i=4}{m+3}2k_{i-3}x^{-i}\r)e^{-\fx}&\\
-  &=\l((-1)k_1x^{-2}+(-2)k_2x^{-3}
-       +\sumto{i=4}{m+1}-(i-1)k_{i-1}x^{-i}\r.&\\
-  &\qquad\l.+\sumto{i=4}{m+1}2k_{i-3}x^{-i}
-       +2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\r)e^{-\fx}&\\
   &=\bigg((-1)k_1x^{-2}+(-2)k_2x^{-3}
-      +\sumto{i=4}{m+1}(-(i-1)k_{i-1}+2k_{i-3})x^{-i}\r.&\\
-  &\qquad+2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\bigg)e^{-\fx}&
+       +\sumto{i=4}{m+1}-(i-1)k_{i-1}x^{-i}&\\
+    &\qquad+\sumto{i=4}{m+1}2k_{i-3}x^{-i}
+       +2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\bigg)e^{-\fx}&\\
+  &=\bigg((-1)k_1x^{-2}+(-2)k_2x^{-3}
+      +\sumto{i=4}{m+1}(-(i-1)k_{i-1}+2k_{i-3})x^{-i} &\\
+    &\qquad+2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\bigg)e^{-\fx}&
 \end{flalign*}$$
 
 ここで
