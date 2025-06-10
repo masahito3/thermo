@@ -9,10 +9,12 @@ toc-depth: 2
 #  documentclass: bxjsarticle
 #  classoption: pandoc
 pdf-engine: lualatex
+#pdf-engine-opt:
+#  - --file-line-error
 variables:
   documentclass: ltjsarticle
   luatexjapresetoptions: ipaex
-  linestretch: 1.5
+  linestretch: 1.0
   geometry:
   - a4paper
   - margin=0.5in

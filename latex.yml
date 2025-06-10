@@ -9,6 +9,8 @@ toc-depth: 2
 #  documentclass: bxjsarticle
 #  classoption: pandoc
 pdf-engine: lualatex
+#pdf-engine-opt:
+#  - --file-line-error
 variables:
   documentclass: ltjsarticle
   luatexjapresetoptions: ipaex
