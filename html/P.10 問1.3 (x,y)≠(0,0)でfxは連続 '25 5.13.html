@@ -82,12 +82,6 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -101,6 +95,12 @@ x=0でC∞級であるが解析的でない '25 5.21</a></li>
 <li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
 id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
 6.4</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 6.1.html"
+id="toc-p.12-補足-べき級数の合成-25-6.1">P.12 補足 べき級数の合成 '25
+6.1</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 6.2.html"
+id="toc-p.12-補足-べき級数のべき-25-6.2">P.12 補足 べき級数のべき '25
+6.2</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -140,47 +140,50 @@ f(x,y)=
 \displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
             0 &amp; (x,y)=(0,0)
 \end{cases} &amp;&amp;
-\end{flalign*}\]</span> <span
-class="math inline">\((x,y)\ne(0,0)でf_xは連続\)</span></p>
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\((x,y)\ne(0,0)\)</span>で<span
+class="math inline">\(f_x\)</span>は連続</p>
 <hr />
 <p>(証明)</p>
 <p><span class="math inline">\((x,y)\ne(0,0)\)</span>とする</p>
 <p><span class="math inline">\(\displaystyle
-f_x(x,y)=\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\quad({\because\
-}別紙)\)</span></p>
+f_x(x,y)=\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\quad({\because}別紙)\)</span></p>
 <p><span class="math inline">\((a,b)\ne(0,0)\)</span>とする</p>
 <p><span class="math inline">\(\displaystyle\lim_{(x,y)\to
 (a,b)}\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}=\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}\quad\)</span>
-<span class="math inline">\(({\because\
-}(a^2+b^2)^2\ne0なので和、積、商の極限、また\displaystyle\lim_{(x,y)\to
-(a,b)}x=a\ \textcolor{red}{(*1)})\)</span></p>
-<p><span class="math inline">\(よって任意の\epsilon
-に対して|(x,y)-(a,b)|&lt;\delta ならば\)</span></p>
+(<span
+class="math inline">\({\because}(a^2+b^2)^2\ne0\)</span>なので和、積、商の極限、また<span
+class="math inline">\(\displaystyle\lim_{(x,y)\to (a,b)}x=a\
+\textcolor{red}{(*1)}\)</span>)</p>
+<p>よって任意の<span class="math inline">\(\epsilon\)</span>
+に対して<span class="math inline">\(|(x,y)-(a,b)|&lt;\delta\)</span>
+ならば</p>
 <p><span
 class="math inline">\(\displaystyle\left|\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}-\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}\right|&lt;\epsilon\)</span></p>
+<p>また<span
+class="math inline">\(0&lt;\delta&#39;&lt;|(a,b)|\)</span>とすると</p>
 <p><span
-class="math inline">\(また0&lt;\delta&#39;&lt;|(a,b)|とすると\)</span></p>
+class="math inline">\(|(x,y)-(a,b)|&lt;\delta&#39;\)</span>ならば<span
+class="math inline">\((x,y)\ne(0,0)\)</span>である</p>
 <p><span
-class="math inline">\(|(x,y)-(a,b)|&lt;\delta&#39;ならば(x,y)\ne(0,0)である\)</span></p>
-<p><span class="math inline">\({\therefore\
-}f_x(x,y)=\displaystyle\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\)</span></p>
-<p><span
-class="math inline">\(よって|(x,y)-(a,b)|&lt;min(\delta,\delta&#39;)ならば\)</span></p>
+class="math inline">\({\therefore}f_x(x,y)=\displaystyle\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}\)</span></p>
+<p>よって<span
+class="math inline">\(|(x,y)-(a,b)|&lt;min(\delta,\delta&#39;)\)</span>ならば</p>
 <p><span
 class="math inline">\(\displaystyle\left|f_x(x,y)-\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}\right|&lt;\epsilon\)</span></p>
-<p><span class="math inline">\(よって\displaystyle\lim_{(x,y)\to
+<p>よって<span class="math inline">\(\displaystyle\lim_{(x,y)\to
 (a,b)}f_x(x,y)=\frac{ba^4+4a^2b^3-b^5}{(a^2+b^2)^2}=f_x(a,b)\)</span></p>
-<p><span
-class="math inline">\(よってf_x(x,y)は(a,b)\ne(0,0)で連続である\)</span></p>
+<p>よって<span
+class="math inline">\(f_x(x,y)は(a,b)\ne(0,0)\)</span>で連続である</p>
 <p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*1)}&amp;\displaystyle\lim_{(x,y)\to
 (a,b)}x=a\\
 &amp;&amp;&amp;(証明)\\
 &amp;&amp;&amp;任意の\epsilon に対して\\
 &amp;&amp;&amp;|(x,y)-(a,b)|&lt;\epsilon ならば\\
-&amp;&amp;&amp;|x-a|&lt;|(x,y)-(a,b)|&lt;\epsilon\ ({\because\
-}三角不等式)\\
-&amp;&amp;&amp;{\therefore\ }\displaystyle\lim_{(x,y)\to (a,b)}x=a
+&amp;&amp;&amp;|x-a|&lt;|(x,y)-(a,b)|&lt;\epsilon\
+({\because}三角不等式)\\
+&amp;&amp;&amp;{\therefore}\displaystyle\lim_{(x,y)\to (a,b)}x=a
 \end{flalign*}\]</span></p>
    </main>
    </div>

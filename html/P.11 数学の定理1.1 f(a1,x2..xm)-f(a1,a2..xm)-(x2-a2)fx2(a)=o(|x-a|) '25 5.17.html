@@ -83,12 +83,6 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -102,6 +96,12 @@ x=0でC∞級であるが解析的でない '25 5.21</a></li>
 <li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
 id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
 6.4</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 6.1.html"
+id="toc-p.12-補足-べき級数の合成-25-6.1">P.12 補足 べき級数の合成 '25
+6.1</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 6.2.html"
+id="toc-p.12-補足-べき級数のべき-25-6.2">P.12 補足 べき級数のべき '25
+6.2</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -160,17 +160,15 @@ class="math inline">\(|\vec{x}-\vec{a}|&lt;\delta\)</span>ならば <span
 class="math inline">\(|g(x_1,\dots,x_m)|&lt;\epsilon\)</span>である</p>
 <p>ここで</p>
 <p><span class="math display">\[\begin{flalign*}
-|(a_1,x_2,\dots,x_m)-\vec{a}|&amp;\le|\vec{x}-\vec{a}|\quad({\because\
-}三角不等式)&amp;\\
+|(a_1,x_2,\dots,x_m)-\vec{a}|&amp;\le|\vec{x}-\vec{a}|\quad({\because}三角不等式)&amp;\\
                          &amp;&lt;\delta&amp;
 \end{flalign*}\]</span> なので <span
 class="math inline">\(|g(a_1,x_2,\dots,x_m)|&lt;\epsilon\)</span>である</p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore\ }\lim_{\vec{x}\to
-\vec{a}}|g(a_1,x_2,\dots,x_m)|=0&amp;
+&amp;{\therefore}\lim_{\vec{x}\to \vec{a}}|g(a_1,x_2,\dots,x_m)|=0&amp;
 \end{flalign*}\]</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore\ }\lim_{\vec{x}\to \vec{a}}
+&amp;{\therefore}\lim_{\vec{x}\to \vec{a}}
 \left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
 {|(a_1,x_2,\dots,x_m)-\vec{a}|}\right|=0&amp;
 \end{flalign*}\]</span></p>
@@ -178,8 +176,8 @@ class="math inline">\(|g(a_1,x_2,\dots,x_m)|&lt;\epsilon\)</span>である</p>
 
 </div>
 <p>ここで <span
-class="math inline">\(|(a_1,x_2,\dots,x_m)-\vec{a}|\le|\vec{x}-\vec{a}|\quad({\because\
-}三角不等式)\)</span> なので</p>
+class="math inline">\(|(a_1,x_2,\dots,x_m)-\vec{a}|\le|\vec{x}-\vec{a}|\quad({\because}三角不等式)\)</span>
+なので</p>
 <p><span class="math display">\[\begin{flalign*}
 &amp;\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
 {|\vec{x}-\vec{a}|}\right| &amp; \\
@@ -188,7 +186,7 @@ class="math inline">\(|(a_1,x_2,\dots,x_m)-\vec{a}|\le|\vec{x}-\vec{a}|\quad({\b
 {|(a_1,x_2,\dots,x_m)-\vec{a}|}\right| &amp;
 \end{flalign*}\]</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore\ }\lim_{\vec{x}\to \vec{a}}
+&amp;{\therefore}\lim_{\vec{x}\to \vec{a}}
 \left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}\right|
 =0\quad\textcolor{red}{(*1)}&amp;
 \end{flalign*}\]</span></p>
@@ -196,8 +194,7 @@ class="math inline">\(|(a_1,x_2,\dots,x_m)-\vec{a}|\le|\vec{x}-\vec{a}|\quad({\b
 &amp;&amp;\textcolor{red}{(*1)}&amp;|f|\le|g|,\lim g=0 ならば \lim f=0)
 \end{flalign*}\]</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore\
-}f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})
+&amp;{\therefore}f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})
 =o(|\vec{x}-\vec{a}|)&amp;
 \end{flalign*}\]</span></p>
    </main>

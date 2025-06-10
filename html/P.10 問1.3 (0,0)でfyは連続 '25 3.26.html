@@ -82,12 +82,6 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -101,6 +95,12 @@ x=0でC∞級であるが解析的でない '25 5.21</a></li>
 <li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
 id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
 6.4</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 6.1.html"
+id="toc-p.12-補足-べき級数の合成-25-6.1">P.12 補足 べき級数の合成 '25
+6.1</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 6.2.html"
+id="toc-p.12-補足-べき級数のべき-25-6.2">P.12 補足 べき級数のべき '25
+6.2</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -141,13 +141,14 @@ f(x,y)=
             0 &amp; (x,y)=(0,0)
 \end{cases} &amp;&amp;
 \end{flalign*}\]</span></p>
-<p><span class="math inline">\((x,y)=(0,0)でf_yは連続\)</span></p>
+<p><span class="math inline">\((x,y)=(0,0)\)</span>で<span
+class="math inline">\(f_y\)</span>は連続</p>
 <hr />
 <p>(証明)</p>
 <p><span class="math inline">\((x,y)\ne(0,0)\)</span>で</p>
 <p><span class="math display">\[\begin{flalign*}
-f_y(x,y)&amp;=\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}\quad({\because\
-}別紙) &amp;\\
+f_y(x,y)&amp;=\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}\quad({\because}別紙)
+&amp;\\
         &amp;=x\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}&amp;
 \end{flalign*}\]</span></p>
 <p><span
@@ -159,11 +160,11 @@ class="math inline">\(\displaystyle\lim_{(x,y)\to (0,0)}x=0\)</span></p>
 \textcolor{red}{(*2)}\)</span></p>
 <p>また <span class="math inline">\(f\)</span> は <span
 class="math inline">\((0,0)\)</span> で連続 <span
-class="math inline">\((\ {\because\ }別紙)\)</span></p>
+class="math inline">\((\ {\because}別紙)\)</span></p>
 <p>よって <span class="math inline">\((0,0)\)</span> で <span
 class="math inline">\(f_y\)</span> は存在して</p>
 <p><span class="math inline">\(\displaystyle f_y(0,0)=\lim_{(x,y)\to
-(0,0)}f_y(x,y)=0\ ({\because\ }本文(1.5),(1.6)より)\)</span></p>
+(0,0)}f_y(x,y)=0\ ({\because}本文(1.5),(1.6)より)\)</span></p>
 <p>よって <span class="math inline">\((0,0)\)</span> で <span
 class="math inline">\(f_y\)</span> は連続</p>
 <p><span class="math display">\[\begin{flalign*}
@@ -171,12 +172,11 @@ class="math inline">\(f_y\)</span> は連続</p>
 &amp;&amp;&amp;(証明)\\
 &amp;&amp;&amp;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}は有界でないと仮定する\\
 &amp;&amp;&amp;任意のm&gt;0に対して\left|\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}\right|&gt;m\\
-&amp;&amp;&amp;{\therefore\
-}\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}&lt;-m または
-m&lt;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}である\\
+&amp;&amp;&amp;{\therefore}\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}&lt;-m
+または m&lt;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}である\\
 &amp;&amp;&amp;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}&lt;-m とすると\\
 &amp;&amp;&amp;x^4-4x^2y^2-y^4&lt;-m(x^4+2x^2y^2+y^4)\\
-&amp;&amp;&amp;{\therefore\ }(1+m)x^4+(-4+2m)x^2y^2+(m-1)y^4&lt;0\\
+&amp;&amp;&amp;{\therefore}(1+m)x^4+(-4+2m)x^2y^2+(m-1)y^4&lt;0\\
 &amp;&amp;&amp;m=1 とすると 2x^4&lt;0\\
 &amp;&amp;&amp;これは矛盾\\
 &amp;&amp;&amp;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}&gt;m とすると\\

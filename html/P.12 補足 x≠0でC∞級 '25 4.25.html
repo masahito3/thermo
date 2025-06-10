@@ -82,12 +82,6 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -101,6 +95,12 @@ x=0でC∞級であるが解析的でない '25 5.21</a></li>
 <li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
 id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
 6.4</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 6.1.html"
+id="toc-p.12-補足-べき級数の合成-25-6.1">P.12 補足 べき級数の合成 '25
+6.1</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 6.2.html"
+id="toc-p.12-補足-べき級数のべき-25-6.2">P.12 補足 べき級数のべき '25
+6.2</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -131,7 +131,7 @@ id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 
 </div>
 </nav>
-<h2 data-number="1.21" id="p.12-補足-x0でc級-25-4.25">P.12 補足
+<h2 data-number="1.19" id="p.12-補足-x0でc級-25-4.25">P.12 補足
 x≠0でC∞級 '25 4.25</h2>
 <p><span class="math display">\[\begin{flalign*}
 f(x)=
@@ -139,8 +139,8 @@ f(x)=
 e^{-\frac{1}{x^2}} &amp; x\ne 0 \\
 0        &amp; x=0
 \end{cases} &amp;&amp;
-\end{flalign*}\]</span> <span class="math inline">\(x\ne 0 で C^\infty
-級\)</span></p>
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\(x\ne 0 で C^\infty 級\)</span></p>
 <hr />
 <p>(証明)</p>
 <p><span class="math inline">\(x\ne 0\)</span>とする</p>
@@ -149,7 +149,7 @@ f^{(1)}&amp;=\left(e^{-\frac{1}{x^2}}\right)&#39; &amp;\\
    &amp;= \left(-\frac{1}{x^2}\right)&#39;e^{-\frac{1}{x^2}} \quad
 \textcolor{red}{(*1),(*2)}&amp; \\
    &amp;= -\left(\frac{1}{x^2}\right)&#39;e^{-\frac{1}{x^2}} \quad
-({\because\ }積の微分)&amp; \\
+({\because}積の微分)&amp; \\
    &amp;= -(-2)x^{-3}e^{-\frac{1}{x^2}} \quad \textcolor{red}{(*3)}&amp;
 \\
    &amp;= 2x^{-3}e^{-\frac{1}{x^2}} \quad\cdots(1)&amp;
@@ -161,29 +161,27 @@ x^{-\nu}\right)e^{-\frac{1}{x^2}}&amp;
 \end{flalign*}\]</span>と仮定する</p>
 <p><span class="math display">\[\begin{flalign*}
 \left(\sum_{\nu=1}^{m}k_\nu
-x^{-\nu}\right)&#39;&amp;=\sum_{\nu=1}^{m}k_\nu(x^{-\nu})&#39;\quad({\because\
-}和,積の微分)&amp;\\
+x^{-\nu}\right)&#39;&amp;=\sum_{\nu=1}^{m}k_\nu(x^{-\nu})&#39;\quad({\because}和,積の微分)&amp;\\
   &amp;=\sum_{\nu=1}^{m}(-\nu
 k_\nu)x^{-\nu-1}\quad\textcolor{red}{(*3)}\cdots(2)&amp;
 \end{flalign*}\]</span>なので</p>
 <p><span class="math display">\[\begin{flalign*}
 f^{(n+1)}&amp;=\left(\sum_{\nu=1}^{m}k_\nu
 x^{-\nu}\right)&#39;e^{-\frac{1}{x^2}}+\left(\sum_{\nu=1}^{m}k_\nu
-x^{-\nu}\right)\left(e^{-\frac{1}{x^2}}\right)&#39;\quad({\because\
-}積の微分)&amp;\\
+x^{-\nu}\right)\left(e^{-\frac{1}{x^2}}\right)&#39;\quad({\because}積の微分)&amp;\\
   &amp;=\sum_{\nu=1}^{m}(-\nu
 k_{\nu})x^{-\nu-1}e^{-\frac{1}{x^2}}+\sum_{\nu=1}^{m}k_\nu
-x^{-\nu}2x^{-3}e^{-\frac{1}{x^2}}\quad({\because\ }(1),(2))&amp;\\
+x^{-\nu}2x^{-3}e^{-\frac{1}{x^2}}\quad({\because}(1),(2))&amp;\\
   &amp;=\left(\sum_{\nu=1}^{m}-\nu k_\nu
 x^{-\nu-1}+\sum_{\nu=1}^{m}2k_{\nu}x^{-\nu-3}\right)e^{-\frac{1}{x^2}}&amp;\\
   &amp;=\left(\sum_{i=2}^{m+1}-(i-1)k_{i-1}x^{-i}+\sum_{i=4}^{m+3}2k_{i-3}x^{-i}\right)e^{-\frac{1}{x^2}}&amp;\\
-  &amp;=\left((-1)k_1x^{-2}+(-2)k_2x^{-3}
-       +\sum_{i=4}^{m+1}-(i-1)k_{i-1}x^{-i}\right.&amp;\\
-  &amp;\qquad\left.+\sum_{i=4}^{m+1}2k_{i-3}x^{-i}
-       +2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\right)e^{-\frac{1}{x^2}}&amp;\\
-  &amp;=\left((-1)k_1x^{-2}+(-2)k_2x^{-3}
-      +\sum_{i=4}^{m+1}(-(i-1)k_{i-1}+2k_{i-3})x^{-i}\right.&amp;\\
-      &amp;\qquad\left.+2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\right)e^{-\frac{1}{x^2}}&amp;
+  &amp;=\bigg((-1)k_1x^{-2}+(-2)k_2x^{-3}
+       +\sum_{i=4}^{m+1}-(i-1)k_{i-1}x^{-i}&amp;\\
+    &amp;\qquad+\sum_{i=4}^{m+1}2k_{i-3}x^{-i}
+       +2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\bigg)e^{-\frac{1}{x^2}}&amp;\\
+  &amp;=\bigg((-1)k_1x^{-2}+(-2)k_2x^{-3}
+      +\sum_{i=4}^{m+1}(-(i-1)k_{i-1}+2k_{i-3})x^{-i} &amp;\\
+    &amp;\qquad+2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\bigg)e^{-\frac{1}{x^2}}&amp;
 \end{flalign*}\]</span></p>
 <p>ここで</p>
 <p><span class="math display">\[\begin{flalign*}
@@ -214,7 +212,7 @@ class="math inline">\(C^\infty\)</span>級である</p>
 &amp;&amp;&amp;f(g(x))&#39;=g&#39;(x)f&#39;(g(x))\\
 &amp;&amp;\textcolor{red}{(*2)}&amp; (e^x)&#39;=e^x \\
 &amp;&amp;&amp;(証明)\\
-&amp;&amp;&amp;e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}\ ({\because\ }e^x
+&amp;&amp;&amp;e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}\ ({\because}e^x
 の定義)\\
 &amp;&amp;&amp;右辺の項別微分を考える\\
 &amp;&amp;&amp;\sum_{n=0}^{\infty}\left(\frac{x^n}{n!}\right)&#39;=(1)&#39;+\sum_{n=1}^{\infty}\left(\frac{x^n}{n!}\right)&#39;\\
@@ -223,44 +221,42 @@ class="math inline">\(C^\infty\)</span>級である</p>
 &amp;&amp;&amp;\quad=\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}\\
 &amp;&amp;&amp;\quad=\sum_{n=0}^{\infty}\frac{x^n}{n!}\
 \textcolor{red}{(*2.2)}\\
-&amp;&amp;&amp;\quad=e^x\ ({\because\ }e^x の定義)\\
+&amp;&amp;&amp;\quad=e^x\ ({\because}e^x の定義)\\
 &amp;&amp;&amp;ここで任意のxに対して\\
 &amp;&amp;&amp;-A\le x\le A,A&gt;0 なる区間を考える\\
 &amp;&amp;&amp;\left|\frac{x^\nu}{\nu!}\right|\le\frac{A^\nu}{\nu!},\nu=0,1,2,\ldots
 である\\
 &amp;&amp;&amp;また \sum_{\nu=0}^{\infty}\frac{A^\nu}{\nu!}=e^a\
-({\because\ }e^a の定義)\\
+({\because}e^a の定義)\\
 &amp;&amp;&amp;なので \sum_{\nu=0}^{\infty}\frac{x^\nu}{\nu!}
 は区間[-A,A] で一様収束する\\
-&amp;&amp;&amp;({\because\ }定理:ある区間で |a_n(x)|\le C_n なる定数 C_n
+&amp;&amp;&amp;({\because}定理:ある区間で |a_n(x)|\le C_n なる定数 C_n
 があって\\
 &amp;&amp;&amp;\quad \sum_{}^{\infty}C_n が収束するならば
 \sum_{}^{\infty}a_n は一様収束する)\\
 &amp;&amp;&amp;よって\left(e^x\right)&#39;=e^x\\
-&amp;&amp;&amp;({\because\
-}定理:無限級数が収束し各項の導関数が連続で項別微分が\\
+&amp;&amp;&amp;({\because}定理:無限級数が収束し各項の導関数が連続で項別微分が\\
 &amp;&amp;&amp;\quad
 一様収束するならば無限級数の導関数は項別微分に等しい)\\
 &amp;&amp;\textcolor{red}{(*2.1)}&amp; (1)&#39;=0\\
 &amp;&amp;&amp;n&gt;0 ならば x^n=nx^{n-1}\ \textcolor{red}{(*3)}\\
-&amp;&amp;&amp;(kf(x))&#39;=kf&#39;(x)\ ({\because\ }積の微分)\\
+&amp;&amp;&amp;(kf(x))&#39;=kf&#39;(x)\ ({\because}積の微分)\\
 &amp;&amp;\textcolor{red}{(*2.2)}&amp;\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}=1+x+\frac{x^2}{2!}+\cdots\\
 &amp;&amp;&amp;\sum_{n=0}^{\infty}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\cdots\\
-&amp;&amp;&amp;{\therefore\
-}\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}=\sum_{n=0}^{\infty}\frac{x^n}{n!}\\
+&amp;&amp;&amp;{\therefore}\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}=\sum_{n=0}^{\infty}\frac{x^n}{n!}\\
 &amp;&amp;\textcolor{red}{(*3)}&amp; x\ne 0,n&gt;0 ならば \\
 &amp;&amp;&amp;(x^{-n})&#39;=-nx^{-n-1}\\
 &amp;&amp;&amp;(証明)\\
 &amp;&amp;&amp;(x^n)&#39;=-n x^{-n-1} と仮定する\\
 &amp;&amp;&amp;(x^{n+1})&#39;=(xx^n)&#39;=(x)&#39;x^n+x(x^n)&#39;\
-({\because\ }積の微分)\\
+({\because}積の微分)\\
 &amp;&amp;&amp;\quad=x^n+xnx^{n-1}=(n+1)x^n\\
 &amp;&amp;&amp;(x)&#39;=1=1\cdot x^{1-1}\\
 &amp;&amp;&amp;よって(x^n)&#39;=nx^{n-1},n=1,2,\ldots\\
 &amp;&amp;&amp;よって x\ne 0, n=1,2,\ldots ならば\\
 &amp;&amp;&amp;
 (x^{-n})&#39;=\left(\frac{1}{x^n}\right)&#39;=\frac{1&#39;x^n-1(x^n)&#39;}{x^{2n}}\
-({\because\ }商の微分)\\
+({\because}商の微分)\\
 &amp;&amp;&amp; \quad=\frac{-nx^{n-1}}{x^{2n}}=-nx^{-n-1}
 \end{flalign*}\]</span></p>
    </main>

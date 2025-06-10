@@ -82,12 +82,6 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -101,6 +95,12 @@ x=0でC∞級であるが解析的でない '25 5.21</a></li>
 <li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
 id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
 6.4</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 6.1.html"
+id="toc-p.12-補足-べき級数の合成-25-6.1">P.12 補足 べき級数の合成 '25
+6.1</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 6.2.html"
+id="toc-p.12-補足-べき級数のべき-25-6.2">P.12 補足 べき級数のべき '25
+6.2</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -175,7 +175,7 @@ class="math inline">\(\quad\textcolor{red}{(*2)}\)</span></p>
 \end{flalign*}\]</span></p>
 <p>領域内で<span class="math inline">\(f_x\)</span>は連続かつ<span
 class="math inline">\(y\)</span>で偏微分可能 <span
-class="math inline">\(({\because\ }f_{xy}が存在するので)\)</span></p>
+class="math inline">\(({\because}f_{xy}が存在するので)\)</span></p>
 <p>よって <span class="math inline">\(f_x(a+(x-a)\theta_1,y)\)</span>は
 <span class="math inline">\(yの区間[b,y]\)</span>で連続かつ<span
 class="math inline">\(区間(b,y)\)</span>で<span
@@ -215,7 +215,7 @@ class="math inline">\(|f_{xy}(x,y)-f_{xy}(a,b)|&lt;\epsilon\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
 |(x&#39;,y&#39;)-(a,b)|&amp;=\sqrt{(a+(x-a)\theta_1-a)^2+(b+(y-b)\theta_2-b)^2}&amp;\\
 &amp;=\sqrt{(x-a)^2\theta_1^2+(y-b)^2\theta_2^2}&amp;\\
-&amp;&lt;|(x,y)-(a,b)|\quad({\because\ }\ 0&lt;\theta_1&lt;1,\
+&amp;&lt;|(x,y)-(a,b)|\quad({\because}\ 0&lt;\theta_1&lt;1,\
 0&lt;\theta_2&lt;1)&amp;
 \end{flalign*}\]</span></p>
 <p>よって<span
@@ -244,25 +244,22 @@ class="math inline">\(区間[b,y]\)</span>で<span
 class="math inline">\(f(x,y),f(a,y)\)</span>は連続</p>
 <p>よって<span class="math inline">\(G(y)\)</span>は<span
 class="math inline">\(区間[b,y]\)</span>で連続 <span
-class="math inline">\(({\because\
-}f,gが連続ならばf+gは連続)\)</span></p>
+class="math inline">\(({\because}f,gが連続ならばf+gは連続)\)</span></p>
 <p><span class="math inline">\(f\)</span>は領域で偏微分可能なので<span
 class="math inline">\(区間(b,y)\)</span>で<span
 class="math inline">\(f(x,y),f(a,y)\)</span>は<span
 class="math inline">\(y\)</span>で微分可能</p>
-<p><span class="math inline">\(({\because\
-}x,yが独立なのでf_y=\underset{yで微分}{f&#39;})\)</span></p>
+<p><span
+class="math inline">\(({\because}x,yが独立なのでf_y=\underset{yで微分}{f&#39;})\)</span></p>
 <p>よって<span class="math inline">\(G(y)\)</span> は<span
 class="math inline">\(区間(b,y)\)</span>で<span
 class="math inline">\(y\)</span>で微分可能 <span
-class="math inline">\(({\because\
-}(f+g)&#39;=f&#39;+g&#39;)\)</span></p>
+class="math inline">\(({\because}(f+g)&#39;=f&#39;+g&#39;)\)</span></p>
 <p>よって平均値の定理より</p>
 <p><span class="math display">\[\begin{flalign*}
 \Delta(x,y)&amp;=G&#39;(b+(y-b)\theta_3)(y-b),\
 0&lt;\theta_3&lt;1&amp;\\
-       &amp;=(f_y(x,b+(y-b)\theta_3)-f_y(a,b+(y-b)\theta_3))(y-b)\quad({\because\
-}f_y=\underset{yで微分}{f&#39;})&amp;
+       &amp;=(f_y(x,b+(y-b)\theta_3)-f_y(a,b+(y-b)\theta_3))(y-b)\quad({\because}f_y=\underset{yで微分}{f&#39;})&amp;
 \end{flalign*}\]</span></p>
 <p>領域内で<span class="math inline">\(f_y\)</span>は連続かつ<span
 class="math inline">\(x\)</span>で偏微分可能なので</p>
@@ -270,8 +267,7 @@ class="math inline">\(x\)</span>で偏微分可能なので</p>
 class="math inline">\(区間[a,x]\)</span>で連続かつ<span
 class="math inline">\(区間(a,x)\)</span>で<span
 class="math inline">\(x\)</span>で微分可能 <span
-class="math inline">\(({\because\
-}x,yが独立ならばf_{yx}=\underset{xで微分}{f_y&#39;})\)</span></p>
+class="math inline">\(({\because}x,yが独立ならばf_{yx}=\underset{xで微分}{f_y&#39;})\)</span></p>
 <p>よって平均値の定理より</p>
 <p><span
 class="math inline">\(\Delta(x,y)=f_{yx}(a+(x-a)\theta_4,b+(y-b)\theta_3)(y-b)(x-a),\
@@ -296,7 +292,7 @@ class="math inline">\(|f_{yx}(x,y)-f_{yx}(a,b)|&lt;\epsilon\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
 |(x&#39;,y&#39;)-(a,b)|&amp;=\sqrt{(a+(x-a)\theta_4-a)^2+(b+(y-b)\theta_3-b)^2}&amp;\\
                &amp;=\sqrt{(x-a)^2\theta_4^2+(y-b)^2\theta_3^2}&amp;\\
-           &amp;&lt;|(x,y)-(a,b)|\quad({\because\ }\
+           &amp;&lt;|(x,y)-(a,b)|\quad({\because}\
 0&lt;\theta_3&lt;1,0&lt;\theta_4&lt;1)&amp;
 \end{flalign*}\]</span></p>
 <p>よって <span

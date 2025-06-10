@@ -82,12 +82,6 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -101,6 +95,12 @@ x=0でC∞級であるが解析的でない '25 5.21</a></li>
 <li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
 id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
 6.4</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 6.1.html"
+id="toc-p.12-補足-べき級数の合成-25-6.1">P.12 補足 べき級数の合成 '25
+6.1</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 6.2.html"
+id="toc-p.12-補足-べき級数のべき-25-6.2">P.12 補足 べき級数のべき '25
+6.2</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -131,7 +131,7 @@ id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 
 </div>
 </nav>
-<h2 data-number="1.22" id="p.12-補足-x0でc級-25-5.20">P.12 補足
+<h2 data-number="1.20" id="p.12-補足-x0でc級-25-5.20">P.12 補足
 x=0でC∞級 '25 5.20</h2>
 <p><span class="math display">\[\begin{flalign*}
 f(x)=
@@ -139,27 +139,28 @@ f(x)=
 e^{-\frac{1}{x^2}} &amp; x\ne 0 \\
 0        &amp; x=0
 \end{cases} &amp;&amp;
-\end{flalign*}\]</span> <span class="math inline">\(x=0\)</span> で
-<span class="math inline">\(C^\infty\)</span> 級</p>
+\end{flalign*}\]</span></p>
+<p><span class="math inline">\(x=0\)</span> で <span
+class="math inline">\(C^\infty\)</span> 級</p>
 <hr />
 <p>(証明)</p>
 <p><span class="math inline">\(x\ne 0\)</span>で</p>
 <p><span class="math display">\[\begin{flalign*}
 f^{(n)} &amp;= \left( \sum_{\nu=1}^{m}k_\nu x^{-\nu} \right)
-e^{-\frac{1}{x^2}}\quad({\because\ }別紙) &amp;\\
+e^{-\frac{1}{x^2}}\quad({\because}別紙) &amp;\\
         &amp;= \sum_{\nu=1}^{m}k_\nu x^{-\nu} e^{-\frac{1}{x^2}}&amp;
 \end{flalign*}\]</span></p>
 <p><span class="math inline">\(\displaystyle\lim_{x\to 0}
 x^{-\nu}e^{-\frac{1}{x^2}}=0\quad\textcolor{red}{(*1)}\)</span>
 なので</p>
 <p><span class="math inline">\(\displaystyle\lim_{x\to 0}
-f^{(n)}(x)=0\quad({\because\ }和、積の極限)\)</span></p>
+f^{(n)}(x)=0\quad({\because}和、積の極限)\)</span></p>
 <span class="math inline">\(x=0\)</span>で<span
 class="math inline">\(f\)</span>は連続 <span
-class="math inline">\(({\because\ }別紙)\)</span> かつ<span
+class="math inline">\(({\because}別紙)\)</span> かつ<span
 class="math inline">\(\displaystyle\lim_{x\to 0}f^{(1)}(x)=0\)</span>
 なので <span class="math inline">\(f^{(1)}(0)=0\)</span> <span
-class="math inline">\(({\because\ }p.7,(1.5),(1.6)\ aで連続,\lim_{x\to
+class="math inline">\(({\because}p.7,(1.5),(1.6)\ aで連続,\lim_{x\to
 a}f&#39;(x)が存在するなら\lim_{x\to a}f&#39;(x)=f&#39;(a))\)</span>
 <div style="margin-bottom:1em;">
 
@@ -171,8 +172,8 @@ a}f&#39;(x)が存在するなら\lim_{x\to a}f&#39;(x)=f&#39;(a))\)</span>
 class="math inline">\(f^{(n)}(x)\)</span>は連続</p>
 <p>かつ<span class="math inline">\(\displaystyle\lim_{x\to
 0}f^{(n+1)}(x)=0\)</span>なので</p>
-<p><span class="math inline">\(f^{(n+1)}(0)=0\quad({\because\
-}p.7,(1,5),(1.6))\)</span></p>
+<p><span
+class="math inline">\(f^{(n+1)}(0)=0\quad({\because}p.7,(1,5),(1.6))\)</span></p>
 <p>よって任意の<span class="math inline">\(n\)</span>で<span
 class="math inline">\(f^{(n)}(0)=0\)</span></p>
 <p>よって <span class="math inline">\(x=0\)</span>で<span
@@ -193,16 +194,15 @@ class="math inline">\(C^\infty\)</span>級</p>
 &amp;&amp;&amp;\lim|x^\nu|=0,\dots,\lim|x^{\nu-2(n-1)}|=0\ or\ 1\\
 &amp;&amp;&amp;\nu-2n&lt;0なので\\
 &amp;&amp;&amp;\lim_{x\to 0}|x^{\nu-2n}|=\infty\\
-&amp;&amp;&amp;{\therefore\ }\displaystyle\lim_{x\to
-0}|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|=\infty\ ({\because\
-}和の極限)\\
-&amp;&amp;&amp;{\therefore\ }\displaystyle\lim_{x\to
+&amp;&amp;&amp;{\therefore}\displaystyle\lim_{x\to
+0}|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|=\infty\ ({\because}和の極限)\\
+&amp;&amp;&amp;{\therefore}\displaystyle\lim_{x\to
 0}\frac{1}{|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|}=0\\
 &amp;&amp;&amp;\displaystyle\frac{1}{|x^\nu
 e^{\frac{1}{x^2}}|}&lt;\frac{1}{|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|}なので\\
 &amp;&amp;&amp;\displaystyle\lim_{x\to 0}\frac{1}{|x^\nu
 e^{\frac{1}{x^2}}|}=0\\
-&amp;&amp;&amp;{\therefore\ }\displaystyle\lim_{x\to 0}\frac{1}{x^\nu
+&amp;&amp;&amp;{\therefore}\displaystyle\lim_{x\to 0}\frac{1}{x^\nu
 e^{\frac{1}{x^2}}}=0
 \end{flalign*}\]</span></p>
    </main>

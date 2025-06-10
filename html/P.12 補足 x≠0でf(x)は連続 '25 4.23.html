@@ -82,12 +82,6 @@ id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '2
 <li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
 4.23</a></li>
-<li><a href="P.12 補足 べき級数のべき &#39;25 5.28.html"
-id="toc-p.12-補足-べき級数のべき-25-5.28">P.12 補足 べき級数のべき '25
-5.28</a></li>
-<li><a href="P.12 補足 べき級数の合成 &#39;25 5.30.html"
-id="toc-p.12-補足-べき級数の合成-25-5.30">P.12 補足 べき級数の合成 '25
-5.30</a></li>
 <li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
 id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
 4.23</a></li>
@@ -101,6 +95,12 @@ x=0でC∞級であるが解析的でない '25 5.21</a></li>
 <li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
 id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
 6.4</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 6.1.html"
+id="toc-p.12-補足-べき級数の合成-25-6.1">P.12 補足 べき級数の合成 '25
+6.1</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 6.2.html"
+id="toc-p.12-補足-べき級数のべき-25-6.2">P.12 補足 べき級数のべき '25
+6.2</a></li>
 <li><a href="P.12 問題1.4 &#39;25 4.16.html"
 id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </ul></li>
@@ -126,21 +126,23 @@ id="toc-p.12-問題1.4-25-4.16">P.12 問題1.4 '25 4.16</a></li>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.12 補足 べき級数のべき '25 5.28.html" accesskey="n" rel="next">Next</a>
+<a href="P.12 補足 x=0でf(x)は連続 '25 4.23.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
 <h2 data-number="1.17" id="p.12-補足-x0でfxは連続-25-4.23">P.12 補足
 x≠0でf(x)は連続 '25 4.23</h2>
-<p><span class="math display">\[\begin{flalign*}
+<p><span class="math display">\[
+\begin{flalign*}
 f(x)=
 \begin{cases}
 e^{-\frac{1}{x^2}} &amp; x\ne 0 \\
 0        &amp; x=0
 \end{cases} &amp;&amp;
-\end{flalign*}\]</span> <span class="math inline">\(x\ne 0 で f(x)
-は連続\)</span></p>
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(x\ne 0 で f(x) は連続\)</span></p>
 <hr />
 <p>(証明)</p>
 <p><span class="math inline">\(x
@@ -155,7 +157,7 @@ e^{-\frac{1}{x^2}} &amp; x\ne 0 \\
 は連続\quad\textcolor{red}{(*4)}\)</span></p>
 <p><span class="math inline">\(0&lt;|x-a|&lt;|a|\ ならば\
 x\ne0\)</span></p>
-<p><span class="math inline">\(({\because\ }\ x=0\ とすると\ |a|&lt;|a|\
+<p><span class="math inline">\(({\because}\ x=0\ とすると\ |a|&lt;|a|\
 となり矛盾)\)</span></p>
 <p><span class="math inline">\(e^{-\frac{1}{x^2}}\ は\ x\ne0\
 で連続なので\)</span></p>
@@ -168,7 +170,7 @@ x\ne0\)</span></p>
 f(x)=e^{-\frac{1}{x^2}}\)</span></p>
 <p><span class="math inline">\(また\
 \left|e^{-\frac{1}{x^2}}-e^{-\frac{1}{a^2}}\right|&lt;\epsilon\)</span></p>
-<p><span class="math inline">\({\therefore\ }\
+<p><span class="math inline">\({\therefore}\
 |f(x)-f(a)|&lt;\epsilon\)</span></p>
 <p><span class="math inline">\(よって\ \lim_{x\to
 a}f(x)=f(a)\)</span></p>
@@ -177,7 +179,7 @@ a}f(x)=f(a)\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*1)}&amp;0&lt;|x-a|&lt;\epsilon\ ならば\\
 &amp;&amp;&amp;|x-a|&lt;\epsilon\\
-&amp;&amp;&amp;{\therefore\ }\ \lim_{x\to a}x=a\\
+&amp;&amp;&amp;{\therefore}\ \lim_{x\to a}x=a\\
 &amp;&amp;\textcolor{red}{(*2)}&amp;\lim_{x\to a}f(x)=F,F\ne0\ ならば\
 \lim_{x\to a}\frac{1}{f}=\frac{1}{F}\\
 &amp;&amp;&amp;(証明)\\
@@ -186,18 +188,18 @@ a}f(x)=f(a)\)</span></p>
 &amp;&amp;&amp;\epsilon=\frac{|F|}{2}\ とすると\\
 &amp;&amp;&amp;0&lt;|x-a|&lt;\delta&#39;\ ならば\
 |f(x)-F|&lt;\frac{|F|}{2}\\
-&amp;&amp;&amp;{\therefore\ }\ |F|-|f(x)|&lt;\frac{|F|}{2}\ ({\because\
-}\ 三角不等式\ |F|-|f(x)|\le|F-f(x)|)\\
-&amp;&amp;&amp;{\therefore\ }\ |f(x)|&gt;\frac{|F|}{2}\\
-&amp;&amp;&amp;{\therefore\ }\
+&amp;&amp;&amp;{\therefore}\ |F|-|f(x)|&lt;\frac{|F|}{2}\ ({\because}\
+三角不等式\ |F|-|f(x)|\le|F-f(x)|)\\
+&amp;&amp;&amp;{\therefore}\ |f(x)|&gt;\frac{|F|}{2}\\
+&amp;&amp;&amp;{\therefore}\
 \frac{1}{|f(x)|}&lt;\frac{2}{|F|}\cdots(2)\\
-&amp;&amp;&amp;({\because\ }F\ne0\ なので|F|&gt;0, 0&lt;a&lt;b\ ならば\
+&amp;&amp;&amp;({\because}F\ne0\ なので|F|&gt;0, 0&lt;a&lt;b\ ならば\
 \frac{1}{a}&gt;\frac{1}{b})\\
 &amp;&amp;&amp;任意の\ \epsilon&#39;\ に対して\
 \epsilon=\frac{1}{2}\epsilon&#39;F^2\ とする\\
 &amp;&amp;&amp;0&lt;|x-a|&lt;min(\delta,\delta&#39;)\ ならば\\
 &amp;&amp;&amp;\left|\frac{1}{f(x)}-\frac{1}{F}\right|=\frac{|f(x)-F|}{|f(x)||F|}&lt;\frac{2\epsilon}{F^2}=\epsilon&#39;\
-({\because\ }\ (1),(2))\\
+({\because}\ (1),(2))\\
 &amp;&amp;&amp;よって\ \lim_{x\to a}\frac{1}{f(x)}=\frac{1}{F}\\
 &amp;&amp;\textcolor{red}{(*3)}&amp;\lim_{x\to a}f(x)=F,\lim_{x\to
 a}g(x)=G\ ならば\ \lim_{x\to a}fg=FG\\
@@ -206,18 +208,18 @@ a}g(x)=G\ ならば\ \lim_{x\to a}fg=FG\\
 |f-F|&lt;\epsilon,|g-G|&lt;\epsilon\cdots(1)\\
 &amp;&amp;&amp;\epsilon=|F|\ とすると\\
 &amp;&amp;&amp;0&lt;|x-a|&lt;\delta&#39;\ ならば\ |f-F|&lt;|F|\\
-&amp;&amp;&amp;{\therefore\ }\ |f|-|F|&lt;|F|\ ({\because\ }\
-三角不等式\ |a|-|b|\le|a-b|)\\
-&amp;&amp;&amp;{\therefore\ }\ |f|&lt;2|F|\cdots(2)\\
+&amp;&amp;&amp;{\therefore}\ |f|-|F|&lt;|F|\ ({\because}\ 三角不等式\
+|a|-|b|\le|a-b|)\\
+&amp;&amp;&amp;{\therefore}\ |f|&lt;2|F|\cdots(2)\\
 &amp;&amp;&amp;任意の\ \epsilon&#39;\ に対して\
 \epsilon=\frac{\epsilon&#39;}{|G|+2|F|}\ とする\\
 &amp;&amp;&amp;0&lt;|x-a|&lt;min(\delta,\delta&#39;)\ ならば\\
 &amp;&amp;&amp;|fg-FG|=|fg-fG+fG-FG|\\
 &amp;&amp;&amp;\quad\quad=|f(g-G)+G(f-F)|\\
-&amp;&amp;&amp;\quad\quad\le|f(g-G)|+|G(f-F)|\ ({\because\ }\
-三角不等式\ |a+b|&lt;|a|+|b|)\\
+&amp;&amp;&amp;\quad\quad\le|f(g-G)|+|G(f-F)|\ ({\because}\ 三角不等式\
+|a+b|&lt;|a|+|b|)\\
 &amp;&amp;&amp;\quad\quad=|f||g-G|+|G||f-F|\\
-&amp;&amp;&amp;\quad\quad&lt;2|F|\epsilon+\epsilon|G|\ ({\because\ }\
+&amp;&amp;&amp;\quad\quad&lt;2|F|\epsilon+\epsilon|G|\ ({\because}\
 (1)(2))\\
 &amp;&amp;&amp;\quad\quad=\epsilon(2|F|+|G|)=\epsilon&#39;\\
 &amp;&amp;&amp;よって\ \lim_{x\to a}fg=FG\\
