@@ -121,7 +121,7 @@ $endfor$
         sidebar.scrollTop = top;
       }
       const rect = link.getBoundingClientRect();
-      const bottom = link.offsetTop + rect.bottom - rect.top; 
+      const bottom = top + rect.bottom - rect.top; 
       if (bottom > sidebar.scrollTop + sidebar.clientHeight){
         sidebar.scrollTop = bottom - sidebar.clientHeight;
       }
