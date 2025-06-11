@@ -103,18 +103,30 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
-
 <script>
   const sidebar = document.getElementById("SIDEBAR");
-
   // 復元：ページ読み込み時
   window.addEventListener("load", () => {
     const savedScrollTop = localStorage.getItem("sidebarScroll");
     if (savedScrollTop !== null) {
       sidebar.scrollTop = parseInt(savedScrollTop, 10);
     }
+    const path = window.location.pathname;
+    const filename = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
+    const link = document.querySelector('a[id^="toc"][href="'+filename+'"]');
+    if (link !== null) {
+      link.classList.add("has-text-link","has-text-weight-bold")  
+      const top = link.offsetTop;
+      if (top < sidebar.scrollTop){
+        sidebar.scrollTop = top;
+      }
+      const rect = link.getBoundingClientRect();
+      const bottom = link.offsetTop + rect.bottom - rect.top; 
+      if (bottom > sidebar.scrollTop + sidebar.clientHeight){
+        sidebar.scrollTop = bottom - sidebar.clientHeight;
+      }
+    }
   });
-
   // 保存：ページ離脱時
   window.addEventListener("beforeunload", () => {
     localStorage.setItem("sidebarScroll", sidebar.scrollTop);
