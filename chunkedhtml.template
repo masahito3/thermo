@@ -106,7 +106,7 @@ $endfor$
 <script>
   const sidebar = document.getElementById("SIDEBAR");
   // 復元：ページ読み込み時
-  window.addEventListener("load", () => {
+  window.addEventListener("DOMContentLoaded", () => {
     const savedScrollTop = localStorage.getItem("sidebarScroll");
     if (savedScrollTop !== null) {
       sidebar.scrollTop = parseInt(savedScrollTop, 10);
