@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.10 問1.3 (x,y)≠(0,0)でfyは存在する '25 5.13</title>
+  <title>P.12 問題1.4 x^2 e^y の偏微分 '25 4.16</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -132,48 +132,94 @@ Z(x,y), Z(x,η) とするのは矛盾である '25 6.12</a></li>
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.10 問1.3 (0,0)でfxは連続 '25 3.26.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.12 補足 べき級数のべき '25 6.2.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.10 問1.3 (x,y)≠(0,0)でfyは連続 '25 5.15.html" accesskey="n" rel="next">Next</a>
+<a href="P.15 問題1.5 Z(x,y), Z(x,η) とするのは矛盾である '25 6.12.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.8" id="p.10-問1.3-xy00でfyは存在する-25-5.13">P.10
-問1.3 (x,y)≠(0,0)でfyは存在する '25 5.13</h2>
-<p><span class="math display">\[
-\begin{flalign*}
-f(x,y)=
-\begin{cases}
-\displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
-0 &amp; (x,y)=(0,0)
-\end{cases} &amp;&amp;
+<h2 data-number="1.26" id="p.12-問題1.4-x2-ey-の偏微分-25-4.16">P.12
+問題1.4 x^2 e^y の偏微分 '25 4.16</h2>
+<p><span class="math display">\[\begin{flalign*}
+f(x,y)&amp;=x^2e^y,\quad (x,y)\in \mathbb{R}^2&amp;\\
 \end{flalign*}\]</span></p>
-<p><span class="math inline">\((x,y)\ne(0,0)\)</span>で<span
-class="math inline">\(f_y\)</span>は存在する</p>
+<p><span class="math inline">\(f\)</span> の偏微分と連続性</p>
 <hr />
-<p>(証明)</p>
-<p><span class="math inline">\((x,y)\ne(0,0)\)</span> とする</p>
-<p>このとき <span class="math inline">\(\displaystyle
-f(x,y)=xy\frac{x^2-y^2}{x^2+y^2}\)</span></p>
-<p><span class="math inline">\(x,y\)</span>は独立とする</p>
-<p><span class="math display">\[\begin{flalign*}
-f_y&amp;=\underset{yで微分}{f&#39;}\quad\textcolor{red}{(*1)}&amp;\\
-&amp;=(xy)&#39;\frac{x^2-y^2}{x^2+y^2}+xy\left(\frac{x^2-y^2}{x^2+y^2}\right)&#39;\quad({\because}積の微分)&amp;\\
-&amp;=y\frac{x^2-y^2}{x^2+y^2}+xy\frac{(x^2-y^2)&#39;(x^2+y^2)-(x^2-y^2)(x^2+y^2)&#39;}{(x^2+y^2)^2}\quad({\because}x^2+y^2\ne0なので商の微分より)&amp;\\
-&amp;=\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}&amp;
+<p>(i) <span class="math display">\[\begin{flalign*}
+f_x&amp;=2xe^y\quad\textcolor{red}{(*1)}&amp;\\
+f_y&amp;=x^2e^y\quad\textcolor{red}{(*1)}&amp;\\
+f_{xx}&amp;=2e^y&amp;\\
+f_{yy}&amp;=x^2e^y&amp;\\
+f_{xy}&amp;=2xe^y&amp;\\
+f_{yx}&amp;=2xe^y&amp;
+\end{flalign*}\]</span> <span class="math display">\[\begin{flalign*}
+f_x(0,0)=0,&amp;\ f_x(1,1)=2e&amp;\\
+f_y(0,0)=0,&amp;\ f_y(1,1)=e&amp;\\
+f_{xx}(0,0)=2,&amp;\ f_{xx}(1,1)=2e&amp;\\
+f_{yy}(0,0)=0,&amp;\ f_{yy}(1,1)=e&amp;\\
+f_{xy}(0,0)=0,&amp;\ f_{xy}(1,1)=2e&amp;\\
+f_{yx}(0,0)=0,&amp;\ f_{yx}(1,1)=2e&amp;
 \end{flalign*}\]</span></p>
-<p>よって <span class="math inline">\((x,y)\ne(0,0)\)</span> で <span
-class="math inline">\(f_y\)</span> は存在する <span
-class="math inline">\(\quad({\because}公理:f_yは存在\rightleftarrows
-f_y\in R)\)</span></p>
+<p>(ii)</p>
+<p><span class="math inline">\(x^2\ は\ x\ で連続よって\ (x,y)\
+で連続\quad\textcolor{red}{(*2)}\)</span></p>
+<p><span class="math inline">\(e^y\ は\ x\ で連続よって\ (x,y)\
+で連続\quad\textcolor{red}{(*2)}\)</span></p>
+<p><span class="math inline">\(よって\ f(x,y)=x^2e^y\ は\ (x,y)\
+で連続\quad\textcolor{red}{(*3)}\)</span></p>
+<p>同様に <span class="math display">\[\begin{flalign*}
+f_{x}&amp;=2xe^y\ は連続&amp;\\
+f_{y}&amp;=x^2e^y\ は連続&amp;\\
+f_{xx}&amp;=2e^y\ は連続&amp;\\
+f_{yy}&amp;=x^2e^y\ は連続&amp;\\
+f_{xy}&amp;=2xe^y\ は連続&amp;\\
+f_{yx}&amp;=2xe^y\ は連続&amp;
+\end{flalign*}\]</span> <span class="math inline">\(よって\ f\ は\ C^2\
+級\)</span></p>
+<p>(iii)</p>
+<p><span
+class="math inline">\(f_{xy}=2xe^y,f_{yx}=2xe^y\)</span>なので<span
+class="math inline">\(f_{xy}=f_{yx}\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;f&#39;,f_yの定義より\\
-&amp;&amp;&amp;\underset{yで微分}{f&#39;(x,y)}=\lim_{\Delta y\to
-0}\frac{f(x,y+\Delta y)-f(x,y)}{\Delta y}=f_y(x,y)\\
-&amp;&amp;&amp;よってf&#39;が存在するならばf&#39;=f_y
+&amp;&amp;\textcolor{red}{(*1)}&amp;x と y
+が独立ならばf_x=\underset{xで微分}{f&#39;}\\
+&amp;&amp;\textcolor{red}{(*2)}&amp;
+f(x) が x で連続ならば f(x) は (x,y) で連続である\\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;x で連続なのでf(x)=\lim_{\Delta x\to 0}f(x+\Delta x)\\
+&amp;&amp;&amp;よって任意の\epsilon に対して\\
+&amp;&amp;&amp;0 &lt; |\Delta x|&lt;\delta ならば\\
+&amp;&amp;&amp;|f(x+\Delta x)-f(x)|&lt;\epsilon\\
+&amp;&amp;&amp;|(\Delta x,\Delta y)|&lt;\delta ならば\\
+&amp;&amp;&amp;|\Delta x|\le|(\Delta x,\Delta y)|\
+({\because}三角不等式)\\
+&amp;&amp;&amp;{\therefore}\ |\Delta x|&lt;\delta\\
+&amp;&amp;&amp;{\therefore}\ \Delta x=0\ or\ 0&lt;|\Delta x|&lt;\delta\\
+&amp;&amp;&amp;0&lt;|\Delta x|&lt;\delta とすると\\
+&amp;&amp;&amp;|f(x+\Delta x)-f(x)|&lt;\epsilon\\
+&amp;&amp;&amp;\Delta x=0 とすると\\
+&amp;&amp;&amp;|f(x+\Delta x)-f(x)|=0&lt;\epsilon\\
+&amp;&amp;&amp;よって |(\Delta x,\Delta y)|&lt;\delta ならば |f(x+\Delta
+x)-f(x)|&lt;\epsilon\\
+&amp;&amp;&amp;よって \lim_{(\Delta x,\Delta y))\to (0,0)}f(x+\Delta
+x,y+\Delta y)=f(x,y)\\
+&amp;&amp;\textcolor{red}{(*2)}&amp;
+f,g が連続ならば fg は連続\\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;\lim_{(\Delta x,\Delta y)\to (0,0)}f(x+\Delta x,y+\Delta
+y)=f(x,y)\\
+&amp;&amp;&amp;\lim_{(\Delta x,\Delta y)\to (0,0)}g(x+\Delta x,y+\Delta
+y)=g(x,y)\\
+&amp;&amp;&amp;よって \\
+&amp;&amp;&amp;\lim_{(\Delta x,\Delta y)\to (0,0)}f(x+\Delta x,y+\Delta
+y)g(x+\Delta x,y+\Delta y)\\
+&amp;&amp;&amp;\quad\quad=\lim f(x+\Delta x,y+\Delta y)\lim g(x+\Delta
+x,y+\Delta y)\ ({\because}積の極限)\\
+&amp;&amp;&amp;\quad\quad=f(x,y)g(x,y)\\
+&amp;&amp;&amp;よって fg は連続
 \end{flalign*}\]</span></p>
    </main>
    </div>

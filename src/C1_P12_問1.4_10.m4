@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 問題1.4 x^2e^y の偏微分 '25 4.16
+## P.12 問題1.4 x^2 e^y の偏微分 '25 4.16
 $$\begin{flalign*}
 f(x,y)&=x^2e^y,\quad (x,y)\in \mathbb{R}^2&\\
 \end{flalign*}$$
