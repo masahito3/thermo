@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" style="overflow:auto;">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="仲山昌人" />
+  <meta name="description" content="熱力学の基礎を読んだときのメモです
+
+" />
+  <title>P.12 問題1.5 Z(x,y), Z(x,η) とするのは矛盾である '25
+6.12</title>
+  <style>
+  </style>
+  <link rel="stylesheet" href="bulma.css" />
+  
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body style="height:100vh;">
+<div class="fixed-grid has-4-cols">
+<div class="grid">
+     <div id="SIDEBAR" class="cell" style="height:100vh;overflow:auto;">
+     <nav id="TOC" role="doc-toc" class="menu">
+<ul class="menu-list" >
+<li><a href="第1章.html" id="toc-第1章">第1章</a>
+<ul class="menu-list" >
+<li><a href="P.7 Dx+f(a)=f&#39;(a+0) &#39;25 3.22.html"
+id="toc-p.7-dxfafa0-25-3.22">P.7 Dx+f(a)=f'(a+0) '25 3.22</a></li>
+<li><a
+href="P.8 (1.2) f(x)=f(a)+f&#39;(a)(x-a)+o(x-a) &#39;25 3.21.html"
+id="toc-p.8-1.2-fxfafax-aox-a-25-3.21">P.8 (1.2)
+f(x)=f(a)+f'(a)(x-a)+o(x-a) '25 3.21</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfは連続 &#39;25 5.13.html"
+id="toc-p.10-問1.3-xy00でfは連続-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfは連続 '25 5.13</a></li>
+<li><a href="P.10 問1.3 (0,0)でfは連続 &#39;25 3.26.html"
+id="toc-p.10-問1.3-00でfは連続-25-3.26">P.10 問1.3 (0,0)でfは連続 '25
+3.26</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは存在する &#39;25 5.13.html"
+id="toc-p.10-問1.3-xy00でfxは存在する-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfxは存在する '25 5.13</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは連続 &#39;25 5.13.html"
+id="toc-p.10-問1.3-xy00でfxは連続-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfxは連続 '25 5.13</a></li>
+<li><a href="P.10 問1.3 (0,0)でfxは連続 &#39;25 3.26.html"
+id="toc-p.10-問1.3-00でfxは連続-25-3.26">P.10 問1.3 (0,0)でfxは連続 '25
+3.26</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfyは存在する &#39;25 5.13.html"
+id="toc-p.10-問1.3-xy00でfyは存在する-25-5.13">P.10 問1.3
+(x,y)≠(0,0)でfyは存在する '25 5.13</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfyは連続 &#39;25 5.15.html"
+id="toc-p.10-問1.3-xy00でfyは連続-25-5.15">P.10 問1.3
+(x,y)≠(0,0)でfyは連続 '25 5.15</a></li>
+<li><a href="P.10 問1.3 (0,0)でfyは連続 &#39;25 3.26.html"
+id="toc-p.10-問1.3-00でfyは連続-25-3.26">P.10 問1.3 (0,0)でfyは連続 '25
+3.26</a></li>
+<li><a href="P.10 問1.3 (0,0)でfxyは不連続 &#39;25 4.1.html"
+id="toc-p.10-問1.3-00でfxyは不連続-25-4.1">P.10 問1.3 (0,0)でfxyは不連続
+'25 4.1</a></li>
+<li><a
+href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) &#39;25 4.6.html"
+id="toc-p.11-数学の定理1.1-fx1..xm-fa1..xm-x1-a1fx1aox-a-25-4.6">P.11
+数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) '25
+4.6</a></li>
+<li><a
+href="P.11 数学の定理1.1 f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) &#39;25 5.17.html"
+id="toc-p.11-数学の定理1.1-fa1x2..xm-fa1a2..xm-x2-a2fx2aox-a-25-5.17">P.11
+数学の定理1.1 f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25
+5.17</a></li>
+<li><a
+href="P.11 数学の定理1.1 f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) &#39;25 4.6.html"
+id="toc-p.11-数学の定理1.1-fxfafax-aox-a-25-4.6">P.11 数学の定理1.1
+f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6</a></li>
+<li><a
+href="P.12 数学の定理1.2 n階までの導関数は微分の順序によらない &#39;25 4.8.html"
+id="toc-p.12-数学の定理1.2-n階までの導関数は微分の順序によらない-25-4.8">P.12
+数学の定理1.2 n階までの導関数は微分の順序によらない '25 4.8</a></li>
+<li><a href="P.12 数学の定理1.2 fxy=fyx &#39;25 4,8.html"
+id="toc-p.12-数学の定理1.2-fxyfyx-25-48">P.12 数学の定理1.2 fxy=fyx '25
+4,8</a></li>
+<li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
+id="toc-p.12-補足-x0でfxは連続-25-4.23">P.12 補足 x≠0でf(x)は連続 '25
+4.23</a></li>
+<li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
+id="toc-p.12-補足-x0でfxは連続-25-4.23-1">P.12 補足 x=0でf(x)は連続 '25
+4.23</a></li>
+<li><a href="P.12 補足 x≠0でC∞級 &#39;25 4.25.html"
+id="toc-p.12-補足-x0でc級-25-4.25">P.12 補足 x≠0でC∞級 '25 4.25</a></li>
+<li><a href="P.12 補足 x=0でC∞級 &#39;25 5.20.html"
+id="toc-p.12-補足-x0でc級-25-5.20">P.12 補足 x=0でC∞級 '25 5.20</a></li>
+<li><a href="P.12 補足 x=0でC∞級であるが解析的でない &#39;25 5.21.html"
+id="toc-p.12-補足-x0でc級であるが解析的でない-25-5.21">P.12 補足
+x=0でC∞級であるが解析的でない '25 5.21</a></li>
+<li><a
+href="P.12 補足 収束するテーラー級数の部分和が f(x) の近似にならない例 &#39;25 6.9.html"
+id="toc-p.12-補足-収束するテーラー級数の部分和が-fx-の近似にならない例-25-6.9">P.12
+補足 収束するテーラー級数の部分和が <span
+class="math inline">\(f(x)\)</span> の近似にならない例 '25 6.9</a></li>
+<li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
+id="toc-p.12-補足-x0でfxは解析的-25-6.4">P.12 補足 x≠0でf(x)は解析的 '25
+6.4</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 6.1.html"
+id="toc-p.12-補足-べき級数の合成-25-6.1">P.12 補足 べき級数の合成 '25
+6.1</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 6.2.html"
+id="toc-p.12-補足-べき級数のべき-25-6.2">P.12 補足 べき級数のべき '25
+6.2</a></li>
+<li><a href="P.12 問題1.4 x2ey の偏微分 &#39;25 4.16.html"
+id="toc-p.12-問題1.4-x2ey-の偏微分-25-4.16">P.12 問題1.4 x<sup>2e</sup>y
+の偏微分 '25 4.16</a></li>
+<li><a
+href="P.12 問題1.5 Z(x,y), Z(x,η) とするのは矛盾である &#39;25 6.12.html"
+id="toc-p.12-問題1.5-zxy-zxη-とするのは矛盾である-25-6.12">P.12 問題1.5
+Z(x,y), Z(x,η) とするのは矛盾である '25 6.12</a></li>
+</ul></li>
+<li><a href="第2章.html" id="toc-第2章">第2章</a></li>
+</ul>
+     </nav>
+     </div>
+     <main class="cell is-col-span-3" style="height:100vh;overflow:auto;">
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
+</span>
+</div>
+
+<div class="sitenav columns">
+
+<span class="navlink column">
+<a href="P.12 問題1.4 x2ey の偏微分 '25 4.16.html" accesskey="p" rel="previous">Previous</a>
+</span>
+
+<span class="navlink column has-text-right">
+<a href="第2章.html" accesskey="n" rel="next">Next</a>
+</span>
+
+</div>
+</nav>
+<h2 data-number="1.27"
+id="p.12-問題1.5-zxy-zxη-とするのは矛盾である-25-6.12">P.12 問題1.5
+Z(x,y), Z(x,η) とするのは矛盾である '25 6.12</h2>
+<p><span class="math inline">\(Z=x^2e^y\)</span> とする</p>
+<p><span class="math inline">\(\eta = y-x\)</span> とする</p>
+<p><span class="math inline">\(Z\)</span> の偏微分を調べて <span
+class="math inline">\(Z(x,y)\)</span> とする。<span
+class="math inline">\(Z(x,\eta)\)</span>
+とする。は矛盾していることを確認する</p>
+<hr />
+<p>(<span class="math inline">\(Z(x,y)\)</span> とする。<span
+class="math inline">\(Z(x,\eta)\)</span> とする。は矛盾している)<br />
+<br />
+<span class="math inline">\(Z(x,y)=x^2e^y\)</span> とする <span
+class="math inline">\(\dots(1)\)</span></p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_y=2xe^y\)</span>,</p>
+<p><span class="math inline">\(\eta = y-x\)</span> とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+Z(x,y) &amp;= Z(x,\eta+x)\ ({\because}\eta=y-x) &amp;\\
+      &amp;= x^2e^{\eta+x}\ ({\because}(1)) &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(Z(x,\eta)= x^2e^{\eta+x}\)</span> とする
+<span class="math inline">\(\dots(2)\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+{\therefore}\displaystyle\Big(\frac{\partial Z}{\partial x}\Big)_\eta
+  &amp;= 2xe^{\eta+x}+x^2e^{\eta+x} &amp;\\
+  &amp;= (2x+x^2)e^{\eta+x} &amp;
+\end{flalign*}
+\]</span></p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_y \ne \displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_\eta\)</span></p>
+<p>この結論は反射律に反していない</p>
+<p><span class="math inline">\((1)\)</span> から <span
+class="math inline">\((2)\)</span> の議論をもう一度くりかえす</p>
+<p><span class="math display">\[
+\begin{flalign*}
+Z(x,\eta) &amp;= Z(x,y-z)\ ({\because}\eta=y-x) &amp;\\
+&amp;= x^2 e^{y-x}\ ({\because}(1)) &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(Z(x,y)= x^2e^{y-x}\)</span> とする <span
+class="math inline">\(\dots(3)\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+{\therefore}\displaystyle\Big(\frac{\partial Z}{\partial x}\Big)_y
+&amp;= 2xe^{y-x}+x^2(-1)e^{y-x} &amp;\\
+               &amp;= (2x-x^2)e^{y-x} &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(2xe^y\ne(2x-x^2)e^{y-x}\)</span>
+なので</p>
+<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_y \ne \displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_y\)</span></p>
+<p>これは等号の反射律に反するので矛盾である</p>
+<p>よって <span class="math inline">\((1),(2),(3)\)</span>
+の仮定は矛盾している</p>
+<p>偏微分を使わなくてももっと簡単に矛盾を導くことができる</p>
+<p><span class="math inline">\((1)\)</span> より <span
+class="math inline">\(Z(1,1)=e\)</span></p>
+<p><span class="math inline">\((2)\)</span> より <span
+class="math inline">\(Z(1,1)=e^2\)</span></p>
+<p><span class="math inline">\((3)\)</span> より <span
+class="math inline">\(Z(1,1)=1\)</span></p>
+<p><span class="math inline">\({\therefore}Z(1,1)\ne Z(1,1)\ne
+Z(1,1)\)</span></p>
+<p>これは等号の反射律に反するので矛盾である</p>
+<p>よって <span class="math inline">\((1),(2),(3)\)</span>
+の仮定は矛盾している</p>
+<hr />
+<p>(矛盾させないために)<br />
+<br />
+異なる関数を同じ関数 <span class="math inline">\(Z\)</span>
+であると仮定していたのが矛盾の原因なので</p>
+<p>異なる関数は別の関数 <span class="math inline">\(Z,\ Z_1,\
+Z_2\)</span> であると仮定すればよい</p>
+<p><span class="math inline">\(Z(x,y)=x^2e^y\)</span> とする</p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_y = 2xe^y\)</span></p>
+<p><span class="math inline">\(\eta=y-x\)</span> とする</p>
+<p><span
+class="math inline">\(Z(x,y)=Z(x,\eta+x)=x^2e^{\eta+x}\)</span></p>
+<p><span class="math inline">\(Z_1(x,\eta)=x^2e^{\eta+x}\)</span>
+とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+Z_1(x,\eta) &amp;= Z_1(x,y-x) &amp;\\
+            &amp;= x^2e^{y-x+x} &amp;\\
+            &amp;= x^2e^y &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(Z_2(x,y)=x^2e^y\)</span> とする</p>
+<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
+Z_2}{\partial x}\Big)_y=2xe^y\)</span></p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+Z_2}{\partial x}\Big)_y=\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_y\)</span></p>
+<p><span class="math inline">\(Z(x,y)=Z_2(x,y)\)</span> なので</p>
+<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_y=\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_y\)</span></p>
+<p>となり矛盾しない</p>
+<hr />
+<p>(物理の教科書では <span class="math inline">\(Z,\ Z_1,\ Z_2\)</span>
+とせずにすべて <span class="math inline">\(Z\)</span> とする)<br />
+<br />
+本文によると実際の物理の教科書では異なる関数 <span
+class="math inline">\(Z,\ Z_1,\ Z_2\)</span> をすべて同じ関数 <span
+class="math inline">\(Z\)</span>
+とする。というのはよくあることらしい。</p>
+<p>矛盾を起こさないために、同じ関数 <span
+class="math inline">\(Z\)</span>
+でも脳内で異なる関数としなければならない。</p>
+<p><span
+class="math inline">\(\mathbf{\textcolor{blue}{Z}}(x,y)=x^2e^y\)</span>
+とする</p>
+<p><span class="math inline">\(\eta=y-x\)</span> とする</p>
+<p><span
+class="math inline">\(\mathbf{\textcolor{magenta}{Z}}(x,\eta)=x^2e^{\eta+x}\)</span>
+とする</p>
+<p><span
+class="math inline">\(\mathbf{\textcolor{magenta}{Z}}(x,y-x)=x^2e^{y-x+x}=x^2e^y\)</span></p>
+<p><span
+class="math inline">\(\mathbf{\textcolor{green}{Z}}(x,y)=x^2e^y\)</span>
+とする</p>
+<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{blue}{Z}}}{\partial x}\Big)_y=2x e^y\)</span></p>
+<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{magenta}{Z}}}{\partial
+x}\Big)_\eta=(2x+x^2)e^{\eta+x}\)</span></p>
+<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{green}{Z}}}{\partial x}\Big)_y=2x e^y\)</span></p>
+<p><span
+class="math inline">\(\mathbf{\textcolor{blue}{Z}}=\mathbf{\textcolor{green}{Z}},\
+\mathbf{\textcolor{blue}{Z}}\ne\mathbf{\textcolor{magenta}{Z}}\)</span></p>
+<p>という感じ。わたしら素人にはだいぶハードルが高い</p>
+<hr />
+<p>(変数の異なる関数は異なる関数と見る)<br />
+<br />
+本文では変数が異なれば別の関数として区別するとしている。</p>
+<p><span
+class="math inline">\(\mathbf{\textcolor{blue}{Z}}(x,y)=x^2e^y\)</span></p>
+<p><span
+class="math inline">\(\mathbf{\textcolor{magenta}{Z}}(x,\eta)=x^2e^{\eta+x}\)</span></p>
+<hr />
+<p>(他の矛盾した仮定)<br />
+<br />
+<span class="math inline">\(Z\)</span>を変数とする かつ <span
+class="math inline">\(Z\)</span>を関数とする
+というのもよくある矛盾した仮定である</p>
+<p><span class="math inline">\(Z=x^2e^y\)</span> とする <span
+class="math inline">\(\dots(1)\)</span></p>
+<p><span class="math inline">\(\eta=y-x\)</span> とする</p>
+<p>よって<span class="math inline">\(Z=x^2e^y=x^2e^{\eta+x}\)</span>
+<span class="math inline">\(\dots(2)\)</span></p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_\eta=(x+2x^2)e^{\eta+x}\)</span> <span
+class="math inline">\(\dots(3)\)</span></p>
+<p>一見すると正しいように見える。が<span
+class="math inline">\((2)\)</span>で<span
+class="math inline">\(Z\)</span>を変数としているのか、関数としているのか不明である。</p>
+<p><span class="math inline">\(Z\)</span>
+を変数としているとするならば</p>
+<p><span class="math inline">\((1)\)</span> において <span
+class="math inline">\(Z\)</span> を関数とし、</p>
+<p><span class="math inline">\((2)\)</span> において <span
+class="math inline">\(Z\)</span> を変数とし、</p>
+<p><span class="math inline">\((3)\)</span> において <span
+class="math inline">\(Z\)</span> を関数としていることになる</p>
+<p>変数は関数ではないのでこれらの仮定は矛盾している</p>
+<p>物理の教科書では <span class="math inline">\(x\)</span>
+を変数として話を進めたあとで</p>
+<p><span class="math inline">\(x(t)\)</span>
+として関数とする。ということはよくある</p>
+<p>矛盾させないためには変数<span
+class="math inline">\(x\)</span>と関数<span
+class="math inline">\(x_1(t)\)</span> を区別しないといけないが、</p>
+<p>ここでもまた脳内で変数<span class="math inline">\(x\)</span> と関数
+<span class="math inline">\(x(t)\)</span> を区別しないといけない。</p>
+   </main>
+   </div>
+  </div>
+<script>
+  const sidebar = document.getElementById("SIDEBAR");
+  // 復元：ページ読み込み時
+  window.addEventListener("DOMContentLoaded", () => {
+    const savedScrollTop = localStorage.getItem("sidebarScroll");
+    if (savedScrollTop !== null) {
+      sidebar.scrollTop = parseInt(savedScrollTop, 10);
+    }
+    const path = window.location.pathname;
+    const filename = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
+    const link = document.querySelector('a[id^="toc"][href="'+filename+'"]');
+    if (link !== null) {
+      link.classList.add("has-text-link","has-text-weight-bold")  
+      const top = link.offsetTop;
+      if (top < sidebar.scrollTop){
+        sidebar.scrollTop = top;
+      }
+      const rect = link.getBoundingClientRect();
+      const bottom = top + rect.bottom - rect.top; 
+      if (bottom > sidebar.scrollTop + sidebar.clientHeight){
+        sidebar.scrollTop = bottom - sidebar.clientHeight;
+      }
+    }
+  });
+  // 保存：ページ離脱時
+  window.addEventListener("beforeunload", () => {
+    localStorage.setItem("sidebarScroll", sidebar.scrollTop);
+  });
+</script>
+
+</body>
+</html>
