@@ -42,7 +42,7 @@ a_n=\begin{cases}a & (n=0)\\ 1 & (n=1)\\ 0 & (n>1)\end{cases} とする\\
 &&& F(x)=a_0(x-a)^0+a_1(x-a)^1+a_2(x-a)^2+\dots\\
 &&& \qquad=a+(x-a)+0\\
 &&& \qquad=x\\
-&&& 任意のxで成立するので、収束半径は \infty 
+&&& 任意のxで収束するので、収束半径は \infty 
 \end{flalign*}$$
 
 $\disp\frac{1}{x}$ は $a\ne0$ を中心とするべき級数で表される $\kome{2}$
@@ -146,7 +146,15 @@ $$\begin{flalign*}
 &e^x = \series \frac{x^n}{n!}\quad(\cuz e^x の定義)&
 \end{flalign*}$$
 
-すべての $x$ について成立するので収束半径は $\infty$
+すべての $x$ について収束する $\kome{5}$ よって収束半径は $\infty$
+
+$$\begin{flalign*}
+&&\kome{5}& \sum \Big|\frac{x^n}{n!}\Big| について\\
+&&& \limto{n}{\infty} \frac{ \disp\Big|\frac{x^{n+1}}{(n+1)!}\Big|  }{\disp\Big|\frac{x^n}{n!}\Big|} = \limto{n}{\infty}\Big|\frac{x}{n+1}\Big|=0 \\
+&&& よってダランベールの判定法より \sum \Big|\frac{x^n}{n!}\Big| は収束する \\
+&&& よって \sum \frac{x^n}{n!} は収束する
+\end{flalign*}$$
+
 
 \
 \

@@ -36,9 +36,14 @@ $\disp\limto{x}{0} x^{-\nu}e^{-\frac{1}{x^2}}=0\quad\red{(*1)}$
 $\disp\limto{x}{0} f^{(n)}(x)=0\quad(\cuz 和、積の極限)$
 
 $x=0$で$f$は連続 $(\cuz 別紙)$
+
 かつ$\disp\limto{x}{0}f^{(1)}(x)=0$ なので
+
 $f^{(1)}(0)=0$
-$(\cuz p.7,(1.5),(1.6)\ aで連続,\limto{x}{a}f'(x)が存在するなら\limto{x}{a}f'(x)=f'(a))$
+$(\cuz p.7,(1.5),(1.6)\ aで連続,$
+$\disp\limto{x}{a}f'(x)$が存在するなら
+$\disp\limto{x}{a}f'(x)=f'(a))$
+
 VSPACE1
 $f^{(n)}(0)=0$ と仮定する
 

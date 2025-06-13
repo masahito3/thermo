@@ -17,7 +17,6 @@ $|x-a|<R_f$ ならば $f(x)=\dseries{n} a_n(x-a)^n$ とする
 
 $|x-b|<R_g$ ならば $g(x)=\dseries{m} b_m(x-a)^m$ とする
 
-$R_f$, $R_g$ は収束半径とする。
 $R_f>0$, $R_g>0$ とする。このとき
 
 $|x-b|<R_g$ かつ $\dseries{m}|c_m(x-b)^m|<R_f$,
@@ -34,23 +33,9 @@ $|x-b|<R_g$ とする
 $g(x)=\dseries{m} b_m(x-a)^m$ とする
 
 $g(x)-a = \dseries{m}b_m(x-b)^m-a = \dseries{m}c_m(x-b)^m$
-, $c_m = \begin{cases}b_0-a & (m=0) \\ b_m & (m>0) \end{cases}$ とする
+, $c_m = \begin{cases}b_0-a & (m=0) \\ b_m & (m>0) \end{cases}$ なる $c_m$ が存在する
 
-収束半径は $R_g\ \kome{1}$
-
-$$
-\begin{flalign*}
-&& \kome{1}&|x-b|<R_g ならば \dseries{m}b_m(x-b)^m-a は収束する &\\
-&&& \so \sum b_m(x-b)^m-a\in \mathbb{R} &\\
-&&& \so \sum c_m(x-b)^m\in \mathbb{R} &\\
-&&& よって \dseries{m}c_m(x-b)^m は収束する &\\
-&&& |x-b|>R_g ならば \dseries{m}b_m(x-b)^m-a は収束しない &\\
-&&& \so \sum b_m(x-b)^m-a \notin \mathbb{R} &\\
-&&& \so \sum c_m(x-b)^m \notin \mathbb{R} &\\
-&&& よって \dseries{m}c_m(x-b)^m は収束しない &\\
-&&& よって収束半径は R_g &
-\end{flalign*}
-$$
+($\cuz \dseries{m}b_m(x-b)^m$ は収束するので線型性をもつ)
 
 $\dseries{m}|c_m(x-b)^m|<R_f$ とする
 
@@ -72,12 +57,12 @@ $$
            &=\dseries{p}\dseries{n}a_n\sumto{\ko+\dots+\kn=p}{}c_{\ko}\dots c_{\kn}(x-a)^p
              \ \l(\begin{array}{@{}l@{}}
 	     \cuz \sum|c_m(x-b)^m|<R_f ならば\\
-             \quad この二重級数は絶対収束する\kome{2}\\
+             \quad この二重級数は絶対収束する\kome{1}\\
              \quad よって和の順番を変えてもよい\\
 	     \end{array}\r) &\\
            &=\dseries{p}\Big(\dseries{n}a_n\sumto{\ko+\dots+\kn=p}{}c_{\ko}\dots c_{\kn}\Big)(x-a)^p
              \ \l(\begin{array}{@{}l@{}}
-             \cuz 二重級数は絶対収束する\kome{2}\\
+             \cuz 二重級数は絶対収束する\kome{1}\\
              \quad よって内側の級数も絶対収束する\\
              \quad 収束する級数は線型性を持つ\\
              \end{array}\r) &\\
@@ -87,7 +72,7 @@ $$
 
 $d_p=\dseries{n}a_n\sumto{\ko+\dots+\kn=p}{}c_{\ko}\dots c_{\kn}$ とする
 
-ここで 上の $f(g(x))$ をあらわす二重級数は絶対収束する$\kome{2}$
+ここで 上の $f(g(x))$ をあらわす二重級数は絶対収束する$\kome{1}$
 よって内側の級数も絶対収束する。
 
 よって $\dseries{n} \Big|a_n\sumto{\ko+\dots+\kn=p}{} c_{\ko}\dots c_{\kn}(x-a)^p\Big|$ は収束する
@@ -106,11 +91,11 @@ $\so \sum |a_n\sum c_{\ko}\dots c_{\kn}| = \disp\frac{w}{|x'-a|^p} \in \mathbb{R
 よって $|x-b|<R_g$, $\dseries{m}\Big|c_m(x-b)^m \Big|<R_f$ならば
 $f(g(x))$ は $a$ を中心とするべき級数であらわされる
 
-なお、$\dseries{m}\Big|c_m(x-b)^m \Big|<R_f$ は $a$ を中心とする区間である $\kome{3}$
+なお、$\dseries{m}\Big|c_m(x-b)^m \Big|<R_f$ は $a$ を中心とする区間である $\kome{2}$
 
 ---
 
-$\kome{2}$
+$\kome{1}$
 
 $\dseries{n}\dseries{p}a_n\sumto{\ko+\dots+\kn=p}{}c_{\ko}\dots c_{\kn}(x-a)^p$は絶対収束する
 
@@ -134,11 +119,11 @@ $$
        &=\dseries{n}|a_n|\Big(\dseries{m}|c_m(x-b)^m|\Big)^n
          \quad(\cuz \sum |c_m(x-b)^m|\ge0)&\\
        &=\dseries{n}|a_n|\dseries{p}\sumto{\ko+\dots+\kn=p}{}
-         |c_\ko|\dots|c_\kn||x-b|^p\quad\kome{2.1} &\\
+         |c_\ko|\dots|c_\kn||x-b|^p\quad\kome{1.1} &\\
        &=\dseries{n}\dseries{p}|a_n|\sumto{\ko+\dots+\kn=p}{}
          |c_\ko|\dots|c_\kn||x-b|^p
 	 \quad \l(\begin{array}{@{}l@{}}
-	 \cuz \dseries{p}\dots は収束する\kome{2.1} \\
+	 \cuz \dseries{p}\dots は収束する\kome{1.1} \\
 	 \quad よって収束する級数の線型性より
 	 \end{array} \r)& \\
        &>\dseries{n}\dseries{p}|a_n|\Big|\sumto{\ko+\dots+\kn=p}{}
@@ -152,7 +137,7 @@ $$
 $\dseries{n}\dseries{p}a_n\sumto{\ko+\dots+\kn=p}{}c_\ko\dots c_\kn(x-b)^p$
 は絶対収束する
 
-$\kome{2.1}$
+$\kome{1.1}$
 
 $\Big(\dseries{m}|c_m(x-b)^m|\Big)^n=
  \dseries{p}\sumto{\ko+\dots+\kn=p}{}|c_\ko|\dots|c_\kn||x-b|^p$
@@ -200,13 +185,13 @@ $\Big(\dseries{m}|c_m(x-b)^m|\Big)^n=
 
 $\dseries{m}|c_m(x-b)^m|<R_f$が存在すると仮定しているので右辺の級数は存在する。すなわち収束する。
 
-$\kome{3}$
+$\kome{2}$
 
 $\dseries{m}|c_m(x-b)^m|<R_f$ は $b$ を中心とする区間である
 
 (証明)
 
-$A=\Big\{x: \dseries{m}|c_m(x-b)^m|<R_f\Big\}$ とする
+$A=\Big\{x\ |\  \dseries{m}|c_m(x-b)^m|<R_f\Big\}$ とする
 
 $\inf A=\sup A$ の場合
 
@@ -218,9 +203,9 @@ $\dseries{m}|c_m(b-b)^m|=0<R_f$ なので $b\in A$ である。
 
 $\inf A < \sup A, \sup A=\infty$ の場合
 
-$\inf A=-\infty\ \kome{3.1}$
+$\inf A=-\infty\ \kome{2.1}$
 
-$[-\infty,\infty]\subset A\ \kome{3.2}$
+$[-\infty,\infty]\subset A\ \kome{2.2}$
 
 $\so A=\mathbb{R}$
 
@@ -228,7 +213,7 @@ $\so A=\mathbb{R}$
 
 $\inf A < \sup A, \sup A<\infty$ の場合
 
-$\inf A > -\infty\quad\kome{3.1}$
+$\inf A > -\infty\quad\kome{2.1}$
 
 $b<\disp\frac{\inf A+\sup A}{2}$ と仮定する
 
@@ -246,7 +231,7 @@ $2b-\inf A<x$ より $2b-x< \inf A$ である
 
 よって $2b-x\notin A$
 
-よって $\kome{3.1}$ より $x\notin A$
+よって $\kome{2.1}$ より $x\notin A$
 
 $x\in A$なのでこれは矛盾
 
@@ -256,13 +241,13 @@ $x\in A$なのでこれは矛盾
 
 $\so b=\disp\frac{\inf A+\sup A}{2}$
 
-また $\kome{3.2}$ より $[\inf A, \sup A]\subset A$ または $(\inf A, \sup A)\subset A$
+また $\kome{2.2}$ より $[\inf A, \sup A]\subset A$ または $(\inf A, \sup A)\subset A$
 
-よって $A$ は $a$ を中心とする半径$\disp\frac{\inf A+\sup A}{2}$ の開区間または塀区間である
+よって $A$ は $a$ を中心とする半径$\disp\frac{\inf A+\sup A}{2}$ の開区間または閉区間である
 
 よって $A$ は $a$ を中心とする区間である。
 
-$\kome{3.1}$
+$\kome{2.1}$
 
 $b$ を中心とした $x$ の対称点を $x'$ とする
 
@@ -280,7 +265,7 @@ $\so x\in A$ ならば $x'\in A$ である。
 
 よって$x\notin A$ ならば $x'\notin A$である
 
-$\kome{3.2}$
+$\kome{2.2}$
 
 $b<x<x_1$とする
 
@@ -302,7 +287,7 @@ $(1)$ より $2b-x\in A$
 
 $x$ は $2b-x$ の $b$ を中心とした対称点なので
 
-$\kome{3.1}$ より $x\in A$
+$\kome{2.1}$ より $x\in A$
 
 よって $x_1\in A$ ならば $[x_1',x_1]\subset A$
 
