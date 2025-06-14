@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.10 問1.3 (0,0)でfyは連続 '25 3.26</title>
+  <title>P.15 問題1.6(i) 偏微分の連鎖律 '25 6.13</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -138,72 +138,120 @@ id="toc-p.15-問題1.6iii-偏微分の連鎖律-25-6.13">P.15 問題1.6(iii)
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.10 問1.3 (x,y)≠(0,0)でfyは連続 '25 5.15.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.15 問題1.5 Z(x,y), Z(x,η) とするのは矛盾である '25 6.12.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.10 問1.3 (0,0)でfxyは不連続 '25 4.1.html" accesskey="n" rel="next">Next</a>
+<a href="P.15 問題1.6(iii) 偏微分の連鎖律 '25 6.13.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.10" id="p.10-問1.3-00でfyは連続-25-3.26">P.10 問1.3
-(0,0)でfyは連続 '25 3.26</h2>
-<p><span class="math display">\[
-\begin{flalign*}
-f(x,y)=
-\begin{cases}
-\displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
-            0 &amp; (x,y)=(0,0)
-\end{cases} &amp;&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math inline">\((x,y)=(0,0)\)</span>で<span
-class="math inline">\(f_y\)</span>は連続</p>
+<h2 data-number="1.28" id="p.15-問題1.6i-偏微分の連鎖律-25-6.13">P.15
+問題1.6(i) 偏微分の連鎖律 '25 6.13</h2>
+<p><span class="math inline">\(\mathbf{\textcolor{blue}{Z}},
+\mathbf{\textcolor{magenta}{Z}}, \mathbf{\textcolor{teal}{x}},
+\mathbf{\textcolor{teal}{y}}\)</span> は関数とする</p>
+<p><span
+class="math inline">\(\mathbf{\textcolor{blue}{Z}}(x,y)\)</span>, <span
+class="math inline">\(\mathbf{\textcolor{magenta}{Z}}(\xi,\eta)\)</span>
+とする</p>
+<p><span
+class="math inline">\(\mathbf{\textcolor{teal}{x}}(\xi,\eta)\)</span>,
+<span
+class="math inline">\(\mathbf{\textcolor{teal}{y}}(\xi,\eta)\)</span>
+とする</p>
+<p><span class="math inline">\(x,y,\xi,\eta\)</span>
+は独立変数とする</p>
+<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{magenta}{Z}}}{\partial \xi}\Big)_\eta=
+\displaystyle\Big(\frac{\partial \mathbf{\textcolor{blue}{Z}}}{\partial
+x}\Big)_y \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{x}}}{\partial \xi}\Big)_\eta +
+\displaystyle\Big(\frac{\partial \mathbf{\textcolor{blue}{Z}}}{\partial
+y}\Big)_x \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{y}}}{\partial \xi}\Big)_\eta\)</span> <span
+class="math inline">\(\dots(1.20)\)</span></p>
+<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{magenta}{Z}}}{\partial \eta}\Big)_\xi=
+\displaystyle\Big(\frac{\partial \mathbf{\textcolor{blue}{Z}}}{\partial
+x}\Big)_y \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{x}}}{\partial \eta}\Big)_\xi +
+\displaystyle\Big(\frac{\partial \mathbf{\textcolor{blue}{Z}}}{\partial
+y}\Big)_x \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{y}}}{\partial \eta}\Big)_\xi\)</span> <span
+class="math inline">\(\dots(1.21)\)</span></p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\((x,y)\ne(0,0)\)</span>で</p>
-<p><span class="math display">\[\begin{flalign*}
-f_y(x,y)&amp;=\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}\quad({\because}別紙)
-&amp;\\
-        &amp;=x\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}&amp;
-\end{flalign*}\]</span></p>
 <p><span
-class="math inline">\(\displaystyle\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}\)</span>は有界<span
-class="math inline">\(\ \textcolor{red}{(*1)}\)</span> かつ<span
-class="math inline">\(\displaystyle\lim_{(x,y)\to (0,0)}x=0\)</span></p>
-<p>よって <span class="math inline">\(\displaystyle\lim_{(x,y)\to
-(0,0)}x\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}=0\
-\textcolor{red}{(*2)}\)</span></p>
-<p>また <span class="math inline">\(f\)</span> は <span
-class="math inline">\((0,0)\)</span> で連続 <span
-class="math inline">\((\ {\because}別紙)\)</span></p>
-<p>よって <span class="math inline">\((0,0)\)</span> で <span
-class="math inline">\(f_y\)</span> は存在して</p>
-<p><span class="math inline">\(\displaystyle f_y(0,0)=\lim_{(x,y)\to
-(0,0)}f_y(x,y)=0\ ({\because}本文(1.5),(1.6)より)\)</span></p>
-<p>よって <span class="math inline">\((0,0)\)</span> で <span
-class="math inline">\(f_y\)</span> は連続</p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}は有界\\
-&amp;&amp;&amp;(証明)\\
-&amp;&amp;&amp;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}は有界でないと仮定する\\
-&amp;&amp;&amp;任意のm&gt;0に対して\left|\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}\right|&gt;m\\
-&amp;&amp;&amp;{\therefore}\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}&lt;-m
-または m&lt;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}である\\
-&amp;&amp;&amp;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}&lt;-m とすると\\
-&amp;&amp;&amp;x^4-4x^2y^2-y^4&lt;-m(x^4+2x^2y^2+y^4)\\
-&amp;&amp;&amp;{\therefore}(1+m)x^4+(-4+2m)x^2y^2+(m-1)y^4&lt;0\\
-&amp;&amp;&amp;m=1 とすると 2x^4&lt;0\\
-&amp;&amp;&amp;これは矛盾\\
-&amp;&amp;&amp;\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}&gt;m とすると\\
-&amp;&amp;&amp;x^4-4x^2y^2-y^4&gt;m(x^4+2x^2y^2+y^4)\\
-&amp;&amp;&amp;0&gt;(m-1)x^4+(2m+4)x^2y^2+(m+1)y^4\\
-&amp;&amp;&amp;m=1とすると0&gt;8x^2y^2+2y^4\\
-&amp;&amp;&amp;これは矛盾\\
-&amp;&amp;&amp;よって\frac{x^4+4x^2y^2-y^4}{x^4+2x^2y^2+y^4}は有界\\
-&amp;&amp;\textcolor{red}{(*2)}&amp;f(x,y)は有界,\displaystyle\lim_{(x,y)\to
-(0,0)}g=0ならば\lim fg=0
-\end{flalign*}\]</span></p>
+class="math inline">\(\mathbf{\textcolor{magenta}{Z}}(\xi,\eta)=\mathbf{\textcolor{blue}{Z}}(\mathbf{\textcolor{teal}{x}}(\xi,\eta),\mathbf{\textcolor{teal}{y}}(\xi,\eta))\)</span>
+とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+{\therefore}\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{magenta}{Z}}}{\partial \xi}\Big)_\eta &amp;=
+\frac{d\mathbf{\textcolor{magenta}{Z}}}{d\xi}
+\quad \Big({\because}\xi,\eta が独立なので
+\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{magenta}{Z}}}{\partial
+\xi}\Big)_\eta=\frac{d\mathbf{\textcolor{magenta}{Z}}}{d\xi}\Big)
+&amp;\\
+&amp;= \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{blue}{Z}}}{\partial
+x}\Big)_y\frac{d\mathbf{\textcolor{teal}{x}}}{d\xi}+\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{blue}{Z}}}{\partial
+y}\Big)_x\frac{d\mathbf{\textcolor{teal}{y}}}{d\xi}
+\quad ({\because}問題1.7) &amp;\\
+&amp;= \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{blue}{Z}}}{\partial
+x}\Big)_y\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{x}}}{\partial \xi}\Big)_\eta
+    + \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{blue}{Z}}}{\partial
+y}\Big)_x\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{y}}}{\partial \xi}\Big)_\eta
+\quad \Big({\because}\xi,\eta が独立なので
+           \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{x}}}{\partial
+\xi}\Big)_\eta=\frac{d\mathbf{\textcolor{teal}{x}}}{d\xi},\
+           \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{y}}}{\partial
+\xi}\Big)_\eta=\frac{d\mathbf{\textcolor{teal}{y}}}{d\xi}\Big) &amp;
+\end{flalign*}
+\]</span><br />
+<span class="math display">\[
+\begin{flalign*}
+{\therefore}\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{magenta}{Z}}}{\partial \eta}\Big)_\xi &amp;=
+\frac{d\mathbf{\textcolor{magenta}{Z}}}{d\eta}
+\quad \Big({\because}\xi,\eta が独立なので
+\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{magenta}{Z}}}{\partial
+\eta}\Big)_\xi=\frac{d\mathbf{\textcolor{magenta}{Z}}}{d\eta}\Big)
+&amp;\\
+&amp;= \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{blue}{Z}}}{\partial
+x}\Big)_y\frac{d\mathbf{\textcolor{teal}{x}}}{d\eta}+\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{blue}{Z}}}{\partial
+y}\Big)_x\frac{d\mathbf{\textcolor{teal}{y}}}{d\eta}
+\quad ({\because}問題1.7) &amp;\\
+&amp;= \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{blue}{Z}}}{\partial
+x}\Big)_y\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{x}}}{\partial \eta}\Big)_\xi
+    + \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{blue}{Z}}}{\partial
+y}\Big)_x\displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{y}}}{\partial \eta}\Big)_\xi
+\quad \Big({\because}\xi,\eta が独立なので
+           \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{x}}}{\partial
+\eta}\Big)_\xi=\frac{d\mathbf{\textcolor{teal}{x}}}{d\eta},\
+           \displaystyle\Big(\frac{\partial
+\mathbf{\textcolor{teal}{y}}}{\partial
+\eta}\Big)_\xi=\frac{d\mathbf{\textcolor{teal}{y}}}{d\eta}\Big) &amp;
+\end{flalign*}
+\]</span></p>
    </main>
    </div>
   </div>
