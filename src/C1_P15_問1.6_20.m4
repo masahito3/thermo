@@ -10,10 +10,6 @@ include(`preamble.tex')
   \renewcommand{\teal}[1]{\mathbf{\textcolor{teal}{#1}}}
   \providecommand{\PARTIAL}{}
   \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_#3}
-  \providecommand{\Zb}{}
-  \renewcommand{\Zb}{\blue{Z}}
-  \providecommand{\Zm}{}
-  \renewcommand{\Zm}{\magenta{Z}}
   \providecommand{\xt}{}
   \renewcommand{\xt}{\teal{x}}
   \providecommand{\yt}{}
@@ -32,7 +28,7 @@ $g(x,\eta)=(x+1)(\eta+1)$ とする
 
 このとき
 
-$\PARTIAL{g}{x}{\eta}=x-y+1$ $\dots(1.18)$ である
+$\PARTIAL{g}{x}{\eta}=x-y+1$ $\cdots(1.18)$ である
 
 ---
 

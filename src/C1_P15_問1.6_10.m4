@@ -24,25 +24,29 @@ NEWPAGE
 
 ## P.15 問題1.6(i)  偏微分の連鎖律 '25 6.13
 
+$x,y,\xi,\eta$ は独立変数とする
+
 $\Zb, \Zm, \xt, \yt$ は関数とする
 
 $\Zb(x,y)$, $\Zm(\xi,\eta)$ とする
 
 $\xt(\xi,\eta)$, $\yt(\xi,\eta)$ とする
 
-$x,y,\xi,\eta$ は独立変数とする
-
 $\PARTIAL{\Zm}{\xi}{\eta}=
 \PARTIAL{\Zb}{x}{y} \PARTIAL{\xt}{\xi}{\eta}
-+ \PARTIAL{\Zb}{y}{x} \PARTIAL{\yt}{\xi}{\eta}$ $\dots(1.20)$
++ \PARTIAL{\Zb}{y}{x} \PARTIAL{\yt}{\xi}{\eta}$ $\cdots(1.20)$
 
 $\PARTIAL{\Zm}{\eta}{\xi}=
 \PARTIAL{\Zb}{x}{y} \PARTIAL{\xt}{\eta}{\xi}
-+ \PARTIAL{\Zb}{y}{x} \PARTIAL{\yt}{\eta}{\xi}$ $\dots(1.21)$
++ \PARTIAL{\Zb}{y}{x} \PARTIAL{\yt}{\eta}{\xi}$ $\cdots(1.21)$
 
 ---
 
 (証明)
+
+$x,y,\xi,\eta$ は独立変数とする
+
+$\Zb, \Zm, \xt, \yt$ は関数とする
 
 $\Zm(\xi,\eta)=\Zb(\xt(\xi,\eta),\yt(\xi,\eta))$ とする
 
