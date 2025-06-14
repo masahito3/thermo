@@ -48,6 +48,12 @@ $x,y,\xi,\eta$ は独立変数とする
 
 $\Zb, \Zm, \xt, \yt$ は関数とする
 
+$\Zb(x,y)$ とする
+
+$\xt(\xi,\eta)$ とする
+
+$\yt(\xi,\eta)$ とする
+
 $\Zm(\xi,\eta)=\Zb(\xt(\xi,\eta),\yt(\xi,\eta))$ とする
 
 $$
