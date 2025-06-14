@@ -1,13 +1,9 @@
 ---
 header-includes: |
 include(`preamble.tex')
-  \providecommand{\magenta}{}
-  \renewcommand{\magenta}[1]{\mathbf{\textcolor{magenta}{#1}}}
-  \providecommand{\blue}{}
-  \renewcommand{\blue}[1]{\mathbf{\textcolor{blue}{#1}}}
-  \providecommand{\green}{}
+  \renewcommand{\boldsymbol}{\pmb}
   \providecommand{\teal}{}
-  \renewcommand{\teal}[1]{\mathbf{\textcolor{teal}{#1}}}
+  \renewcommand{\teal}[1]{\boldsymbol{\textcolor{teal}{#1}}}
   \providecommand{\PARTIAL}{}
   \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_#3}
   \providecommand{\xt}{}
