@@ -1,23 +1,20 @@
 ---
 header-includes: |
 include(`preamble.tex')
-  \renewcommand{\boldsymbol}{\pmb}
-  \providecommand{\magenta}{}
-  \renewcommand{\magenta}[1]{\boldsymbol{\textcolor{magenta}{#1}}}
-  \providecommand{\blue}{}
-  \renewcommand{\blue}[1]{\boldsymbol{\textcolor{blue}{#1}}}
-  \providecommand{\teal}{}
-  \renewcommand{\teal}[1]{\boldsymbol{\textcolor{teal}{#1}}}
+  \providecommand{\bold}{}
+  \renewcommand{\bold}NEWCOMMAND_BOLD
+  \providecommand{\ctext}{}
+  \renewcommand{\ctext}[2]{\textcolor{#1}{\bold{#2}}}
   \providecommand{\PARTIAL}{}
   \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_#3}
   \providecommand{\Zb}{}
-  \renewcommand{\Zb}{\blue{Z}}
+  \renewcommand{\Zb}{\ctext{blue}{Z}}
   \providecommand{\Zm}{}
-  \renewcommand{\Zm}{\magenta{Z}}
+  \renewcommand{\Zm}{\ctext{magenta}{Z}}
   \providecommand{\xt}{}
-  \renewcommand{\xt}{\teal{x}}
+  \renewcommand{\xt}{\ctext{teal}{x}}
   \providecommand{\yt}{}
-  \renewcommand{\yt}{\teal{y}}
+  \renewcommand{\yt}{\ctext{teal}{y}}
 ---
 
 NEWPAGE
