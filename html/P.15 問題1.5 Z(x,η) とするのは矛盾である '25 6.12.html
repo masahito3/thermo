@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.12 補足 べき級数のべき '25 6.2</title>
+  <title>P.15 問題1.5 Z(x,η) とするのは矛盾である '25 6.12</title>
   <style>
   </style>
   <link rel="stylesheet" href="bulma.css" />
@@ -137,134 +137,196 @@ id="toc-p.15-問題1.6iii-偏微分の連鎖律-25-6.13">P.15 問題1.6(iii)
 <div class="sitenav columns">
 
 <span class="navlink column">
-<a href="P.12 補足 べき級数の合成 '25 6.1.html" accesskey="p" rel="previous">Previous</a>
+<a href="P.12 問題1.4 x^2 e^y の偏微分 '25 4.16.html" accesskey="p" rel="previous">Previous</a>
 </span>
 
 <span class="navlink column has-text-right">
-<a href="P.12 問題1.4 x^2 e^y の偏微分 '25 4.16.html" accesskey="n" rel="next">Next</a>
+<a href="P.15 問題1.6(i) 偏微分の連鎖律 '25 6.13.html" accesskey="n" rel="next">Next</a>
 </span>
 
 </div>
 </nav>
-<h2 data-number="1.25" id="p.12-補足-べき級数のべき-25-6.2">P.12 補足
-べき級数のべき '25 6.2</h2>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span> ならば <span
-class="math inline">\(f(x)=\displaystyle\sum_{n=0}^{\infty}
-a_n(x-a)^n\)</span> とする</p>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span> ならば <span
-class="math inline">\((f(x))^m,\ m\ge 1\)</span> は <span
-class="math inline">\(a\)</span> を中心としたべき級数であらわされる</p>
+<h2 data-number="1.27"
+id="p.15-問題1.5-zxη-とするのは矛盾である-25-6.12">P.15 問題1.5 Z(x,η)
+とするのは矛盾である '25 6.12</h2>
+<p><span class="math inline">\(Z(x,y)=x^2e^y\)</span> とする</p>
+<p><span class="math inline">\(\eta = y-x\)</span> とする</p>
+<p><span class="math inline">\(Z(x,\eta)=x^2e^{\eta+x}\)</span>
+とする。とすると矛盾することを確認する</p>
 <hr />
-<p>(証明)</p>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span> とする</p>
+<p>(矛盾していることの確認)<br />
+<br />
+<span class="math inline">\(Z(x,y)=x^2e^y\)</span> とする <span
+class="math inline">\(\cdots(1)\)</span></p>
+<p><span class="math inline">\(\eta = y-x\)</span> とする <span
+class="math inline">\(\cdots(2)\)</span></p>
+<p><span class="math inline">\(Z=Z(x,y)\)</span> とする <span
+class="math inline">\(\cdots(3)\)</span></p>
 <p><span class="math display">\[
 \begin{flalign*}
-(f(x))^2&amp;=\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\dots(1)
-&amp;\\
-&amp;= \displaystyle\sum_{n=0}^{\infty}\sum_{k=0}^{n} a_k(x-a)^k
-a_{n-k}(x-a)^{n-k}
-   \quad\bigg(\begin{array}{@{}l@{}}
-     {\because}\sum a_n(x-a)^n は絶対収束する \\
-     \quad よって級数の積はコーシー積であらわされる
-   \end{array}\bigg) &amp;\\
-&amp;= \displaystyle\sum_{n=0}^{\infty}\Big(\sum_{k=0}^{n}a_k
-a_{n-k}\Big)(x-a)^n
-   \quad({\because}有限級数の線型性) &amp;\\
-&amp;=
-\displaystyle\sum_{n=0}^{\infty}\Big(\sum_{k_1+k_2=n}^{}a_{k_1}a_{k_2}\Big)(x-a)^n\quad\textcolor{red}{(*1)}&amp;
+{\therefore}Z &amp;= Z(x,y) &amp;\\
+      &amp;= Z(x,\eta+x)\ ({\because}\eta=y-x) &amp;\\
+      &amp;= x^2e^{\eta+x}\ ({\because}Z(x,y)=x^2e^y) &amp;
 \end{flalign*}
 \]</span></p>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span> ならば <span
-class="math inline">\((1)\)</span> のどちらの級数も絶対収束する。
-よってコーシー積も絶対収束する。よって<span
-class="math inline">\((f(x))^2\)</span> をあらわす級数は絶対収束する</p>
-<p><span
-class="math inline">\(c_n^m=\displaystyle\sum_{k_1+\dots+k_m=n}^{}a_{k_1}\dots
-a_{k_m},\ m\ge2\)</span> とする</p>
-<p><span
-class="math inline">\((f(x))^2=\displaystyle\sum_{n=0}^{\infty}c_n^2(x-a)^n\)</span>
-である</p>
-<p><span
-class="math inline">\((f(x))^m=\displaystyle\sum_{n=0}^{\infty}c_n^m(x-a)^n\)</span>
-と仮定する</p>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span>
-で絶対収束すると仮定する</p>
+<p><span class="math inline">\(Z(x,\eta)= x^2e^{\eta+x}\)</span> とする
+<span class="math inline">\(\cdots(4)\)</span></p>
 <p><span class="math display">\[
 \begin{flalign*}
-(f(x))^{m+1}&amp;=\displaystyle\sum_{n=0}^{\infty}c_n^m(x-a)^n\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\dots(2)
-&amp;\\
-&amp;=\displaystyle\sum_{n=0}^{\infty}\sum_{k=0}^{n}c_k^m(x-a)^k
-a_{n-k}(x-a)^{n-k}\quad({\because}コーシー積) &amp;\\
-&amp;=\displaystyle\sum_{n=0}^{\infty}\Big(\sum_{k=0}^{n}c_k^m
-a_{n-k}\Big)(x-a)^n\quad({\because}有限級数の線型性) &amp;\\
-&amp;=\displaystyle\sum_{n=0}^{\infty}\Big(\sum_{k=0}^{n}\sum_{k_1+\dots
-k_m=k}^{}a_{k_1}\dots a_{k_m}a_{n-k}\Big)(x-a)^n &amp;\\
-&amp;=\displaystyle\sum_{n=0}^{\infty}\sum_{k_1+\dots
-k_{m+1}=n}^{}a_{k_1}\dots a_{k_{m+1}}(x-a)^n\quad\textcolor{red}{(*2)}
-&amp;
+{\therefore}\displaystyle\Big(\frac{\partial Z}{\partial x}\Big)_\eta
+  &amp;= 2xe^{\eta+x}+x^2e^{\eta+x} &amp;\\
+  &amp;= (2x+x^2)e^{\eta+x} &amp;
 \end{flalign*}
 \]</span></p>
-<p>よって <span class="math inline">\(m\ge2\)</span> ならば</p>
+<p>また <span class="math inline">\(Z(x,\eta) = x^2e^\eta\
+({\because}Z(x,y)=x^2e^y)\)</span> なので</p>
 <p><span
-class="math inline">\((f(x))^m=\displaystyle\sum_{n=0}^{\infty}c_n^m(x-a)^n\)</span>
-, <span class="math inline">\(\quad
-c_n^m=\displaystyle\sum_{k_1+\dots+k_m=n}^{}a_{k_1}\dots
-a_{k_m}\)</span> である</p>
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_\eta = 2x e^\eta\)</span></p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_\eta \ne \displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_\eta\)</span></p>
+<p>等号の反射律に反しているのでこれは矛盾である</p>
+<p>よって <span class="math inline">\((1),(2),(3),(4)\)</span>
+の仮定は矛盾している</p>
+<hr />
+<p>(なにが矛盾しているか)</p>
+<p>まず <span class="math inline">\((1)\)</span> かつ <span
+class="math inline">\((4)\)</span> は矛盾している。なぜなら</p>
+<p><span class="math inline">\((1)\)</span> より <span
+class="math inline">\(Z(1,1)=e\)</span></p>
+<p><span class="math inline">\((4)\)</span> より <span
+class="math inline">\(Z(1,1)=e^2\)</span></p>
+<p><span class="math inline">\({\therefore}Z(1,1)\ne Z(1,1)\)</span></p>
+<p>これは等号の反射律に反するので矛盾である</p>
+<p>よって <span class="math inline">\((1)\)</span> かつ <span
+class="math inline">\((4)\)</span> は矛盾している</p>
+<p>次に <span class="math inline">\((1)\)</span> かつ <span
+class="math inline">\((3)\)</span> も矛盾している。なぜなら</p>
+<p><span class="math inline">\((1)\)</span> より <span
+class="math inline">\(Z(0,0)=0\)</span></p>
+<p><span class="math inline">\((3)\)</span> より <span
+class="math inline">\(Z=Z(0,0)=0\)</span></p>
+<p><span class="math inline">\((1)\)</span> より <span
+class="math inline">\(Z(1,1)=e\)</span></p>
+<p><span class="math inline">\((3)\)</span> より <span
+class="math inline">\(Z=Z(1,1)=e\)</span></p>
+<p>よって <span class="math inline">\(Z \ne Z\)</span></p>
+<p>これは等号の反射律に反するので矛盾である</p>
+<p>よって <span class="math inline">\((1)\)</span> かつ <span
+class="math inline">\((3)\)</span> は矛盾している</p>
 <p><span class="math inline">\((2)\)</span>
-のどちらの級数も絶対収束するので、コーシー積も絶対収束する。</p>
-<p>よって <span class="math inline">\(|x-a|&lt;R_f\)</span>
-ならば絶対収束する</p>
-<p><span class="math inline">\(m=1\)</span> ならば <span
-class="math inline">\((f(x))^1=\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\)</span></p>
-<p>よって <span class="math inline">\(m\ge1\)</span> で <span
-class="math inline">\((f(x))^m\)</span> は <span
-class="math inline">\(a\)</span> を中心とするべき級数であらわされる</p>
+は他の仮定と矛盾することはない</p>
+<hr />
+<p>(矛盾させないために)</p>
+<p>異なる関数を同じ関数 <span class="math inline">\(Z\)</span>
+であると仮定していたのが矛盾の原因なので</p>
+<p>異なる関数は別の関数 <span class="math inline">\(Z,\ Z_1\)</span>
+であると仮定すればよい</p>
+<p>また <span class="math inline">\(Z\)</span>
+を関数であるかつ変数であると仮定していたのが矛盾の原因なので</p>
+<p>変数は <span class="math inline">\(Z_2\)</span>
+であると仮定すればよい</p>
+<p><span class="math inline">\(Z(x,y)=x^2e^y\)</span> とする</p>
+<p><span class="math inline">\(\eta=y-x\)</span> とする</p>
+<p><span class="math inline">\(Z_2=Z(x,y)\)</span> とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;A=\{(k,n-k)\ |\  n\ge k\ge 0\} \\
-&amp;&amp;&amp; B=\{(k_1,k_2)\ |\ k_1+k_2=n,\ k_1,k_2\ge 0\} とする \\
-&amp;&amp;&amp; (a,b)\in A とする \\
-&amp;&amp;&amp; b=n-a \\
-&amp;&amp;&amp; {\therefore}a+b=n \\
-&amp;&amp;&amp; また n\ge a\ge 0 \\
-&amp;&amp;&amp; {\therefore}b\ge 0 \\
-&amp;&amp;&amp; {\therefore}(a,b)\in B \\
-&amp;&amp;&amp; (a,b)\in B とする \\
-&amp;&amp;&amp; a+b=n \\
-&amp;&amp;&amp; {\therefore}b=n-a \\
-&amp;&amp;&amp; b\ge 0 より \\
-&amp;&amp;&amp; n-a \ge 0 \\
-&amp;&amp;&amp; {\therefore}n \ge a \\
-&amp;&amp;&amp; a\ge 0 なので \\
-&amp;&amp;&amp; n\ge a \ge 0 \\
-&amp;&amp;&amp; {\therefore}(a,b)\in A \\
-&amp;&amp;&amp; {\therefore}A=B
+{\therefore}Z_2 &amp;= Z(x,y) &amp;\\
+  &amp;= Z(x,\eta+x)\ ({\because}\eta=y-x) &amp;\\
+  &amp;= x^2e^{\eta+x}\ ({\because}Z(x,y)=x^2e^y) &amp;
 \end{flalign*}
 \]</span></p>
+<p><span class="math inline">\(Z_1(x,\eta)=x^2e^{\eta+x}\)</span>
+とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;&amp;\textcolor{red}{(*2)}&amp;A=\{(k_1,\dots,k_m,n-k)\
-|\  k_1+\dots+k_m=k,0\le k\le n,\ k_i\ge0\} \\
-&amp;&amp;&amp; B=\{(k_1,\dots,k_{m+1})\ |\ k_1+\dots+k_{m+1}=n,\ k_i\ge
-0\} とする\\
-&amp;&amp;&amp; (a_1,\dots,a_{m+1})\in A とする \\
-&amp;&amp;&amp; a_1+\dots+a_m=k,\ a_{m+1}=n-k \\
-&amp;&amp;&amp; {\therefore}a_1+\dots+a_{m+1}=n \\
-&amp;&amp;&amp; 0\le k \le n より \\
-&amp;&amp;&amp; a_{m+1}=n-k\ge 0 \\
-&amp;&amp;&amp; {\therefore}(a_1,\dots,a_{m+1})\in B \\
-&amp;&amp;&amp; (a_1,\dots,a_{m+1})\in B とする\\
-&amp;&amp;&amp; a_1+\dots+a_{m+1}=n \\
-&amp;&amp;&amp; a_1+\dots+a_m=k とする \\
-&amp;&amp;&amp; k=n-a_{m+1} \\
-&amp;&amp;&amp; a_{m+1}\ge 0 より k\le n \\
-&amp;&amp;&amp; a_i\ge 0 より k\ge 0 \\
-&amp;&amp;&amp; {\therefore}0\le k\le n \\
-&amp;&amp;&amp; また a_{m+1}=n-k \\
-&amp;&amp;&amp; {\therefore}(a_1,\dots,a_{m+1})\in A \\
-&amp;&amp;&amp; {\therefore}A=B
+{\therefore}\displaystyle\Big(\frac{\partial Z_1}{\partial x}\Big)_\eta
+  &amp;= 2xe^{\eta+x}+x^2e^{\eta+x} &amp;\\
+  &amp;= (2x+x^2)e^{\eta+x} &amp;
 \end{flalign*}
 \]</span></p>
+<p><span class="math inline">\(Z(x,\eta) = x^2e^\eta\
+({\because}Z(x,y)=x^2e^y)\)</span> なので</p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_\eta = 2x e^\eta\)</span></p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+Z_2}{\partial x}\Big)_\eta \ne \displaystyle\Big(\frac{\partial
+Z}{\partial x}\Big)_\eta\)</span></p>
+<p>となり矛盾しない</p>
+<hr />
+<p>(物理の教科書では <span class="math inline">\(Z,\ Z_1,\ Z_2\)</span>
+とせずにすべて <span class="math inline">\(Z\)</span> とする)</p>
+<p>本文によると実際の物理の教科書では異なる関数 <span
+class="math inline">\(Z,\ Z_1\)</span> をすべて同じ関数 <span
+class="math inline">\(Z\)</span>
+とする。というのはよくあることらしい。</p>
+<p>また、変数 <span class="math inline">\(Z\)</span> をあとで 関数 <span
+class="math inline">\(Z(..)\)</span> とすることもよくある</p>
+<p>矛盾を起こさないために、同じにみえる複数の関数 <span
+class="math inline">\(Z\)</span>、変数 <span
+class="math inline">\(Z\)</span>
+を脳内で異なる関数、変数として区別しないといけない</p>
+<p><span
+class="math inline">\(\textcolor{blue}{\boldsymbol{Z}},\textcolor{magenta}{\boldsymbol{Z}}\)</span>
+は関数とする、<span class="math inline">\(Z\)</span> は変数とする。</p>
+<p><span
+class="math inline">\(\textcolor{blue}{\boldsymbol{Z}}(x,y)=x^2e^y\)</span>
+とする</p>
+<p><span class="math inline">\(\eta=y-x\)</span> とする</p>
+<p><span
+class="math inline">\(Z=\textcolor{blue}{\boldsymbol{Z}}(x,y)\)</span>
+とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+{\therefore}Z &amp;= \textcolor{blue}{\boldsymbol{Z}}(x,y) &amp;\\
+      &amp;= \textcolor{blue}{\boldsymbol{Z}}(x,\eta+x)\
+({\because}\eta=y-x) &amp;\\
+      &amp;= x^2e^{\eta+x}\ ({\because}Z(x,y)=x^2e^y) &amp;
+\end{flalign*}
+\]</span></p>
+<p><span
+class="math inline">\(\textcolor{magenta}{\boldsymbol{Z}}(x,\eta)=x^2e^{\eta+x}\)</span>
+とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+{\therefore}\displaystyle\Big(\frac{\partial
+\textcolor{magenta}{\boldsymbol{Z}}}{\partial x}\Big)_\eta
+  &amp;= 2xe^{\eta+x}+x^2e^{\eta+x} &amp;\\
+  &amp;= (2x+x^2)e^{\eta+x} &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(\textcolor{blue}{\boldsymbol{Z}}(x,\eta)
+= x^2e^\eta\
+({\because}\textcolor{blue}{\boldsymbol{Z}}(x,y)=x^2e^y)\)</span>
+なので</p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x}\Big)_\eta = 2x
+e^\eta\)</span></p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
+\textcolor{magenta}{\boldsymbol{Z}}}{\partial x}\Big)_\eta \ne
+\displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x}\Big)_\eta\)</span></p>
+<p>という感じ。わたしら素人にはだいぶハードルが高い</p>
+<hr />
+<p>(変数の異なる関数は異なる関数と見る)</p>
+<p>本文では変数が異なれば別の関数として区別するとしている。</p>
+<p><span
+class="math inline">\(\textcolor{blue}{\boldsymbol{Z}}(x,y)=x^2e^y\)</span></p>
+<p><span
+class="math inline">\(\textcolor{magenta}{\boldsymbol{Z}}(x,\eta)=x^2e^{\eta+x}\)</span></p>
+<hr />
+<p>(注意)</p>
+<p>関数の値を変数としたり、変数の式を関数としたりすることはよくある</p>
+<p>この問題のように関数1 <span
+class="math inline">\(\rightarrow\)</span> 変数 <span
+class="math inline">\(\rightarrow\)</span> 関数2
+としてすべて同じ記号であらわすと脳内で区別がつかなくなって矛盾することがある</p>
    </main>
    </div>
   </div>

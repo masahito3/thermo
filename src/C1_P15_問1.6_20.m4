@@ -1,15 +1,16 @@
 ---
 header-includes: |
 include(`preamble.tex')
-  \renewcommand{\boldsymbol}{\pmb}
-  \providecommand{\teal}{}
-  \renewcommand{\teal}[1]{\boldsymbol{\textcolor{teal}{#1}}}
+  \providecommand{\bold}{}
+  \renewcommand{\bold}NEWCOMMAND_BOLD
+  \providecommand{\ctext}{}
+  \renewcommand{\ctext}[2]{\textcolor{#1}{\bold{#2}}}
   \providecommand{\PARTIAL}{}
   \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_#3}
   \providecommand{\xt}{}
-  \renewcommand{\xt}{\teal{x}}
+  \renewcommand{\xt}{\ctext{teal}{x}}
   \providecommand{\yt}{}
-  \renewcommand{\yt}{\teal{y}}
+  \renewcommand{\yt}{\ctext{teal}{y}}
 ---
 
 NEWPAGE
@@ -32,7 +33,7 @@ $\PARTIAL{g}{x}{\eta}=x-y+1$ $\cdots(1.18)$ である
 
 $x,\ y,\ \eta$ は変数とする
 
-$x$ と $y$ は独立とする。$x$ と $\eta$ は独立とする。
+$x$ と $y$ は互いに独立とする。$x$ と $\eta$ は互いに独立とする。
 
 $\xt(..),\ \yt(..)$ は関数とする
 

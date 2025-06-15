@@ -7,3 +7,4 @@ s/NEWPAGE//g
 s/HSPACE/<span style="margin-left:2em;"><\/span>/g
 s/NEWCOMMAND_CUZ/{\\because}/g
 s/NEWCOMMAND_SO/{\\therefore}/g
+s/NEWCOMMAND_BOLD/[1]{\\boldsymbol{#1}}/g

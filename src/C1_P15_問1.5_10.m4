@@ -1,262 +1,206 @@
 ---
 header-includes: |
 include(`preamble.tex')
-  \providecommand{\magenta}{}
-  \renewcommand{\magenta}[1]{\mathbf{\textcolor{magenta}{#1}}}
-  \providecommand{\blue}{}
-  \renewcommand{\blue}[1]{\mathbf{\textcolor{blue}{#1}}}
-  \providecommand{\green}{}
-  \renewcommand{\green}[1]{\mathbf{\textcolor{green}{#1}}}
+  \providecommand{\bold}{}
+  \renewcommand{\bold}NEWCOMMAND_BOLD
+  \providecommand{\ctext}{}
+  \renewcommand{\ctext}[2]{\textcolor{#1}{\bold{#2}}}
   \providecommand{\PARTIAL}{}
-  \renewcommand{\PARTIAL}{\disp\Big(\frac{\partial Z}{\partial x}\Big)}
-  \providecommand{\PARTIALT}{}
-  \renewcommand{\PARTIALT}{\disp\Big(\frac{\partial Z_2}{\partial x}\Big)}
+  \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_#3}
+  \providecommand{\Zb}{}
+  \renewcommand{\Zb}{\ctext{blue}{Z}}
+  \providecommand{\Zm}{}
+  \renewcommand{\Zm}{\ctext{magenta}{Z}}
+  \providecommand{\Zt}{}
+  \renewcommand{\Zt}{\ctext{teal}{Z}}
 ---
 
 NEWPAGE
 
-## P.15 問題1.5 Z(x,y), Z(x,η) とするのは矛盾である  '25 6.12
+## P.15 問題1.5 Z(x,η) とするのは矛盾である  '25 6.12
 
-$Z=x^2e^y$ とする
+$Z(x,y)=x^2e^y$ とする
 
 $\eta = y-x$ とする
 
-$Z$ の偏微分を調べて $Z(x,y)$ とする。$Z(x,\eta)$ とする。は矛盾していることを確認する
+$Z(x,\eta)=x^2e^{\eta+x}$ とする。とすると矛盾することを確認する
 
 ---
 
-($Z(x,y)$ とする。$Z(x,\eta)$ とする。は矛盾している)
+(矛盾していることの確認)
 \
 \
-$Z(x,y)=x^2e^y$ とする $\dots(1)$
+$Z(x,y)=x^2e^y$ とする $\cdots(1)$
 
-$\so \PARTIAL_y=2xe^y$, 
+$\eta = y-x$ とする $\cdots(2)$
 
-$\eta = y-x$ とする
+$Z=Z(x,y)$ とする $\cdots(3)$
 
 $$
 \begin{flalign*}
-Z(x,y) &= Z(x,\eta+x)\ (\cuz \eta=y-x) &\\
-      &= x^2e^{\eta+x}\ (\cuz (1)) &
+\so Z &= Z(x,y) &\\
+      &= Z(x,\eta+x)\ (\cuz \eta=y-x) &\\
+      &= x^2e^{\eta+x}\ (\cuz Z(x,y)=x^2e^y) &
 \end{flalign*}
 $$
 
-$Z(x,\eta)= x^2e^{\eta+x}$ とする $\dots(2)$
+$Z(x,\eta)= x^2e^{\eta+x}$ とする $\cdots(4)$
 
 $$
 \begin{flalign*}
-\so \PARTIAL_\eta 
+\so \PARTIAL{Z}{x}{\eta} 
   &= 2xe^{\eta+x}+x^2e^{\eta+x} &\\
   &= (2x+x^2)e^{\eta+x} &
 \end{flalign*}
 $$
 
-$\so \PARTIAL_y \ne \PARTIAL_\eta$
+また $Z(x,\eta) = x^2e^\eta\ (\cuz Z(x,y)=x^2e^y)$ なので
 
-この結論は反射律に反していない
+$\so \PARTIAL{Z}{x}{\eta} = 2x e^\eta$
 
-$(1)$ から $(2)$ の議論をもう一度くりかえす
+$\so \PARTIAL{Z}{x}{\eta} \ne \PARTIAL{Z}{x}{\eta}$
 
-$$
-\begin{flalign*}
-Z(x,\eta) &= Z(x,y-z)\ (\cuz \eta=y-x) &\\
- &= x^2 e^{y-x}\ (\cuz (1)) &
-\end{flalign*}
-$$
+等号の反射律に反しているのでこれは矛盾である
 
-$Z(x,y)= x^2e^{y-x}$ とする $\dots(3)$
+よって $(1),(2),(3),(4)$ の仮定は矛盾している
 
-$$
-\begin{flalign*}
-\so \PARTIAL_y &= 2xe^{y-x}+x^2(-1)e^{y-x} &\\
-               &= (2x-x^2)e^{y-x} &
-\end{flalign*}
-$$
+---
 
-$2xe^y\ne(2x-x^2)e^{y-x}$ なので
+(なにが矛盾しているか)
 
-$\PARTIAL_y \ne \PARTIAL_y$
-
-これは等号の反射律に反するので矛盾である
-
-よって $(1),(2),(3)$ の仮定は矛盾している
-
-偏微分を使わなくてももっと簡単に矛盾を導くことができる
+まず $(1)$ かつ $(4)$ は矛盾している。なぜなら
 
 $(1)$ より $Z(1,1)=e$
 
-$(2)$ より $Z(1,1)=e^2$
+$(4)$ より $Z(1,1)=e^2$
 
-$(3)$ より $Z(1,1)=1$
-
-$\so Z(1,1)\ne Z(1,1)\ne Z(1,1)$
+$\so Z(1,1)\ne Z(1,1)$
 
 これは等号の反射律に反するので矛盾である
 
-よって $(1),(2),(3)$ の仮定は矛盾している
+よって $(1)$ かつ $(4)$ は矛盾している
+
+次に $(1)$ かつ $(3)$ も矛盾している。なぜなら
+
+$(1)$ より $Z(0,0)=0$ 
+
+$(3)$ より $Z=Z(0,0)=0$
+
+$(1)$ より $Z(1,1)=e$ 
+
+$(3)$ より $Z=Z(1,1)=e$
+
+よって $Z \ne Z$
+
+これは等号の反射律に反するので矛盾である
+
+よって $(1)$ かつ $(3)$ は矛盾している
+
+$(2)$ は他の仮定と矛盾することはない
 
 ---
 
 (矛盾させないために)
-\
-\
+
 異なる関数を同じ関数 $Z$ であると仮定していたのが矛盾の原因なので
 
-異なる関数は別の関数 $Z,\ Z_1,\ Z_2$ であると仮定すればよい
+異なる関数は別の関数 $Z,\ Z_1$ であると仮定すればよい
+
+また $Z$ を関数であるかつ変数であると仮定していたのが矛盾の原因なので
+
+変数は $Z_2$ であると仮定すればよい
 
 $Z(x,y)=x^2e^y$ とする
 
-$\so \PARTIAL_y = 2xe^y$
-
 $\eta=y-x$ とする
 
-$Z(x,y)=Z(x,\eta+x)=x^2e^{\eta+x}$
+$Z_2=Z(x,y)$ とする
+
+$$
+\begin{flalign*}
+\so Z_2 &= Z(x,y) &\\
+  &= Z(x,\eta+x)\ (\cuz \eta=y-x) &\\
+  &= x^2e^{\eta+x}\ (\cuz Z(x,y)=x^2e^y) &
+\end{flalign*}
+$$
 
 $Z_1(x,\eta)=x^2e^{\eta+x}$ とする
 
 $$
 \begin{flalign*}
-Z_1(x,\eta) &= Z_1(x,y-x) &\\
-            &= x^2e^{y-x+x} &\\ 
-            &= x^2e^y &
+\so \PARTIAL{Z_1}{x}{\eta} 
+  &= 2xe^{\eta+x}+x^2e^{\eta+x} &\\
+  &= (2x+x^2)e^{\eta+x} &
 \end{flalign*}
 $$
 
-$Z_2(x,y)=x^2e^y$ とする
+$Z(x,\eta) = x^2e^\eta\ (\cuz Z(x,y)=x^2e^y)$ なので
 
-$\PARTIALT_y=2xe^y$
+$\so \PARTIAL{Z}{x}{\eta} = 2x e^\eta$
 
-$\so \PARTIALT_y=\PARTIAL_y$
-
-$Z(x,y)=Z_2(x,y)$ なので
-
-$\PARTIAL_y=\PARTIAL_y$
+$\so \PARTIAL{Z_2}{x}{\eta} \ne \PARTIAL{Z}{x}{\eta}$
 
 となり矛盾しない
 
 ---
 
 (物理の教科書では $Z,\ Z_1,\ Z_2$ とせずにすべて $Z$ とする)
-\
-\
-本文によると実際の物理の教科書では異なる関数 $Z,\ Z_1,\ Z_2$  をすべて同じ関数 $Z$ とする。というのはよくあることらしい。
 
-矛盾を起こさないために、同じ関数 $Z$ でも脳内で異なる関数としなければならない。
+本文によると実際の物理の教科書では異なる関数 $Z,\ Z_1$  をすべて同じ関数 $Z$ とする。というのはよくあることらしい。
 
-$\blue{Z}(x,y)=x^2e^y$ とする
+また、変数 $Z$ をあとで 関数 $Z(..)$ とすることもよくある
+
+矛盾を起こさないために、同じにみえる複数の関数 $Z$、変数 $Z$ を脳内で異なる関数、変数として区別しないといけない
+
+$\Zb,\Zm$ は関数とする、$Z$ は変数とする。
+
+$\Zb(x,y)=x^2e^y$ とする
 
 $\eta=y-x$ とする
 
-$\magenta{Z}(x,\eta)=x^2e^{\eta+x}$ とする
+$Z=\Zb(x,y)$ とする
 
-$\magenta{Z}(x,y-x)=x^2e^{y-x+x}=x^2e^y$
+$$
+\begin{flalign*}
+\so Z &= \Zb(x,y) &\\
+      &= \Zb(x,\eta+x)\ (\cuz \eta=y-x) &\\
+      &= x^2e^{\eta+x}\ (\cuz Z(x,y)=x^2e^y) &
+\end{flalign*}
+$$
 
-$\green{Z}(x,y)=x^2e^y$ とする
+$\Zm(x,\eta)=x^2e^{\eta+x}$ とする
 
-$\disp\Big(\frac{\partial \blue{Z}}{\partial x}\Big)_y=2x e^y$
+$$
+\begin{flalign*}
+\so \PARTIAL{\Zm}{x}{\eta} 
+  &= 2xe^{\eta+x}+x^2e^{\eta+x} &\\
+  &= (2x+x^2)e^{\eta+x} &
+\end{flalign*}
+$$
 
-$\disp\Big(\frac{\partial \magenta{Z}}{\partial x}\Big)_\eta=(2x+x^2)e^{\eta+x}$
+$\Zb(x,\eta) = x^2e^\eta\ (\cuz \Zb(x,y)=x^2e^y)$ なので
 
-$\disp\Big(\frac{\partial \green{Z}}{\partial x}\Big)_y=2x e^y$
+$\so \PARTIAL{\Zb}{x}{\eta} = 2x e^\eta$
 
-$\blue{Z}=\green{Z},\ \blue{Z}\ne\magenta{Z}$
+$\so \PARTIAL{\Zm}{x}{\eta} \ne \PARTIAL{\Zb}{x}{\eta}$
 
 という感じ。わたしら素人にはだいぶハードルが高い
 
 ---
 
 (変数の異なる関数は異なる関数と見る)
-\
-\
+
 本文では変数が異なれば別の関数として区別するとしている。
 
-$\blue{Z}(x,y)=x^2e^y$
+$\Zb(x,y)=x^2e^y$
 
-$\magenta{Z}(x,\eta)=x^2e^{\eta+x}$
+$\Zm(x,\eta)=x^2e^{\eta+x}$
 
 ---
 
-(他の矛盾した仮定)
-\
-\
-"$Z$を変数とする" かつ "$Z$を関数とする" というのもよくある矛盾した仮定である
+(注意)
 
-変数は関数でないのでこの仮定は矛盾している
+関数の値を変数としたり、変数の式を関数としたりすることはよくある
 
-$Z=x^2e^y$ とする $\dots(1)$
+この問題のように関数1 $\rightarrow$ 変数 $\rightarrow$ 関数2 としてすべて同じ記号であらわすと脳内で区別がつかなくなって矛盾することがある
 
-$\eta=y-x$ とする
-
-よって$Z=x^2e^y=x^2e^{\eta+x}$ $\dots(2)$
-
-$\so \PARTIAL_\eta=(x+2x^2)e^{\eta+x}$ $\dots(3)$
-
-$(1)$ において $Z$ を関数とし、
-
-$(2)$ において $Z$ を変数とし、
-
-$(3)$ において $Z$ を関数としている
-
-変数は関数ではないのでこれらの仮定は矛盾している
-
-物理の教科書では $x$ を変数として話を進めたあとで
-
-$x(t)$ として関数とする。ということはよくある
-
-矛盾させないためには変数$x$と関数$x_1(t)$ を区別しないといけないが、
-
-ここでもまた脳内で変数$\blue{x}$ と関数 $\magenta{x}(t)$ を区別しないといけない
-
-変数 $x$ と 関数 $x(..)$ はかっこで区別できる
-
-ただし、関数 $x(..)$ を $x$ と略記して、これを変数 $x$ とすると矛盾する
-
-(例)
-
-$x+1=0$ とする(この $x$ は変数) 
-
-$x(t)=t$ とする(この $x$ は関数)
-
-よって
-
-$x=-1$
-
-$x(0)=0$
-
-ここで
-
-$x=x(0)=0$ とする
-
-$\so x\ne x$
-
-これは反射律に反するので矛盾
-
-(上の例のつづき)
-
-$Z(x,y)=x^2e^y$ とする
-
-$\eta=y-x$ とする 
-
-$Z=x^2e^y=x^2e^{\eta+x}$ とする(ここで $Z$ を変数としている)
-
-これより $Z(x,\eta)=x^2e^{\eta+x}$ とする
-
-$\so Z(x,y)=Z(x,\eta)$
-
-$\so Z(1,1)=Z(1,1)$
-
-$\so e=e^2$
-
-となり矛盾する
-
-この場合、最初に間違った仮定をしているのは $Z$ を変数としているところである
-
-その後、変数 $Z$ から新たに関数 $Z(x,\eta)$ を定義するのは自然な流れである
-
-もし変数 $Z$ とせずに
-
-$Z(x,y)=x^2e^y=x^2e^{\eta+x}$  
-
-としていれば
-
-$Z(x,\eta)=x^2e^{\eta+x}$ とするのは不自然だと気づく  
