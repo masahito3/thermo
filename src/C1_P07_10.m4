@@ -1,7 +1,6 @@
-include(`header.m4i')
 ---
 header-includes: |
-include([[preamble.tex]])
+include(`preamble.tex')
   \newcommand{\fdiff}{\frac{f(x)-f(a)}{x-a}}
   \newcommand{\limxa}{\lim_{x\to a}}
 ...

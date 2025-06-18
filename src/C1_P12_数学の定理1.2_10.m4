@@ -1,7 +1,6 @@
-include(`header.m4i')
 ---
 header-includes: |
-include([[preamble.tex]])
+include(`preamble.tex')
 ---
 
 NEWPAGE
