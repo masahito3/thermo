@@ -9,7 +9,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 補足 x=0でC∞級であるが解析的でない '25 5.21
+## P.12 補足 x=0でC∞級であるが解析的でない '25 5.21 {#C1_P12_補足_50}
 
 $$\begin{flalign*}
 f(x)=

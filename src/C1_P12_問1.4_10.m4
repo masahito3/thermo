@@ -5,10 +5,13 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 問題1.4 x^2 e^y の偏微分 '25 4.16
-$$\begin{flalign*}
+## P.12 問題1.4 x^2 e^y の偏微分 '25 4.16 {#C1_P12_問1.4_10}
+
+$$
+\begin{flalign*}
 f(x,y)&=x^2e^y,\quad (x,y)\in \mathbb{R}^2&\\
-\end{flalign*}$$
+\end{flalign*}
+$$
 
 $f$ の偏微分と連続性
 

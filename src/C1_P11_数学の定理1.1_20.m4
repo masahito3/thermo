@@ -11,7 +11,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.11 数学の定理1.1 f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25 5.17
+## P.11 数学の定理1.1 f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25 5.17 {#C1_P11_数学の定理1.1_20}
 
 $fは\V{a}$の近傍で連続的微分可能ならば
 
@@ -21,7 +21,7 @@ $\vx\to\va$ で $f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)\fxt(\va)=o(
 
 (証明)
 
-$x_1$の場合と同様に
+$x_1$の場合([別頁](#C1_P11_数学の定理1.1_10))と同様に 
 
 $$\begin{flalign*}
 \limto{\vx}{\va}

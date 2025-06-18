@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.10 問1.3 (0,0)でfは連続 '25 3.26
+## P.10 問1.3 (0,0)でfは連続 '25 3.26 {#C1_P10_問1.3_20}
 $$
 \begin{flalign*}
 f(x,y)=

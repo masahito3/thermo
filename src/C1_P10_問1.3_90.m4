@@ -11,7 +11,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.10 問1.3 (0,0)でfxyは不連続 '25 4.1
+## P.10 問1.3 (0,0)でfxyは不連続 '25 4.1 {#C1_P10_問1.3_90}
 
 $$
 \begin{flalign*}
@@ -30,9 +30,7 @@ $(x,y)=(0,0)$で$f_{xy}$は不連続
 
 $(x,y)\ne(0,0)$とする
 
-$$\begin{flalign*}
-f_x&=\frac{\NUME}{(\DENO)^2}\quad(\cuz 別紙) &
-\end{flalign*}$$
+$f_x=\disp\frac{\NUME}{(\DENO)^2}$\ \ ($\cuz$ [別頁](#C1_P10_問1.3_30)) 
 
 よって
 

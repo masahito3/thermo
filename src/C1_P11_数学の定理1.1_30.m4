@@ -15,7 +15,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.11 数学の定理1.1 f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6
+## P.11 数学の定理1.1 f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6 {#C1_P11_数学の定理1.1_30}
 
 $fは\V{a}$の近傍で連続的微分可能ならば
 
@@ -25,18 +25,16 @@ $\vx\to\va$ で $f(\vx)=f(\va)+\V{\nabla}f(\va)(\vx-\va)+o(|\vx-\va|)$である
 
 (証明)
 
-$$\begin{flalign*}
-\limto{\vx}{\va}
-&\l|\frac{f(x_1,\dots,x_m)-f(a_1,\dots,x_m)-\fxo(\va)(x_1-a_1)}{|\vx-\va|}\r|=0\quad(\cuz 別紙)&\\
-%
-\limto{\vx}{\va}
-&\l|\frac{f(a_1,\dots,x_m)-f(a_1,a_2,\dots,x_m)-\fxt(\va)(x_2-a_2)}{|\vx-\va|}\r|=0\quad(\cuz 別紙)&\\
-%
-&\hspace{11em}\vdots&\\
-%
-\limto{\vx}{\va}
-&\l|\frac{f(a_1,\dots,a_{m-1},x_m)-f(a_1,\dots,a_m)-\fxm(\va)(x_m-a_m)}{|\vx-\va|}\r|=0\quad(\cuz x_1,x_2の場合と同様)&
-\end{flalign*}$$
+$\disp\limto{\vx}{\va}\l|\frac{f(x_1,\dots,x_m)-f(a_1,\dots,x_m)-\fxo(\va)(x_1-a_1)}{|\vx-\va|}\r|=0$
+\ \ ($\cuz$ [別頁](#C1_P11_数学の定理1.1_10))
+
+$\disp\limto{\vx}{\va}\l|\frac{f(a_1,\dots,x_m)-f(a_1,a_2,\dots,x_m)-\fxt(\va)(x_2-a_2)}{|\vx-\va|}\r|=0$
+\ \ ($\cuz$ [別頁](#C1_P11_数学の定理1.1_20))
+
+$\hspace{11em}\vdots$
+
+$\disp\limto{\vx}{\va}\l|\frac{f(a_1,\dots,a_{m-1},x_m)-f(a_1,\dots,a_m)-\fxm(\va)(x_m-a_m)}{|\vx-\va|}\r|=0$
+\ \ ($\cuz$ $x_1$,$x_2$の場合と同様)
 
 足し合わせて
 

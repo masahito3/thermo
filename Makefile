@@ -9,7 +9,7 @@ PDFS := $(patsubst %.svg,%.pdf,$(SVGS))
 
 pdf: SCRIPT:=latex.sed
 pdf: $(MARKDOWNS) images
-	pandoc $(MARKDOWNS) -d defaults.yml -d pdf.yml -o pdf/thermo.pdf
+	pandoc $(MARKDOWNS) --variable linkcolor=blue -d defaults.yml -d pdf.yml -o pdf/thermo.pdf
 
 latex: SCRIPT:=latex.sed
 latex: $(MARKDOWNS)

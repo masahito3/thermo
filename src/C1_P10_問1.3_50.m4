@@ -13,7 +13,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.10 問1.3 (0,0)でfxは連続 '25 3.26
+## P.10 問1.3 (0,0)でfxは連続 '25 3.26 {#C1_P10_問1.3_50}
 
 $$
 \begin{flalign*}
@@ -33,16 +33,20 @@ $(x,y)=(0,0)$で$f_x$は連続
 $(x,y)\ne(0,0)$で
 
 $$\begin{flalign*}
-f_x(x,y)&=\FX\quad(\cuz 別紙) &\\
+f_x(x,y)&=\FX &\\
         &=y\FXP &
 \end{flalign*}$$
+($\cuz$ [別頁](#C1_P10_問1.3_30) )
+
 
 $\disp\FXP$は有界$\kome{1}$
 かつ$\disp\limto{(x,y)}{(0,0)}y=0$
 
 よって$\disp\limto{(x,y)}{(0,0)}y\FXP=0\ \kome{2}$
 
-また $f$ は $(0,0)$ で連続 $(\ \cuz 別紙)$
+また $f$ は $(0,0)$ で連続
+($\cuz$ [別頁](#C1_P10_問1.3_20) )
+
 
 よって$(0,0)$ で $f_x$ は存在して
 

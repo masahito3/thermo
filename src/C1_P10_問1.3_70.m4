@@ -11,7 +11,8 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.10 問1.3 (x,y)≠(0,0)でfyは連続 '25 5.15
+## P.10 問1.3 (x,y)≠(0,0)でfyは連続 '25 5.15 {#C1_P10_問1.3_70}
+
 $$
 \begin{flalign*}
 f(x,y)=
@@ -29,7 +30,7 @@ $(x,y)\ne(0,0)$で$f_y$は連続
 
 $(x,y)\ne(0,0)$とする
 
-$\disp f_y(x,y)=\FY\quad(\cuz 別紙)$
+$\disp f_y(x,y)=\FY$\ \ ($\cuz$ [別頁](#C1_P10_問1.3_60) )
 
 $(a,b)\ne(0,0)$とする
 

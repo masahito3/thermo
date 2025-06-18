@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 数学の定理1.2 n階までの導関数は微分の順序によらない '25 4.8
+## P.12 数学の定理1.2 n階までの導関数は微分の順序によらない '25 4.8 {#C1_P12_数学の定理1.2_10}
 
 ある開領域で $f(x_1,\cdots,x_m)$ が $C^\infty$ 級ならば
 
@@ -27,7 +27,7 @@ $f_{x_{p_1}\dots x_{p_i}x_{p_j}}$ は存在し連続である
 
 よって
 $\ f_{x_{p_1}\dots x_{p_i}x_{p_j}}=f_{x_{p_1}\dots x_{p_j}x_{p_i}}$
-$\quad(\cuz f_{xy}=f_{yx}\ 別紙)$
+\ \ ($\cuz f_{xy}=f_{yx}$ [別頁](#C1_P12_数学の定理1.2_20) )
 
 よって$\ f_{x_{p_1}\dots x_{p_i}x_{p_j}\dots x_{p_k}}=f_{x_{p_1}\dots x_{p_j}x_{p_i}\dots x_{p_k}}\quad(1)$
 

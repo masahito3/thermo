@@ -11,7 +11,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.10 問1.3 (x,y)≠(0,0)でfxは連続 '25 5.13
+## P.10 問1.3 (x,y)≠(0,0)でfxは連続 '25 5.13 {#C1_P10_問1.3_40}
 
 $$
 \begin{flalign*}
@@ -30,12 +30,13 @@ $(x,y)\ne(0,0)$で$f_x$は連続
 
 $(x,y)\ne(0,0)$とする
 
-$\disp f_x(x,y)=\FX\quad(\cuz 別紙)$
+$\disp f_x(x,y)=\FX$ &emsp; ($\cuz$ [別頁](#C1_P10_問1.3_30) )
+
 
 $(a,b)\ne(0,0)$とする
 
 $\disp\limto{(x,y)}{(a,b)}\FX=\FA\quad$
-($\cuz (a^2+b^2)^2\ne0$なので和、積、商の極限、また$\disp\limto{(x,y)}{(a,b)}x=a\ \kome{1}$)
+($\cuz (a^2+b^2)^2\ne0$なので和、積、商の極限、また$\disp\limto{(x,y)}{(a,b)}x=a \kome{1}$) 
 
 よって任意の$\eps$ に対して$|(x,y)-(a,b)|<\delta$ ならば
 

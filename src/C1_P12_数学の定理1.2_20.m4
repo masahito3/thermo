@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 数学の定理1.2 fxy=fyx '25 4,8
+## P.12 数学の定理1.2 fxy=fyx '25 4,8 {#C1_P12_数学の定理1.2_20}
 
 \(2変数の場合)
 

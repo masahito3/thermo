@@ -7,7 +7,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 補足 x=0でC∞級 '25 5.20
+## P.12 補足 x=0でC∞級 '25 5.20 {#C1_P12_補足_40}
 
 $$\begin{flalign*}
 f(x)=
@@ -25,10 +25,13 @@ $x=0$ で $C^\infty$ 級
 
 $x\ne 0$で
 
-$$\begin{flalign*}
-f^{(n)} &= \l( \sumto{\nu=1}{m}k_\nu x^{-\nu} \r) e^{-\frac{1}{x^2}}\quad(\cuz 別紙) &\\
+$$
+\begin{flalign*}
+f^{(n)} &= \l( \sumto{\nu=1}{m}k_\nu x^{-\nu} \r) e^{-\frac{1}{x^2}} &\\
         &= \sumto{\nu=1}{m}k_\nu x^{-\nu} e^{-\frac{1}{x^2}}&
-\end{flalign*}$$
+\end{flalign*}
+$$
+($\cuz$ [別頁](#C1_P12_補足_30) )
 
 $\disp\limto{x}{0} x^{-\nu}e^{-\frac{1}{x^2}}=0\quad\red{(*1)}$
 なので
