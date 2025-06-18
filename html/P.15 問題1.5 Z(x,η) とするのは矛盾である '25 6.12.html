@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" style="overflow:auto;">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" style="overflow:auto;" >
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -11,7 +11,12 @@
   <title>P.15 問題1.5 Z(x,η) とするのは矛盾である '25 6.12</title>
   <style>
   </style>
+  <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="./fontawesome/css/solid.css">
   <link rel="stylesheet" href="bulma.css" />
+  <link rel="stylesheet" href="./fontawesome/css/solid.css">
+  <script>
+  </script>
   
   <script
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
@@ -20,8 +25,11 @@
 <body style="height:100vh;">
 <div class="fixed-grid has-4-cols">
 <div class="grid">
-     <div id="SIDEBAR" class="cell" style="height:100vh;overflow:auto;">
+     <div id="SIDEBAR" class="cell is-col-span-1" style="height:100vh;overflow:auto;">
      <nav id="TOC" role="doc-toc" class="menu">
+<ul class="menu-list"  class="menu-list" >
+<li><a href="index.html" id="toc-top">TOP</a></li>
+</ul>
 <ul class="menu-list" >
 <li><a href="第1章.html" id="toc-第1章">第1章</a>
 <ul class="menu-list" >
@@ -123,7 +131,27 @@ id="toc-p.15-問題1.6iii-偏微分の連鎖律-25-6.13">P.15 問題1.6(iii)
 </ul>
      </nav>
      </div>
-     <main class="cell is-col-span-3" style="height:100vh;overflow:auto;">
+     <main class="cell is-col-span-3 pl-6 pr-6 pt-1 pb-4" style="height:100vh;overflow:auto;">
+<nav class="sitenav columns is-vcentered">
+  <div class="column is-2">
+    <span class="navlink column">
+        <a href="P.12 問題1.4 x^2 e^y の偏微分 '25 4.16.html" accesskey="p" rel="previous" class="button icon is-large is-link">
+    <i class="fas fa-lg fa-angle-left"></i>
+    </a>
+        </span>
+  </div>
+  <div class="column">
+        <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
+      </div>
+  <div class="column is-2">
+    <span class="navlink column has-text-right">
+        <a href="P.15 問題1.6(i) 偏微分の連鎖律 '25 6.13.html" accesskey="n" rel="next" class="button icon is-large is-link">
+    <i class="fas fa-lg fa-angle-right"></i>
+    </a>
+        </span>
+  </div>
+</nav>
+<!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
@@ -133,30 +161,19 @@ id="toc-p.15-問題1.6iii-偏微分の連鎖律-25-6.13">P.15 問題1.6(iii)
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
 </span>
 </div>
-
-<div class="sitenav columns">
-
-<span class="navlink column">
-<a href="P.12 問題1.4 x^2 e^y の偏微分 '25 4.16.html" accesskey="p" rel="previous">Previous</a>
-</span>
-
-<span class="navlink column has-text-right">
-<a href="P.15 問題1.6(i) 偏微分の連鎖律 '25 6.13.html" accesskey="n" rel="next">Next</a>
-</span>
-
-</div>
 </nav>
+-->
 <h2 data-number="1.27"
 id="p.15-問題1.5-zxη-とするのは矛盾である-25-6.12">P.15 問題1.5 Z(x,η)
 とするのは矛盾である '25 6.12</h2>
 <p><span class="math inline">\(Z(x,y)=x^2e^y\)</span> とする</p>
 <p><span class="math inline">\(\eta = y-x\)</span> とする</p>
 <p><span class="math inline">\(Z(x,\eta)=x^2e^{\eta+x}\)</span>
-とする。とすると矛盾することを確認する</p>
+とする。</p>
+<p>これらの仮定が矛盾することを確認する</p>
 <hr />
-<p>(矛盾していることの確認)<br />
-<br />
-<span class="math inline">\(Z(x,y)=x^2e^y\)</span> とする <span
+<p>(矛盾していることの確認)</p>
+<p><span class="math inline">\(Z(x,y)=x^2e^y\)</span> とする <span
 class="math inline">\(\cdots(1)\)</span></p>
 <p><span class="math inline">\(\eta = y-x\)</span> とする <span
 class="math inline">\(\cdots(2)\)</span></p>
@@ -202,20 +219,25 @@ class="math inline">\(Z(1,1)=e^2\)</span></p>
 <p>これは等号の反射律に反するので矛盾である</p>
 <p>よって <span class="math inline">\((1)\)</span> かつ <span
 class="math inline">\((4)\)</span> は矛盾している</p>
+<p>そもそも異なる関数を同じ関数 <span class="math inline">\(Z\)</span>
+としているのは矛盾である</p>
 <p>次に <span class="math inline">\((1)\)</span> かつ <span
 class="math inline">\((3)\)</span> も矛盾している。なぜなら</p>
 <p><span class="math inline">\((1)\)</span> より <span
-class="math inline">\(Z(0,0)=0\)</span></p>
-<p><span class="math inline">\((3)\)</span> より <span
-class="math inline">\(Z=Z(0,0)=0\)</span></p>
-<p><span class="math inline">\((1)\)</span> より <span
-class="math inline">\(Z(1,1)=e\)</span></p>
+class="math inline">\(Z\)</span> は関数なので任意の<span
+class="math inline">\(x,y\)</span> で <span
+class="math inline">\(Z=x^2e^y\)</span></p>
 <p><span class="math inline">\((3)\)</span> より <span
 class="math inline">\(Z=Z(1,1)=e\)</span></p>
-<p>よって <span class="math inline">\(Z \ne Z\)</span></p>
-<p>これは等号の反射律に反するので矛盾である</p>
+<p>よって 任意の <span class="math inline">\(x,y\)</span> で <span
+class="math inline">\(e=Z=x^2e^y\)</span></p>
+<p><span class="math inline">\(x=0,y=0\)</span> とすると <span
+class="math inline">\(e=0\)</span></p>
+<p>よって矛盾する</p>
 <p>よって <span class="math inline">\((1)\)</span> かつ <span
 class="math inline">\((3)\)</span> は矛盾している</p>
+<p>そもそも <span class="math inline">\(変数Z = 関数Z\)</span>
+としているのは矛盾である</p>
 <p><span class="math inline">\((2)\)</span>
 は他の仮定と矛盾することはない</p>
 <hr />
@@ -314,22 +336,41 @@ class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
 \textcolor{blue}{\boldsymbol{Z}}}{\partial x}\Big)_\eta\)</span></p>
 <p>という感じ。わたしら素人にはだいぶハードルが高い</p>
 <hr />
-<p>(変数の異なる関数は異なる関数と見る)</p>
+<p>(変数の異なる関数は異なる関数として区別する)</p>
 <p>本文では変数が異なれば別の関数として区別するとしている。</p>
 <p><span
 class="math inline">\(\textcolor{blue}{\boldsymbol{Z}}(x,y)=x^2e^y\)</span></p>
 <p><span
 class="math inline">\(\textcolor{magenta}{\boldsymbol{Z}}(x,\eta)=x^2e^{\eta+x}\)</span></p>
+<p>これは関数の変数で区別できる</p>
+<p><span class="math inline">\(\textcolor{blue}{\boldsymbol{Z}}(x,y) \ne
+\textcolor{magenta}{\boldsymbol{Z}}(x,\eta)\)</span></p>
+<p>ただし</p>
+<p><span
+class="math inline">\(\textcolor{blue}{\boldsymbol{Z}}(x,\eta)=x^2e^\eta\)</span></p>
+<p><span
+class="math inline">\(\textcolor{magenta}{\boldsymbol{Z}}(x,\eta)=x^2e^{\eta+x}\)</span></p>
+<p>については変数で区別できない。</p>
+<p>依存関係のある変数を関数の変数に代入するときは脳内で区別を行う必要がある</p>
+<p><span class="math inline">\(\textcolor{blue}{\boldsymbol{Z}}(x,\eta)
+\ne \textcolor{magenta}{\boldsymbol{Z}}(x,\eta)\)</span></p>
 <hr />
 <p>(注意)</p>
 <p>関数の値を変数としたり、変数の式を関数としたりすることはよくある</p>
 <p>この問題のように関数1 <span
 class="math inline">\(\rightarrow\)</span> 変数 <span
 class="math inline">\(\rightarrow\)</span> 関数2
-としてすべて同じ記号であらわすと脳内で区別がつかなくなって矛盾することがある</p>
+としてすべて同じ記号であらわすと脳内で区別がつかなくなって矛盾した結論をだすことがある</p>
+<p>上の例だと</p>
+<p><span class="math inline">\(\textcolor{blue}{\boldsymbol{Z}}(x,\eta)
+= \textcolor{magenta}{\boldsymbol{Z}}(x,\eta)\)</span></p>
+<p><span class="math inline">\({\therefore}x^2e^\eta
+=x^2e^{\eta+x}\)</span></p>
+<p>としてしまったりする</p>
    </main>
    </div>
   </div>
+
 <script>
   const sidebar = document.getElementById("SIDEBAR");
   // 復元：ページ読み込み時
@@ -342,7 +383,7 @@ class="math inline">\(\rightarrow\)</span> 関数2
     const filename = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
     const link = document.querySelector('a[id^="toc"][href="'+filename+'"]');
     if (link !== null) {
-      link.classList.add("has-text-link","has-text-weight-bold")  
+      link.classList.add("is-active")
       const top = link.offsetTop;
       if (top < sidebar.scrollTop){
         sidebar.scrollTop = top;
@@ -353,6 +394,15 @@ class="math inline">\(\rightarrow\)</span> 関数2
         sidebar.scrollTop = bottom - sidebar.clientHeight;
       }
     }
+
+    document.querySelectorAll(".menu ul").forEach((ul) => {
+      ul.classList.add("menu-list");
+    });
+
+    document.querySelectorAll("main > h2").forEach((h2) => {
+      h2.classList.add("title");
+      h2.classList.add("is-5");
+    });
   });
   // 保存：ページ離脱時
   window.addEventListener("beforeunload", () => {

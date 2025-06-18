@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" style="overflow:auto;">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" style="overflow:auto;" >
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -11,7 +11,12 @@
   <title>P.12 補足 べき級数のべき '25 6.2</title>
   <style>
   </style>
+  <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="./fontawesome/css/solid.css">
   <link rel="stylesheet" href="bulma.css" />
+  <link rel="stylesheet" href="./fontawesome/css/solid.css">
+  <script>
+  </script>
   
   <script
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
@@ -20,8 +25,11 @@
 <body style="height:100vh;">
 <div class="fixed-grid has-4-cols">
 <div class="grid">
-     <div id="SIDEBAR" class="cell" style="height:100vh;overflow:auto;">
+     <div id="SIDEBAR" class="cell is-col-span-1" style="height:100vh;overflow:auto;">
      <nav id="TOC" role="doc-toc" class="menu">
+<ul class="menu-list"  class="menu-list" >
+<li><a href="index.html" id="toc-top">TOP</a></li>
+</ul>
 <ul class="menu-list" >
 <li><a href="第1章.html" id="toc-第1章">第1章</a>
 <ul class="menu-list" >
@@ -123,7 +131,27 @@ id="toc-p.15-問題1.6iii-偏微分の連鎖律-25-6.13">P.15 問題1.6(iii)
 </ul>
      </nav>
      </div>
-     <main class="cell is-col-span-3" style="height:100vh;overflow:auto;">
+     <main class="cell is-col-span-3 pl-6 pr-6 pt-1 pb-4" style="height:100vh;overflow:auto;">
+<nav class="sitenav columns is-vcentered">
+  <div class="column is-2">
+    <span class="navlink column">
+        <a href="P.12 補足 べき級数の合成 '25 6.1.html" accesskey="p" rel="previous" class="button icon is-large is-link">
+    <i class="fas fa-lg fa-angle-left"></i>
+    </a>
+        </span>
+  </div>
+  <div class="column">
+        <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
+      </div>
+  <div class="column is-2">
+    <span class="navlink column has-text-right">
+        <a href="P.12 問題1.4 x^2 e^y の偏微分 '25 4.16.html" accesskey="n" rel="next" class="button icon is-large is-link">
+    <i class="fas fa-lg fa-angle-right"></i>
+    </a>
+        </span>
+  </div>
+</nav>
+<!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
@@ -133,19 +161,8 @@ id="toc-p.15-問題1.6iii-偏微分の連鎖律-25-6.13">P.15 問題1.6(iii)
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
 </span>
 </div>
-
-<div class="sitenav columns">
-
-<span class="navlink column">
-<a href="P.12 補足 べき級数の合成 '25 6.1.html" accesskey="p" rel="previous">Previous</a>
-</span>
-
-<span class="navlink column has-text-right">
-<a href="P.12 問題1.4 x^2 e^y の偏微分 '25 4.16.html" accesskey="n" rel="next">Next</a>
-</span>
-
-</div>
 </nav>
+-->
 <h2 data-number="1.25" id="p.12-補足-べき級数のべき-25-6.2">P.12 補足
 べき級数のべき '25 6.2</h2>
 <p><span class="math inline">\(|x-a|&lt;R_f\)</span> ならば <span
@@ -268,6 +285,7 @@ class="math inline">\(a\)</span> を中心とするべき級数であらわさ�
    </main>
    </div>
   </div>
+
 <script>
   const sidebar = document.getElementById("SIDEBAR");
   // 復元：ページ読み込み時
@@ -280,7 +298,7 @@ class="math inline">\(a\)</span> を中心とするべき級数であらわさ�
     const filename = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
     const link = document.querySelector('a[id^="toc"][href="'+filename+'"]');
     if (link !== null) {
-      link.classList.add("has-text-link","has-text-weight-bold")  
+      link.classList.add("is-active")
       const top = link.offsetTop;
       if (top < sidebar.scrollTop){
         sidebar.scrollTop = top;
@@ -291,6 +309,15 @@ class="math inline">\(a\)</span> を中心とするべき級数であらわさ�
         sidebar.scrollTop = bottom - sidebar.clientHeight;
       }
     }
+
+    document.querySelectorAll(".menu ul").forEach((ul) => {
+      ul.classList.add("menu-list");
+    });
+
+    document.querySelectorAll("main > h2").forEach((h2) => {
+      h2.classList.add("title");
+      h2.classList.add("is-5");
+    });
   });
   // 保存：ページ離脱時
   window.addEventListener("beforeunload", () => {

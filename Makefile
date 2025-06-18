@@ -21,6 +21,7 @@ html: $(MARKDOWNS)
 	pandoc $(MARKDOWNS) -d defaults.yml -d chunkedhtml.yml -o html_temp
 	sed -i -E '/<div.*SIDEBAR/,/<\/div/s/(<ul)/\1 class="menu-list" /g' html_temp/*.html
 	rsync -a html_temp/ html/
+	rsync -a -c bulma.css html/
 	rm -rf ./html_temp
 
 %.pdf: SCRIPT:=latex.sed
