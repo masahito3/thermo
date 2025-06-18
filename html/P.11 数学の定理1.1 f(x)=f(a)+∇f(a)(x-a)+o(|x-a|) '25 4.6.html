@@ -23,11 +23,13 @@
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
   type="text/javascript"></script>
 </head>
-<body style="height:100vh;">
-<div class="fixed-grid has-4-cols">
-<div class="grid">
-     <div id="SIDEBAR" class="cell is-col-span-1" style="height:100vh;overflow:auto;">
-     <nav id="TOC" role="doc-toc" class="menu">
+<body class="is-overflow-hidden" style="height:100vh;">
+<script>
+</script>
+
+<div class="columns is-0 is-flex is-flex-direction-row is-flex-wrap-nowrap">
+   <div id="SIDEBAR" class="column is-one-fifth is-block" style="height:100vh;overflow:auto;">
+   <nav id="TOC" role="doc-toc" class="menu">
 <ul class="menu-list"  class="menu-list" >
 <li><a href="index.html" id="toc-top">TOP</a></li>
 </ul>
@@ -119,10 +121,13 @@ id="toc-C1_P15_問1.6_20">P.15 問題1.6(iii) 偏微分の連鎖律 '25
 </ul>
      </nav>
      </div>
-     <main class="cell is-col-span-3 pl-6 pr-6 pt-1 pb-4" style="height:100vh;overflow:auto;">
-<nav class="sitenav columns is-vcentered">
-  <div class="column is-2">
-    <span class="navlink column">
+     <main id="MAIN" class="column is-four-fifths pl-6 pr-6 pt-1 pb-4" style="height:100vh;overflow:auto;">
+<nav class="sitenav columns is-3 is-vcentered">
+  <div class="column is-1 has-text-left">
+    <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
+  </div>
+  <div class="column is-1 has-text-left">
+    <span class="navlink">
         <a href="P.11 数学の定理1.1 f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25 5.17.html" accesskey="p" rel="previous" class="button icon is-large is-link">
     <i class="fas fa-lg fa-angle-left"></i>
     </a>
@@ -131,8 +136,8 @@ id="toc-C1_P15_問1.6_20">P.15 問題1.6(iii) 偏微分の連鎖律 '25
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
-  <div class="column is-2">
-    <span class="navlink column has-text-right">
+  <div class="column is-1 has-text-right">
+    <span class="navlink">
         <a href="P.12 数学の定理1.2 n階までの導関数は微分の順序によらない '25 4.8.html" accesskey="n" rel="next" class="button icon is-large is-link">
     <i class="fas fa-lg fa-angle-right"></i>
     </a>
@@ -205,16 +210,28 @@ class="math inline">\(x_2\)</span>の場合と同様)</p>
 f=-h+o(\dots)と定義する)&amp;\\
 \end{flalign*}\]</span></p>
    </main>
-   </div>
-  </div>
+</div>
 
 <script>
-  const sidebar = document.getElementById("SIDEBAR");
   // 復元：ページ読み込み時
   window.addEventListener("DOMContentLoaded", () => {
+    const sidebar = document.getElementById("SIDEBAR");
+    const main = document.getElementById("MAIN");
     const savedScrollTop = localStorage.getItem("sidebarScroll");
     if (savedScrollTop !== null) {
       sidebar.scrollTop = parseInt(savedScrollTop, 10);
+    }
+    console.log(localStorage.getItem("sidebarIsBlock"));
+    if (localStorage.getItem("sidebarIsBlock") === "true"){
+        sidebar.classList.remove("is-hidden");
+        sidebar.classList.add("is-block");
+        main.classList.remove("is-full");
+        main.classList.add("is-four-fifths");
+    } else {
+        sidebar.classList.remove("is-block");
+        sidebar.classList.add("is-hidden");
+        main.classList.remove("is-four-fifths");
+        main.classList.add("is-full");
     }
     const path = window.location.pathname;
     const filename = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
@@ -240,10 +257,27 @@ f=-h+o(\dots)と定義する)&amp;\\
       h2.classList.add("title");
       h2.classList.add("is-5");
     });
+
+    const toggletoc = document.getElementById("toggle-toc");
+    toggletoc.addEventListener('click', () => {
+      if (sidebar.classList.contains("is-block")) {
+        sidebar.classList.remove("is-block");
+        sidebar.classList.add("is-hidden");
+        main.classList.remove("is-four-fifths");
+        main.classList.add("is-full");
+      } else {
+        sidebar.classList.remove("is-hidden");
+        sidebar.classList.add("is-block");
+        main.classList.remove("is-full");
+        main.classList.add("is-four-fifths");
+      }
+    });
   });
   // 保存：ページ離脱時
   window.addEventListener("beforeunload", () => {
+    const sidebar = document.getElementById("SIDEBAR");
     localStorage.setItem("sidebarScroll", sidebar.scrollTop);
+    localStorage.setItem("sidebarIsBlock", sidebar.classList.contains("is-block"));
   });
 </script>
 
