@@ -26,10 +26,10 @@ $\vx\to\va$ で $f(\vx)=f(\va)+\V{\nabla}f(\va)(\vx-\va)+o(|\vx-\va|)$である
 (証明)
 
 $\disp\limto{\vx}{\va}\l|\frac{f(x_1,\dots,x_m)-f(a_1,\dots,x_m)-\fxo(\va)(x_1-a_1)}{|\vx-\va|}\r|=0$
-\ \ ($\cuz$ [別頁](#C1_P11_数学の定理1.1_10))
+\ \ ([別頁](#C1_P11_数学の定理1.1_10))
 
 $\disp\limto{\vx}{\va}\l|\frac{f(a_1,\dots,x_m)-f(a_1,a_2,\dots,x_m)-\fxt(\va)(x_2-a_2)}{|\vx-\va|}\r|=0$
-\ \ ($\cuz$ [別頁](#C1_P11_数学の定理1.1_20))
+\ \ ([別頁](#C1_P11_数学の定理1.1_20))
 
 $\hspace{11em}\vdots$
 

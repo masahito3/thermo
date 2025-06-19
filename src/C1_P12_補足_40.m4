@@ -25,13 +25,14 @@ $x=0$ で $C^\infty$ 級
 
 $x\ne 0$で
 
+$f^{(n)}$ は [別頁](#C1_P12_補足_30) より
+
 $$
 \begin{flalign*}
 f^{(n)} &= \l( \sumto{\nu=1}{m}k_\nu x^{-\nu} \r) e^{-\frac{1}{x^2}} &\\
         &= \sumto{\nu=1}{m}k_\nu x^{-\nu} e^{-\frac{1}{x^2}}&
 \end{flalign*}
 $$
-($\cuz$ [別頁](#C1_P12_補足_30) )
 
 $\disp\limto{x}{0} x^{-\nu}e^{-\frac{1}{x^2}}=0\quad\red{(*1)}$
 なので
