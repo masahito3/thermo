@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.16 問題1.8 偏微分の連鎖律の矛盾と回避方法 '25 6.13</title>
+  <title>P.16 問題1.8 偏微分でつまづいたこと '25 6.25</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -113,10 +113,9 @@ id="toc-C1_P15_問1.6_10">P.15 問題1.6(i) 偏微分の連鎖律 '25
 <li><a href="P.15 問題1.6(iii) 偏微分の連鎖律 &#39;25 6.13.html"
 id="toc-C1_P15_問1.6_20">P.15 問題1.6(iii) 偏微分の連鎖律 '25
 6.13</a></li>
-<li><a
-href="P.16 問題1.8 偏微分の連鎖律の矛盾と回避方法 &#39;25 6.13.html"
-id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分の連鎖律の矛盾と回避方法 '25
-6.13</a></li>
+<li><a href="P.16 問題1.8 偏微分でつまづいたこと &#39;25 6.25.html"
+id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
+6.25</a></li>
 </ul></li>
 <li><a href="第2章.html" id="toc-C2">第2章</a></li>
 </ul>
@@ -151,8 +150,8 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分の連鎖律の矛盾と回避
 </nav>
 -->
 <h2 data-number="1.30" id="C1_P16_問1.8_10">P.16 問題1.8
-偏微分の連鎖律の矛盾と回避方法 '25 6.13</h2>
-<p>偏微分の連鎖律の矛盾と回避方法</p>
+偏微分でつまづいたこと '25 6.25</h2>
+<p>偏微分でつまづいて色々考えたことのメモ</p>
 <hr />
 <h3 data-number="1.30.1" id="textcolorred1."><span
 class="math inline">\(\textcolor{red}{1.}\)</span></h3>
@@ -166,7 +165,7 @@ class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>
 class="math inline">\(\textcolor{red}{2.}\)</span></h3>
 <p><span class="math inline">\(x\)</span>, <span
 class="math inline">\(y\)</span>
-を独立変数かつ従属変数と仮定して矛盾する例</p>
+を独立変数かつ従属変数と仮定すると矛盾する例</p>
 <p>(例)</p>
 <p><span class="math inline">\(x\)</span>, <span
 class="math inline">\(y\)</span> は独立変数とする  (1)</p>
@@ -177,8 +176,9 @@ class="math inline">\(y=\xi\)</span> とする。<span
 class="math inline">\(\xi\)</span> は独立変数とする  (3)</p>
 <p><span
 class="math inline">\({\therefore}f(x,y)=f(\xi,\xi)=2\xi\)</span></p>
-<p><span class="math inline">\(0=\xi\)</span>, <span
-class="math inline">\(1=\xi\)</span> である <span
+<p><span class="math inline">\(x=y=\xi\)</span> なので <span
+class="math inline">\(x=0\)</span>, <span
+class="math inline">\(y=1\)</span> である <span
 class="math inline">\(\xi\)</span> は存在しない</p>
 <p><span class="math inline">\({\therefore}f(0,1) = 未定義\)</span></p>
 <p><span class="math inline">\({\therefore}f(0,1)\ne f(0,1)\)</span></p>
@@ -189,23 +189,23 @@ class="math inline">\(x\)</span>と<span
 class="math inline">\(y\)</span>を従属変数と仮定しているので <span
 class="math inline">\(\textcolor{red}{1.}\)</span> より(1),(3)
 は矛盾している</p>
-<p>(2)は(1),(3)と矛盾していない</p>
+<p>なお(2)は(1),(3)と矛盾していない</p>
 <h3 data-number="1.30.3" id="textcolorred3."><span
 class="math inline">\(\textcolor{red}{3.}\)</span></h3>
 <p><span class="math inline">\(f(x,y)\)</span> の偏微分 <span
 class="math inline">\(\displaystyle\Big(\frac{\partial f}{\partial
-x}\Big)_y\)</span> が定義できるならば <span
+x}\Big)_{y}\)</span> が定義できるならば <span
 class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>
 は独立変数である</p>
 <p>(説明)</p>
 <p>偏微分の定義に明記されていないが偏微分が定義されるのは、<span
 class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>
 が独立変数のときに限ると明記すべきだと思う</p>
-<p>もし、<span class="math inline">\(x\)</span>, <span
+<p>なぜなら、もし <span class="math inline">\(x\)</span>, <span
 class="math inline">\(y\)</span>
 が独立変数でなければ偏微分の定義に使われる <span
 class="math inline">\(f(x+\Delta x, y)\)</span>
-が定義できるとは限らない</p>
+が定義できるとは限らないから</p>
 <p><span class="math inline">\(x\)</span>, <span
 class="math inline">\(y\)</span> が 従属変数であっても、<span
 class="math inline">\(f(x+\Delta x, y)\)</span>
@@ -218,23 +218,23 @@ class="math inline">\(\textcolor{red}{4.}\)</span></h3>
 <p>(証明)</p>
 <p>関数 <span class="math inline">\(f(x,y)\)</span> を考える</p>
 <p><span class="math inline">\(x=x(\xi,\eta)\)</span>, <span
-class="math inline">\(y=y(\xi,\eta)\)</span> とする  (4)</p>
+class="math inline">\(y=y(\xi,\eta)\)</span> とする  (1)</p>
 <p>偏微分の連鎖律は</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-f}{\partial \xi}\Big)_\eta=  \displaystyle\Big(\frac{\partial
-f}{\partial x}\Big)_y\displaystyle\Big(\frac{\partial x}{\partial
-\xi}\Big)_\eta  +\displaystyle\Big(\frac{\partial f}{\partial
-y}\Big)_x\displaystyle\Big(\frac{\partial y}{\partial
-\xi}\Big)_\eta\)</span> である</p>
+f}{\partial \xi}\Big)_{\eta}=  \displaystyle\Big(\frac{\partial
+f}{\partial x}\Big)_{y}\displaystyle\Big(\frac{\partial x}{\partial
+\xi}\Big)_{\eta}  +\displaystyle\Big(\frac{\partial f}{\partial
+y}\Big)_{x}\displaystyle\Big(\frac{\partial y}{\partial
+\xi}\Big)_{\eta}\)</span> である</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-f}{\partial x}\Big)_y\)</span> が定義されているので <span
+f}{\partial x}\Big)_{y}\)</span> が定義されているので <span
 class="math inline">\(\textcolor{red}{3.}\)</span> より <span
 class="math inline">\(x, y\)</span> は独立変数である</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-f}{\partial \xi}\Big)_\eta\)</span> が定義されているので <span
+f}{\partial \xi}\Big)_{\eta}\)</span> が定義されているので <span
 class="math inline">\(\textcolor{red}{3.}\)</span> より <span
 class="math inline">\(\xi,\eta\)</span> は独立変数である</p>
-<p>よって (4) より <span class="math inline">\(x\)</span>, <span
+<p>よって (1) より <span class="math inline">\(x\)</span>, <span
 class="math inline">\(y\)</span> は従属変数である</p>
 <p>よって <span class="math inline">\(x, y\)</span>
 は独立変数かつ従属変数となり <span
@@ -256,16 +256,20 @@ class="math inline">\(x_1, y_1\)</span> は従属変数とする</p>
 とする</p>
 <p>偏微分の連鎖律は</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-g}{\partial \xi}\Big)_\eta=  \displaystyle\Big(\frac{\partial
-f}{\partial x}\Big)_y\displaystyle\Big(\frac{\partial x_1}{\partial
-\xi}\Big)_\eta  +\displaystyle\Big(\frac{\partial f}{\partial
-y}\Big)_x\displaystyle\Big(\frac{\partial y_1}{\partial
-\xi}\Big)_\eta\)</span></p>
+g}{\partial \xi}\Big)_{\eta}=  \displaystyle\Big(\frac{\partial
+f}{\partial
+x}\Big)_{y}\Bigg|_{\substack{x=x_1\\y=y_1}}\displaystyle\Big(\frac{\partial
+x_1}{\partial \xi}\Big)_{\eta}  +\displaystyle\Big(\frac{\partial
+f}{\partial
+y}\Big)_{x}\Bigg|_{\substack{x=x_1\\y=y_1}}\displaystyle\Big(\frac{\partial
+y_1}{\partial \xi}\Big)_{\eta}\)</span></p>
 <p>となる</p>
 <p>ただし <span class="math inline">\(\displaystyle\Big(\frac{\partial
-f}{\partial x}\Big)_y\)</span> は <span
-class="math inline">\(x,y\)</span> に<span class="math inline">\(x_1,
-y_1\)</span>を代入したものとする</p>
+f}{\partial x}\Big)_{y}\Bigg|_{\substack{x=x_1\\y=y_1}}\)</span> は
+偏微分 <span class="math inline">\(\displaystyle\Big(\frac{\partial
+f}{\partial x}\Big)_{y}\)</span> の <span class="math inline">\(x,
+y\)</span> に<span class="math inline">\(x_1,
+y_1\)</span>を代入したものである。以下同様</p>
 <h3 data-number="1.30.6" id="textcolorred6."><span
 class="math inline">\(\textcolor{red}{6.}\)</span></h3>
 <p>とはいえ、実際の教科書では<span
@@ -287,28 +291,22 @@ class="math inline">\({\textcolor{red}{\boldsymbol{y}}}={\textcolor{red}{\boldsy
 とする。 <span class="math inline">\(\xi, \eta\)</span>
 は独立変数とする。<span
 class="math inline">\({\textcolor{red}{\boldsymbol{x}}},
-{\textcolor{red}{\boldsymbol{y}}}\)</span> は従属変数とする</p>
+{\textcolor{red}{\boldsymbol{y}}}\)</span> は従属変数である</p>
 <p>偏微分の連鎖律は</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-f}{\partial \xi}\Big)_\eta=  \displaystyle\Big(\frac{\partial
+f}{\partial \xi}\Big)_{\eta}=  \displaystyle\Big(\frac{\partial
 f}{\partial
-{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\boldsymbol{y}}}\displaystyle\Big(\frac{\partial
+{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{{\textcolor{blue}{\boldsymbol{y}}}}\Bigg|_{\substack{{\textcolor{blue}{\boldsymbol{x}}}={\textcolor{red}{\boldsymbol{x}}}\\
+{\textcolor{blue}{\boldsymbol{y}}}={\textcolor{red}{\boldsymbol{y}}}}}\displaystyle\Big(\frac{\partial
 {\textcolor{red}{\boldsymbol{x}}}}{\partial
-\xi}\Big)_\eta  +\displaystyle\Big(\frac{\partial f}{\partial
-{\textcolor{blue}{\boldsymbol{y}}}}\Big)_{\textcolor{blue}{\boldsymbol{x}}}\displaystyle\Big(\frac{\partial
-{\textcolor{red}{\boldsymbol{y}}}}{\partial \xi}\Big)_\eta\)</span>
+\xi}\Big)_{\eta}  +\displaystyle\Big(\frac{\partial f}{\partial
+{\textcolor{blue}{\boldsymbol{y}}}}\Big)_{{\textcolor{blue}{\boldsymbol{x}}}}\Bigg|_{\substack{{\textcolor{blue}{\boldsymbol{x}}}={\textcolor{red}{\boldsymbol{x}}}\\
+{\textcolor{blue}{\boldsymbol{y}}}={\textcolor{red}{\boldsymbol{y}}}}}\displaystyle\Big(\frac{\partial
+{\textcolor{red}{\boldsymbol{y}}}}{\partial \xi}\Big)_{\eta}\)</span>
 である</p>
-<p>ただし <span class="math inline">\(\displaystyle\Big(\frac{\partial
-f}{\partial
-{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\boldsymbol{y}}}\)</span>
-は <span
-class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\boldsymbol{y}}}\)</span>
-に <span
-class="math inline">\({\textcolor{red}{\boldsymbol{x}}},{\textcolor{red}{\boldsymbol{y}}}\)</span>
-を代入したものとする</p>
 <p>という感じで脳内で区別する</p>
-<p>わたしにはハードル高いので無理せず <span class="math inline">\(x_1,
-y_1\)</span> と書き直して区別したほうがいいかなと思う</p>
+<p>わたしにはハードルが高いので無理せず <span class="math inline">\(x_1,
+y_1\)</span> と書き直して区別すればいいかなと思う</p>
 <h3 data-number="1.30.7" id="textcolorred7."><span
 class="math inline">\(\textcolor{red}{7.}\)</span></h3>
 <p>異なる関数を同じ関数とすることは矛盾である</p>
@@ -340,12 +338,12 @@ class="math inline">\(Z=Z(x,y)=f(x,y)\)</span> である</p>
 class="math inline">\(x,\eta\)</span> の関数なので <span
 class="math inline">\(Z=Z(x,\eta)=g(x,\eta)\)</span> である</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-Z}{\partial x}\Big)_y=2xe^y\)</span></p>
+Z}{\partial x}\Big)_{y}=2xe^y\)</span></p>
 <p>偏微分が定義できるので、<span
 class="math inline">\(\textcolor{red}{3.}\)</span> より <span
 class="math inline">\(x,y\)</span> は独立変数である</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-Z}{\partial x}\Big)_\eta=(2x+x^2)e^{\eta+x}\)</span></p>
+Z}{\partial x}\Big)_{\eta}=(2x+x^2)e^{\eta+x}\)</span></p>
 <p>偏微分が定義できるので、<span
 class="math inline">\(\textcolor{red}{3.}\)</span> より <span
 class="math inline">\(x,\eta\)</span> は独立変数である</p>
@@ -358,25 +356,33 @@ class="math inline">\(x,\eta\)</span> は独立変数である</p>
 は独立変数で、<span class="math inline">\(g(x,\eta)\)</span>は<span
 class="math inline">\(y\)</span>によらないので</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-Z}{\partial x}\Big)_y=\displaystyle\Big(\frac{\partial g}{\partial
-x}\Big)_y=(2x+x^2)e^{\eta+x}\)</span></p>
+Z}{\partial x}\Big)_{y}=\displaystyle\Big(\frac{\partial g}{\partial
+x}\Big)_{y}=(2x+x^2)e^{\eta+x}\)</span></p>
 <p><span class="math inline">\(\eta=y-x\)</span> なので</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-Z}{\partial x}\Big)_y=(2x+x^2)e^y\)</span></p>
+Z}{\partial x}\Big)_{y}=(2x+x^2)e^y\)</span></p>
 <p><span
 class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
-Z}{\partial x}\Big)_y\ne \displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_y\)</span></p>
+Z}{\partial x}\Big)_{y}\ne \displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\)</span></p>
 <p>となり矛盾する</p>
 <h3 data-number="1.30.9" id="textcolorred9."><span
 class="math inline">\(\textcolor{red}{9.}\)</span></h3>
 <p>上の例で矛盾が生じないように変数、関数を区別する</p>
+<p>上の例では２つの異なる関数を同じ関数 <span
+class="math inline">\(Z\)</span>
+と仮定しているところが矛盾しているので</p>
+<p>関数 <span class="math inline">\(Z_1, Z_2\)</span> として区別する</p>
+<p>また 変数 <span class="math inline">\(y\)</span>
+を独立変数かつ従属変数と仮定しているのが矛盾しているので</p>
+<p><span class="math inline">\(y\)</span> は独立変数とし、<span
+class="math inline">\(y_1\)</span> は 従属変数として区別する</p>
 <p>(例)</p>
 <p><span class="math inline">\(Z_1=f(x,y)=x^2e^y\)</span> とする。<span
 class="math inline">\(x, y\)</span> は独立変数とする</p>
 <p><span class="math inline">\(\eta=y_1-x\)</span> とする。<span
 class="math inline">\(\eta\)</span> は独立変数とする、<span
-class="math inline">\(y_1\)</span> は従属変数とする</p>
+class="math inline">\(y_1\)</span> は従属変数である</p>
 <p><span
 class="math inline">\(Z_2=f(x,y_1)=f(x,\eta+x)=x^2e^{\eta+x}=g(x,\eta)\)</span>
 とする。</p>
@@ -387,9 +393,9 @@ class="math inline">\(Z_1=Z_1(x,y)=f(x,y)\)</span> である</p>
 class="math inline">\(x,\eta\)</span> の関数なので <span
 class="math inline">\(Z_2=Z_2(x,\eta)=g(x,\eta)\)</span> である</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-Z_1}{\partial x}\Big)_y=2x e^y\)</span></p>
+Z_1}{\partial x}\Big)_{y}=2x e^y\)</span></p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-Z_2}{\partial x}\Big)_\eta=(2x+x^2)e^{\eta+x}\)</span></p>
+Z_2}{\partial x}\Big)_{\eta}=(2x+x^2)e^{\eta+x}\)</span></p>
 <p><span class="math inline">\(Z_1=Z_1(1,1)=f(1,1)=e\)</span></p>
 <p><span class="math inline">\(Z_2=Z_2(1,1)=g(1,1)=e^2\)</span></p>
 <p><span class="math inline">\({\therefore}Z_1(1,1) \ne
@@ -399,15 +405,15 @@ Z_2(1,1)\)</span></p>
 は独立変数で、<span class="math inline">\(g(x,\eta)\)</span> は <span
 class="math inline">\(y\)</span> によらないので</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-Z_2}{\partial x}\Big)_y=\displaystyle\Big(\frac{\partial g}{\partial
-x}\Big)_y=(2x+x^2)e^{\eta+x}\)</span></p>
+Z_2}{\partial x}\Big)_{y}=\displaystyle\Big(\frac{\partial g}{\partial
+x}\Big)_{y}=(2x+x^2)e^{\eta+x}\)</span></p>
 <p><span class="math inline">\(\eta=y_1-x\)</span> なので</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-Z_2}{\partial x}\Big)_y=(2x+x^2)e^{y_1}\)</span></p>
+Z_2}{\partial x}\Big)_{y}=(2x+x^2)e^{y_1}\)</span></p>
 <p><span
 class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
-Z_1}{\partial x}\Big)_y\ne\displaystyle\Big(\frac{\partial Z_2}{\partial
-x}\Big)_y\)</span></p>
+Z_1}{\partial x}\Big)_{y}\ne\displaystyle\Big(\frac{\partial
+Z_2}{\partial x}\Big)_{y}\)</span></p>
 <p>となり矛盾しない</p>
 <h3 data-number="1.30.10" id="textcolorred10."><span
 class="math inline">\(\textcolor{red}{10.}\)</span></h3>
@@ -418,13 +424,13 @@ class="math inline">\({\textcolor{teal}{\boldsymbol{Z}}}=f({\textcolor{blue}{\bo
 とする。<span class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},
 {\textcolor{blue}{\boldsymbol{y}}}\)</span> は独立変数とする</p>
 <p><span
-class="math inline">\({\textcolor{blue}{\eta}}={\textcolor{red}{\boldsymbol{y}}}-{\textcolor{blue}{\boldsymbol{x}}}\)</span>
-とする。<span class="math inline">\({\textcolor{blue}{\eta}}\)</span>
+class="math inline">\(\textcolor{blue}{\pmb\eta}={\textcolor{red}{\boldsymbol{y}}}-{\textcolor{blue}{\boldsymbol{x}}}\)</span>
+とする。<span class="math inline">\(\textcolor{blue}{\pmb\eta}\)</span>
 は独立変数とする、<span
 class="math inline">\({\textcolor{red}{\boldsymbol{y}}}\)</span>
-は従属変数とする</p>
+は従属変数である</p>
 <p><span
-class="math inline">\({\textcolor{violet}{\boldsymbol{Z}}}=f({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{red}{\boldsymbol{y}}})=f({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\eta}}+{\textcolor{blue}{\boldsymbol{x}}})={\textcolor{blue}{\boldsymbol{x}}}^2e^{{\textcolor{blue}{\eta}}+{\textcolor{blue}{\boldsymbol{x}}}}=g({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\eta}})\)</span>
+class="math inline">\({\textcolor{violet}{\boldsymbol{Z}}}=f({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{red}{\boldsymbol{y}}})=f({\textcolor{blue}{\boldsymbol{x}}},\textcolor{blue}{\pmb\eta}+{\textcolor{blue}{\boldsymbol{x}}})={\textcolor{blue}{\boldsymbol{x}}}^2e^{\textcolor{blue}{\pmb\eta}+{\textcolor{blue}{\boldsymbol{x}}}}=g({\textcolor{blue}{\boldsymbol{x}}},\textcolor{blue}{\pmb\eta})\)</span>
 とする。</p>
 <p><span
 class="math inline">\({\textcolor{teal}{\boldsymbol{Z}}}\)</span> は
@@ -436,16 +442,16 @@ class="math inline">\({\textcolor{teal}{\boldsymbol{Z}}}={\textcolor{teal}{\bold
 <p><span
 class="math inline">\({\textcolor{violet}{\boldsymbol{Z}}}\)</span> は
 <span
-class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\eta}}\)</span>
+class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},\textcolor{blue}{\pmb\eta}\)</span>
 の関数なので <span
-class="math inline">\({\textcolor{violet}{\boldsymbol{Z}}}={\textcolor{violet}{\boldsymbol{Z}}}({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\eta}})=g({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\eta}})\)</span>
+class="math inline">\({\textcolor{violet}{\boldsymbol{Z}}}={\textcolor{violet}{\boldsymbol{Z}}}({\textcolor{blue}{\boldsymbol{x}}},\textcolor{blue}{\pmb\eta})=g({\textcolor{blue}{\boldsymbol{x}}},\textcolor{blue}{\pmb\eta})\)</span>
 である</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
 {\textcolor{teal}{\boldsymbol{Z}}}}{\partial
-{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\boldsymbol{y}}}=2{\textcolor{blue}{\boldsymbol{x}}}e^{\textcolor{blue}{\boldsymbol{y}}}\)</span></p>
+{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{{\textcolor{blue}{\boldsymbol{y}}}}=2{\textcolor{blue}{\boldsymbol{x}}}e^{\textcolor{blue}{\boldsymbol{y}}}\)</span></p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
 {\textcolor{violet}{\boldsymbol{Z}}}}{\partial
-{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\eta}}=(2{\textcolor{blue}{\boldsymbol{x}}}+{\textcolor{blue}{\boldsymbol{x}}}^2)e^{{\textcolor{blue}{\eta}}+{\textcolor{blue}{\boldsymbol{x}}}}\)</span></p>
+{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\pmb\eta}}=(2{\textcolor{blue}{\boldsymbol{x}}}+{\textcolor{blue}{\boldsymbol{x}}}^2)e^{\textcolor{blue}{\pmb\eta}+{\textcolor{blue}{\boldsymbol{x}}}}\)</span></p>
 <p><span
 class="math inline">\({\textcolor{teal}{\boldsymbol{Z}}}={\textcolor{teal}{\boldsymbol{Z}}}(1,1)=f(1,1)=e\)</span></p>
 <p><span
@@ -455,29 +461,169 @@ class="math inline">\({\therefore}{\textcolor{teal}{\boldsymbol{Z}}}(1,1)
 \ne {\textcolor{violet}{\boldsymbol{Z}}}(1,1)\)</span></p>
 <p>となり矛盾しない</p>
 <p>また <span
-class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\boldsymbol{y}}},{\textcolor{blue}{\eta}}\)</span>は独立変数で、<span
-class="math inline">\(g({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\eta}})\)</span>
+class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\boldsymbol{y}}},\textcolor{blue}{\pmb\eta}\)</span>は独立変数で、<span
+class="math inline">\(g({\textcolor{blue}{\boldsymbol{x}}},\textcolor{blue}{\pmb\eta})\)</span>
 は <span
 class="math inline">\({\textcolor{blue}{\boldsymbol{y}}}\)</span>
 によらないので</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
 {\textcolor{violet}{\boldsymbol{Z}}}}{\partial
-{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\boldsymbol{y}}}=\displaystyle\Big(\frac{\partial
+{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{{\textcolor{blue}{\boldsymbol{y}}}}=\displaystyle\Big(\frac{\partial
 g}{\partial
-{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\boldsymbol{y}}}=(2{\textcolor{blue}{\boldsymbol{x}}}+{\textcolor{blue}{\boldsymbol{x}}}^2)e^{{\textcolor{blue}{\eta}}+{\textcolor{blue}{\boldsymbol{x}}}}\)</span></p>
+{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{{\textcolor{blue}{\boldsymbol{y}}}}=(2{\textcolor{blue}{\boldsymbol{x}}}+{\textcolor{blue}{\boldsymbol{x}}}^2)e^{\textcolor{blue}{\pmb\eta}+{\textcolor{blue}{\boldsymbol{x}}}}\)</span></p>
 <p><span
-class="math inline">\({\textcolor{blue}{\eta}}={\textcolor{red}{\boldsymbol{y}}}-{\textcolor{blue}{\boldsymbol{x}}}\)</span>
+class="math inline">\(\textcolor{blue}{\pmb\eta}={\textcolor{red}{\boldsymbol{y}}}-{\textcolor{blue}{\boldsymbol{x}}}\)</span>
 なので</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
 {\textcolor{violet}{\boldsymbol{Z}}}}{\partial
-{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\boldsymbol{y}}}=(2{\textcolor{blue}{\boldsymbol{x}}}+{\textcolor{blue}{\boldsymbol{x}}}^2)e^{\textcolor{red}{\boldsymbol{y}}}\)</span></p>
+{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{{\textcolor{blue}{\boldsymbol{y}}}}=(2{\textcolor{blue}{\boldsymbol{x}}}+{\textcolor{blue}{\boldsymbol{x}}}^2)e^{\textcolor{red}{\boldsymbol{y}}}\)</span></p>
 <p><span
 class="math inline">\({\therefore}\displaystyle\Big(\frac{\partial
 {\textcolor{teal}{\boldsymbol{Z}}}}{\partial
-{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\boldsymbol{y}}}\ne\displaystyle\Big(\frac{\partial
+{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{{\textcolor{blue}{\boldsymbol{y}}}}\ne\displaystyle\Big(\frac{\partial
 {\textcolor{violet}{\boldsymbol{Z}}}}{\partial
-{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\boldsymbol{y}}}\)</span></p>
+{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{{\textcolor{blue}{\boldsymbol{y}}}}\)</span></p>
 <p>となり矛盾しない</p>
+<h3 data-number="1.30.11" id="textcolorred11."><span
+class="math inline">\(\textcolor{red}{11.}\)</span></h3>
+<p>座標変換においても <span
+class="math inline">\(\textcolor{red}{1.}\)</span> の矛盾はおこる</p>
+<p>(例)</p>
+<div class="line-block">       <span
+class="math inline">\(f(x,y)=x^2+y^2\)</span> とする。<span
+class="math inline">\(x,y\)</span> は独立変数とする  (1)<br />
+       <span
+class="math inline">\(x=x(r,\theta)=r\cos\theta\)</span><br />
+       <span class="math inline">\(y=y(r,\theta)=r\sin\theta\)</span>
+とする。<span class="math inline">\(r, \theta\)</span>
+は独立変数とする  (2)<br />
+       <span
+class="math inline">\(f(x,y)=f(x(r,\theta),y(r,\theta))=r^2=g(r,\theta)\)</span>
+とする</div>
+<p>こんな感じの座標変換はよくあるが、</p>
+<p>(1) において <span class="math inline">\(x,y\)</span>
+は独立変数と仮定しかつ</p>
+<p>(2) において <span class="math inline">\(x,y\)</span>
+は従属変数と仮定しているので<span
+class="math inline">\(\textcolor{red}{1.}\)</span>
+の矛盾になっている</p>
+<p>矛盾しないためには独立変数 <span class="math inline">\(x,y\)</span>
+と 従属変数 <span class="math inline">\(x_1,y_1\)</span> を区別する</p>
+<div class="line-block">       <span
+class="math inline">\(f(x,y)=x^2+y^2\)</span> とする。<span
+class="math inline">\(x,y\)</span> は独立変数とする<br />
+       <span
+class="math inline">\(x_1=x_1(r,\theta)=r\cos\theta\)</span><br />
+       <span
+class="math inline">\(y_1=y_1(r,\theta)=r\sin\theta\)</span>
+とする。<span class="math inline">\(r, \theta\)</span>
+は独立変数とする。<br />
+       <span
+class="math inline">\(f(x_1,y_1)=f(x_1(r,\theta),y_1(r,\theta))=r^2=g(r,\theta)\)</span></div>
+<p>としなければならない。</p>
+<p><span class="math inline">\(x_1, y_1\)</span>
+を追加しない場合は、脳内で独立変数 <span
+class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\boldsymbol{y}}}\)</span>
+と 従属変数 <span
+class="math inline">\({\textcolor{red}{\boldsymbol{x}}},{\textcolor{red}{\boldsymbol{y}}}\)</span>
+を区別する</p>
+<div class="line-block">       <span
+class="math inline">\(f({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\boldsymbol{y}}})={\textcolor{blue}{\boldsymbol{x}}}^2+{\textcolor{blue}{\boldsymbol{y}}}^2\)</span>
+とする。<span
+class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},{\textcolor{blue}{\boldsymbol{y}}}\)</span>
+は独立変数とする<br />
+       <span
+class="math inline">\({\textcolor{red}{\boldsymbol{x}}}={\textcolor{red}{\boldsymbol{x}}}(r,\theta)=r\cos\theta\)</span><br />
+       <span
+class="math inline">\({\textcolor{red}{\boldsymbol{y}}}={\textcolor{red}{\boldsymbol{y}}}(r,\theta)=r\sin\theta\)</span>
+とする。<span class="math inline">\(r, \theta\)</span>
+は独立変数とする。<br />
+       <span
+class="math inline">\(f({\textcolor{red}{\boldsymbol{x}}},{\textcolor{red}{\boldsymbol{y}}})=f({\textcolor{red}{\boldsymbol{x}}}(r,\theta),{\textcolor{red}{\boldsymbol{y}}}(r,\theta))=r^2=g(r,\theta)\)</span>
+とする</div>
+<h3 data-number="1.30.12" id="textcolorred12."><span
+class="math inline">\(\textcolor{red}{12.}\)</span></h3>
+<p>ラグランジアンから運動方程式を導くときは</p>
+<p>従属変数をあとから独立変数にするということをおこなう</p>
+<p>このときも <span class="math inline">\(\textcolor{red}{1.}\)</span>
+の矛盾はおこっている</p>
+<p>(例)</p>
+<div class="line-block">       <span
+class="math inline">\(x=x(t)\)</span><br />
+       <span class="math inline">\(\dot x={\dot x}(t)\)</span>
+とする。<span class="math inline">\(t\)</span>
+は独立変数とする  (1)<br />
+       <span class="math inline">\(L(x,{\dot x})={\dot x}^2 -
+x^2\)</span> とする<br />
+       運動方程式は<br />
+       <span
+class="math inline">\(\displaystyle\frac{d}{dt}\displaystyle\Big(\frac{\partial
+L}{\partial {\dot x}}\Big)_{x}-\displaystyle\Big(\frac{\partial
+L}{\partial x}\Big)_{{\dot x}}=0\)</span> より  (2)<br />
+       <span class="math inline">\({\therefore}\ {\ddot
+x}-x=0\)</span></div>
+<p>という感じでラグランジアンから運動方程式を得るが、</p>
+<p>(1) より <span class="math inline">\(x,\ {\dot x}\)</span>
+は従属変数である</p>
+<p>(2) より <span class="math inline">\(\displaystyle\Big(\frac{\partial
+L}{\partial {\dot x}}\Big)_{x}\)</span> と <span
+class="math inline">\(\displaystyle\Big(\frac{\partial L}{\partial
+x}\Big)_{{\dot x}}\)</span> が定義されているので <span
+class="math inline">\(\textcolor{red}{3.}\)</span> より <span
+class="math inline">\(x,\ {\dot x}\)</span> は独立変数である</p>
+<p>よって <span class="math inline">\(x,\ {\dot x}\)</span>
+は従属変数かつ独立変数となり <span
+class="math inline">\(\textcolor{red}{1.}\)</span> より矛盾である</p>
+<p>矛盾しないようにするには、独立変数 <span class="math inline">\(x_1,
+x_2\)</span> を追加する</p>
+<div class="line-block">       <span
+class="math inline">\(x=x(t)\)</span><br />
+       <span class="math inline">\({\dot x}={\dot x}(t)\)</span>
+とする。<span class="math inline">\(t\)</span> は独立変数とする<br />
+       <span class="math inline">\(L(x_1,x_2)=x_2^2 - x_1^2\)</span>
+とする <span class="math inline">\(x_1,x_2\)</span>
+は独立変数とする<br />
+       運動方程式は<br />
+       <span
+class="math inline">\(\displaystyle\frac{d}{dt}\displaystyle\Big(\frac{\partial
+L}{\partial x_2}\Big)_{x_1}\Bigg|_{\substack{x_1=x \\ x_2={\dot
+x}}}-\displaystyle\Big(\frac{\partial L}{\partial
+x_1}\Big)_{x_2}\Bigg|_{\substack{x_1=x \\ x_2={\dot x}}}=0\)</span>
+より<br />
+       <span class="math inline">\({\therefore}\ {\ddot x}- x =
+0\)</span></div>
+<p>とすると矛盾はおこらない。</p>
+<p>従属変数 <span
+class="math inline">\({\textcolor{red}{\boldsymbol{x}}},\textcolor{red}{\pmb{\dot
+x}}\)</span> と 独立変数 <span
+class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},\textcolor{blue}{\pmb{\dot
+x}}\)</span> を脳内で区別するならば</p>
+<div class="line-block">       <span
+class="math inline">\({\textcolor{red}{\boldsymbol{x}}}={\textcolor{red}{\boldsymbol{x}}}(t)\)</span><br />
+       <span class="math inline">\(\textcolor{red}{\pmb{\dot
+x}}=\textcolor{red}{\pmb{\dot x}}(t)\)</span> とする。<span
+class="math inline">\(t\)</span> は独立変数とする<br />
+       <span
+class="math inline">\(L({\textcolor{blue}{\boldsymbol{x}}},\textcolor{blue}{\pmb{\dot
+x}})=\textcolor{blue}{\pmb{\dot x}}^2 -
+{\textcolor{blue}{\boldsymbol{x}}}^2\)</span> とする <span
+class="math inline">\({\textcolor{blue}{\boldsymbol{x}}},
+\textcolor{blue}{\pmb{\dot x}}\)</span> は独立変数とする<br />
+       運動方程式は<br />
+       <span
+class="math inline">\(\displaystyle\frac{d}{dt}\displaystyle\Big(\frac{\partial
+L}{\partial \textcolor{blue}{\pmb{\dot
+x}}}\Big)_{{\textcolor{blue}{\boldsymbol{x}}}}\Bigg|_{\substack{{\textcolor{blue}{\boldsymbol{x}}}={\textcolor{red}{\boldsymbol{x}}}\\
+\textcolor{blue}{\pmb{\dot x}}=\textcolor{red}{\pmb{\dot
+x}}}}-\displaystyle\Big(\frac{\partial L}{\partial
+{\textcolor{blue}{\boldsymbol{x}}}}\Big)_{\textcolor{blue}{\pmb{\dot
+x}}}\Bigg|_{\substack{{\textcolor{blue}{\boldsymbol{x}}}={\textcolor{red}{\boldsymbol{x}}}\\
+\textcolor{blue}{\pmb{\dot x}}=\textcolor{red}{\pmb{\dot
+x}}}}=0\)</span> より<br />
+       <span class="math inline">\({\therefore}\
+\textcolor{red}{\pmb{\ddot x}}- {\textcolor{red}{\boldsymbol{x}}}=
+0\)</span></div>
+<p>となる。</p>
    </main>
 </div>
 

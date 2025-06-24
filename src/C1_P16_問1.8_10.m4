@@ -6,7 +6,7 @@ include(`preamble.tex')
   \providecommand{\ctext}{}
   \renewcommand{\ctext}[2]{{\textcolor{#1}{\bold{#2}}}}
   \providecommand{\PARTIAL}{}
-  \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_#3}
+  \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_{#3}}
   \providecommand{\xr}{}
   \renewcommand{\xr}{\ctext{red}{x}}
   \providecommand{\yr}{}
@@ -16,18 +16,28 @@ include(`preamble.tex')
   \providecommand{\yb}{}
   \renewcommand{\yb}{\ctext{blue}{y}}
   \providecommand{\etb}{}
-  \renewcommand{\etb}{{\textcolor{blue}{\eta}}}
+  \renewcommand{\etb}{\textcolor{blue}{\pmb\eta}}
   \providecommand{\Zt}{}
   \renewcommand{\Zt}{\ctext{teal}{Z}}
   \providecommand{\Zv}{}
   \renewcommand{\Zv}{\ctext{violet}{Z}}
+  \providecommand{\dotx}{}
+  \renewcommand{\dotx}{{\dot x}}
+  \providecommand{\dotxb}{}
+  \renewcommand{\dotxb}{\textcolor{blue}{\pmb\dotx}}
+  \providecommand{\dotxr}{}
+  \renewcommand{\dotxr}{\textcolor{red}{\pmb\dotx}}
+  \providecommand{\ddotx}{}
+  \renewcommand{\ddotx}{{\ddot x}}
+  \providecommand{\ddotxr}{}
+  \renewcommand{\ddotxr}{\textcolor{red}{\pmb\ddotx}}
 ---
 
 NEWPAGE
 
-## P.16 問題1.8 偏微分の連鎖律の矛盾と回避方法 '25 6.13 {#C1_P16_問1.8_10}
+## P.16 問題1.8 偏微分でつまづいたこと '25 6.25 {#C1_P16_問1.8_10}
 
-偏微分の連鎖律の矛盾と回避方法
+偏微分でつまづいて色々考えたことのメモ
 
 ---
 
@@ -41,7 +51,7 @@ $x$, $y$ は独立変数であるかつ $x$, $y$ は従属変数であるとい�
 
 ### $\red{2.}$
 
-$x$, $y$ を独立変数かつ従属変数と仮定して矛盾する例
+$x$, $y$ を独立変数かつ従属変数と仮定すると矛盾する例
 
 (例)
 
@@ -55,7 +65,7 @@ $x=\xi$, $y=\xi$ とする。$\xi$ は独立変数とする\ \ (3)
 
 $\so f(x,y)=f(\xi,\xi)=2\xi$
 
-$0=\xi$, $1=\xi$ である $\xi$ は存在しない
+$x=y=\xi$ なので $x=0$, $y=1$ である $\xi$ は存在しない
 
 $\so f(0,1) = 未定義$
 
@@ -68,7 +78,7 @@ $\so f(0,1)\ne f(0,1)$
 なにが矛盾しているかというと、(3)において$x$と$y$を従属変数と仮定しているので
 $\red{1.}$ より(1),(3) は矛盾している
 
-(2)は(1),(3)と矛盾していない
+なお(2)は(1),(3)と矛盾していない
 
 ### $\red{3.}$ 
 
@@ -78,7 +88,7 @@ $f(x,y)$ の偏微分 $\PARTIAL{f}{x}{y}$ が定義できるならば $x$, $y$ �
 
 偏微分の定義に明記されていないが偏微分が定義されるのは、$x$, $y$ が独立変数のときに限ると明記すべきだと思う
 
-もし、$x$, $y$ が独立変数でなければ偏微分の定義に使われる $f(x+\Delta x, y)$ が定義できるとは限らない
+なぜなら、もし $x$, $y$ が独立変数でなければ偏微分の定義に使われる $f(x+\Delta x, y)$ が定義できるとは限らないから
 
 $x$, $y$ が 従属変数であっても、$f(x+\Delta x, y)$ が定義できることもあるが、一般的な偏微分の定義にそれを反映するメリットはない
 
@@ -92,7 +102,7 @@ $x$, $y$ が 従属変数であっても、$f(x+\Delta x, y)$ が定義できる
 
 関数 $f(x,y)$ を考える
 
-$x=x(\xi,\eta)$, $y=y(\xi,\eta)$ とする\ \ (4)
+$x=x(\xi,\eta)$, $y=y(\xi,\eta)$ とする\ \ (1)
 
 偏微分の連鎖律は
 
@@ -105,7 +115,7 @@ $\PARTIAL{f}{x}{y}$ が定義されているので $\red{3.}$ より $x, y$ は�
 
 $\PARTIAL{f}{\xi}{\eta}$ が定義されているので $\red{3.}$ より $\xi,\eta$ は独立変数である
 
-よって (4) より $x$, $y$ は従属変数である
+よって (1) より $x$, $y$ は従属変数である
 
 よって $x, y$ は独立変数かつ従属変数となり $\red{1.}$ よりこれは矛盾である。
 
@@ -126,12 +136,12 @@ $g(\xi,\eta)=f(x_1,y_1)$ とする
 偏微分の連鎖律は
 
 $\PARTIAL{g}{\xi}{\eta}=
-  \PARTIAL{f}{x}{y}\PARTIAL{x_1}{\xi}{\eta}
- +\PARTIAL{f}{y}{x}\PARTIAL{y_1}{\xi}{\eta}$
+  \PARTIAL{f}{x}{y}\Bigg|_{\substack{x=x_1\\y=y_1}}\PARTIAL{x_1}{\xi}{\eta}
+ +\PARTIAL{f}{y}{x}\Bigg|_{\substack{x=x_1\\y=y_1}}\PARTIAL{y_1}{\xi}{\eta}$
 
 となる
 
-ただし $\PARTIAL{f}{x}{y}$ は $x,y$ に$x_1, y_1$を代入したものとする
+ただし $\PARTIAL{f}{x}{y}\Bigg|_{\substack{x=x_1\\y=y_1}}$ は 偏微分 $\PARTIAL{f}{x}{y}$ の $x, y$ に$x_1, y_1$を代入したものである。以下同様
 
 ### $\red{6.}$
 
@@ -144,20 +154,18 @@ $\PARTIAL{g}{\xi}{\eta}=
 関数 $f(\xb,\yb)$ を考える。$\xb,\yb$ は独立変数とする
 
 $\xr=\xr(\xi,\eta)$, $\yr=\yr(\xi,\eta)$ とする。
-$\xi, \eta$ は独立変数とする。$\xr, \yr$ は従属変数とする
+$\xi, \eta$ は独立変数とする。$\xr, \yr$ は従属変数である
 
 偏微分の連鎖律は
 
 $\PARTIAL{f}{\xi}{\eta}=
-  \PARTIAL{f}{\xb}{\yb}\PARTIAL{\xr}{\xi}{\eta}
- +\PARTIAL{f}{\yb}{\xb}\PARTIAL{\yr}{\xi}{\eta}$
+  \PARTIAL{f}{\xb}{\yb}\Bigg|_{\substack{\xb=\xr \\ \yb=\yr}}\PARTIAL{\xr}{\xi}{\eta}
+ +\PARTIAL{f}{\yb}{\xb}\Bigg|_{\substack{\xb=\xr \\ \yb=\yr}}\PARTIAL{\yr}{\xi}{\eta}$
 である
-
-ただし $\PARTIAL{f}{\xb}{\yb}$ は $\xb,\yb$ に $\xr,\yr$ を代入したものとする
 
 という感じで脳内で区別する
 
-わたしにはハードル高いので無理せず $x_1, y_1$ と書き直して区別したほうがいいかなと思う
+わたしにはハードルが高いので無理せず $x_1, y_1$ と書き直して区別すればいいかなと思う
 
 ### $\red{7.}$
 
@@ -233,11 +241,19 @@ $\so \PARTIAL{Z}{x}{y}\ne \PARTIAL{Z}{x}{y}$
 
 上の例で矛盾が生じないように変数、関数を区別する
 
+上の例では２つの異なる関数を同じ関数 $Z$ と仮定しているところが矛盾しているので
+
+関数 $Z_1, Z_2$ として区別する
+
+また 変数 $y$ を独立変数かつ従属変数と仮定しているのが矛盾しているので
+
+$y$ は独立変数とし、$y_1$ は 従属変数として区別する
+
 (例)
 
 $Z_1=f(x,y)=x^2e^y$ とする。$x, y$ は独立変数とする
 
-$\eta=y_1-x$ とする。$\eta$ は独立変数とする、$y_1$ は従属変数とする
+$\eta=y_1-x$ とする。$\eta$ は独立変数とする、$y_1$ は従属変数である
 
 $Z_2=f(x,y_1)=f(x,\eta+x)=x^2e^{\eta+x}=g(x,\eta)$ とする。
 
@@ -277,7 +293,7 @@ $\so \PARTIAL{Z_1}{x}{y}\ne\PARTIAL{Z_2}{x}{y}$
 
 $\Zt=f(\xb,\yb)=\xb^2e^\yb$ とする。$\xb, \yb$ は独立変数とする
 
-$\etb=\yr-\xb$ とする。$\etb$ は独立変数とする、$\yr$ は従属変数とする
+$\etb=\yr-\xb$ とする。$\etb$ は独立変数とする、$\yr$ は従属変数である
 
 $\Zv=f(\xb,\yr)=f(\xb,\etb+\xb)=\xb^2e^{\etb+\xb}=g(\xb,\etb)$ とする。
 
@@ -309,3 +325,83 @@ $\so \PARTIAL{\Zt}{\xb}{\yb}\ne\PARTIAL{\Zv}{\xb}{\yb}$
 
 となり矛盾しない
 
+### $\red{11.}$
+
+座標変換においても $\red{1.}$ の矛盾はおこる
+
+(例)
+
+|        $f(x,y)=x^2+y^2$ とする。$x,y$ は独立変数とする\ \ (1)
+|        $x=x(r,\theta)=r\cos\theta$
+|        $y=y(r,\theta)=r\sin\theta$ とする。$r, \theta$ は独立変数とする\ \ (2)
+|        $f(x,y)=f(x(r,\theta),y(r,\theta))=r^2=g(r,\theta)$ とする
+
+こんな感じの座標変換はよくあるが、
+
+\(1) において $x,y$ は独立変数と仮定しかつ
+
+\(2) において $x,y$ は従属変数と仮定しているので$\red{1.}$ の矛盾になっている
+
+矛盾しないためには独立変数 $x,y$ と 従属変数 $x_1,y_1$ を区別する 
+
+|        $f(x,y)=x^2+y^2$ とする。$x,y$ は独立変数とする
+|        $x_1=x_1(r,\theta)=r\cos\theta$
+|        $y_1=y_1(r,\theta)=r\sin\theta$ とする。$r, \theta$ は独立変数とする。
+|        $f(x_1,y_1)=f(x_1(r,\theta),y_1(r,\theta))=r^2=g(r,\theta)$ 
+
+としなければならない。
+
+$x_1, y_1$ を追加しない場合は、脳内で独立変数 $\xb,\yb$ と 従属変数 $\xr,\yr$ を区別する
+
+|        $f(\xb,\yb)=\xb^2+\yb^2$ とする。$\xb,\yb$ は独立変数とする
+|        $\xr=\xr(r,\theta)=r\cos\theta$
+|        $\yr=\yr(r,\theta)=r\sin\theta$ とする。$r, \theta$ は独立変数とする。
+|        $f(\xr,\yr)=f(\xr(r,\theta),\yr(r,\theta))=r^2=g(r,\theta)$ とする
+
+### $\red{12.}$
+
+ラグランジアンから運動方程式を導くときは
+
+従属変数をあとから独立変数にするということをおこなう
+
+このときも $\red{1.}$ の矛盾はおこっている
+
+(例)
+
+|        $x=x(t)$
+|        $\dot x=\dotx(t)$ とする。$t$ は独立変数とする\ \ (1)
+|        $L(x,\dotx)=\dotx^2 - x^2$ とする
+|        運動方程式は
+|        $\disp\frac{d}{dt}\PARTIAL{L}{\dotx}{x}-\PARTIAL{L}{x}{\dotx}=0$ より\ \ (2)
+|        $\so\ \ddotx-x=0$
+
+という感じでラグランジアンから運動方程式を得るが、
+
+\(1) より $x,\ \dotx$ は従属変数である
+
+\(2) より $\PARTIAL{L}{\dotx}{x}$\ と\ $\PARTIAL{L}{x}{\dotx}$ が定義されているので
+$\red{3.}$ より $x,\ \dotx$ は独立変数である
+
+よって $x,\ \dotx$ は従属変数かつ独立変数となり $\red{1.}$ より矛盾である
+
+矛盾しないようにするには、独立変数 $x_1, x_2$ を追加する
+
+|        $x=x(t)$
+|        $\dotx=\dotx(t)$ とする。$t$ は独立変数とする
+|        $L(x_1,x_2)=x_2^2 - x_1^2$ とする\ $x_1,x_2$ は独立変数とする
+|        運動方程式は
+|        $\disp\frac{d}{dt}\PARTIAL{L}{x_2}{x_1}\Bigg|_{\substack{x_1=x \\ x_2=\dotx}}-\PARTIAL{L}{x_1}{x_2}\Bigg|_{\substack{x_1=x \\ x_2=\dotx}}=0$ より
+|        $\so\ \ddotx - x = 0$
+
+とすると矛盾はおこらない。
+
+従属変数 $\xr,\dotxr$ と 独立変数 $\xb,\dotxb$ を脳内で区別するならば
+
+|        $\xr=\xr(t)$
+|        $\dotxr=\dotxr(t)$ とする。$t$ は独立変数とする
+|        $L(\xb,\dotxb)=\dotxb^2 - \xb^2$ とする\ $\xb, \dotxb$ は独立変数とする
+|        運動方程式は
+|        $\disp\frac{d}{dt}\PARTIAL{L}{\dotxb}{\xb}\Bigg|_{\substack{\xb=\xr \\ \dotxb=\dotxr}}-\PARTIAL{L}{\xb}{\dotxb}\Bigg|_{\substack{\xb=\xr \\ \dotxb=\dotxr}}=0$ より
+|        $\so\ \ddotxr - \xr = 0$
+
+となる。
