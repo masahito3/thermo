@@ -351,7 +351,7 @@ $\so \PARTIAL{\Zb}{\xb}{\yb}\ne\PARTIAL{\Zr}{\xb}{\yb}$
 
 \(2) において $x,y$ は従属変数と仮定しているので$\red{1.}$ の矛盾になっている
 
-矛盾しないためには独立変数 $x,y$ と 従属変数 $x_1,y_1$ を区別する 
+矛盾しないためには独立変数 $x,y$ と 従属変数 $x_1,y_1$ を区別して
 
 |        $f(x,y)=x^2+y^2$ とする。$x,y$ は独立変数とする
 |        $x_1=x_1(r,\theta)=r\cos\theta$
@@ -360,12 +360,14 @@ $\so \PARTIAL{\Zb}{\xb}{\yb}\ne\PARTIAL{\Zr}{\xb}{\yb}$
 
 としなければならない。
 
-$x_1, y_1$ を追加しない場合は、脳内で独立変数 $\xb,\yb$ と 従属変数 $\xr,\yr$ を区別する
+$x_1, y_1$ を追加せずに、脳内で独立変数 $\xb,\yb$ と 従属変数 $\xr,\yr$ を区別するときは
 
 |        $f(\xb,\yb)=\xb^2+\yb^2$ とする。$\xb,\yb$ は独立変数とする
 |        $\xr=\xr(r,\theta)=r\cos\theta$
 |        $\yr=\yr(r,\theta)=r\sin\theta$ とする。$r, \theta$ は独立変数とする。
 |        $f(\xr,\yr)=f(\xr(r,\theta),\yr(r,\theta))=r^2=g(r,\theta)$ とする
+
+となる
 
 ### $\red{12.}$
 
