@@ -17,10 +17,10 @@ include(`preamble.tex')
   \renewcommand{\yb}{\ctext{blue}{y}}
   \providecommand{\etb}{}
   \renewcommand{\etb}{\textcolor{blue}{\pmb\eta}}
-  \providecommand{\Zt}{}
-  \renewcommand{\Zt}{\ctext{teal}{Z}}
-  \providecommand{\Zv}{}
-  \renewcommand{\Zv}{\ctext{violet}{Z}}
+  \providecommand{\Zb}{}
+  \renewcommand{\Zb}{\ctext{blue}{Z}}
+  \providecommand{\Zr}{}
+  \renewcommand{\Zr}{\ctext{red}{Z}}
   \providecommand{\dotx}{}
   \renewcommand{\dotx}{{\dot x}}
   \providecommand{\dotxb}{}
@@ -31,6 +31,10 @@ include(`preamble.tex')
   \renewcommand{\ddotx}{{\ddot x}}
   \providecommand{\ddotxr}{}
   \renewcommand{\ddotxr}{\textcolor{red}{\pmb\ddotx}}
+  \providecommand{\Lb}{}
+  \renewcommand{\Lb}{\ctext{blue}{L}}
+  \providecommand{\Lr}{}
+  \renewcommand{\Lr}{\ctext{red}{L}}
 ---
 
 NEWPAGE
@@ -45,7 +49,7 @@ NEWPAGE
 
 $x$, $y$ は独立変数であるかつ $x$, $y$ は従属変数であるというのは矛盾である
 
-(証明)
+\(証明)
 
 従属変数ならば独立変数ではないので、独立変数であるかつ独立変数でないとなり排中律に反するので矛盾である
 
@@ -53,7 +57,7 @@ $x$, $y$ は独立変数であるかつ $x$, $y$ は従属変数であるとい�
 
 $x$, $y$ を独立変数かつ従属変数と仮定すると矛盾する例
 
-(例)
+\(例)
 
 $x$, $y$ は独立変数とする\ \ (1)
 
@@ -84,7 +88,7 @@ $\red{1.}$ より(1),(3) は矛盾している
 
 $f(x,y)$ の偏微分 $\PARTIAL{f}{x}{y}$ が定義できるならば $x$, $y$ は独立変数である
 
-(説明)
+\(説明)
 
 偏微分の定義に明記されていないが偏微分が定義されるのは、$x$, $y$ が独立変数のときに限ると明記すべきだと思う
 
@@ -98,7 +102,7 @@ $x$, $y$ が 従属変数であっても、$f(x+\Delta x, y)$ が定義できる
 
 偏微分の連鎖律は矛盾している
 
-(証明)
+\(証明)
 
 関数 $f(x,y)$ を考える
 
@@ -149,7 +153,9 @@ $\PARTIAL{g}{\xi}{\eta}=
 
 この場合、独立変数の$\xb,\yb$と従属変数の$\xr,\yr$を脳内で区別しないといけない
 
-(例)
+\(注)脳内で区別というのは普通の言い方をすると文脈で区別するということである
+
+\(例)
 
 関数 $f(\xb,\yb)$ を考える。$\xb,\yb$ は独立変数とする
 
@@ -171,7 +177,7 @@ $\PARTIAL{f}{\xi}{\eta}=
 
 異なる関数を同じ関数とすることは矛盾である
 
-(例)
+\(例)
 
 $Z=f(x,y)=x+y$ とする。 $x,y$ は独立変数とする
 
@@ -195,7 +201,7 @@ $\so Z=2=0$
 
 矛盾 アンド 矛盾 でわたしら素人は悶絶してしまう
 
-(例)
+\(例)
 
 $Z=f(x,y)=x^2e^y$ とする。
 
@@ -249,7 +255,7 @@ $\so \PARTIAL{Z}{x}{y}\ne \PARTIAL{Z}{x}{y}$
 
 $y$ は独立変数とし、$y_1$ は 従属変数として区別する
 
-(例)
+\(例)
 
 $Z_1=f(x,y)=x^2e^y$ とする。$x, y$ は独立変数とする
 
@@ -289,39 +295,39 @@ $\so \PARTIAL{Z_1}{x}{y}\ne\PARTIAL{Z_2}{x}{y}$
 
 上の例の変数、関数の区別を脳内で行う
 
-(例)
+\(例)
 
-$\Zt=f(\xb,\yb)=\xb^2e^\yb$ とする。$\xb, \yb$ は独立変数とする
+$\Zb=f(\xb,\yb)=\xb^2e^\yb$ とする。$\xb, \yb$ は独立変数とする
 
 $\etb=\yr-\xb$ とする。$\etb$ は独立変数とする、$\yr$ は従属変数である
 
-$\Zv=f(\xb,\yr)=f(\xb,\etb+\xb)=\xb^2e^{\etb+\xb}=g(\xb,\etb)$ とする。
+$\Zr=f(\xb,\yr)=f(\xb,\etb+\xb)=\xb^2e^{\etb+\xb}=g(\xb,\etb)$ とする。
 
-$\Zt$ は $\xb,\yb$ の関数なので $\Zt=\Zt(\xb,\yb)=f(\xb,\yb)$ である
+$\Zb$ は $\xb,\yb$ の関数なので $\Zb=\Zb(\xb,\yb)=f(\xb,\yb)$ である
 
-$\Zv$ は $\xb,\etb$ の関数なので $\Zv=\Zv(\xb,\etb)=g(\xb,\etb)$ である
+$\Zr$ は $\xb,\etb$ の関数なので $\Zr=\Zr(\xb,\etb)=g(\xb,\etb)$ である
 
-$\PARTIAL{\Zt}{\xb}{\yb}=2\xb e^\yb$
+$\PARTIAL{\Zb}{\xb}{\yb}=2\xb e^\yb$
 
-$\PARTIAL{\Zv}{\xb}{\etb}=(2\xb+\xb^2)e^{\etb+\xb}$
+$\PARTIAL{\Zr}{\xb}{\etb}=(2\xb+\xb^2)e^{\etb+\xb}$
 
-$\Zt=\Zt(1,1)=f(1,1)=e$
+$\Zb=\Zb(1,1)=f(1,1)=e$
 
-$\Zv=\Zv(1,1)=g(1,1)=e^2$
+$\Zr=\Zr(1,1)=g(1,1)=e^2$
 
-$\so \Zt(1,1) \ne \Zv(1,1)$
+$\so \Zb(1,1) \ne \Zr(1,1)$
 
 となり矛盾しない
 
 また $\xb,\yb,\etb$は独立変数で、$g(\xb,\etb)$ は $\yb$ によらないので
 
-$\PARTIAL{\Zv}{\xb}{\yb}=\PARTIAL{g}{\xb}{\yb}=(2\xb+\xb^2)e^{\etb+\xb}$
+$\PARTIAL{\Zr}{\xb}{\yb}=\PARTIAL{g}{\xb}{\yb}=(2\xb+\xb^2)e^{\etb+\xb}$
 
 $\etb=\yr-\xb$ なので
 
-$\PARTIAL{\Zv}{\xb}{\yb}=(2\xb+\xb^2)e^\yr$
+$\PARTIAL{\Zr}{\xb}{\yb}=(2\xb+\xb^2)e^\yr$
 
-$\so \PARTIAL{\Zt}{\xb}{\yb}\ne\PARTIAL{\Zv}{\xb}{\yb}$
+$\so \PARTIAL{\Zb}{\xb}{\yb}\ne\PARTIAL{\Zr}{\xb}{\yb}$
 
 となり矛盾しない
 
@@ -329,7 +335,7 @@ $\so \PARTIAL{\Zt}{\xb}{\yb}\ne\PARTIAL{\Zv}{\xb}{\yb}$
 
 座標変換においても $\red{1.}$ の矛盾はおこる
 
-(例)
+\(例)
 
 |        $f(x,y)=x^2+y^2$ とする。$x,y$ は独立変数とする\ \ (1)
 |        $x=x(r,\theta)=r\cos\theta$
@@ -364,13 +370,15 @@ $x_1, y_1$ を追加しない場合は、脳内で独立変数 $\xb,\yb$ と 従
 
 従属変数をあとから独立変数にするということをおこなう
 
-このときも $\red{1.}$ の矛盾はおこっている
+このときも ある変数を独立変数かつ従属変数とする矛盾$\red{1.}$ と 
 
-(例)
+別の関数を同じ関数とする矛盾 $\red{7.}$ はおこっている
+
+\(例)
 
 |        $x=x(t)$
 |        $\dot x=\dotx(t)$ とする。$t$ は独立変数とする\ \ (1)
-|        $L(x,\dotx)=\dotx^2 - x^2$ とする
+|        ラグランジアンは $L=\dotx^2 - x^2$ とする
 |        運動方程式は
 |        $\disp\frac{d}{dt}\PARTIAL{L}{\dotx}{x}-\PARTIAL{L}{x}{\dotx}=0$ より\ \ (2)
 |        $\so\ \ddotx-x=0$
@@ -384,24 +392,36 @@ $\red{3.}$ より $x,\ \dotx$ は独立変数である
 
 よって $x,\ \dotx$ は従属変数かつ独立変数となり $\red{1.}$ より矛盾である
 
-矛盾しないようにするには、独立変数 $x_1, x_2$ を追加する
+また$L$ の変数が明記されていないため$L$ は $L(x,\dotx,t)$ かもしれないし $L(x,t)$ かもしれないし $L(t)$ かもしれない。もし $L(t)$ であるならば
+
+\(2) において$L$を $x,\dotx$ の関数 $L(x,\dotx)$ であると仮定しているので
+
+異なる関数 $L(t)$と $L(x,\dotx)$ を同じ関数$L$としていることになり$\red{7.}$より矛盾する
+
+矛盾しないようにするには、従属変数 $x,\dotx$ と 独立変数 $x_1, x_2$ を区別し
+
+さらに 関数 $L$ と 関数$L_1$ を区別する
 
 |        $x=x(t)$
 |        $\dotx=\dotx(t)$ とする。$t$ は独立変数とする
-|        $L(x_1,x_2)=x_2^2 - x_1^2$ とする\ $x_1,x_2$ は独立変数とする
+|        ラグランジアンは $L=\dotx^2-x^2$ とする
+|        $L_1(x_1,x_2)=x_2^2 - x_1^2$ とする。$x_1,x_2$ は独立変数とする
 |        運動方程式は
-|        $\disp\frac{d}{dt}\PARTIAL{L}{x_2}{x_1}\Bigg|_{\substack{x_1=x \\ x_2=\dotx}}-\PARTIAL{L}{x_1}{x_2}\Bigg|_{\substack{x_1=x \\ x_2=\dotx}}=0$ より
+|        $\disp\frac{d}{dt}\PARTIAL{L_1}{x_2}{x_1}\Bigg|_{\substack{x_1=x \\ x_2=\dotx}}-\PARTIAL{L_1}{x_1}{x_2}\Bigg|_{\substack{x_1=x \\ x_2=\dotx}}=0$ より
 |        $\so\ \ddotx - x = 0$
 
-とすると矛盾はおこらない。
+こうすると矛盾はおこらない。
 
-従属変数 $\xr,\dotxr$ と 独立変数 $\xb,\dotxb$ を脳内で区別するならば
+従属変数 $\xr,\dotxr$ と 独立変数 $\xb,\dotxb$ を脳内で区別し
+
+さらに関数$\Lr$ と 関数 $\Lb$ を脳内で区別するならば
 
 |        $\xr=\xr(t)$
 |        $\dotxr=\dotxr(t)$ とする。$t$ は独立変数とする
-|        $L(\xb,\dotxb)=\dotxb^2 - \xb^2$ とする\ $\xb, \dotxb$ は独立変数とする
+|        ラグランジアンは $\Lr=\dotxr^2 - \xr^2$ とする
+|        $\Lb(\xb,\dotxb)=\dotxb^2 - \xb^2$ とする。$\xb, \dotxb$ は独立変数とする
 |        運動方程式は
-|        $\disp\frac{d}{dt}\PARTIAL{L}{\dotxb}{\xb}\Bigg|_{\substack{\xb=\xr \\ \dotxb=\dotxr}}-\PARTIAL{L}{\xb}{\dotxb}\Bigg|_{\substack{\xb=\xr \\ \dotxb=\dotxr}}=0$ より
+|        $\disp\frac{d}{dt}\PARTIAL{\Lb}{\dotxb}{\xb}\Bigg|_{\substack{\xb=\xr \\ \dotxb=\dotxr}}-\PARTIAL{\Lb}{\xb}{\dotxb}\Bigg|_{\substack{\xb=\xr \\ \dotxb=\dotxr}}=0$ より
 |        $\so\ \ddotxr - \xr = 0$
 
 となる。
