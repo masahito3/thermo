@@ -157,51 +157,43 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
 とする</p>
 <p>このとき</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-g}{\partial x}\Big)_\eta=x-y+1\)</span> <span
+g}{\partial x}\Big)_{\eta}=x-y+1\)</span> <span
 class="math inline">\(\cdots(1.18)\)</span> である</p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\(x,\ y,\ \eta\)</span> は変数とする</p>
-<p><span class="math inline">\(x\)</span> と <span
-class="math inline">\(y\)</span> は互いに独立とする。<span
-class="math inline">\(x\)</span> と <span
-class="math inline">\(\eta\)</span> は互いに独立とする。</p>
-<p><span class="math inline">\(\textcolor{teal}{\boldsymbol{x}}(..),\
-\textcolor{teal}{\boldsymbol{y}}(..)\)</span> は関数とする</p>
-<p><span
-class="math inline">\(\textcolor{teal}{\boldsymbol{x}}(x,\eta)=x\)</span>
-とする</p>
-<p><span class="math inline">\(\eta=x-y\)</span> より</p>
-<p><span class="math inline">\(y=x-\eta\)</span> である</p>
-<p><span
-class="math inline">\(\textcolor{teal}{\boldsymbol{y}}(x,\eta)=x-\eta\)</span>
-とする</p>
+<p><span class="math inline">\(x,\ y,\ \eta\)</span>
+は独立変数とする</p>
 <p><span class="math inline">\(f(x,y) = (x+1)(x-y+1)\)</span> とする</p>
+<p><span
+class="math inline">\(\textcolor{red}{\boldsymbol{x}}(x,\eta)=x,\
+\textcolor{red}{\boldsymbol{y}}(x,\eta)=x-\eta\)</span> とする</p>
 <p><span class="math inline">\(g(x,\eta) =
-f(\textcolor{teal}{\boldsymbol{x}}(x,\eta),\textcolor{teal}{\boldsymbol{y}}(x,\eta))\)</span>
+f(\textcolor{red}{\boldsymbol{x}}(x,\eta),\textcolor{red}{\boldsymbol{y}}(x,\eta))=(x+1)(\eta+1)\)</span>
 とする</p>
-<p><span class="math inline">\(g(x,\eta) =
-(x+1)(x-(x-\eta)+1)=(x+1)(\eta+1)\)</span> である</p>
 <p>(1.20)より</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\displaystyle\Big(\frac{\partial g}{\partial x}\Big)_\eta
+\displaystyle\Big(\frac{\partial g}{\partial x}\Big)_{\eta}
 &amp;= \displaystyle\Big(\frac{\partial f}{\partial
-x}\Big)_y\displaystyle\Big(\frac{\partial
-\textcolor{teal}{\boldsymbol{x}}}{\partial x}\Big)_\eta
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\boldsymbol{x}}}{\partial x}\Big)_{\eta}
   +\displaystyle\Big(\frac{\partial f}{\partial
-y}\Big)_x\displaystyle\Big(\frac{\partial
-\textcolor{teal}{\boldsymbol{y}}}{\partial x}\Big)_\eta &amp;\\
-&amp;= (2x-y+2)\cdot1+(-x-1)\cdot1\quad
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\boldsymbol{y}}}{\partial x}\Big)_{\eta} &amp;\\
+&amp;=
+(2\textcolor{red}{\boldsymbol{x}}-\textcolor{red}{\boldsymbol{y}}+2)\cdot1+(-\textcolor{red}{\boldsymbol{x}}-1)\cdot1\quad
    \left(\begin{array}{@{}l@{}}
    {\because}\displaystyle\Big(\frac{\partial f}{\partial
-x}\Big)_y=2x-y+1,\ \displaystyle\Big(\frac{\partial
-\textcolor{teal}{\boldsymbol{x}}}{\partial x}\Big)_\eta=1 \\
-   \quad\displaystyle\Big(\frac{\partial f}{\partial y}\Big)_x=-x-1,\
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}=2\textcolor{red}{\boldsymbol{x}}-\textcolor{red}{\boldsymbol{y}}+1,\
 \displaystyle\Big(\frac{\partial
-\textcolor{teal}{\boldsymbol{y}}}{\partial x}\Big)_\eta=1
+\textcolor{red}{\boldsymbol{x}}}{\partial x}\Big)_{\eta}=1 \\
+   \quad\displaystyle\Big(\frac{\partial f}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}=-\textcolor{red}{\boldsymbol{x}}-1,\
+\displaystyle\Big(\frac{\partial
+\textcolor{red}{\boldsymbol{y}}}{\partial x}\Big)_{\eta}=1
    \end{array}\right) &amp;\\
-&amp;= x-y+1 &amp;
+&amp;= \textcolor{red}{\boldsymbol{x}}-\textcolor{red}{\boldsymbol{y}}+1
+&amp;
 \end{flalign*}
 \]</span></p>
    </main>

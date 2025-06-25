@@ -6,13 +6,11 @@ include(`preamble.tex')
   \providecommand{\ctext}{}
   \renewcommand{\ctext}[2]{\textcolor{#1}{\bold{#2}}}
   \providecommand{\PARTIAL}{}
-  \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_#3}
-  \providecommand{\Zb}{}
-  \renewcommand{\Zb}{\ctext{blue}{Z}}
-  \providecommand{\Zm}{}
-  \renewcommand{\Zm}{\ctext{magenta}{Z}}
-  \providecommand{\Zt}{}
-  \renewcommand{\Zt}{\ctext{teal}{Z}}
+  \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_{#3}}
+  \providecommand{\yr}{}
+  \renewcommand{\yr}{\ctext{red}{y}}
+  \providecommand{\Zr}{}
+  \renewcommand{\Zr}{\ctext{red}{Z}}
 ---
 
 NEWPAGE
@@ -31,13 +29,11 @@ $\PARTIAL{Z}{x}{y} \ne \PARTIAL{Z}{x}{\eta}$
 
 (証明)
 
-$Z=f(x,y)=x^2e^y$ とする
+$Z=f(x,y)=x^2e^y$ とする。$x,y$は独立変数とする
 
-$\eta = y-x$ とする
+$\eta = \yr-x$ とする。$\eta$ は独立変数とする。$\yr$は従属変数である
 
-$Z=f(x,y)=f(x,\eta+x)=x^2e^{\eta+x}$
-
-$Z=g(x,y)=x^2e^{\eta+x}$ とする
+$\Zr=f(x,y_1)=f(x,\eta+x)=x^2e^{\eta+x}=g(x,\eta)$ とする
 
 よって
 
@@ -45,11 +41,11 @@ $\PARTIAL{Z}{x}{y}=2x e^y$
 
 $$
 \begin{flalign*}
-\PARTIAL{Z}{x}{\eta} &= 2x e^{\eta+x}+x^2e^{\eta+x} &\\
-                     &= (2x+x^2)e^{\eta+x} &\\
-                     &= (2x+x^2)e^y &
+\PARTIAL{\Zr}{x}{\eta} 
+  &= 2x e^{\eta+x}+x^2e^{\eta+x} &\\
+  &= (2x+x^2)e^{\eta+x} &\\
+  &= (2x+x^2)e^{\yr} &
 \end{flalign*}
 $$
 
-$\so \PARTIAL{Z}{x}{y} \ne \PARTIAL{Z}{x}{\eta}$
-
+$\so \PARTIAL{Z}{x}{y} \ne \PARTIAL{\Zr}{x}{\eta}$

@@ -6,81 +6,71 @@ include(`preamble.tex')
   \providecommand{\ctext}{}
   \renewcommand{\ctext}[2]{\textcolor{#1}{\bold{#2}}}
   \providecommand{\PARTIAL}{}
-  \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_#3}
+  \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_{#3}}
   \providecommand{\Zb}{}
   \renewcommand{\Zb}{\ctext{blue}{Z}}
-  \providecommand{\Zm}{}
-  \renewcommand{\Zm}{\ctext{magenta}{Z}}
-  \providecommand{\xt}{}
-  \renewcommand{\xt}{\ctext{teal}{x}}
-  \providecommand{\yt}{}
-  \renewcommand{\yt}{\ctext{teal}{y}}
+  \providecommand{\Zr}{}
+  \renewcommand{\Zr}{\ctext{red}{Z}}
+  \providecommand{\xr}{}
+  \renewcommand{\xr}{\ctext{red}{x}}
+  \providecommand{\yr}{}
+  \renewcommand{\yr}{\ctext{red}{y}}
 ---
 
 NEWPAGE
 
 ## P.15 問題1.6(i)  偏微分の連鎖律 '25 6.13 {#C1_P15_問1.6_10}
 
-$x,y,\xi,\eta$ は変数とする
+$x,y,\xi,\eta$ は独立変数とする
 
-$x,y$ は互いに独立、$\xi,\eta$ は互いに独立とする
+$\xr(\xi,\eta)$, $\yr(\xi,\eta)$ とする
 
-$\Zb, \Zm, \xt, \yt$ は関数とする
+$\Zr(\xi,\eta)=\Zb(\xr,\yr)$ とする
 
-$\Zb(x,y)$, $\Zm(\xi,\eta)$ とする
+$\PARTIAL{\Zr}{\xi}{\eta}=
+\PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}} \PARTIAL{\xr}{\xi}{\eta}
++ \PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}} \PARTIAL{\yr}{\xi}{\eta}$ $\cdots(1.20)$
 
-$\xt(\xi,\eta)$, $\yt(\xi,\eta)$ とする
-
-$\PARTIAL{\Zm}{\xi}{\eta}=
-\PARTIAL{\Zb}{x}{y} \PARTIAL{\xt}{\xi}{\eta}
-+ \PARTIAL{\Zb}{y}{x} \PARTIAL{\yt}{\xi}{\eta}$ $\cdots(1.20)$
-
-$\PARTIAL{\Zm}{\eta}{\xi}=
-\PARTIAL{\Zb}{x}{y} \PARTIAL{\xt}{\eta}{\xi}
-+ \PARTIAL{\Zb}{y}{x} \PARTIAL{\yt}{\eta}{\xi}$ $\cdots(1.21)$
+$\PARTIAL{\Zr}{\eta}{\xi}=
+\PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}} \PARTIAL{\xr}{\eta}{\xi}
++ \PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}} \PARTIAL{\yr}{\eta}{\xi}$ $\cdots(1.21)$
 
 ---
 
 (証明)
 
-$x,y,\xi,\eta$ は変数とする
+$x,y,\xi,\eta$ は独立変数とする
 
-$x,y$ は互いに独立、$\xi,\eta$ は互いに独立とする
+$\xr(\xi,\eta)$,\ $\yr(\xi,\eta)$ とする
 
-$\Zb, \Zm, \xt, \yt$ は関数とする
-
-$\Zb(x,y)$ とする
-
-$\xt(\xi,\eta)$ とする
-
-$\yt(\xi,\eta)$ とする
-
-$\Zm(\xi,\eta)=\Zb(\xt(\xi,\eta),\yt(\xi,\eta))$ とする
+$\Zr(\xi,\eta)=\Zb(\xr,\yr)$ とする
 
 $$
 \begin{flalign*}
-\so \PARTIAL{\Zm}{\xi}{\eta} &= \frac{d\Zm}{d\xi}
-\quad \Big(\cuz \xi,\eta が独立なので \PARTIAL{\Zm}{\xi}{\eta}=\frac{d\Zm}{d\xi}\Big) &\\
- &= \PARTIAL{\Zb}{x}{y}\frac{d\xt}{d\xi}+\PARTIAL{\Zb}{y}{x}\frac{d\yt}{d\xi} 
+\so \PARTIAL{\Zr}{\xi}{\eta} &= \frac{d\Zr}{d\xi}
+\quad \Big(\cuz \xi,\eta が独立なので \PARTIAL{\Zr}{\xi}{\eta}=\frac{d\Zr}{d\xi}\Big) &\\
+ &= \PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}\frac{d\xr}{d\xi}
+   +\PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}\frac{d\yr}{d\xi} 
 \quad (\cuz 問題1.7) &\\
- &= \PARTIAL{\Zb}{x}{y}\PARTIAL{\xt}{\xi}{\eta}
-    + \PARTIAL{\Zb}{y}{x}\PARTIAL{\yt}{\xi}{\eta}
+ &= \PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\xr}{\xi}{\eta}
+    + \PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\yr}{\xi}{\eta}
 \quad \Big(\cuz \xi,\eta が独立なので
-           \PARTIAL{\xt}{\xi}{\eta}=\frac{d\xt}{d\xi},\ 
-           \PARTIAL{\yt}{\xi}{\eta}=\frac{d\yt}{d\xi}\Big) &
+           \PARTIAL{\xr}{\xi}{\eta}=\frac{d\xr}{d\xi},\ 
+           \PARTIAL{\yr}{\xi}{\eta}=\frac{d\yr}{d\xi}\Big) &
 \end{flalign*}
 $$
 \
 $$
 \begin{flalign*}
-\so \PARTIAL{\Zm}{\eta}{\xi} &= \frac{d\Zm}{d\eta}
-\quad \Big(\cuz \xi,\eta が独立なので \PARTIAL{\Zm}{\eta}{\xi}=\frac{d\Zm}{d\eta}\Big) &\\
- &= \PARTIAL{\Zb}{x}{y}\frac{d\xt}{d\eta}+\PARTIAL{\Zb}{y}{x}\frac{d\yt}{d\eta} 
+\so \PARTIAL{\Zr}{\eta}{\xi} &= \frac{d\Zr}{d\eta}
+\quad \Big(\cuz \xi,\eta が独立なので \PARTIAL{\Zr}{\eta}{\xi}=\frac{d\Zr}{d\eta}\Big) &\\
+ &= \PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}\frac{d\xr}{d\eta}
+   +\PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}\frac{d\yr}{d\eta} 
 \quad (\cuz 問題1.7) &\\
- &= \PARTIAL{\Zb}{x}{y}\PARTIAL{\xt}{\eta}{\xi}
-    + \PARTIAL{\Zb}{y}{x}\PARTIAL{\yt}{\eta}{\xi}
+ &= \PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\xr}{\eta}{\xi}
+    + \PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\yr}{\eta}{\xi}
 \quad \Big(\cuz \xi,\eta が独立なので
-           \PARTIAL{\xt}{\eta}{\xi}=\frac{d\xt}{d\eta},\ 
-           \PARTIAL{\yt}{\eta}{\xi}=\frac{d\yt}{d\eta}\Big) &
+           \PARTIAL{\xr}{\eta}{\xi}=\frac{d\xr}{d\eta},\ 
+           \PARTIAL{\yr}{\eta}{\xi}=\frac{d\yr}{d\eta}\Big) &
 \end{flalign*}
 $$
