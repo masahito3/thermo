@@ -160,11 +160,14 @@ $\PARTIAL{g}{\xi}{\eta}=
 関数 $f(\xb,\yb)$ を考える。$\xb,\yb$ は独立変数とする
 
 $\xr=\xr(\xi,\eta)$, $\yr=\yr(\xi,\eta)$ とする。
+
 $\xi, \eta$ は独立変数とする。$\xr, \yr$ は従属変数である
+
+$g(\xi,\eta)=f(\xr,\yr)$ とする
 
 偏微分の連鎖律は
 
-$\PARTIAL{f}{\xi}{\eta}=
+$\PARTIAL{g}{\xi}{\eta}=
   \PARTIAL{f}{\xb}{\yb}\Bigg|_{\substack{\xb=\xr \\ \yb=\yr}}\PARTIAL{\xr}{\xi}{\eta}
  +\PARTIAL{f}{\yb}{\xb}\Bigg|_{\substack{\xb=\xr \\ \yb=\yr}}\PARTIAL{\yr}{\xi}{\eta}$
 である
