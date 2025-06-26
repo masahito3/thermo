@@ -11,6 +11,8 @@ include(`preamble.tex')
   \renewcommand{\xr}{\ctext{red}{x}}
   \providecommand{\yr}{}
   \renewcommand{\yr}{\ctext{red}{y}}
+  \providecommand{\atxy}{}
+  \renewcommand{\atxy}{\bigg|_{\substack{x=\xr\\y=\yr}}}
 ---
 
 NEWPAGE
@@ -44,12 +46,12 @@ $g(x,\eta) = f(\xr(x,\eta),\yr(x,\eta))=(x+1)(\eta+1)$ とする
 $$
 \begin{flalign*}
 \PARTIAL{g}{x}{\eta} 
-&= \PARTIAL{f}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\xr}{x}{\eta}
-  +\PARTIAL{f}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\yr}{x}{\eta} &\\
+&= \PARTIAL{f}{x}{y}\atxy \PARTIAL{\xr}{x}{\eta}
+  +\PARTIAL{f}{y}{x}\atxy \PARTIAL{\yr}{x}{\eta} &\\
 &= (2\xr-\yr+2)\cdot1+(-\xr-1)\cdot1\quad
    \l(\begin{array}{@{}l@{}}
-   \cuz \PARTIAL{f}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}=2\xr-\yr+1,\ \PARTIAL{\xr}{x}{\eta}=1 \\
-   \quad\PARTIAL{f}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}=-\xr-1,\ \PARTIAL{\yr}{x}{\eta}=1 
+   \cuz \PARTIAL{f}{x}{y}\atxy=2\xr-\yr+1,\ \PARTIAL{\xr}{x}{\eta}=1 \\
+   \quad\PARTIAL{f}{y}{x}\atxy=-\xr-1,\ \PARTIAL{\yr}{x}{\eta}=1 
    \end{array}\r) &\\
 &= \xr-\yr+1 &
 \end{flalign*}

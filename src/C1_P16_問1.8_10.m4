@@ -5,6 +5,8 @@ include(`preamble.tex')
   \renewcommand{\bold}NEWCOMMAND_BOLD
   \providecommand{\ctext}{}
   \renewcommand{\ctext}[2]{{\textcolor{#1}{\bold{#2}}}}
+  \providecommand{\ctextp}{}
+  \renewcommand{\ctextp}[2]{{\textcolor{#1}{\pmb{#2}}}}
   \providecommand{\PARTIAL}{}
   \renewcommand{\PARTIAL}[3]{\disp\Big(\frac{\partial #1}{\partial #2}\Big)_{#3}}
   \providecommand{\xr}{}
@@ -16,7 +18,7 @@ include(`preamble.tex')
   \providecommand{\yb}{}
   \renewcommand{\yb}{\ctext{blue}{y}}
   \providecommand{\etb}{}
-  \renewcommand{\etb}{\textcolor{blue}{\pmb\eta}}
+  \renewcommand{\etb}{\ctextp{blue}{\eta}}
   \providecommand{\Zb}{}
   \renewcommand{\Zb}{\ctext{blue}{Z}}
   \providecommand{\Zr}{}
@@ -24,13 +26,13 @@ include(`preamble.tex')
   \providecommand{\dotx}{}
   \renewcommand{\dotx}{{\dot x}}
   \providecommand{\dotxb}{}
-  \renewcommand{\dotxb}{\textcolor{blue}{\pmb\dotx}}
+  \renewcommand{\dotxb}{\ctextp{blue}{\dotx}}
   \providecommand{\dotxr}{}
-  \renewcommand{\dotxr}{\textcolor{red}{\pmb\dotx}}
+  \renewcommand{\dotxr}{\ctextp{red}{\dotx}}
   \providecommand{\ddotx}{}
   \renewcommand{\ddotx}{{\ddot x}}
   \providecommand{\ddotxr}{}
-  \renewcommand{\ddotxr}{\textcolor{red}{\pmb\ddotx}}
+  \renewcommand{\ddotxr}{\ctextp{red}{\ddotx}}
   \providecommand{\Lb}{}
   \renewcommand{\Lb}{\ctext{blue}{L}}
   \providecommand{\Lr}{}
@@ -196,6 +198,23 @@ $\so Z=2=0$
 
 ### $\red{8.}$
 
+変数が独立変数である関数$Z(x,y)$ と 変数が従属変数である関数 $Z(x,y)$ は異なる関数である
+
+\(例)
+
+$Z(x,y)=x+y$とする。$x,y$ は独立変数とする\ \ (1)
+
+$Z(x,y)=x+y,\ x=\xi,\ y=\xi$ とする。 $\xi$ は独立変数とする。 $x, y$ は従属変数である\ \ (2)
+
+\(1) の$Z$ だと $Z(0,1)=1$
+
+\(2) の$Z$ だと $Z(0,1) は未定義$ 
+
+よって(1)の$Z$ と (2) の$Z$ は異なる関数である
+
+
+### $\red{9.}$
+
 熱力学では
 
 同じ変数を独立変数としかつ従属変数とし、かつ
@@ -246,7 +265,7 @@ $\so \PARTIAL{Z}{x}{y}\ne \PARTIAL{Z}{x}{y}$
 
 となり矛盾する
 
-### $\red{9.}$
+### $\red{10.}$
 
 上の例で矛盾が生じないように変数、関数を区別する
 
@@ -294,7 +313,7 @@ $\so \PARTIAL{Z_1}{x}{y}\ne\PARTIAL{Z_2}{x}{y}$
 
 となり矛盾しない
 
-### $\red{10.}$
+### $\red{11.}$
 
 上の例の変数、関数の区別を脳内で行う
 
@@ -334,7 +353,7 @@ $\so \PARTIAL{\Zb}{\xb}{\yb}\ne\PARTIAL{\Zr}{\xb}{\yb}$
 
 となり矛盾しない
 
-### $\red{11.}$
+### $\red{12.}$
 
 座標変換においても $\red{1.}$ の矛盾はおこる
 
@@ -369,7 +388,7 @@ $x_1, y_1$ を追加せずに、脳内で独立変数 $\xb,\yb$ と 従属変数
 
 となる
 
-### $\red{12.}$
+### $\red{13.}$
 
 ラグランジアンから運動方程式を導くときは
 
@@ -397,11 +416,21 @@ $\red{3.}$ より $x,\ \dotx$ は独立変数である
 
 よって $x,\ \dotx$ は従属変数かつ独立変数となり $\red{1.}$ より矛盾である
 
-また$L$ の変数が明記されていないため$L$ は $L(x,\dotx,t)$ かもしれない $L(x,t)$ かもしれない $L(t)$ かもしれない、その他かもしれない。もし $L(t)$ であるならば
+また$L$ の変数が明記されていないため$L$ は $L(x,\dotx)$ かもしれないし $L(t)$ かもしれないし、その他かもしれない。
 
-\(2) において$L$を $x,\dotx$ の関数 $L(x,\dotx)$ であると仮定しているので
+もし $L(t)$ であるならば
+
+\(2) において$L$を 関数 $L(x,\dotx)$ と仮定しているので
 
 異なる関数 $L(t)$と $L(x,\dotx)$ を同じ関数$L$としていることになり$\red{7.}$より矛盾する
+
+また もし$L(x,\dotx)$ であっても 
+
+(1)では $L(x,\dotx), x,\dotx$ は従属変数 
+
+(2)では  $L(x,\dotx), x,\dotx$ は独立変数 
+
+となるので $\red{8.}$ よりこれら$L$は異なる関数である。よって$\red{7.}$より矛盾する
 
 矛盾しないようにするには、従属変数 $x,\dotx$ と 独立変数 $x_1, x_2$ を区別し
 

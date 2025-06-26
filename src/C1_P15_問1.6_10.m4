@@ -15,6 +15,8 @@ include(`preamble.tex')
   \renewcommand{\xr}{\ctext{red}{x}}
   \providecommand{\yr}{}
   \renewcommand{\yr}{\ctext{red}{y}}
+  \providecommand{\atxy}{}
+  \renewcommand{\atxy}{\bigg|_{\substack{x=\xr\\y=\yr}}}
 ---
 
 NEWPAGE
@@ -28,12 +30,12 @@ $\xr(\xi,\eta)$, $\yr(\xi,\eta)$ とする
 $\Zr(\xi,\eta)=\Zb(\xr,\yr)$ とする
 
 $\PARTIAL{\Zr}{\xi}{\eta}=
-\PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}} \PARTIAL{\xr}{\xi}{\eta}
-+ \PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}} \PARTIAL{\yr}{\xi}{\eta}$ $\cdots(1.20)$
+\PARTIAL{\Zb}{x}{y}\atxy \PARTIAL{\xr}{\xi}{\eta}
++ \PARTIAL{\Zb}{y}{x}\atxy \PARTIAL{\yr}{\xi}{\eta}$ $\cdots(1.20)$
 
 $\PARTIAL{\Zr}{\eta}{\xi}=
-\PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}} \PARTIAL{\xr}{\eta}{\xi}
-+ \PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}} \PARTIAL{\yr}{\eta}{\xi}$ $\cdots(1.21)$
+\PARTIAL{\Zb}{x}{y}\atxy \PARTIAL{\xr}{\eta}{\xi}
++ \PARTIAL{\Zb}{y}{x}\atxy \PARTIAL{\yr}{\eta}{\xi}$ $\cdots(1.21)$
 
 ---
 
@@ -49,11 +51,11 @@ $$
 \begin{flalign*}
 \so \PARTIAL{\Zr}{\xi}{\eta} &= \frac{d\Zr}{d\xi}
 \quad \Big(\cuz \xi,\eta が独立なので \PARTIAL{\Zr}{\xi}{\eta}=\frac{d\Zr}{d\xi}\Big) &\\
- &= \PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}\frac{d\xr}{d\xi}
-   +\PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}\frac{d\yr}{d\xi} 
+ &= \PARTIAL{\Zb}{x}{y}\atxy \frac{d\xr}{d\xi}
+   +\PARTIAL{\Zb}{y}{x}\atxy \frac{d\yr}{d\xi} 
 \quad (\cuz 問題1.7) &\\
- &= \PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\xr}{\xi}{\eta}
-    + \PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\yr}{\xi}{\eta}
+ &= \PARTIAL{\Zb}{x}{y}\atxy \PARTIAL{\xr}{\xi}{\eta}
+    + \PARTIAL{\Zb}{y}{x}\atxy \PARTIAL{\yr}{\xi}{\eta}
 \quad \Big(\cuz \xi,\eta が独立なので
            \PARTIAL{\xr}{\xi}{\eta}=\frac{d\xr}{d\xi},\ 
            \PARTIAL{\yr}{\xi}{\eta}=\frac{d\yr}{d\xi}\Big) &
@@ -64,11 +66,11 @@ $$
 \begin{flalign*}
 \so \PARTIAL{\Zr}{\eta}{\xi} &= \frac{d\Zr}{d\eta}
 \quad \Big(\cuz \xi,\eta が独立なので \PARTIAL{\Zr}{\eta}{\xi}=\frac{d\Zr}{d\eta}\Big) &\\
- &= \PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}\frac{d\xr}{d\eta}
-   +\PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}\frac{d\yr}{d\eta} 
+ &= \PARTIAL{\Zb}{x}{y}\atxy \frac{d\xr}{d\eta}
+   +\PARTIAL{\Zb}{y}{x}\atxy \frac{d\yr}{d\eta} 
 \quad (\cuz 問題1.7) &\\
- &= \PARTIAL{\Zb}{x}{y}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\xr}{\eta}{\xi}
-    + \PARTIAL{\Zb}{y}{x}\bigg|_{\substack{x=\xr\\y=\yr}}\PARTIAL{\yr}{\eta}{\xi}
+ &= \PARTIAL{\Zb}{x}{y}\atxy \PARTIAL{\xr}{\eta}{\xi}
+    + \PARTIAL{\Zb}{y}{x}\atxy \PARTIAL{\yr}{\eta}{\xi}
 \quad \Big(\cuz \xi,\eta が独立なので
            \PARTIAL{\xr}{\eta}{\xi}=\frac{d\xr}{d\eta},\ 
            \PARTIAL{\yr}{\eta}{\xi}=\frac{d\yr}{d\eta}\Big) &
