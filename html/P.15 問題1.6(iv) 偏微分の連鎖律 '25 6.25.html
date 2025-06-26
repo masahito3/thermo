@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.15 問題1.6(i) 偏微分の連鎖律 '25 6.13</title>
+  <title>P.15 問題1.6(iv) 偏微分の連鎖律 '25 6.25</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -133,14 +133,14 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.15 問題1.5 Z(x,y) の偏微分 '25 6.22.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.15 問題1.6(iii) 偏微分の連鎖律 '25 6.13.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.15 問題1.6(ii) 偏微分の連鎖律 '25 6.25.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.16 問題1.8 偏微分でつまづいたこと '25 6.25.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
@@ -155,121 +155,35 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
 </div>
 </nav>
 -->
-<h2 data-number="1.28" id="C1_P15_問1.6_10">P.15 問題1.6(i)
-偏微分の連鎖律 '25 6.13</h2>
-<p><span class="math inline">\(x,y,\xi,\eta\)</span>
+<h2 data-number="1.31" id="C1_P15_問1.6_30">P.15 問題1.6(iv)
+偏微分の連鎖律 '25 6.25</h2>
+<p><span
+class="math inline">\(x_1,\cdots,x_n,\xi_1,\cdots,\xi_n\)</span>
 は独立変数とする</p>
 <p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}}(\xi,\eta)\)</span>,
-<span
-class="math inline">\(\textcolor{red}{\boldsymbol{y}}(\xi,\eta)\)</span>
+class="math inline">\(\textcolor{red}{\pmb{x_1}}(\xi_1,\cdots,\xi_n),\cdots,\textcolor{red}{\pmb{x_n}}(\xi_1,\cdots,\xi_n)\)</span>
 とする</p>
 <p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi,\eta)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})\)</span>
+class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_1}},\cdots,\textcolor{red}{\pmb{x_n}})\)</span>
 とする</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \xi}\Big)_{\eta}=
+\textcolor{red}{\boldsymbol{Z}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}=
 \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \xi}\Big)_{\eta} +
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \xi}\Big)_{\eta}\)</span>
-<span class="math inline">\(\cdots(1.20)\)</span></p>
-<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \eta}\Big)_{\xi}=
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \eta}\Big)_{\xi} +
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \eta}\Big)_{\xi}\)</span>
-<span class="math inline">\(\cdots(1.21)\)</span></p>
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
+1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_1}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_n}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_1}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}} + \cdots
++ \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
+n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_1}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_n}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_n}}}{\partial \xi_i}\Big)_{\xi_{j\ne
+i}}\)</span></p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\(x,y,\xi,\eta\)</span>
+<p><span class="math inline">\(x,\ y,\ \eta\)</span>
 は独立変数とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}}(\xi,\eta)\)</span>, <span
-class="math inline">\(\textcolor{red}{\boldsymbol{y}}(\xi,\eta)\)</span>
-とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi,\eta)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})\)</span>
-とする</p>
-<p><span class="math display">\[
-\begin{flalign*}
-{\therefore}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \xi}\Big)_{\eta} &amp;=
-\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\xi}
-\quad \Big({\because}\xi,\eta が独立なので
-\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial
-\xi}\Big)_{\eta}=\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\xi}\Big)
-&amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{x}}}{d\xi}
-   +\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{y}}}{d\xi}
-\quad ({\because}問題1.7) &amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \xi}\Big)_{\eta}
-    + \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \xi}\Big)_{\eta}
-\quad \Big({\because}\xi,\eta が独立なので
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial
-\xi}\Big)_{\eta}=\frac{d\textcolor{red}{\boldsymbol{x}}}{d\xi},\
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial
-\xi}\Big)_{\eta}=\frac{d\textcolor{red}{\boldsymbol{y}}}{d\xi}\Big)
-&amp;
-\end{flalign*}
-\]</span><br />
-<span class="math display">\[
-\begin{flalign*}
-{\therefore}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \eta}\Big)_{\xi} &amp;=
-\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\eta}
-\quad \Big({\because}\xi,\eta が独立なので
-\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial
-\eta}\Big)_{\xi}=\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\eta}\Big)
-&amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{x}}}{d\eta}
-   +\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{y}}}{d\eta}
-\quad ({\because}問題1.7) &amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \eta}\Big)_{\xi}
-    + \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \eta}\Big)_{\xi}
-\quad \Big({\because}\xi,\eta が独立なので
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial
-\eta}\Big)_{\xi}=\frac{d\textcolor{red}{\boldsymbol{x}}}{d\eta},\
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial
-\eta}\Big)_{\xi}=\frac{d\textcolor{red}{\boldsymbol{y}}}{d\eta}\Big)
-&amp;
-\end{flalign*}
-\]</span></p>
+<p><span class="math inline">\(f(x,y) = (x+1)(x-y+1)\)</span> とする</p>
    </main>
 </div>
 
