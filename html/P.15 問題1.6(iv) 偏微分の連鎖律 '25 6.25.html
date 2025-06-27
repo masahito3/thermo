@@ -157,33 +157,248 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
 -->
 <h2 data-number="1.31" id="C1_P15_問1.6_30">P.15 問題1.6(iv)
 偏微分の連鎖律 '25 6.25</h2>
+<p><span class="math inline">\(x_1,\cdots,x_n,\
+\xi_1,\cdots,\xi_n\)</span> は独立変数とする</p>
 <p><span
-class="math inline">\(x_1,\cdots,x_n,\xi_1,\cdots,\xi_n\)</span>
-は独立変数とする</p>
+class="math inline">\(\textcolor{red}{\pmb{x_{1}}}(\xi_1,\cdots,\xi_n),\cdots,\textcolor{red}{\pmb{x_{n}}}(\xi_1,\cdots,\xi_n)\)</span>
+とする。<span
+class="math inline">\(\textcolor{red}{\pmb{x_{1}}},\cdots,\textcolor{red}{\pmb{x_{n}}}\)</span>
+は微分可能とする</p>
 <p><span
-class="math inline">\(\textcolor{red}{\pmb{x_1}}(\xi_1,\cdots,\xi_n),\cdots,\textcolor{red}{\pmb{x_n}}(\xi_1,\cdots,\xi_n)\)</span>
-とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_1}},\cdots,\textcolor{red}{\pmb{x_n}})\)</span>
+class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_{1}}},\cdots,\textcolor{red}{\pmb{x_{n}}})\)</span>
 とする</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
 \textcolor{red}{\boldsymbol{Z}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}=
 \displaystyle\Big(\frac{\partial
 \textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
-1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_1}}\\ \vdots
-\\x_n=\textcolor{red}{\pmb{x_n}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\pmb{x_1}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}} + \cdots
-+ \displaystyle\Big(\frac{\partial
+1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{1}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}} +
+\cdots + \displaystyle\Big(\frac{\partial
 \textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
-n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_1}}\\ \vdots
-\\x_n=\textcolor{red}{\pmb{x_n}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\pmb{x_n}}}{\partial \xi_i}\Big)_{\xi_{j\ne
+n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{\xi_{j\ne
 i}}\)</span></p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\(x,\ y,\ \eta\)</span>
-は独立変数とする</p>
-<p><span class="math inline">\(f(x,y) = (x+1)(x-y+1)\)</span> とする</p>
+<p><span
+class="math inline">\(f(\vec{x}+d\vec{x})-f(\vec{x})=df+o(|d\vec{x}|)\)</span>  (1.13)</p>
+<p><span class="math inline">\(df=\vec{\nabla}f(\vec{x})\cdot d\vec{x}=
+\displaystyle\Big(\frac{\partial f(\vec{x})}{\partial x_1}\Big)_{x_{i\ne
+1}}dx_1+\cdots+\displaystyle\Big(\frac{\partial f(\vec{x})}{\partial
+x_n}\Big)_{x_{i\ne n}}dx_n\)</span>  (1.14)</p>
+<p>において</p>
+<p><span class="math inline">\(f=\textcolor{blue}{\boldsymbol{Z}},\
+\vec{x}=(x_1,\cdots,x_n),\ d\vec{x}=(dx_1,\cdots,dx_n)\)</span>
+とすると</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;\textcolor{blue}{\boldsymbol{Z}}(x_1+dx_1,\cdots,x_n+dx_n)-\textcolor{blue}{\boldsymbol{Z}}(x_1,\cdots,x_n)
+&amp;\\
+&amp;\qquad = \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
+1}}dx_1+\cdots+\displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne n}}dx_n +
+o\Big(\sqrt{dx_1^2+\cdots+dx_n^2}\Big) &amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp; \lim_{\substack{(dx_1,\cdots,dx_n)\\ \to(0,\cdots,0)}}
+\frac{  \textcolor{blue}{\boldsymbol{Z}}(x_1+dx_1,\cdots,x_n+dx_n)-\textcolor{blue}{\boldsymbol{Z}}(x_1,\cdots,x_n)
+      - \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
+1}}dx_1-\cdots-\displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne n}}dx_n}
+     {\sqrt{dx_1^2+\cdots+dx_n^2}}
+= 0 \ \ \textcolor{red}{(1)} &amp;
+\end{flalign*}
+\]</span></p>
+<p><span
+class="math inline">\(\textcolor{red}{\pmb{x_{i}}}=\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)\)</span>
+とする。<span
+class="math inline">\(\textcolor{red}{\pmb{x_{i}}}\)</span>
+は微分可能とする</p>
+<p><span
+class="math inline">\({\textcolor{red}{\pmb{dx_{i}}}}=\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)\)</span>
+とする</p>
+<p><span class="math inline">\({\therefore}\displaystyle\lim_{d\xi_i\to
+0}{\textcolor{red}{\pmb{dx_{i}}}}=0\)</span> (<span
+class="math inline">\({\because}\textcolor{red}{\pmb{x_{i}}}\)</span>
+は連続なので)</p>
+<p><span class="math inline">\(\textcolor{red}{(1)}\)</span>
+の極限は経路によらないので</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp; \lim_{d\xi_i\to 0}
+\frac{
+\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_{1}}}+{\textcolor{red}{\pmb{dx_{1}}}},\cdots,\textcolor{red}{\pmb{x_{n}}}+{\textcolor{red}{\pmb{dx_{n}}}})-\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_{1}}},\cdots,\textcolor{red}{\pmb{x_{n}}})
+     - \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
+1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}{\textcolor{red}{\pmb{dx_{1}}}}-\cdots-\displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
+n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}{\textcolor{red}{\pmb{dx_{n}}}}}
+     {\sqrt{{\textcolor{red}{\pmb{dx_{1}}}}^2+\cdots+{\textcolor{red}{\pmb{dx_{n}}}}^2}}
+= 0 &amp;
+\end{flalign*}
+\]</span></p>
+<p><span
+class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_{1}}}(\xi_1,\cdots,\xi_n),\cdots,\textcolor{red}{\pmb{x_{n}}}(\xi_1,\cdots,\xi_n))\)</span>
+とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)
+  &amp;=
+\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_{1}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n),\cdots,\textcolor{red}{\pmb{x_{n}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n))
+&amp;\\
+  &amp;=
+\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_{1}}}+{\textcolor{red}{\pmb{dx_{1}}}},\cdots,\textcolor{red}{\pmb{x_{n}}}+{\textcolor{red}{\pmb{dx_{n}}}})
+&amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp; \lim_{d\xi_i\to 0}
+\frac{
+\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)
+     - \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
+1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}{\textcolor{red}{\pmb{dx_{1}}}}-\cdots-\displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
+n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}{\textcolor{red}{\pmb{dx_{n}}}}}
+     {\sqrt{{\textcolor{red}{\pmb{dx_{1}}}}^2+\cdots+{\textcolor{red}{\pmb{dx_{n}}}}^2}}=0
+&amp;
+\end{flalign*}
+\]</span></p>
+<p>ここで</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\lim_{d\xi_i\to 0}
+\frac{\sqrt{{\textcolor{red}{\pmb{dx_{1}}}}^2+\cdots+{\textcolor{red}{\pmb{dx_{n}}}}^2}}
+     {|d\xi_i|}
+&amp;= \lim_{d\xi_i\to
+0}\sqrt{\Big(\frac{{\textcolor{red}{\pmb{dx_{1}}}}}{d\xi_i}\Big)^2+\cdots+\Big(\frac{{\textcolor{red}{\pmb{dx_{n}}}}}{d\xi_i}\Big)^2}
+&amp;\\
+&amp;=\sqrt{\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{1}}}}{\partial
+\xi_i}\Big)_{}+\cdots+\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{} } &amp;\\
+&amp;&lt; \infty
+   \quad \Big({\because}\textcolor{red}{\pmb{x_{j}}} は微分可能なので
+\displaystyle\Big(\frac{\partial \textcolor{red}{\pmb{x_{j}}}}{\partial
+\xi_i}\Big)_{} &lt; \infty \Big) &amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+{\small
+\begin{flalign*}
+&amp; \lim_{d\xi_i\to 0}
+\frac{
+\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)
+     - \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
+1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}{\textcolor{red}{\pmb{dx_{1}}}}-\cdots-\displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
+n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}{\textcolor{red}{\pmb{dx_{n}}}}}
+     {\sqrt{{\textcolor{red}{\pmb{dx_{1}}}}^2+\cdots+{\textcolor{red}{\pmb{dx_{n}}}}^2}}
+\frac{\sqrt{{\textcolor{red}{\pmb{dx_{1}}}}^2+\cdots+{\textcolor{red}{\pmb{dx_{n}}}}^2}}
+     {d\xi_i}
+=0 &amp;
+\end{flalign*}
+}
+\]</span></p>
+<p>(<span class="math inline">\({\because}\ \lim f=0, \lim |g| &lt;
+\infty\)</span> ならば <span class="math inline">\(\lim fg = 0\)</span>
+)</p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp; \lim_{d\xi_i\to 0}
+\frac{
+\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)
+     - \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
+1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}{\textcolor{red}{\pmb{dx_{1}}}}-\cdots-\displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
+n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}{\textcolor{red}{\pmb{dx_{n}}}}}
+     {d\xi_i}
+=0 &amp;
+\end{flalign*}
+\]</span></p>
+<p>ここで</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;\displaystyle\Big(\frac{\partial
+\textcolor{red}{\boldsymbol{Z}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
+= \lim_{d\xi_i\to 0}
+  \frac{
+\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)}
+       {d\xi_i}\ ({\because}\ 偏微分の定義)&amp;
+\end{flalign*}
+\]</span></p>
+<p>また</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\lim_{d\xi_i\to 0}\frac{{\textcolor{red}{\pmb{dx_{j}}}}}{d\xi_i}
+&amp;= \lim_{d\xi_i\to
+0}\frac{\textcolor{red}{\pmb{x_{j}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{j}}}(\xi_1,\cdots,\xi_n)}{d\xi_i}
+&amp;\\
+&amp;= \displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{j}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}} \
+({\because}\ \textcolor{red}{\pmb{x_{j}}}は微分可能なので) &amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp; \displaystyle\Big(\frac{\partial
+\textcolor{red}{\boldsymbol{Z}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
+- \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
+1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{1}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
+- \cdots
+- \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
+n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
+= 0 &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(({\because}\ \lim f, \lim g
+が存在するならば \lim kf+lg = k\lim f+l\lim g)\)</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp; \displaystyle\Big(\frac{\partial
+\textcolor{red}{\boldsymbol{Z}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
+= \displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
+1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{1}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
+  +\cdots
+  +\displaystyle\Big(\frac{\partial
+\textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
+n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
+\\x_n=\textcolor{red}{\pmb{x_{n}}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}} &amp;
+\end{flalign*}
+\]</span></p>
    </main>
 </div>
 
