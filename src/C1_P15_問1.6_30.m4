@@ -13,8 +13,6 @@ include(`preamble.tex')
   \renewcommand{\Zr}{\ctext{red}{Z}}
   \providecommand{\xr}{}
   \renewcommand{\xr}[1]{\textcolor{red}{\pmb{x_{#1}}}}
-  \providecommand{\ar}{}
-  \renewcommand{\ar}[1]{\textcolor{red}{\pmb{a_{#1}}}}
   \providecommand{\dxr}{}
   \renewcommand{\dxr}[1]{{\textcolor{red}{\pmb{dx_{#1}}}}}
   \providecommand{\atx}{}
@@ -45,9 +43,9 @@ NEWPAGE
 
 $\xlist,\ \xilist$ は独立変数とする
 
-$\xr{1}(\xilist),\cdots,\xr{n}(\xilist)$ とする。$\xr{1},\cdots,\xr{n}$ は微分可能とする
+$\xr{1}(\xilist),\cdots,\xr{n}(\xilist)$ とする。$\xr{1},\cdots,\xr{n}$ は偏微分可能とする
 
-$\Zr(\xilist)=\Zb(\xr{1},\cdots,\xr{n})$ とする
+$\Zr(\xilist)=\Zb(\xr{1},\cdots,\xr{n})$ とする。$\Zr, \Zb$ は偏微分可能とする
 
 $\PARTIAL{\Zr}{\xi_i}{\xi_{j\ne i}}=
 \PARTIAL{\Zb}{x_1}{x_{i\ne 1}}\atx \PARTIAL{\xr{1}}{\xi_i}{\xi_{j\ne i}}
@@ -64,7 +62,7 @@ $df=\vnabla f(\vx)\cdot d\vx
 
 において
 
-$f=\Zb,\ \vx=(\xlist),\ d\vx=(\dxlist)$ とすると
+$f=\Zb,\ \vx=(\xlist),\ d\vx=(\dxlist)$ とする。$\xlist$ は独立変数とする
 
 $$
 \begin{flalign*}
@@ -85,7 +83,7 @@ $$
 \end{flalign*}
 $$
 
-$\xr{i}=\xr{i}(\xilist)$ とする。$\xr{i}$ は微分可能とする
+$\xr{i}=\xr{i}(\xilist)$ とする。$\xilist$ は独立変数とする。$\xr{i}$ は偏微分可能とする
 
 $\dxr{i}=\xr{i}(\xidxilist)-\xr{i}(\xilist)$ とする
 
@@ -133,7 +131,7 @@ $$
 &= \limto{d\xi_i}{0}\sqrt{\Big(\frac{\dxr{1}}{d\xi_i}\Big)^2+\cdots+\Big(\frac{\dxr{n}}{d\xi_i}\Big)^2} &\\
 &=\sqrt{\PARTIAL{\xr{1}}{\xi_i}{}+\cdots+\PARTIAL{\xr{n}}{\xi_i}{} } &\\
 &< \infty
-   \quad \Big(\cuz \xr{j} は微分可能なので \PARTIAL{\xr{j}}{\xi_i}{} < \infty \Big) &
+   \quad \Big(\cuz 合成関数の極限と\xr{j} は偏微分可能なので \PARTIAL{\xr{j}}{\xi_i}{} < \infty \Big) &
 \end{flalign*}
 $$
 
@@ -184,7 +182,7 @@ $$
 \begin{flalign*}
 \limto{d\xi_i}{0}\frac{\dxr{j}}{d\xi_i}
 &= \limto{d\xi_i}{0}\frac{\xr{j}(\xidxilist)-\xr{j}(\xilist)}{d\xi_i} &\\
-&= \PARTIAL{\xr{j}}{\xi_i}{\xi_{j\ne i}} \ (\cuz\ \xr{j}は微分可能なので) &
+&= \PARTIAL{\xr{j}}{\xi_i}{\xi_{j\ne i}} \ (\cuz\ \xr{j}は偏微分可能なので) &
 \end{flalign*}
 $$
 

@@ -119,6 +119,9 @@ id="toc-C1_P15_問1.6_20">P.15 問題1.6(iii) 偏微分の連鎖律 '25
 <li><a href="P.15 問題1.6(iv) 偏微分の連鎖律 &#39;25 6.25.html"
 id="toc-C1_P15_問1.6_30">P.15 問題1.6(iv) 偏微分の連鎖律 '25
 6.25</a></li>
+<li><a href="P.15 問題1.7(i) 合成関数の微分 &#39;25 6.27.html"
+id="toc-C1_P15_問1.7_10">P.15 問題1.7(i) 合成関数の微分 '25
+6.27</a></li>
 <li><a href="P.16 問題1.8 偏微分でつまづいたこと &#39;25 6.25.html"
 id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
 6.25</a></li>
@@ -140,7 +143,7 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.16 問題1.8 偏微分でつまづいたこと '25 6.25.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.15 問題1.7(i) 合成関数の微分 '25 6.27.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
@@ -163,10 +166,11 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
 class="math inline">\(\textcolor{red}{\pmb{x_{1}}}(\xi_1,\cdots,\xi_n),\cdots,\textcolor{red}{\pmb{x_{n}}}(\xi_1,\cdots,\xi_n)\)</span>
 とする。<span
 class="math inline">\(\textcolor{red}{\pmb{x_{1}}},\cdots,\textcolor{red}{\pmb{x_{n}}}\)</span>
-は微分可能とする</p>
+は偏微分可能とする</p>
 <p><span
 class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_{1}}},\cdots,\textcolor{red}{\pmb{x_{n}}})\)</span>
-とする</p>
+とする。<span class="math inline">\(\textcolor{red}{\boldsymbol{Z}},
+\textcolor{blue}{\boldsymbol{Z}}\)</span> は偏微分可能とする</p>
 <p><span class="math inline">\(\displaystyle\Big(\frac{\partial
 \textcolor{red}{\boldsymbol{Z}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}=
 \displaystyle\Big(\frac{\partial
@@ -191,7 +195,8 @@ x_n}\Big)_{x_{i\ne n}}dx_n\)</span>  (1.14)</p>
 <p>において</p>
 <p><span class="math inline">\(f=\textcolor{blue}{\boldsymbol{Z}},\
 \vec{x}=(x_1,\cdots,x_n),\ d\vec{x}=(dx_1,\cdots,dx_n)\)</span>
-とすると</p>
+とする。<span class="math inline">\(x_1,\cdots,x_n\)</span>
+は独立変数とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
 &amp;\textcolor{blue}{\boldsymbol{Z}}(x_1+dx_1,\cdots,x_n+dx_n)-\textcolor{blue}{\boldsymbol{Z}}(x_1,\cdots,x_n)
@@ -218,9 +223,10 @@ o\Big(\sqrt{dx_1^2+\cdots+dx_n^2}\Big) &amp;
 \]</span></p>
 <p><span
 class="math inline">\(\textcolor{red}{\pmb{x_{i}}}=\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)\)</span>
-とする。<span
+とする。<span class="math inline">\(\xi_1,\cdots,\xi_n\)</span>
+は独立変数とする。<span
 class="math inline">\(\textcolor{red}{\pmb{x_{i}}}\)</span>
-は微分可能とする</p>
+は偏微分可能とする</p>
 <p><span
 class="math inline">\({\textcolor{red}{\pmb{dx_{i}}}}=\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)\)</span>
 とする</p>
@@ -291,9 +297,10 @@ n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 \xi_i}\Big)_{}+\cdots+\displaystyle\Big(\frac{\partial
 \textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{} } &amp;\\
 &amp;&lt; \infty
-   \quad \Big({\because}\textcolor{red}{\pmb{x_{j}}} は微分可能なので
-\displaystyle\Big(\frac{\partial \textcolor{red}{\pmb{x_{j}}}}{\partial
-\xi_i}\Big)_{} &lt; \infty \Big) &amp;
+   \quad \Big({\because}合成関数の極限と\textcolor{red}{\pmb{x_{j}}}
+は偏微分可能なので \displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{j}}}}{\partial \xi_i}\Big)_{} &lt; \infty \Big)
+&amp;
 \end{flalign*}
 \]</span></p>
 <p>よって</p>
@@ -357,7 +364,7 @@ n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 &amp;\\
 &amp;= \displaystyle\Big(\frac{\partial
 \textcolor{red}{\pmb{x_{j}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}} \
-({\because}\ \textcolor{red}{\pmb{x_{j}}}は微分可能なので) &amp;
+({\because}\ \textcolor{red}{\pmb{x_{j}}}は偏微分可能なので) &amp;
 \end{flalign*}
 \]</span></p>
 <p>よって</p>
