@@ -276,6 +276,25 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
 <p>ここで</p>
 <p><span class="math display">\[
 \begin{flalign*}
+\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}
+&amp;=\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{x}}(t+dt)-\textcolor{red}{\boldsymbol{x}}(t)}{dt}
+=\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\quad({\because}\
+\textcolor{red}{\boldsymbol{x}}は微分可能) &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}
+&amp;=\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{y}}(t+dt)-\textcolor{red}{\boldsymbol{y}}(t)}{dt}
+=\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\quad({\because}\
+\textcolor{red}{\boldsymbol{y}}は微分可能) &amp;
+\end{flalign*}
+\]</span></p>
+<p>なので</p>
+<p><span class="math display">\[
+\begin{flalign*}
 \lim_{dt\to
 0}\frac{\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}{|dt|}
 &amp;= \lim_{dt\to
@@ -288,17 +307,11 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
            {\because}\sqrt{x} は x&gt;0 で連続、x^2
 は\mathbb{R}で連続なので \\
            \quad 合成関数の極限と和の極限より \end{array} \Big) &amp;\\
-&amp;= \sqrt{\Big(\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{x}}(t+dt)-\textcolor{red}{\boldsymbol{x}}(t)}{dt}\Big)^2
-        +\Big(\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{y}}(t+dt)-\textcolor{red}{\boldsymbol{y}}(t)}{dt}\Big)^2}  &amp;\\
 &amp;=
 \sqrt{\Big(\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\Big)^2+\Big(\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\Big)^2}
-\quad
-({\because}\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}}は微分可能)
 &amp;\\
 &amp;&lt; \infty
-\quad\Big({\because}微分可能なので\Big|\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\Big|&lt;\infty,\
+\quad\Big({\because}微分が存在するので\Big|\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\Big|&lt;\infty,\
 \Big|\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\Big|&lt;\infty\Big)
 &amp;
 \end{flalign*}
@@ -336,25 +349,6 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
 = 0 &amp;
 \end{flalign*}
 \]</span></p>
-<p>ここで</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}
-&amp;=\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{x}}(t+dt)-\textcolor{red}{\boldsymbol{x}}(t)}{dt}
-=\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\quad({\because}\
-\textcolor{red}{\boldsymbol{x}}は微分可能) &amp;
-\end{flalign*}
-\]</span></p>
-<p><span class="math display">\[
-\begin{flalign*}
-\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}
-&amp;=\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{y}}(t+dt)-\textcolor{red}{\boldsymbol{y}}(t)}{dt}
-=\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\quad({\because}\
-\textcolor{red}{\boldsymbol{y}}は微分可能) &amp;
-\end{flalign*}
-\]</span></p>
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
@@ -362,14 +356,16 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
 0}\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)}{dt}
 = \displaystyle\Big(\frac{\partial Z}{\partial
 x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}+\displaystyle\Big(\frac{\partial
+y=\textcolor{red}{\boldsymbol{y}}}}\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}+\displaystyle\Big(\frac{\partial
 Z}{\partial
 y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}
-\quad \Big(\begin{array}{@{}l@{}}
-  {\because}\lim (f+g)=a,\lim g=b ならば \lim f = a - b \\
-  \quad また \lim の線型性 \lim (kf+lg) = k\lim f + l\lim g
-\end{array} \Big) &amp;
+y=\textcolor{red}{\boldsymbol{y}}}}\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}
+\quad \Bigg(\begin{array}{@{}l@{}}
+  {\because}\lim の線型性より \lim(f+kg+lh)=a,\lim g=b,\lim h=cならば \\
+  \quad  \lim f = a - kb - lc
+\end{array} \Bigg) &amp;
 \end{flalign*}
 \]</span></p>
 <p>よって</p>

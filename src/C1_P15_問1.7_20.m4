@@ -37,7 +37,7 @@ $Z=x^2e^y$ とする
 
 $\xr(t)=t^3,\ \yr(t)=t^4$ とする
 
-$\Zr(t)=Z(\xr,\yr)
+$\DERIV{\Zr}{t}
 =\PARTIAL{Z}{x}{y}\atxy\DERIV{\xr}{t}
 +\PARTIAL{Z}{y}{x}\atxy\DERIV{\yr}{t}$ であることを確認する
 
@@ -85,7 +85,7 @@ $$
 
 よって
 
-$\Zr(t)=Z(\xr,\yr)
+$\DERIV{\Zr}{t}
 =\PARTIAL{Z}{x}{y}\atxy\DERIV{\xr}{t}
 +\PARTIAL{Z}{y}{x}\atxy\DERIV{\yr}{t}$ である
 

@@ -122,17 +122,32 @@ $$
 
 $$
 \begin{flalign*}
+\limto{dt}{0}\frac{\dxr}{dt}
+&=\limto{dt}{0}\frac{\xr(t+dt)-\xr(t)}{dt} 
+=\DERIV{\xr}{t}\quad(\cuz\ \xr は微分可能) &
+\end{flalign*}
+$$
+
+$$
+\begin{flalign*}
+\limto{dt}{0}\frac{\dyr}{dt}
+&=\limto{dt}{0}\frac{\yr(t+dt)-\yr(t)}{dt} 
+=\DERIV{\yr}{t}\quad(\cuz\ \yr は微分可能) &
+\end{flalign*}
+$$
+
+なので
+
+$$
+\begin{flalign*}
 \limto{dt}{0}\frac{\sqrt{\dxr^2+\dyr^2}}{|dt|} 
 &= \limto{dt}{0}\sqrt{\Big(\frac{\dxr}{dt}\Big)^2+\Big(\frac{\dyr}{dt}\Big)^2} &\\
 &= \sqrt{\Big(\limto{dt}{0}\frac{\dxr}{dt}\Big)^2+\Big(\limto{dt}{0}\frac{\dyr}{dt}\Big)^2} 
 \quad \Big(\begin{array}{@{}l@{}}
            \cuz \sqrt{x} は x>0 で連続、x^2 は\mathbb{R}で連続なので \\
            \quad 合成関数の極限と和の極限より \end{array} \Big) &\\
-&= \sqrt{\Big(\limto{dt}{0}\frac{\xr(t+dt)-\xr(t)}{dt}\Big)^2
-        +\Big(\limto{dt}{0}\frac{\yr(t+dt)-\yr(t)}{dt}\Big)^2}  &\\
-&= \sqrt{\Big(\DERIV{\xr}{t}\Big)^2+\Big(\DERIV{\yr}{t}\Big)^2} 
-\quad (\cuz \xr,\yr は微分可能) &\\
-&< \infty \quad\Big(\cuz 微分可能なので\Big|\DERIV{\xr}{t}\Big|<\infty,\ \Big|\DERIV{\yr}{t}\Big|<\infty\Big) &
+&= \sqrt{\Big(\DERIV{\xr}{t}\Big)^2+\Big(\DERIV{\yr}{t}\Big)^2} &\\
+&< \infty \quad\Big(\cuz 微分が存在するので\Big|\DERIV{\xr}{t}\Big|<\infty,\ \Big|\DERIV{\yr}{t}\Big|<\infty\Big) &
 \end{flalign*}
 $$
 
@@ -163,34 +178,17 @@ $$
 \end{flalign*}
 $$
 
-ここで
-
-$$
-\begin{flalign*}
-\limto{dt}{0}\frac{\dxr}{dt}
-&=\limto{dt}{0}\frac{\xr(t+dt)-\xr(t)}{dt} 
-=\DERIV{\xr}{t}\quad(\cuz\ \xr は微分可能) &
-\end{flalign*}
-$$
-
-$$
-\begin{flalign*}
-\limto{dt}{0}\frac{\dyr}{dt}
-&=\limto{dt}{0}\frac{\yr(t+dt)-\yr(t)}{dt} 
-=\DERIV{\yr}{t}\quad(\cuz\ \yr は微分可能) &
-\end{flalign*}
-$$
-
 よって
 
 $$
 \begin{flalign*}
 &\limto{dt}{0}\frac{\Zr(t+dt)-\Zr(t)}{dt} 
 = \PARTIAL{Z}{x}{y}\atxy \DERIV{\xr}{t}+\PARTIAL{Z}{y}{x}\atxy \DERIV{\yr}{t}
-\quad \Big(\begin{array}{@{}l@{}}
-  \cuz \lim (f+g)=a,\lim g=b ならば \lim f = a - b \\
-  \quad また \lim の線型性 \lim (kf+lg) = k\lim f + l\lim g
-\end{array} \Big) &
+\quad \Bigg(\begin{array}{@{}l@{}}
+  \cuz \lim の線型性より \\ 
+  \quad \lim(f+kg+lh)=a,\lim g=b,\lim h=cならば \\
+  \quad  \lim f = a - kb - lc 
+\end{array} \Bigg) &
 \end{flalign*}
 $$
 
