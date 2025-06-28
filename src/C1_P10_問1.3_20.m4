@@ -54,6 +54,6 @@ $$\begin{flalign*}
 &&&\so|fg|<\eps m\\
 &&&任意の\eps'>0 に対して\eps'=\eps m とすると\\
 &&&|(x,y)|<\delta ならば |fg|<\eps'\\
-&&&\so lim fg = 0
+&&&\so \lim fg = 0
 \end{flalign*}$$
 

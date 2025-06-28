@@ -36,7 +36,7 @@ $0<\eps'<\eps_1$ ならば $0<\eps(\eps')<\eps'$ なので$0<\eps(\eps')<\eps_1$
 
 よって $|f'(a+\eps(\eps'))-f'(a+0)|<\delta$ である
 
-$\disp\frac{f(a+\eps')-f(a)}{\eps'}=f'(a+\eps(eps'))$ なので
+$\disp\frac{f(a+\eps')-f(a)}{\eps'}=f'(a+\eps(\eps'))$ なので
 
 $0<\eps'<\eps_1$ ならば $\l|\disp\frac{f(a+\eps')-f(a)}{\eps'}-f'(a+0)\r|<\delta$ である
 

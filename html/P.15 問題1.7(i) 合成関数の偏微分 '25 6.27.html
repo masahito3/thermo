@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.12 問題1.4 x^2 e^y の偏微分 '25 4.16</title>
+  <title>P.15 問題1.7(i) 合成関数の偏微分 '25 6.27</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -139,14 +139,14 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.12 補足 べき級数のべき '25 6.2.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.15 問題1.6(iv) 偏微分の連鎖律 '25 6.25.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.15 問題1.5 Z(x,y) の偏微分 '25 6.22.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.15 問題1.7(ii) 合成関数の偏微分の例 '25 6.28.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
@@ -161,88 +161,225 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
 </div>
 </nav>
 -->
-<h2 data-number="1.26" id="C1_P12_問1.4_10">P.12 問題1.4 x^2 e^y
-の偏微分 '25 4.16</h2>
+<h2 data-number="1.32" id="C1_P15_問1.7_10">P.15 問題1.7(i)
+合成関数の偏微分 '25 6.27</h2>
+<p><span class="math inline">\(Z=Z(x,y)\)</span> とする。<span
+class="math inline">\(x, y\)</span> は独立変数とする</p>
+<p><span
+class="math inline">\(\textcolor{red}{\boldsymbol{x}}=\textcolor{red}{\boldsymbol{x}}(t),\
+\textcolor{red}{\boldsymbol{y}}=\textcolor{red}{\boldsymbol{y}}(t)\)</span>
+とする。<span class="math inline">\(t\)</span> は独立変数とする。<span
+class="math inline">\(\textcolor{red}{\boldsymbol{x}},
+\textcolor{red}{\boldsymbol{y}}\)</span> は微分可能とする</p>
+<p><span
+class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(t)=Z(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})\)</span>
+とする</p>
+<p><span
+class="math inline">\(\displaystyle\frac{d\textcolor{red}{\boldsymbol{Z}}}{dt}
+=\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}
++\displaystyle\Big(\frac{\partial Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\)</span>  (1.22)</p>
+<hr />
+<p>(証明)</p>
+<p><span
+class="math inline">\(f(\vec{x}+d\vec{x})-f(\vec{x})=df+o(|d\vec{x}|)\)</span>  (1.13)</p>
+<p><span class="math inline">\(df=\vec{\nabla}f(\vec{x})\cdot d\vec{x}=
+\displaystyle\Big(\frac{\partial f(\vec{x})}{\partial x_1}\Big)_{x_{i\ne
+1}}dx_1+\cdots+\displaystyle\Big(\frac{\partial f(\vec{x})}{\partial
+x_n}\Big)_{x_{i\ne n}}dx_n\)</span>  (1.14)</p>
+<p>において</p>
+<p><span class="math inline">\(f=Z,\ \vec{x}= (x,y),\
+d\vec{x}=(dx,dy)\)</span> とする。<span
+class="math inline">\(x,y\)</span> は独立変数とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-f(x,y)&amp;=x^2e^y,\quad (x,y)\in \mathbb{R}^2&amp;\\
+&amp;Z(x+dx,y+dy)-Z(x,y)
+  = \displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}dx+\displaystyle\Big(\frac{\partial Z}{\partial
+y}\Big)_{z}dy+o\big(\sqrt{dx^2+dy^2}\big) &amp;
 \end{flalign*}
 \]</span></p>
-<p><span class="math inline">\(f\)</span> の偏微分と連続性</p>
-<hr />
-<p>(i) <span class="math display">\[\begin{flalign*}
-f_x&amp;=2xe^y\quad\textcolor{red}{(*1)}&amp;\\
-f_y&amp;=x^2e^y\quad\textcolor{red}{(*1)}&amp;\\
-f_{xx}&amp;=2e^y&amp;\\
-f_{yy}&amp;=x^2e^y&amp;\\
-f_{xy}&amp;=2xe^y&amp;\\
-f_{yx}&amp;=2xe^y&amp;
-\end{flalign*}\]</span> <span class="math display">\[\begin{flalign*}
-f_x(0,0)=0,&amp;\ f_x(1,1)=2e&amp;\\
-f_y(0,0)=0,&amp;\ f_y(1,1)=e&amp;\\
-f_{xx}(0,0)=2,&amp;\ f_{xx}(1,1)=2e&amp;\\
-f_{yy}(0,0)=0,&amp;\ f_{yy}(1,1)=e&amp;\\
-f_{xy}(0,0)=0,&amp;\ f_{xy}(1,1)=2e&amp;\\
-f_{yx}(0,0)=0,&amp;\ f_{yx}(1,1)=2e&amp;
-\end{flalign*}\]</span></p>
-<p>(ii)</p>
-<p><span class="math inline">\(x^2\ は\ x\ で連続よって\ (x,y)\
-で連続\quad\textcolor{red}{(*2)}\)</span></p>
-<p><span class="math inline">\(e^y\ は\ x\ で連続よって\ (x,y)\
-で連続\quad\textcolor{red}{(*2)}\)</span></p>
-<p><span class="math inline">\(よって\ f(x,y)=x^2e^y\ は\ (x,y)\
-で連続\quad\textcolor{red}{(*3)}\)</span></p>
-<p>同様に <span class="math display">\[\begin{flalign*}
-f_{x}&amp;=2xe^y\ は連続&amp;\\
-f_{y}&amp;=x^2e^y\ は連続&amp;\\
-f_{xx}&amp;=2e^y\ は連続&amp;\\
-f_{yy}&amp;=x^2e^y\ は連続&amp;\\
-f_{xy}&amp;=2xe^y\ は連続&amp;\\
-f_{yx}&amp;=2xe^y\ は連続&amp;
-\end{flalign*}\]</span> <span class="math inline">\(よって\ f\ は\ C^2\
-級\)</span></p>
-<p>(iii)</p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;\lim_{(dx,dy)\to (0,0)}
+\frac{Z(x+dx,y+dy)-Z(x,y)
+      -\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}dx-\displaystyle\Big(\frac{\partial Z}{\partial
+y}\Big)_{x}dy}
+     {\sqrt{dx^2+dy^2}} = 0\ \ \textcolor{red}{(1)} &amp;
+\end{flalign*}
+\]</span></p>
 <p><span
-class="math inline">\(f_{xy}=2xe^y,f_{yx}=2xe^y\)</span>なので<span
-class="math inline">\(f_{xy}=f_{yx}\)</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;x と y
-が独立ならばf_x=\underset{xで微分}{f&#39;}\\
-&amp;&amp;\textcolor{red}{(*2)}&amp;
-f(x) が x で連続ならば f(x) は (x,y) で連続である\\
-&amp;&amp;&amp;(証明)\\
-&amp;&amp;&amp;x で連続なのでf(x)=\lim_{\Delta x\to 0}f(x+\Delta x)\\
-&amp;&amp;&amp;よって任意の\epsilon に対して\\
-&amp;&amp;&amp;0 &lt; |\Delta x|&lt;\delta ならば\\
-&amp;&amp;&amp;|f(x+\Delta x)-f(x)|&lt;\epsilon\\
-&amp;&amp;&amp;|(\Delta x,\Delta y)|&lt;\delta ならば\\
-&amp;&amp;&amp;|\Delta x|\le|(\Delta x,\Delta y)|\
-({\because}三角不等式)\\
-&amp;&amp;&amp;{\therefore}\ |\Delta x|&lt;\delta\\
-&amp;&amp;&amp;{\therefore}\ \Delta x=0\ or\ 0&lt;|\Delta x|&lt;\delta\\
-&amp;&amp;&amp;0&lt;|\Delta x|&lt;\delta とすると\\
-&amp;&amp;&amp;|f(x+\Delta x)-f(x)|&lt;\epsilon\\
-&amp;&amp;&amp;\Delta x=0 とすると\\
-&amp;&amp;&amp;|f(x+\Delta x)-f(x)|=0&lt;\epsilon\\
-&amp;&amp;&amp;よって |(\Delta x,\Delta y)|&lt;\delta ならば |f(x+\Delta
-x)-f(x)|&lt;\epsilon\\
-&amp;&amp;&amp;よって \lim_{(\Delta x,\Delta y))\to (0,0)}f(x+\Delta
-x,y+\Delta y)=f(x,y)\\
-&amp;&amp;\textcolor{red}{(*2)}&amp;
-f,g が連続ならば fg は連続\\
-&amp;&amp;&amp;(証明)\\
-&amp;&amp;&amp;\lim_{(\Delta x,\Delta y)\to (0,0)}f(x+\Delta x,y+\Delta
-y)=f(x,y)\\
-&amp;&amp;&amp;\lim_{(\Delta x,\Delta y)\to (0,0)}g(x+\Delta x,y+\Delta
-y)=g(x,y)\\
-&amp;&amp;&amp;よって \\
-&amp;&amp;&amp;\lim_{(\Delta x,\Delta y)\to (0,0)}f(x+\Delta x,y+\Delta
-y)g(x+\Delta x,y+\Delta y)\\
-&amp;&amp;&amp;\quad\quad=\lim f(x+\Delta x,y+\Delta y)\lim g(x+\Delta
-x,y+\Delta y)\ ({\because}積の極限)\\
-&amp;&amp;&amp;\quad\quad=f(x,y)g(x,y)\\
-&amp;&amp;&amp;よって fg は連続
-\end{flalign*}\]</span></p>
+class="math inline">\(\textcolor{red}{\boldsymbol{x}}=\textcolor{red}{\boldsymbol{x}}(t),\
+\textcolor{red}{\boldsymbol{y}}=\textcolor{red}{\boldsymbol{y}}(t)\)</span>
+とする。<span class="math inline">\(t\)</span> は独立変数とする。<span
+class="math inline">\(\textcolor{red}{\boldsymbol{x}},
+\textcolor{red}{\boldsymbol{y}}\)</span> は微分可能とする</p>
+<p><span
+class="math inline">\(\textcolor{red}{\boldsymbol{dx}}=\textcolor{red}{\boldsymbol{x}}(t+dt)-\textcolor{red}{\boldsymbol{x}}(t)\)</span></p>
+<p><span
+class="math inline">\(\textcolor{red}{\boldsymbol{dy}}=\textcolor{red}{\boldsymbol{y}}(t+dt)-\textcolor{red}{\boldsymbol{y}}(t)\)</span>
+とする</p>
+<p><span class="math inline">\({\therefore}\displaystyle\lim_{dt\to 0}
+\textcolor{red}{\boldsymbol{dx}}= 0 \
+({\because}\textcolor{red}{\boldsymbol{x}}は連続)\)</span></p>
+<p><span class="math inline">\({\therefore}\displaystyle\lim_{dt\to 0}
+\textcolor{red}{\boldsymbol{dy}}= 0 \
+({\because}\textcolor{red}{\boldsymbol{y}}は連続)\)</span></p>
+<p><span class="math inline">\(\textcolor{red}{(1)}\)</span>
+の極限は経路によらないので</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;\lim_{dt\to 0}
+\frac{Z(\textcolor{red}{\boldsymbol{x}}+\textcolor{red}{\boldsymbol{dx}},\textcolor{red}{\boldsymbol{y}}+\textcolor{red}{\boldsymbol{dy}})-Z(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})
+      -\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dx}}-\displaystyle\Big(\frac{\partial
+Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
+     {\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}
+= 0 &amp;
+\end{flalign*}
+\]</span></p>
+<p><span
+class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(t)=Z(\textcolor{red}{\boldsymbol{x}}(t),\textcolor{red}{\boldsymbol{y}}(t))\)</span>
+とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\textcolor{red}{\boldsymbol{Z}}(t+dt)
+  &amp;=Z(\textcolor{red}{\boldsymbol{x}}(t+dt),\textcolor{red}{\boldsymbol{y}}(t+dt))
+&amp;\\
+  &amp;=Z(\textcolor{red}{\boldsymbol{x}}+\textcolor{red}{\boldsymbol{dx}},\textcolor{red}{\boldsymbol{y}}+\textcolor{red}{\boldsymbol{dy}})
+&amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;\lim_{dt\to 0}
+\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)
+      -\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dx}}-\displaystyle\Big(\frac{\partial
+Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
+     {\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}
+= 0 &amp;
+\end{flalign*}
+\]</span></p>
+<p>ここで</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}
+&amp;=\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{x}}(t+dt)-\textcolor{red}{\boldsymbol{x}}(t)}{dt}
+=\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\quad({\because}\
+\textcolor{red}{\boldsymbol{x}}は微分可能) &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}
+&amp;=\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{y}}(t+dt)-\textcolor{red}{\boldsymbol{y}}(t)}{dt}
+=\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\quad({\because}\
+\textcolor{red}{\boldsymbol{y}}は微分可能) &amp;
+\end{flalign*}
+\]</span></p>
+<p>なので</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\lim_{dt\to
+0}\frac{\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}{|dt|}
+&amp;= \lim_{dt\to
+0}\sqrt{\Big(\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}\Big)^2+\Big(\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}\Big)^2}
+&amp;\\
+&amp;= \sqrt{\Big(\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}\Big)^2+\Big(\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}\Big)^2}
+\quad \Big(\begin{array}{@{}l@{}}
+           {\because}\sqrt{x} は x&gt;0 で連続、x^2
+は\mathbb{R}で連続なので \\
+           \quad 合成関数の極限と和の極限より \end{array} \Big) &amp;\\
+&amp;=
+\sqrt{\Big(\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\Big)^2+\Big(\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\Big)^2}
+&amp;\\
+&amp;&lt; \infty
+\quad\Big({\because}微分が存在するので\Big|\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\Big|&lt;\infty,\
+\Big|\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\Big|&lt;\infty\Big)
+&amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;\lim_{dt\to 0}
+\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)
+      -\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dx}}-\displaystyle\Big(\frac{\partial
+Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
+     {\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}
+\frac{\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}{dt}
+= 0 &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(({\because}\ \lim f = 0,\ \lim
+|g|&lt;\infty ならば \lim fg = 0)\)</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;\lim_{dt\to 0}
+\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)
+      -\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dx}}-\displaystyle\Big(\frac{\partial
+Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
+     {dt}
+= 0 &amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)}{dt}
+= \displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}+\displaystyle\Big(\frac{\partial
+Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}
+\quad \Bigg(\begin{array}{@{}l@{}}
+  {\because}\lim の線型性より \\
+  \quad \lim(f+kg+lh)=a,\lim g=b,\lim h=cならば \\
+  \quad \lim f = a - kb - lc
+\end{array} \Bigg) &amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;\displaystyle\frac{d\textcolor{red}{\boldsymbol{Z}}}{dt}
+= \displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}+\displaystyle\Big(\frac{\partial
+Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}
+\quad({\because}\ 微分の定義) &amp;
+\end{flalign*}
+\]</span></p>
    </main>
 </div>
 

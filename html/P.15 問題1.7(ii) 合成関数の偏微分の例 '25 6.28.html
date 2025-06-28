@@ -8,8 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.11 数学の定理1.1
-f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25 5.17</title>
+  <title>P.15 問題1.7(ii) 合成関数の偏微分の例 '25 6.28</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -140,14 +139,14 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) '25 4.6.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.15 問題1.7(i) 合成関数の偏微分 '25 6.27.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.11 数学の定理1.1 f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.16 問題1.8 偏微分でつまづいたこと '25 6.25.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
@@ -162,70 +161,74 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
 </div>
 </nav>
 -->
-<h2 data-number="1.13" id="C1_P11_数学の定理1.1_20">P.11 数学の定理1.1
-f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25 5.17</h2>
+<h2 data-number="1.33" id="C1_P15_問1.7_20">P.15 問題1.7(ii)
+合成関数の偏微分の例 '25 6.28</h2>
+<p><span class="math inline">\(Z=x^2e^y\)</span> とする</p>
+<p><span class="math inline">\(\textcolor{red}{\boldsymbol{x}}(t)=t^3,\
+\textcolor{red}{\boldsymbol{y}}(t)=t^4\)</span> とする</p>
 <p><span
-class="math inline">\(fは\vec{a}\)</span>の近傍で連続的微分可能ならば</p>
-<p><span class="math inline">\(\vec{x}\to\vec{a}\)</span> で <span
-class="math inline">\(f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})=o(|\vec{x}-\vec{a}|)\)</span>である</p>
+class="math inline">\(\displaystyle\frac{d\textcolor{red}{\boldsymbol{Z}}}{dt}
+=\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}
++\displaystyle\Big(\frac{\partial Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\)</span>
+であることを確認する</p>
 <hr />
-<p>(証明)</p>
-<p><span class="math inline">\(x_1\)</span>の場合(<a
-href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) &#39;25 4.6.html#C1_P11_数学の定理1.1_10">別頁</a>)と同様に</p>
-<p><span class="math display">\[\begin{flalign*}
-\lim_{\vec{x}\to \vec{a}}
-\left|\frac{f(\vec{x})-f(x_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}\right|
-&amp;=0&amp;
-\end{flalign*}\]</span> である</p>
-<p><span class="math display">\[\begin{flalign*}
-g(x_1,\dots,x_m)&amp;=
-\frac{f(\vec{x})-f(x_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}&amp;
-\end{flalign*}\]</span> とする</p>
-<p><span class="math display">\[\begin{flalign*}
-\lim_{\vec{x}\to \vec{a}}|g(x_1,\dots,x_m)|&amp;=0&amp;
-\end{flalign*}\]</span> なので</p>
-<p>任意の<span class="math inline">\(\epsilon&gt;0\)</span>に対して<span
-class="math inline">\(|\vec{x}-\vec{a}|&lt;\delta\)</span>ならば <span
-class="math inline">\(|g(x_1,\dots,x_m)|&lt;\epsilon\)</span>である</p>
-<p>ここで</p>
-<p><span class="math display">\[\begin{flalign*}
-|(a_1,x_2,\dots,x_m)-\vec{a}|&amp;\le|\vec{x}-\vec{a}|\quad({\because}三角不等式)&amp;\\
-                         &amp;&lt;\delta&amp;
-\end{flalign*}\]</span> なので <span
-class="math inline">\(|g(a_1,x_2,\dots,x_m)|&lt;\epsilon\)</span>である</p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore}\lim_{\vec{x}\to \vec{a}}|g(a_1,x_2,\dots,x_m)|=0&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore}\lim_{\vec{x}\to \vec{a}}
-\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
-{|(a_1,x_2,\dots,x_m)-\vec{a}|}\right|=0&amp;
-\end{flalign*}\]</span></p>
-<div style="margin-bottom:2em;">
-
-</div>
-<p>ここで <span
-class="math inline">\(|(a_1,x_2,\dots,x_m)-\vec{a}|\le|\vec{x}-\vec{a}|\quad({\because}三角不等式)\)</span>
-なので</p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
-{|\vec{x}-\vec{a}|}\right| &amp; \\
-&amp;\quad\le
-\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
-{|(a_1,x_2,\dots,x_m)-\vec{a}|}\right| &amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore}\lim_{\vec{x}\to \vec{a}}
-\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}\right|
-=0\quad\textcolor{red}{(*1)}&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;|f|\le|g|,\lim g=0 ならば \lim f=0)
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore}f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})
-=o(|\vec{x}-\vec{a}|)&amp;
-\end{flalign*}\]</span></p>
+<p>(確認)</p>
+<p><span class="math inline">\(Z=x^2e^y\)</span> とする。<span
+class="math inline">\(x,\ y\)</span> は独立変数とする</p>
+<p><span class="math inline">\(\textcolor{red}{\boldsymbol{x}}(t)=t^3,\
+\textcolor{red}{\boldsymbol{y}}(t)=t^4\)</span> とする。<span
+class="math inline">\(t\)</span> は独立変数とする</p>
+<p><span
+class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(t)=Z(\textcolor{red}{\boldsymbol{x}}(t),\textcolor{red}{\boldsymbol{y}}(t))\)</span>
+とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\textcolor{red}{\boldsymbol{Z}}(t)
+&amp;=
+Z(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})
+= \textcolor{red}{\boldsymbol{x}}^2e^{\textcolor{red}{\boldsymbol{y}}}
+= (t^3)^2e^{t^4}
+= t^6e^{t^4} &amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\displaystyle\frac{d\textcolor{red}{\boldsymbol{Z}}}{dt}
+&amp;= 6t^5e^{t^4}+t^6 4t^3e^{t^4}
+=6t^5e^{t^4}+4t^9e^{t^4} &amp;
+\end{flalign*}
+\]</span></p>
+<p>また</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}
++\displaystyle\Big(\frac{\partial Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}
+&amp;=2\textcolor{red}{\boldsymbol{x}}e^{\textcolor{red}{\boldsymbol{y}}}
+3t^2+\textcolor{red}{\boldsymbol{x}}^2
+e^{\textcolor{red}{\boldsymbol{y}}} 4t^3 &amp;\\
+&amp;=2t^3e^{t^4}3t^2+(t^3)^2e^{t^4}4t^3 &amp;\\
+&amp;=6t^5e^{t^4}+4t^9e^{t^4} &amp;
+\end{flalign*}
+\]</span></p>
+<p>よって</p>
+<p><span
+class="math inline">\(\displaystyle\frac{d\textcolor{red}{\boldsymbol{Z}}}{dt}
+=\displaystyle\Big(\frac{\partial Z}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}
++\displaystyle\Big(\frac{\partial Z}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
+y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\)</span>
+である</p>
    </main>
 </div>
 

@@ -31,7 +31,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.15 問題1.7(i) 合成関数の微分 '25 6.27 {#C1_P15_問1.7_10}
+## P.15 問題1.7(i) 合成関数の偏微分 '25 6.27 {#C1_P15_問1.7_10}
 
 $Z=Z(x,y)$ とする。$x, y$ は独立変数とする
 
@@ -164,7 +164,11 @@ $$
 \end{flalign*}
 $$
 
-$(\cuz\ \lim f = 0,\ \lim |g|<\infty ならば \lim fg = 0)$
+$$
+\begin{flalign*}
+&&(\cuz\ \lim f = 0,\ \lim |g|<\infty ならば \lim fg = 0)&
+\end{flalign*}
+$$
 
 よって
 
@@ -185,9 +189,9 @@ $$
 &\limto{dt}{0}\frac{\Zr(t+dt)-\Zr(t)}{dt} 
 = \PARTIAL{Z}{x}{y}\atxy \DERIV{\xr}{t}+\PARTIAL{Z}{y}{x}\atxy \DERIV{\yr}{t}
 \quad \Bigg(\begin{array}{@{}l@{}}
-  \cuz \lim の線型性より \\ 
+  \cuz  \lim の線型性より \\ 
   \quad \lim(f+kg+lh)=a,\lim g=b,\lim h=cならば \\
-  \quad  \lim f = a - kb - lc 
+  \quad \lim f = a - kb - lc 
 \end{array} \Bigg) &
 \end{flalign*}
 $$

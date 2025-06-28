@@ -111,8 +111,7 @@ $\disp\limto{(x,y)}{(a,b)}f_{xy}(x',y')=f_{xy}(a,b)$
 よって
 $\disp\limto{(x,y)}{(a,b)}\frac{\D(x,y)}{(x-a)(y-b)}=f_{xy}(a,b)\quad(1)$
 
-VSPACE
-VSPACE
+---
 
 $\D(x,y)$ の右辺の順番をかえて
 
@@ -185,6 +184,8 @@ $\disp\limto{(x,y)}{(a,b)}f_{yx}(x',y')=f_{yx}(a,b)$
 
 よって
 $\disp\limto{(x,y)}{(a,b)}\frac{\D(x,y)}{(y-b)(x-a)}=f_{yx}(a,b)\quad(2)$
+
+---
 
 よって$(1),(2)$より
 

@@ -38,7 +38,7 @@ f_x&=\underset{xで微分}{f'}\quad\kome{1}&\\
 &=\frac{yx^4+4x^2y^3-y^5}{(x^2+y^2)^2}&
 \end{flalign*}$$
 
-よって$(x,y)\ne(0,0)$で$f_x$は存在する$(\cuz 公理:f_xは存在\iif f_x\in R)$
+よって$(x,y)\ne(0,0)$で$f_x$は存在する$(\cuz 公理:f_xは存在\iif f_x\in \mathbb{R})$
 
 $$\begin{flalign*}
 &&\red{(*1)}&f',f_xの定義より\\

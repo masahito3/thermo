@@ -119,11 +119,11 @@ id="toc-C1_P15_問1.6_20">P.15 問題1.6(iii) 偏微分の連鎖律 '25
 <li><a href="P.15 問題1.6(iv) 偏微分の連鎖律 &#39;25 6.25.html"
 id="toc-C1_P15_問1.6_30">P.15 問題1.6(iv) 偏微分の連鎖律 '25
 6.25</a></li>
-<li><a href="P.15 問題1.7(i) 合成関数の微分 &#39;25 6.27.html"
-id="toc-C1_P15_問1.7_10">P.15 問題1.7(i) 合成関数の微分 '25
+<li><a href="P.15 問題1.7(i) 合成関数の偏微分 &#39;25 6.27.html"
+id="toc-C1_P15_問1.7_10">P.15 問題1.7(i) 合成関数の偏微分 '25
 6.27</a></li>
-<li><a href="P.15 問題1.7(ii) 合成関数の微分の例 &#39;25 6.28.html"
-id="toc-C1_P15_問1.7_20">P.15 問題1.7(ii) 合成関数の微分の例 '25
+<li><a href="P.15 問題1.7(ii) 合成関数の偏微分の例 &#39;25 6.28.html"
+id="toc-C1_P15_問1.7_20">P.15 問題1.7(ii) 合成関数の偏微分の例 '25
 6.28</a></li>
 <li><a href="P.16 問題1.8 偏微分でつまづいたこと &#39;25 6.25.html"
 id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
@@ -146,7 +146,7 @@ id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.15 問題1.7(i) 合成関数の微分 '25 6.27.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.15 問題1.7(i) 合成関数の偏微分 '25 6.27.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
@@ -234,7 +234,9 @@ class="math inline">\(\textcolor{red}{\pmb{x_{i}}}\)</span>
 class="math inline">\({\textcolor{red}{\pmb{dx_{i}}}}=\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)\)</span>
 とする</p>
 <p><span class="math inline">\({\therefore}\displaystyle\lim_{d\xi_i\to
-0}{\textcolor{red}{\pmb{dx_{i}}}}=0\)</span> (<span
+0}{\textcolor{red}{\pmb{dx_{i}}}} =\displaystyle\lim_{d\xi_i\to
+0}\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)
+=0\)</span> (<span
 class="math inline">\({\because}\textcolor{red}{\pmb{x_{i}}}\)</span>
 は連続なので)</p>
 <p><span class="math inline">\(\textcolor{red}{(1)}\)</span>
@@ -289,21 +291,39 @@ n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 <p>ここで</p>
 <p><span class="math display">\[
 \begin{flalign*}
+\lim_{d\xi_i\to 0}\frac{{\textcolor{red}{\pmb{dx_{i}}}}}{d\xi_i}
+&amp;=\lim_{d\xi_i\to
+0}\frac{\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)}{d\xi_i}
+=\displaystyle\Big(\frac{\partial \textcolor{red}{\pmb{x_{i}}}}{\partial
+\xi_i}\Big)_{\xi_{j\ne i}}\ ({\because}\
+\textcolor{red}{\pmb{x_{i}}}は偏微分可能)&amp;
+\end{flalign*}
+\]</span></p>
+<p>なので</p>
+<p><span class="math display">\[
+\begin{flalign*}
 \lim_{d\xi_i\to 0}
-\frac{\sqrt{{\textcolor{red}{\pmb{dx_{1}}}}^2+\cdots+{\textcolor{red}{\pmb{dx_{n}}}}^2}}
-     {|d\xi_i|}
+\frac{\sqrt{{\textcolor{red}{\pmb{dx_{1}}}}^2+\cdots+{\textcolor{red}{\pmb{dx_{n}}}}^2}}{|d\xi_i|}
 &amp;= \lim_{d\xi_i\to
 0}\sqrt{\Big(\frac{{\textcolor{red}{\pmb{dx_{1}}}}}{d\xi_i}\Big)^2+\cdots+\Big(\frac{{\textcolor{red}{\pmb{dx_{n}}}}}{d\xi_i}\Big)^2}
 &amp;\\
+&amp;= \sqrt{\Big(\lim_{d\xi_i\to
+0}\frac{{\textcolor{red}{\pmb{dx_{1}}}}}{d\xi_i}\Big)^2+\cdots+\Big(\lim_{d\xi_i\to
+0}\frac{{\textcolor{red}{\pmb{dx_{n}}}}}{d\xi_i}\Big)^2}
+\quad \Big(\begin{array}{@{}l@{}}
+           {\because}\sqrt{x} は x&gt;0 で連続、x^2
+は\mathbb{R}で連続なので \\
+           \quad 合成関数の極限と和の極限より \end{array} \Big) &amp;\\
 &amp;=\sqrt{\displaystyle\Big(\frac{\partial
-\textcolor{red}{\pmb{x_{1}}}}{\partial
-\xi_i}\Big)_{}+\cdots+\displaystyle\Big(\frac{\partial
-\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{} } &amp;\\
+\textcolor{red}{\pmb{x_{1}}}}{\partial \xi_i}\Big)_{\xi_{j\ne
+i}}^2+\cdots+\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}^2 }
+&amp;\\
 &amp;&lt; \infty
-   \quad \Big({\because}合成関数の極限と\textcolor{red}{\pmb{x_{j}}}
-は偏微分可能なので \displaystyle\Big(\frac{\partial
-\textcolor{red}{\pmb{x_{j}}}}{\partial \xi_i}\Big)_{} &lt; \infty \Big)
-&amp;
+   \quad \Big({\because}\ 偏微分可能なので
+\Big|\displaystyle\Big(\frac{\partial
+\textcolor{red}{\pmb{x_{j}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}\Big|
+&lt; \infty \Big) &amp;
 \end{flalign*}
 \]</span></p>
 <p>よって</p>
@@ -347,50 +367,34 @@ n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 =0 &amp;
 \end{flalign*}
 \]</span></p>
-<p>ここで</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
-= \lim_{d\xi_i\to 0}
-  \frac{
-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)}
-       {d\xi_i}\ ({\because}\ 偏微分の定義)&amp;
-\end{flalign*}
-\]</span></p>
-<p>また</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\lim_{d\xi_i\to 0}\frac{{\textcolor{red}{\pmb{dx_{j}}}}}{d\xi_i}
-&amp;= \lim_{d\xi_i\to
-0}\frac{\textcolor{red}{\pmb{x_{j}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{j}}}(\xi_1,\cdots,\xi_n)}{d\xi_i}
-&amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{red}{\pmb{x_{j}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}} \
-({\because}\ \textcolor{red}{\pmb{x_{j}}}は偏微分可能なので) &amp;
-\end{flalign*}
-\]</span></p>
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp; \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
-- \displaystyle\Big(\frac{\partial
+\lim_{d\xi_i\to 0}
+\frac{
+\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)}{\d\xi_i}
+&amp;= \displaystyle\Big(\frac{\partial
 \textcolor{blue}{\boldsymbol{Z}}}{\partial x_1}\Big)_{x_{i\ne
 1}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 \\x_n=\textcolor{red}{\pmb{x_{n}}}}}\displaystyle\Big(\frac{\partial
 \textcolor{red}{\pmb{x_{1}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
-- \cdots
-- \displaystyle\Big(\frac{\partial
+  +\cdots
+  +\displaystyle\Big(\frac{\partial
 \textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
 n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 \\x_n=\textcolor{red}{\pmb{x_{n}}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
-= 0 &amp;
+\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}} &amp;
 \end{flalign*}
 \]</span></p>
-<p><span class="math inline">\(({\because}\ \lim f, \lim g
-が存在するならば \lim kf+lg = k\lim f+l\lim g)\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\Bigg(\begin{array}{@{}l@{}}
+  {\because}\lim の線型性より \\
+  \quad \lim(f+kg+lh)=a,\lim g=b,\lim h=cならば \\
+  \quad \lim f = a - kb - lc
+\end{array} \Bigg) &amp;
+\end{flalign*}
+\]</span></p>
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
@@ -406,7 +410,8 @@ n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 \textcolor{blue}{\boldsymbol{Z}}}{\partial x_n}\Big)_{x_{i\ne
 n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 \\x_n=\textcolor{red}{\pmb{x_{n}}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}} &amp;
+\textcolor{red}{\pmb{x_{n}}}}{\partial \xi_i}\Big)_{\xi_{j\ne i}}
+\quad({\because}\ 偏微分の定義)&amp;
 \end{flalign*}
 \]</span></p>
    </main>

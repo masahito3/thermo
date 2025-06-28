@@ -87,7 +87,9 @@ $\xr{i}=\xr{i}(\xilist)$ とする。$\xilist$ は独立変数とする。$\xr{i
 
 $\dxr{i}=\xr{i}(\xidxilist)-\xr{i}(\xilist)$ とする
 
-$\so \disp\limto{d\xi_i}{0}\dxr{i}=0$\ ($\cuz \xr{i}$ は連続なので)
+$\so \disp\limto{d\xi_i}{0}\dxr{i}
+=\disp\limto{d\xi_i}{0}\xr{i}(\xidxilist)-\xr{i}(\xilist)
+=0$\ ($\cuz \xr{i}$ は連続なので)
 
 $\red{(1)}$ の極限は経路によらないので
 
@@ -125,13 +127,26 @@ $$
 
 $$
 \begin{flalign*}
+\limto{d\xi_i}{0}\frac{\dxr{i}}{d\xi_i}
+&=\limto{d\xi_i}{0}\frac{\xr{i}(\xidxilist)-\xr{i}(\xilist)}{d\xi_i} 
+=\PARTIAL{\xr{i}}{\xi_i}{\xi_{j\ne i}}\ (\cuz\ \xr{i}は偏微分可能)&
+\end{flalign*}
+$$
+
+なので
+
+$$
+\begin{flalign*}
 \limto{d\xi_i}{0}
-\frac{\sqrt{\dxr{1}^2+\cdots+\dxr{n}^2}}
-     {|d\xi_i|} 
+\frac{\sqrt{\dxr{1}^2+\cdots+\dxr{n}^2}}{|d\xi_i|} 
 &= \limto{d\xi_i}{0}\sqrt{\Big(\frac{\dxr{1}}{d\xi_i}\Big)^2+\cdots+\Big(\frac{\dxr{n}}{d\xi_i}\Big)^2} &\\
-&=\sqrt{\PARTIAL{\xr{1}}{\xi_i}{}+\cdots+\PARTIAL{\xr{n}}{\xi_i}{} } &\\
+&= \sqrt{\Big(\limto{d\xi_i}{0}\frac{\dxr{1}}{d\xi_i}\Big)^2+\cdots+\Big(\limto{d\xi_i}{0}\frac{\dxr{n}}{d\xi_i}\Big)^2}
+\quad \Big(\begin{array}{@{}l@{}}
+           \cuz \sqrt{x} は x>0 で連続、x^2 は\mathbb{R}で連続なので \\
+           \quad 合成関数の極限と和の極限より \end{array} \Big) &\\
+&=\sqrt{\PARTIAL{\xr{1}}{\xi_i}{\xi_{j\ne i}}^2+\cdots+\PARTIAL{\xr{n}}{\xi_i}{\xi_{j\ne i}}^2 } &\\
 &< \infty
-   \quad \Big(\cuz 合成関数の極限と\xr{j} は偏微分可能なので \PARTIAL{\xr{j}}{\xi_i}{} < \infty \Big) &
+   \quad \Big(\cuz\ 偏微分可能なので \Big|\PARTIAL{\xr{j}}{\xi_i}{\xi_{j\ne i}}\Big| < \infty \Big) &
 \end{flalign*}
 $$
 
@@ -151,7 +166,11 @@ $$
 }
 $$
 
-($\cuz\ \lim f=0, \lim |g| < \infty$ ならば $\lim fg = 0$ )
+$$
+\begin{flalign*}
+&&(\cuz\ \lim f=0, \lim |g| < \infty ならば \lim fg = 0)&
+\end{flalign*}
+$$
 
 よって
 
@@ -165,40 +184,27 @@ $$
 \end{flalign*}
 $$
 
-ここで
-
-$$
-\begin{flalign*}
-&\PARTIAL{\Zr}{\xi_i}{\xi_{j\ne i}} 
-= \limto{d\xi_i}{0}
-  \frac{ \Zr(\xidxilist)-\Zr(\xilist)}
-       {d\xi_i}\ (\cuz\ 偏微分の定義)&
-\end{flalign*}
-$$
-
-また
-
-$$
-\begin{flalign*}
-\limto{d\xi_i}{0}\frac{\dxr{j}}{d\xi_i}
-&= \limto{d\xi_i}{0}\frac{\xr{j}(\xidxilist)-\xr{j}(\xilist)}{d\xi_i} &\\
-&= \PARTIAL{\xr{j}}{\xi_i}{\xi_{j\ne i}} \ (\cuz\ \xr{j}は偏微分可能なので) &
-\end{flalign*}
-$$
-
 よって
 
 $$
 \begin{flalign*}
-& \PARTIAL{\Zr}{\xi_i}{\xi_{j\ne i}}
-- \PARTIAL{\Zb}{x_1}{x_{i\ne 1}}\atx \PARTIAL{\xr{1}}{\xi_i}{\xi_{j\ne i}}
-- \cdots
-- \PARTIAL{\Zb}{x_n}{x_{i\ne n}}\atx \PARTIAL{\xr{n}}{\xi_i}{\xi_{j\ne i}}
-= 0 &
+\limto{d\xi_i}{0}
+\frac{ \Zr(\xidxilist)-\Zr(\xilist)}{\d\xi_i} 
+&= \PARTIAL{\Zb}{x_1}{x_{i\ne 1}}\atx \PARTIAL{\xr{1}}{\xi_i}{\xi_{j\ne i}}
+  +\cdots
+  +\PARTIAL{\Zb}{x_n}{x_{i\ne n}}\atx \PARTIAL{\xr{n}}{\xi_i}{\xi_{j\ne i}} &
 \end{flalign*}
 $$
 
-$(\cuz\ \lim f, \lim g が存在するならば \lim kf+lg = k\lim f+l\lim g)$
+$$
+\begin{flalign*}
+&&\Bigg(\begin{array}{@{}l@{}}
+  \cuz  \lim の線型性より \\ 
+  \quad \lim(f+kg+lh)=a,\lim g=b,\lim h=cならば \\
+  \quad \lim f = a - kb - lc 
+\end{array} \Bigg) &
+\end{flalign*}
+$$
 
 よって
 
@@ -207,6 +213,7 @@ $$
 & \PARTIAL{\Zr}{\xi_i}{\xi_{j\ne i}}
 = \PARTIAL{\Zb}{x_1}{x_{i\ne 1}}\atx \PARTIAL{\xr{1}}{\xi_i}{\xi_{j\ne i}}
   +\cdots
-  +\PARTIAL{\Zb}{x_n}{x_{i\ne n}}\atx \PARTIAL{\xr{n}}{\xi_i}{\xi_{j\ne i}} &
+  +\PARTIAL{\Zb}{x_n}{x_{i\ne n}}\atx \PARTIAL{\xr{n}}{\xi_i}{\xi_{j\ne i}} 
+\quad(\cuz\ 偏微分の定義)&
 \end{flalign*}
 $$
