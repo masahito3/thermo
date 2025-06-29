@@ -8,8 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.11 数学の定理1.1
-f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25 5.17</title>
+  <title>P.32 問題2.1 '25 6.29</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -144,21 +143,21 @@ id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) '25 4.6.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="第2章.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.11 数学の定理1.1 f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <span class="button icon is-large"><i class="fas fa-lg fa-angle-right"></i></span>
       </div>
 </nav>
 <!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
+<span class="navlink-label">Up:</span> <a href="第2章.html" accesskey="u" rel="up">第2章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
@@ -166,70 +165,49 @@ id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
 </div>
 </nav>
 -->
-<h2 data-number="1.13" id="C1_P11_数学の定理1.1_20">P.11 数学の定理1.1
-f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25 5.17</h2>
+<h2 data-number="2.1" id="C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</h2>
+<p><span class="math inline">\(f(x,y)\)</span> を考える。<span
+class="math inline">\(x,\ y\)</span> は独立変数とする</p>
 <p><span
-class="math inline">\(fは\vec{a}\)</span>の近傍で連続的微分可能ならば</p>
-<p><span class="math inline">\(\vec{x}\to\vec{a}\)</span> で <span
-class="math inline">\(f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})=o(|\vec{x}-\vec{a}|)\)</span>である</p>
+class="math inline">\(\textcolor{red}{U^{(1)}}=U^{(1)}\)</span></p>
+<p><span
+class="math inline">\(U=U^{(1)}+\textcolor{red}{U^{(2)}}\)</span>
+とする。<span class="math inline">\(U,\ U^{(1)}\)</span>
+は独立変数とする</p>
+<p><span
+class="math inline">\(\textcolor{red}{Z}=f(\textcolor{red}{U^{(1)}},\
+\textcolor{red}{U^{(2)}})\)</span> とする</p>
+<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
+\textcolor{red}{Z}}{\partial U^{(1)}}\Big)_{U}\)</span> を求める</p>
 <hr />
-<p>(証明)</p>
-<p><span class="math inline">\(x_1\)</span>の場合(<a
-href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) &#39;25 4.6.html#C1_P11_数学の定理1.1_10">別頁</a>)と同様に</p>
-<p><span class="math display">\[\begin{flalign*}
-\lim_{\vec{x}\to \vec{a}}
-\left|\frac{f(\vec{x})-f(x_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}\right|
-&amp;=0&amp;
-\end{flalign*}\]</span> である</p>
-<p><span class="math display">\[\begin{flalign*}
-g(x_1,\dots,x_m)&amp;=
-\frac{f(\vec{x})-f(x_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}&amp;
-\end{flalign*}\]</span> とする</p>
-<p><span class="math display">\[\begin{flalign*}
-\lim_{\vec{x}\to \vec{a}}|g(x_1,\dots,x_m)|&amp;=0&amp;
-\end{flalign*}\]</span> なので</p>
-<p>任意の<span class="math inline">\(\epsilon&gt;0\)</span>に対して<span
-class="math inline">\(|\vec{x}-\vec{a}|&lt;\delta\)</span>ならば <span
-class="math inline">\(|g(x_1,\dots,x_m)|&lt;\epsilon\)</span>である</p>
-<p>ここで</p>
-<p><span class="math display">\[\begin{flalign*}
-|(a_1,x_2,\dots,x_m)-\vec{a}|&amp;\le|\vec{x}-\vec{a}|\quad({\because}三角不等式)&amp;\\
-                         &amp;&lt;\delta&amp;
-\end{flalign*}\]</span> なので <span
-class="math inline">\(|g(a_1,x_2,\dots,x_m)|&lt;\epsilon\)</span>である</p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore}\lim_{\vec{x}\to \vec{a}}|g(a_1,x_2,\dots,x_m)|=0&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore}\lim_{\vec{x}\to \vec{a}}
-\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
-{|(a_1,x_2,\dots,x_m)-\vec{a}|}\right|=0&amp;
-\end{flalign*}\]</span></p>
-<div style="margin-bottom:2em;">
-
-</div>
-<p>ここで <span
-class="math inline">\(|(a_1,x_2,\dots,x_m)-\vec{a}|\le|\vec{x}-\vec{a}|\quad({\because}三角不等式)\)</span>
-なので</p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
-{|\vec{x}-\vec{a}|}\right| &amp; \\
-&amp;\quad\le
-\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}
-{|(a_1,x_2,\dots,x_m)-\vec{a}|}\right| &amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore}\lim_{\vec{x}\to \vec{a}}
-\left|\frac{f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})}{|\vec{x}-\vec{a}|}\right|
-=0\quad\textcolor{red}{(*1)}&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;|f|\le|g|,\lim g=0 ならば \lim f=0)
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;{\therefore}f(a_1,x_2,\dots,x_m)-f(a_1,a_2,\dots,x_m)-(x_2-a_2)f_{x_2}(\vec{a})
-=o(|\vec{x}-\vec{a}|)&amp;
-\end{flalign*}\]</span></p>
+<p>(解答)</p>
+<p><span class="math inline">\(f(x,y)\)</span> を考える。<span
+class="math inline">\(x,\ y\)</span> は独立変数とする</p>
+<p><span
+class="math inline">\(\textcolor{red}{U^{(1)}}=U^{(1)}\)</span></p>
+<p><span
+class="math inline">\(U=U^{(1)}+\textcolor{red}{U^{(2)}}\)</span>
+とする。<span class="math inline">\(U,\ U^{(1)}\)</span>
+は独立変数とする</p>
+<p><span
+class="math inline">\(\textcolor{red}{Z}=f(\textcolor{red}{U^{(1)}},\
+\textcolor{red}{U^{(2)}})\)</span> とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\displaystyle\Big(\frac{\partial \textcolor{red}{Z}}{\partial
+U^{(1)}}\Big)_{U}
+&amp;=\displaystyle\Big(\frac{\partial f}{\partial
+x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{U^{(1)}}\\
+y=\textcolor{red}{U^{(2)}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{U^{(1)}}}{\partial U^{(1)}}\Big)_{U}
+  +\displaystyle\Big(\frac{\partial f}{\partial
+y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{U^{(1)}}\\
+y=\textcolor{red}{U^{(2)}}}}\displaystyle\Big(\frac{\partial
+\textcolor{red}{U^{(2)}}}{\partial U^{(1)}}\Big)_{U} &amp;\\
+&amp;=f_x(\textcolor{red}{U^{(1)}},\textcolor{red}{U^{(2)}})-f_y(\textcolor{red}{U^{(1)}},\textcolor{red}{U^{(2)}})
+&amp;
+\end{flalign*}
+\]</span></p>
    </main>
 </div>
 

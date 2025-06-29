@@ -129,7 +129,11 @@ id="toc-C1_P15_問1.7_20">P.15 問題1.7(ii) 合成関数の偏微分の例 '25
 id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
 6.25</a></li>
 </ul></li>
-<li><a href="第2章.html" id="toc-C2">第2章</a></li>
+<li><a href="第2章.html" id="toc-C2">第2章</a>
+<ul class="menu-list" >
+<li><a href="P.32 問題2.1 &#39;25 6.29.html"
+id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
+</ul></li>
 </ul>
      </nav>
      </div>
@@ -339,7 +343,9 @@ x^n,\ a_n=\frac{1}{n!}\)</span>とする</p>
 <p><span
 class="math inline">\(\displaystyle-\frac{1}{x^2}=\sum_{m=0}^{\infty}
 s_m(x-a)^n, \ s_m=(-1)^{m+1}\frac{m+1}{a^{m+2}}\)</span> とする</p>
-<p>べき級数の合成(別紙) より</p>
+<p>べき級数の合成<a
+href="P.12 補足 べき級数の合成 &#39;25 6.1.html#C1_P12_補足_70">(別頁)</a>
+より</p>
 <p><span
 class="math inline">\(\displaystyle\sum_{m=0}^{\infty}|s_m(x-a)^m|&lt;\infty\)</span>
 ならば</p>
@@ -383,21 +389,21 @@ d_p &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
 \end{flalign*}\]</span></p>
 <p><span class="math inline">\(\displaystyle e^{-\frac{1}{x^2}}\)</span>
 は <span class="math inline">\(a\ne0\)</span>
-を中心とするべき級数であらわされる。よって解析的である。<br />
-<span class="math inline">\(a\ne0,\ |x-a|&lt;|a|\)</span> において <span
-class="math inline">\(-\frac{1}{x^2}\)</span> と <span
+を中心とするべき級数であらわされる。よって解析的である。</p>
+<p><span class="math inline">\(x\ne0\)</span> で <span
+class="math inline">\(f(x)=\displaystyle e^{-\frac{1}{x^2}}\)</span>
+なので <span class="math inline">\(x\ne0\)</span> で <span
+class="math inline">\(f(x)\)</span> は解析的である。</p>
+<p>(収束性について)</p>
+<p><span class="math inline">\(a\ne0,\ |x-a|&lt;|a|\)</span> において
+<span class="math inline">\(-\frac{1}{x^2}\)</span> と <span
 class="math inline">\(e^x\)</span>
 の級数は絶対収束するので、コーシー積の <span
 class="math inline">\(e^{-\frac{1}{x^2}}\)</span>
-の級数も絶対収束する<br />
-(注)「収束半径＝一番近い特異点までの距離」は実関数では成立しないので簡単に収束半径
-<span class="math inline">\(|a|\)</span> とは言えない<br />
-<span class="math inline">\(x\ne0\)</span> で <span
-class="math inline">\(f(x)=\displaystyle e^{-\frac{1}{x^2}}\)</span>
-なので <span class="math inline">\(x\ne0\)</span> で <span
-class="math inline">\(f(x)\)</span> は解析的である。<br />
-<br />
-最初の3項を求めてみる</p>
+の級数も絶対収束する</p>
+<p>(注)「収束半径＝一番近い特異点までの距離」は実関数では成立しないので簡単に収束半径
+<span class="math inline">\(|a|\)</span> とは言えない</p>
+<p>(最初の3項を求めてみる)</p>
 <p><span class="math display">\[\begin{flalign*}
 d_0 &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^0
@@ -423,7 +429,7 @@ d_1 &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
        \sum_{n=0}^{\infty}\frac{1}{(n-1)!}
        \Big(\frac{-1}{a^2}\Big)^{n-1}
        \ \left(\begin{array}{@{}l@{}}
-               {\because}別紙:べき級数の合成より dp は絶対収束する \\
+               {\because}(別頁):べき級数の合成より dp は絶対収束する \\
                \quad なので線型性をもつ \\
            \end{array} \right) &amp;\\
     &amp;= \frac{1}{a^3}e^{-\frac{1}{a^2}} &amp;\\
