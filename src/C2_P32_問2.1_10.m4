@@ -33,7 +33,7 @@ $\Uor=\Uo$
 
 $U=\Uo+\Utr$ とする。$U,\ \Uo$ は独立変数とする
 
-$\Zr=f(\Uor,\ \Utr)$ とする
+$\Zr(\Uo,U)=f(\Uor,\ \Utr)$ とする
 
 $\PARTIAL{\Zr}{\Uo}{U}$ を求める
 
@@ -47,7 +47,7 @@ $\Uor=\Uo$
 
 $U=\Uo+\Utr$ とする。$U,\ \Uo$ は独立変数とする
 
-$\Zr=f(\Uor,\ \Utr)$ とする
+$\Zr(\Uo,U)=f(\Uor,\ \Utr)$ とする
 
 $$
 \begin{flalign*}

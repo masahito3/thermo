@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.12 数学の定理1.2 fxy=fyx '25 4,8</title>
+  <title>P.36 o(V)/V=o(1) '25 6.30</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -153,21 +153,21 @@ o(V)/V=o(1) '25 6.30</a></li>
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.12 数学の定理1.2 n階までの導関数は微分の順序によらない '25 4.8.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.34 (2.25) '25 6.30.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.12 補足 x≠0でf(x)は連続 '25 4.23.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.37 (2.32) '25 7.1.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
+<span class="navlink-label">Up:</span> <a href="第2章.html" accesskey="u" rel="up">第2章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
@@ -175,179 +175,24 @@ o(V)/V=o(1) '25 6.30</a></li>
 </div>
 </nav>
 -->
-<h2 data-number="1.16" id="C1_P12_数学の定理1.2_20">P.12 数学の定理1.2
-fxy=fyx '25 4,8</h2>
-<p>(2変数の場合)</p>
-<p>ある開領域で <span class="math inline">\(f_{xy},f_{yx}\)</span>
-が連続ならば <span class="math inline">\(f_{xy}=f_{yx}\)</span>
-である</p>
+<h2 data-number="2.5" id="C2_P36_10">P.36 o(V)/V=o(1) '25 6.30</h2>
+<p><span
+class="math inline">\(\displaystyle\frac{o(V)}{V}=o(1)\)</span></p>
 <hr />
 <p>(証明)</p>
-<p>領域内の任意の点 <span class="math inline">\((a,b), (x,y)\)</span>
-とする</p>
 <p><span
-class="math inline">\(\Delta(x,y)=(f(x,y)-f(x,b))-(f(a,y)-f(a,b))\)</span>とする</p>
-<p><span class="math inline">\(F(x) = f(x,y)-f(x,b)\)</span>とすると</p>
-<p><span class="math inline">\(\Delta(x,y)=F(x)-F(a)\)</span></p>
-<p><img src="images/C1_P12_数学の定理1.2_20図10.svg" /></p>
-<p>領域内で <span class="math inline">\(f\)</span> は連続なので <span
-class="math inline">\(xの区間[a,x]\)</span> で<span
-class="math inline">\(f(x,y),f(x,b)\)</span>は連続</p>
-<p>よって<span class="math inline">\(F(x)\)</span>は <span
-class="math inline">\(xの区間[a,x]\)</span> で連続 <span
-class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
-<p>領域内で <span class="math inline">\(f\)</span> は偏微分可能なので
-<span class="math inline">\(xの区間(a,x)\)</span> で<span
-class="math inline">\(f(x,y),f(x,b)\)</span>は<span
-class="math inline">\(x\)</span> で微分可能</p>
-<p>よって<span class="math inline">\(F(x)\)</span>は <span
-class="math inline">\(x の区間 (a,x)\)</span> で<span
-class="math inline">\(x\)</span> で微分可能<span
-class="math inline">\(\quad\textcolor{red}{(*2)}\)</span></p>
-<p>よって平均値の定理より</p>
-<p><span class="math display">\[\begin{flalign*}
-\Delta(x,y)&amp;=F(x)-F(a)&amp;\\
-        &amp;=F&#39;(a+(x-a)\theta_1)(x-a),\ 0&lt;\theta_1&lt;1 &amp;\\
-        &amp;=(f_x(a+(x-a)\theta_1,y)-f_x(a+(x-a)\theta_1,b))(x-a)\quad\textcolor{red}{(*3)}
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;f,g が連続ならば f+g も連続\\
-&amp;&amp;\textcolor{red}{(*2)}&amp;f,g が微分可能ならば f+g
-も微分可能\\
-&amp;&amp;\textcolor{red}{(*3)}&amp;f_{xy}が存在するならばx,y は独立\\
-&amp;&amp;&amp;x,yが独立ならば f_x=\underset{xで微分}{f&#39;}
-\end{flalign*}\]</span></p>
-<p>領域内で<span class="math inline">\(f_x\)</span>は連続かつ<span
-class="math inline">\(y\)</span>で偏微分可能 <span
-class="math inline">\(({\because}f_{xy}が存在するので)\)</span></p>
-<p>よって <span class="math inline">\(f_x(a+(x-a)\theta_1,y)\)</span>は
-<span class="math inline">\(yの区間[b,y]\)</span>で連続かつ<span
-class="math inline">\(区間(b,y)\)</span>で<span
-class="math inline">\(y\)</span>で微分可能</p>
-<p>よって平均値の定理より</p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;f_x(a+(x-a)\theta_1,y)-f_x(a+(x-a)\theta_1,b) &amp;\\
-&amp;\quad\quad=f_{xy}(a+(x-a)\theta_1,b+(y-b)\theta_2)(x-b),\
-0&lt;\theta_2&lt;1\quad\textcolor{red}{(*4)}&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*4)}&amp;x,yは独立なので\\
-&amp;&amp;&amp;f_{xy}=\underset{yで微分}{f&#39;_x}
-\end{flalign*}\]</span></p>
-<p>よって</p>
-<p><span class="math display">\[\begin{flalign*}
-\Delta(x,y)&amp;=f_{xy}(a+(x-a)\theta_1,b+(y-b)\theta_2)(x-a)(x-b)&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math display">\[\begin{flalign*}
-x&#39;&amp;=a+(x-a)\theta_1&amp;\\
-y&#39;&amp;=b+(y-b)\theta_2&amp;
-\end{flalign*}\]</span></p>
-<p>とすると</p>
-<p><span class="math display">\[\begin{flalign*}
-\frac{\Delta(x,y)}{(x-a)(x-b)}&amp;=f_{xy}(x&#39;,y&#39;)&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math inline">\(f_{xy}\)</span> は連続なので</p>
-<p><span class="math display">\[\begin{flalign*}
-\lim_{(x,y)\to (a,b)}f_{xy}(x,y)&amp;=f_{xy}(a,b)&amp;
-\end{flalign*}\]</span></p>
-<p>よって任意の <span class="math inline">\(\epsilon\)</span>
-に対して</p>
-<p><span class="math inline">\(|(x,y)-(a,b)|&lt;\delta\)</span> ならば
-<span
-class="math inline">\(|f_{xy}(x,y)-f_{xy}(a,b)|&lt;\epsilon\)</span></p>
-<p>また</p>
-<p><span class="math display">\[\begin{flalign*}
-|(x&#39;,y&#39;)-(a,b)|&amp;=\sqrt{(a+(x-a)\theta_1-a)^2+(b+(y-b)\theta_2-b)^2}&amp;\\
-&amp;=\sqrt{(x-a)^2\theta_1^2+(y-b)^2\theta_2^2}&amp;\\
-&amp;&lt;|(x,y)-(a,b)|\quad({\because}\ 0&lt;\theta_1&lt;1,\
-0&lt;\theta_2&lt;1)&amp;
-\end{flalign*}\]</span></p>
-<p>よって<span
-class="math inline">\(|(x&#39;,y&#39;)-(a,b)|&lt;\delta\)</span>なので
-<span
-class="math inline">\(|f_{xy}(x&#39;,y&#39;)-f_{xy}(a,b)|&lt;\epsilon\)</span></p>
-<p>よって <span class="math inline">\(\displaystyle\lim_{(x,y)\to
-(a,b)}f_{xy}(x&#39;,y&#39;)=f_{xy}(a,b)\)</span></p>
-<p>よって <span class="math inline">\(\displaystyle\lim_{(x,y)\to
-(a,b)}\frac{\Delta(x,y)}{(x-a)(y-b)}=f_{xy}(a,b)\quad(1)\)</span></p>
-<hr />
-<p><span class="math inline">\(\Delta(x,y)\)</span>
-の右辺の順番をかえて</p>
+class="math inline">\(f(V)=\displaystyle\frac{o(V)}{V}\)</span></p>
+<p>とする</p>
+<p><span class="math inline">\(o(V)=Vf(V)\)</span></p>
+<p><span class="math inline">\({\therefore}\displaystyle\lim_{V\to
+\infty}\frac{Vf(V)}{V}=0\)</span></p>
+<p><span class="math inline">\({\therefore}\displaystyle\lim_{V\to
+\infty}f(V)=0\)</span></p>
+<p><span class="math inline">\({\therefore}\displaystyle\lim_{V\to
+\infty}\frac{f(V)}{1}=0\)</span></p>
+<p><span class="math inline">\({\therefore}f(V)=o(1)\)</span></p>
 <p><span
-class="math inline">\(\Delta(x,y)=(f(x,y)-f(a,y))-(f(x,b)-f(a,b))\)</span>とする</p>
-<p><span class="math inline">\(G(y)=f(x,y)-f(a,y)\)</span>とすると</p>
-<p><span class="math inline">\(\Delta(x,y)=G(y)-G(b)\)</span></p>
-<p><img src="images/C1_P12_数学の定理1.2_20図20.svg" /></p>
-<p><span class="math inline">\(f\)</span>は領域で連続なので<span
-class="math inline">\(区間[b,y]\)</span>で<span
-class="math inline">\(f(x,y),f(a,y)\)</span>は連続</p>
-<p>よって<span class="math inline">\(G(y)\)</span>は<span
-class="math inline">\(区間[b,y]\)</span>で連続 <span
-class="math inline">\(({\because}f,gが連続ならばf+gは連続)\)</span></p>
-<p><span class="math inline">\(f\)</span>は領域で偏微分可能なので<span
-class="math inline">\(区間(b,y)\)</span>で<span
-class="math inline">\(f(x,y),f(a,y)\)</span>は<span
-class="math inline">\(y\)</span>で微分可能</p>
-<p><span
-class="math inline">\(({\because}x,yが独立なのでf_y=\underset{yで微分}{f&#39;})\)</span></p>
-<p>よって<span class="math inline">\(G(y)\)</span> は<span
-class="math inline">\(区間(b,y)\)</span>で<span
-class="math inline">\(y\)</span>で微分可能 <span
-class="math inline">\(({\because}(f+g)&#39;=f&#39;+g&#39;)\)</span></p>
-<p>よって平均値の定理より</p>
-<p><span class="math display">\[\begin{flalign*}
-\Delta(x,y)&amp;=G&#39;(b+(y-b)\theta_3)(y-b),\
-0&lt;\theta_3&lt;1&amp;\\
-       &amp;=(f_y(x,b+(y-b)\theta_3)-f_y(a,b+(y-b)\theta_3))(y-b)\quad({\because}f_y=\underset{yで微分}{f&#39;})&amp;
-\end{flalign*}\]</span></p>
-<p>領域内で<span class="math inline">\(f_y\)</span>は連続かつ<span
-class="math inline">\(x\)</span>で偏微分可能なので</p>
-<p><span class="math inline">\(f_y(x,b+(y-b)\theta_3)\)</span>は<span
-class="math inline">\(区間[a,x]\)</span>で連続かつ<span
-class="math inline">\(区間(a,x)\)</span>で<span
-class="math inline">\(x\)</span>で微分可能 <span
-class="math inline">\(({\because}x,yが独立ならばf_{yx}=\underset{xで微分}{f_y&#39;})\)</span></p>
-<p>よって平均値の定理より</p>
-<p><span
-class="math inline">\(\Delta(x,y)=f_{yx}(a+(x-a)\theta_4,b+(y-b)\theta_3)(y-b)(x-a),\
-0&lt;\theta_4&lt;1\)</span></p>
-<p><span class="math display">\[\begin{flalign*}
-x&#39;&amp;=a+(x-a)\theta_4&amp;\\
-y&#39;&amp;=b+(y-b)\theta_3&amp;
-\end{flalign*}\]</span> とすると</p>
-<p><span
-class="math inline">\(\Delta(x,y)=f_{yx}(x&#39;,y&#39;)(y-b)(x-a)\)</span></p>
-<p>よって <span
-class="math inline">\(\displaystyle\frac{\Delta(x,y)}{(y-b)(x-a)}=f_{yx}(x&#39;,y&#39;)\)</span></p>
-<p><span class="math inline">\(f_{yx}\)</span>は連続なので</p>
-<p><span class="math inline">\(\displaystyle\lim_{(x,y)\to
-(a,b)}f_{yx}(x,y)=f_{yx}(a,b)\)</span></p>
-<p>よって任意の <span class="math inline">\(\epsilon\)</span>
-に対して</p>
-<p><span class="math inline">\(|(x,y)-(a,b)|&lt;\delta\)</span> ならば
-<span
-class="math inline">\(|f_{yx}(x,y)-f_{yx}(a,b)|&lt;\epsilon\)</span></p>
-<p>また</p>
-<p><span class="math display">\[\begin{flalign*}
-|(x&#39;,y&#39;)-(a,b)|&amp;=\sqrt{(a+(x-a)\theta_4-a)^2+(b+(y-b)\theta_3-b)^2}&amp;\\
-               &amp;=\sqrt{(x-a)^2\theta_4^2+(y-b)^2\theta_3^2}&amp;\\
-           &amp;&lt;|(x,y)-(a,b)|\quad({\because}\
-0&lt;\theta_3&lt;1,0&lt;\theta_4&lt;1)&amp;
-\end{flalign*}\]</span></p>
-<p>よって <span
-class="math inline">\(|(x&#39;,y&#39;)-(a,b)|&lt;\delta\)</span>
-なので</p>
-<p><span
-class="math inline">\(|f_{yx}(x&#39;,y&#39;)-f_{yx}(a,b)|&lt;\epsilon\)</span></p>
-<p>よって <span class="math inline">\(\displaystyle\lim_{(x,y)\to
-(a,b)}f_{yx}(x&#39;,y&#39;)=f_{yx}(a,b)\)</span></p>
-<p>よって <span class="math inline">\(\displaystyle\lim_{(x,y)\to
-(a,b)}\frac{\Delta(x,y)}{(y-b)(x-a)}=f_{yx}(a,b)\quad(2)\)</span></p>
-<hr />
-<p>よって<span class="math inline">\((1),(2)\)</span>より</p>
-<p><span class="math inline">\(f_{xy}(a,b)=f_{yx}(a,b)\)</span></p>
-<p><span class="math inline">\(a,b\)</span>は任意なので</p>
-<p><span class="math inline">\(f_{xy}(x,y)=f_{yx}(x,y)\)</span></p>
+class="math inline">\({\therefore}\displaystyle\frac{o(V)}{V}=o(1)\)</span></p>
    </main>
 </div>
 
