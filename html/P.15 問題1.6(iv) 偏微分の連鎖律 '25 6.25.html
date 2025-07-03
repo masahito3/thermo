@@ -139,10 +139,17 @@ id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
 (2.24) '25 6.30</a></li>
 <li><a href="P.34 (2.25) &#39;25 6.30.html" id="toc-C2_P34_2.25_10">P.34
 (2.25) '25 6.30</a></li>
+<li><a href="P.35 (2.25.2):(2.25)の示強変数の場合 &#39;25 7.2.html"
+id="toc-C2_P35_2.25.2_10">P.35 (2.25.2):(2.25)の示強変数の場合 '25
+7.2</a></li>
 <li><a href="P.36 o(V)V=o(1) &#39;25 6.30.html" id="toc-C2_P36_10">P.36
 o(V)/V=o(1) '25 6.30</a></li>
+<li><a href="P.36 (2.30) &#39;25 7.2.html" id="toc-C2_P36_2.30_10">P.36
+(2.30) '25 7.2</a></li>
 <li><a href="P.37 (2.32) &#39;25 7.1.html" id="toc-C2_P37_2.32_10">P.37
 (2.32) '25 7.1</a></li>
+<li><a href="P.38 (2.35) &#39;25 7.3.html" id="toc-C2_P38_2.35_10">P.38
+(2.35) '25 7.3</a></li>
 </ul></li>
 </ul>
      </nav>
@@ -247,8 +254,10 @@ class="math inline">\(\textcolor{red}{\pmb{x_{i}}}\)</span>
 <p><span
 class="math inline">\({\textcolor{red}{\pmb{dx_{i}}}}=\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)\)</span>
 とする</p>
-<p><span class="math inline">\({\therefore}\displaystyle\lim_{d\xi_i\to
-0}{\textcolor{red}{\pmb{dx_{i}}}} =\displaystyle\lim_{d\xi_i\to
+<p><span
+class="math inline">\({\therefore}\displaystyle\displaystyle\lim_{d\xi_i\to
+0}{\textcolor{red}{\pmb{dx_{i}}}}
+=\displaystyle\displaystyle\lim_{d\xi_i\to
 0}\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)
 =0\)</span> (<span
 class="math inline">\({\because}\textcolor{red}{\pmb{x_{i}}}\)</span>
@@ -257,7 +266,7 @@ class="math inline">\({\because}\textcolor{red}{\pmb{x_{i}}}\)</span>
 の極限は経路によらないので</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp; \lim_{d\xi_i\to 0}
+&amp; \displaystyle\lim_{d\xi_i\to 0}
 \frac{
 \textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_{1}}}+{\textcolor{red}{\pmb{dx_{1}}}},\cdots,\textcolor{red}{\pmb{x_{n}}}+{\textcolor{red}{\pmb{dx_{n}}}})-\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\pmb{x_{1}}},\cdots,\textcolor{red}{\pmb{x_{n}}})
      - \displaystyle\Big(\frac{\partial
@@ -288,7 +297,7 @@ class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)=\textc
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp; \lim_{d\xi_i\to 0}
+&amp; \displaystyle\lim_{d\xi_i\to 0}
 \frac{
 \textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)
      - \displaystyle\Big(\frac{\partial
@@ -305,8 +314,9 @@ n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 <p>ここで</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\lim_{d\xi_i\to 0}\frac{{\textcolor{red}{\pmb{dx_{i}}}}}{d\xi_i}
-&amp;=\lim_{d\xi_i\to
+\displaystyle\lim_{d\xi_i\to
+0}\frac{{\textcolor{red}{\pmb{dx_{i}}}}}{d\xi_i}
+&amp;=\displaystyle\lim_{d\xi_i\to
 0}\frac{\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\pmb{x_{i}}}(\xi_1,\cdots,\xi_n)}{d\xi_i}
 =\displaystyle\Big(\frac{\partial \textcolor{red}{\pmb{x_{i}}}}{\partial
 \xi_i}\Big)_{\xi_{j\ne i}}\ ({\because}\
@@ -316,13 +326,13 @@ n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 <p>なので</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\lim_{d\xi_i\to 0}
+\displaystyle\lim_{d\xi_i\to 0}
 \frac{\sqrt{{\textcolor{red}{\pmb{dx_{1}}}}^2+\cdots+{\textcolor{red}{\pmb{dx_{n}}}}^2}}{|d\xi_i|}
-&amp;= \lim_{d\xi_i\to
+&amp;= \displaystyle\lim_{d\xi_i\to
 0}\sqrt{\Big(\frac{{\textcolor{red}{\pmb{dx_{1}}}}}{d\xi_i}\Big)^2+\cdots+\Big(\frac{{\textcolor{red}{\pmb{dx_{n}}}}}{d\xi_i}\Big)^2}
 &amp;\\
-&amp;= \sqrt{\Big(\lim_{d\xi_i\to
-0}\frac{{\textcolor{red}{\pmb{dx_{1}}}}}{d\xi_i}\Big)^2+\cdots+\Big(\lim_{d\xi_i\to
+&amp;= \sqrt{\Big(\displaystyle\lim_{d\xi_i\to
+0}\frac{{\textcolor{red}{\pmb{dx_{1}}}}}{d\xi_i}\Big)^2+\cdots+\Big(\displaystyle\lim_{d\xi_i\to
 0}\frac{{\textcolor{red}{\pmb{dx_{n}}}}}{d\xi_i}\Big)^2}
 \quad \Big(\begin{array}{@{}l@{}}
            {\because}\sqrt{x} は x&gt;0 で連続、x^2
@@ -344,7 +354,7 @@ i}}^2+\cdots+\displaystyle\Big(\frac{\partial
 <p><span class="math display">\[
 {\small
 \begin{flalign*}
-&amp; \lim_{d\xi_i\to 0}
+&amp; \displaystyle\lim_{d\xi_i\to 0}
 \frac{
 \textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)
      - \displaystyle\Big(\frac{\partial
@@ -370,7 +380,7 @@ n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp; \lim_{d\xi_i\to 0}
+&amp; \displaystyle\lim_{d\xi_i\to 0}
 \frac{
 \textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)
      - \displaystyle\Big(\frac{\partial
@@ -387,7 +397,7 @@ n}}\bigg|_{\substack{x_1=\textcolor{red}{\pmb{x_{1}}}\\ \vdots
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\lim_{d\xi_i\to 0}
+\displaystyle\lim_{d\xi_i\to 0}
 \frac{
 \textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi+d\xi_i,\cdots,\xi_n)-\textcolor{red}{\boldsymbol{Z}}(\xi_1,\cdots,\xi_n)}{\d\xi_i}
 &amp;= \displaystyle\Big(\frac{\partial

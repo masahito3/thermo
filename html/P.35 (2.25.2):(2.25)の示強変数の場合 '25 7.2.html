@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.10 問1.3 (x,y)≠(0,0)でfyは存在する '25 5.13</title>
+  <title>P.35 (2.25.2):(2.25)の示強変数の場合 '25 7.2</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -160,21 +160,21 @@ o(V)/V=o(1) '25 6.30</a></li>
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.10 問1.3 (0,0)でfxは連続 '25 3.26.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.34 (2.25) '25 6.30.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.10 問1.3 (x,y)≠(0,0)でfyは連続 '25 5.15.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.36 o(V)V=o(1) '25 6.30.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
+<span class="navlink-label">Up:</span> <a href="第2章.html" accesskey="u" rel="up">第2章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
@@ -182,40 +182,47 @@ o(V)/V=o(1) '25 6.30</a></li>
 </div>
 </nav>
 -->
-<h2 data-number="1.8" id="C1_P10_問1.3_60">P.10 問1.3
-(x,y)≠(0,0)でfyは存在する '25 5.13</h2>
-<p><span class="math display">\[
-\begin{flalign*}
-f(x,y)=
-\begin{cases}
-\displaystyle xy\frac{x^2-y^2}{x^2+y^2}&amp; (x,y)\ne(0,0) \\
-0 &amp; (x,y)=(0,0)
-\end{cases} &amp;&amp;
-\end{flalign*}\]</span></p>
-<p><span class="math inline">\((x,y)\ne(0,0)\)</span>で<span
-class="math inline">\(f_y\)</span>は存在する</p>
+<h2 data-number="2.5" id="C2_P35_2.25.2_10">P.35
+(2.25.2):(2.25)の示強変数の場合 '25 7.2</h2>
+<p>示強変数のゆらぎは相対的に<span
+class="math inline">\(\displaystyle\frac{o(V)}{V}\to0\)</span>
+となる</p>
+<p>相対的というのは<span class="math inline">\(\Delta\langle T
+\rangle\)</span>と比較してという意味である</p>
+<p><span class="math inline">\(\displaystyle\frac{\delta
+T}{\Delta\langle T\rangle} \propto \frac{o(V)}{V}\to0\
+(V\to\infty)\)</span>  (2.25.2)</p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\((x,y)\ne(0,0)\)</span> とする</p>
-<p>このとき <span class="math inline">\(\displaystyle
-f(x,y)=xy\frac{x^2-y^2}{x^2+y^2}\)</span></p>
-<p><span class="math inline">\(x,y\)</span>は独立とする</p>
-<p><span class="math display">\[\begin{flalign*}
-f_y&amp;=\underset{yで微分}{f&#39;}\quad\textcolor{red}{(*1)}&amp;\\
-&amp;=(xy)&#39;\frac{x^2-y^2}{x^2+y^2}+xy\left(\frac{x^2-y^2}{x^2+y^2}\right)&#39;\quad({\because}積の微分)&amp;\\
-&amp;=y\frac{x^2-y^2}{x^2+y^2}+xy\frac{(x^2-y^2)&#39;(x^2+y^2)-(x^2-y^2)(x^2+y^2)&#39;}{(x^2+y^2)^2}\quad({\because}x^2+y^2\ne0なので商の微分より)&amp;\\
-&amp;=\frac{x^5-4y^2x^3-4xy^4}{(x^2+y^2)^2}&amp;
-\end{flalign*}\]</span></p>
-<p>よって <span class="math inline">\((x,y)\ne(0,0)\)</span> で <span
-class="math inline">\(f_y\)</span> は存在する <span
-class="math inline">\(\quad({\because}公理:f_yは存在\rightleftarrows
-f_y\in R)\)</span></p>
-<p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;f&#39;,f_yの定義より\\
-&amp;&amp;&amp;\underset{yで微分}{f&#39;(x,y)}=\displaystyle\lim_{\Delta
-y\to 0}\frac{f(x,y+\Delta y)-f(x,y)}{\Delta y}=f_y(x,y)\\
-&amp;&amp;&amp;よってf&#39;が存在するならばf&#39;=f_y
-\end{flalign*}\]</span></p>
+<p>示強変数は <span class="math inline">\(V\)</span> によらないので</p>
+<p><span class="math inline">\(\langle T^{(i)} \rangle =
+K^{(i)}\)</span></p>
+<p><span class="math inline">\(\langle T^{(j)} \rangle =
+K^{(j)}\)</span></p>
+<p><span class="math inline">\({\therefore}\Delta \langle T
+\rangle=K^{(i)}-K^{(j)}\)</span></p>
+<p>(2.29)より <span class="math inline">\(\delta
+T=\displaystyle\frac{o(V)}{V}\)</span> なので</p>
+<p><span class="math inline">\({\therefore}\displaystyle\frac{\delta
+T}{\Delta\langle T\rangle} =\frac{\delta T}{K^{(i)}-K^{(j)}} \propto
+\delta T=\frac{o(V)}{V}\)</span></p>
+<p>ここで</p>
+<p><span class="math inline">\(\displaystyle\frac{o(V)}{V}=o(1)\to0\
+(V\to\infty)\)</span> <a
+href="P.36 o(V)V=o(1) &#39;25 6.30.html#C2_P36_10">(別頁)</a></p>
+<p>なので</p>
+<p><span class="math inline">\({\therefore}\displaystyle\frac{\delta
+T}{\Delta\langle T\rangle} \propto \frac{o(V)}{V}\to 0\
+(V\to\infty)\)</span></p>
+<hr />
+<p>上のとおり<span class="math inline">\(V\)</span>
+が大きいとき示強変数のゆらぎは(<span class="math inline">\(\Delta\langle
+T \rangle\)</span>と比べて)相対的に無視できると言えるが、</p>
+<p><span class="math inline">\(\delta T=\displaystyle\frac{o(V)}{V}\to
+0\ (V\to\infty)\)</span></p>
+<p>なので<span class="math inline">\(V\)</span>
+が大きいとき示強変数のゆらぎは(<span class="math inline">\(\Delta\langle
+T \rangle\)</span>によらず)絶対的に無視できると言えるような気がする</p>
    </main>
 </div>
 

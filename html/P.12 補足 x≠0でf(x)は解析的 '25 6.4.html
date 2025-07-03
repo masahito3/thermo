@@ -139,10 +139,17 @@ id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
 (2.24) '25 6.30</a></li>
 <li><a href="P.34 (2.25) &#39;25 6.30.html" id="toc-C2_P34_2.25_10">P.34
 (2.25) '25 6.30</a></li>
+<li><a href="P.35 (2.25.2):(2.25)の示強変数の場合 &#39;25 7.2.html"
+id="toc-C2_P35_2.25.2_10">P.35 (2.25.2):(2.25)の示強変数の場合 '25
+7.2</a></li>
 <li><a href="P.36 o(V)V=o(1) &#39;25 6.30.html" id="toc-C2_P36_10">P.36
 o(V)/V=o(1) '25 6.30</a></li>
+<li><a href="P.36 (2.30) &#39;25 7.2.html" id="toc-C2_P36_2.30_10">P.36
+(2.30) '25 7.2</a></li>
 <li><a href="P.37 (2.32) &#39;25 7.1.html" id="toc-C2_P37_2.32_10">P.37
 (2.32) '25 7.1</a></li>
+<li><a href="P.38 (2.35) &#39;25 7.3.html" id="toc-C2_P38_2.35_10">P.38
+(2.35) '25 7.3</a></li>
 </ul></li>
 </ul>
      </nav>
@@ -192,7 +199,7 @@ class="math inline">\(f(x)\)</span> は解析的</p>
 class="math inline">\(a\)</span> を中心とするべき級数で表される <span
 class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;x=\sum_{n=0}^{\infty}a_n(x-a)^n, \quad
+&amp;x=\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n, \quad
 a_n=\begin{cases}
 a &amp; (n=0) \\
 1 &amp; (n=1) \\
@@ -201,7 +208,7 @@ a &amp; (n=0) \\
 \end{flalign*}\]</span></p>
 <p>収束半径は <span class="math inline">\(\infty\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;F(x)=\sum_{n=0}^{\infty}a_n(x-a)^n,
+&amp;&amp;\textcolor{red}{(*1)}&amp;F(x)=\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n,
 a_n=\begin{cases}a &amp; (n=0)\\ 1 &amp; (n=1)\\ 0 &amp;
 (n&gt;1)\end{cases} とする\\
 &amp;&amp;&amp; F(x)=a_0(x-a)^0+a_1(x-a)^1+a_2(x-a)^2+\dots\\
@@ -214,30 +221,34 @@ a_n=\begin{cases}a &amp; (n=0)\\ 1 &amp; (n=1)\\ 0 &amp;
 を中心とするべき級数で表される <span
 class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;\frac{1}{x}=\sum_{n=0}^{\infty}b_n(x-a)^n, \quad
+&amp;\frac{1}{x}=\displaystyle\sum_{n=0}^{\infty}b_n(x-a)^n, \quad
 b_n=(-1)^n \frac{1}{a^{n+1}}&amp;
 \end{flalign*}\]</span></p>
 <p>収束半径は <span class="math inline">\(|a|\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*2)}&amp;a\ne0 とする \\
-&amp;&amp;&amp; G(x)=\sum_{n=0}^{\infty}b_n(x-a)^n
+&amp;&amp;&amp; G(x)=\displaystyle\sum_{n=0}^{\infty}b_n(x-a)^n
 とする。収束すると仮定する\\
-&amp;&amp;&amp; x = \sum_{n=0}^{\infty}a_n(x-a)^n,
+&amp;&amp;&amp; x = \displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n,
 a_n=\begin{cases}a &amp; (n=0)\\ 1 &amp; (n=1)\\ 0 &amp;
 (n&gt;1)\end{cases} とする\\
 &amp;&amp;&amp; 1 = x G(x) とする\\
 &amp;&amp;&amp; 1 =
-\sum_{n=0}^{\infty}a_n(x-a)^n\sum_{n=0}^{\infty}b_n(x-a)^n \\
-&amp;&amp;&amp; \quad=\sum_{n=0}^{\infty}\big(\sum_{k=0}^{n}a_k
+\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\displaystyle\sum_{n=0}^{\infty}b_n(x-a)^n
+\\
+&amp;&amp;&amp;
+\quad=\displaystyle\sum_{n=0}^{\infty}\big(\displaystyle\sum_{k=0}^{n}a_k
 b_{n-k}\big)(x-a)^n
 ({\because}コーシー積より)\\
-&amp;&amp;&amp; \quad= \sum_{k=0}^{0}a_k b_{0-k}(x-a)^0
-      +\sum_{k=0}^{1}a_k b_{1-k}(x-a)^1
-      +\sum_{k=0}^{2}a_k b_{2-k}(x-a)^2 +\dots\\
-&amp;&amp;&amp; 1=\sum_{k=0}^{0}a_k b_{0-k} と仮定する\
+&amp;&amp;&amp; \quad= \displaystyle\sum_{k=0}^{0}a_k b_{0-k}(x-a)^0
+      +\displaystyle\sum_{k=0}^{1}a_k b_{1-k}(x-a)^1
+      +\displaystyle\sum_{k=0}^{2}a_k b_{2-k}(x-a)^2 +\dots\\
+&amp;&amp;&amp; 1=\displaystyle\sum_{k=0}^{0}a_k b_{0-k} と仮定する\
     1=a_0 b_0\ {\therefore}b_0=\frac{1}{a_0}=\frac{1}{a} \\
-&amp;&amp;&amp; 0=\sum_{k=0}^{n}a_k b_{n-k}\ (n&gt;0)と仮定する\\
-&amp;&amp;&amp; 0=a_0 b_0+a_1 b_{n-1}+\sum_{k=2}^{n}a_k b_{n-k}\\
+&amp;&amp;&amp; 0=\displaystyle\sum_{k=0}^{n}a_k b_{n-k}\
+(n&gt;0)と仮定する\\
+&amp;&amp;&amp; 0=a_0 b_0+a_1 b_{n-1}+\displaystyle\sum_{k=2}^{n}a_k
+b_{n-k}\\
 &amp;&amp;&amp; {\therefore}0=a b_n + b_{n-1} + 0\
 ({\because}a_0=a,a_1=1,a_k=0(k&gt;1))\\
 &amp;&amp;&amp; {\therefore}b_n=-\frac{1}{a}b_{n-1}\\
@@ -245,7 +256,7 @@ b_{n-k}\big)(x-a)^n
 {\therefore}b_n=\frac{1}{a}\Big(-\frac{1}{a}\Big)^n=(-1)^n\frac{1}{a^{n+1}}\\
 &amp;&amp;&amp; これを踏まえて \\
 &amp;&amp;&amp; a\ne0 とする \\
-&amp;&amp;&amp; G(x)=\sum_{n=0}^{\infty}b_n(x-a)^n,
+&amp;&amp;&amp; G(x)=\displaystyle\sum_{n=0}^{\infty}b_n(x-a)^n,
 b_n=(-1)^n\frac{1}{a^{n+1}}とする\\
 &amp;&amp;&amp; G(x) は初項 \frac{1}{a}、 公比
 \frac{-1}{a}(x-a)の等比級数\\
@@ -265,33 +276,36 @@ G(x)=\frac{1}{a}\frac{1}{1-\frac{-1}{a}(x-a)}=\frac{1}{a+(x-a)}=\frac{1}{x}\
 class="math inline">\(\textcolor{red}{(*3)}\)</span></p>
 <p><span class="math inline">\(|x-a|&lt;|a|\)</span> ならば</p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;\frac{1}{x^2}=\sum_{n=0}^{\infty}c_n(x-a)^n, \quad
+&amp;\frac{1}{x^2}=\displaystyle\sum_{n=0}^{\infty}c_n(x-a)^n, \quad
 c_n=(-1)^n \frac{n+1}{a^{n+2}}&amp;
 \end{flalign*}\]</span></p>
 <p>級数は絶対収束する。</p>
 <p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*3)}&amp;|x-a|&lt;|a| とする \\
 &amp;&amp;&amp;
-\frac{1}{x}=\sum_{n=0}^{\infty}b_n(x-a)^n,b_n=(-1)^n\frac{1}{a^{n+1}}
+\frac{1}{x}=\displaystyle\sum_{n=0}^{\infty}b_n(x-a)^n,b_n=(-1)^n\frac{1}{a^{n+1}}
 とする\\
 &amp;&amp;&amp; 級数は絶対収束する。よって\\
 &amp;&amp;&amp; \frac{1}{x^2}=\frac{1}{x}\frac{1}{x}
-    =\sum_{n=0}^{\infty}b_n(x-a)^n \sum_{n=0}^{\infty}b_n(x-a)^n \\
-&amp;&amp;&amp; \quad=\sum_{n=0}^{\infty}\sum_{k=0}^{n}b_k(x-a)^k
+    =\displaystyle\sum_{n=0}^{\infty}b_n(x-a)^n
+\displaystyle\sum_{n=0}^{\infty}b_n(x-a)^n \\
+&amp;&amp;&amp;
+\quad=\displaystyle\sum_{n=0}^{\infty}\displaystyle\sum_{k=0}^{n}b_k(x-a)^k
 b_{n-k}(x-a)^{n-k}\dots(1)
      \left(\begin{array}{@{}l@{}}{\because}絶対収束する級数の積は \\
                           \quad コーシー積に等しい \\
               \quad またコーシー積は絶対収束する \end{array} \right)\\
-&amp;&amp;&amp; \quad=\sum_{n=0}^{\infty}\Big(\sum_{k=0}^{n}b_k b_{n-k}
-\Big)(x-a)^n \ ({\because}有限級数の線型性)\\
 &amp;&amp;&amp;
-\quad=\sum_{n=0}^{\infty}\Big(\sum_{k=0}^{n}(-1)^k\frac{1}{a^{k+1}}(-1)^{n-k}\frac{1}{a^{n-k+1}}\Big)(x-a)^n\\
+\quad=\displaystyle\sum_{n=0}^{\infty}\Big(\displaystyle\sum_{k=0}^{n}b_k
+b_{n-k} \Big)(x-a)^n \ ({\because}有限級数の線型性)\\
 &amp;&amp;&amp;
-\quad=\sum_{n=0}^{\infty}\Big(\sum_{k=0}^{n}(-1)^n\frac{1}{a^{n+1}}\Big)(x-a)^n\\
+\quad=\displaystyle\sum_{n=0}^{\infty}\Big(\displaystyle\sum_{k=0}^{n}(-1)^k\frac{1}{a^{k+1}}(-1)^{n-k}\frac{1}{a^{n-k+1}}\Big)(x-a)^n\\
 &amp;&amp;&amp;
-\quad=\sum_{n=0}^{\infty}\Big((-1)^n\frac{1}{a^{n+1}}\sum_{k=0}^{n}1\Big)(x-a)^n\\
+\quad=\displaystyle\sum_{n=0}^{\infty}\Big(\displaystyle\sum_{k=0}^{n}(-1)^n\frac{1}{a^{n+1}}\Big)(x-a)^n\\
 &amp;&amp;&amp;
-\quad=\sum_{n=0}^{\infty}(-1)^n\frac{1}{a^{n+2}}(n+1)(x-a)^n\\
+\quad=\displaystyle\sum_{n=0}^{\infty}\Big((-1)^n\frac{1}{a^{n+1}}\displaystyle\sum_{k=0}^{n}1\Big)(x-a)^n\\
+&amp;&amp;&amp;
+\quad=\displaystyle\sum_{n=0}^{\infty}(-1)^n\frac{1}{a^{n+2}}(n+1)(x-a)^n\\
 &amp;&amp;&amp; 絶対収束する級数の積をあらわすコーシー積は絶対収束する\\
 &amp;&amp;&amp; よって(1)よりこの級数は絶対収束する\\
 &amp;&amp;&amp; (もしくは、収束するべき級数は絶対収束するので
@@ -303,30 +317,32 @@ b_{n-k}(x-a)^{n-k}\dots(1)
 class="math inline">\(\textcolor{red}{(*4)}\)</span></p>
 <p><span class="math inline">\(|x-a|&lt;|a|\)</span> ならば</p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;-\frac{1}{x^2}=\sum_{n=0}^{\infty}s_n(x-a)^n, \quad
+&amp;-\frac{1}{x^2}=\displaystyle\sum_{n=0}^{\infty}s_n(x-a)^n, \quad
 s_n=(-1)^{n+1}\frac{n+1}{a^{n+2}}&amp;
 \end{flalign*}\]</span></p>
 <p>級数は絶対収束する。</p>
 <p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*4)}&amp;|x-a|&lt;|a| とする \\
-&amp;&amp;&amp; \frac{1}{x^2}=\sum_{n=0}^{\infty}(-1)^n
+&amp;&amp;&amp; \frac{1}{x^2}=\displaystyle\sum_{n=0}^{\infty}(-1)^n
 \frac{n+1}{a^{n+2}}(x-a)^n\\
 &amp;&amp;&amp; よって\\
-&amp;&amp;&amp; -\frac{1}{x^2}=(-1)\sum_{n=0}^{\infty}(-1)^n
+&amp;&amp;&amp;
+-\frac{1}{x^2}=(-1)\displaystyle\sum_{n=0}^{\infty}(-1)^n
 \frac{n+1}{a^{n+2}}(x-a)^n\\
-&amp;&amp;&amp; \quad=\sum_{n=0}^{\infty}(-1)^{n+1}
+&amp;&amp;&amp; \quad=\displaystyle\sum_{n=0}^{\infty}(-1)^{n+1}
 \frac{n+1}{a^{n+2}}(x-a)^n
     \ ({\because}絶対収束する級数は線型性をもつ)\\
 &amp;&amp;&amp;
-また\sum_{n=0}^{\infty}\Big|(-1)^{n+1}\frac{n+1}{a^{n+2}}(x-a)^n\Big|
-    =\sum_{n=0}^{\infty}\Big|(-1)^{n}\frac{n+1}{a^{n+2}}(x-a)^n\Big|\\
+また\displaystyle\sum_{n=0}^{\infty}\Big|(-1)^{n+1}\frac{n+1}{a^{n+2}}(x-a)^n\Big|
+    =\displaystyle\sum_{n=0}^{\infty}\Big|(-1)^{n}\frac{n+1}{a^{n+2}}(x-a)^n\Big|\\
 &amp;&amp;&amp; \frac{1}{x^2}の級数が絶対収束するので右辺は収束する\\
 &amp;&amp;&amp; よって-\frac{1}{x^2}の級数は絶対収束する
 \end{flalign*}\]</span></p>
 <p><span class="math inline">\(e^x\)</span> は <span
 class="math inline">\(0\)</span> を中心とするべき級数で表される</p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;e^x = \sum_{n=0}^{\infty}\frac{x^n}{n!}\quad({\because}e^x
+&amp;e^x =
+\displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}\quad({\because}e^x
 の定義)&amp;
 \end{flalign*}\]</span></p>
 <p>すべての <span class="math inline">\(x\)</span> について収束する
@@ -335,9 +351,9 @@ class="math inline">\(0\)</span> を中心とするべき級数で表される</
 <p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*5)}&amp; \sum \Big|\frac{x^n}{n!}\Big|
 について\\
-&amp;&amp;&amp; \lim_{n\to \infty} \frac{
+&amp;&amp;&amp; \displaystyle\lim_{n\to \infty} \frac{
 \displaystyle\Big|\frac{x^{n+1}}{(n+1)!}\Big|  }{\displaystyle\Big|\frac{x^n}{n!}\Big|}
-= \lim_{n\to \infty}\Big|\frac{x}{n+1}\Big|=0 \\
+= \displaystyle\lim_{n\to \infty}\Big|\frac{x}{n+1}\Big|=0 \\
 &amp;&amp;&amp; よってダランベールの判定法より \sum
 \Big|\frac{x^n}{n!}\Big| は収束する \\
 &amp;&amp;&amp; よって \sum \frac{x^n}{n!} は収束する
@@ -347,55 +363,59 @@ class="math inline">\(0\)</span> を中心とするべき級数で表される</
 最後に <span class="math inline">\(\displaystyle
 e^{-\frac{1}{x^2}}\)</span> のべき級数を求める。<br />
 <br />
-<span class="math inline">\(\displaystyle e^x = \sum_{n=0}^{\infty}a_n
-x^n,\ a_n=\frac{1}{n!}\)</span>とする</p>
+<span class="math inline">\(\displaystyle e^x =
+\displaystyle\sum_{n=0}^{\infty}a_n x^n,\
+a_n=\frac{1}{n!}\)</span>とする</p>
 <p><span class="math inline">\(a\ne0,\ |x-a|&lt;|a|\)</span> とする</p>
 <p><span
-class="math inline">\(\displaystyle-\frac{1}{x^2}=\sum_{m=0}^{\infty}
+class="math inline">\(\displaystyle-\frac{1}{x^2}=\displaystyle\sum_{m=0}^{\infty}
 s_m(x-a)^n, \ s_m=(-1)^{m+1}\frac{m+1}{a^{m+2}}\)</span> とする</p>
 <p>べき級数の合成<a
 href="P.12 補足 べき級数の合成 &#39;25 6.1.html#C1_P12_補足_70">(別頁)</a>
 より</p>
 <p><span
-class="math inline">\(\displaystyle\sum_{m=0}^{\infty}|s_m(x-a)^m|&lt;\infty\)</span>
+class="math inline">\(\displaystyle\displaystyle\sum_{m=0}^{\infty}|s_m(x-a)^m|&lt;\infty\)</span>
 ならば</p>
 <p><span class="math inline">\(\displaystyle e^{-\frac{1}{x^2}} =
-\sum_{p=0}^{\infty}d_p(x-p)^p\)</span> <span
+\displaystyle\sum_{p=0}^{\infty}d_p(x-p)^p\)</span> <span
 class="math inline">\(,\quad d_p =
-\displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
-\sum_{k_1+\dots+k_n=p}^{}s_{k_1}\dots s_{k_n}\)</span></p>
+\displaystyle\displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
+\displaystyle\sum_{k_1+\dots+k_n=p}^{}s_{k_1}\dots s_{k_n}\)</span></p>
 <p>である</p>
 <p><span class="math display">\[\begin{flalign*}
-d_p &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
-       \sum_{k_1+\dots+k_n=p}^{}
+d_p &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
+       \displaystyle\sum_{k_1+\dots+k_n=p}^{}
        (-1)^{k_1+1}\frac{k_1+1}{a^{k_1+2}}
        \dots
        (-1)^{k_n+1}\frac{k_n+1}{a^{k_n+2}} &amp;\\
-    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
-       \sum_{k_1+\dots+k_n=p}^{}
+    &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
+       \displaystyle\sum_{k_1+\dots+k_n=p}^{}
        (-1)^{p+n}\frac{(k_1+1)\dots(k_n+1)}{a^{p+2n}} &amp;\\
-    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+    &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^p
        \Big(\frac{-1}{a^2}\Big)^n
-       \sum_{k_1+\dots+k_n=p}^{}(k_1+1)\dots(k_n+1)
+       \displaystyle\sum_{k_1+\dots+k_n=p}^{}(k_1+1)\dots(k_n+1)
        \ ({\because}有限級数の線型性) &amp;
 \end{flalign*}\]</span></p>
 <p><span class="math inline">\(a\ne0,\ |x-a|&lt;|a|\)</span> ならば
 <span
-class="math inline">\(\displaystyle-\frac{1}{x^2}=\sum_{m=0}^{\infty}
+class="math inline">\(\displaystyle-\frac{1}{x^2}=\displaystyle\sum_{m=0}^{\infty}
 s_m(x-a)^n\)</span> は絶対収束する</p>
-<p>よって <span class="math inline">\(\displaystyle\sum_{m=0}^{\infty}
+<p>よって <span
+class="math inline">\(\displaystyle\displaystyle\sum_{m=0}^{\infty}
 |s_m(x-a)^n|\)</span> は収束する</p>
-<p>よって <span class="math inline">\(\displaystyle\sum_{m=0}^{\infty}
+<p>よって <span
+class="math inline">\(\displaystyle\displaystyle\sum_{m=0}^{\infty}
 |s_m(x-a)^n| &lt; \infty\)</span></p>
 <p>よって <span class="math inline">\(a\ne0,\ |x-a|&lt;|a|\)</span>
 ならば</p>
 <p><span class="math display">\[\begin{flalign*}
-e^{-\frac{1}{x^2}} &amp;= \sum_{p=0}^{\infty}d_p(x-a)^p &amp;\\
-d_p &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+e^{-\frac{1}{x^2}} &amp;= \displaystyle\sum_{p=0}^{\infty}d_p(x-a)^p
+&amp;\\
+d_p &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^p
        \Big(\frac{-1}{a^2}\Big)^n
-       \sum_{k_1+\dots+k_n=p}^{}(k_1+1)\dots(k_n+1) &amp;
+       \displaystyle\sum_{k_1+\dots+k_n=p}^{}(k_1+1)\dots(k_n+1) &amp;
 \end{flalign*}\]</span></p>
 <p><span class="math inline">\(\displaystyle e^{-\frac{1}{x^2}}\)</span>
 は <span class="math inline">\(a\ne0\)</span>
@@ -415,59 +435,59 @@ class="math inline">\(e^{-\frac{1}{x^2}}\)</span>
 <span class="math inline">\(|a|\)</span> とは言えない</p>
 <p>(最初の3項を求めてみる)</p>
 <p><span class="math display">\[\begin{flalign*}
-d_0 &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+d_0 &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^0
        \Big(\frac{-1}{a^2}\Big)^n
-       \sum_{k_1+\dots+k_n=0}^{}(k_1+1)\dots(k_n+1) &amp;\\
-    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \displaystyle\sum_{k_1+\dots+k_n=0}^{}(k_1+1)\dots(k_n+1) &amp;\\
+    &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a^2}\Big)^n
        \cdot 1 &amp;\\
     &amp;= e^{-\frac{1}{a^2}} &amp;\\
-d_1 &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+d_1 &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^1
        \Big(\frac{-1}{a^2}\Big)^n
-       \sum_{k_1+\dots+k_n=0}^{}(k_1+1)\dots(k_n+1) &amp;\\
-    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \displaystyle\sum_{k_1+\dots+k_n=0}^{}(k_1+1)\dots(k_n+1) &amp;\\
+    &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)
        \Big(\frac{-1}{a^2}\Big)^n
        {}_n C_1 &amp;\\
-    &amp;= \sum_{n=0}^{\infty}\frac{1}{(n-1)!}
+    &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{(n-1)!}
        \Big(\frac{-1}{a}\Big)
        \Big(\frac{-1}{a^2}\Big)
        \Big(\frac{-1}{a^2}\Big)^{n-1} &amp;\\
     &amp;= \frac{1}{a^3}
-       \sum_{n=0}^{\infty}\frac{1}{(n-1)!}
+       \displaystyle\sum_{n=0}^{\infty}\frac{1}{(n-1)!}
        \Big(\frac{-1}{a^2}\Big)^{n-1}
        \ \left(\begin{array}{@{}l@{}}
                {\because}(別頁):べき級数の合成より dp は絶対収束する \\
                \quad なので線型性をもつ \\
            \end{array} \right) &amp;\\
     &amp;= \frac{1}{a^3}e^{-\frac{1}{a^2}} &amp;\\
-d_2 &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+d_2 &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^2
        \Big(\frac{-1}{a^2}\Big)^n
-       \sum_{k_1+\dots+k_n=2}^{}(k_1+1)\dots(k_n+1) &amp;\\
-    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+       \displaystyle\sum_{k_1+\dots+k_n=2}^{}(k_1+1)\dots(k_n+1) &amp;\\
+    &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^2
        \Big(\frac{-1}{a^2}\Big)^n
        (4{}_n C_2+3{}_n C_1) &amp;\\
-    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+    &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^2
        \Big(\frac{-1}{a^2}\Big)^n
        (2n(n-1)+3n) &amp;\\
-    &amp;= \sum_{n=0}^{\infty}\frac{1}{n!}
+    &amp;= \displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^2
        \Big(\frac{-1}{a^2}\Big)^n
        2n(n-1)
-      +\sum_{n=0}^{\infty}\frac{1}{n!}
+      +\displaystyle\sum_{n=0}^{\infty}\frac{1}{n!}
        \Big(\frac{-1}{a}\Big)^2
        \Big(\frac{-1}{a^2}\Big)^n
        3n\ ({\because}dp の線型性) &amp;\\
     &amp;= \frac{2}{a^6}
-       \sum_{n=0}^{\infty}\frac{1}{(n-2)!}
+       \displaystyle\sum_{n=0}^{\infty}\frac{1}{(n-2)!}
        \Big(\frac{-1}{a^2}\Big)^{n-2}
       +\frac{-3}{a^4}
-       \sum_{n=0}^{\infty}\frac{1}{(n-1)!}
+       \displaystyle\sum_{n=0}^{\infty}\frac{1}{(n-1)!}
        \Big(\frac{-1}{a^2}\Big)^{n-1}\ ({\because}dp の線型性) &amp;\\
     &amp;= \frac{2}{a^6}e^{-\frac{1}{a^2}}
       +\frac{-3}{a^4}e^{-\frac{1}{a^2}}\ ({\because}e^x の定義) &amp;\\

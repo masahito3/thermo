@@ -139,10 +139,17 @@ id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
 (2.24) '25 6.30</a></li>
 <li><a href="P.34 (2.25) &#39;25 6.30.html" id="toc-C2_P34_2.25_10">P.34
 (2.25) '25 6.30</a></li>
+<li><a href="P.35 (2.25.2):(2.25)の示強変数の場合 &#39;25 7.2.html"
+id="toc-C2_P35_2.25.2_10">P.35 (2.25.2):(2.25)の示強変数の場合 '25
+7.2</a></li>
 <li><a href="P.36 o(V)V=o(1) &#39;25 6.30.html" id="toc-C2_P36_10">P.36
 o(V)/V=o(1) '25 6.30</a></li>
+<li><a href="P.36 (2.30) &#39;25 7.2.html" id="toc-C2_P36_2.30_10">P.36
+(2.30) '25 7.2</a></li>
 <li><a href="P.37 (2.32) &#39;25 7.1.html" id="toc-C2_P37_2.32_10">P.37
 (2.32) '25 7.1</a></li>
+<li><a href="P.38 (2.35) &#39;25 7.3.html" id="toc-C2_P38_2.35_10">P.38
+(2.35) '25 7.3</a></li>
 </ul></li>
 </ul>
      </nav>
@@ -194,36 +201,37 @@ href="P.12 補足 x≠0でC∞級 &#39;25 4.25.html#C1_P12_補足_30">別頁</a>
 より</p>
 <p><span class="math display">\[
 \begin{flalign*}
-f^{(n)} &amp;= \left( \sum_{\nu=1}^{m}k_\nu x^{-\nu} \right)
-e^{-\frac{1}{x^2}} &amp;\\
-        &amp;= \sum_{\nu=1}^{m}k_\nu x^{-\nu} e^{-\frac{1}{x^2}}&amp;
+f^{(n)} &amp;= \left( \displaystyle\sum_{\nu=1}^{m}k_\nu x^{-\nu}
+\right) e^{-\frac{1}{x^2}} &amp;\\
+        &amp;= \displaystyle\sum_{\nu=1}^{m}k_\nu x^{-\nu}
+e^{-\frac{1}{x^2}}&amp;
 \end{flalign*}
 \]</span></p>
-<p><span class="math inline">\(\displaystyle\lim_{x\to 0}
+<p><span class="math inline">\(\displaystyle\displaystyle\lim_{x\to 0}
 x^{-\nu}e^{-\frac{1}{x^2}}=0\quad\textcolor{red}{(*1)}\)</span>
 なので</p>
-<p><span class="math inline">\(\displaystyle\lim_{x\to 0}
+<p><span class="math inline">\(\displaystyle\displaystyle\lim_{x\to 0}
 f^{(n)}(x)=0\quad({\because}和、積の極限)\)</span></p>
 <p><span class="math inline">\(x=0\)</span>で<span
 class="math inline">\(f\)</span>は連続 <span
 class="math inline">\(({\because}別紙)\)</span></p>
-<p>かつ<span class="math inline">\(\displaystyle\lim_{x\to
+<p>かつ<span class="math inline">\(\displaystyle\displaystyle\lim_{x\to
 0}f^{(1)}(x)=0\)</span> なので</p>
 <p><span class="math inline">\(f^{(1)}(0)=0\)</span> <span
 class="math inline">\(({\because}p.7,(1.5),(1.6)\ aで連続,\)</span>
-<span class="math inline">\(\displaystyle\lim_{x\to
+<span class="math inline">\(\displaystyle\displaystyle\lim_{x\to
 a}f&#39;(x)\)</span>が存在するなら <span
-class="math inline">\(\displaystyle\lim_{x\to
+class="math inline">\(\displaystyle\displaystyle\lim_{x\to
 a}f&#39;(x)=f&#39;(a))\)</span></p>
 <div style="margin-bottom:1em;">
 
 </div>
 <p><span class="math inline">\(f^{(n)}(0)=0\)</span> と仮定する</p>
-<p><span class="math inline">\(\displaystyle\lim_{x\to
+<p><span class="math inline">\(\displaystyle\displaystyle\lim_{x\to
 0}f^{(n)}(x)=0=f^{(n)}(0)\)</span></p>
 <p>よって<span class="math inline">\(0\)</span>で<span
 class="math inline">\(f^{(n)}(x)\)</span>は連続</p>
-<p>かつ<span class="math inline">\(\displaystyle\lim_{x\to
+<p>かつ<span class="math inline">\(\displaystyle\displaystyle\lim_{x\to
 0}f^{(n+1)}(x)=0\)</span>なので</p>
 <p><span
 class="math inline">\(f^{(n+1)}(0)=0\quad({\because}p.7,(1,5),(1.6))\)</span></p>
@@ -234,7 +242,7 @@ class="math inline">\(f\)</span>は<span
 class="math inline">\(C^\infty\)</span>級</p>
 <p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*1)}&amp; e^y=
-\sum_{n=0}^{\infty}\frac{y^n}{n!}
+\displaystyle\sum_{n=0}^{\infty}\frac{y^n}{n!}
     =1+y+\frac{1}{2}y^2+\dots\\
 &amp;&amp;&amp;なので\\
 &amp;&amp;&amp;e^{\frac{1}{x^2}}=1+x^{-2}+\frac{1}{2}x^{-4}+\dots\\
@@ -246,17 +254,17 @@ class="math inline">\(C^\infty\)</span>級</p>
 &amp;&amp;&amp;\nu,\nu-2,\dots,\nu-2(n-1)\ge0 なので\\
 &amp;&amp;&amp;\lim|x^\nu|=0,\dots,\lim|x^{\nu-2(n-1)}|=0\ or\ 1\\
 &amp;&amp;&amp;\nu-2n&lt;0なので\\
-&amp;&amp;&amp;\lim_{x\to 0}|x^{\nu-2n}|=\infty\\
-&amp;&amp;&amp;{\therefore}\displaystyle\lim_{x\to
+&amp;&amp;&amp;\displaystyle\lim_{x\to 0}|x^{\nu-2n}|=\infty\\
+&amp;&amp;&amp;{\therefore}\displaystyle\displaystyle\lim_{x\to
 0}|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|=\infty\ ({\because}和の極限)\\
-&amp;&amp;&amp;{\therefore}\displaystyle\lim_{x\to
+&amp;&amp;&amp;{\therefore}\displaystyle\displaystyle\lim_{x\to
 0}\frac{1}{|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|}=0\\
 &amp;&amp;&amp;\displaystyle\frac{1}{|x^\nu
 e^{\frac{1}{x^2}}|}&lt;\frac{1}{|x^\nu|+\dots+\frac{1}{n!}|x^{\nu-2n}|}なので\\
-&amp;&amp;&amp;\displaystyle\lim_{x\to 0}\frac{1}{|x^\nu
+&amp;&amp;&amp;\displaystyle\displaystyle\lim_{x\to 0}\frac{1}{|x^\nu
 e^{\frac{1}{x^2}}|}=0\\
-&amp;&amp;&amp;{\therefore}\displaystyle\lim_{x\to 0}\frac{1}{x^\nu
-e^{\frac{1}{x^2}}}=0
+&amp;&amp;&amp;{\therefore}\displaystyle\displaystyle\lim_{x\to
+0}\frac{1}{x^\nu e^{\frac{1}{x^2}}}=0
 \end{flalign*}\]</span></p>
    </main>
 </div>

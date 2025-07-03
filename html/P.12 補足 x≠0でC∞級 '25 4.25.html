@@ -139,10 +139,17 @@ id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
 (2.24) '25 6.30</a></li>
 <li><a href="P.34 (2.25) &#39;25 6.30.html" id="toc-C2_P34_2.25_10">P.34
 (2.25) '25 6.30</a></li>
+<li><a href="P.35 (2.25.2):(2.25)の示強変数の場合 &#39;25 7.2.html"
+id="toc-C2_P35_2.25.2_10">P.35 (2.25.2):(2.25)の示強変数の場合 '25
+7.2</a></li>
 <li><a href="P.36 o(V)V=o(1) &#39;25 6.30.html" id="toc-C2_P36_10">P.36
 o(V)/V=o(1) '25 6.30</a></li>
+<li><a href="P.36 (2.30) &#39;25 7.2.html" id="toc-C2_P36_2.30_10">P.36
+(2.30) '25 7.2</a></li>
 <li><a href="P.37 (2.32) &#39;25 7.1.html" id="toc-C2_P37_2.32_10">P.37
 (2.32) '25 7.1</a></li>
+<li><a href="P.38 (2.35) &#39;25 7.3.html" id="toc-C2_P38_2.35_10">P.38
+(2.35) '25 7.3</a></li>
 </ul></li>
 </ul>
      </nav>
@@ -200,31 +207,32 @@ f^{(1)}&amp;=\left(e^{-\frac{1}{x^2}}\right)&#39; &amp;\\
 \end{flalign*}\]</span> である。</p>
 <p><span class="math inline">\(n&gt;0\)</span> で</p>
 <p><span class="math display">\[\begin{flalign*}
-f^{(n)}&amp;=\left(\sum_{\nu=1}^{m}k_\nu
+f^{(n)}&amp;=\left(\displaystyle\sum_{\nu=1}^{m}k_\nu
 x^{-\nu}\right)e^{-\frac{1}{x^2}}&amp;
 \end{flalign*}\]</span>と仮定する</p>
 <p><span class="math display">\[\begin{flalign*}
-\left(\sum_{\nu=1}^{m}k_\nu
-x^{-\nu}\right)&#39;&amp;=\sum_{\nu=1}^{m}k_\nu(x^{-\nu})&#39;\quad({\because}和,積の微分)&amp;\\
-  &amp;=\sum_{\nu=1}^{m}(-\nu
+\left(\displaystyle\sum_{\nu=1}^{m}k_\nu
+x^{-\nu}\right)&#39;&amp;=\displaystyle\sum_{\nu=1}^{m}k_\nu(x^{-\nu})&#39;\quad({\because}和,積の微分)&amp;\\
+  &amp;=\displaystyle\sum_{\nu=1}^{m}(-\nu
 k_\nu)x^{-\nu-1}\quad\textcolor{red}{(*3)}\cdots(2)&amp;
 \end{flalign*}\]</span>なので</p>
 <p><span class="math display">\[\begin{flalign*}
-f^{(n+1)}&amp;=\left(\sum_{\nu=1}^{m}k_\nu
-x^{-\nu}\right)&#39;e^{-\frac{1}{x^2}}+\left(\sum_{\nu=1}^{m}k_\nu
+f^{(n+1)}&amp;=\left(\displaystyle\sum_{\nu=1}^{m}k_\nu
+x^{-\nu}\right)&#39;e^{-\frac{1}{x^2}}+\left(\displaystyle\sum_{\nu=1}^{m}k_\nu
 x^{-\nu}\right)\left(e^{-\frac{1}{x^2}}\right)&#39;\quad({\because}積の微分)&amp;\\
-  &amp;=\sum_{\nu=1}^{m}(-\nu
-k_{\nu})x^{-\nu-1}e^{-\frac{1}{x^2}}+\sum_{\nu=1}^{m}k_\nu
+  &amp;=\displaystyle\sum_{\nu=1}^{m}(-\nu
+k_{\nu})x^{-\nu-1}e^{-\frac{1}{x^2}}+\displaystyle\sum_{\nu=1}^{m}k_\nu
 x^{-\nu}2x^{-3}e^{-\frac{1}{x^2}}\quad({\because}(1),(2))&amp;\\
-  &amp;=\left(\sum_{\nu=1}^{m}-\nu k_\nu
-x^{-\nu-1}+\sum_{\nu=1}^{m}2k_{\nu}x^{-\nu-3}\right)e^{-\frac{1}{x^2}}&amp;\\
-  &amp;=\left(\sum_{i=2}^{m+1}-(i-1)k_{i-1}x^{-i}+\sum_{i=4}^{m+3}2k_{i-3}x^{-i}\right)e^{-\frac{1}{x^2}}&amp;\\
+  &amp;=\left(\displaystyle\sum_{\nu=1}^{m}-\nu k_\nu
+x^{-\nu-1}+\displaystyle\sum_{\nu=1}^{m}2k_{\nu}x^{-\nu-3}\right)e^{-\frac{1}{x^2}}&amp;\\
+  &amp;=\left(\displaystyle\sum_{i=2}^{m+1}-(i-1)k_{i-1}x^{-i}+\displaystyle\sum_{i=4}^{m+3}2k_{i-3}x^{-i}\right)e^{-\frac{1}{x^2}}&amp;\\
   &amp;=\bigg((-1)k_1x^{-2}+(-2)k_2x^{-3}
-       +\sum_{i=4}^{m+1}-(i-1)k_{i-1}x^{-i}&amp;\\
-    &amp;\qquad+\sum_{i=4}^{m+1}2k_{i-3}x^{-i}
+       +\displaystyle\sum_{i=4}^{m+1}-(i-1)k_{i-1}x^{-i}&amp;\\
+    &amp;\qquad+\displaystyle\sum_{i=4}^{m+1}2k_{i-3}x^{-i}
        +2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\bigg)e^{-\frac{1}{x^2}}&amp;\\
   &amp;=\bigg((-1)k_1x^{-2}+(-2)k_2x^{-3}
-      +\sum_{i=4}^{m+1}(-(i-1)k_{i-1}+2k_{i-3})x^{-i} &amp;\\
+      +\displaystyle\sum_{i=4}^{m+1}(-(i-1)k_{i-1}+2k_{i-3})x^{-i}
+&amp;\\
     &amp;\qquad+2k_{m-1}x^{-(m+1)}+2k_mx^{-(m+3)}\bigg)e^{-\frac{1}{x^2}}&amp;
 \end{flalign*}\]</span></p>
 <p>ここで</p>
@@ -239,11 +247,11 @@ p_i&amp;=
 s&amp;=m+3&amp;
 \end{flalign*}\]</span> とする</p>
 <p><span class="math display">\[\begin{flalign*}
-f^{(n+1)}&amp;=\left(\sum_{i=1}^{s}p_ix^{-i}\right)e^{-1/x^2}&amp;
+f^{(n+1)}&amp;=\left(\displaystyle\sum_{i=1}^{s}p_ix^{-i}\right)e^{-1/x^2}&amp;
 \end{flalign*}\]</span></p>
 <p>よって、<span class="math inline">\(x\ne0,n&gt;0\)</span>において</p>
 <p><span class="math display">\[\begin{flalign*}
-f^{(n)}&amp;=\left(\sum_{\nu=1}^{m}k_\nu
+f^{(n)}&amp;=\left(\displaystyle\sum_{\nu=1}^{m}k_\nu
 x^{-\nu}\right)e^{-\frac{1}{x^2}}&amp;
 \end{flalign*}\]</span>である。</p>
 <p>すべての<span class="math inline">\(n\)</span>で<span
@@ -256,28 +264,30 @@ class="math inline">\(C^\infty\)</span>級である</p>
 &amp;&amp;&amp;f(g(x))&#39;=g&#39;(x)f&#39;(g(x))\\
 &amp;&amp;\textcolor{red}{(*2)}&amp; (e^x)&#39;=e^x \\
 &amp;&amp;&amp;(証明)\\
-&amp;&amp;&amp;e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}\ ({\because}e^x
-の定義)\\
+&amp;&amp;&amp;e^x=\displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}\
+({\because}e^x の定義)\\
 &amp;&amp;&amp;右辺の項別微分を考える\\
-&amp;&amp;&amp;\sum_{n=0}^{\infty}\left(\frac{x^n}{n!}\right)&#39;=(1)&#39;+\sum_{n=1}^{\infty}\left(\frac{x^n}{n!}\right)&#39;\\
-&amp;&amp;&amp;\quad=\sum_{n=1}^{\infty}n\frac{x^{n-1}}{n!}\
+&amp;&amp;&amp;\displaystyle\sum_{n=0}^{\infty}\left(\frac{x^n}{n!}\right)&#39;=(1)&#39;+\displaystyle\sum_{n=1}^{\infty}\left(\frac{x^n}{n!}\right)&#39;\\
+&amp;&amp;&amp;\quad=\displaystyle\sum_{n=1}^{\infty}n\frac{x^{n-1}}{n!}\
 \textcolor{red}{(*2.1)}\\
-&amp;&amp;&amp;\quad=\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}\\
-&amp;&amp;&amp;\quad=\sum_{n=0}^{\infty}\frac{x^n}{n!}\
+&amp;&amp;&amp;\quad=\displaystyle\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}\\
+&amp;&amp;&amp;\quad=\displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}\
 \textcolor{red}{(*2.2)}\\
 &amp;&amp;&amp;\quad=e^x\ ({\because}e^x の定義)\\
 &amp;&amp;&amp;ここで任意のxに対して\\
 &amp;&amp;&amp;-A\le x\le A,A&gt;0 なる区間を考える\\
 &amp;&amp;&amp;\left|\frac{x^\nu}{\nu!}\right|\le\frac{A^\nu}{\nu!},\nu=0,1,2,\ldots
 である\\
-&amp;&amp;&amp;また \sum_{\nu=0}^{\infty}\frac{A^\nu}{\nu!}=e^a\
-({\because}e^a の定義)\\
-&amp;&amp;&amp;なので \sum_{\nu=0}^{\infty}\frac{x^\nu}{\nu!}
-は区間[-A,A] で一様収束する\\
+&amp;&amp;&amp;また
+\displaystyle\sum_{\nu=0}^{\infty}\frac{A^\nu}{\nu!}=e^a\ ({\because}e^a
+の定義)\\
+&amp;&amp;&amp;なので
+\displaystyle\sum_{\nu=0}^{\infty}\frac{x^\nu}{\nu!} は区間[-A,A]
+で一様収束する\\
 &amp;&amp;&amp;({\because}定理:ある区間で |a_n(x)|\le C_n なる定数 C_n
 があって\\
-&amp;&amp;&amp;\quad \sum_{}^{\infty}C_n が収束するならば
-\sum_{}^{\infty}a_n は一様収束する)\\
+&amp;&amp;&amp;\quad \displaystyle\sum_{}^{\infty}C_n が収束するならば
+\displaystyle\sum_{}^{\infty}a_n は一様収束する)\\
 &amp;&amp;&amp;よって\left(e^x\right)&#39;=e^x\\
 &amp;&amp;&amp;({\because}定理:無限級数が収束し各項の導関数が連続で項別微分が\\
 &amp;&amp;&amp;\quad
@@ -285,9 +295,9 @@ class="math inline">\(C^\infty\)</span>級である</p>
 &amp;&amp;\textcolor{red}{(*2.1)}&amp; (1)&#39;=0\\
 &amp;&amp;&amp;n&gt;0 ならば x^n=nx^{n-1}\ \textcolor{red}{(*3)}\\
 &amp;&amp;&amp;(kf(x))&#39;=kf&#39;(x)\ ({\because}積の微分)\\
-&amp;&amp;\textcolor{red}{(*2.2)}&amp;\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}=1+x+\frac{x^2}{2!}+\cdots\\
-&amp;&amp;&amp;\sum_{n=0}^{\infty}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\cdots\\
-&amp;&amp;&amp;{\therefore}\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}=\sum_{n=0}^{\infty}\frac{x^n}{n!}\\
+&amp;&amp;\textcolor{red}{(*2.2)}&amp;\displaystyle\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}=1+x+\frac{x^2}{2!}+\cdots\\
+&amp;&amp;&amp;\displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\cdots\\
+&amp;&amp;&amp;{\therefore}\displaystyle\sum_{n=1}^{\infty}\frac{x^{n-1}}{(n-1)!}=\displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}\\
 &amp;&amp;\textcolor{red}{(*3)}&amp; x\ne 0,n&gt;0 ならば \\
 &amp;&amp;&amp;(x^{-n})&#39;=-nx^{-n-1}\\
 &amp;&amp;&amp;(証明)\\

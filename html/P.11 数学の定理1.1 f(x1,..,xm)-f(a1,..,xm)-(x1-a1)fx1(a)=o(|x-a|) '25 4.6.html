@@ -140,10 +140,17 @@ id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
 (2.24) '25 6.30</a></li>
 <li><a href="P.34 (2.25) &#39;25 6.30.html" id="toc-C2_P34_2.25_10">P.34
 (2.25) '25 6.30</a></li>
+<li><a href="P.35 (2.25.2):(2.25)の示強変数の場合 &#39;25 7.2.html"
+id="toc-C2_P35_2.25.2_10">P.35 (2.25.2):(2.25)の示強変数の場合 '25
+7.2</a></li>
 <li><a href="P.36 o(V)V=o(1) &#39;25 6.30.html" id="toc-C2_P36_10">P.36
 o(V)/V=o(1) '25 6.30</a></li>
+<li><a href="P.36 (2.30) &#39;25 7.2.html" id="toc-C2_P36_2.30_10">P.36
+(2.30) '25 7.2</a></li>
 <li><a href="P.37 (2.32) &#39;25 7.1.html" id="toc-C2_P37_2.32_10">P.37
 (2.32) '25 7.1</a></li>
+<li><a href="P.38 (2.35) &#39;25 7.3.html" id="toc-C2_P38_2.35_10">P.38
+(2.35) '25 7.3</a></li>
 </ul></li>
 </ul>
      </nav>
@@ -204,7 +211,8 @@ class="math inline">\(\displaystyle\frac{f(\vec{x})-f(a_1,\dots,x_m)}{x_1-a_1}
 =f_{x_1}(a_1+k(x_1-a_1),\dots,x_m)\dots(1)\)</span></p>
 <p>また<span class="math inline">\(f_{x_1}\)</span>は<span
 class="math inline">\(\vec{a}\)</span>で連続なので</p>
-<p><span class="math inline">\(\displaystyle\lim_{\vec{x}\to
+<p><span
+class="math inline">\(\displaystyle\displaystyle\lim_{\vec{x}\to
 \vec{a}}f_{x_1}(\vec{x})=f_{x_1}(\vec{a})\)</span></p>
 <p>よって任意の<span class="math inline">\(\delta\)</span>に対して</p>
 <p><span
@@ -227,13 +235,17 @@ class="math inline">\(\vec{x}&#39;=(a_1+k(x_1-a_1),\dots,x_m)\)</span>とする<
 class="math inline">\(|\vec{x}&#39;-\vec{a}|&lt;\epsilon\)</span>なので
 <span
 class="math inline">\(|f_{x_1}(\vec{x}&#39;)-f_{x_1}(\vec{a})|&lt;\delta\)</span></p>
-<p><span class="math inline">\({\therefore}\displaystyle\lim_{\vec{x}\to
+<p><span
+class="math inline">\({\therefore}\displaystyle\displaystyle\lim_{\vec{x}\to
 \vec{a}}f_{x_1}(\vec{x}&#39;)=f_{x_1}(\vec{a})\)</span></p>
-<p><span class="math inline">\({\therefore}\displaystyle\lim_{\vec{x}\to
+<p><span
+class="math inline">\({\therefore}\displaystyle\displaystyle\lim_{\vec{x}\to
 \vec{a}}f_{x_1}(a_1+k(x_1-a_1),\dots,x_m)=f_{x_1}(\vec{a})\)</span></p>
-<p><span class="math inline">\({\therefore}\displaystyle\lim_{\vec{x}\to
+<p><span
+class="math inline">\({\therefore}\displaystyle\displaystyle\lim_{\vec{x}\to
 \vec{a}}\frac{f_{x_1}(\vec{x})-f_{x_1}(a_1,\dots,x_m)}{x_1-a_1}=f_{x_1}(\vec{a})\quad({\because}(1))\)</span></p>
-<p><span class="math inline">\({\therefore}\displaystyle\lim_{\vec{x}\to
+<p><span
+class="math inline">\({\therefore}\displaystyle\displaystyle\lim_{\vec{x}\to
 \vec{a}}
 \frac{f_{x_1}(\vec{x})-f_{x_1}(a_1,\dots,x_m)-(x_1-a_1)f_{x_1}(\vec{a})}
 {x_1-a_1}=0\)</span> <span class="math inline">\(({\because}\lim c = c,
@@ -251,7 +263,7 @@ class="math inline">\(\displaystyle\left|\frac{f(\vec{x})-f(a_1,\dots,x_m)-(x_1-
 &lt;\delta\)</span></p>
 <p>よって</p>
 <p><span class="math display">\[\begin{flalign*}
-\lim_{\vec{x}\to \vec{a}}
+\displaystyle\lim_{\vec{x}\to \vec{a}}
 \left|\frac{f(\vec{x})-f(a_1,\dots,x_m)-(x_1-a_1)f_{x_1}(\vec{a})}{|\vec{x}-\vec{a}|}\right|
 &amp;=0&amp;
 \end{flalign*}\]</span></p>
@@ -260,12 +272,12 @@ class="math inline">\(\displaystyle\left|\frac{f(\vec{x})-f(a_1,\dots,x_m)-(x_1-
 f(\vec{x})-f(a_1,\dots,x_m)-(x_1-a_1)f_{x_1}(\vec{a})&amp;=o(|\vec{x}-\vec{a}|)&amp;
 \end{flalign*}\]</span></p>
 <p><span class="math display">\[\begin{flalign*}
-&amp;&amp;(注)&amp;\displaystyle\lim_{x_1\to
+&amp;&amp;(注)&amp;\displaystyle\displaystyle\lim_{x_1\to
 a_1}\frac{f(\vec{x})-f(a_1,..,x_m)}{(x_1-a_1)}=f_{x_1}(a_1,..,x_m)\
 (*)\\
-&amp;&amp;&amp;から始めると\lim_{x_1\to a_1}を\lim_{\vec{x}\to
-\vec{a}}に変換できなくて失敗する\\
-&amp;&amp;&amp;平均値の定理を利用するとうまく\lim_{\vec{x}\to
+&amp;&amp;&amp;から始めると\displaystyle\lim_{x_1\to
+a_1}を\displaystyle\lim_{\vec{x}\to \vec{a}}に変換できなくて失敗する\\
+&amp;&amp;&amp;平均値の定理を利用するとうまく\displaystyle\lim_{\vec{x}\to
 \vec{a}}を導ける\\
 &amp;&amp;&amp;平均値の定理は\vec{a}近傍でのf
 の連続性と微分可能性を利用できるが\\

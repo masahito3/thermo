@@ -139,10 +139,17 @@ id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
 (2.24) '25 6.30</a></li>
 <li><a href="P.34 (2.25) &#39;25 6.30.html" id="toc-C2_P34_2.25_10">P.34
 (2.25) '25 6.30</a></li>
+<li><a href="P.35 (2.25.2):(2.25)の示強変数の場合 &#39;25 7.2.html"
+id="toc-C2_P35_2.25.2_10">P.35 (2.25.2):(2.25)の示強変数の場合 '25
+7.2</a></li>
 <li><a href="P.36 o(V)V=o(1) &#39;25 6.30.html" id="toc-C2_P36_10">P.36
 o(V)/V=o(1) '25 6.30</a></li>
+<li><a href="P.36 (2.30) &#39;25 7.2.html" id="toc-C2_P36_2.30_10">P.36
+(2.30) '25 7.2</a></li>
 <li><a href="P.37 (2.32) &#39;25 7.1.html" id="toc-C2_P37_2.32_10">P.37
 (2.32) '25 7.1</a></li>
+<li><a href="P.38 (2.35) &#39;25 7.3.html" id="toc-C2_P38_2.35_10">P.38
+(2.35) '25 7.3</a></li>
 </ul></li>
 </ul>
      </nav>
@@ -216,16 +223,17 @@ f(x)=e^{-\frac{1}{x^2}}\)</span></p>
 \left|e^{-\frac{1}{x^2}}-e^{-\frac{1}{a^2}}\right|&lt;\epsilon\)</span></p>
 <p><span class="math inline">\({\therefore}\
 |f(x)-f(a)|&lt;\epsilon\)</span></p>
-<p><span class="math inline">\(よって\ \lim_{x\to
+<p><span class="math inline">\(よって\ \displaystyle\lim_{x\to
 a}f(x)=f(a)\)</span></p>
 <p><span class="math inline">\(よって\ x\ne0\ ならば\ f(x)\
 は連続\)</span></p>
 <p><span class="math display">\[\begin{flalign*}
 &amp;&amp;\textcolor{red}{(*1)}&amp;0&lt;|x-a|&lt;\epsilon\ ならば\\
 &amp;&amp;&amp;|x-a|&lt;\epsilon\\
-&amp;&amp;&amp;{\therefore}\ \lim_{x\to a}x=a\\
-&amp;&amp;\textcolor{red}{(*2)}&amp;\lim_{x\to a}f(x)=F,F\ne0\ ならば\
-\lim_{x\to a}\frac{1}{f}=\frac{1}{F}\\
+&amp;&amp;&amp;{\therefore}\ \displaystyle\lim_{x\to a}x=a\\
+&amp;&amp;\textcolor{red}{(*2)}&amp;\displaystyle\lim_{x\to
+a}f(x)=F,F\ne0\ ならば\ \displaystyle\lim_{x\to
+a}\frac{1}{f}=\frac{1}{F}\\
 &amp;&amp;&amp;(証明)\\
 &amp;&amp;&amp;任意の\ \epsilon\ に対し\ 0&lt;|x-a|&lt;\delta\ ならば\
 |f(x)-F|&lt;\epsilon\cdots(1)\\
@@ -244,9 +252,11 @@ a}f(x)=f(a)\)</span></p>
 &amp;&amp;&amp;0&lt;|x-a|&lt;min(\delta,\delta&#39;)\ ならば\\
 &amp;&amp;&amp;\left|\frac{1}{f(x)}-\frac{1}{F}\right|=\frac{|f(x)-F|}{|f(x)||F|}&lt;\frac{2\epsilon}{F^2}=\epsilon&#39;\
 ({\because}\ (1),(2))\\
-&amp;&amp;&amp;よって\ \lim_{x\to a}\frac{1}{f(x)}=\frac{1}{F}\\
-&amp;&amp;\textcolor{red}{(*3)}&amp;\lim_{x\to a}f(x)=F,\lim_{x\to
-a}g(x)=G\ ならば\ \lim_{x\to a}fg=FG\\
+&amp;&amp;&amp;よって\ \displaystyle\lim_{x\to
+a}\frac{1}{f(x)}=\frac{1}{F}\\
+&amp;&amp;\textcolor{red}{(*3)}&amp;\displaystyle\lim_{x\to
+a}f(x)=F,\displaystyle\lim_{x\to a}g(x)=G\ ならば\
+\displaystyle\lim_{x\to a}fg=FG\\
 &amp;&amp;&amp;(証明)\\
 &amp;&amp;&amp;任意の\ \epsilon\ に対して\ 0&lt;|x-a|&lt;\delta\ ならば\
 |f-F|&lt;\epsilon,|g-G|&lt;\epsilon\cdots(1)\\
@@ -266,19 +276,19 @@ a}g(x)=G\ ならば\ \lim_{x\to a}fg=FG\\
 &amp;&amp;&amp;\quad\quad&lt;2|F|\epsilon+\epsilon|G|\ ({\because}\
 (1)(2))\\
 &amp;&amp;&amp;\quad\quad=\epsilon(2|F|+|G|)=\epsilon&#39;\\
-&amp;&amp;&amp;よって\ \lim_{x\to a}fg=FG\\
+&amp;&amp;&amp;よって\ \displaystyle\lim_{x\to a}fg=FG\\
 &amp;&amp;\textcolor{red}{(*4)}&amp;a\ で\ f(x)\ は連続,f(a)\ で\ g(x)\
 は連続ならば\ a\ で\ g(f(x))\ は連続\\
 &amp;&amp;&amp;(証明)\\
-&amp;&amp;&amp;\lim_{x\to f(a)}g(x)=g(f(a))\ なので\\
+&amp;&amp;&amp;\displaystyle\lim_{x\to f(a)}g(x)=g(f(a))\ なので\\
 &amp;&amp;&amp;任意の\ \epsilon\ に対して\ 0&lt;|x-f(x)|&lt;\delta\
 ならば\ |g(x)-g(f(a))|&lt;\epsilon\\
-&amp;&amp;&amp;\lim_{x\to a}f(x)=f(a)\ なので\\
+&amp;&amp;&amp;\displaystyle\lim_{x\to a}f(x)=f(a)\ なので\\
 &amp;&amp;&amp;0&lt;|x-a|&lt;\delta&#39;\ ならば\
 |f(x)-f(a)|&lt;\delta\\
 &amp;&amp;&amp;よって\ 0&lt;|x-a|&lt;\delta&#39;\ ならば\
 |g(f(x))-g(f(a))|&lt;\epsilon\\
-&amp;&amp;&amp;よって\ \lim_{x\to a}g(f(x))=g(f(a))\\
+&amp;&amp;&amp;よって\ \displaystyle\lim_{x\to a}g(f(x))=g(f(a))\\
 &amp;&amp;&amp;よって\ a\ で\ g(f(x))\ は連続
 \end{flalign*}\]</span></p>
    </main>

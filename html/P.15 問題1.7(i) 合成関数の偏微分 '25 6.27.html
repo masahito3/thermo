@@ -139,10 +139,17 @@ id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
 (2.24) '25 6.30</a></li>
 <li><a href="P.34 (2.25) &#39;25 6.30.html" id="toc-C2_P34_2.25_10">P.34
 (2.25) '25 6.30</a></li>
+<li><a href="P.35 (2.25.2):(2.25)の示強変数の場合 &#39;25 7.2.html"
+id="toc-C2_P35_2.25.2_10">P.35 (2.25.2):(2.25)の示強変数の場合 '25
+7.2</a></li>
 <li><a href="P.36 o(V)V=o(1) &#39;25 6.30.html" id="toc-C2_P36_10">P.36
 o(V)/V=o(1) '25 6.30</a></li>
+<li><a href="P.36 (2.30) &#39;25 7.2.html" id="toc-C2_P36_2.30_10">P.36
+(2.30) '25 7.2</a></li>
 <li><a href="P.37 (2.32) &#39;25 7.1.html" id="toc-C2_P37_2.32_10">P.37
 (2.32) '25 7.1</a></li>
+<li><a href="P.38 (2.35) &#39;25 7.3.html" id="toc-C2_P38_2.35_10">P.38
+(2.35) '25 7.3</a></li>
 </ul></li>
 </ul>
      </nav>
@@ -219,7 +226,7 @@ y}\Big)_{z}dy+o\big(\sqrt{dx^2+dy^2}\big) &amp;
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;\lim_{(dx,dy)\to (0,0)}
+&amp;\displaystyle\lim_{(dx,dy)\to (0,0)}
 \frac{Z(x+dx,y+dy)-Z(x,y)
       -\displaystyle\Big(\frac{\partial Z}{\partial
 x}\Big)_{y}dx-\displaystyle\Big(\frac{\partial Z}{\partial
@@ -238,17 +245,19 @@ class="math inline">\(\textcolor{red}{\boldsymbol{dx}}=\textcolor{red}{\boldsymb
 <p><span
 class="math inline">\(\textcolor{red}{\boldsymbol{dy}}=\textcolor{red}{\boldsymbol{y}}(t+dt)-\textcolor{red}{\boldsymbol{y}}(t)\)</span>
 とする</p>
-<p><span class="math inline">\({\therefore}\displaystyle\lim_{dt\to 0}
-\textcolor{red}{\boldsymbol{dx}}= 0 \
+<p><span
+class="math inline">\({\therefore}\displaystyle\displaystyle\lim_{dt\to
+0} \textcolor{red}{\boldsymbol{dx}}= 0 \
 ({\because}\textcolor{red}{\boldsymbol{x}}は連続)\)</span></p>
-<p><span class="math inline">\({\therefore}\displaystyle\lim_{dt\to 0}
-\textcolor{red}{\boldsymbol{dy}}= 0 \
+<p><span
+class="math inline">\({\therefore}\displaystyle\displaystyle\lim_{dt\to
+0} \textcolor{red}{\boldsymbol{dy}}= 0 \
 ({\because}\textcolor{red}{\boldsymbol{y}}は連続)\)</span></p>
 <p><span class="math inline">\(\textcolor{red}{(1)}\)</span>
 の極限は経路によらないので</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;\lim_{dt\to 0}
+&amp;\displaystyle\lim_{dt\to 0}
 \frac{Z(\textcolor{red}{\boldsymbol{x}}+\textcolor{red}{\boldsymbol{dx}},\textcolor{red}{\boldsymbol{y}}+\textcolor{red}{\boldsymbol{dy}})-Z(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})
       -\displaystyle\Big(\frac{\partial Z}{\partial
 x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
@@ -275,7 +284,7 @@ class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(t)=Z(\textcolor{red}{\bold
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;\lim_{dt\to 0}
+&amp;\displaystyle\lim_{dt\to 0}
 \frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)
       -\displaystyle\Big(\frac{\partial Z}{\partial
 x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
@@ -290,8 +299,8 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
 <p>ここで</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}
-&amp;=\lim_{dt\to
+\displaystyle\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}
+&amp;=\displaystyle\lim_{dt\to
 0}\frac{\textcolor{red}{\boldsymbol{x}}(t+dt)-\textcolor{red}{\boldsymbol{x}}(t)}{dt}
 =\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\quad({\because}\
 \textcolor{red}{\boldsymbol{x}}は微分可能) &amp;
@@ -299,8 +308,8 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
 \]</span></p>
 <p><span class="math display">\[
 \begin{flalign*}
-\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}
-&amp;=\lim_{dt\to
+\displaystyle\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}
+&amp;=\displaystyle\lim_{dt\to
 0}\frac{\textcolor{red}{\boldsymbol{y}}(t+dt)-\textcolor{red}{\boldsymbol{y}}(t)}{dt}
 =\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\quad({\because}\
 \textcolor{red}{\boldsymbol{y}}は微分可能) &amp;
@@ -309,13 +318,13 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
 <p>なので</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\lim_{dt\to
+\displaystyle\lim_{dt\to
 0}\frac{\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}{|dt|}
-&amp;= \lim_{dt\to
+&amp;= \displaystyle\lim_{dt\to
 0}\sqrt{\Big(\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}\Big)^2+\Big(\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}\Big)^2}
 &amp;\\
-&amp;= \sqrt{\Big(\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}\Big)^2+\Big(\lim_{dt\to
+&amp;= \sqrt{\Big(\displaystyle\lim_{dt\to
+0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}\Big)^2+\Big(\displaystyle\lim_{dt\to
 0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}\Big)^2}
 \quad \Big(\begin{array}{@{}l@{}}
            {\because}\sqrt{x} は x&gt;0 で連続、x^2
@@ -333,7 +342,7 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;\lim_{dt\to 0}
+&amp;\displaystyle\lim_{dt\to 0}
 \frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)
       -\displaystyle\Big(\frac{\partial Z}{\partial
 x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
@@ -355,7 +364,7 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;\lim_{dt\to 0}
+&amp;\displaystyle\lim_{dt\to 0}
 \frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)
       -\displaystyle\Big(\frac{\partial Z}{\partial
 x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
@@ -370,7 +379,7 @@ y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;\lim_{dt\to
+&amp;\displaystyle\lim_{dt\to
 0}\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)}{dt}
 = \displaystyle\Big(\frac{\partial Z}{\partial
 x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\

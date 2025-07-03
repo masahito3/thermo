@@ -8,13 +8,15 @@
   \newcommand{\so}{NEWCOMMAND_SO}
   \newcommand{\red}[1]{\textcolor{red}{#1}}
   \newcommand{\kome}[1]{\red{(*#1)}}
+  \newcommand{\blue}[1]{\textcolor{blue}{#1}}
   \newcommand{\disp}{\displaystyle}
   \newcommand{\iif}{\rightleftarrows}
   \newcommand{\cuz}{NEWCOMMAND_CUZ}
   \newcommand{\eps}{\epsilon}
   \newcommand{\D}{\Delta}
-  \newcommand{\limto}[2]{\lim_{#1\to #2}}
-  \newcommand{\sumto}[2]{\sum_{#1}^{#2}}
+  \newcommand{\limto}[2]{\disp\lim_{#1\to #2}}
+  \newcommand{\sumto}[2]{\disp\sum_{#1}^{#2}}
+  \newcommand{\Frac}[2]{\disp\frac{#1}{#2}}
   \newcommand{\V}[1]{\vec{#1}}
   \allowdisplaybreaks
   \AddToHook{env/flalign*/begin}{
