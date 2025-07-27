@@ -25,13 +25,13 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="2.086901"
-     inkscape:cx="171.54623"
-     inkscape:cy="124.82624"
-     inkscape:window-width="1310"
-     inkscape:window-height="675"
-     inkscape:window-x="202"
-     inkscape:window-y="137"
-     inkscape:window-maximized="0"
+     inkscape:cx="173.94213"
+     inkscape:cy="126.26378"
+     inkscape:window-width="1415"
+     inkscape:window-height="877"
+     inkscape:window-x="25"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <inkscape:grid
        type="xygrid"
@@ -46,8 +46,8 @@
     <rect
        x="47.244094"
        y="75.59055"
-       width="28.346456"
-       height="18.897637"
+       width="48.300141"
+       height="21.664111"
        id="rect2633" />
     <rect
        x="103.93701"
@@ -58,8 +58,8 @@
     <rect
        x="47.244094"
        y="47.244094"
-       width="28.346456"
-       height="28.346456"
+       width="101.63778"
+       height="20.853684"
        id="rect1533" />
     <marker
        style="overflow:visible"
@@ -78,26 +78,6 @@
          style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
          d="M 3,-3 0,0 3,3"
          id="arrow3"
-         transform="rotate(180,0.125,0)"
-         sodipodi:nodetypes="ccc" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="Arrow3-5"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Arrow3"
-       markerWidth="4.2071066"
-       markerHeight="7"
-       viewBox="0 0 4.2071068 7"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
-         d="M 3,-3 0,0 3,3"
-         id="arrow3-3"
          transform="rotate(180,0.125,0)"
          sodipodi:nodetypes="ccc" />
     </marker>
@@ -122,8 +102,8 @@
     <rect
        x="47.244095"
        y="75.590553"
-       width="28.346457"
-       height="18.897636"
+       width="38.347321"
+       height="21.664109"
        id="rect2633-3" />
     <rect
        x="47.244095"
@@ -149,9 +129,45 @@
        width="28.346457"
        height="18.897636"
        id="rect2633-3-9" />
+    <rect
+       x="103.93701"
+       y="47.244095"
+       width="47.244091"
+       height="18.897638"
+       id="rect1551-7" />
+    <rect
+       x="47.244095"
+       y="47.244095"
+       width="47.59214"
+       height="20.901686"
+       id="rect1533-3" />
+    <rect
+       x="47.244095"
+       y="47.244095"
+       width="47.59214"
+       height="20.901686"
+       id="rect1533-3-7" />
+    <rect
+       x="47.244095"
+       y="47.244095"
+       width="28.346457"
+       height="28.346457"
+       id="rect1533-2-5" />
+    <rect
+       x="47.244095"
+       y="75.590553"
+       width="38.347321"
+       height="21.664108"
+       id="rect2633-3-3" />
+    <rect
+       x="47.244095"
+       y="47.244095"
+       width="101.63778"
+       height="20.853683"
+       id="rect1533-7" />
     <marker
        style="overflow:visible"
-       id="Arrow3-0"
+       id="Arrow3-3"
        refX="0"
        refY="0"
        orient="auto-start-reverse"
@@ -165,159 +181,110 @@
       <path
          style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
          d="M 3,-3 0,0 3,3"
-         id="arrow3-2"
+         id="arrow3-5"
          transform="rotate(180,0.125,0)"
          sodipodi:nodetypes="ccc" />
     </marker>
     <rect
-       x="103.93701"
+       x="47.244095"
        y="47.244095"
-       width="47.244091"
-       height="18.897638"
-       id="rect1551-7" />
+       width="28.9705"
+       height="20.817683"
+       id="rect1533-29" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#0000ff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
+       style="fill:#00ffff;stroke:#000000;stroke-width:0.362949;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
        id="rect234"
-       width="12.5"
-       height="10"
-       x="8.75"
-       y="32.5" />
+       width="8.7648153"
+       height="7.5148149"
+       x="15.088426"
+       y="31.058334" />
     <rect
-       style="fill:#0000ff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
+       style="fill:#00ffff;stroke:#000000;stroke-width:0.235455;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
        id="rect234-3"
-       width="12.499999"
-       height="10"
-       x="45"
-       y="10" />
+       width="7.4483032"
+       height="3.7215836"
+       x="56.275848"
+       y="25" />
     <rect
-       style="fill:#0000ff;stroke:#000000;stroke-width:0.31791;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
+       style="fill:#0000ff;stroke:#000000;stroke-width:0.235611;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
        id="rect234-3-1"
-       width="10.035487"
-       height="5.0354867"
-       x="59.964512"
-       y="32.5" />
-    <rect
-       style="fill:#00ffff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
-       id="rect234-6"
-       width="12.499999"
-       height="9.999999"
-       x="47.5"
-       y="50" />
+       width="7.4588375"
+       height="3.7212934"
+       x="56.27058"
+       y="28.778706" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:1;stroke-dasharray:none;marker-end:url(#Arrow3);paint-order:stroke markers fill"
-       d="M 22.5,34.999999 C 30.000001,35 20.706286,14.254306 42.499999,15"
+       d="m 24.999999,34.999999 c 25.840502,0.03626 12.367584,-7.495074 30,-7.5"
        id="path1049"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:1;stroke-dasharray:none;marker-end:url(#Arrow3-0);paint-order:stroke markers fill"
-       d="m 22.5,37.499999 c 7.500001,10e-7 24.999999,-5 34.999999,-5"
-       id="path1049-3"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:1;stroke-dasharray:none;marker-end:url(#Arrow3-5);paint-order:stroke markers fill"
-       d="m 22.5,39.999999 c 7.499999,0 12.499999,15 22.499999,15"
-       id="path1049-5"
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:1;stroke-dasharray:none;marker-end:url(#Arrow3-3);paint-order:stroke markers fill"
+       d="m 24.999999,34.999999 c 23.344326,0.06147 9.481388,9.830959 32.5,12.5"
+       id="path1049-6"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-0.0920873,14.469762)"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.6651122,-3.0080122)"
        id="text1531"
        style="font-size:12px;white-space:pre;shape-inside:url(#rect1533);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="47.244141"
          y="59.304141"
-         id="tspan6459">水</tspan></text>
+         id="tspan584">平衡状態の集合</tspan></text>
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.217383;stroke-miterlimit:1;paint-order:stroke markers fill"
+       id="path348"
+       cx="20.1"
+       cy="38.75"
+       rx="14.991309"
+       ry="23.641308" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.217612;stroke-miterlimit:1;paint-order:stroke markers fill"
+       id="path348-3"
+       cx="60"
+       cy="38.700001"
+       rx="14.991195"
+       ry="23.691193" />
+    <rect
+       style="fill:#0000ff;stroke:#000000;stroke-width:0.313659;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
+       id="rect234-3-1-6"
+       width="7.3807893"
+       height="6.6647944"
+       x="58.809605"
+       y="43.864372" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-9.2997053,6.9602376)"
-       id="text1549"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect1551);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
-         x="103.9375"
-         y="59.304141"
-         id="tspan6461">冷やす</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,8.2002944,16.558287)"
-       id="text1549-5"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect1551-7);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
-         x="103.9375"
-         y="59.304141"
-         id="tspan6463">冷やす</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-1.7997054,39.058287)"
-       id="text1549-2"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect1551-6);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
-         x="103.9375"
-         y="59.304141"
-         id="tspan6465">冷やす</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,37.407912,-8.0302371)"
-       id="text1531-7"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect1533-2);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
+       transform="matrix(0.26458333,0,0,0.26458333,35.541687,-3.4512373)"
+       id="text1531-5"
+       style="font-size:12px;white-space:pre;shape-inside:url(#rect1533-7);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="47.244141"
          y="59.304141"
-         id="tspan6467">水</tspan></text>
+         id="tspan586">平衡状態の集合</tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,51.913887,11.551937)"
-       id="text1531-7-7"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect1533-2-8);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
+       transform="matrix(0.26458333,0,0,0.26458333,23.43086,15.506938)"
+       id="text1531-1"
+       style="font-size:12px;white-space:pre;shape-inside:url(#rect1533-29);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="47.244141"
          y="59.304141"
-         id="tspan6469">水</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-0.2794123,24.268037)"
-       id="text2631"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect2633);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
-         x="47.244141"
-         y="87.649844"
-         id="tspan6471">1℃</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,34.853937,1.768037)"
-       id="text2631-6"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect2633-3);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
-         x="47.244141"
-         y="87.649844"
-         id="tspan6473">-1℃</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,49.853937,19.268037)"
-       id="text2631-6-2"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect2633-3-9);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
-         x="47.244141"
-         y="87.649844"
-         id="tspan6475">-1℃</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,37.853937,41.268036)"
-       id="text2631-6-6"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect2633-3-0);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
-         x="47.244141"
-         y="87.649844"
-         id="tspan6477">-1℃</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,38.907912,33.051937)"
-       id="text1531-7-6"
-       style="font-size:12px;white-space:pre;shape-inside:url(#rect1533-2-2);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
-         x="47.244141"
-         y="59.304141"
-         id="tspan6479">氷</tspan></text>
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.499999;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
-       d="M 57.5,27.5 72.499999,42.499999"
-       id="path3891" />
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.499999;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
-       d="M 57.499999,42.499999 72.499998,27.5"
-       id="path3947" />
+         id="tspan588">操作</tspan></text>
+    <g
+       id="g538"
+       transform="translate(9.8714027,-10.941748)">
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 35.092625,52.074035 10,9.999999"
+         id="path2834"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 45.092625,52.074034 -10,10"
+         id="path2834-2"
+         sodipodi:nodetypes="cc" />
+    </g>
   </g>
 </svg>

@@ -26,12 +26,12 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="1.3956771"
-     inkscape:cx="151.8976"
+     inkscape:cx="151.53935"
      inkscape:cy="154.40534"
      inkscape:window-width="1310"
      inkscape:window-height="675"
-     inkscape:window-x="128"
-     inkscape:window-y="85"
+     inkscape:window-x="36"
+     inkscape:window-y="93"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1">
     <inkscape:grid
@@ -235,8 +235,8 @@
     <rect
        x="188.97636"
        y="28.346457"
-       width="141.73248"
-       height="21.508064"
+       width="158.20586"
+       height="20.292195"
        id="rect20200-9-0" />
     <rect
        x="103.93701"
@@ -343,7 +343,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect20007);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.77953;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="103.9375"
          y="68.753359"
-         id="tspan2047">単純系</tspan></text>
+         id="tspan810">単純系</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-5.1715806,16.548655)"
@@ -351,7 +351,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect20007-7);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.77953;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="103.9375"
          y="68.753359"
-         id="tspan2049">単純系</tspan></text>
+         id="tspan812">単純系</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,22.328419,-0.95134312)"
@@ -359,7 +359,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect20007-1);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.77953;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="103.9375"
          y="68.753359"
-         id="tspan2051">単純系でない</tspan></text>
+         id="tspan814">単純系でない</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-0.0730742,1.5426243)"
@@ -367,7 +367,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect20200);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.77953;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="188.97656"
          y="40.405703"
-         id="tspan2053">仕切りがあると</tspan></text>
+         id="tspan816">仕切りがあると</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-27.500049,19.309323)"
@@ -375,7 +375,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect20200-9);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.77953;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="188.97656"
          y="40.405703"
-         id="tspan2055">部分的に相転移してても</tspan></text>
+         id="tspan818">部分的に相転移してても</tspan></text>
     <path
        style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1;stroke-dasharray:none;marker-end:url(#Arrow3);paint-order:stroke markers fill"
        d="m 7.4999999,46.249998 v 7.500001"
@@ -391,10 +391,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect20200-9-0);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.77953;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="188.97656"
          y="40.405703"
-         id="tspan2057">外力によって不均一なら</tspan><tspan
-         x="188.97656"
-         y="61.915469"
-         id="tspan2059">ば</tspan></text>
+         id="tspan820">外力によって不均一ならば</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-5.1390707,36.548657)"
@@ -402,7 +399,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect20007-1-2);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.77953;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="103.9375"
          y="68.753359"
-         id="tspan2061">単純系でない</tspan></text>
+         id="tspan822">単純系でない</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-26.257948,56.969973)"
@@ -410,7 +407,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect20200-9-0-2);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.77953;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="188.97656"
          y="40.405703"
-         id="tspan2063">外力あっても均一ならば</tspan></text>
+         id="tspan824">外力あっても均一ならば</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-3.7961305,54.479181)"
@@ -418,7 +415,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect20007-1-2-3);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.77953;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="103.9375"
          y="68.753359"
-         id="tspan2065">単純系</tspan></text>
+         id="tspan826">単純系</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-36.891593,-35.517561)"
@@ -426,7 +423,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect414);fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;paint-order:stroke markers fill"><tspan
          x="179.52734"
          y="153.79242"
-         id="tspan2067">水蒸気</tspan></text>
+         id="tspan828">水蒸気</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-38.085937,-0.94798109)"
@@ -434,6 +431,6 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect1224);fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;paint-order:stroke markers fill"><tspan
          x="170.07812"
          y="144.3432"
-         id="tspan2069">水</tspan></text>
+         id="tspan830">水</tspan></text>
   </g>
 </svg>

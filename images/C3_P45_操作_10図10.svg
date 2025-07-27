@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="2.086901"
-     inkscape:cx="173.22336"
-     inkscape:cy="125.7846"
+     inkscape:cx="173.94213"
+     inkscape:cy="126.26378"
      inkscape:window-width="1415"
      inkscape:window-height="877"
      inkscape:window-x="25"
@@ -219,12 +219,12 @@
        y="28.778706" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:1;stroke-dasharray:none;marker-end:url(#Arrow3);paint-order:stroke markers fill"
-       d="m 24.999999,34.999999 c 25,5 17.5,-9.999999 30,-7.5"
+       d="m 24.999999,34.999999 c 25.840502,0.03626 12.367584,-7.495074 30,-7.5"
        id="path1049"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:1;stroke-dasharray:none;marker-end:url(#Arrow3-3);paint-order:stroke markers fill"
-       d="m 24.999999,34.999999 c 32.679242,3.596021 10,10 32.5,12.5"
+       d="m 24.999999,34.999999 c 23.344326,0.06147 9.481388,9.830959 32.5,12.5"
        id="path1049-6"
        sodipodi:nodetypes="cc" />
     <text
@@ -234,7 +234,7 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect1533);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="47.244141"
          y="59.304141"
-         id="tspan3547">平衡状態の空間</tspan></text>
+         id="tspan584">平衡状態の集合</tspan></text>
     <ellipse
        style="fill:none;stroke:#000000;stroke-width:0.217383;stroke-miterlimit:1;paint-order:stroke markers fill"
        id="path348"
@@ -263,24 +263,28 @@
        style="font-size:12px;white-space:pre;shape-inside:url(#rect1533-7);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="47.244141"
          y="59.304141"
-         id="tspan3549">平衡状態の空間</tspan></text>
+         id="tspan586">平衡状態の集合</tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,23.770637,16.551937)"
+       transform="matrix(0.26458333,0,0,0.26458333,23.43086,15.506938)"
        id="text1531-1"
        style="font-size:12px;white-space:pre;shape-inside:url(#rect1533-29);display:inline;fill:#000000;stroke:none;stroke-width:1.88976;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"><tspan
          x="47.244141"
          y="59.304141"
-         id="tspan3551">操作</tspan></text>
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
-       d="m 57.499999,42.499999 10,9.999999"
-       id="path2834"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
-       d="m 67.499999,42.499999 -10,10"
-       id="path2834-2"
-       sodipodi:nodetypes="cc" />
+         id="tspan588">操作</tspan></text>
+    <g
+       id="g538"
+       transform="translate(9.8714027,-10.941748)">
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 35.092625,52.074035 10,9.999999"
+         id="path2834"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:1;stroke-dasharray:none;paint-order:stroke markers fill"
+         d="m 45.092625,52.074034 -10,10"
+         id="path2834-2"
+         sodipodi:nodetypes="cc" />
+    </g>
   </g>
 </svg>
