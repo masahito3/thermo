@@ -1,21 +1,6 @@
 ---
 header-includes: |
 include(`preamble.tex')
-  \usepackage{bm}
-  \providecommand{\N}{}
-  \renewcommand{\N}[1]{N^{(#1)}}
-  \providecommand{\K}{}
-  \renewcommand{\K}[1]{K^{(#1)}}
-  \providecommand{\V}{}
-  \renewcommand{\V}[1]{V^{(#1)}}
-  \providecommand{\N}{}
-  \renewcommand{\N}[1]{N^{(#1)}}
-  \providecommand{\Uz}{}
-  \renewcommand{\Uz}{\red{U_0}}
-  \providecommand{\Uo}{}
-  \renewcommand{\Uo}{\blue{U_1}}
-  \providecommand{\Uoi}{}
-  \renewcommand{\Uoi}{\blue{U_1^{(i)}}}
 ---
 
 NEWPAGE
@@ -30,4 +15,6 @@ NEWPAGE
 
 同一視するというのは等号で結ぶということである。この文は平衡状態の集合の要素間の等号の定義である
 
+この定義の妥当性は経験的なものだと思われる
 
+形状によって平衡状態を区別するような熱力学もあるかもしれないが、この本では形状によって平衡状態を区別しないという定義のもとに熱力学を作っている
