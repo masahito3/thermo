@@ -14,119 +14,164 @@ NEWPAGE
 
 $\disp S(U,V,N:C_1,C_2)
 =K\Big(\frac{UN}{2}\Big)^{1/3}
-\l[\l(\frac{V^\one}{1+\sqrt{\frac{V-V^\one}{V^\one}}}\r)^{1/3}
-+\l(\frac{V-V^\one}{1+\sqrt{\frac{V^\one}{V-V^\one}}}\r)^{1/3}\r]$\ \ (4.10)
+\Bigg[\Bigg(\frac{V^\one}{1+\sqrt{\frac{V-V^\one}{V^\one}}}\Bigg)^{1/3}
++\Bigg(\frac{V-V^\one}{1+\sqrt{\frac{V^\one}{V-V^\one}}}\Bigg)^{1/3}\Bigg]$\ \ (4.10)
 
 $\disp U^{(1)}=\frac{U}{1+\sqrt{\frac{V-V^\one}{V^\one}}}$\ \ (4.11)
 
 ---
 
-(導出)
+(説明)
 
 $$
 \begin{flalign*}
-\hat{S}&=S^\one(N^\one,U^\one,V^\one)+S^\two(N^\two,U^\two,V^\two)\ (\cuz 3.13) &\\
-&=K(N^\one U^\one V^\one)+K(N^\two U^\two V^\two)\ (\cuz 3.5) &\\
-&=K[(N^\one U^\one V^\one)+(N^\two U^\two V^\two)] 
+\hat{S}&=S^\one(U^\one,V^\one,N^\one)+S^\two(U^\two,V^\two,N^\two)\ (\cuz 3.13) &\\
+&=K(U^\one V^\one N^\one)+K(U^\two V^\two N^\two)\ (\cuz 3.5) &\\
+&=K[(U^\one V^\one N^\one)+(U^\two V^\two N^\two)] 
 \end{flalign*}
 $$
 
-$N^\one,U^\one,V^\one,N^\two,U^\two,V^\two$ は独立変数、$K$ は定数とする
+$U^\one,V^\one,N^\one,U^\two,V^\two,N^\two$ は独立変数、$K$ は定数とする
 
 (4.3)より
-$N=N^\one+N_1^\two,U=U^\one+U_1^\two,V=V^\one+V_1^\two$
+$U=U^\one+U_1^\two,V=V^\one+V_1^\two,N=N^\one+N_1^\two$
 
-$N,U,V$ は独立変数とする
+$U,V,N$ は独立変数とする
 
-$\so \hat{S_1}=K[(N^\one U^\one V^\one)^{1/3}
-+((N-N^\one)(U-U^\one)(V-V^\one))^{1/3}]$
+$$
+\begin{flalign*}
+\so \hat{S_1}(U,V,N,U^\one,V^\one,N^\one)
+&=\hat{S}(U^\one,V^\one,N^\one,U-U^\one,V-V^\one,N-N^\one) &\\
+&=  K[(U^\one V^\one N^\one)^{1/3}
+  +((U-U^\one)(V-V^\one)(N-N^\one))^{1/3}] &
+\end{flalign*}
+$$
 
 $C_1:\ N_1^\one=\disp\frac{N}{2}$ とする
 
-$\so \disp\hat{S_2}=K\Big(\frac{N}{2}\Big)^{1/3}
-[(U^\one V^\one)^{1/3}
-+((U-U^\one)(V-V^\one))^{1/3}]$\ \ (4.7)
+$$
+\begin{flalign*}
+\so \disp\hat{S_2}(U,V,N,U^\one,V^\one)
+&=\hat{S_1}(U,V,N,U^\one,V^\one,N_1^\one) &\\
+&=K\Big(\frac{N}{2}\Big)^{1/3}
+  [ (U^\one V^\one)^{1/3}
+   +((U-U^\one)(V-V^\one))^{1/3}]\ \ (4.7) &
+\end{flalign*}
+$$
 
 $C_2:\ V_1^\one は定数$ とする
 
-$\so \disp\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}
-[(U^\one V_1^\one)^{1/3}
-+((U-U^\one)(V-V_1^\one))^{1/3}]$
+$$
+\begin{flalign*}
+\so \disp\hat{S_3}(U,V,N,U^\one)
+&=\hat{S}_2(U,V,N,U^\one,V_1^\one) &\\
+&= K\Big(\frac{N}{2}\Big)^{1/3}
+   [(U^\one V_1^\one)^{1/3}
+   +((U-U^\one)(V-V_1^\one))^{1/3}] &
+\end{flalign*}
+$$
 
-$\disp\frac{\partial\hat{S}_3\ }{\partial U^\one}=0$ とする
+$0<U^\one<U$ とする (注意: $0<a<1$のとき$x>0$ならば$(x^a)'=ax^{a-1}$)
 
-$(U^\one)^{-2/3}(V_1^\one)^{1/3}-(U-U^\one)^{-2/3}(V-V_1^\one)^{1/3}=0$
+$$
+\begin{flalign*}
+\frac{\partial\hat{S}_3\ }{\partial U^\one}
+&=K\Big(\frac{N}{2}\Big)^{1/3}
+  \Big[\frac{1}{3}(U^\one)^{-2/3}(V^\one)^{1/3}
+      +\frac{1}{3}(-1)(U-U^\one)^{-2/3}(V-V^\one)^{1/3}\Big] &\\
+&=K\Big(\frac{N}{2}\Big)^{1/3}
+  \frac{1}{3}
+  \Big[(U^\one)^{-2/3}(V^\one)^{1/3}
+       -(U-U^\one)^{-2/3}(V-V^\one)^{1/3}\Big] &
+\end{flalign*}
+$$
 
-$\so (U^\one)^{-2/3}(V_1^\one)^{1/3}=(U-U^\one)^{-2/3}(V-V_1^\one)^{1/3}$
+$\disp\frac{\partial\hat{S}_3\ }{\partial U^\one}\Big|_{U^\one=U_1^\one}=0$
+, $0<U_1^\one<U$ とする
 
-$\so \disp\Big(\frac{U^\one}{U-U^\one}\Big)^{-2/3}
+$(U_1^\one)^{-2/3}(V_1^\one)^{1/3}-(U-U_1^\one)^{-2/3}(V-V_1^\one)^{1/3}=0$
+
+$\so (U_1^\one)^{-2/3}(V_1^\one)^{1/3}=(U-U_1^\one)^{-2/3}(V-V_1^\one)^{1/3}$
+
+$V_1^\one=0$ とすると
+
+$(U^\one)^{-2/3}(0)^{1/3}=(U-U^\one)^{-2/3}(V-0)^{1/3}$
+
+$\so U=U^\one$ 
+
+これは$0<U_1^\one<U$に反するよって$V_1^\one\ne 0$
+
+$V_1^\one=V$ とすると
+
+$(U_1^\one)^{-2/3}(V)^{1/3}=(U-U_1^\one)^{-2/3}(V-V)^{1/3}$
+
+$\so U_1^\one=0$
+
+これは$0<U_1^\one<U$に反するよって$V_1^\one\ne V$
+
+$\so \disp\Big(\frac{U_1^\one}{U-U_1^\one}\Big)^{-2/3}
 =\Big(\frac{V-V_1^\one}{V_1^\one}\Big)^{1/3}$
 
-$\so \disp\Big(\frac{U-U^\one}{U^\one}\Big)^2
+$\so \disp\Big(\frac{U-U_1^\one}{U_1^\one}\Big)^2
 =\frac{V-V_1^\one}{V_1^\one}$
 
-$\so \disp\frac{U-U^\one}{U^\one}
+$\so \disp\frac{U-U_1^\one}{U_1^\one}
 =\pm\sqrt{\frac{V-V_1^\one}{V_1^\one}}$
 
-$\disp\frac{U-U^\one}{U^\one}
-=-\sqrt{\frac{V-V_1^\one}{V_1^\one}},\ V_1^\one<V$ とすると
+$\disp\frac{U-U_1^\one}{U_1^\one}
+=-\sqrt{\frac{V-V_1^\one}{V_1^\one}}$ とすると
 
-$\disp\frac{U}{U^\one}
+$\disp\frac{U}{U_1^\one}
+=1-\sqrt{\frac{V-V_1^\one}{V_1^\one}}$
+
+$\disp\frac{U}{U_1^\one}
 =1-\sqrt{\frac{V-V_1^\one}{V_1^\one}}<1$
 
-$\so U<U^\one$ 
+$\so U<U_1^\one$ 
 
-これは$0\le U^\one\le U$ に反する
-
-よって
-$\disp\frac{U-U^\one}{U^\one}
-\ne -\sqrt{\frac{V-V_1^\one}{V_1^\one}}$ または $V_1^\one=V$ である
-
-$V_1^\one=V$ ならば
-
-$\disp+\sqrt{\frac{V-V_1^\one}{V_1^\one}}=-\sqrt{\frac{V-V_1^\one}{V_1^\one}}=0$である
+これは$0 < U_1^\one < U$ に反する
 
 よって
-$\disp\frac{U-U^\one}{U^\one}
+$\disp\frac{U-U_1^\one}{U_1^\one}
 =\sqrt{\frac{V-V_1^\one}{V_1^\one}}$
 
-$\so \disp U^\one=\frac{U}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}$\ \ (4.11)
+$\so \disp U_1^\one=\frac{U}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}$\ \ (4.11)
 
-$S$ のプロットより$\hat{S}_3$ は$U^\one$ についてCONCAVEなので
+$S$ のプロットより$\hat{S}_3$ は$0\le U^\one\le U$ で連続かつ CONCAVEなので
 
-(4.11)のとき$\hat{S}_3$は$U^\one$を変化させたときの最大値をとる
+$U_1^\one$において$\hat{S}_3$は最大となる
 
 よって
 $$
 \begin{flalign*}
-\disp \max \hat{S}_3
+\disp \max_{U^\one} \hat{S_3}
 &=K\Big(\frac{N}{2}\Big)^{1/3}
-\l[\l(\frac{U}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}V_1^\one\r)^{1/3}
-+\l(\l(U-\frac{U}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}  \r)(V-V_1^\one) \r)^{1/3} \r] &\\
+\Bigg[\Bigg(\frac{U}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}V_1^\one\Bigg)^{1/3}
++\Bigg(\Bigg(U-\frac{U}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}  \Bigg)(V-V_1^\one) \Bigg)^{1/3} \Bigg] &\\
 &=K\Big(\frac{UN}{2}\Big)^{1/3}
-\l[ 
- \l(\frac{V_1^\one}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}\r)^{1/3}
-+\l(\frac{V-V_1^\one}{1+\sqrt{\frac{V_1^\one}{V-V_1^\one}}} \r)^{1/3} 
-\r] &
+\Bigg[ 
+ \Bigg(\frac{V_1^\one}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}\Bigg)^{1/3}
++\Bigg(\frac{V-V_1^\one}{1+\sqrt{\frac{V_1^\one}{V-V_1^\one}}} \Bigg)^{1/3} 
+\Bigg] &
 \end{flalign*}
 $$
 
 よって
 $$
 \begin{flalign*}
-S&=\max_{N^\one,U^\one,V^\one,N^\two,U^\two,V^\two}\hat{S}\ (\cuz \text{要請II(v)}) &\\
-&=\max_{N^\one,U^\one,V^\one}\hat{S}_1\ (\cuz (4.3)) &\\
+S(U,V,N)&=\max_{U^\one,V^\one,N^\one,U^\two,V^\two,N^\two}\hat{S}\ (\cuz \text{要請II(v)}) &\\
+&=\max_{U^\one,V^\one,N^\one}\hat{S}_1\ (\cuz (4.3)) &\\
 &=\max_{U^\one,V^\one}\hat{S}_2\ (\cuz C_1) &\\
 &=\max_{U^\one}\hat{S}_3\ (\cuz C_2) &\\
 &=K\Big(\frac{UN}{2}\Big)^{1/3}
-\l[ 
- \l(\frac{V_1^\one}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}\r)^{1/3}
-+\l(\frac{V-V_1^\one}{1+\sqrt{\frac{V_1^\one}{V-V_1^\one}}} \r)^{1/3} 
-\r]\ \ (4.10) &
+\Bigg[ 
+ \Bigg(\frac{V_1^\one}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}\Bigg)^{1/3}
++\Bigg(\frac{V-V_1^\one}{1+\sqrt{\frac{V_1^\one}{V-V_1^\one}}} \Bigg)^{1/3} 
+\Bigg]\ \ (4.10) &
 \end{flalign*}
 $$
 
-$N,U,V$は独立変数、$V_1^\one$ は定数である
+$U,V,N$は独立変数、$V_1^\one$ は定数である
 
-(注意)複合系のエントロピー$S$は$N,U,V$を変化させたときの$\hat{S}$の最大値ではない。
-$N^\one,U^\one,V^\one,N^\two,U^\two,V^\two$を変化させたときの最大値である(要請II(v))
+(注意)複合系のエントロピー$S$は$U,V,N$を変化させたときの$\hat{S}$の最大値ではない。
+$U^\one,V^\one,N^\one,U^\two,V^\two,N^\two$を変化させたときの最大値である(要請II(v))

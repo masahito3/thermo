@@ -208,6 +208,10 @@ id="toc-C4_P62_平衡状態を完全に求める_10">P.62 平衡状態を完全�
 '25 8.5</a></li>
 <li><a href="P.63 (4.10),(4.11) &#39;25 8.5.html"
 id="toc-C4_P63_4.10_4.11_10">P.63 (4.10),(4.11) '25 8.5</a></li>
+<li><a href="P.64 (4.16) &#39;25 8.9.html" id="toc-C4_P64_4.16_10">P.64
+(4.16) '25 8.9</a></li>
+<li><a href="P.64 (4.17) &#39;25 8.10.html" id="toc-C4_P64_4.17_10">P.64
+(4.17) '25 8.10</a></li>
 </ul></li>
 </ul>
      </nav>
@@ -225,7 +229,7 @@ id="toc-C4_P63_4.10_4.11_10">P.63 (4.10),(4.11) '25 8.5</a></li>
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <span class="button icon is-large"><i class="fas fa-lg fa-angle-right"></i></span>
+        <a href="P.64 (4.16) '25 8.9.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
@@ -244,119 +248,161 @@ id="toc-C4_P63_4.10_4.11_10">P.63 (4.10),(4.11) '25 8.5</a></li>
 8.5</h2>
 <p><span class="math inline">\(\displaystyle S(U,V,N:C_1,C_2)
 =K\Big(\frac{UN}{2}\Big)^{1/3}
-\left[\left(\frac{V^{(1)}}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\right)^{1/3}
-+\left(\frac{V-V^{(1)}}{1+\sqrt{\frac{V^{(1)}}{V-V^{(1)}}}}\right)^{1/3}\right]\)</span>  (4.10)</p>
+\Bigg[\Bigg(\frac{V^{(1)}}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\Bigg)^{1/3}
++\Bigg(\frac{V-V^{(1)}}{1+\sqrt{\frac{V^{(1)}}{V-V^{(1)}}}}\Bigg)^{1/3}\Bigg]\)</span>  (4.10)</p>
 <p><span class="math inline">\(\displaystyle
 U^{(1)}=\frac{U}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\)</span>  (4.11)</p>
 <hr />
-<p>(導出)</p>
+<p>(説明)</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\hat{S}&amp;=S^{(1)}(N^{(1)},U^{(1)},V^{(1)})+S^{(2)}(N^{(2)},U^{(2)},V^{(2)})\
+\hat{S}&amp;=S^{(1)}(U^{(1)},V^{(1)},N^{(1)})+S^{(2)}(U^{(2)},V^{(2)},N^{(2)})\
 ({\because}3.13) &amp;\\
-&amp;=K(N^{(1)}U^{(1)}V^{(1)})+K(N^{(2)}U^{(2)}V^{(2)})\ ({\because}3.5)
+&amp;=K(U^{(1)}V^{(1)}N^{(1)})+K(U^{(2)}V^{(2)}N^{(2)})\ ({\because}3.5)
 &amp;\\
-&amp;=K[(N^{(1)}U^{(1)}V^{(1)})+(N^{(2)}U^{(2)}V^{(2)})]
+&amp;=K[(U^{(1)}V^{(1)}N^{(1)})+(U^{(2)}V^{(2)}N^{(2)})]
 \end{flalign*}
 \]</span></p>
 <p><span
-class="math inline">\(N^{(1)},U^{(1)},V^{(1)},N^{(2)},U^{(2)},V^{(2)}\)</span>
+class="math inline">\(U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}\)</span>
 は独立変数、<span class="math inline">\(K\)</span> は定数とする</p>
 <p>(4.3)より <span
-class="math inline">\(N=N^{(1)}+N_1^{(2)},U=U^{(1)}+U_1^{(2)},V=V^{(1)}+V_1^{(2)}\)</span></p>
-<p><span class="math inline">\(N,U,V\)</span> は独立変数とする</p>
-<p><span
-class="math inline">\({\therefore}\hat{S_1}=K[(N^{(1)}U^{(1)}V^{(1)})^{1/3}
-+((N-N^{(1)})(U-U^{(1)})(V-V^{(1)}))^{1/3}]\)</span></p>
+class="math inline">\(U=U^{(1)}+U_1^{(2)},V=V^{(1)}+V_1^{(2)},N=N^{(1)}+N_1^{(2)}\)</span></p>
+<p><span class="math inline">\(U,V,N\)</span> は独立変数とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+{\therefore}\hat{S_1}(U,V,N,U^{(1)},V^{(1)},N^{(1)})
+&amp;=\hat{S}(U^{(1)},V^{(1)},N^{(1)},U-U^{(1)},V-V^{(1)},N-N^{(1)})
+&amp;\\
+&amp;=  K[(U^{(1)}V^{(1)}N^{(1)})^{1/3}
+  +((U-U^{(1)})(V-V^{(1)})(N-N^{(1)}))^{1/3}] &amp;
+\end{flalign*}
+\]</span></p>
 <p><span class="math inline">\(C_1:\
 N_1^{(1)}=\displaystyle\frac{N}{2}\)</span> とする</p>
-<p><span
-class="math inline">\({\therefore}\displaystyle\hat{S_2}=K\Big(\frac{N}{2}\Big)^{1/3}
-[(U^{(1)}V^{(1)})^{1/3}
-+((U-U^{(1)})(V-V^{(1)}))^{1/3}]\)</span>  (4.7)</p>
+<p><span class="math display">\[
+\begin{flalign*}
+{\therefore}\displaystyle\hat{S_2}(U,V,N,U^{(1)},V^{(1)})
+&amp;=\hat{S_1}(U,V,N,U^{(1)},V^{(1)},N_1^{(1)}) &amp;\\
+&amp;=K\Big(\frac{N}{2}\Big)^{1/3}
+  [ (U^{(1)}V^{(1)})^{1/3}
+   +((U-U^{(1)})(V-V^{(1)}))^{1/3}]\ \ (4.7) &amp;
+\end{flalign*}
+\]</span></p>
 <p><span class="math inline">\(C_2:\ V_1^{(1)}は定数\)</span> とする</p>
-<p><span
-class="math inline">\({\therefore}\displaystyle\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}
-[(U^{(1)}V_1^{(1)})^{1/3}
-+((U-U^{(1)})(V-V_1^{(1)}))^{1/3}]\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+{\therefore}\displaystyle\hat{S_3}(U,V,N,U^{(1)})
+&amp;=\hat{S}_2(U,V,N,U^{(1)},V_1^{(1)}) &amp;\\
+&amp;= K\Big(\frac{N}{2}\Big)^{1/3}
+   [(U^{(1)}V_1^{(1)})^{1/3}
+   +((U-U^{(1)})(V-V_1^{(1)}))^{1/3}] &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(0&lt;U^{(1)}&lt;U\)</span> とする (注意:
+<span class="math inline">\(0&lt;a&lt;1\)</span>のとき<span
+class="math inline">\(x&gt;0\)</span>ならば<span
+class="math inline">\((x^a)&#39;=ax^{a-1}\)</span>)</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\frac{\partial\hat{S}_3\ }{\partial U^{(1)}}
+&amp;=K\Big(\frac{N}{2}\Big)^{1/3}
+  \Big[\frac{1}{3}(U^{(1)})^{-2/3}(V^{(1)})^{1/3}
+      +\frac{1}{3}(-1)(U-U^{(1)})^{-2/3}(V-V^{(1)})^{1/3}\Big] &amp;\\
+&amp;=K\Big(\frac{N}{2}\Big)^{1/3}
+  \frac{1}{3}
+  \Big[(U^{(1)})^{-2/3}(V^{(1)})^{1/3}
+       -(U-U^{(1)})^{-2/3}(V-V^{(1)})^{1/3}\Big] &amp;
+\end{flalign*}
+\]</span></p>
 <p><span class="math inline">\(\displaystyle\frac{\partial\hat{S}_3\
-}{\partial U^{(1)}}=0\)</span> とする</p>
+}{\partial U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}}=0\)</span> , <span
+class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span> とする</p>
 <p><span
-class="math inline">\((U^{(1)})^{-2/3}(V_1^{(1)})^{1/3}-(U-U^{(1)})^{-2/3}(V-V_1^{(1)})^{1/3}=0\)</span></p>
+class="math inline">\((U_1^{(1)})^{-2/3}(V_1^{(1)})^{1/3}-(U-U_1^{(1)})^{-2/3}(V-V_1^{(1)})^{1/3}=0\)</span></p>
 <p><span
-class="math inline">\({\therefore}(U^{(1)})^{-2/3}(V_1^{(1)})^{1/3}=(U-U^{(1)})^{-2/3}(V-V_1^{(1)})^{1/3}\)</span></p>
+class="math inline">\({\therefore}(U_1^{(1)})^{-2/3}(V_1^{(1)})^{1/3}=(U-U_1^{(1)})^{-2/3}(V-V_1^{(1)})^{1/3}\)</span></p>
+<p><span class="math inline">\(V_1^{(1)}=0\)</span> とすると</p>
 <p><span
-class="math inline">\({\therefore}\displaystyle\Big(\frac{U^{(1)}}{U-U^{(1)}}\Big)^{-2/3}
+class="math inline">\((U^{(1)})^{-2/3}(0)^{1/3}=(U-U^{(1)})^{-2/3}(V-0)^{1/3}\)</span></p>
+<p><span class="math inline">\({\therefore}U=U^{(1)}\)</span></p>
+<p>これは<span
+class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span>に反するよって<span
+class="math inline">\(V_1^{(1)}\ne 0\)</span></p>
+<p><span class="math inline">\(V_1^{(1)}=V\)</span> とすると</p>
+<p><span
+class="math inline">\((U_1^{(1)})^{-2/3}(V)^{1/3}=(U-U_1^{(1)})^{-2/3}(V-V)^{1/3}\)</span></p>
+<p><span class="math inline">\({\therefore}U_1^{(1)}=0\)</span></p>
+<p>これは<span
+class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span>に反するよって<span
+class="math inline">\(V_1^{(1)}\ne V\)</span></p>
+<p><span
+class="math inline">\({\therefore}\displaystyle\Big(\frac{U_1^{(1)}}{U-U_1^{(1)}}\Big)^{-2/3}
 =\Big(\frac{V-V_1^{(1)}}{V_1^{(1)}}\Big)^{1/3}\)</span></p>
 <p><span
-class="math inline">\({\therefore}\displaystyle\Big(\frac{U-U^{(1)}}{U^{(1)}}\Big)^2
+class="math inline">\({\therefore}\displaystyle\Big(\frac{U-U_1^{(1)}}{U_1^{(1)}}\Big)^2
 =\frac{V-V_1^{(1)}}{V_1^{(1)}}\)</span></p>
 <p><span
-class="math inline">\({\therefore}\displaystyle\frac{U-U^{(1)}}{U^{(1)}}
+class="math inline">\({\therefore}\displaystyle\frac{U-U_1^{(1)}}{U_1^{(1)}}
 =\pm\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span></p>
-<p><span class="math inline">\(\displaystyle\frac{U-U^{(1)}}{U^{(1)}}
-=-\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}},\ V_1^{(1)}&lt;V\)</span>
-とすると</p>
-<p><span class="math inline">\(\displaystyle\frac{U}{U^{(1)}}
+<p><span
+class="math inline">\(\displaystyle\frac{U-U_1^{(1)}}{U_1^{(1)}}
+=-\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span> とすると</p>
+<p><span class="math inline">\(\displaystyle\frac{U}{U_1^{(1)}}
+=1-\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span></p>
+<p><span class="math inline">\(\displaystyle\frac{U}{U_1^{(1)}}
 =1-\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}&lt;1\)</span></p>
-<p><span class="math inline">\({\therefore}U&lt;U^{(1)}\)</span></p>
-<p>これは<span class="math inline">\(0\le U^{(1)}\le U\)</span>
+<p><span class="math inline">\({\therefore}U&lt;U_1^{(1)}\)</span></p>
+<p>これは<span class="math inline">\(0 &lt; U_1^{(1)}&lt; U\)</span>
 に反する</p>
 <p>よって <span
-class="math inline">\(\displaystyle\frac{U-U^{(1)}}{U^{(1)}} \ne
--\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span> または <span
-class="math inline">\(V_1^{(1)}=V\)</span> である</p>
-<p><span class="math inline">\(V_1^{(1)}=V\)</span> ならば</p>
-<p><span
-class="math inline">\(\displaystyle+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}=-\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}=0\)</span>である</p>
-<p>よって <span
-class="math inline">\(\displaystyle\frac{U-U^{(1)}}{U^{(1)}}
+class="math inline">\(\displaystyle\frac{U-U_1^{(1)}}{U_1^{(1)}}
 =\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span></p>
 <p><span class="math inline">\({\therefore}\displaystyle
-U^{(1)}=\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\)</span>  (4.11)</p>
+U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\)</span>  (4.11)</p>
 <p><span class="math inline">\(S\)</span> のプロットより<span
 class="math inline">\(\hat{S}_3\)</span> は<span
-class="math inline">\(U^{(1)}\)</span> について<span
+class="math inline">\(0\le U^{(1)}\le U\)</span> で連続かつ <span
 style="display:inline-block;transform:rotate(180deg);">凹</span>なので</p>
-<p>(4.11)のとき<span class="math inline">\(\hat{S}_3\)</span>は<span
-class="math inline">\(U^{(1)}\)</span>を変化させたときの最大値をとる</p>
+<p><span class="math inline">\(U_1^{(1)}\)</span>において<span
+class="math inline">\(\hat{S}_3\)</span>は最大となる</p>
 <p>よって <span class="math display">\[
 \begin{flalign*}
-\displaystyle\max \hat{S}_3
+\displaystyle\max_{U^{(1)}} \hat{S_3}
 &amp;=K\Big(\frac{N}{2}\Big)^{1/3}
-\left[\left(\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}V_1^{(1)}\right)^{1/3}
-+\left(\left(U-\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}  \right)(V-V_1^{(1)})
-\right)^{1/3} \right] &amp;\\
+\Bigg[\Bigg(\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}V_1^{(1)}\Bigg)^{1/3}
++\Bigg(\Bigg(U-\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}  \Bigg)(V-V_1^{(1)})
+\Bigg)^{1/3} \Bigg] &amp;\\
 &amp;=K\Big(\frac{UN}{2}\Big)^{1/3}
-\left[
-\left(\frac{V_1^{(1)}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\right)^{1/3}
-+\left(\frac{V-V_1^{(1)}}{1+\sqrt{\frac{V_1^{(1)}}{V-V_1^{(1)}}}}
-\right)^{1/3}
-\right] &amp;
+\Bigg[
+\Bigg(\frac{V_1^{(1)}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)^{1/3}
++\Bigg(\frac{V-V_1^{(1)}}{1+\sqrt{\frac{V_1^{(1)}}{V-V_1^{(1)}}}}
+\Bigg)^{1/3}
+\Bigg] &amp;
 \end{flalign*}
 \]</span></p>
 <p>よって <span class="math display">\[
 \begin{flalign*}
-S&amp;=\max_{N^{(1)},U^{(1)},V^{(1)},N^{(2)},U^{(2)},V^{(2)}}\hat{S}\
+S(U,V,N)&amp;=\max_{U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}}\hat{S}\
 ({\because}\text{要請II(v)}) &amp;\\
-&amp;=\max_{N^{(1)},U^{(1)},V^{(1)}}\hat{S}_1\ ({\because}(4.3)) &amp;\\
+&amp;=\max_{U^{(1)},V^{(1)},N^{(1)}}\hat{S}_1\ ({\because}(4.3)) &amp;\\
 &amp;=\max_{U^{(1)},V^{(1)}}\hat{S}_2\ ({\because}C_1) &amp;\\
 &amp;=\max_{U^{(1)}}\hat{S}_3\ ({\because}C_2) &amp;\\
 &amp;=K\Big(\frac{UN}{2}\Big)^{1/3}
-\left[
-\left(\frac{V_1^{(1)}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\right)^{1/3}
-+\left(\frac{V-V_1^{(1)}}{1+\sqrt{\frac{V_1^{(1)}}{V-V_1^{(1)}}}}
-\right)^{1/3}
-\right]\ \ (4.10) &amp;
+\Bigg[
+\Bigg(\frac{V_1^{(1)}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)^{1/3}
++\Bigg(\frac{V-V_1^{(1)}}{1+\sqrt{\frac{V_1^{(1)}}{V-V_1^{(1)}}}}
+\Bigg)^{1/3}
+\Bigg]\ \ (4.10) &amp;
 \end{flalign*}
 \]</span></p>
-<p><span class="math inline">\(N,U,V\)</span>は独立変数、<span
+<p><span class="math inline">\(U,V,N\)</span>は独立変数、<span
 class="math inline">\(V_1^{(1)}\)</span> は定数である</p>
 <p>(注意)複合系のエントロピー<span
 class="math inline">\(S\)</span>は<span
-class="math inline">\(N,U,V\)</span>を変化させたときの<span
+class="math inline">\(U,V,N\)</span>を変化させたときの<span
 class="math inline">\(\hat{S}\)</span>の最大値ではない。 <span
-class="math inline">\(N^{(1)},U^{(1)},V^{(1)},N^{(2)},U^{(2)},V^{(2)}\)</span>を変化させたときの最大値である(要請II(v))</p>
+class="math inline">\(U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}\)</span>を変化させたときの最大値である(要請II(v))</p>
    </main>
 </div>
 
