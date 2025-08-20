@@ -26,12 +26,9 @@ $\hat{S_2}(U^\one,V^\one)$ は $0\le U^\one\le U, 0\le V^\one\le V$ で一様連
 
 (証明)
 
-$$
-\begin{flalign*}
-f(x,y)
-&=(xy)^{1/3}+\Big((X-x)(Y-y)\Big)^{1/3}&
-\end{flalign*}
-$$
+$f(x,y)
+=(xy)^{1/3}+\Big((X-x)(Y-y)\Big)^{1/3}$
+とする
 
 $0\le x \le X, 0\le y \le Y$ とする
 

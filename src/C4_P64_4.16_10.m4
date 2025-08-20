@@ -10,133 +10,85 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.64 (4.16) '25 8.9 {#C4_P64_4.16_10}
+## P.64 (4.16) max_{U,V} = max_U max_V '25 8.9 {#C4_P64_4.16_10}
 
-$\disp S(U,V,N:C_1)
-=\max_{U^\one,V^\one}\hat{S}
-=\max_{V^\one}\Big(\max_{U^\one}\hat{S}\Big)
-=\max_{V^\one}S(U,V,N:C_1,C_2)$\ \ (4.16)
+$\disp \max_{U^\one,V^\one}\hat{S_2}
+=\max_{V^\one} \max_{U^\one}\hat{S_2}$\ \ (4.16)
 
 ---
 
-(説明)
+(証明)
 
 $$
 \begin{flalign*}
-\hat{S}&=S^\one(U^\one,V^\one,N^\one)+S^\two(U^\two,V^\two,N^\two)\ (\cuz 3.13) &
-\end{flalign*}
-$$
-
-$U^\one,V^\one,N^\one,U^\two,V^\two,N^\two$ は独立変数、$K$ は定数とする
-
-$U=U^\one+U_1^\two,V=V^\one+V_1^\two,N=N^\one+N_1^\two$\ \ (4.3) とする
-
-$U,V,N$ は独立変数とする
-
-$$
-\begin{flalign*}
-\so \hat{S_1}(U,V,N,U^\one,V^\one,N^\one)
-&=\hat{S}(U^\one,V^\one,N^\one,U-U^\one,V-V^\one,N-N^\one) &
-\end{flalign*}
-$$
-
-$C_1:\ N_1^\one=\disp\frac{N}{2}$ とする
-
-$$
-\begin{flalign*}
-\so \disp\hat{S_2}(U,V,N,U^\one,V^\one)
-&=\hat{S_1}(U,V,N,U^\one,V^\one,N_1^\one) &\\
+\hat{S_2}(U^\one,V^\one)
 &=K\Big(\frac{N}{2}\Big)^{1/3}
   [ (U^\one V^\one)^{1/3}
-   +((U-U^\one)(V-V^\one))^{1/3}]\ (\cuz (3.5)) &
+   +((U-U^\one)(V-V^\one))^{1/3}]&
 \end{flalign*}
 $$
 
+$\hat{S_2}$ は $0\le U^\one \le U,\ 0\le V^\one \le V$ で一様連続
+\ ([別頁](#C4_P62_4.8_一様連続_10))
 
+なので $0\le V_0^\one\le V$ とすると $\hat{S_2}(U^\one,V_0^\one)$ は$0\le U^\one \le U$で連続
 
+よって $\disp\max_{U^\one}\hat{S_2}(U^\one,V_0^\one)$ は存在する\ $(\cuz\ 閉区間で連続関数は最大値をもつ)$
+
+$V_0^\one$ は任意なので $\disp\max_{U^\one}\hat{S_2}(U^\one,V^\one)$ は存在する
+
+また $\disp \max_{U^\one}\hat{S_2}$ は$0\le V^\one \le V$で連続\ \ $\kome{1}$
+
+$$
+\begin{flalign*}
+&&\kome{1}&f(x,y) が一様連続ならば \max_y f(x,y) は連続 \\
+&&& (証明)\\
+&&& f(x,y)は一様連続なので任意の\varepsilon に対して \\
+&&& x,x_0,y によらない\delta があって \\
+&&& |(x,y)-(x_0,y)|<\delta ならば |f(x,y)-f(x_0,y)|<\varepsilon \\
+&&& |x-x_0|<\delta ならば\\
+&&& |(x,y)-(x_0,y)|=\sqrt{(x-x_0)^2+(y-y)^2}=|x-x_0|<\delta \\
+&&& よって |x-x_0|<\delta ならば|f(x,y)-f(x_0,y)|<\varepsilon\\
+&&& \so -\varepsilon<f(x,y)-f(x_0,y)<\varepsilon \\
+&&& \so -\varepsilon+f(x_0,y)<f(x,y)<\varepsilon+f(x_0,y) \cdots (1) \\
+&&& f(x_0,y)\le \max_y f(x_0,y) なので (1)の右側の不等式より \\
+&&& f(x,y)<\varepsilon+\max_y f(x_0,y) \\
+&&& y は任意なので \\
+&&& \so \max_y f(x,y) < \max_y f(x_0,y)+\varepsilon \\
+&&& \so -\varepsilon+\max_y f(x,y) < \max_y f(x_0,y) \\
+&&& また f(x,y)\le \max_y f(x,y) なので(1)の左側の不等式より\\
+&&& -\varepsilon+f(x_0,y)<\max_y f(x,y) \\
+&&& \so f(x_0,y)<\max_y f(x,y)+\varepsilon \\
+&&& y は任意なので \\
+&&& \max_y f(x_0,y)<\max_y f(x,y)+\varepsilon \\
+&&& よって -\varepsilon+\max_y f(x,y)<\max_y f(x_0,y)<\max_y f(x,y)+\varepsilon \\
+&&& \so |\max_y f(x_0,y)-\max_y f(x,y)|< \varepsilon \\
+&&& よって \max_y f(x,y) は x_0 で連続 \\
+&&& x_0 は任意なので \max_y f(x,y) は連続
+\end{flalign*}
+$$
 
 よって
-$$
-\begin{flalign*}
-S(U,V,N)&=\max_{U^\one,V^\one,N^\one,U^\two,V^\two,N^\two}\hat{S}\ (\cuz \text{要請II(v)}) &\\
-&=\max_{U^\one,V^\one,N^\one}\hat{S}_1\ (\cuz (4.3)) &\\
-&=\max_{U^\one,V^\one}\hat{S}_2\ (\cuz C_1) &
-\end{flalign*}
-$$
+$\disp \max_{V^\one} \max_{U^\one}\hat{S_2}$ は存在する\ $(\cuz\ 閉区間の連続関数は最大値をもつ)$
 
+また
+$0\le U^\one\le U,\ 0\le V^\one\le V$ で$\hat{S_2}$ は連続なので
+$\disp\max_{U^\one,V^\one}\hat{S_2}$ は存在する\ $(\cuz\ 閉領域の連続関数は最大値をもつ)$
 
-プロットより$\hat{S_2}$は$0\le U^\one\le U, 0\le V^\one \le V$ で 連続かつ CONCAVEなので
-
-
-
-
-
-
-
-
-
+このとき
+$\disp \max_{U^\one,V^\one}\hat{S_2}
+=\max_{V^\one} \max_{U^\one} \hat{S_2}$である\ \ $\kome{2}$
 
 $$
 \begin{flalign*}
-\max_{U^\one,V^\one}\hat{S_2} &=\max_{V^\one}\Big(\max_{U^\one}\hat{S_2}\Big) &
+&&\kome{2}&\max_{x,y}f(x,y),\ \max_x \max_y f(x,y) が存在するならば\\
+&&& \max_{x,y}f(x,y)=\max_x \max_y f(x,y) \\
+&&& (証明) \\
+&&& f(x,y)\le\max_{x,y} f(x,y)\\
+&&& y は任意なので \max_y f(x,y)\le\max_{x,y}f(x,y)\\
+&&& x は任意なので \max_x \max_y f(x,y)\le\max_{x,y}f(x,y)\\
+&&& また f(x,y)\le\max_y f(x,y)\le\max_x\max_y f(x,y)\\
+&&& x,\ y は任意なので \max_{x,y}f(x,y)\le\max_x\max_y f(x,y)\\
+&&& よって \max_{x,y}f(x,y)=\max_x\max_y f(x,y)
 \end{flalign*}
 $$
-
-また $\disp\frac{\partial \hat{S_2}}{\partial U^\one}\Big|_{U^\one=U_1^\one}=0$, $0<U_1^\one<U$ ならば
-
-$$
-\begin{flalign*}
-\max_{U^\one}\hat{S_2} &=\hat{S_2}(U,V,N,U_1^\one,V^\one) &
-\end{flalign*}
-$$
-
-よって
-
-$$
-\begin{flalign*}
-S(U,V,N)&=\max_{U^\one,V^\one,N^\one,U^\two,V^\two,N^\two}\hat{S} &\\
-&=\max_{U^\one,V^\one}\hat{S_2} &\\
-&=\max_{V^\one}\Big(\max_{U^\one}\hat{S_2}\Big) &\\
-&=\max_{V^\one}\hat{S_2}(U,V,N,U_1^\one,V^\one) &
-\end{flalign*}
-$$
-
-ここで $C_2:\ V_1^\one が定数$ とする
-
-$\disp\frac{\partial\hat{S_2}(U,V,N,U^\one,V_1^\one)}{\partial U^\one}\Big|_{U^\one=U_2^\one} =0$, $0<U_2^\one<U$とすると
-
-$$
-\begin{flalign*}
-S(U,V,N:C_1,C_2)
-&=\max_{U^\one} \hat{S_2}(U,V,N,U^\one,V_1^\one) &\\
-&=\hat{S_2}(U,V,N,U_2^\one,V_1^\one) &
-\end{flalign*}
-$$
-
-$V^\one\ne V_1^\one$ のとき
-
-$$
-\begin{flalign*}
-\hat{S_2}(U,V,N,U_2^\one,V_1^\one) &\ne \hat{S_2}(U,V,N,U_1^\one,V^\one) &
-\end{flalign*}
-$$
-
-なので
-
-$$
-\begin{flalign*}
-\max_{V^\one}\Big(\max_{U^\one}\hat{S}\Big)&=\max_{V^\one}S(U,V,N:C_1,C_2)&
-\end{flalign*}
-$$
-
-は$V^\one=V_1^\one$のときは正しいが、そうでないときは正しくない
-
-なので
-
-$\disp S(U,V,N:C_1)=\max_{V^\one}S(U,V,N:C_1,C_2)$ とするのはちょっと乱暴かなと思う
-
-条件 $C_2$ は $V^\one$ を固定するのだから、そのあとで $\disp\max_{V^\one}$ で $V^\one$ をうごかすことはできないと思う
-
-とはいえ
-$\hat{S_2}(U,V,N,U_1^\one,V^\one)$ と $\hat{S_2}(U,V,N,U_2^\one,V_1^\one)$ 
-を求める手順は同じで結果も(4.10)か(4.10)の$V^\one$を$V_1^\one$としたものである
