@@ -208,8 +208,13 @@ id="toc-C4_P62_平衡状態を完全に求める_10">P.62 平衡状態を完全�
 '25 8.5</a></li>
 <li><a href="P.63 (4.10),(4.11) &#39;25 8.5.html"
 id="toc-C4_P63_4.10_4.11_10">P.63 (4.10),(4.11) '25 8.5</a></li>
+<li><a href="P.62 (4.8) 一様連続 &#39;25 8.16.html"
+id="toc-C4_P62_4.8_一様連続_10">P.62 (4.8) 一様連続 '25 8.16</a></li>
 <li><a href="P.64 (4.16) &#39;25 8.9.html" id="toc-C4_P64_4.16_10">P.64
 (4.16) '25 8.9</a></li>
+<li><a href="P.64 (4.16) max_{U,V} = max_U max_V &#39;25 8.9.html"
+id="toc-C4_P64_4.16_20">P.64 (4.16) max_{U,V} = max_U max_V '25
+8.9</a></li>
 <li><a href="P.64 (4.17) &#39;25 8.10.html" id="toc-C4_P64_4.17_10">P.64
 (4.17) '25 8.10</a></li>
 </ul></li>
@@ -222,7 +227,7 @@ id="toc-C4_P63_4.10_4.11_10">P.63 (4.10),(4.11) '25 8.5</a></li>
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.64 (4.16) '25 8.9.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.64 (4.16) max_{U,V} = max_U max_V '25 8.9.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
@@ -244,7 +249,7 @@ id="toc-C4_P63_4.10_4.11_10">P.63 (4.10),(4.11) '25 8.5</a></li>
 </div>
 </nav>
 -->
-<h2 data-number="4.6" id="C4_P64_4.17_10">P.64 (4.17) '25 8.10</h2>
+<h2 data-number="4.8" id="C4_P64_4.17_10">P.64 (4.17) '25 8.10</h2>
 <p><span class="math inline">\(f(x)+f(X-x)\)</span>  (4.17)</p>
 <hr />
 <p>(説明)</p>
@@ -260,15 +265,13 @@ N^{(1)}=\displaystyle\frac{N}{2}\)</span> とする</p>
 <p><span
 class="math inline">\(U,V,N,U^{(1)},V^{(1)}\)</span>は独立変数</p>
 <p>プロットより <span class="math inline">\(\hat{S_2}\)</span>は<span
-class="math inline">\(0\le U^{(1)}\le U,\ 0\le V^{(1)}\le V\)</span> で
-連続かつ<span
+class="math inline">\(0\le U^{(1)}\le U\)</span> で 連続かつ<span
 style="display:inline-block;transform:rotate(180deg);">凹</span>
 なので</p>
 <p><span class="math inline">\(\displaystyle\frac{\partial
 \hat{S_2}}{\partial U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}}=0\)</span> , <span
 class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span> とすると</p>
-<p><span class="math inline">\(V^{(1)}\ne 0, V^{(1)}\ne V\)</span>
-なので <span class="math inline">\(0&lt;V^{(1)}&lt;V\)</span></p>
+<p><span class="math inline">\(V^{(1)}\ne 0, V^{(1)}\ne V\)</span></p>
 <p><span class="math inline">\(\displaystyle
 U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\)</span>  (4.11)</p>
 <div style="margin-bottom:2em;">
@@ -284,6 +287,7 @@ U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\)</span>  (4.11)</p>
 \ (4.10) &amp;
 \end{flalign*}
 \]</span></p>
+<p>である</p>
 <p><span class="math inline">\(V\)</span> に <span
 class="math inline">\(X\)</span>、<span
 class="math inline">\(V^{(1)}\)</span> に <span
@@ -297,9 +301,8 @@ class="math inline">\(x\)</span> を代入すると</p>
 \end{flalign*}
 \]</span></p>
 <p>となる。<span
-class="math inline">\(X,x\)</span>は独立変数とする。<span
-class="math inline">\(0&lt;V^{(1)}&lt;V\)</span>より<span
-class="math inline">\(0&lt;x&lt;X\)</span> である</p>
+class="math inline">\(x,X\)</span>は独立変数とする。<span
+class="math inline">\(0&lt;x&lt;X\)</span> とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
 f(x) &amp;= \Bigg(\frac{x}{1+\sqrt{\frac{X-x}{x}}}\Bigg)^{1/3} &amp;
@@ -321,26 +324,13 @@ f(X-x) &amp;= \Bigg(\frac{X-x}{1+\sqrt{\frac{x}{X-x}}}\Bigg)^{1/3} &amp;
   +\Bigg(\frac{X-x}{1+\sqrt{\frac{x}{X-x}}}\Bigg)^{1/3} \Bigg] &amp;
 \end{flalign*}
 \]</span></p>
-<p>となる</p>
-<p><span class="math inline">\(f&#39;(x)\)</span> は強単調増加ならば
-<span class="math inline">\(f&#39;(X-x)\)</span> は <span
-class="math inline">\(x\)</span> の関数として強単調減少である <span
+<p><span class="math inline">\(f&#39;(x)\)</span>は強単調とする</p>
+<p><span
+class="math inline">\(f&#39;(x)-f&#39;(X-x)\)</span>は強単調である<span
 class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
-<p>同様に <span class="math inline">\(f&#39;(x)\)</span>
-は強単調減少ならば <span class="math inline">\(f&#39;(X-x)\)</span>
-は<span class="math inline">\(x\)</span>
-の関数として強単調増加である</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp; f&#39;(x) は強単調増加 とする \\
-&amp;&amp;&amp; x_1&lt;x_2 とすると\\
-&amp;&amp;&amp; -x_1&gt;-x_2 \\
-&amp;&amp;&amp; {\therefore}X-x_1&gt;X-x_2 \\
-&amp;&amp;&amp; {\therefore}f&#39;(X-x_1)&gt;f&#39;(X-x_2) \\
-&amp;&amp;&amp; {\therefore}f&#39;(X-x) は x
-の関数として強単調減少である
-\end{flalign*}
-\]</span></p>
+<p>よって <span class="math inline">\(f(x)+f(X-x)\)</span> は<span
+style="display:inline-block;transform:rotate(180deg);">凹</span>または<span
+style="display:inline-block;transform:rotate(180deg);">凸</span>である</p>
 <p><span class="math inline">\(f&#39;(x)=f&#39;(X-x)\)</span> を満たす
 <span class="math inline">\(x\)</span> は<span
 class="math inline">\(\displaystyle\frac{X}{2}\)</span> のみである <span
@@ -365,10 +355,10 @@ f&#39;\Big(X-\frac{X}{2}\Big) なので\\
 \]</span></p>
 <p><span class="math inline">\(\hat{S_2}\)</span>のプロットより<span
 class="math inline">\(f(x)+f(X-x)\)</span> は <span
-class="math inline">\(0&lt;x&lt;X\)</span> で関数として<span
+class="math inline">\(0&lt;x&lt;X\)</span> で<span
 style="display:inline-block;transform:rotate(180deg);">凹</span>
 なので</p>
-<p><span class="math inline">\(f&#39;(x_1)+f&#39;(X-x_1)=0\)</span>
+<p><span class="math inline">\(f&#39;(x_1)-f&#39;(X-x_1)=0\)</span>
 ならば</p>
 <p><span class="math display">\[
 \begin{flalign*}

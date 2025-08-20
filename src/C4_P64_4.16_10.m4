@@ -45,9 +45,15 @@ $C_1:\ N_1^\one=\disp\frac{N}{2}$ とする
 $$
 \begin{flalign*}
 \so \disp\hat{S_2}(U,V,N,U^\one,V^\one)
-&=\hat{S_1}(U,V,N,U^\one,V^\one,N_1^\one) &
+&=\hat{S_1}(U,V,N,U^\one,V^\one,N_1^\one) &\\
+&=K\Big(\frac{N}{2}\Big)^{1/3}
+  [ (U^\one V^\one)^{1/3}
+   +((U-U^\one)(V-V^\one))^{1/3}]\ (\cuz (3.5)) &
 \end{flalign*}
 $$
+
+
+
 
 よって
 $$
@@ -58,7 +64,17 @@ S(U,V,N)&=\max_{U^\one,V^\one,N^\one,U^\two,V^\two,N^\two}\hat{S}\ (\cuz \text{�
 \end{flalign*}
 $$
 
+
 プロットより$\hat{S_2}$は$0\le U^\one\le U, 0\le V^\one \le V$ で 連続かつ CONCAVEなので
+
+
+
+
+
+
+
+
+
 
 $$
 \begin{flalign*}

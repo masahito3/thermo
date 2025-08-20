@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.34 (2.23) '25 6.30</title>
+  <title>P.62 (4.8) 一様連続 '25 8.16</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -227,21 +227,21 @@ id="toc-C4_P64_4.16_20">P.64 (4.16) max_{U,V} = max_U max_V '25
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.32 問題2.1 '25 6.29.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.63 (4.10),(4.11) '25 8.5.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.34 (2.24) '25 6.30.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.64 (4.16) '25 8.9.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="第2章.html" accesskey="u" rel="up">第2章</a>
+<span class="navlink-label">Up:</span> <a href="第4章.html" accesskey="u" rel="up">第4章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
@@ -249,17 +249,152 @@ id="toc-C4_P64_4.16_20">P.64 (4.16) max_{U,V} = max_U max_V '25
 </div>
 </nav>
 -->
-<h2 data-number="2.8" id="C2_P34_2.23_10">P.34 (2.23) '25 6.30</h2>
-<p><span class="math inline">\(\Delta \langle N \rangle =
-(Vによらない定数) \times V\)</span>  (2.23)</p>
+<h2 data-number="4.5" id="C4_P62_4.8_一様連続_10">P.62 (4.8) 一様連続
+'25 8.16</h2>
+<p><span class="math display">\[
+\begin{flalign*}
+\hat{S_2}(U^{(1)},V^{(1)})
+&amp;=K\Big(\frac{N}{2}\Big)^{1/3}
+\Bigg[\Big(U^{(1)},V^{(1)}\Big)^{1/3}+\Big((U-U^{(1)})(V-V^{(1)})\Big)^{1/3}\Bigg]\
+\ (4.8)&amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(\hat{S_2}(U^{(1)},V^{(1)})\)</span> は
+<span class="math inline">\(0\le U^{(1)}\le U, 0\le V^{(1)}\le
+V\)</span> で一様連続である</p>
 <hr />
 <p>(証明)</p>
-<p><span class="math inline">\(\langle N^{(1)} \rangle = K^{(1)}
-V\)</span></p>
-<p><span class="math inline">\(\langle N^{(2)} \rangle = K^{(2)}
-V\)</span></p>
-<p><span class="math inline">\({\therefore}\Delta \langle N \rangle =
-(K^{(2)}-K^{(1)}) V\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+f(x,y)
+&amp;=(xy)^{1/3}+\Big((X-x)(Y-y)\Big)^{1/3}&amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(0\le x \le X, 0\le y \le Y\)</span>
+とする</p>
+<p><span class="math inline">\(g(x,y)=xy\)</span> は<span
+class="math inline">\(0\le x \le X, 0\le y \le
+Y\)</span>で一様連続である  <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*1)}&amp; 0\le x_0,x_1\le X, 0\le y_0,y_1\le
+Y とする\\
+&amp;&amp;&amp;|x_1 y_1-x_0 y_0| \\
+&amp;&amp;&amp;\qquad =|x_1(y_1-y_0)+y_0(x_1-x_0)| \\
+&amp;&amp;&amp;\qquad \le |x_1||y_1-y_0|+|y_0||x_1-x_0|\ ({\because}\
+三角不等式)\\
+&amp;&amp;&amp;\qquad \le X|y_1-y_0|+Y|x_1-x_0|\\
+&amp;&amp;&amp; d=|(x_1,y_1)-(x_0,y_0)|=\sqrt{(x_1-x_0)^2+(y_1-y_0)^2}
+とする \\
+&amp;&amp;&amp; |x_1-x_0|\le d,\ |y_1-y_0|\le d\ ({\because}\
+三角不等式)\\
+&amp;&amp;&amp; {\therefore}X|x_1-x_0|\le Xd,\ Y|y_1-y_0|\le Yd \\
+&amp;&amp;&amp; {\therefore}X|y_1-y_0|+Y|x_1-x_0| \le (X+Y)d \\
+&amp;&amp;&amp; {\therefore}|x_1 y_1-x_0 y_0| \le (X+Y)d \\
+&amp;&amp;&amp; \varepsilon&gt;0 とする\\
+&amp;&amp;&amp; X+Y=0 のとき X=Y=0 \\
+&amp;&amp;&amp; {\therefore}x_0=y_0=x_1=y_1=0 \\
+&amp;&amp;&amp; {\therefore}|x_1 y_1-x_0 y_0| = 0 &lt; \varepsilon \\
+&amp;&amp;&amp; X+Y\ne0 のとき\\
+&amp;&amp;&amp; d=|(x_0,y_0)-(x_1,y_1)|&lt;\frac{\varepsilon}{X+Y}
+ならば\\
+&amp;&amp;&amp; |x_1 y_1-x_0 y_0| \le (X+Y)d \le
+(X+Y)\frac{\varepsilon}{X+Y}=\varepsilon \\
+&amp;&amp;&amp; よって xy は一様連続
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(h(t)=t^{1/3}\)</span> は<span
+class="math inline">\(0\le t\le T\)</span>で一様連続である  <span
+class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*2)}&amp; 0\le t_0,t_1\le T とする\\
+&amp;&amp;&amp;t_0&lt; t_1 のとき\\
+&amp;&amp;&amp;\Big((t_1-t_0)^{1/3}+t_0^{1/3}\Big)^3 \\
+&amp;&amp;&amp;\qquad =
+(t_1-t_0)+3(t_1-t_0)^{2/3}t_0^{1/3}+3(t_1-t_0)^{1/3}t_0^{2/3}+t_0\
+({\because}\ 二項定理) \\
+&amp;&amp;&amp;\qquad \ge (t_1-t_0)+t_0 = t_1 \\
+&amp;&amp;&amp;{\therefore}\ (t_1-t_0)^{1/3}+t_0^{1/3} \ge t_1^{1/3} \\
+&amp;&amp;&amp;{\therefore}\ (t_1-t_0)^{1/3} \ge  t_1^{1/3} - t_0^{1/3}
+\\
+&amp;&amp;&amp;\varepsilon&gt;0 とする\\
+&amp;&amp;&amp;|t_1-t_0|&lt;\varepsilon^3 ならば\\
+&amp;&amp;&amp;(t_1-t_0)^{1/3}&lt;\varepsilon \\
+&amp;&amp;&amp;{\therefore}\varepsilon &gt; (t_1-t_0)^{1/3} \ge
+t_1^{1/3} - t_0^{1/3}=|t_1^{1/3} - t_0^{1/3}| \\
+&amp;&amp;&amp;t_0 &gt; t_1\ のときも同様に\ \varepsilon &gt; |t_1^{1/3}
+- t_0^{1/3}| \\
+&amp;&amp;&amp;よって t^{1/3} は一様連続
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(h(g(x,y))=(xy)^{1/3}\)</span> は<span
+class="math inline">\(0\le x \le X, 0\le y \le
+Y\)</span>で一様連続である  <span
+class="math inline">\(\textcolor{red}{(*3)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp; \textcolor{red}{(*3)}&amp; h(t) が 0\le t \le T で一様連続 \\
+&amp;&amp;&amp; g(x,y) が 0\le x\le X,\ 0\le y\le Y で一様連続 とする\\
+&amp;&amp;&amp; 0\le g(x,y)\le T とする\\
+&amp;&amp;&amp; \varepsilon_h&gt;0とする\\
+&amp;&amp;&amp; \delta_h が存在して|t_1-t_0|&lt;\delta_h ならば
+|h(t_1)-h(t_0)|&lt;\varepsilon_h\\
+&amp;&amp;&amp; g(x,y) は一様連続なので x_1,\ y_1 によらない\delta_g
+が存在して\\
+&amp;&amp;&amp; |(x_1,y_1)-(x_0,y_0)|&lt;\delta_g ならば
+|g(x_1,y_1)-g(x_0,y_0)|&lt;\delta_h \\
+&amp;&amp;&amp; {\therefore}|h(g(x_1,y_1))-h(g(x_0,y_0))|
+&lt;\varepsilon_h\\
+&amp;&amp;&amp; よって h(g(x,y)) はx,y について一様連続
+\end{flalign*}
+\]</span></p>
+<p><span
+class="math inline">\(h(g(X-x,Y-y))=\Big((X-x)(Y-y)\Big)^{1/3}\)</span>
+は<span class="math inline">\(0\le x \le X, 0\le y \le
+Y\)</span>で一様連続である  <span
+class="math inline">\(\textcolor{red}{(*4)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp; \textcolor{red}{(*4)}&amp; h(s,t) が 0\le s \le S,\ 0\le t
+\le T で一様連続 \\
+&amp;&amp;&amp; f(x) が 0\le x\le X で一様連続 \\
+&amp;&amp;&amp; g(y) が 0\le y\le Y で一様連続 \\
+&amp;&amp;&amp; 0\le f(x)\le S,\ 0\le g(y)\le T とする\\
+&amp;&amp;&amp; \varepsilon_h&gt;0 に対して s_0,t_0,s_1,t_1
+によらない\delta_h があって \\
+&amp;&amp;&amp; |(s_1,t_1)-(s_0,t_0)|&lt;\delta_h ならば
+|h(s_1,t_1)-h(s_0,t_0)|&lt;\varepsilon_h \\
+&amp;&amp;&amp; x_0,x_1 によらない\delta_f があって \\
+&amp;&amp;&amp; |x_1-x_0|&lt;\delta_f ならば|f(x_1)-f(x_0)|&lt;
+\delta_h/\sqrt{2} \\
+&amp;&amp;&amp; y_0,y_1 によらない\delta_g があって \\
+&amp;&amp;&amp; |y_1-y_0|&lt;\delta_g ならば|g(y_1)-g(y_0)|&lt;
+\delta_h/\sqrt{2} \\
+&amp;&amp;&amp; d = min(\delta_f,\delta_g) とする \\
+&amp;&amp;&amp; |(x_1,y_1)-(x_0,y_0)| &lt; d とすると \\
+&amp;&amp;&amp; |x_1-x_0|\le |(x_1,y_1)-(x_0,y_0)| &lt; d \le \delta_f
+なので\ ({\because}\ 三角不等式) \\
+&amp;&amp;&amp; |f(x_1)-f(x_0)|&lt; \delta_h/\sqrt{2} \\
+&amp;&amp;&amp; 同様に|g(y_1)-g(y_0)|&lt; \delta_h/\sqrt{2} \\
+&amp;&amp;&amp; {\therefore}\ |(f(x_1),g(y_1))-(f(x_0),g(y_0))| \\
+&amp;&amp;&amp; \qquad =\sqrt{(f(x_1)-f(x_0))^2+(g(y_1)-g(y_0))^2} \\
+&amp;&amp;&amp; \qquad &lt; \sqrt{\delta_h^2/2+\delta_h^2/2}=\delta_h \\
+&amp;&amp;&amp;
+よって|h(f(x_1),g(y_1))-h(f(x_0),g(y_0))|&lt;\varepsilon_h \\
+&amp;&amp;&amp; よって h(f(x),g(y)) は 0\le x \le X,\ 0 \le y \le Y
+で一様連続
+\end{flalign*}
+\]</span></p>
+<p>よって <span
+class="math inline">\(f(x,y)=(xy)^{1/3}+\Big((X-x)(Y-y)\Big)^{1/3}\)</span>
+は一様連続である  <span class="math inline">\(({\because}\
+f,gが一様連続ならば f+g も一様連続)\)</span></p>
+<p>よって <span
+class="math inline">\(\hat{S_2}(U^{(1)},V^{(1)})\)</span>
+は一様連続  <span class="math inline">\(({\because}\ f
+が一様連続ならばkfも一様連続)\)</span></p>
    </main>
 </div>
 

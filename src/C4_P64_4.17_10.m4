@@ -30,12 +30,12 @@ $$
 
 $U,V,N,U^\one,V^\one$は独立変数
 
-プロットより $\hat{S_2}$は$0\le U^\one\le U,\ 0\le V^\one\le V$ で 連続かつCONCAVE なので
+プロットより $\hat{S_2}$は$0\le U^\one\le U$ で 連続かつCONCAVE なので
 
 $\disp\frac{\partial \hat{S_2}}{\partial U^\one}\Big|_{U^\one=U_1^\one}=0$
 ,\ $0<U_1^\one<U$ とすると 
 
-$V^\one\ne 0, V^\one\ne V$ なので $0<V^\one<V$
+$V^\one\ne 0, V^\one\ne V$
 
 $\disp U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V^\one}{V^\one}}}$\ \ (4.11)
 
@@ -51,6 +51,8 @@ $$
 \end{flalign*}
 $$
 
+である
+
 $V$ に $X$、$V^\one$ に $x$ を代入すると
 
 $$
@@ -62,7 +64,7 @@ $$
 \end{flalign*}
 $$
 
-となる。$X,x$は独立変数とする。$0<V^\one<V$より$0<x<X$ である
+となる。$x,X$は独立変数とする。$0<x<X$ とする
 
 $$
 \begin{flalign*}
@@ -90,24 +92,11 @@ $$
 \end{flalign*}
 $$
 
-となる
+$f'(x)$は強単調とする
 
-$f'(x)$ は強単調増加ならば
-$f'(X-x)$ は $x$ の関数として強単調減少である $\kome{1}$
+$f'(x)-f'(X-x)$は強単調である$\kome{1}$
 
-同様に $f'(x)$ は強単調減少ならば
-$f'(X-x)$ は$x$ の関数として強単調増加である
-
-$$
-\begin{flalign*}
-&&\kome{1}& f'(x) は強単調増加 とする \\
-&&& x_1<x_2 とすると\\
-&&& -x_1>-x_2 \\
-&&& \so X-x_1>X-x_2 \\
-&&& \so f'(X-x_1)>f'(X-x_2) \\
-&&& \so f'(X-x) は x の関数として強単調減少である
-\end{flalign*}
-$$
+よって $f(x)+f(X-x)$ はCONCAVEまたはCONVEXである
 
 $f'(x)=f'(X-x)$ を満たす $x$ は$\disp\frac{X}{2}$ のみである $\kome{2}$
 
@@ -128,9 +117,17 @@ $$
 \end{flalign*}
 $$
 
-$\hat{S_2}$のプロットより$f(x)+f(X-x)$ は $0<x<X$ で関数としてCONCAVE なので
 
-$f'(x_1)+f'(X-x_1)=0$ ならば
+
+
+
+
+
+
+
+$\hat{S_2}$のプロットより$f(x)+f(X-x)$ は $0<x<X$ でCONCAVE なので
+
+$f'(x_1)-f'(X-x_1)=0$ ならば
 
 $$
 \begin{flalign*}
