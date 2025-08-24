@@ -258,7 +258,7 @@ id="toc-C4_P64_4.16_10">P.64 (4.16) max_{U,V} = max_U max_V '25
 <p><span class="math inline">\(\displaystyle
 U^{(1)}=\frac{U}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\)</span>  (4.11)</p>
 <hr />
-<p>(説明)</p>
+<p>(証明)</p>
 <p><span class="math display">\[
 \begin{flalign*}
 \hat{S}(U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)})
@@ -399,10 +399,10 @@ class="math inline">\(\hat{S_3}\)</span> は最大となる  <span
 class="math inline">\(\textcolor{red}{(*3)}\)</span></p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;&amp;\textcolor{red}{(*3)}&amp; a&lt;x&lt;b で
-f(x)が連続,f&#39;(x)が強単調減少とする \\
-&amp;&amp;&amp;0&lt;x_0&lt;bでf&#39;(x_0)=0とする\\
-&amp;&amp;&amp;0\le x&lt;x_0 のとき\\
+&amp;&amp;\textcolor{red}{(*3)}&amp; a\le x\le b で f(x)が連続 \\
+&amp;&amp;&amp;a&lt;x&lt;bでf&#39;(x)が強単調減少とする \\
+&amp;&amp;&amp;a&lt;x_0&lt;bでf&#39;(x_0)=0とする\\
+&amp;&amp;&amp;a\le x&lt;x_0 のとき\\
 &amp;&amp;&amp;f&#39;(c)=\frac{f(x_0)-f(x)}{x_0-x},\
 x&lt;c&lt;x_0({\because}\ 平均値の定理) \\
 &amp;&amp;&amp;f&#39;(c)&gt;f&#39;(x_0)=0({\because}\
@@ -419,7 +419,7 @@ x_0&lt;c&lt;x({\because}\ 平均値の定理) \\
 &amp;&amp;&amp;x-x_0&gt;0 なので \\
 &amp;&amp;&amp;f(x)-f(x_0)&lt;0\\
 &amp;&amp;&amp;{\therefore}f(x)&lt;f(x_0)\\
-&amp;&amp;&amp;よって x\ne x_0 ならば f(x) &lt; f(x_0) \\
+&amp;&amp;&amp;よって a\le x\le b,\ x\ne x_0 ならば f(x) &lt; f(x_0) \\
 &amp;&amp;&amp;よって x_0 で f(x) は最大となる
 \end{flalign*}
 \]</span></p>
@@ -477,14 +477,13 @@ class="math inline">\(U&gt;0かつ\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}&gt;0\)</s
 &amp;=0&amp;
 \end{flalign*}
 \]</span> である</p>
-<p>よって <span class="math inline">\(0&lt;U^{(1)}&lt;U,\ V_1^{(1)}\ne
-0,\ V_1^{(1)}\ne V\)</span> ならば</p>
+<p>よって <span class="math inline">\(V_1^{(1)}\ne 0,\ V_1^{(1)}\ne
+V\)</span> ならば</p>
 <p><span class="math inline">\(\displaystyle
 U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\)</span> (4.11)
 において <span class="math inline">\(\hat{S_3}\)</span> は最大となる</p>
 <p>よって</p>
-<p><span class="math inline">\(0&lt;U^{(1)}&lt;U,\
-0&lt;V_1^{(1)}&lt;V\)</span> ならば</p>
+<p><span class="math inline">\(0&lt;V_1^{(1)}&lt;V\)</span> ならば</p>
 <p><span class="math display">\[
 \begin{flalign*}
 S(U,V,N:C_0,C_1,C_2)
@@ -501,6 +500,31 @@ U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}} &amp;\\
 \ (4.10) &amp;
 \end{flalign*}
 \]</span></p>
+<p><span class="math inline">\(V_1^{(1)}= 0\)</span> ならば</p>
+<p><span
+class="math inline">\(\displaystyle\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}(U-U^{(1)})^{1/3}V^{1/3}\)</span></p>
+<p>この<span class="math inline">\(\hat{S_3}\)</span> は <span
+class="math inline">\(0\le U^{(1)}\le U\)</span>
+で強単調減少である  <span
+class="math inline">\(\textcolor{red}{(*4)}\)</span></p>
+<p>よって <span class="math inline">\(U_1^{(1)}=0\)</span> で <span
+class="math inline">\(\displaystyle\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}U^{1/3}V^{1/3}\)</span>
+は最大となる</p>
+<p><span class="math inline">\(V_1^{(1)}=V\)</span> ならば</p>
+<p><span
+class="math inline">\(\displaystyle\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}(U^{(1)})^{1/3}V^{1/3}\)</span></p>
+<p>この<span class="math inline">\(\hat{S_3}\)</span> は <span
+class="math inline">\(0\le U^{(1)}\le U\)</span>
+で強単調増加である  <span
+class="math inline">\(\textcolor{red}{(*5)}\)</span></p>
+<p>よって <span class="math inline">\(U_1^{(1)}=U\)</span> で <span
+class="math inline">\(\displaystyle\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}U^{1/3}V^{1/3}\)</span>
+は最大となる</p>
+<p>よって</p>
+<p><span class="math inline">\(V_1^{(1)}=V\)</span> または <span
+class="math inline">\(V_1^{(1)}=V\)</span> ならば</p>
+<p><span class="math inline">\(\displaystyle S(U,V,N:C_0,C_1,C_2)
+=\max_{U^{(1)}}\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}U^{1/3}V^{1/3}\)</span></p>
 <p>(注意)複合系のエントロピー<span
 class="math inline">\(S\)</span>は<span
 class="math inline">\(U,V,N\)</span>を変化させたときの<span

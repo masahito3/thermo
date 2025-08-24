@@ -21,7 +21,7 @@ $\disp U^{(1)}=\frac{U}{1+\sqrt{\frac{V-V^\one}{V^\one}}}$\ \ (4.11)
 
 ---
 
-(説明)
+(証明)
 
 $$
 \begin{flalign*}
@@ -163,8 +163,8 @@ $$
 \begin{flalign*}
 &&\kome{3}& a\le x\le b で f(x)が連続 \\
 &&&a<x<bでf'(x)が強単調減少とする \\
-&&&0<x_0<bでf'(x_0)=0とする\\
-&&&0\le x<x_0 のとき\\
+&&&a<x_0<bでf'(x_0)=0とする\\
+&&&a\le x<x_0 のとき\\
 &&&f'(c)=\frac{f(x_0)-f(x)}{x_0-x},\ x<c<x_0(\cuz\ 平均値の定理) \\
 &&&f'(c)>f'(x_0)=0(\cuz\ f'(x)は強単調減少) \\
 &&&\so \frac{f(x_0)-f(x)}{x_0-x}>0 \\
@@ -178,7 +178,7 @@ $$
 &&&x-x_0>0 なので \\
 &&&f(x)-f(x_0)<0\\
 &&&\so f(x)<f(x_0)\\
-&&&よって x\ne x_0 ならば f(x) < f(x_0) \\
+&&&よって a\le x\le b,\ x\ne x_0 ならば f(x) < f(x_0) \\
 &&&よって x_0 で f(x) は最大となる
 \end{flalign*}
 $$
@@ -237,7 +237,7 @@ $$
 $$
 である
 
-よって $0<U^\one<U,\ V_1^\one\ne 0,\ V_1^\one \ne V$ ならば
+よって $V_1^\one\ne 0,\ V_1^\one \ne V$ ならば
 
 $\disp U_1^\one=\frac{U}{1+\sqrt{\frac{V-V_1^\one}{V_1^\one}}}$\ (4.11)
 において
@@ -245,7 +245,7 @@ $\hat{S_3}$ は最大となる
 
 よって
 
-$0<U^\one<U,\ 0<V_1^\one<V$ ならば
+$0<V_1^\one<V$ ならば
 
 $$
 \begin{flalign*}
@@ -259,6 +259,30 @@ S(U,V,N:C_0,C_1,C_2)
         +\Bigg(\frac{V-V_1^\one}{1+\sqrt{\frac{V_1\one}{V-V_1^\one}}}\Bigg)^{1/3}\Bigg]\ \ (4.10) &
 \end{flalign*}
 $$
+
+
+$V_1^\one= 0$ ならば
+
+$\disp\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}(U-U^\one)^{1/3}V^{1/3}$
+
+この$\hat{S_3}$ は $0\le U^\one\le U$ で強単調減少である\ \ $\kome{4}$
+
+よって $U_1^\one=0$ で $\disp\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}U^{1/3}V^{1/3}$ は最大となる
+
+$V_1^\one=V$ ならば
+
+$\disp\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}(U^\one)^{1/3}V^{1/3}$
+
+この$\hat{S_3}$ は $0\le U^\one\le U$ で強単調増加である\ \ $\kome{5}$
+
+よって $U_1^\one=U$ で $\disp\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}U^{1/3}V^{1/3}$ は最大となる
+
+よって
+
+$V_1^\one=V$ または $V_1^\one=V$ ならば
+
+$\disp S(U,V,N:C_0,C_1,C_2)
+=\max_{U^\one}\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}U^{1/3}V^{1/3}$
 
 (注意)複合系のエントロピー$S$は$U,V,N$を変化させたときの$\hat{S}$の最大値ではない。
 $U^\one,V^\one,N^\one,U^\two,V^\two,N^\two$を変化させたときの最大値である(要請II(v))
