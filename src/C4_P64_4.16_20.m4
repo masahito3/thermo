@@ -106,6 +106,13 @@ $V_1^\one$ は ダミー変数なので
 $\disp\max_{V^\one} S(U,V,N:C_0,C_1,C_2)
 =\max_{V^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V^\one)$
 
+任意の$U,V,N$で等式は成立する。
+かつ
+$\disp\max_{V^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V^\one)$ は存在する\ ([別頁](#C4_P64_4.16_10))
+
+よって
+$\disp\max_{V^\one} S(U,V,N:C_0,C_1,C_2)$ は存在する
+
 よって
 $$
 \begin{flalign*}
@@ -116,11 +123,6 @@ S(U,V,N:C_0,C_1)
 \end{flalign*}
 $$
 
-任意の$U,V,N$で等式は成立する。
+$C_2$ で $V_1^\one$ を固定したのに$\disp\max_{V_1^\one}$ とするのはおかしい感じがするが
 
-かつ
-$\disp\max_{V^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V^\one)$ は存在する\ ([別頁](#C4_P64_4.16_10))
-
-よって
-$\disp\max_{V^\one} S(U,V,N:C_0,C_1,C_2)$ は存在する
-
+$V_1^\one$ は任意なので、$C_2$ は実際にはなんの制約にもなっていないということである
