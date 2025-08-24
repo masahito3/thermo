@@ -12,8 +12,13 @@ NEWPAGE
 
 ## P.64 (4.16) max_{U,V} = max_U max_V '25 8.9 {#C4_P64_4.16_10}
 
+$\disp \max_{U^\one,V^\one}\hat{S_2}$ は存在する
+
+$\disp \max_{V^\one} \max_{U^\one}\hat{S_2}$ は存在する
+
 $\disp \max_{U^\one,V^\one}\hat{S_2}
 =\max_{V^\one} \max_{U^\one}\hat{S_2}$\ \ (4.16)
+である
 
 ---
 
@@ -27,11 +32,17 @@ $$
    +((U-U^\one)(V-V^\one))^{1/3}]&
 \end{flalign*}
 $$
+とする
 
 $\hat{S_2}$ は $0\le U^\one \le U,\ 0\le V^\one \le V$ で一様連続
 \ ([別頁](#C4_P62_4.8_一様連続_10))
 
-なので $0\le V_0^\one\le V$ とすると $\hat{S_2}(U^\one,V_0^\one)$ は$0\le U^\one \le U$で連続
+よって
+$\disp\max_{U^\one,V^\one}\hat{S_2}$ は存在する\ $(\cuz\ 閉領域の連続関数は最大値をもつ)$
+
+また
+
+$0\le V_0^\one\le V$ とすると $\hat{S_2}(U^\one,V_0^\one)$ は$0\le U^\one \le U$で連続
 
 よって $\disp\max_{U^\one}\hat{S_2}(U^\one,V_0^\one)$ は存在する\ $(\cuz\ 閉区間で連続関数は最大値をもつ)$
 
@@ -71,11 +82,7 @@ $$
 よって
 $\disp \max_{V^\one} \max_{U^\one}\hat{S_2}$ は存在する\ $(\cuz\ 閉区間の連続関数は最大値をもつ)$
 
-また
-$0\le U^\one\le U,\ 0\le V^\one\le V$ で$\hat{S_2}$ は連続なので
-$\disp\max_{U^\one,V^\one}\hat{S_2}$ は存在する\ $(\cuz\ 閉領域の連続関数は最大値をもつ)$
-
-このとき
+よって
 $\disp \max_{U^\one,V^\one}\hat{S_2}
 =\max_{V^\one} \max_{U^\one} \hat{S_2}$である\ \ $\kome{2}$
 

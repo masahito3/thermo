@@ -251,122 +251,122 @@ id="toc-C4_P64_4.16_10">P.64 (4.16) max_{U,V} = max_U max_V '25
 -->
 <h2 data-number="4.7" id="C4_P64_4.16_20">P.64 (4.16) '25 8.9</h2>
 <p><span class="math inline">\(\displaystyle S(U,V,N:C_1)
-=\max_{U^{(1)},V^{(1)}}\hat{S}
-=\max_{V^{(1)}}\Big(\max_{U^{(1)}}\hat{S}\Big)
+=\max_{U^{(1)},V^{(1)}}\hat{S} =\max_{V^{(1)}}\max_{U^{(1)}}\hat{S}
 =\max_{V^{(1)}}S(U,V,N:C_1,C_2)\)</span>  (4.16)</p>
 <hr />
 <p>(説明)</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\hat{S}&amp;=S^{(1)}(U^{(1)},V^{(1)},N^{(1)})+S^{(2)}(U^{(2)},V^{(2)},N^{(2)})\
+\hat{S}(U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)})
+&amp;=S^{(1)}(U^{(1)},V^{(1)},N^{(1)})+S^{(2)}(U^{(2)},V^{(2)},N^{(2)})\
 ({\because}3.13) &amp;
 \end{flalign*}
 \]</span></p>
 <p><span
 class="math inline">\(U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}\)</span>
 は独立変数、<span class="math inline">\(K\)</span> は定数とする</p>
-<p><span
-class="math inline">\(U=U^{(1)}+U_1^{(2)},V=V^{(1)}+V_1^{(2)},N=N^{(1)}+N_1^{(2)}\)</span>  (4.3)
+<p><span class="math inline">\(C_0:\
+U=U^{(1)}+U_1^{(2)},V=V^{(1)}+V_1^{(2)},N=N^{(1)}+N_1^{(2)}\)</span>  (4.3)
 とする</p>
 <p><span class="math inline">\(U,V,N\)</span> は独立変数とする</p>
+<p><span
+class="math inline">\(\displaystyle\hat{S_1}(U,V,N,U^{(1)},V^{(1)},N^{(1)})
+=\hat{S}(U^{(1)},V^{(1)},N^{(1)},U-U^{(1)},V-V^{(1)},N-N^{(1)})\)</span>
+とする</p>
+<p><span class="math inline">\(C_1:\
+N^{(1)}=\displaystyle\frac{N}{2}\)</span> とする</p>
+<p><span
+class="math inline">\(\displaystyle\hat{S_2}(U,V,N,U^{(1)},V^{(1)})
+=\hat{S_1}(U,V,N,U^{(1)},V^{(1)},\frac{N}{2})\)</span> とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-{\therefore}\hat{S_1}(U,V,N,U^{(1)},V^{(1)},N^{(1)})
-&amp;=\hat{S}(U^{(1)},V^{(1)},N^{(1)},U-U^{(1)},V-V^{(1)},N-N^{(1)})
+S(U,V,N:C_0,C_1)&amp;=\max_{U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}}
+\Big(\hat{S}\ ,\ C_0,\ C_1\Big)\ ({\because}\text{要請II(v)}) &amp;\\
+&amp;=\max_{U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}}\Big(\hat{S_1},\
+C_1\Big)\ ({\because}\ C_0) &amp;\\
+&amp;=\max_{U^{(1)},V^{(1)},N^{(1)}}\Big(\hat{S_1},\ C_1\Big)\
+({\because}\ \hat{S_1}はU^{(2)},V^{(2)},N^{(2)}に依らないので) &amp;\\
+&amp;=\max_{U^{(1)},V^{(1)},N^{(1)}}\hat{S_2}\ ({\because}\ C_1) &amp;\\
+&amp;=\max_{U^{(1)},V^{(1)}}\hat{S_2}\ ({\because}\
+\hat{S_2}はN^{(1)}によらないので) &amp;\\
+&amp;=\max_{V^{(1)}}\max_{U^{(1)}}\hat{S_2}(U,V,N,U^{(1)},V^{(1)})\
+\textcolor{red}{(*1)} &amp;
+\end{flalign*}
+\]</span></p>
+<p style="text-align: right;">
+<span class="math inline">\(\textcolor{red}{(*1)}\)</span> <a
+href="P.64 (4.16) max_{U,V} = max_U max_V &#39;25 8.9.html#C4_P64_4.16_10">別頁</a>
+</p>
+<p>上の等式は任意の<span
+class="math inline">\(U,V,N\)</span>で成立する。かつ <span
+class="math inline">\(\displaystyle\max_{V^{(1)}}\max_{U^{(1)}}\hat{S_2}\)</span>
+は存在する (<a
+href="P.64 (4.16) max_{U,V} = max_U max_V &#39;25 8.9.html#C4_P64_4.16_10">別頁</a>)</p>
+<p>よって<span class="math inline">\(S(U,V,N:C_0,C_1)\)</span>
+は存在する</p>
+<p><span class="math inline">\(C_2:\ V^{(1)}=V_1^{(1)}\)</span>
+とする</p>
+<p><span
+class="math inline">\(\displaystyle\hat{S_3}(U,V,N,U^{(1)})=\hat{S_2}(U,V,N,U^{(1)},V_1^{(1)})\)</span>
+とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+S(U,V,N:C_0,C_1,C_2)
+&amp;=\max_{U^{(1)},V^{(1)}}\Big(\hat{S_2},\ C_2\Big)\ ({\because}\
+\text{要請II(v)},C_0,C_1) &amp;\\
+&amp;=\max_{U^{(1)},V^{(1)}}\hat{S_3}\ ({\because}\ C_2) &amp;\\
+&amp;=\max_{U^{(1)}}\hat{S_3}(U,V,N,U^{(1)})\ ({\because}\
+\hat{S_3}はV^{(1)}によらない)&amp;\\
+\end{flalign*}
+\]</span></p>
+<p>上の等式は任意の<span class="math inline">\(U,V,N\)</span>
+で成立する。</p>
+<p>また、 <span
+class="math inline">\(\hat{S_2}(U,V,N,U^{(1)},V^{(1)})\)</span>
+は一様連続なので (<a
+href="P.62 (4.8) 一様連続 &#39;25 8.16.html#C4_P62_4.8_一様連続_10">別頁</a>)</p>
+<p>よって<span
+class="math inline">\(\hat{S_2}(U,V,N,U^{(1)},V_1^{(1)})\)</span>
+は連続 <span class="math inline">\(({\because}\
+f(x,y)が連続ならばf(a,y)は連続)\)</span></p>
+<p>よって <span class="math inline">\(\hat{S_3}(U,V,N,U^{(1)})\)</span>
+は連続</p>
+<p>よって <span
+class="math inline">\(\displaystyle\max_{U^{(1)}}\hat{S_3}(U,V,N,U^{(1)})\)</span>
+は存在する <span class="math inline">\(({\because}\
+閉区間で連続な関数は最大値をもつ)\)</span></p>
+<p>よって <span
+class="math inline">\(S(U,V,N:C_0,C_1,C_2)\)</span>は存在する</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\max_{V_1^{(1)}} S(U,V,N:C_0,C_1,C_2)
+&amp;=\max_{V_1^{(1)}}\max_{U^{(1)}}\hat{S_3} &amp;\\
+&amp;=\max_{V_1^{(1)}}\max_{U^{(1)}}\hat{S_2}(U,V,N,U^{(1)},V_1^{(1)})
 &amp;
 \end{flalign*}
 \]</span></p>
-<p><span class="math inline">\(C_1:\
-N_1^{(1)}=\displaystyle\frac{N}{2}\)</span> とする</p>
-<p><span class="math display">\[
-\begin{flalign*}
-{\therefore}\displaystyle\hat{S_2}(U,V,N,U^{(1)},V^{(1)})
-&amp;=\hat{S_1}(U,V,N,U^{(1)},V^{(1)},N_1^{(1)}) &amp;\\
-&amp;=K\Big(\frac{N}{2}\Big)^{1/3}
-  [ (U^{(1)}V^{(1)})^{1/3}
-   +((U-U^{(1)})(V-V^{(1)}))^{1/3}]\ ({\because}(3.5)) &amp;
-\end{flalign*}
-\]</span></p>
+<p><span class="math inline">\(V_1^{(1)}\)</span> は
+ダミー変数なので</p>
+<p><span class="math inline">\(\displaystyle\max_{V^{(1)}}
+S(U,V,N:C_0,C_1,C_2)
+=\max_{V^{(1)}}\max_{U^{(1)}}\hat{S_2}(U,V,N,U^{(1)},V^{(1)})\)</span></p>
+<p>任意の<span
+class="math inline">\(U,V,N\)</span>で等式は成立する。</p>
+<p>かつ <span
+class="math inline">\(\displaystyle\max_{V^{(1)}}\max_{U^{(1)}}\hat{S_2}(U,V,N,U^{(1)},V^{(1)})\)</span>
+は存在する (<a
+href="P.64 (4.16) max_{U,V} = max_U max_V &#39;25 8.9.html#C4_P64_4.16_10">別頁</a>)</p>
+<p>よって <span class="math inline">\(\displaystyle\max_{V^{(1)}}
+S(U,V,N:C_0,C_1,C_2)\)</span> は存在する</p>
 <p>よって <span class="math display">\[
 \begin{flalign*}
-S(U,V,N)&amp;=\max_{U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}}\hat{S}\
-({\because}\text{要請II(v)}) &amp;\\
-&amp;=\max_{U^{(1)},V^{(1)},N^{(1)}}\hat{S}_1\ ({\because}(4.3)) &amp;\\
-&amp;=\max_{U^{(1)},V^{(1)}}\hat{S}_2\ ({\because}C_1) &amp;
-\end{flalign*}
-\]</span></p>
-<p>プロットより<span class="math inline">\(\hat{S_2}\)</span>は<span
-class="math inline">\(0\le U^{(1)}\le U, 0\le V^{(1)}\le V\)</span> で
-連続かつ <span
-style="display:inline-block;transform:rotate(180deg);">凹</span>なので</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\max_{U^{(1)},V^{(1)}}\hat{S_2}
-&amp;=\max_{V^{(1)}}\Big(\max_{U^{(1)}}\hat{S_2}\Big) &amp;
-\end{flalign*}
-\]</span></p>
-<p>また <span class="math inline">\(\displaystyle\frac{\partial
-\hat{S_2}}{\partial U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}}=0\)</span>, <span
-class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span> ならば</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\max_{U^{(1)}}\hat{S_2} &amp;=\hat{S_2}(U,V,N,U_1^{(1)},V^{(1)}) &amp;
-\end{flalign*}
-\]</span></p>
-<p>よって</p>
-<p><span class="math display">\[
-\begin{flalign*}
-S(U,V,N)&amp;=\max_{U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}}\hat{S}
+S(U,V,N:C_0,C_1)
+&amp;=\max_{U^{(1)},V^{(1)}}\hat{S_2}(U,V,N,U^{(1)},V^{(1)}) &amp;\\
+&amp;=\max_{V^{(1)}}\max_{U^{(1)}}\hat{S_2}(U,V,N,U^{(1)},V^{(1)})
 &amp;\\
-&amp;=\max_{U^{(1)},V^{(1)}}\hat{S_2} &amp;\\
-&amp;=\max_{V^{(1)}}\Big(\max_{U^{(1)}}\hat{S_2}\Big) &amp;\\
-&amp;=\max_{V^{(1)}}\hat{S_2}(U,V,N,U_1^{(1)},V^{(1)}) &amp;
+&amp;=\max_{V^{(1)}}S(U,V,N:C_0,C_1,C_2) &amp;
 \end{flalign*}
 \]</span></p>
-<p>ここで <span class="math inline">\(C_2:\ V_1^{(1)}が定数\)</span>
-とする</p>
-<p><span
-class="math inline">\(\displaystyle\frac{\partial\hat{S_2}(U,V,N,U^{(1)},V_1^{(1)})}{\partial
-U^{(1)}}\Big|_{U^{(1)}=U_2^{(1)}} =0\)</span>, <span
-class="math inline">\(0&lt;U_2^{(1)}&lt;U\)</span>とすると</p>
-<p><span class="math display">\[
-\begin{flalign*}
-S(U,V,N:C_1,C_2)
-&amp;=\max_{U^{(1)}} \hat{S_2}(U,V,N,U^{(1)},V_1^{(1)}) &amp;\\
-&amp;=\hat{S_2}(U,V,N,U_2^{(1)},V_1^{(1)}) &amp;
-\end{flalign*}
-\]</span></p>
-<p><span class="math inline">\(V^{(1)}\ne V_1^{(1)}\)</span> のとき</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\hat{S_2}(U,V,N,U_2^{(1)},V_1^{(1)}) &amp;\ne
-\hat{S_2}(U,V,N,U_1^{(1)},V^{(1)}) &amp;
-\end{flalign*}
-\]</span></p>
-<p>なので</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\max_{V^{(1)}}\Big(\max_{U^{(1)}}\hat{S}\Big)&amp;=\max_{V^{(1)}}S(U,V,N:C_1,C_2)&amp;
-\end{flalign*}
-\]</span></p>
-<p>は<span
-class="math inline">\(V^{(1)}=V_1^{(1)}\)</span>のときは正しいが、そうでないときは正しくない</p>
-<p>なので</p>
-<p><span class="math inline">\(\displaystyle
-S(U,V,N:C_1)=\max_{V^{(1)}}S(U,V,N:C_1,C_2)\)</span>
-とするのはちょっと乱暴かなと思う</p>
-<p>条件 <span class="math inline">\(C_2\)</span> は <span
-class="math inline">\(V^{(1)}\)</span> を固定するのだから、そのあとで
-<span class="math inline">\(\displaystyle\max_{V^{(1)}}\)</span> で
-<span class="math inline">\(V^{(1)}\)</span>
-をうごかすことはできないと思う</p>
-<p>とはいえ <span
-class="math inline">\(\hat{S_2}(U,V,N,U_1^{(1)},V^{(1)})\)</span> と
-<span
-class="math inline">\(\hat{S_2}(U,V,N,U_2^{(1)},V_1^{(1)})\)</span>
-を求める手順は同じで結果も(4.10)か(4.10)の<span
-class="math inline">\(V^{(1)}\)</span>を<span
-class="math inline">\(V_1^{(1)}\)</span>としたものである</p>
    </main>
 </div>
 

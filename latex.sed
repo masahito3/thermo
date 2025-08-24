@@ -10,3 +10,5 @@ s/NEWCOMMAND_SO/\\text{{\\large\\therefore}}/g
 s/NEWCOMMAND_BOLD/[1]{\\textbf{\\textit{#1}}}/g
 s/CONVEX/\\rotatebox[origin=c]{180}{凸}/g
 s/CONCAVE/\\rotatebox[origin=c]{180}{凹}/g
+s/<HFILL>/\\hfill/g
+s/<\/HFILL>//g

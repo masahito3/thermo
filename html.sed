@@ -10,3 +10,5 @@ s/NEWCOMMAND_SO/{\\therefore}/g
 s/NEWCOMMAND_BOLD/[1]{\\boldsymbol{#1}}/g
 s/CONVEX/<span style="display:inline-block;transform:rotate(180deg);">凸<\/span>/g
 s/CONCAVE/<span style="display:inline-block;transform:rotate(180deg);">凹<\/span>/g
+s/<HFILL>/<p style="text-align: right;">/g
+s/<\/HFILL>/<\/p>/g

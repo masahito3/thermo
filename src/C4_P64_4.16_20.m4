@@ -14,7 +14,7 @@ NEWPAGE
 
 $\disp S(U,V,N:C_1)
 =\max_{U^\one,V^\one}\hat{S}
-=\max_{V^\one}\Big(\max_{U^\one}\hat{S}\Big)
+=\max_{V^\one}\max_{U^\one}\hat{S}
 =\max_{V^\one}S(U,V,N:C_1,C_2)$\ \ (4.16)
 
 ---
@@ -23,120 +23,104 @@ $\disp S(U,V,N:C_1)
 
 $$
 \begin{flalign*}
-\hat{S}&=S^\one(U^\one,V^\one,N^\one)+S^\two(U^\two,V^\two,N^\two)\ (\cuz 3.13) &
+\hat{S}(U^\one,V^\one,N^\one,U^\two,V^\two,N^\two)
+&=S^\one(U^\one,V^\one,N^\one)+S^\two(U^\two,V^\two,N^\two)\ (\cuz 3.13) &
 \end{flalign*}
 $$
 
 $U^\one,V^\one,N^\one,U^\two,V^\two,N^\two$ は独立変数、$K$ は定数とする
 
-$U=U^\one+U_1^\two,V=V^\one+V_1^\two,N=N^\one+N_1^\two$\ \ (4.3) とする
+$C_0:\ U=U^\one+U_1^\two,V=V^\one+V_1^\two,N=N^\one+N_1^\two$\ \ (4.3) とする
 
 $U,V,N$ は独立変数とする
 
+$\disp\hat{S_1}(U,V,N,U^\one,V^\one,N^\one)
+=\hat{S}(U^\one,V^\one,N^\one,U-U^\one,V-V^\one,N-N^\one)$
+とする
+
+$C_1:\ N^\one=\disp\frac{N}{2}$ とする
+
+$\disp\hat{S_2}(U,V,N,U^\one,V^\one)
+=\hat{S_1}(U,V,N,U^\one,V^\one,\frac{N}{2})$
+とする
+
 $$
 \begin{flalign*}
-\so \hat{S_1}(U,V,N,U^\one,V^\one,N^\one)
-&=\hat{S}(U^\one,V^\one,N^\one,U-U^\one,V-V^\one,N-N^\one) &
+S(U,V,N:C_0,C_1)&=\max_{U^\one,V^\one,N^\one,U^\two,V^\two,N^\two} \Big(\hat{S}\ ,\ C_0,\ C_1\Big)\ (\cuz \text{要請II(v)}) &\\
+&=\max_{U^\one,V^\one,N^\one,U^\two,V^\two,N^\two}\Big(\hat{S_1},\ C_1\Big)\ (\cuz\ C_0) &\\
+&=\max_{U^\one,V^\one,N^\one}\Big(\hat{S_1},\ C_1\Big)\ (\cuz\ \hat{S_1}はU^\two,V^\two,N^\two に依らないので) &\\
+&=\max_{U^\one,V^\one,N^\one}\hat{S_2}\ (\cuz\ C_1) &\\
+&=\max_{U^\one,V^\one}\hat{S_2}\ (\cuz\ \hat{S_2}はN^\one によらないので) &\\
+&=\max_{V^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V^\one)\ \kome{1} &
 \end{flalign*}
 $$
 
-$C_1:\ N_1^\one=\disp\frac{N}{2}$ とする
+<HFILL> $\kome{1}$ [別頁](#C4_P64_4.16_10)</HFILL>
+
+上の等式は任意の$U,V,N$で成立する。かつ
+$\disp\max_{V^\one}\max_{U^\one}\hat{S_2}$ は存在する\ ([別頁](#C4_P64_4.16_10))
+
+よって$S(U,V,N:C_0,C_1)$ は存在する
+
+$C_2:\ V^\one=V_1^\one$ とする
+
+$\disp\hat{S_3}(U,V,N,U^\one)=\hat{S_2}(U,V,N,U^\one,V_1^\one)$
+とする
 
 $$
 \begin{flalign*}
-\so \disp\hat{S_2}(U,V,N,U^\one,V^\one)
-&=\hat{S_1}(U,V,N,U^\one,V^\one,N_1^\one) &\\
-&=K\Big(\frac{N}{2}\Big)^{1/3}
-  [ (U^\one V^\one)^{1/3}
-   +((U-U^\one)(V-V^\one))^{1/3}]\ (\cuz (3.5)) &
+S(U,V,N:C_0,C_1,C_2)
+&=\max_{U^\one,V^\one}\Big(\hat{S_2},\ C_2\Big)\ (\cuz\ \text{要請II(v)},C_0,C_1) &\\
+&=\max_{U^\one,V^\one}\hat{S_3}\ (\cuz\ C_2) &\\
+&=\max_{U^\one}\hat{S_3}(U,V,N,U^\one)\ (\cuz\ \hat{S_3}はV^\one によらない)&\\
 \end{flalign*}
 $$
 
+上の等式は任意の$U,V,N$ で成立する。
 
+また、
+$\hat{S_2}(U,V,N,U^\one,V^\one)$ は一様連続なので\ ([別頁](#C4_P62_4.8_一様連続_10))
 
+よって$\hat{S_2}(U,V,N,U^\one,V_1^\one)$ は連続\ $(\cuz\ f(x,y)が連続ならばf(a,y)は連続)$
+
+よって
+$\hat{S_3}(U,V,N,U^\one)$ は連続
+
+よって
+$\disp\max_{U^\one}\hat{S_3}(U,V,N,U^\one)$ は存在する\ $(\cuz\ 閉区間で連続な関数は最大値をもつ)$
+
+よって
+$S(U,V,N:C_0,C_1,C_2)$は存在する
 
 よって
 $$
 \begin{flalign*}
-S(U,V,N)&=\max_{U^\one,V^\one,N^\one,U^\two,V^\two,N^\two}\hat{S}\ (\cuz \text{要請II(v)}) &\\
-&=\max_{U^\one,V^\one,N^\one}\hat{S}_1\ (\cuz (4.3)) &\\
-&=\max_{U^\one,V^\one}\hat{S}_2\ (\cuz C_1) &
+\max_{V_1^\one} S(U,V,N:C_0,C_1,C_2)
+&=\max_{V_1^\one}\max_{U^\one}\hat{S_3} &\\
+&=\max_{V_1^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V_1^\one) &
 \end{flalign*}
 $$
 
+$V_1^\one$ は ダミー変数なので 
 
-プロットより$\hat{S_2}$は$0\le U^\one\le U, 0\le V^\one \le V$ で 連続かつ CONCAVEなので
-
-
-
-
-
-
-
-
-
-
-$$
-\begin{flalign*}
-\max_{U^\one,V^\one}\hat{S_2} &=\max_{V^\one}\Big(\max_{U^\one}\hat{S_2}\Big) &
-\end{flalign*}
-$$
-
-また $\disp\frac{\partial \hat{S_2}}{\partial U^\one}\Big|_{U^\one=U_1^\one}=0$, $0<U_1^\one<U$ ならば
-
-$$
-\begin{flalign*}
-\max_{U^\one}\hat{S_2} &=\hat{S_2}(U,V,N,U_1^\one,V^\one) &
-\end{flalign*}
-$$
+$\disp\max_{V^\one} S(U,V,N:C_0,C_1,C_2)
+=\max_{V^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V^\one)$
 
 よって
-
 $$
 \begin{flalign*}
-S(U,V,N)&=\max_{U^\one,V^\one,N^\one,U^\two,V^\two,N^\two}\hat{S} &\\
-&=\max_{U^\one,V^\one}\hat{S_2} &\\
-&=\max_{V^\one}\Big(\max_{U^\one}\hat{S_2}\Big) &\\
-&=\max_{V^\one}\hat{S_2}(U,V,N,U_1^\one,V^\one) &
+S(U,V,N:C_0,C_1)
+&=\max_{U^\one,V^\one}\hat{S_2}(U,V,N,U^\one,V^\one) &\\
+&=\max_{V^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V^\one) &\\
+&=\max_{V^\one}S(U,V,N:C_0,C_1,C_2) &
 \end{flalign*}
 $$
 
-ここで $C_2:\ V_1^\one が定数$ とする
+任意の$U,V,N$で等式は成立する。
 
-$\disp\frac{\partial\hat{S_2}(U,V,N,U^\one,V_1^\one)}{\partial U^\one}\Big|_{U^\one=U_2^\one} =0$, $0<U_2^\one<U$とすると
+かつ
+$\disp\max_{V^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V^\one)$ は存在する\ ([別頁](#C4_P64_4.16_10))
 
-$$
-\begin{flalign*}
-S(U,V,N:C_1,C_2)
-&=\max_{U^\one} \hat{S_2}(U,V,N,U^\one,V_1^\one) &\\
-&=\hat{S_2}(U,V,N,U_2^\one,V_1^\one) &
-\end{flalign*}
-$$
+よって
+$\disp\max_{V^\one} S(U,V,N:C_0,C_1,C_2)$ は存在する
 
-$V^\one\ne V_1^\one$ のとき
-
-$$
-\begin{flalign*}
-\hat{S_2}(U,V,N,U_2^\one,V_1^\one) &\ne \hat{S_2}(U,V,N,U_1^\one,V^\one) &
-\end{flalign*}
-$$
-
-なので
-
-$$
-\begin{flalign*}
-\max_{V^\one}\Big(\max_{U^\one}\hat{S}\Big)&=\max_{V^\one}S(U,V,N:C_1,C_2)&
-\end{flalign*}
-$$
-
-は$V^\one=V_1^\one$のときは正しいが、そうでないときは正しくない
-
-なので
-
-$\disp S(U,V,N:C_1)=\max_{V^\one}S(U,V,N:C_1,C_2)$ とするのはちょっと乱暴かなと思う
-
-条件 $C_2$ は $V^\one$ を固定するのだから、そのあとで $\disp\max_{V^\one}$ で $V^\one$ をうごかすことはできないと思う
-
-とはいえ
-$\hat{S_2}(U,V,N,U_1^\one,V^\one)$ と $\hat{S_2}(U,V,N,U_2^\one,V_1^\one)$ 
-を求める手順は同じで結果も(4.10)か(4.10)の$V^\one$を$V_1^\one$としたものである
