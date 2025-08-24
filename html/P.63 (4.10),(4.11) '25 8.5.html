@@ -261,144 +261,119 @@ U^{(1)}=\frac{U}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\)</span>  (4.11)</p>
 <p>(説明)</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\hat{S}&amp;=S^{(1)}(U^{(1)},V^{(1)},N^{(1)})+S^{(2)}(U^{(2)},V^{(2)},N^{(2)})\
+\hat{S}(U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)})
+&amp;=S^{(1)}(U^{(1)},V^{(1)},N^{(1)})+S^{(2)}(U^{(2)},V^{(2)},N^{(2)})\
 ({\because}3.13) &amp;\\
-&amp;=K(U^{(1)}V^{(1)}N^{(1)})+K(U^{(2)}V^{(2)}N^{(2)})\ ({\because}3.5)
-&amp;\\
-&amp;=K[(U^{(1)}V^{(1)}N^{(1)})+(U^{(2)}V^{(2)}N^{(2)})]
+&amp;=K(U^{(1)}V^{(1)}N^{(1)})^{1/3}+K(U^{(2)}V^{(2)}N^{(2)})^{1/3}\
+({\because}3.5) &amp;\\
+&amp;=K[(U^{(1)}V^{(1)}N^{(1)})^{1/3} + (U^{(2)}V^{(2)}N^{(2)})^{1/3}]
+&amp;
 \end{flalign*}
 \]</span></p>
 <p><span
 class="math inline">\(U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}\)</span>
-は独立変数、<span class="math inline">\(K\)</span> は定数とする</p>
-<p>(4.3)より <span
-class="math inline">\(U=U^{(1)}+U_1^{(2)},V=V^{(1)}+V_1^{(2)},N=N^{(1)}+N_1^{(2)}\)</span></p>
+は独立変数とする。<span class="math inline">\(K\)</span>
+は定数とする</p>
+<p><span class="math inline">\(C_0:\
+U=U^{(1)}+U_1^{(2)},V=V^{(1)}+V_1^{(2)},N=N^{(1)}+N_1^{(2)}\)</span>  (4.3)
+とする</p>
 <p><span class="math inline">\(U,V,N\)</span> は独立変数とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-{\therefore}\hat{S_1}(U,V,N,U^{(1)},V^{(1)},N^{(1)})
+\hat{S_1}(U,V,N,U^{(1)},V^{(1)},N^{(1)})
 &amp;=\hat{S}(U^{(1)},V^{(1)},N^{(1)},U-U^{(1)},V-V^{(1)},N-N^{(1)})
 &amp;\\
-&amp;=  K[(U^{(1)}V^{(1)}N^{(1)})^{1/3}
-  +((U-U^{(1)})(V-V^{(1)})(N-N^{(1)}))^{1/3}] &amp;
+&amp;= K[(U^{(1)}V^{(1)}N^{(1)})^{1/3}
+   +((U-U^{(1)})(V-V^{(1)})(N-N^{(1)}))^{1/3}] &amp;
 \end{flalign*}
-\]</span></p>
+\]</span> とする</p>
 <p><span class="math inline">\(C_1:\
 N_1^{(1)}=\displaystyle\frac{N}{2}\)</span> とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-{\therefore}\displaystyle\hat{S_2}(U,V,N,U^{(1)},V^{(1)})
+\displaystyle\hat{S_2}(U,V,N,U^{(1)},V^{(1)})
 &amp;=\hat{S_1}(U,V,N,U^{(1)},V^{(1)},N_1^{(1)}) &amp;\\
 &amp;=K\Big(\frac{N}{2}\Big)^{1/3}
   [ (U^{(1)}V^{(1)})^{1/3}
    +((U-U^{(1)})(V-V^{(1)}))^{1/3}]\ \ (4.7) &amp;
 \end{flalign*}
-\]</span></p>
-<p><span class="math inline">\(C_2:\ V_1^{(1)}は定数\)</span> とする</p>
+\]</span> とする</p>
+<p><span class="math inline">\(C_2:\ 0\le V_1^{(1)}\le V\)</span>
+とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-{\therefore}\displaystyle\hat{S_3}(U,V,N,U^{(1)})
+\displaystyle\hat{S_3}(U,V,N,U^{(1)})
 &amp;=\hat{S}_2(U,V,N,U^{(1)},V_1^{(1)}) &amp;\\
 &amp;= K\Big(\frac{N}{2}\Big)^{1/3}
    [(U^{(1)}V_1^{(1)})^{1/3}
    +((U-U^{(1)})(V-V_1^{(1)}))^{1/3}] &amp;
 \end{flalign*}
+\]</span> とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+S(U,V,N:C_0,C_1,C_2)
+&amp;=\max_{U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}}(\hat{S},C_0,C_1,C_2)\
+({\because}\text{要請II(v)}) &amp;\\
+&amp;=\max_{U^{(1)},V^{(1)},N^{(1)}}(\hat{S_1},C_1,C_2)\ ({\because}C_0)
+&amp;\\
+&amp;=\max_{U^{(1)},V^{(1)}}(\hat{S_2},C_2)\ ({\because}C_1) &amp;\\
+&amp;=\max_{U^{(1)}}\hat{S_3}\ ({\because}C_2) &amp;
+\end{flalign*}
 \]</span></p>
-<p><span class="math inline">\(0\le U^{(1)}\le U\)</span> とする</p>
-<p><span class="math inline">\((U^{(1)})^{1/3}\)</span> は連続 <span
-class="math inline">\(({\because}\ p&gt;0ならば x^p は連続)\)</span></p>
-<p><span class="math inline">\((U-U^{(1)})^{1/3}\)</span> は連続<span
-class="math inline">\(\ ({\because}\ 連続関数の合成は連続)\)</span></p>
-<p>よって <span class="math inline">\(\hat{S_3}\)</span> は連続<span
-class="math inline">\(\ ({\because}\ 連続関数の線型性)\)</span></p>
-<p><span class="math inline">\(0&lt;U^{(1)}&lt;U\)</span> とする (注意:
-べき関数の微分 <span
-class="math inline">\(0&lt;a&lt;1\)</span>のとき<span
-class="math inline">\(x&gt;0\)</span>ならば<span
-class="math inline">\((x^a)&#39;=ax^{a-1}\)</span>)</p>
+<p>任意の<span
+class="math inline">\(U,V,N\)</span>に対して上の等式が成立する</p>
+<p><span
+class="math inline">\(\displaystyle\max_{U^{(1)}}\hat{S_3}\)</span>
+を求める</p>
+<p><span class="math inline">\(0\le U^{(1)}\le U\)</span> で <span
+class="math inline">\(\hat{S_3}\)</span>は連続である  <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*1)}&amp;(U^{(1)})^{1/3}は連続({\because}\
+p&gt;0 ならば x^p は連続)\\
+&amp;&amp;&amp; (U-U^{(1)})^{1/3}は連続({\because}\
+連続関数の合成関数は連続)\\
+&amp;&amp;&amp; よって \hat{S_3} は連続({\because}\ 連続関数の線形性)
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(0&lt;U^{(1)}&lt;U\)</span> とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
 \frac{\partial\hat{S}_3\ }{\partial U^{(1)}}
 &amp;=K\Big(\frac{N}{2}\Big)^{1/3}
-  \Big[\frac{1}{3}(U^{(1)})^{-2/3}(V^{(1)})^{1/3}
-      +\frac{1}{3}(-1)(U-U^{(1)})^{-2/3}(V-V^{(1)})^{1/3}\Big] &amp;\\
+  \Big[\frac{1}{3}(U^{(1)})^{-2/3}(V_1^{(1)})^{1/3}
+      +\frac{1}{3}(-1)(U-U^{(1)})^{-2/3}(V-V_1^{(1)})^{1/3}\Big]\
+\textcolor{red}{(*2)} &amp;\\
 &amp;=K\Big(\frac{N}{2}\Big)^{1/3}
   \frac{1}{3}
-  \Big[(U^{(1)})^{-2/3}(V^{(1)})^{1/3}
-       -(U-U^{(1)})^{-2/3}(V-V^{(1)})^{1/3}\Big] &amp;
+  \Big[(U^{(1)})^{-2/3}(V_1^{(1)})^{1/3}
+       -(U-U^{(1)})^{-2/3}(V-V_1^{(1)})^{1/3}\Big] &amp;
 \end{flalign*}
 \]</span></p>
-<p><span
-class="math inline">\(\displaystyle\displaystyle\lim_{U^{(1)}\to
-0+}(U^{(1)})^{-2/3}=\infty\)</span>  <span
-class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp; p&lt;0 ならば
-\displaystyle\lim_{x\to 0+}x^p=\infty \\
-&amp;&amp;&amp; (証明) \\
-&amp;&amp;&amp; \varepsilon &gt; 0 とする \\
-&amp;&amp;&amp; \delta = \varepsilon^{1/p} なる \delta が存在する\\
-&amp;&amp;&amp; 0&lt;x&lt;\delta とすると \\
-&amp;&amp;&amp; 0&lt;x&lt;\varepsilon^{1/p} \\
-&amp;&amp;&amp; {\therefore}x^p&gt;\varepsilon\ ({\because}p&lt;0,
-0&lt;a&lt;b ならば a^p&gt;b^p) \\
-&amp;&amp;&amp; {\therefore}\displaystyle\lim_{x\to 0+}x^p=\infty
+&amp;&amp;\textcolor{red}{(*2)}&amp;0&lt;a&lt;1,\ x&gt;0
+ならば(x^a)&#39;=ax^{a-1}\\
 \end{flalign*}
 \]</span></p>
-<p><span
-class="math inline">\(\displaystyle\displaystyle\lim_{U^{(1)}\to
-0+}(U-U^{(1)})^{-2/3}=U^{-2/3}\)</span>  <span
-class="math inline">\(({\because}\ 合成関数の極限の公式)\)</span></p>
-<p><span class="math display">\[
-\begin{flalign*}
-{\therefore}\displaystyle\lim_{U^{(1)}\to 0+}\frac{\partial\hat{S}_3\
-}{\partial U^{(1)}}
-&amp;=K\Big(\frac{N}{2}\Big)^{1/3}
-  \frac{1}{3}
-  \Big[\lim((U^{(1)})^{-2/3})(V^{(1)})^{1/3}
-       -\lim((U-U^{(1)})^{-2/3})(V-V^{(1)})^{1/3}\Big]\ ({\because}\
-極限の四則の公式)&amp;\\
-&amp;=\infty\ ({\because}\ \lim f=\infty, \lim g\in R ならば \lim f +
-\lim g=\infty) &amp;
-\end{flalign*}
-\]</span></p>
-<p>よって <span class="math inline">\(\hat{S_3}\)</span> は <span
-class="math inline">\(U^{(1)}=0\)</span> で最大ではない  <span
-class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*2)}&amp; f(x)が連続,\displaystyle\lim_{x\to
-0+}f(x)=\infty ならば f(0) は f(x) の最大ではない \\
-&amp;&amp;&amp; (証明) \\
-&amp;&amp;&amp; \displaystyle\lim_{x\to 0+}f(x)=\infty
-なので、ある\delta があって \\
-&amp;&amp;&amp; 0&lt;x&lt;\delta ならば f&#39;(x)&gt;0 である \\
-&amp;&amp;&amp; また 0&lt;x&lt;\delta ならば \\
-&amp;&amp;&amp; f(x)-f(0)=f&#39;(c)x, 0&lt;c&lt;x\ ({\because}\
-平均値の定理) \\
-&amp;&amp;&amp; 0&lt;c&lt;\delta なので f&#39;(c)&gt;0 \\
-&amp;&amp;&amp; {\therefore}f(x)&gt;f(0) \\
-&amp;&amp;&amp; よって f(0) は最大ではない
-\end{flalign*}
-\]</span></p>
-<p>同様に <span
-class="math inline">\(\displaystyle\displaystyle\lim_{U^{(1)}\to
-U+}\frac{\partial\hat{S}_3\ }{\partial U^{(1)}}=-\infty\)</span> なので
-<span class="math inline">\(\hat{S_3}\)</span> は <span
-class="math inline">\(U^{(1)}=U\)</span> で最大ではない</p>
 <p><span class="math inline">\(0&lt;u_1&lt;u_2&lt;U\)</span> とする</p>
-<p><span class="math inline">\(\displaystyle\frac{\partial\hat{S}_3\
-}{\partial U^{(1)}}\Big|_{U^{(1)}=u_2} -\frac{\partial\hat{S}_3\
-}{\partial U^{(1)}}\Big|_{U^{(1)}=u_1}
-=K\Big(\frac{N}{2}\Big)^{1/3}  \frac{1}{3}  \Big[(u_2^{-2/3}-u_1^{-2/3})(V^{(1)})^{1/3}  -((U-u_2)^{-2/3}-(U-u_1)^{-2/3})(V-V^{(1)})^{1/3}\Big]\)</span></p>
-<p><span class="math inline">\(0&lt;u_1&lt;u_2\)</span> なので</p>
-<p><span class="math inline">\(u_1^{-2/3}&gt;u_2^{-2/3}\ ({\because}\
+<p><span class="math display">\[
+\begin{flalign*}
+\frac{\partial\hat{S}_3\ }{\partial U^{(1)}}\Big|_{U^{(1)}=u_2}
+-\frac{\partial\hat{S}_3\ }{\partial U^{(1)}}\Big|_{U^{(1)}=u_1}
+&amp;=K\Big(\frac{N}{2}\Big)^{1/3}
+  \frac{1}{3}
+  \Big[(u_2^{-2/3}-u_1^{-2/3})(V_1^{(1)})^{1/3}
+       -((U-u_2)^{-2/3}-(U-u_1)^{-2/3})(V-V_1^{(1)})^{1/3}\Big] &amp;
+\end{flalign*}
+\]</span></p>
+<p><span class="math inline">\(0&lt;u_1&lt;u_2\)</span> なので <span
+class="math inline">\(u_1^{-2/3}&gt;u_2^{-2/3}\ ({\because}\
 0&lt;a&lt;b,p&lt;0 ならば a^p&gt;b^p)\)</span></p>
 <p><span
 class="math inline">\({\therefore}u_2^{-2/3}-u_1^{-2/3}&lt;0\)</span></p>
-<p>また</p>
-<p><span class="math inline">\(-u_1&gt;-u_2\)</span></p>
+<p>また <span class="math inline">\(-u_1&gt;-u_2\)</span> なので</p>
 <p><span
 class="math inline">\({\therefore}U-u_1&gt;U-u_2&gt;0\)</span></p>
 <p><span
@@ -414,16 +389,36 @@ class="math inline">\(\displaystyle\frac{\partial\hat{S}_3\ }{\partial
 U^{(1)}}\)</span> は強単調減少である</p>
 <p>よって <span
 class="math inline">\(\displaystyle\frac{\partial\hat{S}_3\ }{\partial
-U^{(1)}}\)</span> は<span
-class="math inline">\(0&lt;U^{(1)}&lt;U\)</span>で<span
-style="display:inline-block;transform:rotate(180deg);">凹</span>である</p>
-<p>また <span class="math inline">\(0,U\)</span>
-で最大ではないので、</p>
-<p><span class="math inline">\(\displaystyle\frac{\partial\hat{S_3}\
-}{\partial U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}}=0\)</span> , <span
-class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span> ならば <span
-class="math inline">\(U_1^{(1)}\)</span> で <span
-class="math inline">\(\hat{S_3}\)</span> は最大となる</p>
+U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}}=0,\ 0&lt;U_1^{(1)}&lt;U\)</span>
+ならば <span class="math inline">\(U_1^{(1)}\)</span> で <span
+class="math inline">\(\hat{S_3}\)</span> は最大となる  <span
+class="math inline">\(\textcolor{red}{(*3)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*3)}&amp; a&lt;x&lt;b で
+f(x)が連続,f&#39;(x)が強単調減少とする \\
+&amp;&amp;&amp;0&lt;x_0&lt;bでf&#39;(x_0)=0とする\\
+&amp;&amp;&amp;0\le x&lt;x_0 のとき\\
+&amp;&amp;&amp;f&#39;(c)=\frac{f(x_0)-f(x)}{x_0-x},\
+x&lt;c&lt;x_0({\because}\ 平均値の定理) \\
+&amp;&amp;&amp;f&#39;(c)&gt;f&#39;(x_0)=0({\because}\
+f&#39;(x)は強単調減少) \\
+&amp;&amp;&amp;{\therefore}\frac{f(x_0)-f(x)}{x_0-x}&gt;0 \\
+&amp;&amp;&amp;x_0-x&gt;0 なので\\
+&amp;&amp;&amp;{\therefore}f(x_0)-f(x)&gt;0 \\
+&amp;&amp;&amp;{\therefore}f(x_0)&gt;f(x) \\
+&amp;&amp;&amp;x_0&lt;x\le b のとき\\
+&amp;&amp;&amp;f&#39;(c)=\frac{f(x)-f(x_b)}{x-x_0},\
+x_0&lt;c&lt;x({\because}\ 平均値の定理) \\
+&amp;&amp;&amp;f&#39;(c)&lt;f&#39;(x_0)=0 なので \\
+&amp;&amp;&amp;\frac{f(x)-f(x_0)}{x-x_0}&lt;0\\
+&amp;&amp;&amp;x-x_0&gt;0 なので \\
+&amp;&amp;&amp;f(x)-f(x_0)&lt;0\\
+&amp;&amp;&amp;{\therefore}f(x)&lt;f(x_0)\\
+&amp;&amp;&amp;よって x\ne x_0 ならば f(x) &lt; f(x_0) \\
+&amp;&amp;&amp;よって x_0 で f(x) は最大となる
+\end{flalign*}
+\]</span></p>
 <p><span class="math inline">\(\displaystyle\frac{\partial\hat{S}_3\
 }{\partial U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}}=0\)</span> , <span
 class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span> とする</p>
@@ -431,20 +426,7 @@ class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span> とする</p>
 class="math inline">\((U_1^{(1)})^{-2/3}(V_1^{(1)})^{1/3}-(U-U_1^{(1)})^{-2/3}(V-V_1^{(1)})^{1/3}=0\)</span></p>
 <p><span
 class="math inline">\({\therefore}(U_1^{(1)})^{-2/3}(V_1^{(1)})^{1/3}=(U-U_1^{(1)})^{-2/3}(V-V_1^{(1)})^{1/3}\)</span></p>
-<p><span class="math inline">\(V_1^{(1)}=0\)</span> とすると</p>
-<p><span
-class="math inline">\((U^{(1)})^{-2/3}(0)^{1/3}=(U-U^{(1)})^{-2/3}(V-0)^{1/3}\)</span></p>
-<p><span class="math inline">\({\therefore}U=U^{(1)}\)</span></p>
-<p>これは<span
-class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span>に反するよって<span
-class="math inline">\(V_1^{(1)}\ne 0\)</span></p>
-<p><span class="math inline">\(V_1^{(1)}=V\)</span> とすると</p>
-<p><span
-class="math inline">\((U_1^{(1)})^{-2/3}(V)^{1/3}=(U-U_1^{(1)})^{-2/3}(V-V)^{1/3}\)</span></p>
-<p><span class="math inline">\({\therefore}U_1^{(1)}=0\)</span></p>
-<p>これは<span
-class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span>に反するよって<span
-class="math inline">\(V_1^{(1)}\ne V\)</span></p>
+<p><span class="math inline">\(V_1^{(1)}\ne 0\)</span> とする</p>
 <p><span
 class="math inline">\({\therefore}\displaystyle\Big(\frac{U_1^{(1)}}{U-U_1^{(1)}}\Big)^{-2/3}
 =\Big(\frac{V-V_1^{(1)}}{V_1^{(1)}}\Big)^{1/3}\)</span></p>
@@ -456,51 +438,65 @@ class="math inline">\({\therefore}\displaystyle\frac{U-U_1^{(1)}}{U_1^{(1)}}
 =\pm\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span></p>
 <p><span
 class="math inline">\(\displaystyle\frac{U-U_1^{(1)}}{U_1^{(1)}}
-=-\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span> とすると</p>
-<p><span class="math inline">\(\displaystyle\frac{U}{U_1^{(1)}}
-=1-\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span></p>
-<p><span class="math inline">\(\displaystyle\frac{U}{U_1^{(1)}}
-=1-\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}&lt;1\)</span></p>
-<p><span class="math inline">\({\therefore}U&lt;U_1^{(1)}\)</span></p>
-<p>これは<span class="math inline">\(0 &lt; U_1^{(1)}&lt; U\)</span>
-に反する</p>
-<p>よって <span
-class="math inline">\(\displaystyle\frac{U-U_1^{(1)}}{U_1^{(1)}}
-=\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span></p>
-<p><span class="math inline">\({\therefore}\displaystyle
-U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\)</span>  (4.11)</p>
-<p>よって <span class="math display">\[
+=\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}\)</span> とすると</p>
+<p><span class="math inline">\(\displaystyle
+U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\)</span>
+となる</p>
+<p>逆に <span class="math inline">\(V_1^{(1)}\ne 0,\ V_1^{(1)}\ne
+V\)</span> かつ <span class="math inline">\(\displaystyle
+U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\)</span>
+とすると</p>
+<p><span
+class="math inline">\(U&gt;0かつ\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}&gt;0\)</span>
+なので <span class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span>
+である</p>
+<p>また</p>
+<p><span class="math display">\[
 \begin{flalign*}
-\displaystyle\max_{U^{(1)}} \hat{S_3}
+\frac{\partial\hat{S}_3\ }{\partial U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}}
 &amp;=K\Big(\frac{N}{2}\Big)^{1/3}
-\Bigg[\Bigg(\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}V_1^{(1)}\Bigg)^{1/3}
-+\Bigg(\Bigg(U-\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}  \Bigg)(V-V_1^{(1)})
-\Bigg)^{1/3} \Bigg] &amp;\\
-&amp;=K\Big(\frac{UN}{2}\Big)^{1/3}
-\Bigg[
-\Bigg(\frac{V_1^{(1)}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)^{1/3}
-+\Bigg(\frac{V-V_1^{(1)}}{1+\sqrt{\frac{V_1^{(1)}}{V-V_1^{(1)}}}}
-\Bigg)^{1/3}
-\Bigg] &amp;
+  \frac{1}{3}
+  \Big[(U_1^{(1)})^{-2/3}(V_1^{(1)})^{1/3}
+       -(U-U_1^{(1)})^{-2/3}(V-V_1^{(1)})^{1/3}\Big] &amp;\\
+&amp;=K\Big(\frac{N}{2}\Big)^{1/3}\frac{1}{3}
+  \Bigg[\Bigg(\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)^{-2/3}(V_1^{(1)})^{1/3}
+       -\Bigg(U-\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)^{-2/3}(V-V_1^{(1)})^{1/3}\Bigg]
+&amp;\\
+&amp;=K\Big(\frac{N}{2}\Big)^{1/3}\frac{1}{3}
+  \Bigg[\Bigg(\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}(V^{(1)})^{-1/2}\Bigg)^{-2/3}
+       -\Bigg(\frac{U\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}(V-V_1^{(1)})^{-1/2}\Bigg)^{-2/3}\Bigg]
+&amp;\\
+&amp;=K\Big(\frac{N}{2}\Big)^{1/3}\frac{1}{3}
+  \Bigg[\Bigg(\frac{U(V^{(1)})^{-1/2}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)^{-2/3}
+  -\Bigg(\frac{U(V^{(1)})^{-1/2}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)^{-2/3}\Bigg]
+&amp;\\
+&amp;=0&amp;
 \end{flalign*}
-\]</span></p>
-<p>よって <span class="math display">\[
+\]</span> である</p>
+<p>よって <span class="math inline">\(0&lt;U^{(1)}&lt;U,\ V_1^{(1)}\ne
+0,\ V_1^{(1)}\ne V\)</span> ならば</p>
+<p><span class="math inline">\(\displaystyle
+U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\)</span> (4.11)
+において <span class="math inline">\(\hat{S_3}\)</span> は最大となる</p>
+<p>よって</p>
+<p><span class="math inline">\(0&lt;U^{(1)}&lt;U,\
+0&lt;V_1^{(1)}&lt;V\)</span> ならば</p>
+<p><span class="math display">\[
 \begin{flalign*}
-S(U,V,N)&amp;=\max_{U^{(1)},V^{(1)},N^{(1)},U^{(2)},V^{(2)},N^{(2)}}\hat{S}\
-({\because}\text{要請II(v)}) &amp;\\
-&amp;=\max_{U^{(1)},V^{(1)},N^{(1)}}\hat{S}_1\ ({\because}(4.3)) &amp;\\
-&amp;=\max_{U^{(1)},V^{(1)}}\hat{S}_2\ ({\because}C_1) &amp;\\
-&amp;=\max_{U^{(1)}}\hat{S}_3\ ({\because}C_2) &amp;\\
+S(U,V,N:C_0,C_1,C_2)
+&amp;=\max_{U^{(1)}}\hat{S_3} =\frac{\partial\hat{S}_3\ }{\partial
+U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}} &amp;\\
+&amp;=K\Big(\frac{N}{2}\Big)^{1/3}
+  \Bigg[\Bigg(\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}V_1^{(1)}\Bigg)^{1/3}
+  +
+\Bigg(\Bigg(U-\frac{U}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)(V-V_1^{(1)})\Bigg)^{1/3}\Bigg]
+&amp;\\
 &amp;=K\Big(\frac{UN}{2}\Big)^{1/3}
-\Bigg[
-\Bigg(\frac{V_1^{(1)}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)^{1/3}
-+\Bigg(\frac{V-V_1^{(1)}}{1+\sqrt{\frac{V_1^{(1)}}{V-V_1^{(1)}}}}
-\Bigg)^{1/3}
-\Bigg]\ \ (4.10) &amp;
+  \Bigg[\Bigg(\frac{V_1^{(1)}}{1+\sqrt{\frac{V-V_1^{(1)}}{V_1^{(1)}}}}\Bigg)^{1/3}
+        +\Bigg(\frac{V-V_1^{(1)}}{1+\sqrt{\frac{V_1{(1)}}{V-V_1^{(1)}}}}\Bigg)^{1/3}\Bigg]\
+\ (4.10) &amp;
 \end{flalign*}
 \]</span></p>
-<p><span class="math inline">\(U,V,N\)</span>は独立変数、<span
-class="math inline">\(V_1^{(1)}\)</span> は定数である</p>
 <p>(注意)複合系のエントロピー<span
 class="math inline">\(S\)</span>は<span
 class="math inline">\(U,V,N\)</span>を変化させたときの<span
