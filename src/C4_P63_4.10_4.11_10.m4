@@ -267,6 +267,18 @@ $\disp\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}(U-U^\one)^{1/3}V^{1/3}$
 
 この$\hat{S_3}$ は $0\le U^\one\le U$ で強単調減少である\ \ $\kome{4}$
 
+$$
+\begin{flalign*}
+&&\kome{4}& 0\le x \le X で (X-x)^{1/3} は強単調減少 \\ 
+&&&(証明) \\
+&&&0\le x_1 < x_2 \le X とする\\
+&&&\so X-x_1>X-x_2\ge 0\\
+&&&\so (X-x_1)^{1/3}>(X-x_2)^{1/3}(\cuz 省略)\\
+&&&よって(X-x)^{1/3} は強単調減少
+\end{flalign*}
+$$
+
+
 よって $U_1^\one=0$ で $\disp\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}U^{1/3}V^{1/3}$ は最大となる
 
 $V_1^\one=V$ ならば
@@ -274,6 +286,15 @@ $V_1^\one=V$ ならば
 $\disp\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}(U^\one)^{1/3}V^{1/3}$
 
 この$\hat{S_3}$ は $0\le U^\one\le U$ で強単調増加である\ \ $\kome{5}$
+
+$$
+\begin{flalign*}
+&&\kome{5}& 0\le x \le X で x^{1/3} は強単調増加 \\ 
+&&&(証明) 省略
+\end{flalign*}
+$$
+
+
 
 よって $U_1^\one=U$ で $\disp\hat{S_3}=K\Big(\frac{N}{2}\Big)^{1/3}U^{1/3}V^{1/3}$ は最大となる
 
@@ -286,3 +307,6 @@ $\disp S(U,V,N:C_0,C_1,C_2)
 
 (注意)複合系のエントロピー$S$は$U,V,N$を変化させたときの$\hat{S}$の最大値ではない。
 $U^\one,V^\one,N^\one,U^\two,V^\two,N^\two$を変化させたときの最大値である(要請II(v))
+
+本文では $V_1^\one=0$ または $V_1^\one=V$ の場合について書かれていないが、
+暗黙で $0<V_1^\one<V$ と仮定されているのだと思う
