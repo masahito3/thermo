@@ -42,16 +42,19 @@ $\disp f(x) = \Bigg(\frac{x}{1+\sqrt{\frac{X-x}{x}}}\Bigg)^{1/3}$
 $\disp f(X-x) = \Bigg(\frac{X-x}{1+\sqrt{\frac{x}{X-x}}}\Bigg)^{1/3}$
 である
 
+よって $X=V$ とすると
+
 $\disp S(U,V,N:C_1,C_2)
 = K\Big(\frac{UN}{2}\Big)^{1/3} \Big[f(V^\one)+f(V-V^\one)\Big]$
 である
 
-本文では$f'(x)$ は強単調となっているがプロットしてみると
+よって $S(U,V,N:C_1,C_2)$ は $f(x)+f(X-x)$\ (4.17) の形をしている
+
+本文では$f'(x)$ は強単調としているがプロットしてみると
 
 ![](images/C4_P64_4.17_10図10.svg){width=8cm}
 
 となり $f'(x)$ は単調減少でも単調増加でもない
-
 
 
 $$
@@ -64,20 +67,20 @@ S_1^\one(U^\one,V^\one)
 \end{flalign*}
 $$
 
-とすると
+とする
 
 5.3節によると $S_1^\one(U^\one,V^\one)$ は $V^\one$ についてCONCAVE関数 である
 よって $\disp\frac{\partial S_1^\one}{\partial V^\one}$ は強単調減少である 
 
 しかし 
-$\disp S_2^\one(V^\one)=S_1^\one\Bigg(\frac{U}{1+\sqrt{\frac{V-V^\one}{V^\one}}},V^\one\Bigg)$ が$V^\one$ についてCONCAVE関数であるかどうかはわからない\ \ $\kome{1}$
+$\disp S_2^\one(V^\one)=S_1^\one\Bigg(\frac{U}{1+\sqrt{\frac{V-V^\one}{V^\one}}},V^\one\Bigg)$ が$V^\one$ についてCONCAVE関数である保証はない\ \ $\kome{1}$
 
 よって $\disp\frac{d S_2}{d V^\one}$ が強単調減少かどうかはわからない
 
 実際$\disp S_2^\one(V^\one)=K\Big(\frac{N}{2}\Big)^{1/3}f(V^\one)$ であるが、
 
 上のプロットのとおり $f'(x)$ は強単調減少ではなく、
-よって $\disp\frac{d S_2^\one}{d V^\one}$ は強単調減少ではなかった
+よって $\disp\frac{d S_2^\one}{d V^\one}$ は強単調減少ではない。
 
 $$
 \begin{flalign*}
