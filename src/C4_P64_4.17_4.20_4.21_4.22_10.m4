@@ -18,7 +18,7 @@ $\disp V^\one=\frac{V}{2}$\ \ (4.20)
 
 $S(U,V,N:C_1)=K(UVN)^{1/3}$\ \ (4.21)
 
-$U^\one=\frac{U}{2}$\ \ (4.22)
+$\disp U^\one=\frac{U}{2}$\ \ (4.22)
 
 ---
 
@@ -81,8 +81,8 @@ $\disp S_2^\one(V^\one)=S_1^\one\Bigg(\frac{U}{1+\sqrt{\frac{V-V^\one}{V^\one}}}
 
 $$
 \begin{flalign*}
-&&\kome{1}& f(x,y) がCONCAVE であっても f(g(y),y) がCONCAVE とは限らない \\
-&&& f(g(y),y)がCONCAVEとなる条件は？
+&&\kome{1}& f(x,y) が凹 であっても f(g(y),y) が 凹 とは限らない \\
+&&& f(g(y),y)が凹 となる条件は？
 \end{flalign*}
 $$
 

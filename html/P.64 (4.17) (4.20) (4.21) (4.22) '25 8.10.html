@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.64 (4.17) '25 8.10</title>
+  <title>P.64 (4.17) (4.20) (4.21) (4.22) '25 8.10</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -215,8 +215,9 @@ id="toc-C4_P64_4.16_10">P.64 (4.16) max_{U,V} = max_U max_V '25
 8.9</a></li>
 <li><a href="P.64 (4.16) &#39;25 8.9.html" id="toc-C4_P64_4.16_20">P.64
 (4.16) '25 8.9</a></li>
-<li><a href="P.64 (4.17) &#39;25 8.10.html" id="toc-C4_P64_4.17_10">P.64
-(4.17) '25 8.10</a></li>
+<li><a href="P.64 (4.17) (4.20) (4.21) (4.22) &#39;25 8.10.html"
+id="toc-C4_P64_4.17_4.20_4.21_4.22_10">P.64 (4.17) (4.20) (4.21) (4.22)
+'25 8.10</a></li>
 </ul></li>
 </ul>
      </nav>
@@ -249,123 +250,140 @@ id="toc-C4_P64_4.16_10">P.64 (4.16) max_{U,V} = max_U max_V '25
 </div>
 </nav>
 -->
-<h2 data-number="4.8" id="C4_P64_4.17_10">P.64 (4.17) '25 8.10</h2>
+<h2 data-number="4.8" id="C4_P64_4.17_4.20_4.21_4.22_10">P.64 (4.17)
+(4.20) (4.21) (4.22) '25 8.10</h2>
 <p><span class="math inline">\(f(x)+f(X-x)\)</span>  (4.17)</p>
+<p><span class="math inline">\(\displaystyle
+V^{(1)}=\frac{V}{2}\)</span>  (4.20)</p>
+<p><span
+class="math inline">\(S(U,V,N:C_1)=K(UVN)^{1/3}\)</span>  (4.21)</p>
+<p><span class="math inline">\(\displaystyle
+U^{(1)}=\frac{U}{2}\)</span>  (4.22)</p>
 <hr />
 <p>(説明)</p>
-<p><span class="math inline">\(C_1:\
-N^{(1)}=\displaystyle\frac{N}{2}\)</span> とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\hat{S_2}(U,V,N,U^{(1)},V^{(1)})
-&amp;=K\Big(\frac{N}{2}\Big)^{1/3}\Bigg[\Bigg(U^{(1)}V^{(1)}\Bigg)^{1/3}
-  +\Bigg((U-U^{(1)}) (V-V^{(1)})\Bigg)^{1/3}\Bigg]\ \ (4.8) &amp;
-\end{flalign*}
-\]</span></p>
-<p><span
-class="math inline">\(U,V,N,U^{(1)},V^{(1)}\)</span>は独立変数</p>
-<p>プロットより <span class="math inline">\(\hat{S_2}\)</span>は<span
-class="math inline">\(0\le U^{(1)}\le U\)</span> で 連続かつ<span
-style="display:inline-block;transform:rotate(180deg);">凹</span>
-なので</p>
-<p><span class="math inline">\(\displaystyle\frac{\partial
-\hat{S_2}}{\partial U^{(1)}}\Big|_{U^{(1)}=U_1^{(1)}}=0\)</span> , <span
-class="math inline">\(0&lt;U_1^{(1)}&lt;U\)</span> とすると</p>
-<p><span class="math inline">\(V^{(1)}\ne 0, V^{(1)}\ne V\)</span></p>
-<p><span class="math inline">\(\displaystyle
-U_1^{(1)}=\frac{U}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\)</span>  (4.11)</p>
-<div style="margin-bottom:2em;">
-
-</div>
-<p><span class="math display">\[
-\begin{flalign*}
-\max_{U^{(1)}}\hat{S_2}(U,V,N,U^{(1)},V^{(1)})
-&amp;=\hat{S_2}(U,V,N,U_1^{(1)},V^{(1)}) &amp;\\
+S(U,V,N:C_1,C_2)
 &amp;=K\Big(\frac{UN}{2}\Big)^{1/3}
 \Bigg[\Bigg(\frac{V^{(1)}}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\Bigg)^{1/3}
 +\Bigg(\frac{V-V^{(1)}}{1+\sqrt{\frac{V^{(1)}}{V-V^{(1)}}}}\Bigg)^{1/3}\Bigg]\
 \ (4.10) &amp;
 \end{flalign*}
 \]</span></p>
-<p>である</p>
-<p><span class="math inline">\(V\)</span> に <span
-class="math inline">\(X\)</span>、<span
-class="math inline">\(V^{(1)}\)</span> に <span
-class="math inline">\(x\)</span> を代入すると</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\hat{S_2}(U,X,N,U_1^{(1)},x)
-&amp;=K\Big(\frac{UN}{2}\Big)^{1/3}
-\Bigg[\Bigg(\frac{x}{1+\sqrt{\frac{X-x}{x}}}\Bigg)^{1/3}
-+\Bigg(\frac{X-x}{1+\sqrt{\frac{x}{X-x}}}\Bigg)^{1/3}\Bigg] &amp;
-\end{flalign*}
-\]</span></p>
-<p>となる。<span
-class="math inline">\(x,X\)</span>は独立変数とする。<span
+<p><span class="math inline">\(x\)</span> は独立変数とする。<span
 class="math inline">\(0&lt;x&lt;X\)</span> とする</p>
+<p><span class="math inline">\(\displaystyle f(x) =
+\Bigg(\frac{x}{1+\sqrt{\frac{X-x}{x}}}\Bigg)^{1/3}\)</span> とする</p>
+<p><span class="math inline">\(\displaystyle f(X-x) =
+\Bigg(\frac{X-x}{1+\sqrt{\frac{x}{X-x}}}\Bigg)^{1/3}\)</span> である</p>
+<p><span class="math inline">\(\displaystyle S(U,V,N:C_1,C_2) =
+K\Big(\frac{UN}{2}\Big)^{1/3} \Big[f(V^{(1)})+f(V-V^{(1)})\Big]\)</span>
+である</p>
+<p>本文では<span class="math inline">\(f&#39;(x)\)</span>
+は強単調となっているがプロットしてみると</p>
+<p><img src="images/C4_P64_4.17_10図10.svg" style="width:8cm" /></p>
+<p>となり <span class="math inline">\(f&#39;(x)\)</span>
+は単調減少でも単調増加でもない</p>
 <p><span class="math display">\[
 \begin{flalign*}
-f(x) &amp;= \Bigg(\frac{x}{1+\sqrt{\frac{X-x}{x}}}\Bigg)^{1/3} &amp;
+S_1^{(1)}(U^{(1)},V^{(1)})
+&amp;= S^{(1)}(U^{(1)},V^{(1)},N^{(1)}),C_0,C_1 &amp;\\
+&amp;= S^{(1)}(U^{(1)},V^{(1)},N^{(1)}),C_1\ ({\because}C_0 は
+U^{(2)},V^{(2)},N^{(2)}の制約なので) &amp;\\
+&amp;= S^{(1)}(U^{(1)},V^{(1)},\frac{N}{2})\ ({\because}C_1:
+N^{(1)}=\frac{N}{2})&amp;\\
+&amp;= K\Big(\frac{N}{2}\Big)^{1/3}(U^{(1)}V^{(1)})^{1/3} &amp;\\
 \end{flalign*}
 \]</span></p>
 <p>とすると</p>
+<p>5.3節によると <span
+class="math inline">\(S_1^{(1)}(U^{(1)},V^{(1)})\)</span> は <span
+class="math inline">\(V^{(1)}\)</span> について<span
+style="display:inline-block;transform:rotate(180deg);">凹</span>関数
+である よって <span class="math inline">\(\displaystyle\frac{\partial
+S_1^{(1)}}{\partial V^{(1)}}\)</span> は強単調減少である</p>
+<p>しかし <span class="math inline">\(\displaystyle
+S_2^{(1)}(V^{(1)})=S_1^{(1)}\Bigg(\frac{U}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}},V^{(1)}\Bigg)\)</span>
+が<span class="math inline">\(V^{(1)}\)</span> について<span
+style="display:inline-block;transform:rotate(180deg);">凹</span>関数であるかどうかはわからない  <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
+<p>よって <span class="math inline">\(\displaystyle\frac{d S_2}{d
+V^{(1)}}\)</span> が強単調減少かどうかはわからない</p>
+<p>実際<span class="math inline">\(\displaystyle
+S_2^{(1)}(V^{(1)})=K\Big(\frac{N}{2}\Big)^{1/3}f(V^{(1)})\)</span>
+であるが、</p>
+<p>上のプロットのとおり <span class="math inline">\(f&#39;(x)\)</span>
+は強単調減少ではなく、 よって <span
+class="math inline">\(\displaystyle\frac{d S_2^{(1)}}{d
+V^{(1)}}\)</span> は強単調減少ではなかった</p>
 <p><span class="math display">\[
 \begin{flalign*}
-f(X-x) &amp;= \Bigg(\frac{X-x}{1+\sqrt{\frac{x}{X-x}}}\Bigg)^{1/3} &amp;
+&amp;&amp;\textcolor{red}{(*1)}&amp; f(x,y) が凹 であっても f(g(y),y) が
+凹 とは限らない \\
+&amp;&amp;&amp; f(g(y),y)が凹 となる条件は？
+\end{flalign*}
+\]</span></p>
+<p>ここでうまいこと <span class="math inline">\(f(x)+f(X-x)\)</span> が
+<span class="math inline">\(\displaystyle\frac{X}{2}\)</span>
+で最大になっているのは</p>
+<p>たまたま <span class="math inline">\((f(x)+f(X-x))&#39;\)</span>
+が強単調減少になっているからである</p>
+<p><img src="images/C4_P64_4.17_10図20.svg" style="width:8cm" /></p>
+<p>これがいつも保証されているわけではない。(保証される条件は？)</p>
+<p>また、強単調減少かどうか確認するのも大変である。(ここでは数値計算してプロットして確認。解析的な確認は？)</p>
+<p><span class="math inline">\(\displaystyle x=\frac{X}{2}\)</span>
+で<span class="math inline">\((f(x)-f(X-x))&#39;=0\)</span>となる  <span
+class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*2)}&amp;(f(x)+f(X-x))&#39;=f&#39;(x)-f&#39;(X-x)なので
+\\
+&amp;&amp;&amp;x_0=\frac{X}{2} とすると \\
+&amp;&amp;&amp;(f(x_0)+f(X-x_0))&#39; \\
+&amp;&amp;&amp;\qquad =f&#39;(x_0)-f&#39;(X-x_0)\\
+&amp;&amp;&amp;\qquad =f&#39;(X/2)-f&#39;(X/2)=0 である
+\end{flalign*}
+\]</span></p>
+<p>よって <span class="math inline">\(\displaystyle\frac{X}{2}\)</span>
+において <span class="math inline">\(f(x)+f(X-x)\)</span>
+は最大となる  <span
+class="math inline">\(\textcolor{red}{(*3)}\)</span></p>
+<p>最大値は</p>
+<p><span class="math display">\[
+\begin{flalign*}
+f(X/2)+f(X-X/2)&amp;=2f(X/2) \\
+&amp;=2\Bigg(\frac{X/2}{1+\sqrt{\frac{X-X/2}{X/2}}}\Bigg)^{1/3} &amp;\\
+&amp;=2\Big(\frac{X}{4}\Big)^{1/3} = (2 X)^{1/3} &amp;
+\end{flalign*}
+\]</span> となる</p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*3)}&amp;0\le x \le X で g(x) は連続 \\
+&amp;&amp;&amp;0 &lt; x &lt; X で g&#39;(x) が強単調減少 \\
+&amp;&amp;&amp;0&lt;x_0&lt;X, g&#39;(x_0)=0 ならば g&#39;(x_0) は最大 \\
 \end{flalign*}
 \]</span></p>
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
-\hat{S_2}(U,X,N,U_1^{(1)},x)
-&amp;= K\Big(\frac{UN}{2}\Big)^{1/3} [f(x)+f(X-x)] &amp;\\
-&amp;= K\Big(\frac{UN}{2}\Big)^{1/3}\Bigg[
-   \Bigg(\frac{x}{1+\sqrt{\frac{X-x}{x}}}\Bigg)^{1/3}
-  +\Bigg(\frac{X-x}{1+\sqrt{\frac{x}{X-x}}}\Bigg)^{1/3} \Bigg] &amp;
+S(U,V,N:C_1)
+&amp;=\max_{V^{(1)}} S(U,V,N:C_1,C_2)\ ({\because}(4.15)) &amp;\\
+&amp;=\max_{V^{(1)}} K\Big(\frac{UN}{2}\Big)^{1/3}
+\Big[f(V^{(1)})+f(V-V^{(1)})\Big] &amp;\\
+&amp;=K\Big(\frac{UN}{2}\Big)^{1/3}(2 V)^{1/3} &amp;\\
+&amp;=K(UNV)^{1/3}\ \ (4.21) &amp;
 \end{flalign*}
 \]</span></p>
-<p><span class="math inline">\(f&#39;(x)\)</span>は強単調とする</p>
-<p><span
-class="math inline">\(f&#39;(x)-f&#39;(X-x)\)</span>は強単調である<span
-class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
-<p>よって <span class="math inline">\(f(x)+f(X-x)\)</span> は<span
-style="display:inline-block;transform:rotate(180deg);">凹</span>または<span
-style="display:inline-block;transform:rotate(180deg);">凸</span>である</p>
-<p><span class="math inline">\(f&#39;(x)=f&#39;(X-x)\)</span> を満たす
-<span class="math inline">\(x\)</span> は<span
-class="math inline">\(\displaystyle\frac{X}{2}\)</span> のみである <span
-class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
+<p><span class="math inline">\(\displaystyle
+V^{(1)}=\frac{V}{2}\)</span>  (4.20) となる</p>
+<p>また</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;&amp;\textcolor{red}{(*2)}&amp; f&#39;(x_1)=f&#39;(X-x_1),
-f&#39;(x_2)=f&#39;(X-x_2),x_1&lt;x_2 とする \\
-&amp;&amp;&amp; f&#39;(x) が強単調増加とする \\
-&amp;&amp;&amp; f&#39;(x_1)&lt;f&#39;(x_2) \\
-&amp;&amp;&amp; {\therefore}f&#39;(X-x_1)&lt;f&#39;(X-x_2) \\
-&amp;&amp;&amp; また X-x_1&gt;X-x_2 なので \\
-&amp;&amp;&amp; {\therefore}f&#39;(X-x_1)&gt;f&#39;(X-x_2) \\
-&amp;&amp;&amp; これは矛盾である\\
-&amp;&amp;&amp; x_1&gt;x_2 としても同様に矛盾する\\
-&amp;&amp;&amp; よって x_1=x_2 である \\
-&amp;&amp;&amp; f&#39;(x)が強単調減少の場合も同様に x_1=x_2 である \\
-&amp;&amp;&amp; また f&#39;\Big(\frac{X}{2}\Big)=
-f&#39;\Big(X-\frac{X}{2}\Big) なので\\
-&amp;&amp;&amp; \frac{X}{2} は f&#39;(x)=f&#39;(X-x) の解である
-\end{flalign*}
-\]</span></p>
-<p><span class="math inline">\(\hat{S_2}\)</span>のプロットより<span
-class="math inline">\(f(x)+f(X-x)\)</span> は <span
-class="math inline">\(0&lt;x&lt;X\)</span> で<span
-style="display:inline-block;transform:rotate(180deg);">凹</span>
-なので</p>
-<p><span class="math inline">\(f&#39;(x_1)-f&#39;(X-x_1)=0\)</span>
-ならば</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\max_x (f(x)+f(X-x) )
-&amp;= f(x_1)+f(X-x_1) &amp;\\
-&amp;= f\Big(\frac{X}{2}\Big)+f\Big(X-\frac{X}{2}\Big) &amp;\\
-&amp;= 2f\Big(\frac{X}{2}\Big) &amp;
+U^{(1)}
+&amp;=\frac{U}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}}\ ({\because}(4.11))
+&amp;\\
+&amp;=\frac{U}{1+\sqrt{\frac{V-V/2}{V/2}}} &amp;\\
+&amp;=\frac{U}{2}\ \ (4.22) &amp;
 \end{flalign*}
 \]</span></p>
 <p>である</p>
