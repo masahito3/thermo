@@ -75,13 +75,6 @@ $$
 しかし 
 $\disp S_2^\one(V^\one)=S_1^\one\Bigg(\frac{U}{1+\sqrt{\frac{V-V^\one}{V^\one}}},V^\one\Bigg)$ が$V^\one$ についてCONCAVE関数である保証はない\ \ $\kome{1}$
 
-よって $\disp\frac{d S_2}{d V^\one}$ が強単調減少かどうかはわからない
-
-実際$\disp S_2^\one(V^\one)=K\Big(\frac{N}{2}\Big)^{1/3}f(V^\one)$ であるが、
-
-上のプロットのとおり $f'(x)$ は強単調減少ではなく、
-よって $\disp\frac{d S_2^\one}{d V^\one}$ は強単調減少ではない。
-
 $$
 \begin{flalign*}
 &&\kome{1}& f(x,y) が凹 であっても f(g(y),y) が 凹 とは限らない \\
@@ -89,6 +82,13 @@ $$
 \end{flalign*}
 $$
 
+
+よって $\disp\frac{d S_2}{d V^\one}$ が強単調減少かどうかはわからない
+
+実際$\disp S_2^\one(V^\one)=K\Big(\frac{N}{2}\Big)^{1/3}f(V^\one)$ であるが、
+
+上のプロットのとおり $f'(x)$ は強単調減少ではなく、
+よって $\disp\frac{d S_2^\one}{d V^\one}$ は強単調減少ではない。
 
 ここでうまいこと $f(x)+f(X-x)$ が $\disp\frac{X}{2}$ で最大になっているのは
 
@@ -114,6 +114,14 @@ $$
 
 よって $\disp \frac{X}{2}$ において $f(x)+f(X-x)$ は最大となる\ \ $\kome{3}$ 
 
+$$
+\begin{flalign*}
+&&\kome{3}&0\le x \le X で g(x) は連続 \\
+&&&0 < x < X で g'(x) が強単調減少 \\
+&&&0<x_0<X, g'(x_0)=0 ならば g(x_0) は最大 \\
+\end{flalign*}
+$$
+
 最大値は
 
 $$
@@ -124,14 +132,6 @@ f(X/2)+f(X-X/2)&=2f(X/2) \\
 \end{flalign*}
 $$
 となる
-
-$$
-\begin{flalign*}
-&&\kome{3}&0\le x \le X で g(x) は連続 \\
-&&&0 < x < X で g'(x) が強単調減少 \\
-&&&0<x_0<X, g'(x_0)=0 ならば g(x_0) は最大 \\
-\end{flalign*}
-$$
 
 よって
 
@@ -144,10 +144,11 @@ S(U,V,N:C_1)
 &=K(UNV)^{1/3}\ \ (4.21) &
 \end{flalign*}
 $$
+となる
 
-$\disp V^\one=\frac{V}{2}$\ \ (4.20) となる
+$\disp\max_{V^\one}S(U,V,N:C_1,C_2)$ を与える $V^\one$ は $\disp V^\one=\frac{V}{2}$\ \ (4.20) である
 
-また
+また $S(U,V,N:C_1,C_2)$ を与える $U^\one$ は
 
 $$
 \begin{flalign*}

@@ -310,6 +310,13 @@ S_2^{(1)}(V^{(1)})=S_1^{(1)}\Bigg(\frac{U}{1+\sqrt{\frac{V-V^{(1)}}{V^{(1)}}}},V
 が<span class="math inline">\(V^{(1)}\)</span> について<span
 style="display:inline-block;transform:rotate(180deg);">凹</span>関数である保証はない  <span
 class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*1)}&amp; f(x,y) が凹 であっても f(g(y),y) が
+凹 とは限らない \\
+&amp;&amp;&amp; f(g(y),y)が凹 となる条件は？
+\end{flalign*}
+\]</span></p>
 <p>よって <span class="math inline">\(\displaystyle\frac{d S_2}{d
 V^{(1)}}\)</span> が強単調減少かどうかはわからない</p>
 <p>実際<span class="math inline">\(\displaystyle
@@ -319,13 +326,6 @@ S_2^{(1)}(V^{(1)})=K\Big(\frac{N}{2}\Big)^{1/3}f(V^{(1)})\)</span>
 は強単調減少ではなく、 よって <span
 class="math inline">\(\displaystyle\frac{d S_2^{(1)}}{d
 V^{(1)}}\)</span> は強単調減少ではない。</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp; f(x,y) が凹 であっても f(g(y),y) が
-凹 とは限らない \\
-&amp;&amp;&amp; f(g(y),y)が凹 となる条件は？
-\end{flalign*}
-\]</span></p>
 <p>ここでうまいこと <span class="math inline">\(f(x)+f(X-x)\)</span> が
 <span class="math inline">\(\displaystyle\frac{X}{2}\)</span>
 で最大になっているのは</p>
@@ -351,6 +351,13 @@ class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
 において <span class="math inline">\(f(x)+f(X-x)\)</span>
 は最大となる  <span
 class="math inline">\(\textcolor{red}{(*3)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*3)}&amp;0\le x \le X で g(x) は連続 \\
+&amp;&amp;&amp;0 &lt; x &lt; X で g&#39;(x) が強単調減少 \\
+&amp;&amp;&amp;0&lt;x_0&lt;X, g&#39;(x_0)=0 ならば g(x_0) は最大 \\
+\end{flalign*}
+\]</span></p>
 <p>最大値は</p>
 <p><span class="math display">\[
 \begin{flalign*}
@@ -359,13 +366,6 @@ f(X/2)+f(X-X/2)&amp;=2f(X/2) \\
 &amp;=2\Big(\frac{X}{4}\Big)^{1/3} = (2 X)^{1/3} &amp;
 \end{flalign*}
 \]</span> となる</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*3)}&amp;0\le x \le X で g(x) は連続 \\
-&amp;&amp;&amp;0 &lt; x &lt; X で g&#39;(x) が強単調減少 \\
-&amp;&amp;&amp;0&lt;x_0&lt;X, g&#39;(x_0)=0 ならば g(x_0) は最大 \\
-\end{flalign*}
-\]</span></p>
 <p>よって</p>
 <p><span class="math display">\[
 \begin{flalign*}
@@ -376,10 +376,14 @@ S(U,V,N:C_1)
 &amp;=K\Big(\frac{UN}{2}\Big)^{1/3}(2 V)^{1/3} &amp;\\
 &amp;=K(UNV)^{1/3}\ \ (4.21) &amp;
 \end{flalign*}
-\]</span></p>
-<p><span class="math inline">\(\displaystyle
-V^{(1)}=\frac{V}{2}\)</span>  (4.20) となる</p>
-<p>また</p>
+\]</span> となる</p>
+<p><span
+class="math inline">\(\displaystyle\max_{V^{(1)}}S(U,V,N:C_1,C_2)\)</span>
+を与える <span class="math inline">\(V^{(1)}\)</span> は <span
+class="math inline">\(\displaystyle V^{(1)}=\frac{V}{2}\)</span>  (4.20)
+である</p>
+<p>また <span class="math inline">\(S(U,V,N:C_1,C_2)\)</span> を与える
+<span class="math inline">\(U^{(1)}\)</span> は</p>
 <p><span class="math display">\[
 \begin{flalign*}
 U^{(1)}
