@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.15 問題1.7(i) 合成関数の偏微分 '25 6.27</title>
+  <title>P.66 §4.2.2 '25 8.9</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -232,21 +232,21 @@ id="toc-C4_P64_4.17_4.20_4.21_4.22_10">P.64 (4.17) (4.20) (4.21) (4.22)
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.15 問題1.6(iv) 偏微分の連鎖律 '25 6.25.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.64 (4.17) (4.20) (4.21) (4.22) '25 8.10.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.15 問題1.7(ii) 合成関数の偏微分の例 '25 6.28.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <span class="button icon is-large"><i class="fas fa-lg fa-angle-right"></i></span>
       </div>
 </nav>
 <!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
+<span class="navlink-label">Up:</span> <a href="第4章.html" accesskey="u" rel="up">第4章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
@@ -254,231 +254,110 @@ id="toc-C4_P64_4.17_4.20_4.21_4.22_10">P.64 (4.17) (4.20) (4.21) (4.22)
 </div>
 </nav>
 -->
-<h2 data-number="1.32" id="C1_P15_問1.7_10">P.15 問題1.7(i)
-合成関数の偏微分 '25 6.27</h2>
-<p><span class="math inline">\(Z=Z(x,y)\)</span> とする。<span
-class="math inline">\(x, y\)</span> は独立変数とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}}=\textcolor{red}{\boldsymbol{x}}(t),\
-\textcolor{red}{\boldsymbol{y}}=\textcolor{red}{\boldsymbol{y}}(t)\)</span>
-とする。<span class="math inline">\(t\)</span> は独立変数とする。<span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}},
-\textcolor{red}{\boldsymbol{y}}\)</span> は微分可能とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(t)=Z(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})\)</span>
-とする</p>
-<p><span
-class="math inline">\(\displaystyle\frac{d\textcolor{red}{\boldsymbol{Z}}}{dt}
-=\displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}
-+\displaystyle\Big(\frac{\partial Z}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\)</span>  (1.22)</p>
+<h2 data-number="4.9" id="C4_66_S4.2.2_10">P.66 §4.2.2 '25 8.9</h2>
+<p>(1) <span class="math inline">\(\varepsilon\)</span> 空間の次元 <span
+class="math inline">\(\dim\varepsilon\)</span> は <span
+class="math inline">\(\dim\varepsilon=t+1\)</span>  (4.23)</p>
+<p>(2) <span class="math inline">\(\varepsilon\)</span>
+空間の各々の点は、この単純系の平衡状態と一対一に対応する</p>
+<p>(3) <span class="math inline">\(\varepsilon\)</span>は<span
+class="math inline">\(\hat{\varepsilon}\)</span>の部分空間で、 <span
+class="math inline">\(\displaystyle\dim\hat{\varepsilon}=\sum_i \dim
+\varepsilon_i=\sum_i(t_i+1)\ge\dim\varepsilon\)</span>  (4.24)</p>
 <hr />
-<p>(証明)</p>
-<p><span
-class="math inline">\(f(\vec{x}+d\vec{x})-f(\vec{x})=df+o(|d\vec{x}|)\)</span>  (1.13)</p>
-<p><span class="math inline">\(df=\vec{\nabla}f(\vec{x})\cdot d\vec{x}=
-\displaystyle\Big(\frac{\partial f(\vec{x})}{\partial x_1}\Big)_{x_{i\ne
-1}}dx_1+\cdots+\displaystyle\Big(\frac{\partial f(\vec{x})}{\partial
-x_n}\Big)_{x_{i\ne n}}dx_n\)</span>  (1.14)</p>
-<p>において</p>
-<p><span class="math inline">\(f=Z,\ \vec{x}= (x,y),\
-d\vec{x}=(dx,dy)\)</span> とする。<span
-class="math inline">\(x,y\)</span> は独立変数とする</p>
+<p>(説明)</p>
+<p>(1)</p>
+<p>この<span class="math inline">\(\varepsilon\)</span>
+空間は単なる集合ではなくベクトル空間である。ベクトル空間なので、次元とか部分空間が定義できる</p>
+<p><span class="math inline">\(t=2,\
+\symbfit{X}=X_1,X_2\)</span>とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;Z(x+dx,y+dy)-Z(x,y)
-  = \displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_{y}dx+\displaystyle\Big(\frac{\partial Z}{\partial
-y}\Big)_{z}dy+o\big(\sqrt{dx^2+dy^2}\big) &amp;
+\varepsilon &amp;=
+\{(U,X_1,X_2):U\in\symbb{R},X_1\in\symbb{R},X_2\in\symbb{R}\} &amp;\\
+&amp;=span((1,0,0),(0,1,0),(0,0,1)) &amp;
 \end{flalign*}
 \]</span></p>
-<p>よって</p>
+<p>よって <span class="math inline">\(\dim\epsilon=3\)</span> である</p>
+<p>同様に <span class="math inline">\(t\in
+\symbb{Z}^+\)</span>(正の整数) のとき <span class="math inline">\(\dim
+\varepsilon = t+1\)</span>  (4.23) である</p>
+<p>(注意)</p>
+<p><span class="math inline">\(\varepsilon=\{(U,X_1,\dots,X_t):U\ge
+0,X_1\ge 0,\dots,X_t\ge 0\}\)</span> とすると<span
+class="math inline">\(\varepsilon\)</span>
+はベクトル空間ではなくなる</p>
+<p>なぜならベクトル空間の定義の 「<span
+class="math inline">\(v\in\varepsilon\)</span>ならば <span
+class="math inline">\(\lambda v \in \varepsilon, \lambda \in
+\symbb{R}\)</span>」 に反するので</p>
+<p>なので <span class="math inline">\(\varepsilon\)</span>
+をベクトル空間として扱うとマイナスの内部エネルギーとかマイナスの体積とかが出てきてちょっと変な感じがする</p>
+<p>とはいえ、<span class="math inline">\(\varepsilon\)</span>
+をベクトル空間として扱っているのはこの節だけみたいなのであまり気にしなくてよいと思う</p>
+<p>(2)</p>
+<p>これは仮定、要請である</p>
+<p>(3)</p>
+<p><span class="math inline">\(t_1=1,\
+\symbfit{X}^{(1)}=X_1^{(1)}\)</span> とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;\displaystyle\lim_{(dx,dy)\to (0,0)}
-\frac{Z(x+dx,y+dy)-Z(x,y)
-      -\displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_{y}dx-\displaystyle\Big(\frac{\partial Z}{\partial
-y}\Big)_{x}dy}
-     {\sqrt{dx^2+dy^2}} = 0\ \ \textcolor{red}{(1)} &amp;
-\end{flalign*}
-\]</span></p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}}=\textcolor{red}{\boldsymbol{x}}(t),\
-\textcolor{red}{\boldsymbol{y}}=\textcolor{red}{\boldsymbol{y}}(t)\)</span>
-とする。<span class="math inline">\(t\)</span> は独立変数とする。<span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}},
-\textcolor{red}{\boldsymbol{y}}\)</span> は微分可能とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{dx}}=\textcolor{red}{\boldsymbol{x}}(t+dt)-\textcolor{red}{\boldsymbol{x}}(t)\)</span></p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{dy}}=\textcolor{red}{\boldsymbol{y}}(t+dt)-\textcolor{red}{\boldsymbol{y}}(t)\)</span>
-とする</p>
-<p><span
-class="math inline">\({\therefore}\displaystyle\displaystyle\lim_{dt\to
-0} \textcolor{red}{\boldsymbol{dx}}= 0 \
-({\because}\textcolor{red}{\boldsymbol{x}}は連続)\)</span></p>
-<p><span
-class="math inline">\({\therefore}\displaystyle\displaystyle\lim_{dt\to
-0} \textcolor{red}{\boldsymbol{dy}}= 0 \
-({\because}\textcolor{red}{\boldsymbol{y}}は連続)\)</span></p>
-<p><span class="math inline">\(\textcolor{red}{(1)}\)</span>
-の極限は経路によらないので</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;\displaystyle\lim_{dt\to 0}
-\frac{Z(\textcolor{red}{\boldsymbol{x}}+\textcolor{red}{\boldsymbol{dx}},\textcolor{red}{\boldsymbol{y}}+\textcolor{red}{\boldsymbol{dy}})-Z(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})
-      -\displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dx}}-\displaystyle\Big(\frac{\partial
-Z}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
-     {\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}
-= 0 &amp;
-\end{flalign*}
-\]</span></p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(t)=Z(\textcolor{red}{\boldsymbol{x}}(t),\textcolor{red}{\boldsymbol{y}}(t))\)</span>
-とする</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\textcolor{red}{\boldsymbol{Z}}(t+dt)
-  &amp;=Z(\textcolor{red}{\boldsymbol{x}}(t+dt),\textcolor{red}{\boldsymbol{y}}(t+dt))
+\varepsilon_1
+&amp;=\{(U^{(1)},X_1^{(1)}):U^{(1)}\in\symbb{R},X_1^{(1)}\in\symbb{R}\}
 &amp;\\
-  &amp;=Z(\textcolor{red}{\boldsymbol{x}}+\textcolor{red}{\boldsymbol{dx}},\textcolor{red}{\boldsymbol{y}}+\textcolor{red}{\boldsymbol{dy}})
+&amp;=span((1,0),(0,1)) &amp;
+\end{flalign*}
+\]</span></p>
+<p>よって <span class="math inline">\(\dim \varepsilon_1 =
+2\)</span></p>
+<p><span class="math inline">\(t_2=2,\
+\symbfit{X}^{(2)}=X_1^{(2)},X_2^{(2)}\)</span> とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\varepsilon_2
+&amp;=\{(U^{(2)},X_1^{(2)},X_2^{(2)}):U^{(2)}\in\symbb{R},X_1^{(2)}\in\symbb{R},X_2^{(2)}\in\symbb{R}\}
+&amp;\\
+&amp;=span((1,0,0),(0,1,0),(0,0,1)) &amp;
+\end{flalign*}
+\]</span></p>
+<p>よって <span class="math inline">\(\dim \varepsilon_2 =
+3\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+\hat{\varepsilon}
+&amp;=\{(U^{(1)},X_1^{(1)},U^{(2)},X_1^{(2)},X_2^{(2)}):
+U^{(1)}\in\symbb{R},X_1^{(1)}\in\symbb{R},
+U^{(2)}\in\symbb{R},X_1^{(2)}\in\symbb{R},X_2^{(2)}\in\symbb{R}\}
+&amp;\\
+&amp;=span((1,0,0,0,0),(0,1,0,0,0),(0,0,1,0,0),(0,0,0,1,0),(0,0,0,0,1))
 &amp;
 \end{flalign*}
 \]</span></p>
-<p>よって</p>
+<p>よって <span class="math inline">\(\dim \hat{\varepsilon} =
+5\)</span></p>
+<p><span class="math inline">\(U=U^{(1)}+U^{(2)},\
+X_1=X_1^{(1)}+X^{(2)},\ X_2=X_2^{(2)}\)</span> とする</p>
 <p><span class="math display">\[
 \begin{flalign*}
-&amp;\displaystyle\lim_{dt\to 0}
-\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)
-      -\displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dx}}-\displaystyle\Big(\frac{\partial
-Z}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
-     {\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}
-= 0 &amp;
+\varepsilon
+&amp;=\{(U,X_1,X_2,0,0):
+U\in\symbb{R},X_1\in\symbb{R},X_2\in\symbb{R}\} &amp;\\
+&amp;=span((1,0,0,0,0),(0,1,0,0,0),(0,0,1,0,0)) &amp;
 \end{flalign*}
 \]</span></p>
-<p>ここで</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\displaystyle\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}
-&amp;=\displaystyle\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{x}}(t+dt)-\textcolor{red}{\boldsymbol{x}}(t)}{dt}
-=\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\quad({\because}\
-\textcolor{red}{\boldsymbol{x}}は微分可能) &amp;
-\end{flalign*}
-\]</span></p>
-<p><span class="math display">\[
-\begin{flalign*}
-\displaystyle\lim_{dt\to 0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}
-&amp;=\displaystyle\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{y}}(t+dt)-\textcolor{red}{\boldsymbol{y}}(t)}{dt}
-=\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\quad({\because}\
-\textcolor{red}{\boldsymbol{y}}は微分可能) &amp;
-\end{flalign*}
-\]</span></p>
-<p>なので</p>
-<p><span class="math display">\[
-\begin{flalign*}
-\displaystyle\lim_{dt\to
-0}\frac{\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}{|dt|}
-&amp;= \displaystyle\lim_{dt\to
-0}\sqrt{\Big(\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}\Big)^2+\Big(\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}\Big)^2}
-&amp;\\
-&amp;= \sqrt{\Big(\displaystyle\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{dx}}}{dt}\Big)^2+\Big(\displaystyle\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{dy}}}{dt}\Big)^2}
-\quad \Big(\begin{array}{@{}l@{}}
-           {\because}\sqrt{x} は x&gt;0 で連続、x^2
-は\mathbb{R}で連続なので \\
-           \quad 合成関数の極限と和の極限より \end{array} \Big) &amp;\\
-&amp;=
-\sqrt{\Big(\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\Big)^2+\Big(\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\Big)^2}
-&amp;\\
-&amp;&lt; \infty
-\quad\Big({\because}微分が存在するので\Big|\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}\Big|&lt;\infty,\
-\Big|\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}\Big|&lt;\infty\Big)
-&amp;
-\end{flalign*}
-\]</span></p>
-<p>よって</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;\displaystyle\lim_{dt\to 0}
-\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)
-      -\displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dx}}-\displaystyle\Big(\frac{\partial
-Z}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
-     {\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}
-\frac{\sqrt{\textcolor{red}{\boldsymbol{dx}}^2+\textcolor{red}{\boldsymbol{dy}}^2}}{dt}
-= 0 &amp;
-\end{flalign*}
-\]</span></p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;&amp;({\because}\ \lim f = 0,\ \lim |g|&lt;\infty ならば \lim fg =
-0)&amp;
-\end{flalign*}
-\]</span></p>
-<p>よって</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;\displaystyle\lim_{dt\to 0}
-\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)
-      -\displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dx}}-\displaystyle\Big(\frac{\partial
-Z}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\textcolor{red}{\boldsymbol{dy}}}
-     {dt}
-= 0 &amp;
-\end{flalign*}
-\]</span></p>
-<p>よって</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;\displaystyle\lim_{dt\to
-0}\frac{\textcolor{red}{\boldsymbol{Z}}(t+dt)-\textcolor{red}{\boldsymbol{Z}}(t)}{dt}
-= \displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}+\displaystyle\Big(\frac{\partial
-Z}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}
-\quad \Bigg(\begin{array}{@{}l@{}}
-  {\because}\lim の線型性より \\
-  \quad \lim(f+kg+lh)=a,\lim g=b,\lim h=cならば \\
-  \quad \lim f = a - kb - lc
-\end{array} \Bigg) &amp;
-\end{flalign*}
-\]</span></p>
-<p>よって</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;\displaystyle\frac{d\textcolor{red}{\boldsymbol{Z}}}{dt}
-= \displaystyle\Big(\frac{\partial Z}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{x}}}{dt}+\displaystyle\Big(\frac{\partial
-Z}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\
-y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\frac{d\textcolor{red}{\boldsymbol{y}}}{dt}
-\quad({\because}\ 微分の定義) &amp;
-\end{flalign*}
-\]</span></p>
+<p>よって <span class="math inline">\(\varepsilon\)</span> は <span
+class="math inline">\(\hat{\varepsilon}\)</span> の部分空間で <span
+class="math inline">\(\dim \varepsilon=3\)</span> である</p>
+<p>よって <span class="math inline">\(\dim \hat{\varepsilon} = \dim
+\varepsilon_1 + \dim \varepsilon_2 = (t_1+1)+(t_2+1) &gt; \dim
+\varepsilon\)</span></p>
+<p>部分系の個数<span class="math inline">\(\in \symbb{Z}^+,\ t_i\in
+\symbb{Z}^+\ (\symbb{Z}^+は正の整数)\)</span> の場合も同様に</p>
+<p><span class="math inline">\(\displaystyle\dim \hat{\varepsilon} =
+\sum_i \dim \varepsilon_i = \sum_i (t_i+1) \ge \dim
+\varepsilon\)</span>  (4.24)</p>
+<p>等号が成立するのは部分系の個数<span class="math inline">\(=1\)</span>
+のとき</p>
    </main>
 </div>
 
