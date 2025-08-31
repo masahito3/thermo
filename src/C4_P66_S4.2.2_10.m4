@@ -42,7 +42,7 @@ $$
 
 (注意) 
 
-$\varepsilon=\{(U,X_1,\dots,X_t):U\ge 0,X_1\ge 0,\dots,X_t\ge 0\}$ とすると$\varepsilon$ はベクトル空間ではなくなる
+$\varepsilon=\{(U,X_1,X_2):U\ge 0,X_1\ge 0,X_2\ge 0\}$ とすると$\varepsilon$ はベクトル空間ではなくなる
 
 なぜならベクトル空間の定義の 「$v\in\varepsilon$ならば $\lambda v \in \varepsilon, \lambda \in \symbb{R}$」 に反するので 
 
@@ -52,7 +52,7 @@ $\varepsilon=\{(U,X_1,\dots,X_t):U\ge 0,X_1\ge 0,\dots,X_t\ge 0\}$ とすると$
 
 \(2)
 
-これは仮定、要請である
+これは仮定、要請である(たぶん要請II(iv)で系全体を部分系とした場合だと思う)
 
 \(3)
 

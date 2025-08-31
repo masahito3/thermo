@@ -18,7 +18,7 @@ $\disp\hat{S}=K\Big(\frac{N}{2}\Big)^{1/3}
 
 ![](images/C4_P62_4.1.3_plot_10図10.svg){width=8cm}
 
-この $\hat{S}$ はCONCAVE関数なっている。
+この $\hat{S}$ はCONCAVE関数になっている。
 
 複合系の $\hat{S}$ はいつもCONCAVE？CONVEXになることはない？極大になる箇所が複数あったりする？
 

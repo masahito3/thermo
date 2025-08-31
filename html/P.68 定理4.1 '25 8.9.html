@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.35 (2.25.2):(2.25)の示強変数の場合 '25 7.2</title>
+  <title>P.68 定理4.1 '25 8.9</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -234,21 +234,21 @@ id="toc-C4_68_定理4.1_10">P.68 定理4.1 '25 8.9</a></li>
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.34 (2.25) '25 6.30.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.66 §4.2.2 '25 8.9.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.36 o(V)V=o(1) '25 6.30.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <span class="button icon is-large"><i class="fas fa-lg fa-angle-right"></i></span>
       </div>
 </nav>
 <!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="第2章.html" accesskey="u" rel="up">第2章</a>
+<span class="navlink-label">Up:</span> <a href="第4章.html" accesskey="u" rel="up">第4章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
@@ -256,47 +256,77 @@ id="toc-C4_68_定理4.1_10">P.68 定理4.1 '25 8.9</a></li>
 </div>
 </nav>
 -->
-<h2 data-number="2.11" id="C2_P35_2.25.2_10">P.35
-(2.25.2):(2.25)の示強変数の場合 '25 7.2</h2>
-<p>示強変数のゆらぎは相対的に<span
-class="math inline">\(\displaystyle\frac{o(V)}{V}\to0\)</span>
-となる</p>
-<p>相対的というのは<span class="math inline">\(\Delta\langle T
-\rangle\)</span>と比較してという意味である</p>
-<p><span class="math inline">\(\displaystyle\frac{\delta
-T}{\Delta\langle T\rangle} \propto \frac{o(V)}{V}\to0\
-(V\to\infty)\)</span>  (2.25.2)</p>
+<h2 data-number="4.10" id="C4_68_定理4.1_10">P.68 定理4.1 '25 8.9</h2>
+<p>(1) 内部束縛 <span class="math inline">\(C_1,\dots,C_b\)</span>
+が少ないほど、最大値を探す範囲が広くなるので <span
+class="math inline">\(S\)</span> は大きくなる</p>
+<p>(2) 定理4.1 <span
+class="math inline">\(S(U,\symbfit{X};\dots,C_{k-1},C_k,C_{k+1},\dots)
+\le S(U,\symbfit{X};\dots,C_{k-1},C_{k+1},\dots)\)</span>  (4.25)</p>
 <hr />
-<p>(証明)</p>
-<p>示強変数は <span class="math inline">\(V\)</span> によらないので</p>
-<p><span class="math inline">\(\langle T^{(i)} \rangle =
-K^{(i)}\)</span></p>
-<p><span class="math inline">\(\langle T^{(j)} \rangle =
-K^{(j)}\)</span></p>
-<p><span class="math inline">\({\therefore}\Delta \langle T
-\rangle=K^{(i)}-K^{(j)}\)</span></p>
-<p>(2.29)より <span class="math inline">\(\delta
-T=\displaystyle\frac{o(V)}{V}\)</span> なので</p>
-<p><span class="math inline">\({\therefore}\displaystyle\frac{\delta
-T}{\Delta\langle T\rangle} =\frac{\delta T}{K^{(i)}-K^{(j)}} \propto
-\delta T=\frac{o(V)}{V}\)</span></p>
-<p>ここで</p>
-<p><span class="math inline">\(\displaystyle\frac{o(V)}{V}=o(1)\to0\
-(V\to\infty)\)</span> <a
-href="P.36 o(V)V=o(1) &#39;25 6.30.html#C2_P36_10">(別頁)</a></p>
+<p>(説明)</p>
+<p>(1)</p>
+<p>例として部分系2つからなる複合系をかんがえる</p>
+<p>部分系の自然変数を <span
+class="math inline">\(U^{(i)},\symbfit{X}^{(i)}=U^{(i)},X_1^{(i)},X_2^{(i)}\)</span>
+とする</p>
+<p><span class="math inline">\(U=U^{(1)}+U^{(2)},\
+X_1=X_1^{(1)}+X_1^{(2)},\ X_2=X_1^{(1)}+X_2^{(2)}\)</span> とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+\hat{S}(U,\symbfit{X},U^{(1)},X_1^{(1)},X_2^{(1)})
+&amp;=S^{(1)}(U^{(1)},X_1^{(1)},X_2^{(1)})+S^{(2)}(U^{(2)},X_1^{(2)},X_2^{(2)})
+&amp;\\
+&amp;=S^{(1)}(U^{(1)},X_1^{(1)},X_2^{(1)})+S^{(2)}(U-U^{(1)},X_1-X_1^{(1)},X_2-X_2^{(1)})
+&amp;
+\end{flalign*}
+\]</span></p>
+<p>とする</p>
+<p>内部束縛を <span class="math inline">\(C_1:\ X_1^{(1)}=1,\ C_2:\
+X_2^{(1)}=2\)</span> とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+S_1(U,\symbfit{X}:C_1,C_2)
+&amp;= \max_{U^{(1)},X_1^{(1)},X_2^{(1)}}\Big(\hat{S}
+,C_1,C_2\Big)&amp;\\
+&amp;=\max_{U^{(1)}}\hat{S}(U,\symbfit{X},U^{(1)},1,2) &amp;
+\end{flalign*}
+\]</span> とする</p>
+<p><span class="math display">\[
+\begin{flalign*}
+S_2(U,\symbfit{X}:C_1)
+&amp;= \max_{U^{(1)},X_1^{(1)},X_2^{(1)}}\Big(\hat{S},C_1\Big)&amp;\\
+&amp;=\max_{U^{(1)},X_2^{(1)}}\hat{S}(U,\symbfit{X},U^{(1)},1,X_2^{(1)})
+&amp;
+\end{flalign*}
+\]</span> とする</p>
+<p>任意の<span class="math inline">\(X_2^{(1)}\)</span> について</p>
+<p><span
+class="math inline">\(\displaystyle\max_{U^{(1)}}\hat{S}(U,\symbfit{X},U^{(1)},1,X_2^{(1)})
+\le
+\max_{U^{(1)},X_2^{(1)}}\hat{S}(U,\symbfit{X},U^{(1)},1,X_2^{(1)})\)</span></p>
 <p>なので</p>
-<p><span class="math inline">\({\therefore}\displaystyle\frac{\delta
-T}{\Delta\langle T\rangle} \propto \frac{o(V)}{V}\to 0\
-(V\to\infty)\)</span></p>
-<hr />
-<p>上のとおり<span class="math inline">\(V\)</span>
-が大きいとき示強変数のゆらぎは(<span class="math inline">\(\Delta\langle
-T \rangle\)</span>と比べて)相対的に無視できると言えるが、</p>
-<p><span class="math inline">\(\delta T=\displaystyle\frac{o(V)}{V}\to
-0\ (V\to\infty)\)</span></p>
-<p>なので<span class="math inline">\(V\)</span>
-が大きいとき示強変数のゆらぎは(<span class="math inline">\(\Delta\langle
-T \rangle\)</span>によらず)絶対的に無視できると言えるような気がする</p>
+<p><span
+class="math inline">\(\displaystyle\max_{U^{(1)}}\hat{S}(U,\symbfit{X},U^{(1)},1,2)
+\le
+\max_{U^{(1)},X_2^{(1)}}\hat{S}(U,\symbfit{X},U^{(1)},1,X_2^{(1)})\)</span></p>
+<p>よって <span class="math inline">\(S_1(U,\symbfit{X}:C_1,C_2) \le
+S_2(U,\symbfit{X}:C_1)\)</span> である</p>
+<p>「内部束縛が少ないほど、最大値を探す範囲が広くなるので <span
+class="math inline">\(S\)</span> は大きくなる」というのは</p>
+<p><span class="math inline">\(A=\{y:0\le y \le Y\}\)</span>、<span
+class="math inline">\(B=\{y:y\in A かつ yについての束縛\}\)</span>
+とすると <span class="math inline">\(B\subseteq A\)</span> である</p>
+<p>このとき <span class="math inline">\(\displaystyle\Big(y\in B,\
+\max_{x,y}f(x,y)\Big) \le \Big(y\in A,\ \max_{x,y}f(x,y) \Big)\)</span>
+であるということである</p>
+<p>(2)</p>
+<p>任意の <span class="math inline">\(\hat{S}\)</span> と <span
+class="math inline">\(C_1,\dots,C_b\)</span> に対しても同様に</p>
+<p><span
+class="math inline">\(S(U,\symbfit{X};\dots,C_{k-1},C_k,C_{k+1},\dots)
+\le S(U,\symbfit{X};\dots,C_{k-1},C_{k+1},\dots)\)</span>  (4.25)</p>
+<p>である</p>
    </main>
 </div>
 
