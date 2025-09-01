@@ -312,14 +312,31 @@ class="math inline">\(\displaystyle\max_{U^{(1)}}\hat{S}(U,\symbfit{X},U^{(1)},1
 \max_{U^{(1)},X_2^{(1)}}\hat{S}(U,\symbfit{X},U^{(1)},1,X_2^{(1)})\)</span></p>
 <p>よって <span class="math inline">\(S_1(U,\symbfit{X}:C_1,C_2) \le
 S_2(U,\symbfit{X}:C_1)\)</span> である</p>
+<p>各最大値 <span class="math inline">\(\displaystyle\max_{U^{(1)}}...,\
+\max_{U^{(1)},X_2^{(1)}}...\)</span> は存在すると仮定している</p>
 <p>「内部束縛が少ないほど、最大値を探す範囲が広くなるので <span
 class="math inline">\(S\)</span> は大きくなる」というのは</p>
 <p><span class="math inline">\(A=\{y:0\le y \le Y\}\)</span>、<span
-class="math inline">\(B=\{y:y\in A かつ yについての束縛\}\)</span>
-とすると <span class="math inline">\(B\subseteq A\)</span> である</p>
+class="math inline">\(B=\{y:y\in A,\ yについての束縛\}\)</span> とすると
+<span class="math inline">\(B\subseteq A\)</span> である</p>
 <p>このとき <span class="math inline">\(\displaystyle\Big(y\in B,\
 \max_{x,y}f(x,y)\Big) \le \Big(y\in A,\ \max_{x,y}f(x,y) \Big)\)</span>
-であるということである</p>
+ということである  <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
+<p><span class="math display">\[
+\begin{flalign*}
+&amp;&amp;\textcolor{red}{(*1)}&amp;(証明) \\
+&amp;&amp;&amp; y_0\in B が存在して \Big(y\in B,\
+\max_{x,y}f(x,y)\Big)=\max_x f(x,y_0) \\
+&amp;&amp;&amp; 任意の y\in A について \max_x f(x,y)\le \Big(y\in A,\
+\max_{x,y}f(x,y)\Big) \\
+&amp;&amp;&amp; {\therefore}\max_x f(x,y_0)\le \max_{x,y}f(x,y) \\
+&amp;&amp;&amp; {\therefore}\Big(y\in B,\ \max_{x,y}f(x,y)\Big) \le
+\Big(y\in A,\ \max_{x,y}f(x,y) \Big) \\
+\end{flalign*}
+\]</span></p>
+<p>各最大値 <span class="math inline">\(\displaystyle\max_x...,\
+\max_{x,y}...\)</span> は存在すると仮定する</p>
 <p>(2)</p>
 <p>任意の <span class="math inline">\(\hat{S}\)</span> と <span
 class="math inline">\(C_1,\dots,C_b\)</span> に対しても同様に</p>

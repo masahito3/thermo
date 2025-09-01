@@ -73,20 +73,28 @@ $\disp \max_{U^\one}\hat{S}(U,\symbfit{X},U^\one,1,2)
 
 よって $S_1(U,\symbfit{X}:C_1,C_2) \le S_2(U,\symbfit{X}:C_1)$ である 
 
+各最大値 $\disp \max_{U^\one}...,\ \max_{U^\one,X_2^\one}...$ は存在すると仮定している 
 
 「内部束縛が少ないほど、最大値を探す範囲が広くなるので $S$ は大きくなる」というのは
 
-$A=\{y:0\le y \le Y\}$、$B=\{y:y\in A かつ yについての束縛\}$ とすると
+$A=\{y:0\le y \le Y\}$、$B=\{y:y\in A,\ yについての束縛\}$ とすると
 $B\subseteq A$ である
 
 このとき
 $\disp \Big(y\in B,\ \max_{x,y}f(x,y)\Big) \le \Big(y\in A,\ \max_{x,y}f(x,y) \Big)$
-であるということである
+ということである\ \ $\kome{1}$
 
+$$
+\begin{flalign*}
+&&\kome{1}&(証明) \\
+&&& y_0\in B が存在して \Big(y\in B,\ \max_{x,y}f(x,y)\Big)=\max_x f(x,y_0) \\
+&&& 任意の y\in A について \max_x f(x,y)\le \Big(y\in A,\ \max_{x,y}f(x,y)\Big) \\
+&&& \so \max_x f(x,y_0)\le \max_{x,y}f(x,y) \\
+&&& \so \Big(y\in B,\ \max_{x,y}f(x,y)\Big) \le \Big(y\in A,\ \max_{x,y}f(x,y) \Big) \\
+\end{flalign*}
+$$
 
-
-
-
+各最大値 $\disp\max_x...,\ \max_{x,y}...$ は存在すると仮定する
 
 \(2)
 
