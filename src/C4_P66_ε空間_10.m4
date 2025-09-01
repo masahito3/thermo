@@ -10,9 +10,9 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.66 §4.2.2 '25 8.9 {#C4_66_S4.2.2_10}
+## P.66 ε空間 '25 8.9 {#C4_P66_ε空間_10}
 
-\(1) $\varepsilon$ 空間の次元 $\dim\varepsilon$ は $\dim\varepsilon=t+1$\ \ (4.23)
+\(1) $\varepsilon$ 空間の次元は $\dim\varepsilon=t+1$\ \ (4.23)
 
 \(2) $\varepsilon$ 空間の各々の点は、この単純系の平衡状態と一対一に対応する
 
@@ -46,7 +46,7 @@ $\varepsilon=\{(U,X_1,X_2):U\ge 0,X_1\ge 0,X_2\ge 0\}$ とすると$\varepsilon$
 
 なぜならベクトル空間の定義の 「$v\in\varepsilon$ならば $\lambda v \in \varepsilon, \lambda \in \symbb{R}$」 に反するので 
 
-なので $\varepsilon$ をベクトル空間として扱うとマイナスの内部エネルギーとかマイナスの体積とかが出てきてちょっと変な感じがする
+なので $\varepsilon$ をベクトル空間として扱うとマイナスの物理量$N$とかマイナスの体積$V$とかが出てきてちょっと変な感じがする
 
 とはいえ、$\varepsilon$ をベクトル空間として扱っているのはこの節だけみたいなのであまり気にしなくてよいと思う
 
