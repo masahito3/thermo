@@ -91,10 +91,11 @@ $$
 &&& 任意の y\in A について \max_x f(x,y)\le \Big(y\in A,\ \max_{x,y}f(x,y)\Big) \\
 &&& \so \max_x f(x,y_0)\le \max_{x,y}f(x,y) \\
 &&& \so \Big(y\in B,\ \max_{x,y}f(x,y)\Big) \le \Big(y\in A,\ \max_{x,y}f(x,y) \Big) \\
+&&& 各最大値 \max_x...,\ \max_{x,y}... は存在すると仮定している 
 \end{flalign*}
 $$
 
-各最大値 $\disp\max_x...,\ \max_{x,y}...$ は存在すると仮定する
+
 
 \(2)
 

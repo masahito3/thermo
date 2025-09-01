@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.12 補足 べき級数のべき '25 6.2</title>
+  <title>P.68 定理4.2 '25 9.1</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -242,21 +242,21 @@ id="toc-C4_72_エントロピー減少できない_10">P.72 エントロピー�
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.12 補足 べき級数の合成 '25 6.1.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.68 定理4.1 '25 8.9.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.12 問題1.4 x^2 e^y の偏微分 '25 4.16.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.71 混合系の要請II(ii) '25 9.1.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
+<span class="navlink-label">Up:</span> <a href="第4章.html" accesskey="u" rel="up">第4章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
@@ -264,127 +264,23 @@ id="toc-C4_72_エントロピー減少できない_10">P.72 エントロピー�
 </div>
 </nav>
 -->
-<h2 data-number="1.25" id="C1_P12_補足_80">P.12 補足 べき級数のべき '25
-6.2</h2>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span> ならば <span
-class="math inline">\(f(x)=\displaystyle\displaystyle\sum_{n=0}^{\infty}
-a_n(x-a)^n\)</span> とする</p>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span> ならば <span
-class="math inline">\((f(x))^m,\ m\ge 1\)</span> は <span
-class="math inline">\(a\)</span> を中心としたべき級数であらわされる</p>
+<h2 data-number="4.11" id="C4_68_定理4.2_10">P.68 定理4.2 '25 9.1</h2>
+<p>定理4.2 の後半</p>
+<p>... <span
+class="math inline">\(\{U^{(i)},\symbfit{X}^{(i)}\}\)</span>
+の値の範囲は、 引数として与えられた<span
+class="math inline">\(U,\symbfit{X};\symbfit{C}\)</span> の下で、
+相加性を満たすような範囲内とする</p>
 <hr />
-<p>(証明)</p>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span> とする</p>
-<p><span class="math display">\[
-\begin{flalign*}
-(f(x))^2&amp;=\displaystyle\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\displaystyle\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\dots(1)
-&amp;\\
-&amp;=
-\displaystyle\displaystyle\sum_{n=0}^{\infty}\displaystyle\sum_{k=0}^{n}
-a_k(x-a)^k a_{n-k}(x-a)^{n-k}
-   \quad\bigg(\begin{array}{@{}l@{}}
-     {\because}\sum a_n(x-a)^n は絶対収束する \\
-     \quad よって級数の積はコーシー積であらわされる
-   \end{array}\bigg) &amp;\\
-&amp;=
-\displaystyle\displaystyle\sum_{n=0}^{\infty}\Big(\displaystyle\sum_{k=0}^{n}a_k
-a_{n-k}\Big)(x-a)^n
-   \quad({\because}有限級数の線型性) &amp;\\
-&amp;=
-\displaystyle\displaystyle\sum_{n=0}^{\infty}\Big(\displaystyle\sum_{k_1+k_2=n}^{}a_{k_1}a_{k_2}\Big)(x-a)^n\quad\textcolor{red}{(*1)}&amp;
-\end{flalign*}
-\]</span></p>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span> ならば <span
-class="math inline">\((1)\)</span> のどちらの級数も絶対収束する。
-よってコーシー積も絶対収束する。よって<span
-class="math inline">\((f(x))^2\)</span> をあらわす級数は絶対収束する</p>
-<p><span
-class="math inline">\(c_n^m=\displaystyle\displaystyle\sum_{k_1+\dots+k_m=n}^{}a_{k_1}\dots
-a_{k_m},\ m\ge2\)</span> とする</p>
-<p><span
-class="math inline">\((f(x))^2=\displaystyle\displaystyle\sum_{n=0}^{\infty}c_n^2(x-a)^n\)</span>
-である</p>
-<p><span
-class="math inline">\((f(x))^m=\displaystyle\displaystyle\sum_{n=0}^{\infty}c_n^m(x-a)^n\)</span>
-と仮定する</p>
-<p><span class="math inline">\(|x-a|&lt;R_f\)</span>
-で絶対収束すると仮定する</p>
-<p><span class="math display">\[
-\begin{flalign*}
-(f(x))^{m+1}&amp;=\displaystyle\displaystyle\sum_{n=0}^{\infty}c_n^m(x-a)^n\displaystyle\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\dots(2)
-&amp;\\
-&amp;=\displaystyle\displaystyle\sum_{n=0}^{\infty}\displaystyle\sum_{k=0}^{n}c_k^m(x-a)^k
-a_{n-k}(x-a)^{n-k}\quad({\because}コーシー積) &amp;\\
-&amp;=\displaystyle\displaystyle\sum_{n=0}^{\infty}\Big(\displaystyle\sum_{k=0}^{n}c_k^m
-a_{n-k}\Big)(x-a)^n\quad({\because}有限級数の線型性) &amp;\\
-&amp;=\displaystyle\displaystyle\sum_{n=0}^{\infty}\Big(\displaystyle\sum_{k=0}^{n}\displaystyle\sum_{k_1+\dots
-k_m=k}^{}a_{k_1}\dots a_{k_m}a_{n-k}\Big)(x-a)^n &amp;\\
-&amp;=\displaystyle\displaystyle\sum_{n=0}^{\infty}\displaystyle\sum_{k_1+\dots
-k_{m+1}=n}^{}a_{k_1}\dots a_{k_{m+1}}(x-a)^n\quad\textcolor{red}{(*2)}
-&amp;
-\end{flalign*}
-\]</span></p>
-<p>よって <span class="math inline">\(m\ge2\)</span> ならば</p>
-<p><span
-class="math inline">\((f(x))^m=\displaystyle\displaystyle\sum_{n=0}^{\infty}c_n^m(x-a)^n\)</span>
-, <span class="math inline">\(\quad
-c_n^m=\displaystyle\displaystyle\sum_{k_1+\dots+k_m=n}^{}a_{k_1}\dots
-a_{k_m}\)</span> である</p>
-<p><span class="math inline">\((2)\)</span>
-のどちらの級数も絶対収束するので、コーシー積も絶対収束する。</p>
-<p>よって <span class="math inline">\(|x-a|&lt;R_f\)</span>
-ならば絶対収束する</p>
-<p><span class="math inline">\(m=1\)</span> ならば <span
-class="math inline">\((f(x))^1=\displaystyle\displaystyle\sum_{n=0}^{\infty}a_n(x-a)^n\)</span></p>
-<p>よって <span class="math inline">\(m\ge1\)</span> で <span
-class="math inline">\((f(x))^m\)</span> は <span
-class="math inline">\(a\)</span> を中心とするべき級数であらわされる</p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*1)}&amp;A=\{(k,n-k)\ |\  n\ge k\ge 0\} \\
-&amp;&amp;&amp; B=\{(k_1,k_2)\ |\ k_1+k_2=n,\ k_1,k_2\ge 0\} とする \\
-&amp;&amp;&amp; (a,b)\in A とする \\
-&amp;&amp;&amp; b=n-a \\
-&amp;&amp;&amp; {\therefore}a+b=n \\
-&amp;&amp;&amp; また n\ge a\ge 0 \\
-&amp;&amp;&amp; {\therefore}b\ge 0 \\
-&amp;&amp;&amp; {\therefore}(a,b)\in B \\
-&amp;&amp;&amp; (a,b)\in B とする \\
-&amp;&amp;&amp; a+b=n \\
-&amp;&amp;&amp; {\therefore}b=n-a \\
-&amp;&amp;&amp; b\ge 0 より \\
-&amp;&amp;&amp; n-a \ge 0 \\
-&amp;&amp;&amp; {\therefore}n \ge a \\
-&amp;&amp;&amp; a\ge 0 なので \\
-&amp;&amp;&amp; n\ge a \ge 0 \\
-&amp;&amp;&amp; {\therefore}(a,b)\in A \\
-&amp;&amp;&amp; {\therefore}A=B
-\end{flalign*}
-\]</span></p>
-<p><span class="math display">\[
-\begin{flalign*}
-&amp;&amp;\textcolor{red}{(*2)}&amp;A=\{(k_1,\dots,k_m,n-k)\
-|\  k_1+\dots+k_m=k,0\le k\le n,\ k_i\ge0\} \\
-&amp;&amp;&amp; B=\{(k_1,\dots,k_{m+1})\ |\ k_1+\dots+k_{m+1}=n,\ k_i\ge
-0\} とする\\
-&amp;&amp;&amp; (a_1,\dots,a_{m+1})\in A とする \\
-&amp;&amp;&amp; a_1+\dots+a_m=k,\ a_{m+1}=n-k \\
-&amp;&amp;&amp; {\therefore}a_1+\dots+a_{m+1}=n \\
-&amp;&amp;&amp; 0\le k \le n より \\
-&amp;&amp;&amp; a_{m+1}=n-k\ge 0 \\
-&amp;&amp;&amp; {\therefore}(a_1,\dots,a_{m+1})\in B \\
-&amp;&amp;&amp; (a_1,\dots,a_{m+1})\in B とする\\
-&amp;&amp;&amp; a_1+\dots+a_{m+1}=n \\
-&amp;&amp;&amp; a_1+\dots+a_m=k とする \\
-&amp;&amp;&amp; k=n-a_{m+1} \\
-&amp;&amp;&amp; a_{m+1}\ge 0 より k\le n \\
-&amp;&amp;&amp; a_i\ge 0 より k\ge 0 \\
-&amp;&amp;&amp; {\therefore}0\le k\le n \\
-&amp;&amp;&amp; また a_{m+1}=n-k \\
-&amp;&amp;&amp; {\therefore}(a_1,\dots,a_{m+1})\in A \\
-&amp;&amp;&amp; {\therefore}A=B
-\end{flalign*}
-\]</span></p>
+<p>(説明)</p>
+<p>「相加性を満たすような範囲内」というのは <span
+class="math inline">\(U^{(1)},\ U^{(2)}\)</span> の範囲が <span
+class="math inline">\(U=U^{(1)}+U^{(2)}\)</span>
+を満たすような範囲内にあるということ</p>
+<p><span class="math inline">\(0\le U^{(i)} \le U\)</span> とか <span
+class="math inline">\(0\le V^{(i)} \le V\)</span> とかいう条件も <span
+class="math inline">\(\symbfit{C}\)</span> に含まれているはず</p>
+<p>だが、4.1.3節の例ではこの条件は明示されていなかった。暗黙的な条件もあるみたいなので注意</p>
    </main>
 </div>
 
