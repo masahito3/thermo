@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" style="overflow:auto;" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="仲山昌人" />
+  <meta name="description" content="熱力学の基礎を読んだときのメモです
+
+" />
+  <title>P.27 相加変数、示量変数、示強変数 '25 7.6</title>
+  <style>
+  </style>
+  <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="./fontawesome/css/solid.css">
+  <link rel="stylesheet" href="bulma.css" />
+  <link rel="stylesheet" href="./fontawesome/css/solid.css">
+  <script>
+  </script>
+  
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body class="is-overflow-hidden" style="height:100vh;">
+<script>
+</script>
+<div class="columns is-0 is-flex is-flex-direction-row is-flex-wrap-nowrap">
+   <div id="SIDEBAR" class="column is-one-fifth is-block" style="height:100vh;overflow:auto;">
+   <nav id="TOC" role="doc-toc" class="menu">
+<ul class="menu-list"  class="menu-list" >
+<li><a href="index.html" id="toc-top">TOP</a></li>
+</ul>
+<ul class="menu-list" >
+<li><a href="第1章.html" id="toc-C1">第1章</a>
+<ul class="menu-list" >
+<li><a href="P.7 Dx+f(a)=f&#39;(a+0) &#39;25 3.22.html"
+id="toc-C1_P07_10">P.7 Dx+f(a)=f'(a+0) '25 3.22</a></li>
+<li><a
+href="P.8 (1.2) f(x)=f(a)+f&#39;(a)(x-a)+o(x-a) &#39;25 3.21.html"
+id="toc-C1_P08_1.2_10">P.8 (1.2) f(x)=f(a)+f'(a)(x-a)+o(x-a) '25
+3.21</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfは連続 &#39;25 5.13.html"
+id="toc-C1_P10_問1.3_10">P.10 問1.3 (x,y)≠(0,0)でfは連続 '25
+5.13</a></li>
+<li><a href="P.10 問1.3 (0,0)でfは連続 &#39;25 3.26.html"
+id="toc-C1_P10_問1.3_20">P.10 問1.3 (0,0)でfは連続 '25 3.26</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは存在する &#39;25 5.13.html"
+id="toc-C1_P10_問1.3_30">P.10 問1.3 (x,y)≠(0,0)でfxは存在する '25
+5.13</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfxは連続 &#39;25 5.13.html"
+id="toc-C1_P10_問1.3_40">P.10 問1.3 (x,y)≠(0,0)でfxは連続 '25
+5.13</a></li>
+<li><a href="P.10 問1.3 (0,0)でfxは連続 &#39;25 3.26.html"
+id="toc-C1_P10_問1.3_50">P.10 問1.3 (0,0)でfxは連続 '25 3.26</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfyは存在する &#39;25 5.13.html"
+id="toc-C1_P10_問1.3_60">P.10 問1.3 (x,y)≠(0,0)でfyは存在する '25
+5.13</a></li>
+<li><a href="P.10 問1.3 (x,y)≠(0,0)でfyは連続 &#39;25 5.15.html"
+id="toc-C1_P10_問1.3_70">P.10 問1.3 (x,y)≠(0,0)でfyは連続 '25
+5.15</a></li>
+<li><a href="P.10 問1.3 (0,0)でfyは連続 &#39;25 3.26.html"
+id="toc-C1_P10_問1.3_80">P.10 問1.3 (0,0)でfyは連続 '25 3.26</a></li>
+<li><a href="P.10 問1.3 (0,0)でfxyは不連続 &#39;25 4.1.html"
+id="toc-C1_P10_問1.3_90">P.10 問1.3 (0,0)でfxyは不連続 '25 4.1</a></li>
+<li><a
+href="P.11 数学の定理1.1 f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) &#39;25 4.6.html"
+id="toc-C1_P11_数学の定理1.1_10">P.11 数学の定理1.1
+f(x1,..,xm)-f(a1,..,xm)-(x1-a1)fx1(a)=o(|x-a|) '25 4.6</a></li>
+<li><a
+href="P.11 数学の定理1.1 f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) &#39;25 5.17.html"
+id="toc-C1_P11_数学の定理1.1_20">P.11 数学の定理1.1
+f(a1,x2..xm)-f(a1,a2..xm)-(x2-a2)fx2(a)=o(|x-a|) '25 5.17</a></li>
+<li><a
+href="P.11 数学の定理1.1 f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) &#39;25 4.6.html"
+id="toc-C1_P11_数学の定理1.1_30">P.11 数学の定理1.1
+f(x)=f(a)+∇f(a)(x-a)+o(|x-a|) '25 4.6</a></li>
+<li><a
+href="P.12 数学の定理1.2 n階までの導関数は微分の順序によらない &#39;25 4.8.html"
+id="toc-C1_P12_数学の定理1.2_10">P.12 数学の定理1.2
+n階までの導関数は微分の順序によらない '25 4.8</a></li>
+<li><a href="P.12 数学の定理1.2 fxy=fyx &#39;25 4,8.html"
+id="toc-C1_P12_数学の定理1.2_20">P.12 数学の定理1.2 fxy=fyx '25
+4,8</a></li>
+<li><a href="P.12 補足 x≠0でf(x)は連続 &#39;25 4.23.html"
+id="toc-C1_P12_補足_10">P.12 補足 x≠0でf(x)は連続 '25 4.23</a></li>
+<li><a href="P.12 補足 x=0でf(x)は連続 &#39;25 4.23.html"
+id="toc-C1_P12_補足_20">P.12 補足 x=0でf(x)は連続 '25 4.23</a></li>
+<li><a href="P.12 補足 x≠0でC∞級 &#39;25 4.25.html"
+id="toc-C1_P12_補足_30">P.12 補足 x≠0でC∞級 '25 4.25</a></li>
+<li><a href="P.12 補足 x=0でC∞級 &#39;25 5.20.html"
+id="toc-C1_P12_補足_40">P.12 補足 x=0でC∞級 '25 5.20</a></li>
+<li><a href="P.12 補足 x=0でC∞級であるが解析的でない &#39;25 5.21.html"
+id="toc-C1_P12_補足_50">P.12 補足 x=0でC∞級であるが解析的でない '25
+5.21</a></li>
+<li><a
+href="P.12 補足 収束するテーラー級数の部分和が f(x) の近似にならない例 &#39;25 6.9.html"
+id="toc-C1_P12_補足_55">P.12 補足 収束するテーラー級数の部分和が <span
+class="math inline">\(f(x)\)</span> の近似にならない例 '25 6.9</a></li>
+<li><a href="P.12 補足 x≠0でf(x)は解析的 &#39;25 6.4.html"
+id="toc-C1_P12_補足_60">P.12 補足 x≠0でf(x)は解析的 '25 6.4</a></li>
+<li><a href="P.12 補足 べき級数の合成 &#39;25 6.1.html"
+id="toc-C1_P12_補足_70">P.12 補足 べき級数の合成 '25 6.1</a></li>
+<li><a href="P.12 補足 べき級数のべき &#39;25 6.2.html"
+id="toc-C1_P12_補足_80">P.12 補足 べき級数のべき '25 6.2</a></li>
+<li><a href="P.12 問題1.4 x^2 e^y の偏微分 &#39;25 4.16.html"
+id="toc-C1_P12_問1.4_10">P.12 問題1.4 x^2 e^y の偏微分 '25 4.16</a></li>
+<li><a href="P.15 問題1.5 Z(x,y) の偏微分 &#39;25 6.22.html"
+id="toc-C1_P15_問1.5_10">P.15 問題1.5 Z(x,y) の偏微分 '25 6.22</a></li>
+<li><a href="P.15 問題1.6(i) 偏微分の連鎖律 &#39;25 6.13.html"
+id="toc-C1_P15_問1.6_10">P.15 問題1.6(i) 偏微分の連鎖律 '25
+6.13</a></li>
+<li><a href="P.15 問題1.6(ii) 偏微分の連鎖律 &#39;25 6.25.html"
+id="toc-C1_P15_問1.6_15">P.15 問題1.6(ii) 偏微分の連鎖律 '25
+6.25</a></li>
+<li><a href="P.15 問題1.6(iii) 偏微分の連鎖律 &#39;25 6.13.html"
+id="toc-C1_P15_問1.6_20">P.15 問題1.6(iii) 偏微分の連鎖律 '25
+6.13</a></li>
+<li><a href="P.15 問題1.6(iv) 偏微分の連鎖律 &#39;25 6.25.html"
+id="toc-C1_P15_問1.6_30">P.15 問題1.6(iv) 偏微分の連鎖律 '25
+6.25</a></li>
+<li><a href="P.15 問題1.7(i) 合成関数の偏微分 &#39;25 6.27.html"
+id="toc-C1_P15_問1.7_10">P.15 問題1.7(i) 合成関数の偏微分 '25
+6.27</a></li>
+<li><a href="P.15 問題1.7(ii) 合成関数の偏微分の例 &#39;25 6.28.html"
+id="toc-C1_P15_問1.7_20">P.15 問題1.7(ii) 合成関数の偏微分の例 '25
+6.28</a></li>
+<li><a href="P.16 問題1.8 偏微分でつまづいたこと &#39;25 6.25.html"
+id="toc-C1_P16_問1.8_10">P.16 問題1.8 偏微分でつまづいたこと '25
+6.25</a></li>
+</ul></li>
+<li><a href="第2章.html" id="toc-C2">第2章</a>
+<ul class="menu-list" >
+<li><a href="P.18 熱力学で扱う状態 &#39;25 7.11.html"
+id="toc-C2_P18_熱力学で扱う状態_10">P.18 熱力学で扱う状態 '25
+7.11</a></li>
+<li><a href="P.18 平衡状態 &#39;25 7.14.html"
+id="toc-C2_P14_平衡状態_10">P.18 平衡状態 '25 7.14</a></li>
+<li><a href="P.19 マクロ物理量 &#39;25 9.8.html"
+id="toc-C2_P19_マクロ物理量_10">P.19 マクロ物理量 '25 9.8</a></li>
+<li><a
+href="P.19 マクロ物理量(a)(b)(c) &#39;25 9.8 {#C2_P19_マクロ物理量(a)(b)(c)_10}.html"
+id="toc-p.19-マクロ物理量abc-25-9.8-c2_p19_マクロ物理量abc_10">P.19
+マクロ物理量(a)(b)(c) '25 9.8
+{#C2_P19_マクロ物理量(a)(b)(c)_10}</a></li>
+<li><a href="P.27 (2.12)その1 &#39;25 7.5.html"
+id="toc-C2_P27_2.12_10">P.27 (2.12)その1 '25 7.5</a></li>
+<li><a href="P.27 (2.12)その2 &#39;25 7.5.html"
+id="toc-C2_P27_2.12_20">P.27 (2.12)その2 '25 7.5</a></li>
+<li><a href="P.27 相加変数、示量変数、示強変数 &#39;25 7.6.html"
+id="toc-C2_P27_相加変数_示量変数_示強変数_10">P.27
+相加変数、示量変数、示強変数 '25 7.6</a></li>
+<li><a href="P.32 問題2.1 &#39;25 6.29.html"
+id="toc-C2_P32_問2.1_10">P.32 問題2.1 '25 6.29</a></li>
+<li><a href="P.34 (2.23) &#39;25 6.30.html" id="toc-C2_P34_2.23_10">P.34
+(2.23) '25 6.30</a></li>
+<li><a href="P.34 (2.24) &#39;25 6.30.html" id="toc-C2_P34_2.24_10">P.34
+(2.24) '25 6.30</a></li>
+<li><a href="P.34 (2.25) &#39;25 6.30.html" id="toc-C2_P34_2.25_10">P.34
+(2.25) '25 6.30</a></li>
+<li><a href="P.35 (2.25.2):(2.25)の示強変数の場合 &#39;25 7.2.html"
+id="toc-C2_P35_2.25.2_10">P.35 (2.25.2):(2.25)の示強変数の場合 '25
+7.2</a></li>
+<li><a href="P.36 o(V)V=o(1) &#39;25 6.30.html" id="toc-C2_P36_10">P.36
+o(V)/V=o(1) '25 6.30</a></li>
+<li><a href="P.36 (2.30) &#39;25 7.2.html" id="toc-C2_P36_2.30_10">P.36
+(2.30) '25 7.2</a></li>
+<li><a href="P.37 (2.32) &#39;25 7.1.html" id="toc-C2_P37_2.32_10">P.37
+(2.32) '25 7.1</a></li>
+<li><a href="P.38 (2.35) &#39;25 7.3.html" id="toc-C2_P38_2.35_10">P.38
+(2.35) '25 7.3</a></li>
+</ul></li>
+<li><a href="第3章.html" id="toc-C3">第3章</a>
+<ul class="menu-list" >
+<li><a href="P.40 同じ状態、均一な状態 &#39;25 9.3.html"
+id="toc-C4_P40_同じ状態_均一な状態_10">P.40 同じ状態、均一な状態 '25
+9.3</a></li>
+<li><a href="P.43 要請I(ii) &#39;25 7.3.html"
+id="toc-C3_P43_要請I_ii_10">P.43 要請I(ii) '25 7.3</a></li>
+<li><a href="P.44 要請II-(i) &#39;25 7.14.html"
+id="toc-C3_P44_要請II_i_10">P.44 要請II-(i) '25 7.14</a></li>
+<li><a href="P.45 操作 &#39;25 7.6.html" id="toc-C3_P45_操作_10">P.45
+操作 '25 7.6</a></li>
+<li><a href="P.46 単純系 &#39;25 7.6.html"
+id="toc-C3_P46_単純系_10">P.46 単純系 '25 7.6</a></li>
+<li><a href="P.47 基本関係式 &#39;25 7.7.html"
+id="toc-C3_P47_基本関係式_10">P.47 基本関係式 '25 7.7</a></li>
+<li><a href="P.48 要請II-(ii)のつづき &#39;25 7.8.html"
+id="toc-C3_P48_要請II_iiのつづき_10">P.48 要請II-(ii)のつづき '25
+7.8</a></li>
+<li><a
+href="P.50 平衡状態がマクロ状態として一意に定まる &#39;25 7.15.html"
+id="toc-C3_P50_平衡状態がマクロ状態として一意に定まる_10">P.50
+平衡状態がマクロ状態として一意に定まる '25 7.15</a></li>
+<li><a href="P.51 均一な平衡状態はU,Xと一対一 &#39;25 7.9.html"
+id="toc-C3_P51_均一な平衡状態はU_Xと一対一_10">P.51
+均一な平衡状態はU,Xと一対一 '25 7.9</a></li>
+<li><a href="P.52 同一視 &#39;25 7.31.html"
+id="toc-C3_P52_同一視_10">P.52 同一視 '25 7.31</a></li>
+<li><a href="P.53 くっつけただけ &#39;25 8.28.html"
+id="toc-C3_P53_くっつけただけ_10">P.53 くっつけただけ '25 8.28</a></li>
+<li><a href="P.53 同一視の定義 &#39;25 7.31.html"
+id="toc-C3_P53_同一視の定義_10">P.53 同一視の定義 '25 7.31</a></li>
+<li><a href="P.58 要請II &#39;25 9.6.html"
+id="toc-C3_P58_要請II_10">P.58 要請II '25 9.6</a></li>
+<li><a href="P.59 要請II(v) &#39;25 8.2.html"
+id="toc-C3_P59_要請II_v_10">P.59 要請II(v) '25 8.2</a></li>
+</ul></li>
+<li><a href="第4章.html" id="toc-C4">第4章</a>
+<ul class="menu-list" >
+<li><a href="P.61 複合系のSは一意にきまる &#39;25 8.4.html"
+id="toc-C4_P61_複合系のSは一意にきまる_10">P.61 複合系のSは一意にきまる
+'25 8.4</a></li>
+<li><a href="P.62 4.1.3 plot &#39;25 8.4.html"
+id="toc-C4_P62_4.1.3_plot_10">P.62 4.1.3 plot '25 8.4</a></li>
+<li><a href="P.62 4.1.3 平衡状態を完全に求める &#39;25 8.5.html"
+id="toc-C4_P62_4.1.3_平衡状態を完全に求める_10">P.62 4.1.3
+平衡状態を完全に求める '25 8.5</a></li>
+<li><a href="P.62 (4.8) 一様連続 &#39;25 8.16.html"
+id="toc-C4_P62_4.8_一様連続_10">P.62 (4.8) 一様連続 '25 8.16</a></li>
+<li><a href="P.63 (4.10),(4.11) &#39;25 8.5.html"
+id="toc-C4_P63_4.10_4.11_10">P.63 (4.10),(4.11) '25 8.5</a></li>
+<li><a href="P.64 (4.16) max_{U,V} = max_U max_V &#39;25 8.9.html"
+id="toc-C4_P64_4.16_10">P.64 (4.16) max_{U,V} = max_U max_V '25
+8.9</a></li>
+<li><a href="P.64 (4.16) &#39;25 8.9.html" id="toc-C4_P64_4.16_20">P.64
+(4.16) '25 8.9</a></li>
+<li><a href="P.64 (4.17) (4.20) (4.21) (4.22) &#39;25 8.10.html"
+id="toc-C4_P64_4.17_4.20_4.21_4.22_10">P.64 (4.17) (4.20) (4.21) (4.22)
+'25 8.10</a></li>
+<li><a href="P.66 ε空間 &#39;25 8.9.html" id="toc-C4_P66_ε空間_10">P.66
+ε空間 '25 8.9</a></li>
+<li><a href="P.68 定理4.1 &#39;25 8.9.html"
+id="toc-C4_68_定理4.1_10">P.68 定理4.1 '25 8.9</a></li>
+<li><a href="P.68 定理4.2 &#39;25 9.1.html"
+id="toc-C4_68_定理4.2_10">P.68 定理4.2 '25 9.1</a></li>
+<li><a href="P.69 完全な知識 &#39;25 9.2.html"
+id="toc-C4_69_完全な知識_10">P.69 完全な知識 '25 9.2</a></li>
+<li><a href="P.71 混合系の要請II(ii) &#39;25 9.1.html"
+id="toc-C4_71_混合系の要請II_ii_10">P.71 混合系の要請II(ii) '25
+9.1</a></li>
+<li><a href="P.72 エントロピー減少できない &#39;25 9.1.html"
+id="toc-C4_72_エントロピー減少できない_10">P.72 エントロピー減少できない
+'25 9.1</a></li>
+<li><a href="P.74 定理5.1 &#39;25 9.2.html"
+id="toc-C4_P74_定理5.1_10">P.74 定理5.1 '25 9.2</a></li>
+</ul></li>
+</ul>
+     </nav>
+     </div>
+     <main id="MAIN" class="column is-four-fifths pl-6 pr-6 pt-1 pb-4" style="height:100vh;overflow:auto;">
+
+<nav class="sitenav columns is-3 is-vcentered is-flex is-flex-direction-row is-flex-wrap-nowrap">
+  <div class="column is-2">
+    <div class="buttons is-flex-wrap-nowrap">
+      <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
+            <a href="P.27 (2.12)その2 '25 7.5.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+          </div>
+  </div>
+  <div class="column">
+        <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
+      </div>
+  <div class="column is-1 has-text-right">
+        <a href="P.32 問題2.1 '25 6.29.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+      </div>
+</nav>
+<!--
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="第2章.html" accesskey="u" rel="up">第2章</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
+</span>
+</div>
+</nav>
+-->
+<h2 data-number="2.7" id="C2_P27_相加変数_示量変数_示強変数_10">P.27
+相加変数、示量変数、示強変数 '25 7.6</h2>
+<p>(1) 相加変数の定義</p>
+<p><span class="math inline">\(X=\displaystyle\sum_{i}^{}X^{(i)}\ \
+(2.11)\)</span> が成立すれば<span class="math inline">\(X\)</span>
+を「相加的物理量」、「相加変数」と言う</p>
+<p>(2) 示量変数の定義</p>
+<p>均一な状態の系の部分系において、 <span
+class="math inline">\(X^{(i)}=KV^{(i)}\ \ (2.12)\)</span> であるとき
+<span class="math inline">\(X\)</span>
+を「示量的物理量」、「示量変数」と言う</p>
+<p>(3) 相加変数は均一な状態では示量変数でもある</p>
+<p>(4) 示強変数の定義</p>
+<p>6章で定義される。温度<span
+class="math inline">\(T\)</span>、ポテンシャル<span
+class="math inline">\(\mu\)</span> は示強変数である</p>
+<p>(5)
+均一な状態の系において示強変数は部分系の体積に依らず同じ値をもつ</p>
+<p>(6)
+この性質(5)は示量変数の密度ももつが、示量変数の密度を示強変数と呼ぶことを避ける</p>
+<hr />
+<p>(説明)</p>
+<p>「相加変数、示量変数、示強変数は2.3節の(a),(b),(c)のマクロ物理量のみの関数である」かつ「その関数は連続関数である」という暗黙の要請がある</p>
+<p>3.1節の同じ状態の定義が(a),(b),(c)のマクロ物理量に限定されているので、
+これらの要請がないと同じ状態の系の相加変数、示量変数、示強変数が同じと言えなくなる。そうすると「相加変数は均一な状態では示量変数である」を導くことができなくなる</p>
+<p>「相加変数は均一な状態では示量変数でもある」</p>
+<p>不均一な状態では相加変数は示量変数にならない例</p>
+<p><img src="images/C2_P27_相加変数示量変数_10図10.svg"
+style="width:8cm" /></p>
+<p><span class="math inline">\(X\)</span>を系の粒子数とする</p>
+<p><span class="math inline">\(X\)</span>は相加変数 で、 <span
+class="math inline">\(X=X^{(1)}+X^{(2)}\)</span> である</p>
+<p><span class="math inline">\(V^{(1)}=V^{(2)}\)</span> とする</p>
+<p><span class="math inline">\(X^{(1)}=K_1V^{(1)},\
+X^{(2)}=K_2V^{(2)}\)</span> なる <span class="math inline">\(K_1,\
+K_2\)</span> が存在する</p>
+<p>図の場合、あきらかに <span class="math inline">\(X^{(1)}\ne
+X^{(2)}\)</span> なので</p>
+<p><span class="math inline">\(K_1\ne K_2\)</span></p>
+<p>よって <span class="math inline">\(X\)</span> は示量変数ではない</p>
+   </main>
+</div>
+
+<script>
+  // 復元：ページ読み込み時
+  window.addEventListener("DOMContentLoaded", () => {
+    const sidebar = document.getElementById("SIDEBAR");
+    const main = document.getElementById("MAIN");
+    const savedScrollTop = localStorage.getItem("sidebarScroll");
+    if (savedScrollTop !== null) {
+      sidebar.scrollTop = parseInt(savedScrollTop, 10);
+    }
+    console.log(localStorage.getItem("sidebarIsBlock"));
+    if (localStorage.getItem("sidebarIsBlock") === "true"){
+        sidebar.classList.remove("is-hidden");
+        sidebar.classList.add("is-block");
+        main.classList.remove("is-full");
+        main.classList.add("is-four-fifths");
+    } else {
+        sidebar.classList.remove("is-block");
+        sidebar.classList.add("is-hidden");
+        main.classList.remove("is-four-fifths");
+        main.classList.add("is-full");
+    }
+    const path = window.location.pathname;
+    const filename = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
+    const link = document.querySelector('a[id^="toc"][href="'+filename+'"]');
+    if (link !== null) {
+      link.classList.add("is-active")
+      const top = link.offsetTop;
+      if (top < sidebar.scrollTop){
+        sidebar.scrollTop = top;
+      }
+      const rect = link.getBoundingClientRect();
+      const bottom = top + rect.bottom - rect.top; 
+      if (bottom > sidebar.scrollTop + sidebar.clientHeight){
+        sidebar.scrollTop = bottom - sidebar.clientHeight;
+      }
+    }
+
+    document.querySelectorAll(".menu ul").forEach((ul) => {
+      ul.classList.add("menu-list");
+    });
+
+    document.querySelectorAll("main > h2").forEach((h2) => {
+      h2.classList.add("title");
+      h2.classList.add("is-5");
+    });
+
+    const toggletoc = document.getElementById("toggle-toc");
+    toggletoc.addEventListener('click', () => {
+      if (sidebar.classList.contains("is-block")) {
+        sidebar.classList.remove("is-block");
+        sidebar.classList.add("is-hidden");
+        main.classList.remove("is-four-fifths");
+        main.classList.add("is-full");
+      } else {
+        sidebar.classList.remove("is-hidden");
+        sidebar.classList.add("is-block");
+        main.classList.remove("is-full");
+        main.classList.add("is-four-fifths");
+      }
+    });
+  });
+  // 保存：ページ離脱時
+  window.addEventListener("beforeunload", () => {
+    const sidebar = document.getElementById("SIDEBAR");
+    localStorage.setItem("sidebarScroll", sidebar.scrollTop);
+    localStorage.setItem("sidebarIsBlock", sidebar.classList.contains("is-block"));
+  });
+</script>
+
+</body>
+</html>
