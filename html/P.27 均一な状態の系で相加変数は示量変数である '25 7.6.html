@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.27 (2.12)その1 '25 7.5</title>
+  <title>P.27 均一な状態の系で相加変数は示量変数である '25 7.6</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -256,14 +256,14 @@ id="toc-C4_P74_定理5.1_10">P.74 定理5.1 '25 9.2</a></li>
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.19 マクロ物理量(a)(b)(c) '25 9.8.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.27 (2.12)その2 '25 7.5.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.27 (2.12)その2 '25 7.5.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.27 相加変数、示量変数、示強変数 '25 7.6.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
@@ -278,108 +278,121 @@ id="toc-C4_P74_定理5.1_10">P.74 定理5.1 '25 9.2</a></li>
 </div>
 </nav>
 -->
-<h2 data-number="2.5" id="C2_P27_2.12_10">P.27 (2.12)その1 '25 7.5</h2>
-<p>系が均一でかつ <span class="math inline">\(X\)</span>
-が相加変数とする</p>
-<p><span class="math inline">\(V^{(i)}=\lambda V^{(1)}\ ならば\
-X^{(i)}=\lambda X^{(1)}\)</span></p>
+<h2 data-number="2.7" id="C2_P27_均一な系で相加変数は示量変数_10">P.27
+均一な状態の系で相加変数は示量変数である '25 7.6</h2>
+<p>均一な状態の系で相加変数は示量変数でもある</p>
 <hr />
+<p>(説明)</p>
+<p>均一な状態の系を考える。全体系の体積を<span
+class="math inline">\(V_0\)</span>とする</p>
+<p>マクロ変数<span
+class="math inline">\(X\)</span>を考える。全体系の<span
+class="math inline">\(X\)</span> を <span
+class="math inline">\(X_0\)</span> とする</p>
+<p>部分系を考える。部分系の体積を<span
+class="math inline">\(V\)</span>とする</p>
+<p>部分系の<span class="math inline">\(X\)</span>を<span
+class="math inline">\(X\)</span> とする。<span
+class="math inline">\(X\)</span> は相加変数とする</p>
+<p>このとき <span class="math inline">\(X\)</span>
+は示量変数である。すなわち<span class="math inline">\(X=X(V)=k V\
+(k\in\symbb{R})\)</span> である</p>
 <p>(証明)</p>
-<p>(1) <span class="math inline">\(\lambda\)</span> が正の整数の場合</p>
-<p><span class="math inline">\(V^{(i)}=\lambda V^{(1)}\)</span>
-とする</p>
-<p>系が均一で <span class="math inline">\(X\)</span>
-は相加変数なので</p>
-<p><span class="math inline">\(X^{(i)} =
-\displaystyle\sum_{j=1}^{\lambda}X^{(1)} = \lambda X^{(1)}\)</span></p>
-<p>(2) <span class="math inline">\(\lambda\)</span>
-が正の有理数の場合</p>
-<p><span class="math inline">\(\lambda=\displaystyle\frac{p}{q}\)</span>
-とする。 <span class="math inline">\(p,\ q\)</span> は正の整数</p>
-<p><span class="math inline">\(V^{(i)}=\displaystyle\frac{p}{q}
-V^{(1)}\)</span> とする</p>
-<p><span
-class="math inline">\({V}^{(1)&#39;}=\displaystyle\frac{1}{q}V^{(1)}\)</span>
-とすると</p>
-<p><span class="math inline">\(q {V}^{(1)&#39;}= V^{(1)}\)</span></p>
-<p><span class="math inline">\(q X^{(1)&#39;}=X^{(1)}\ \ ({\because}\
-(1))\)</span></p>
-<p><span
-class="math inline">\({\therefore}X^{(1)&#39;}=\displaystyle\frac{1}{q}
-X^{(1)}\)</span></p>
-<p><span class="math inline">\(V^{(i)}=p{V}^{(1)&#39;}\)</span>
-なので</p>
+<p>均一な系の部分系の相加変数は体積の連続関数である (<a
+href="P.19 マクロ物理量(a)(b)(c) &#39;25 9.8.html#C2_P19_マクロ物理量_a_b_c_10">別頁</a>)</p>
+<p>よって <span class="math inline">\(0\le V \le V_0\)</span> ならば
+<span class="math inline">\(X=X(V)\)</span> かつ <span
+class="math inline">\(X(V)\)</span>は連続である</p>
+<p><span class="math inline">\(X\)</span>は相加変数なので、<span
+class="math inline">\(V\)</span>と<span
+class="math inline">\(W\)</span>が重なっていなくて、<span
+class="math inline">\(0\le V,0\le W,0\le V+W \le V_0\)</span>ならば<span
+class="math inline">\(X(V)\)</span>は加法性 <span
+class="math inline">\(X(V+W)=X(V)+X(W)\)</span> をもつ <span
+class="math inline">\(\textcolor{red}{(*1)}\)</span></p>
 <p><span class="math display">\[
 \begin{flalign*}
-{\therefore}X^{(i)}
-  &amp; =pX^{(1)&#39;}\ \ ({\because}(1)) &amp;\\
-  &amp; =\frac{p}{q}X^{(1)} &amp;
+&amp;&amp;\textcolor{red}{(*1)}&amp;V,Wは重なっておらず、0\le V, 0\le W,
+0\le V+W\le V_0 ならば\\
+&amp;&amp;&amp;X(V+W)=X(V)+X(W)\\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;部分系(1)と(2)を考える\\
+&amp;&amp;&amp;(1),(2)の体積をV,W とする。V,Wは重なっていないとする\\
+&amp;&amp;&amp;0\le V, 0\le W, 0\le V+W\le V_0 とする \\
+&amp;&amp;&amp;(1),(2)のXはX^{(1)}=X(V),X^{(2)}=X(W)である\\
+&amp;&amp;&amp;(1),(2)を合わせた部分系(3)を考える\\
+&amp;&amp;&amp;V,Wは重なっていないので(3)の体積は V+W である\\
+&amp;&amp;&amp;よって(3)のXは X^{(3)}=X(V+W) である\\
+&amp;&amp;&amp;(1),(2)は重なっておらずXは相加変数なので
+X^{(3)}=X^{(1)}+X^{(2)}\\
+&amp;&amp;&amp;よって X(V+W)=X(V)+X(W)
 \end{flalign*}
 \]</span></p>
-<p>(3) <span class="math inline">\(\lambda\)</span>
-が正の無理数の場合</p>
-<p><span class="math inline">\(\displaystyle\frac{1}{2}\lambda &lt; q_1
-&lt; \lambda\)</span> である 有理数 <span
-class="math inline">\(q_1\)</span> が存在する</p>
-<p><span class="math inline">\(\lambda - q_1 = \xi_1\)</span> とする
-<span class="math inline">\(0 &lt; \xi_1 &lt;
-\displaystyle\frac{\lambda}{2}\)</span> である</p>
-<p>さらに</p>
-<p><span class="math inline">\(\displaystyle\frac{1}{2}\xi_1 &lt; q_2
-&lt; \xi_1\)</span> である 有理数 <span
-class="math inline">\(q_2\)</span> が存在する</p>
-<p><span class="math inline">\(\xi_1 - q_2 = \xi_2\)</span> とする <span
-class="math inline">\(0 &lt; \xi_2 &lt;
-\displaystyle\frac{\xi_1}{2}&lt;\frac{\lambda}{2^2}\)</span> である</p>
-<p>同様に</p>
-<p><span class="math inline">\(\displaystyle\frac{1}{2}\xi_{n-1} &lt;
-q_n &lt; \xi_{n-1}\)</span> である 有理数 <span
-class="math inline">\(q_n\)</span> が存在する</p>
-<p><span class="math inline">\(\xi_{n-1} - q_n = \xi_n\)</span> とする
-<span class="math inline">\(0 &lt; \xi_n &lt;
-\displaystyle\frac{\xi_{n-1}}{2}&lt;\frac{\lambda}{2^n}\)</span>
-である</p>
-<p><span
-class="math inline">\({\therefore}\lambda-\displaystyle\sum_{i=1}^{n}q_n=\xi_n,\
-0&lt;\xi_n&lt;\frac{\lambda}{2^n}\)</span></p>
-<p><span class="math inline">\({\therefore}\displaystyle\lim_{n\to
-\infty}\Big(\lambda-\displaystyle\sum_{n=1}^{n}q_n\Big)
-=\displaystyle\lim_{n\to \infty}\xi_n\)</span></p>
-<p><span class="math inline">\({\therefore}\displaystyle\lim_{n\to
-\infty}\Big(\lambda-\displaystyle\sum_{n=1}^{n}q_n\Big)=0\)</span></p>
-<p><span
-class="math inline">\({\therefore}\displaystyle\sum_{n=1}^{\infty}q_n=\lambda\
-({\because}\ \lim(f-g)=0,\lim f=a ならば \lim g = a)\)</span></p>
-<p>この数列<span class="math inline">\({q_n}\)</span> を使って</p>
+<p>さらに<span class="math inline">\(X(V)\)</span>は連続なので<span
+class="math inline">\(0\le cV \le V_0\)</span>ならば<span
+class="math inline">\(X(V)\)</span>は斉次性 <span
+class="math inline">\(X(cV)=cX(V)\)</span> をもつ <span
+class="math inline">\(\textcolor{red}{(*2)}\)</span></p>
 <p><span class="math display">\[
 \begin{flalign*}
-V^{(i)} &amp;=\lambda V^{(1)} &amp;\\
-      &amp;=\Big(\displaystyle\sum_{n=1}^{\infty}q_n\Big)V^{(1)} &amp;\\
-      &amp;=\displaystyle\sum_{n=1}^{\infty}(q_nV^{(1)})\ ({\because}\
-収束する級数は線型性をもつ)&amp;
+&amp;&amp;\textcolor{red}{(*2)}&amp;0\le cV\le V_0のとき\\
+&amp;&amp;&amp;X(cV)=cX(V)\\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;(i)\ c=n, nは整数のとき\\
+&amp;&amp;&amp; 0\le nV \le V_0 とする\\
+&amp;&amp;&amp;X(nV)=X(V+\dots+V) \\
+&amp;&amp;&amp;\qquad=X(V)+\dots+X(V)\ \textcolor{red}{(*1)}\\
+&amp;&amp;&amp;\qquad=nX(V)\\
+&amp;&amp;&amp;(ii)\ c=q, qは有理数のとき\\
+&amp;&amp;&amp;0\le qV \le V_0 とする \\
+&amp;&amp;&amp;q=\frac{t}{s},sは1以上,tは0以上の整数となるs,t
+が存在する\\
+&amp;&amp;&amp;0\le t\frac{V}{s} \le V_0 なので\\
+&amp;&amp;&amp;X\Big(\frac{t}{s}V\Big)=X\Big(t\frac{V}{s}\Big)=t
+X\Big(\frac{V}{s}\Big)\ ({\because}(i))\\
+&amp;&amp;&amp;また0\le s\frac{V}{s}\le V_0 なので\\
+&amp;&amp;&amp;X(V)=X\Big(s\frac{V}{s}\Big)=sX\Big(\frac{V}{s}\Big)\
+({\because}(i))\\
+&amp;&amp;&amp;よってX\Big(\frac{t}{s}V\Big)=\frac{t}{s}X(V)\\
+&amp;&amp;&amp;よってX(q V)=q X(V)\\
+&amp;&amp;&amp;(iii)\ c は実数のとき\\
+&amp;&amp;&amp;0\le c V \le V_0 とする\\
+&amp;&amp;&amp;有理数の稠密性より\\
+&amp;&amp;&amp;\lim_{n\to\infty}q_n=c, 0\le q_n\le c
+なる有利数列\{q_n\}が存在する\\
+&amp;&amp;&amp;0\le q_n V \le V_0 なので\\
+&amp;&amp;&amp; X(q_n V) = q_n X(V)\ ({\because}(ii)) \\
+&amp;&amp;&amp; X(V)は連続なので合成関数の極限より \\
+&amp;&amp;&amp;\lim_{n\to\infty} X(q_n V) = X(\lim_{n\to\infty}q_n
+V)=X(c V)\\
+&amp;&amp;&amp;極限の線型性より\\
+&amp;&amp;&amp;\lim_{n\to\infty}q_n X(V)=(\lim_{n\to\infty}q_n)X(V)=c
+X(V) \\
+&amp;&amp;&amp;よって X(c V)=c X(V)
 \end{flalign*}
 \]</span></p>
-<p>体積が <span class="math inline">\(q_nV^{(1)}\)</span>
-である部分系の<span class="math inline">\(X\)</span>を<span
-class="math inline">\(X_n^{(1)}\)</span> とする。 <span
-class="math inline">\(X\)</span> は相加変数なので</p>
-<p><span
-class="math inline">\(X^{(i)}=\displaystyle\sum_{n=1}^{\infty}X_n^{(1)}\)</span></p>
-<p>(2) より <span class="math inline">\(X_n^{(1)} = q_n
-X^{(1)}\)</span></p>
-<p>よって</p>
+<p>よって<span class="math inline">\(X=X(V)=k V\
+(k\in\symbb{R})\)</span>である <span
+class="math inline">\(\textcolor{red}{(*3)}\)</span></p>
 <p><span class="math display">\[
 \begin{flalign*}
-X^{(i)} &amp;=\displaystyle\sum_{n=1}^{\infty}(q_n X^{(1)}) &amp;\\
-      &amp;=\Big(\displaystyle\sum_{n=1}^{\infty}q_n\Big) X^{(1)}\
-({\because}\ 収束する級数の線型性) &amp;\\
-      &amp;=\lambda X^{(1)} &amp;
+&amp;&amp;\textcolor{red}{(*3)}&amp;\forall c \in \symbb{R}, X(cV)=cX(V)
+\rightleftarrows\exists k \in \symbb{R}, X(V)=k V \\
+&amp;&amp;&amp;(証明)\\
+&amp;&amp;&amp;(\rightarrow) \\
+&amp;&amp;&amp;k=\frac{X_0}{V_0}とする\\
+&amp;&amp;&amp;X_0=X(V_0)なので\\
+&amp;&amp;&amp;X(V_0)=k V_0\\
+&amp;&amp;&amp;任意のV,\ 0\le V \le V_0 について\\
+&amp;&amp;&amp;X(V)=X\Big(\frac{V}{V_0}V_0\Big)\\
+&amp;&amp;&amp;\qquad=\frac{V}{V_0}X(V_0)\ ({\because}X(cV)=cX(V)より)\\
+&amp;&amp;&amp;\qquad=\frac{V}{V_0}k V_0 = k V\\
+&amp;&amp;&amp;(\leftarrow)\\
+&amp;&amp;&amp;X(cV) = k cV\ ({\because}X(V)=kV)\\
+&amp;&amp;&amp;\qquad = c k V = c X(V)
 \end{flalign*}
 \]</span></p>
-<p>(1),(2),(3)より <span class="math inline">\(\lambda \in \mathbb{R},\
-\lambda &gt; 0\)</span> に対して</p>
-<p><span class="math inline">\(V^{(i)}=\lambda V^{(1)}\ ならば\
-X^{(i)}=\lambda X^{(1)}\)</span></p>
+<p>よって <span class="math inline">\(X\)</span> は示量変数である</p>
    </main>
 </div>
 
