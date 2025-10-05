@@ -33,86 +33,91 @@ NEWPAGE
 
 均一な系の部分系の相加変数は体積の連続関数である ([別頁](#C2_P19_マクロ物理量_a_b_c_10))
 
-よって $0\le V \le V_0$ ならば $X=X(V)$ かつ $X(V)$は連続である
+よって $X$ を相加変数とすると
 
-$X$は相加変数なので、$V$と$W$が重なっていなくて、$0\le V,0\le W,0\le V+W \le V_0$ならば$X(V)$は加法性 $X(V+W)=X(V)+X(W)$ をもつ $\kome{1}$
+$0\le V\le V_0$ ならば $X=X(V)$ でかつ連続である
+
+$V,W が重なっていなくて, 0\le V, 0\le W, 0\le V+W\le V_0$ ならば
+
+$X(V)$は加法性 $X(V+W)=X(V)+X(W)$ をもつ $\kome{1}$
 
 $$
 \begin{flalign*}
-&&\kome{1}&V,Wは重なっておらず、0\le V, 0\le W, 0\le V+W\le V_0 ならば\\
+&&\kome{1}&Xが相加変数かつV,W が重なっていなくて\\
+&&&0\le V, 0\le W, 0\le V+W\le V_0ならば\\
 &&&X(V+W)=X(V)+X(W)\\
 &&&(証明)\\
-&&&部分系(1)と(2)を考える\\
-&&&(1),(2)の体積をV,W とする。V,Wは重なっていないとする\\
-&&&0\le V, 0\le W, 0\le V+W\le V_0 とする \\
-&&&(1),(2)のXはX^\one=X(V),X^\two=X(W)である\\
+&&&0\le V+W\le V_0 とするとX(V+W)は存在する\\
+&&&0\le V \le V_0, 0\le W \le V_0 とすると X(V), X(W) は存在する\\
+&&&体積Vの部分系(1)と体積Wの部分系(2)を考える\\
+&&&(1),(2)のXはX^\one=X(V),X^\two=X(W)である(\cuz X=X(V))\\
 &&&(1),(2)を合わせた部分系(3)を考える\\
-&&&V,Wは重なっていないので(3)の体積は V+W である\\
+&&&(3)の体積は V+W である\\
 &&&よって(3)のXは X^{(3)}=X(V+W) である\\
-&&&(1),(2)は重なっておらずXは相加変数なので X^{(3)}=X^\one+X^\two \\
+&&&Xは相加変数なので X^{(3)}=X^\one+X^\two \\
 &&&よって X(V+W)=X(V)+X(W) 
 \end{flalign*}
 $$
 
 
-
-さらに$X(V)$は連続なので$0\le cV \le V_0$ならば$X(V)$は斉次性 $X(cV)=cX(V)$ をもつ $\kome{2}$
+$0\le V\le V_0,\ 0\le cV \le V_0$ならば$X(V)$は斉次性 $X(cV)=cX(V)$ をもつ $\kome{2}$
 
 $$
 \begin{flalign*}
-&&\kome{2}&0\le cV\le V_0のとき\\
-&&&X(cV)=cX(V)\\
+&&\kome{2}&0\le V\le V_0,\ 0\le cV\le V_0 ならばX(cV)=cX(V)\\
 &&&(証明)\\
-&&&(i)\ c=n, nは整数のとき\\
-&&& 0\le nV \le V_0 とする\\
-&&&X(nV)=X(V+\dots+V) \\
-&&&\qquad=X(V)+\dots+X(V)\ \kome{1}\\
-&&&\qquad=nX(V)\\
-&&&(ii)\ c=q, qは有理数のとき\\
-&&&0\le qV \le V_0 とする \\
+&&&0\le V\le V_0,\ 0\le cV\le V_0 とすると X(V),X(cV)は存在する\\
+&&&(i)\ c=n, nは整数とする\\
+&&&0\le V\le V_0,0\le nV\le V_0 とする\\
+&&&このときn個のVが重ならないようにすることができる\\
+&&&よってX(nV)=X(V+\dots+V) \\
+&&&\qquad\qquad=X(V)+\dots+X(V)\ \kome{1}\\
+&&&\qquad\qquad=nX(V)\\
+&&&よってcが整数のとき命題は成立する\\
+&&&(ii)\ c=q, qは有理数とする \\
+&&&0\le V\le V_0,0\le qV\le V_0 とする\\
 &&&q=\frac{t}{s},sは1以上,tは0以上の整数となるs,t が存在する\\
-&&&0\le t\frac{V}{s} \le V_0 なので\\
-&&&X\Big(\frac{t}{s}V\Big)=X\Big(t\frac{V}{s}\Big)=t X\Big(\frac{V}{s}\Big)\ (\cuz (i))\\
-&&&また0\le s\frac{V}{s}\le V_0 なので\\
+&&&0\le q V \le V_0 なので 0\le t\frac{V}{s} \le V_0 
+   また0\le \frac{V}{s} \le V_0 \\
+&&&よって X\Big(\frac{t}{s}V\Big)=X\Big(t\frac{V}{s}\Big)=t X\Big(\frac{V}{s}\Big)\ (\cuz (i))\\
+&&&また0\le s\frac{V}{s}\le V_0, 0\le \frac{V}{s} \le V_0 なので\\
 &&&X(V)=X\Big(s\frac{V}{s}\Big)=sX\Big(\frac{V}{s}\Big)\ (\cuz (i))\\
 &&&よってX\Big(\frac{t}{s}V\Big)=\frac{t}{s}X(V)\\
 &&&よってX(q V)=q X(V)\\
-&&&(iii)\ c は実数のとき\\
-&&&0\le c V \le V_0 とする\\
+&&&よってcが有理数のとき命題は成立する\\
+&&&(iii)\ c は実数とする\\
+&&&0\le V\le V_0,0\le cV\le V_0 とする\\
 &&&有理数の稠密性より\\
 &&&\lim_{n\to\infty}q_n=c, 0\le q_n\le c なる有利数列\{q_n\}が存在する\\
-&&&0\le q_n V \le V_0 なので\\
+&&&0\le q_n V \le V_0, 0\le V \le V_0 なので\\
 &&& X(q_n V) = q_n X(V)\ (\cuz (ii)) \\
 &&& X(V)は連続なので合成関数の極限より \\
 &&&\lim_{n\to\infty} X(q_n V) = X(\lim_{n\to\infty}q_n V)=X(c V)\\
 &&&極限の線型性より\\
 &&&\lim_{n\to\infty}q_n X(V)=(\lim_{n\to\infty}q_n)X(V)=c X(V) \\
-&&&よって X(c V)=c X(V)
+&&&よって X(c V)=c X(V)\\
+&&&よって c が実数のとき命題は成立する
 \end{flalign*}
 $$
 
 
 
 
-よって$X=X(V)=k V\ (k\in\symbb{R})$である $\kome{3}$
+よって$0\le V\le V_0$ ならば $X=X(V)=k V\ (k\in\symbb{R})$である $\kome{3}$
 
 
 
 $$
 \begin{flalign*}
-&&\kome{3}&\forall c \in \symbb{R}, X(cV)=cX(V) \iif \exists k \in \symbb{R}, X(V)=k V \\
+&&\kome{3}&0\le V\le V_0 ならば X(V)=kV \\
 &&&(証明)\\
-&&&(\rightarrow) \\
 &&&k=\frac{X_0}{V_0}とする\\
 &&&X_0=X(V_0)なので\\
 &&&X(V_0)=k V_0\\
-&&&任意のV,\ 0\le V \le V_0 について\\
-&&&X(V)=X\Big(\frac{V}{V_0}V_0\Big)\\
-&&&\qquad=\frac{V}{V_0}X(V_0)\ (\cuz X(cV)=cX(V)より)\\
-&&&\qquad=\frac{V}{V_0}k V_0 = k V\\
-&&&(\leftarrow)\\
-&&&X(cV) = k cV\ (\cuz X(V)=kV)\\ 
-&&&\qquad = c k V = c X(V) 
+&&&0\le V \le V_0 とすると\\
+&&&0\le \frac{V}{V_0}V_0 \le V_0 また 0 \le V_0 \le V_0\\
+&&&よって X(V)=X\Big(\frac{V}{V_0}V_0\Big)=\frac{V}{V_0}X(V_0)\ \kome{2}\\
+&&&よって X(V)=\frac{V}{V_0}k V_0 = k V\\
 \end{flalign*}
 $$
 
