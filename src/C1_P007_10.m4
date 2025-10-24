@@ -7,7 +7,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.7 Dx+f(a)=f'(a+0) '25 3.22 {#C1_P07_10}
+## P.7 Dx+f(a)=f'(a+0) '25 3.22 {#C1_P007_10}
 
 $f(x)が[a,a,\eps']で連続,(a+a+\eps')で微分可能とする$
 
