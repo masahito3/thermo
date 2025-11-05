@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.15 問題1.6(i) 偏微分の連鎖律 '25 6.13</title>
+  <title>P.18 空間 '25 10.31</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -290,21 +290,21 @@ id="toc-C4_P074_定理5.1_10">P.74 定理5.1 '25 9.2</a></li>
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.15 問題1.5 Z(x,y) の偏微分 '25 6.22.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="第2章.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.15 問題1.6(ii) 偏微分の連鎖律 '25 6.25.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.18 時間 '25 10.31.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
+<span class="navlink-label">Up:</span> <a href="第2章.html" accesskey="u" rel="up">第2章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
@@ -312,121 +312,25 @@ id="toc-C4_P074_定理5.1_10">P.74 定理5.1 '25 9.2</a></li>
 </div>
 </nav>
 -->
-<h2 data-number="1.30" id="C1_P015_問1.6_10">P.15 問題1.6(i)
-偏微分の連鎖律 '25 6.13</h2>
-<p><span class="math inline">\(x,y,\xi,\eta\)</span>
-は独立変数とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}}(\xi,\eta)\)</span>,
-<span
-class="math inline">\(\textcolor{red}{\boldsymbol{y}}(\xi,\eta)\)</span>
-とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi,\eta)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})\)</span>
-とする</p>
-<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \xi}\Big)_{\eta}=
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \xi}\Big)_{\eta} +
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \xi}\Big)_{\eta}\)</span>
-<span class="math inline">\(\cdots(1.20)\)</span></p>
-<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \eta}\Big)_{\xi}=
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \eta}\Big)_{\xi} +
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \eta}\Big)_{\xi}\)</span>
-<span class="math inline">\(\cdots(1.21)\)</span></p>
+<h2 data-number="2.1" id="C2_P018_空間_10">P.18 空間 '25 10.31</h2>
+<p>空間</p>
 <hr />
-<p>(証明)</p>
-<p><span class="math inline">\(x,y,\xi,\eta\)</span>
-は独立変数とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}}(\xi,\eta)\)</span>, <span
-class="math inline">\(\textcolor{red}{\boldsymbol{y}}(\xi,\eta)\)</span>
-とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi,\eta)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})\)</span>
-とする</p>
-<p><span class="math display">\[
-\begin{flalign*}
-{\therefore}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \xi}\Big)_{\eta} &amp;=
-\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\xi}
-\quad \Big({\because}\xi,\eta が独立なので
-\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial
-\xi}\Big)_{\eta}=\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\xi}\Big)
-&amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{x}}}{d\xi}
-   +\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{y}}}{d\xi}
-\quad ({\because}問題1.7) &amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \xi}\Big)_{\eta}
-    + \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \xi}\Big)_{\eta}
-\quad \Big({\because}\xi,\eta が独立なので
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial
-\xi}\Big)_{\eta}=\frac{d\textcolor{red}{\boldsymbol{x}}}{d\xi},\
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial
-\xi}\Big)_{\eta}=\frac{d\textcolor{red}{\boldsymbol{y}}}{d\xi}\Big)
-&amp;
-\end{flalign*}
-\]</span><br />
-<span class="math display">\[
-\begin{flalign*}
-{\therefore}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \eta}\Big)_{\xi} &amp;=
-\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\eta}
-\quad \Big({\because}\xi,\eta が独立なので
-\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial
-\eta}\Big)_{\xi}=\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\eta}\Big)
-&amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{x}}}{d\eta}
-   +\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{y}}}{d\eta}
-\quad ({\because}問題1.7) &amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \eta}\Big)_{\xi}
-    + \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \eta}\Big)_{\xi}
-\quad \Big({\because}\xi,\eta が独立なので
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial
-\eta}\Big)_{\xi}=\frac{d\textcolor{red}{\boldsymbol{x}}}{d\eta},\
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial
-\eta}\Big)_{\xi}=\frac{d\textcolor{red}{\boldsymbol{y}}}{d\eta}\Big)
-&amp;
-\end{flalign*}
-\]</span></p>
+<p>(説明)</p>
+<p>空間の定義がないので空間を定義するかもしくは空間の存在を仮定、要請しないといけない</p>
+<p>空間が存在すると仮定、要請する</p>
+<p>空間はただ1つ存在すると仮定、要請する</p>
+<p>空間は3次元の実数の集合で表されると仮定、要請する</p>
+<p>２点の距離はユークリッド距離で表されると仮定、要請する</p>
+<p>系を内部に含む領域が存在すると仮定、要請する</p>
+<p>実際の空間の２点の距離を知るために、定規の存在を仮定、要請する</p>
+<p>定規が存在すると仮定、要請する</p>
+<p>定規の示す長さは空間の距離と正比例の関係にあると仮定、要請する</p>
+<p>すなわち定規の示す長さを<span
+class="math inline">\(l\)</span>とし、空間の距離を<span
+class="math inline">\(d\)</span>とすると <span
+class="math inline">\(l=kd,\ k&gt;0\)</span>と仮定、要請する</p>
+<p>実験室の定規は定規であると仮定、要請する</p>
+<p>以上の仮定、要請はすべて経験的に正しいと認める</p>
    </main>
 </div>
 

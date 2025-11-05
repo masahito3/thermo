@@ -8,7 +8,7 @@
   <meta name="description" content="熱力学の基礎を読んだときのメモです
 
 " />
-  <title>P.15 問題1.6(i) 偏微分の連鎖律 '25 6.13</title>
+  <title>P.18 時間 '25 10.31</title>
   <style>
   </style>
   <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
@@ -290,21 +290,21 @@ id="toc-C4_P074_定理5.1_10">P.74 定理5.1 '25 9.2</a></li>
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.15 問題1.5 Z(x,y) の偏微分 '25 6.22.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.18 空間 '25 10.31.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
         <h1 class="title is-4 has-text-centered">ゆっくり熱力学の基礎していってね</h1>
       </div>
   <div class="column is-1 has-text-right">
-        <a href="P.15 問題1.6(ii) 偏微分の連鎖律 '25 6.25.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
+        <a href="P.18 状態 '25 10.22.html" accesskey="n" rel="next" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-right"></i></a>
       </div>
 </nav>
 <!--
 <nav id="sitenav">
 <div class="sitenav">
 <span class="navlink">
-<span class="navlink-label">Up:</span> <a href="第1章.html" accesskey="u" rel="up">第1章</a>
+<span class="navlink-label">Up:</span> <a href="第2章.html" accesskey="u" rel="up">第2章</a>
 </span>
 <span class="navlink">
 <span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">ゆっくり熱力学の基礎していってね</a>
@@ -312,121 +312,33 @@ id="toc-C4_P074_定理5.1_10">P.74 定理5.1 '25 9.2</a></li>
 </div>
 </nav>
 -->
-<h2 data-number="1.30" id="C1_P015_問1.6_10">P.15 問題1.6(i)
-偏微分の連鎖律 '25 6.13</h2>
-<p><span class="math inline">\(x,y,\xi,\eta\)</span>
-は独立変数とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}}(\xi,\eta)\)</span>,
-<span
-class="math inline">\(\textcolor{red}{\boldsymbol{y}}(\xi,\eta)\)</span>
-とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi,\eta)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})\)</span>
-とする</p>
-<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \xi}\Big)_{\eta}=
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \xi}\Big)_{\eta} +
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \xi}\Big)_{\eta}\)</span>
-<span class="math inline">\(\cdots(1.20)\)</span></p>
-<p><span class="math inline">\(\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \eta}\Big)_{\xi}=
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \eta}\Big)_{\xi} +
-\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \eta}\Big)_{\xi}\)</span>
-<span class="math inline">\(\cdots(1.21)\)</span></p>
+<h2 data-number="2.2" id="C2_P018_時間_10">P.18 時間 '25 10.31</h2>
+<p>時間</p>
 <hr />
-<p>(証明)</p>
-<p><span class="math inline">\(x,y,\xi,\eta\)</span>
-は独立変数とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{x}}(\xi,\eta)\)</span>, <span
-class="math inline">\(\textcolor{red}{\boldsymbol{y}}(\xi,\eta)\)</span>
-とする</p>
-<p><span
-class="math inline">\(\textcolor{red}{\boldsymbol{Z}}(\xi,\eta)=\textcolor{blue}{\boldsymbol{Z}}(\textcolor{red}{\boldsymbol{x}},\textcolor{red}{\boldsymbol{y}})\)</span>
-とする</p>
-<p><span class="math display">\[
-\begin{flalign*}
-{\therefore}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \xi}\Big)_{\eta} &amp;=
-\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\xi}
-\quad \Big({\because}\xi,\eta が独立なので
-\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial
-\xi}\Big)_{\eta}=\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\xi}\Big)
-&amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{x}}}{d\xi}
-   +\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{y}}}{d\xi}
-\quad ({\because}問題1.7) &amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \xi}\Big)_{\eta}
-    + \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \xi}\Big)_{\eta}
-\quad \Big({\because}\xi,\eta が独立なので
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial
-\xi}\Big)_{\eta}=\frac{d\textcolor{red}{\boldsymbol{x}}}{d\xi},\
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial
-\xi}\Big)_{\eta}=\frac{d\textcolor{red}{\boldsymbol{y}}}{d\xi}\Big)
-&amp;
-\end{flalign*}
-\]</span><br />
-<span class="math display">\[
-\begin{flalign*}
-{\therefore}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial \eta}\Big)_{\xi} &amp;=
-\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\eta}
-\quad \Big({\because}\xi,\eta が独立なので
-\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{Z}}}{\partial
-\eta}\Big)_{\xi}=\frac{d\textcolor{red}{\boldsymbol{Z}}}{d\eta}\Big)
-&amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{x}}}{d\eta}
-   +\displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\frac{d\textcolor{red}{\boldsymbol{y}}}{d\eta}
-\quad ({\because}問題1.7) &amp;\\
-&amp;= \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-x}\Big)_{y}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial \eta}\Big)_{\xi}
-    + \displaystyle\Big(\frac{\partial
-\textcolor{blue}{\boldsymbol{Z}}}{\partial
-y}\Big)_{x}\bigg|_{\substack{x=\textcolor{red}{\boldsymbol{x}}\\y=\textcolor{red}{\boldsymbol{y}}}}\displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial \eta}\Big)_{\xi}
-\quad \Big({\because}\xi,\eta が独立なので
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{x}}}{\partial
-\eta}\Big)_{\xi}=\frac{d\textcolor{red}{\boldsymbol{x}}}{d\eta},\
-           \displaystyle\Big(\frac{\partial
-\textcolor{red}{\boldsymbol{y}}}{\partial
-\eta}\Big)_{\xi}=\frac{d\textcolor{red}{\boldsymbol{y}}}{d\eta}\Big)
-&amp;
-\end{flalign*}
-\]</span></p>
+<p>(説明)</p>
+<p>時間の定義がない</p>
+<p>なので時間を定義するか、もしくは時間の存在を仮定、要請しないといけない</p>
+<p>また熱力学は時間をあまり使わない。時間変化しない状態しか扱わないからである</p>
+<p>なので時間に関する仮定は少ししか必要としない</p>
+<p>時間が存在すると仮定、要請する。これは経験的に正しいと認める</p>
+<p>時間はただ１つ存在すると仮定、要請する</p>
+<p>時間は実数で表されると仮定、要請する</p>
+<p>時間の長さは差の絶対値であたえられると仮定、要請する</p>
+<p>系は時間を持つと仮定、要請する</p>
+<p>時間はただ１つなのですべての系の持つ時間は同じものである</p>
+<p>実際どうやって時間を知るかについては、時計の存在を仮定し時計の時刻が時間を表すと仮定すればよい</p>
+<p>時間とはなにかについて考えたいわけではないので手っ取り早くこのようにする</p>
+<p>時計が存在すると仮定、要請する</p>
+<p>時計の時刻は時間と傾きが正の線型関係にあると仮定、要請する</p>
+<p>すなわち時間を<span
+class="math inline">\(t\)</span>とし時計の時刻を<span
+class="math inline">\(s\)</span>とすると <span
+class="math inline">\(s=at+b,\ a&gt;0\)</span>と仮定、要請する</p>
+<p>実験室の時計は時計であると仮定、要請する</p>
+<p>以上の仮定、要請はすべて経験的に正しいと認める</p>
+<p>実験室の時計は進みつづけるので時間も進みつづけることになる</p>
+<p>逆行するような時計があったとして、そのような時計は時計であるとは経験的に認めない</p>
+<p>なお、経験的に正しいとした仮定はすべて覆して考えることが可能である。なにを仮定しているか自覚するのが大事</p>
    </main>
 </div>
 
