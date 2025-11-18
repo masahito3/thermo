@@ -10,13 +10,13 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.66 ε空間 '25 8.9 {#C4_P066_ε空間_10}
+## P.66 状態空間 '25 8.9 {#C4_P066_状態空間_10}
 
-\(1) $\varepsilon$ 空間の次元は $\dim\varepsilon=t+1$\ \ (4.23)
+\(1) 状態空間$\varepsilon$ の次元は $\dim\varepsilon=t+1$\ \ (4.23)
 
-\(2) $\varepsilon$ 空間の各々の点は、この単純系の平衡状態と一対一に対応する
+\(2) 状態空間$\varepsilon$ の各々の点は、この単純系の平衡状態と一対一に対応する
 
-\(3) $\varepsilon$は$\hat{\varepsilon}$の部分空間で、
+\(3) 空間$\varepsilon$は空間$\hat{\varepsilon}$の部分空間で、
 $\disp\dim\hat{\varepsilon}=\sum_i \dim \varepsilon_i=\sum_i(t_i+1)\ge\dim\varepsilon$\ \ (4.24)
 
 ---
@@ -25,7 +25,7 @@ $\disp\dim\hat{\varepsilon}=\sum_i \dim \varepsilon_i=\sum_i(t_i+1)\ge\dim\varep
 
 \(1)
 
-この$\varepsilon$ 空間は単なる集合ではなくベクトル空間である。ベクトル空間なので、次元とか部分空間が定義できる
+この状態空間$\varepsilon$は単なる集合ではなくベクトル空間である。ベクトル空間なので、次元とか部分空間が定義できる
 
 $t=2,\ \symbfit{X}=X_1,X_2$とする
 
@@ -42,13 +42,13 @@ $$
 
 (注意) 
 
-$\varepsilon=\{(U,X_1,X_2):U\ge 0,X_1\ge 0,X_2\ge 0\}$ とすると$\varepsilon$ はベクトル空間ではなくなる
+$\varepsilon=\{(U,X_1,X_2):U\ge 0,X_1\ge 0,X_2\ge 0\}$ とすると空間$\varepsilon$ はベクトル空間ではなくなる
 
-なぜならベクトル空間の定義の 「$v\in\varepsilon$ならば $\lambda v \in \varepsilon, \lambda \in \symbb{R}$」 に反するので 
+なぜならベクトル空間の定義 「$v\in\varepsilon$ならば $\lambda v \in \varepsilon, \lambda \in \symbb{R}$」 に反するので 
 
-なので $\varepsilon$ をベクトル空間として扱うとマイナスの物理量$N$とかマイナスの体積$V$とかが出てきてちょっと変な感じがする
+なので 空間 $\varepsilon$ をベクトル空間として扱うとマイナスの物理量$N$とかマイナスの体積$V$とかが出てきてちょっと変な感じがする
 
-とはいえ、$\varepsilon$ をベクトル空間として扱っているのはこの節だけみたいなのであまり気にしなくてよいと思う
+とはいえ、空間 $\varepsilon$ をベクトル空間として扱っているのはこの節だけみたいなのであまり気にしなくてよいと思う
 
 \(2)
 
@@ -104,7 +104,7 @@ U\in\symbb{R},X_1\in\symbb{R},X_2\in\symbb{R}\} &\\
 \end{flalign*}
 $$
 
-よって  $\varepsilon$ は $\hat{\varepsilon}$ の部分空間で $\dim \varepsilon=3$ である
+よって  空間 $\varepsilon$ は 空間 $\hat{\varepsilon}$ の部分空間で $\dim \varepsilon=3$ である
 
 よって 
 $\dim \hat{\varepsilon} 
