@@ -13,7 +13,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.34 (2.25)  '25 6.30 {#C2_P034_2.25_10}
+## P.34 (2.25)  '25 6.30 {#C2_P034_10_2.25}
 
 $\disp\frac{\delta N}{\Delta\langle N\rangle} 
 \propto \frac{o(V)}{V}\to0\ (V\to\infty)$\ \ (2.25)

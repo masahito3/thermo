@@ -13,7 +13,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.48 要請II(ii)のつづき '25 7.8 {#C3_P048_要請II_iiのつづき_10}
+## P.48 要請II(ii)のつづき '25 7.8 {#C3_P048_10_要請II_iiのつづき}
 
 要請II(ii)のつづき
 

@@ -10,7 +10,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.66 状態空間 '25 8.9 {#C4_P066_状態空間_10}
+## P.66 状態空間 '25 8.9 {#C4_P066_10_状態空間}
 
 \(1) 状態空間$\varepsilon$ の次元は $\dim\varepsilon=t+1$\ \ (4.23)
 

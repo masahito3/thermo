@@ -13,7 +13,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.37 (2.32) '25 7.1 {#C2_P037_2.32_10}
+## P.37 (2.32) '25 7.1 {#C2_P037_10_2.32}
 
 $v_{int}^{\alpha\beta}\sim\disp\frac{\exp[-r/r_{int}]}{r}\ \ (2.32)$
 

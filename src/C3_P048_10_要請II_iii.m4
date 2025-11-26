@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.48 要請II(iii) '25 10.7 {#C3_P048_要請II_iii_10}
+## P.48 要請II(iii) '25 10.7 {#C3_P048_10_要請II_iii}
 
 要請II(iii)
 

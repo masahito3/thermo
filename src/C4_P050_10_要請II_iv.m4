@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.50 要請II(iv) '25 10.20 {#C3_P050_要請II_iv_10}
+## P.50 要請II(iv) '25 10.20 {#C3_P050_10_要請II_iv}
 
 要請II(iv)
 

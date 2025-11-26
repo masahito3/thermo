@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.62 4.1.3 plot '25 8.4 {#C4_P062_4.1.3_plot_10}
+## P.62 4.1.3 plot '25 8.4 {#C4_P062_10_4.1.3_plot}
 
 $\disp\hat{S}=K\Big(\frac{N}{2}\Big)^{1/3}
 \Big[\Big(U^{(1)}V^{(1)}\Big)^{1/3}+\Big((U-U^{(1)})(V-V^{(1)})\Big)^{1/3}\Big]$\ \ (4.8)

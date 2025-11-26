@@ -10,7 +10,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.64 (4.16) '25 8.9 {#C4_P064_4.16_20}
+## P.64 (4.16) '25 8.9 {#C4_P064_20_4.16}
 
 $\disp S(U,V,N:C_1)
 =\max_{U^\one,V^\one}\hat{S}

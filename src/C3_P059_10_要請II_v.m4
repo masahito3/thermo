@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.59 要請II(v) '25 8.2 {#C3_P059_要請II_v_10}
+## P.59 要請II(v) '25 8.2 {#C3_P059_10_要請II_v}
 
 $\hat{S}=\sumto{i}{}S^{(i)}(U^{(i)},\symbfit{X}^{(i)})$\ \ (3.13)
 

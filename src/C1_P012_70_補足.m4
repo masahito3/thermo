@@ -11,7 +11,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 補足 べき級数の合成 '25 6.1 {#C1_P012_補足_70}
+## P.12 補足 べき級数の合成 '25 6.1 {#C1_P012_70_補足}
 
 $|x-a|<R_f$ ならば $f(x)=\dseries{n} a_n(x-a)^n$ とする
 

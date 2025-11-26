@@ -7,7 +7,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 補足 x≠0でf(x)は解析的 '25 6.4 {#C1_P012_補足_60}
+## P.12 補足 x≠0でf(x)は解析的 '25 6.4 {#C1_P012_60_補足}
 
 $$\begin{flalign*}
 f(x)=

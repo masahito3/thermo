@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 問題1.4 x^2 e^y の偏微分 '25 4.16 {#C1_P012_問1.4_10}
+## P.12 問題1.4 x^2 e^y の偏微分 '25 4.16 {#C1_P012_10_問1.4}
 
 $$
 \begin{flalign*}

@@ -10,7 +10,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.64 (4.16) max_{U,V} = max_U max_V '25 8.9 {#C4_P064_4.16_10}
+## P.64 (4.16) max_{U,V} = max_U max_V '25 8.9 {#C4_P064_10_4.16}
 
 $\disp \max_{U^\one,V^\one}\hat{S_2}$ は存在する
 

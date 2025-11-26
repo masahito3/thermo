@@ -5,7 +5,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.46 要請II(ii) '25 10.7 {#C3_P046_要請_II_ii_10}
+## P.46 要請II(ii) '25 10.7 {#C3_P046_10_要請_II_ii}
 
 $X_1,\dots,X_t$ は相加変数
 

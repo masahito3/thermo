@@ -9,7 +9,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.34 (2.23)  '25 6.30 {#C2_P034_2.23_10}
+## P.34 (2.23)  '25 6.30 {#C2_P034_10_2.23}
 
 $\Delta \langle N \rangle = (Vによらない定数) \times V$\ \ (2.23)
 

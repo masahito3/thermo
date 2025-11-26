@@ -11,7 +11,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.10 問1.3 (x,y)≠(0,0)でfxは連続 '25 5.13 {#C1_P010_問1.3_40}
+## P.10 問1.3 (x,y)≠(0,0)でfxは連続 '25 5.13 {#C1_P010_40_問1.3}
 
 $$
 \begin{flalign*}

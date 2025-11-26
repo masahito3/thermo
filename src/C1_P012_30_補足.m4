@@ -7,7 +7,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 補足 x≠0でC∞級 '25 4.25 {#C1_P012_補足_30}
+## P.12 補足 x≠0でC∞級 '25 4.25 {#C1_P012_30_補足}
 
 $$\begin{flalign*}
 f(x)=

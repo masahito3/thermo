@@ -7,7 +7,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.12 補足 x=0でf(x)は連続 '25 4.23 {#C1_P012_補足_20}
+## P.12 補足 x=0でf(x)は連続 '25 4.23 {#C1_P012_20_補足}
 
 $$\begin{flalign*}
 f(x)=

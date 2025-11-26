@@ -19,7 +19,7 @@ include(`preamble.tex')
 
 NEWPAGE
 
-## P.36 (2.30) '25 7.2 {#C2_P036_2.30_10}
+## P.36 (2.30) '25 7.2 {#C2_P036_10_2.30}
 
 $U=\sumto{i}{}U^{(i)}+\Frac{1}{2}\sumto{i}{}\sumto{j(\ne i)}{}U_{int}^{(ij)}\ \ (2.30)$
 
