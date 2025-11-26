@@ -55,10 +55,10 @@ S(U,V,N:C_0,C_1)&=\max_{U^\one,V^\one,N^\one,U^\two,V^\two,N^\two} \Big(\hat{S}\
 \end{flalign*}
 $$
 
-<HFILL> $\kome{1}$ [別頁](#C4_P064_4.16_10)</HFILL>
+<HFILL> $\kome{1}$ [別頁](#C4_P064_10_4.16)</HFILL>
 
 上の等式は任意の$U,V,N$で成立する。かつ
-$\disp\max_{V^\one}\max_{U^\one}\hat{S_2}$ は存在する\ ([別頁](#C4_P064_4.16_10))
+$\disp\max_{V^\one}\max_{U^\one}\hat{S_2}$ は存在する\ ([別頁](#C4_P064_10_4.16))
 
 よって$S(U,V,N:C_0,C_1)$ は存在する
 
@@ -79,7 +79,7 @@ $$
 上の等式は任意の$U,V,N$ で成立する。
 
 また、
-$\hat{S_2}(U,V,N,U^\one,V^\one)$ は一様連続なので\ ([別頁](#C4_P062_4.8_一様連続_10))
+$\hat{S_2}(U,V,N,U^\one,V^\one)$ は一様連続なので\ ([別頁](#C4_P062_10_4.8_一様連続))
 
 よって$\hat{S_2}(U,V,N,U^\one,V_1^\one)$ は連続\ $(\cuz\ f(x,y)が連続ならばf(a,y)は連続)$
 
@@ -108,7 +108,7 @@ $\disp\max_{V^\one} S(U,V,N:C_0,C_1,C_2)
 
 任意の$U,V,N$で等式は成立する。
 かつ
-$\disp\max_{V^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V^\one)$ は存在する\ ([別頁](#C4_P064_4.16_10))
+$\disp\max_{V^\one}\max_{U^\one}\hat{S_2}(U,V,N,U^\one,V^\one)$ は存在する\ ([別頁](#C4_P064_10_4.16))
 
 よって
 $\disp\max_{V^\one} S(U,V,N:C_0,C_1,C_2)$ は存在する

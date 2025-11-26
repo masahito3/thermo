@@ -27,7 +27,7 @@ $f_{x_{p_1}\dots x_{p_i}x_{p_j}}$ は存在し連続である
 
 よって
 $\ f_{x_{p_1}\dots x_{p_i}x_{p_j}}=f_{x_{p_1}\dots x_{p_j}x_{p_i}}$
-\ \ ($\cuz f_{xy}=f_{yx}$ [別頁](#C1_P012_数学の定理1.2_20) )
+\ \ ($\cuz f_{xy}=f_{yx}$ [別頁](#C1_P012_20_数学の定理1.2) )
 
 よって$\ f_{x_{p_1}\dots x_{p_i}x_{p_j}\dots x_{p_k}}=f_{x_{p_1}\dots x_{p_j}x_{p_i}\dots x_{p_k}}\quad(1)$
 
