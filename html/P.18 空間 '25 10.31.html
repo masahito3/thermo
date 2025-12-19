@@ -18,9 +18,6 @@
   <script>
   </script>
   
-  <script
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-  type="text/javascript"></script>
 </head>
 <body class="is-overflow-hidden" style="height:100vh;">
 <script>
@@ -143,8 +140,6 @@ id="toc-C1_P016_10_問1.8">P.16 問題1.8 偏微分でつまづいたこと '25
 <ul class="menu-list" >
 <li><a href="P.18 時間 &#39;25 10.31.html" id="toc-C2_P018_10_時間">P.18
 時間 '25 10.31</a></li>
-<li><a href="P.18 時間と系 &#39;25 11.9.html"
-id="toc-C2_P018_20_時間と系">P.18 時間と系 '25 11.9</a></li>
 <li><a href="P.18 空間 &#39;25 10.31.html" id="toc-C2_P018_30_空間">P.18
 空間 '25 10.31</a></li>
 <li><a href="P.18 空間と系 &#39;25 11.9.html"
@@ -224,8 +219,8 @@ id="toc-C3_P045_10_操作で遷移する平衡状態の範囲">P.45
 操作で遷移する平衡状態の範囲 '25 10.7</a></li>
 <li><a href="P.46 単純系 &#39;25 10.7.html"
 id="toc-C3_P046_10_単純系">P.46 単純系 '25 10.7</a></li>
-<li><a href="P.46 単純系の部分系は単純系 &#39;25 10.16.html"
-id="toc-C3_P046_10_単純系の部分系は単純系">P.46 単純系の部分系は単純系
+<li><a href="P.46 全体系と部分系と単純系 &#39;25 10.16.html"
+id="toc-C3_P046_20_全体系と部分系と単純系">P.46 全体系と部分系と単純系
 '25 10.16</a></li>
 <li><a href="P.46 要請II(ii) &#39;25 10.7.html"
 id="toc-C3_P046_10_要請_II_ii">P.46 要請II(ii) '25 10.7</a></li>
@@ -240,6 +235,8 @@ id="toc-C3_P048_10_要請II_iiのつづき">P.48 要請II(ii)のつづき '25
 href="P.50 平衡状態がマクロ状態として一意に定まる &#39;25 7.15.html"
 id="toc-C3_P050_10_平衡状態がマクロ状態として一意に定まる">P.50
 平衡状態がマクロ状態として一意に定まる '25 7.15</a></li>
+<li><a href="P.50 要請II(iv) &#39;25 10.20.html"
+id="toc-C3_P050_10_要請II_iv">P.50 要請II(iv) '25 10.20</a></li>
 <li><a href="P.51 均一な平衡状態はU,Xと一対一 &#39;25 7.9.html"
 id="toc-C3_P051_10_均一な平衡状態はU_Xと一対一">P.51
 均一な平衡状態はU,Xと一対一 '25 7.9</a></li>
@@ -257,8 +254,6 @@ id="toc-C3_P059_10_要請II_v">P.59 要請II(v) '25 8.2</a></li>
 </ul></li>
 <li><a href="第4章.html" id="toc-C4">第4章</a>
 <ul class="menu-list" >
-<li><a href="P.50 要請II(iv) &#39;25 10.20.html"
-id="toc-C3_P050_10_要請II_iv">P.50 要請II(iv) '25 10.20</a></li>
 <li><a href="P.61 複合系のSは一意にきまる &#39;25 8.4.html"
 id="toc-C4_P061_10_複合系のSは一意にきまる">P.61 複合系のSは一意にきまる
 '25 8.4</a></li>
@@ -307,7 +302,7 @@ id="toc-C4_P074_10_定理5.1">P.74 定理5.1 '25 9.2</a></li>
   <div class="column is-2">
     <div class="buttons is-flex-wrap-nowrap">
       <span id="toggle-toc" class="icon button is-large"><i class="fas fa-lg fa-bars"></i></span>
-            <a href="P.18 時間と系 '25 11.9.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
+            <a href="P.18 時間 '25 10.31.html" accesskey="p" rel="previous" class="navlink button icon is-large is-link"><i class="fas fa-lg fa-angle-left"></i></a>
           </div>
   </div>
   <div class="column">
@@ -329,23 +324,29 @@ id="toc-C4_P074_10_定理5.1">P.74 定理5.1 '25 9.2</a></li>
 </div>
 </nav>
 -->
-<h2 data-number="2.3" id="C2_P018_30_空間">P.18 空間 '25 10.31</h2>
+<div class="content">
+<h2 data-number="2.2" id="C2_P018_30_空間">P.18 空間 '25 10.31</h2>
 <p>空間</p>
 <hr />
 <p>(説明)</p>
-<p>空間の定義がないので空間を定義するかもしくは空間の存在を仮定、要請しないといけない</p>
+<p>(空間)</p>
+<p>空間の定義がない、なので空間の存在を仮定する</p>
 <p>空間が存在すると仮定、要請する</p>
-<p>空間はただ1つ存在すると仮定、要請する</p>
-<p>空間は実数の3次元集合で表されると仮定、要請する</p>
-<p>空間の２点の距離はユークリッド距離で表されると仮定、要請する</p>
+<p>空間は点の集合であると仮定、要請する</p>
+<p>空間をつくる点の集合は非有界連結開集合であると仮定、要請する</p>
+<p>2つの点は異なるか、同じかどちらかであると仮定、要請する</p>
+<p>異なる2点は距離をもつと仮定、要請する</p>
 <p>定規が存在すると仮定、要請する</p>
-<p>定規の示す長さは空間の距離と正比例の関係にあると仮定、要請する</p>
-<p>すなわち定規の示す長さを<span
-class="math inline">\(l\)</span>とし、空間の距離を<span
-class="math inline">\(d\)</span>とすると <span
-class="math inline">\(l=kd,\ k&gt;0\)</span>と仮定、要請する</p>
+<p>定規の示す長さは2点の距離と正比例の関係にあると仮定、要請する</p>
 <p>実験室の定規は定規であると仮定、要請する</p>
-<p>以上の仮定、要請はすべて経験的に正しいと認める</p>
+<p>異なる3点は角度をもつと仮定、要請する</p>
+<p>角度の計測方法が存在すると仮定、要請する</p>
+<p>(空間と系)</p>
+<p>空間は1つだけ存在すると仮定、要請する</p>
+<p>空間に含まれる有界連結開集合を領域と定義する</p>
+<p>1つの系は1つの時間に1つの領域をもつと仮定、要請する</p>
+<p>以上の仮定、要請、定義の妥当性はすべて経験的に正しいと認める</p>
+</div>
    </main>
 </div>
 

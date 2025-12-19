@@ -116,7 +116,9 @@ $endif$
 $endif$
 </header>
 $endif$
+<div class="content">
 $body$
+</div>
    </main>
 </div>
 $for(include-after)$
